@@ -1,0 +1,18 @@
+name: 'Update the blacklist from TAC'
+on:
+  push:
+  schedule:
+    - cron:  '0 */1 * * *'
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
+      - name: Download a file
+        run: curl "https://app-static.tousanticovid.gouv.fr/json/version-35/CertList/certlist.json" -o certlist.json
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Automatic Update
