@@ -11,16 +11,10 @@ jobs:
       - uses: actions/checkout@v2
         with:
           ref: ${{ github.head_ref }}
-      - name: Download the blacklist for the QRCodes
-        run: curl "https://app-static.tousanticovid.gouv.fr/json/version-35/CertList/certlist.json" -o certlist.json
-      - name: Download the blacklist for the 2D-Doc
-        run: curl "https://app-static.tousanticovid.gouv.fr/json/version-35/CertList/2ddoc_list.json" -o 2ddoc_list.json
-      - name: Download the BLE calibration
-        run: curl "https://app-static.tousanticovid.gouv.fr/json/version-35/Calibration/calibrationBle.json" -o calibrationBle.json
-      - name: Download the config
-        run: curl "https://app-static.tousanticovid.gouv.fr/json/version-35/Config/config.json" -o config.json         
-      - name: Download the certificates
-        run: curl "https://app-static.tousanticovid.gouv.fr/json/version-35/Certs/dcc-certs.json" -o dcc-certs.json
+      - name: Download various files
+        env:
+          FILES: CertList/certlist.json CertList/2ddoc_list.json Calibration/calibrationBle.json Config/config.json Certs/dcc-certs.json Risks/risks.json
+        run: "for url in $FILES; do wget https://app-static.tousanticovid.gouv.fr/json/version-35/${url}; done"          
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Automatic Update
