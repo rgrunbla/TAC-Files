@@ -14,7 +14,7 @@ jobs:
       - name: Download various files
         env:
           FILES: CertList/certlist.json CertList/2ddoc_list.json Calibration/calibrationBle.json Config/config.json Certs/dcc-certs.json Risks/risks.json
-        run: "for url in $FILES; do wget https://app-static.tousanticovid.gouv.fr/json/version-35/${url}; done"          
+        run: "for url in $FILES; do wget -O ${url##*/} https://app-static.tousanticovid.gouv.fr/json/version-35/${url}; done"          
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Automatic Update

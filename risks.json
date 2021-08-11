@@ -1,0 +1,219 @@
+[
+    {
+        "riskLevel" : 0,
+        "description" : "Aucun risque, pas de notif",
+        "labels" :
+        {
+            "homeTitle" : "risk0.home.title",
+            "homeSub" : "risk0.home.sub",
+            "detailTitle" : "risk0.details.title",
+            "detailSubtitle" : "risk0.details.sub",
+            "widgetShort" : "risk0.home.title",
+            "widgetLong" : "risk0.widget.longTitle"
+        },
+        "color" : {"from" : "#00AC8C", "to" : "#169B62"},
+        "sections" : [
+            {
+                "section": "risk0.section1.title",
+                "description" : "risk0.section1.body"
+            },
+            {
+                "section": "risk.section.measures.title",
+                "description" : "risk.section.measures.body",
+                "link":
+                    {
+                        "label": "risk.section.measures.button",
+                        "action": "GESTURES",
+                        "type": "ctrl"
+                    }
+
+            },
+            {
+                "section": "risk.section.mcc.title",
+                "description" : "risk.section.mcc.body",
+                "link" :
+                    {
+                        "label": "risk.section.mcc.button",
+                        "action": "risk.section.mcc.url",
+                        "type": "web"
+                    }
+            },
+            {
+                "section": "risk0.section.test.title",
+                "description" : "risk0.section.test.body",
+                "link" :
+                    {
+                        "label": "risk.section.test.button",
+                        "action": "risk.section.test.url",
+                        "type": "web"
+                    }
+            }
+        ]
+    },
+    {
+        "riskLevel" : 2.0,
+        "description" : "TAC-S lieu modéré",
+        "labels" : {
+            "homeTitle" : "risk2.home.title",
+            "homeSub" : "risk2.home.sub",
+            "detailTitle" : "risk2.details.title",
+            "detailSubtitle" : "risk2.details.sub",
+            "widgetShort" : "risk2.home.title",
+            "widgetLong" : "risk2.details.title",
+            "notifTitle" : "risk2.notif.title",
+            "notifBody" : "risk2.notif.sub"
+        },
+        "color" : {"from" : "#FF6F4D", "to" : "#CC593E"},
+        "contactDateFormat" : "range",
+        "sections" : [
+            {
+                "section": "risk2.section1.title",
+                "description" : "risk2.section1.body"
+
+            },
+            {
+                "section": "risk.section.test.title",
+                "description" : "risk.section.test.body",
+                "link" :
+                    {
+                        "label": "risk.section.test.button",
+                        "action": "risk.section.test.url",
+                        "type": "web"
+                    }
+            },
+            {
+                "section": "risk.section.limit.title",
+                "description" : "risk.section.limit.body"
+            },
+            {
+                "section": "risk.section.symptoms.title",
+                "description" : "risk.section.symptoms.body"
+            },
+            {
+                "section": "risk.section.mcc.title",
+                "description" : "risk.section.mcc.body",
+                "link" :
+                    {
+                        "label": "risk.section.mcc.button",
+                        "action": "risk.section.mcc.url",
+                        "type": "web"
+                    }
+            }
+        ]
+    },
+    {
+        "riskLevel" : 3.0,
+        "description" : "TAC-S risque élevé",
+        "labels" : {
+            "homeTitle" : "risk3.home.title",
+            "homeSub" : "risk3.home.sub",
+            "detailTitle" : "risk3.details.title",
+            "detailSubtitle" : "risk3.details.sub",
+            "widgetShort" : "risk3.home.title",
+            "widgetLong" : "risk3.details.title",
+            "notifTitle" : "risk3.notif.title",
+            "notifBody" : "risk3.notif.sub"
+        },
+        "color" : {"from" : "#DD5860", "to" : "#D02E39"},
+        "contactDateFormat" : "range",
+        "sections" : [
+            {
+                "section": "risk3.section1.title",
+                "description" : "risk3.section1.body"
+
+            },
+            {
+                "section": "risk.section.isolate.title",
+                "description" : "risk.section.isolate.body",
+                "link":
+                    {
+                        "label": "risk.section.measures.button",
+                        "action": "GESTURES",
+                        "type": "ctrl"
+                    }
+            },
+            {
+                "section": "risk.section.test.title",
+                "description" : "risk.section.test.body",
+                "link" :
+                    {
+                        "label": "risk.section.test.button",
+                        "action": "risk.section.test.url",
+                        "type": "web"
+                    }
+            },
+            {
+                "section": "risk.section.symptoms.title",
+                "description" : "risk.section.symptoms.body"
+            },
+            {
+                "section": "risk.section.mcc.title",
+                "description" : "risk.section.mcc.body",
+                "link" :
+                    {
+                        "label": "risk.section.mcc.button",
+                        "action": "risk.section.mcc.url",
+                        "type": "web"
+                    }
+            }
+           
+        ]
+    },
+    {
+        "riskLevel" : 4.0,
+        "description" : "Tracing risque élevé",
+        "labels" : {
+            "homeTitle" : "risk4.home.title",
+            "homeSub" : "risk4.home.sub",
+            "detailTitle" : "risk4.details.title",
+            "detailSubtitle" : "risk4.details.sub",
+            "widgetShort" : "risk4.home.title",
+            "widgetLong" : "risk4.details.title",
+            "notifTitle" : "risk4.notif.title",
+            "notifBody" : "risk4.notif.sub"
+        },
+        "color" : {"from" : "#E1000F", "to" : "#901F27"},
+        "contactDateFormat" : "date",
+        "sections" : [
+            {
+                "section": "risk4.section1.title",
+                "description" : "risk4.section1.body"
+            },
+            {
+                "section": "risk.section.isolate.title",
+                "description" : "risk.section.isolate.body",
+                "link":
+                    {
+                        "label": "risk.section.measures.button",
+                        "action": "GESTURES",
+                        "type": "ctrl"
+                    }
+            },
+            {
+                "section": "risk.section.test.title",
+                "description" : "risk.section.test.body",
+                "link" :
+                    {
+                        "label": "risk.section.test.button",
+                        "action": "risk.section.test.url",
+                        "type": "web"
+                    }
+            },
+            {
+                "section": "risk.section.symptoms.title",
+                "description" : "risk.section.symptoms.body"
+            },
+            {
+                "section": "risk.section.mcc.title",
+                "description" : "risk.section.mcc.body",
+                "link" :
+                    {
+                        "label": "risk.section.mcc.button",
+                        "action": "risk.section.mcc.url",
+                        "type": "web"
+                    }
+            }
+            
+        ]
+    }
+]
