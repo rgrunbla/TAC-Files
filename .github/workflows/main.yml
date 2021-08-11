@@ -2,7 +2,7 @@ name: 'Download various files from TAC / TAC-Vérif'
 on:
   push:
   schedule:
-    - cron:  '0 */1 * * *'
+    - cron: "*/10 * * * *"
 
 jobs:
   tests:
