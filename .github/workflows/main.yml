@@ -25,6 +25,8 @@ jobs:
         env:
           token: ${{ secrets.TOKEN }}
         run: "curl -s https://portail.tacv.myservices-ingroupe.com/api/client/configuration/synchronisation/tacv -H \"Authorization: Bearer ${token}\" | jq --sort-keys '. | del(.currentDate)' &> certificates.json"
+      - name: Pretty print the DCC certificates
+        run: "./decode_x509.py certificates.json &> certificates.txt"
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Automatic Update
