@@ -18,7 +18,7 @@ jobs:
       - name: Download the certificates
         env:
           token: ${{ secrets.TOKEN }}
-        run: "curl -s https://portail.tacv.myservices-ingroupe.com/api/client/configuration/synchronisation/tacv -H \"Authorization: Bearer ${token}\" | jq . &> certificates.json"
+        run: "curl -s https://portail.tacv.myservices-ingroupe.com/api/client/configuration/synchronisation/tacv -H \"Authorization: Bearer ${token}\" | jq --sort-keys . &> certificates.json"
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Automatic Update
