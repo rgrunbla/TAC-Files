@@ -6,15 +6,21 @@ on:
 
 jobs:
   tests:
+    env:
+      API_VERSION: 35
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
           ref: ${{ github.head_ref }}
+      - name: Download 2DDoc blacklist
+        run: "wget -O blacklist_2ddoc.json https://app-static.tousanticovid.gouv.fr/json/version-${API_VERSION}/CertList/2ddoc_list.json"
+      - name: Download QRCode blacklist
+        run: "wget -O blacklist_qrcode.json https://app-static.tousanticovid.gouv.fr/json/version-${API_VERSION}/CertList/certlist.json"
       - name: Download various files
         env:
-          FILES: CertList/certlist.json CertList/2ddoc_list.json Calibration/calibrationBle.json Config/config.json Certs/dcc-certs.json Risks/risks.json
-        run: "for url in $FILES; do wget -O ${url##*/} https://app-static.tousanticovid.gouv.fr/json/version-35/${url}; done"          
+          FILES:  Calibration/calibrationBle.json Config/config.json Certs/dcc-certs.json Risks/risks.json
+        run: "for url in $FILES; do wget -O ${url##*/} https://app-static.tousanticovid.gouv.fr/json/version-${API_VERSION}/${url}; done"
       - name: Download the certificates
         env:
           token: ${{ secrets.TOKEN }}
