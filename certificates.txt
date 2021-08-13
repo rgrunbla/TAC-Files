@@ -455,6 +455,44 @@ Certificate:
 Certificate:
     Data:
         Version: 3 (0x2)
+        Serial Number:
+            45:41:03:7b:95:51:54:2f:b1:16:eb:f3:6d:00:f1:23:e3:5c:1b:71
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = GB, ST = NI, L = Belfast, O = Department of Health, OU = DHCNI, CN = CSCA_DGC_GB_NI_01
+        Validity
+            Not Before: Jul 19 15:22:18 2021 GMT
+            Not After : Jul 19 15:22:18 2023 GMT
+        Subject: C = GB, ST = NI, L = Belfast, O = Department of Health, OU = DHCNI, CN = DSC_DGC_GB_NI_01
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:67:e7:dd:71:36:b8:51:60:3f:e8:f4:f9:57:86:
+                    b4:fb:48:f5:fe:cf:be:e0:94:04:b1:6f:c7:bc:69:
+                    f1:c4:fe:e6:19:fb:90:0d:f9:ff:15:17:54:30:64:
+                    2d:4e:4a:02:19:a9:32:d6:0a:58:55:95:e4:92:86:
+                    2e:f5:98:e5:53
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Subject Key Identifier: 
+                AD:30:AD:8A:FE:8F:39:1F:5F:FF:D8:38:AC:73:5C:7E:E1:A0:1C:59
+            X509v3 Authority Key Identifier: 
+                keyid:CF:03:1F:37:F7:CF:A7:B3:25:6C:D9:96:0F:48:09:B2:D3:4D:1C:67
+
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.1847.2021.1.2
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:df:0b:b1:3a:40:f0:dc:80:f0:30:36:42:bf:
+         b9:12:43:32:75:16:39:fb:25:1c:2e:82:c9:e0:8a:3d:c9:b7:
+         4b:02:21:00:de:2d:70:bd:bf:ed:3e:87:61:b7:cd:bf:e8:5f:
+         17:3d:a6:00:65:8b:09:af:30:9a:a2:5c:b3:d6:2c:04:d1:bb
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
         Serial Number: 4404348436996622577 (0x3d1f6391763b08f1)
         Signature Algorithm: ecdsa-with-SHA256
         Issuer: C = HR, O = AKD d.o.o., CN = Croatia DGC CSCA
