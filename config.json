@@ -6,7 +6,7 @@
     },
     {
       "name": "version",
-      "value": 84
+      "value": 85
     },
     {
       "name": "versionCalibrationBle",
@@ -110,6 +110,10 @@
             }
         }
       ]
+    },
+    {
+        "name": "app.displayActivityPass",
+        "value": false
     },
     {
       "name": "app.isolation.duration",
