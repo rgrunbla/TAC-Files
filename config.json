@@ -116,6 +116,10 @@
         "value": false
     },
     {
+        "name": "app.activityPass.minRemainingHoursToRegenerate",
+        "value": 4.0
+    },
+    {
       "name": "app.isolation.duration",
       "value": 691200
     },
