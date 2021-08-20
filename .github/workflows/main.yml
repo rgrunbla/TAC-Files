@@ -21,12 +21,16 @@ jobs:
         env:
           FILES:  Calibration/calibrationBle.json Config/config.json Certs/dcc-certs.json Risks/risks.json
         run: "for url in $FILES; do wget -O ${url##*/} https://app-static.tousanticovid.gouv.fr/json/version-${API_VERSION}/${url}; done"
-      - name: Download the certificates
+      - name: Download the conf from the TAC-V server
         env:
           token: ${{ secrets.TOKEN }}
-        run: "curl -s https://portail.tacv.myservices-ingroupe.com/api/client/configuration/synchronisation/tacv -H \"Authorization: Bearer ${token}\" | jq --sort-keys '. | del(.currentDate)' &> certificates.json"
+        run: "curl -s https://portail.tacv.myservices-ingroupe.com/api/client/configuration/synchronisation/tacv -H \"Authorization: Bearer ${token}\" | jq --sort-keys '. | del(.currentDate)' &> TAC-V_conf.json"
+      - name: Pretty print TAC-V blacklist (qrcodes)
+        run: "cat TAC-V_conf.json | jq '. | .specificValues.blacklist.blacklistDCC' &> blacklist_qrcode_tacv.json"
+      - name: Pretty print TAC-V blacklist (2d-doc)
+        run: "cat TAC-V_conf.json | jq '. | .specificValues.blacklist.blacklist2DDOC' &> blacklist_2ddoc_tacv.json"
       - name: Pretty print the DCC certificates
-        run: "./decode_x509.py certificates.json &> certificates.txt"
+        run: "./decode_x509.py TAC-V_conf.json &> certificates.txt"
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Automatic Update
