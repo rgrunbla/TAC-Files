@@ -120,6 +120,10 @@
         "value": 4.0
     },
     {
+        "name": "app.wallet.maxCertBeforeWarning",
+        "value": 15
+    },
+    {
       "name": "app.isolation.duration",
       "value": 691200
     },
