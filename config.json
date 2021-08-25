@@ -2,11 +2,11 @@
   "config": [
     {
       "name": "lastUpdate",
-      "value": "23 Aug 2021"
+      "value": "25 Aug 2021"
     },
     {
       "name": "version",
-      "value": 86
+      "value": 87
     },
     {
       "name": "versionCalibrationBle",
@@ -34,7 +34,7 @@
     },
     {
         "name" : "app.cleaUrls",
-        "value" : ["https://s3.fr-par.scw.cloud/clea-batch/", "https://signal-static.oos.cloudgouv-eu-west-1.outscale.com/", "https://signal-static.tousanticovid.gouv.fr/"]
+        "value" : ["https://signal-static.tousanticovid.gouv.fr/"]
     },
     {
         "name" : "app.ameliUrl",
