@@ -6925,58 +6925,6 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
-            ac:e3:3f:75:d1:03:3c:2c:11:b6:df:c5:d8:4b:b0:ad
-        Signature Algorithm: ecdsa-with-SHA256
-        Issuer: C = SE, O = Swedish eHealth Agency, OU = Digital Covid Certificate Services, organizationIdentifier = 202100-6552, CN = Swedish Digital Covid Certificate CSCA
-        Validity
-            Not Before: Jun 21 06:07:31 2021 GMT
-            Not After : Jun 21 06:27:31 2023 GMT
-        Subject: C = SE, O = Swedish eHealth Agency, organizationIdentifier = 202100-6552, CN = DCC Signer
-        Subject Public Key Info:
-            Public Key Algorithm: id-ecPublicKey
-                Public-Key: (256 bit)
-                pub:
-                    04:68:b3:a8:d4:81:93:b2:96:52:76:bd:81:a9:d0:
-                    2f:2a:36:63:1d:f5:bf:66:af:15:0e:b2:3a:9c:48:
-                    41:95:75:2b:dd:50:83:97:38:eb:5e:8e:6f:ea:2c:
-                    76:a8:5f:51:0b:24:89:b0:78:19:c5:4a:ea:59:0a:
-                    45:41:ba:db:33
-                ASN1 OID: prime256v1
-                NIST CURVE: P-256
-        X509v3 extensions:
-            X509v3 Basic Constraints: 
-                CA:FALSE
-            X509v3 Authority Key Identifier: 
-                keyid:02:4E:3A:DF:85:A7:54:87:70:AF:C4:A1:BD:8A:58:4D:1F:97:A6:FF:3D:E2:A8:67:62:0C:4A:82:CB:4B:82:BA
-
-            X509v3 Subject Key Identifier: 
-                72:E9:8C:90:F5:43:7A:B5:ED:4D:AE:72:BD:8D:15:A7:EB:DB:70:75:B1:BA:2A:9F:17:43:7D:31:4D:08:EA:11
-            X509v3 Key Usage: critical
-                Digital Signature, Key Agreement
-            X509v3 CRL Distribution Points: 
-
-                Full Name:
-                  URI:https://dgcg.covidbevis.se/csca/crl/csca01.crl
-
-            Authority Information Access: 
-                OCSP - URI:https://dgcg.covidbevis.se/csca/ocsp/csca01
-
-            X509v3 Subject Alternative Name: 
-                email:registrator@ehalsomyndigheten.se
-    Signature Algorithm: ecdsa-with-SHA256
-         30:81:87:02:42:00:91:f4:f3:17:22:f5:8d:9a:41:07:14:25:
-         39:c0:f9:62:15:49:b9:4e:e4:af:e7:71:5b:18:15:df:a3:cc:
-         cf:e6:d5:c8:61:87:b0:83:ef:9a:0d:e6:dc:20:58:c9:74:68:
-         f3:1c:8e:a6:b2:94:d1:ff:a7:cd:b3:3c:e3:5a:11:1a:a6:02:
-         41:32:0a:b6:c8:09:fc:94:8a:2a:36:d0:2a:c5:46:65:92:f0:
-         a5:aa:e0:b2:fc:76:41:da:a7:18:2a:56:b1:bb:e7:fd:f1:ae:
-         68:40:77:19:47:d5:6a:02:f8:07:f5:23:ad:36:13:a7:6c:68:
-         26:70:ea:69:8c:63:41:8f:38:4b:c6:87
-
-Certificate:
-    Data:
-        Version: 3 (0x2)
-        Serial Number:
             70:08:b0:73:28:4b:4e:d5:aa:37:bd:58:a4:85:fe:c9
         Signature Algorithm: rsassaPss         
          Hash Algorithm: sha512
