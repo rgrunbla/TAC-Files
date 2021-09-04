@@ -20,7 +20,7 @@ jobs:
       - name: Download various files
         env:
           FILES:  Calibration/calibrationBle.json Config/config.json Certs/dcc-certs.json Risks/risks.json
-        run: "for url in $FILES; do wget -O ${url##*/} https://app-static.tousanticovid.gouv.fr/json/version-${API_VERSION}/${url}; done"
+        run: "for url in $FILES; do curl https://app-static.tousanticovid.gouv.fr/json/version-${API_VERSION}/${url} | jq --sort-keys '.' &> ${url##*/}; done"
       - name: Download the conf from the TAC-V server
         env:
           token: ${{ secrets.TOKEN }}
