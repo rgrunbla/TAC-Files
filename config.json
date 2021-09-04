@@ -1,573 +1,571 @@
 {
-   "config":[
-      {
-         "name":"lastUpdate",
-         "value":"3 Sep 2021"
-      },
-      {
-         "name":"version",
-         "value":88
-      },
-      {
-         "name":"versionCalibrationBle",
-         "value":2
-      },
-      {
-         "name":"app.apiVersion",
-         "value":"v6"
-      },
-      {
-         "name":"app.warningApiVersion",
-         "value":"v2"
-      },
-      {
-         "name":"app.clea.reportApiVersion",
-         "value":"v1"
-      },
-      {
-         "name":"app.clea.statusApiVersion",
-         "value":"v1"
-      },
-      {
-         "name":"app.analyticsApiVersion",
-         "value":"v1"
-      },
-      {
-         "name":"app.cleaUrls",
-         "value":[
-            "https://signal-static.tousanticovid.gouv.fr/"
-         ]
-      },
-      {
-         "name":"app.ameliUrl",
-         "value":"https://declare.ameli.fr/tousanticovid/t/%@/"
-      },
-      {
-         "name":"app.ratingsKeyFiguresOpeningThreshold",
-         "value":10
-      },
-      {
-         "name":"app.contagiousSpan",
-         "value":10
-      },
-      {
-         "name":"app.keyfigures.displayDepartmentLevel",
-         "value":true
-      },
-      {
-         "name":"app.displayIsolation",
-         "value":true
-      },
-      {
-         "name":"app.isolationMinRiskLevel",
-         "value":3.0
-      },
-      {
-         "name":"app.displayVaccination",
-         "value":true
-      },
-      {
-         "name":"app.vaccinationCentersCount",
-         "value":14
-      },
-      {
-         "name":"app.displaySanitaryCertificatesWallet",
-         "value":true
-      },
-      {
-         "name":"app.displaySanitaryCertificatesValidation",
-         "value":false
-      },
-      {
-         "name":"app.isAnalyticsOn",
-         "value":true
-      },
-      {
-         "name":"app.wallet.oldCertificateThresholdInDays",
-         "value":{
-            "b2":3,
-            "test":3
-         }
-      },
-      {
-         "name":"app.wallet.testCertificateValidityThresholdInHours",
-         "value":72
-      },
-      {
-         "name":"app.wallet.testCertificateValidityThresholds",
-         "value":[
-            24,
-            48,
-            72
-         ]
-      },
-      {
-         "name":"app.walletPubKeys",
-         "value":[
-            {
-               "auth":"FR03",
-               "pubKeys":{
-                  "AHP1":"-----BEGIN PUBLIC KEY-----MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEPnxJntwNwme9uHSasmGFFwdC0FWNEpucgzhjr+/AZ6UuTm3kL3ogEUAwKU0tShEVmZNK4/lM05h+0ZvtboJM/A==-----END PUBLIC KEY-----",
-                  "AHP2":"-----BEGIN PUBLIC KEY-----MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEOYUgmx8pKu0UbyqQ/kt4+PXSpUprkO2YLHmzzoN66XjDW0AnSzXorFPe556p73Vawqaoy3qQKDIDB62IBYWBuA==-----END PUBLIC KEY-----",
-                  "AV01":"-----BEGIN PUBLIC KEY-----MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE1T9uG2bEP7uWND6RT/lJs2y787BkEJoRMMLXvqPKFFC3ckqFAPnFjbiv/odlWH04a1P9CvaCRxG31FMEOFZyXA==-----END PUBLIC KEY-----",
-                  "AV02":"-----BEGIN PUBLIC KEY-----MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE3jL6zQ0aQj9eJHUw4VDHB9sMoviLVIlADnoBwC43Md8p9w655z2bDhYEEajQ2amQzt+eU7HdWrvqY23Do91Izg==-----END PUBLIC KEY-----",
-                  "ING1":"-----BEGIN PUBLIC KEY-----MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEaMOVmK4FAlYeU8tUGpQgtpuLgwSn/arX/4ltKt/wYCole7rB4ECRLtSH4domHU/Z1cjUmVfyGH6NcboWrys9ww==-----END PUBLIC KEY-----"
-               }
-            }
-         ]
-      },
-      {
-         "name":"app.displayActivityPass",
-         "value":false
-      },
-      {
-         "name":"app.activityPass.minRemainingHoursToRegenerate",
-         "value":4.0
-      },
-      {
-         "name":"app.wallet.maxCertBeforeWarning",
-         "value":15
-      },
-      {
-         "name":"app.isolation.duration",
-         "value":691200
-      },
-      {
-         "name":"app.postIsolation.duration",
-         "value":691200
-      },
-      {
-         "name":"app.isolation.durationCovid",
-         "value":864000
-      },
-      {
-         "name":"app.minFilesRefreshInterval",
-         "value":5
-      },
-      {
-         "name":"app.displayRecordVenues",
-         "value":true
-      },
-      {
-         "name":"app.displayPrivateEvent",
-         "value":false
-      },
-      {
-         "name":"app.privateEventVenueType",
-         "value":"PEV"
-      },
-      {
-         "name":"app.displayAttestation",
-         "value":true
-      },
-      {
-         "name":"app.push.displayOnSuccess",
-         "value":false
-      },
-      {
-         "name":"app.push.displayAll",
-         "value":false
-      },
-      {
-         "name":"app.proximityReactivation.reminderHours",
-         "value":[
-            1.0,
-            2.0,
-            4.0,
-            8.0,
-            12.0
-         ]
-      },
-      {
-         "name":"app.push.minHoursBetweenVisibleNotifications",
-         "value":13.0
-      },
-      {
-         "name":"app.qrCode.deletionHours",
-         "value":24.0
-      },
-      {
-         "name":"app.qrCode.expiredHours",
-         "value":8.0
-      },
-      {
-         "name":"app.qrCode.formattedString",
-         "value":"Cree le: <creationDate> a <creationHour>;\nNom: <lastname>;\nPrenom: <firstname>;\nNaissance: <dob> a <cityofbirth>;\nAdresse: <address> <zip> <city>;\nSortie: <datetime-day> a <datetime-hour>;\nMotifs: <reason-code>"
-      },
-      {
-         "name":"app.qrCode.formattedStringDisplayed",
-         "value":"Créé le <creationDate> à <creationHour>\nNom : <lastname>\nPrénom : <firstname>\nNaissance : <dob> à <cityofbirth>\nAdresse : <address> <zip> <city>\nSortie : <datetime-day> à <datetime-hour>\nCode motif: <reason-code>"
-      },
-      {
-         "name":"app.qrCode.footerString",
-         "value":"<firstname> - <datetime-day>, <datetime-hour>\n<reason-shortlabel>"
-      },
-      {
-         "name":"app.venuesSalt",
-         "value":100
-      },
-      {
-         "name":"app.venuesTimestampRoundingInterval",
-         "value":900
-      },
-      {
-         "name":"app.venuesRetentionPeriod",
-         "value":15
-      },
-      {
-         "name":"app.dataRetentionPeriod",
-         "value":14
-      },
-      {
-         "name":"app.covidPlusWarning",
-         "value":14
-      },
-      {
-         "name":"app.covidPlusNoTracing",
-         "value":60
-      },
-      {
-         "name":"app.preSymptomsSpan",
-         "value":2
-      },
-      {
-         "name":"app.positiveSampleSpan",
-         "value":7
-      },
-      {
-         "name":"app.contagiousSpan",
-         "value":10
-      },
-      {
-         "name":"app.quarantinePeriod",
-         "value":7
-      },
-      {
-         "name":"app.randomStatusHour",
-         "value":0.1
-      },
-      {
-         "name":"app.checkStatusFrequency",
-         "value":12.0
-      },
-      {
-         "name":"app.minStatusRetryDuration",
-         "value":3.0
-      },
-      {
-         "name":"app.appAvailability",
-         "value":true
-      },
-      {
-         "name":"app.minHourContactNotif",
-         "value":7
-      },
-      {
-         "name":"app.maxHourContactNotif",
-         "value":19
-      },
-      {
-         "name":"app.allowNoAdvertisingDevice",
-         "value":true
-      },
-      {
-         "name":"app.unsupportedDevices",
-         "value":[
-            
-         ]
-      },
-      {
-         "name":"app.displayCertificateConversion",
-         "value":true
-      },
-      {
-         "name":"app.certificateConversionUrl",
-         "value":"https://portail.tacv.myservices-ingroupe.com/api/client/convertor/decode/decodeDocument"
-      },
-      {
-         "name":"app.wallet.vaccin.daysAfterCompletion",
-         "value":[
-            {
-               "code":"DEFAULT",
-               "value":7
-            },
-            {
-               "code":"EU/1/20/1525",
-               "value":28
-            }
-         ]
-      },
-      {
-         "name":"app.wallet.vaccin.noWaitPeriod",
-         "value":[
-            {
-               "code":"DEFAULT",
-               "value":3
-            }
-         ]
-      },
-      {
-         "name":"app.wallet.confettiBirthRate",
-         "value":150.0
-      },
-      {
-         "name":"app.wallet.certificateConversionSidepOnlyCode",
-         "value":[
-            "945584"
-         ]
-      },
-      {
-         "name":"app.wallet.conversionPublicKey",
-         "value":{
-            "prd01":"MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEo+LqBOIH0gXjHCVLIhY9zSpMdSvl7XqRZMquLtFlNROg895C3l2sv/gN8nVluqUtzZT3uTtblzY5jJCMgsbo7w=="
-         }
-      },
-      {
-         "name":"app.wallet.conversionApiVersion",
-         "value":2
-      },
-      {
-         "name":"ble.serviceUUID",
-         "value":"0000fd64-0000-1000-8000-00805f9b34fb"
-      },
-      {
-         "name":"ble.characteristicUUID",
-         "value":"a8f12d00-ee67-478b-b95f-65d599407756"
-      },
-      {
-         "name":"ble.backgroundServiceManufacturerData",
-         "value":"1.0.0.0.0.0.0.0.0.0.0.8.0.0.0.0.0"
-      },
-      {
-         "name":"ble.filterConfig",
-         "value":"{\"a\":4.3429448190325175,\"b\":0.1,\"deltas\":[39.0,27.0,23.0,21.0,20.0,19.0,18.0,17.0,16.0,15.0],\"durationThreshold\":90,\"p0\":-66.0,\"rssiThreshold\":-25,\"timeOverlap\":60,\"timeWindow\":120,\"riskThreshold\":0.1}"
-      },
-      {
-         "name":"ble.filterMode",
-         "value":"RISKS"
-      },
-      {
-         "name":"ble.scanReportDelay",
-         "value":5
-      },
-      {
-         "name":"ble.dontUseScannerHardwareBatching",
-         "value":[
-            "G3121",
-            "E5603",
-            "SM-G981B",
-            "CDY-NX9A",
-            "SM-J530F",
-            "SM-G770F",
-            "SM-G780F",
-            "SM-G781B",
-            "SM-G960F",
-            "SM-G965F",
-            "SM-G970F",
-            "SM-G973F",
-            "SM-G975F",
-            "SM-G977B",
-            "SM-G980F",
-            "SM-G981B",
-            "SM-G985F",
-            "SM-G986B",
-            "SM-G988B",
-            "SM-G991B",
-            "SM-G996B",
-            "SM-G998B",
-            "SM-N770F",
-            "SM-N970F",
-            "SM-N975F",
-            "SM-N976B",
-            "SM-N980F",
-            "SM-N981B",
-            "SM-N985F",
-            "SM-N986B",
-            "SM-F700F",
-            "SM-F707B",
-            "SM-F900F",
-            "SM-F916B",
-            "SM-A025G",
-            "SM-A125F",
-            "SM-A326B",
-            "SM-A415F",
-            "SM-A415FN",
-            "SM-A505FN",
-            "SM-A525F",
-            "SM-A526B",
-            "SM-A715F",
-            "SM-A805F",
-            "SM-M115F",
-            "SM-M315F",
-            "SM-M317F",
-            "SM-M515F",
-            "SM-A202F",
-            "SM-A207F",
-            "SM-G715FN",
-            "SM-J730F",
-            "SM-A515F",
-            "SM-J600FN"
-         ]
-      },
-      {
-         "name":"ble.calibration",
-         "value":[
-            {
-               "device_handset_model":"DEFAULT",
-               "tx_RSS_correction_factor":-30,
-               "rx_RSS_correction_factor":-5
-            },
-            {
-               "device_handset_model":"iPad",
-               "tx_RSS_correction_factor":-10,
-               "rx_RSS_correction_factor":-5
-            },
-            {
-               "device_handset_model":"iPhone",
-               "tx_RSS_correction_factor":-10,
-               "rx_RSS_correction_factor":-5
-            },
-            {
-               "device_handset_model":"iPhone8,4",
-               "tx_RSS_correction_factor":-10,
-               "rx_RSS_correction_factor":-5
-            },
-            {
-               "device_handset_model":"iPhone9,2",
-               "tx_RSS_correction_factor":-15,
-               "rx_RSS_correction_factor":-5
-            },
-            {
-               "device_handset_model":"iPhone9,4",
-               "tx_RSS_correction_factor":-15,
-               "rx_RSS_correction_factor":-5
-            },
-            {
-               "device_handset_model":"iPhone10,1",
-               "tx_RSS_correction_factor":-15,
-               "rx_RSS_correction_factor":-15
-            },
-            {
-               "device_handset_model":"iPhone10,2",
-               "tx_RSS_correction_factor":-15,
-               "rx_RSS_correction_factor":-5
-            },
-            {
-               "device_handset_model":"iPhone10,3",
-               "tx_RSS_correction_factor":-20,
-               "rx_RSS_correction_factor":-15
-            },
-            {
-               "device_handset_model":"iPhone10,4",
-               "tx_RSS_correction_factor":-15,
-               "rx_RSS_correction_factor":-15
-            },
-            {
-               "device_handset_model":"iPhone10,5",
-               "tx_RSS_correction_factor":-15,
-               "rx_RSS_correction_factor":-5
-            },
-            {
-               "device_handset_model":"iPhone10,6",
-               "tx_RSS_correction_factor":-20,
-               "rx_RSS_correction_factor":-15
-            },
-            {
-               "device_handset_model":"iPhone11,2",
-               "tx_RSS_correction_factor":-10,
-               "rx_RSS_correction_factor":-5
-            },
-            {
-               "device_handset_model":"iPhone11,4",
-               "tx_RSS_correction_factor":-10,
-               "rx_RSS_correction_factor":-5
-            },
-            {
-               "device_handset_model":"iPhone11,6",
-               "tx_RSS_correction_factor":-10,
-               "rx_RSS_correction_factor":-5
-            },
-            {
-               "device_handset_model":"iPhone11,8",
-               "tx_RSS_correction_factor":-10,
-               "rx_RSS_correction_factor":-5
-            },
-            {
-               "device_handset_model":"iPhone12,1",
-               "tx_RSS_correction_factor":-10,
-               "rx_RSS_correction_factor":-5
-            },
-            {
-               "device_handset_model":"iPhone12,3",
-               "tx_RSS_correction_factor":-10,
-               "rx_RSS_correction_factor":-5
-            },
-            {
-               "device_handset_model":"iPhone12,5",
-               "tx_RSS_correction_factor":-10,
-               "rx_RSS_correction_factor":-5
-            },
-            {
-               "device_handset_model":"iPhone12,8",
-               "tx_RSS_correction_factor":-10,
-               "rx_RSS_correction_factor":-5
-            },
-            {
-               "device_handset_model":"iPhone5,3",
-               "tx_RSS_correction_factor":-10,
-               "rx_RSS_correction_factor":-5
-            },
-            {
-               "device_handset_model":"iPhone5,4",
-               "tx_RSS_correction_factor":-10,
-               "rx_RSS_correction_factor":-5
-            },
-            {
-               "device_handset_model":"iPhone6,1",
-               "tx_RSS_correction_factor":-10,
-               "rx_RSS_correction_factor":-5
-            },
-            {
-               "device_handset_model":"iPhone6,2",
-               "tx_RSS_correction_factor":-10,
-               "rx_RSS_correction_factor":-5
-            },
-            {
-               "device_handset_model":"iPhone7,1",
-               "tx_RSS_correction_factor":-10,
-               "rx_RSS_correction_factor":-5
-            },
-            {
-               "device_handset_model":"iPhone7,2",
-               "tx_RSS_correction_factor":-15,
-               "rx_RSS_correction_factor":-5
-            },
-            {
-               "device_handset_model":"iPhone8,1",
-               "tx_RSS_correction_factor":-10,
-               "rx_RSS_correction_factor":-5
-            },
-            {
-               "device_handset_model":"iPhone8,2",
-               "tx_RSS_correction_factor":-10,
-               "rx_RSS_correction_factor":-5
-            },
-            {
-               "device_handset_model":"iPhone9,1",
-               "tx_RSS_correction_factor":-10,
-               "rx_RSS_correction_factor":-5
-            },
-            {
-               "device_handset_model":"iPhone9,3",
-               "tx_RSS_correction_factor":-10,
-               "rx_RSS_correction_factor":-5
-            },
-            {
-               "device_handset_model":"iPhone9,4",
-               "tx_RSS_correction_factor":-15,
-               "rx_RSS_correction_factor":-5
-            }
-         ]
+  "config": [
+    {
+      "name": "lastUpdate",
+      "value": "3 Sep 2021"
+    },
+    {
+      "name": "version",
+      "value": 88
+    },
+    {
+      "name": "versionCalibrationBle",
+      "value": 2
+    },
+    {
+      "name": "app.apiVersion",
+      "value": "v6"
+    },
+    {
+      "name": "app.warningApiVersion",
+      "value": "v2"
+    },
+    {
+      "name": "app.clea.reportApiVersion",
+      "value": "v1"
+    },
+    {
+      "name": "app.clea.statusApiVersion",
+      "value": "v1"
+    },
+    {
+      "name": "app.analyticsApiVersion",
+      "value": "v1"
+    },
+    {
+      "name": "app.cleaUrls",
+      "value": [
+        "https://signal-static.tousanticovid.gouv.fr/"
+      ]
+    },
+    {
+      "name": "app.ameliUrl",
+      "value": "https://declare.ameli.fr/tousanticovid/t/%@/"
+    },
+    {
+      "name": "app.ratingsKeyFiguresOpeningThreshold",
+      "value": 10
+    },
+    {
+      "name": "app.contagiousSpan",
+      "value": 10
+    },
+    {
+      "name": "app.keyfigures.displayDepartmentLevel",
+      "value": true
+    },
+    {
+      "name": "app.displayIsolation",
+      "value": true
+    },
+    {
+      "name": "app.isolationMinRiskLevel",
+      "value": 3
+    },
+    {
+      "name": "app.displayVaccination",
+      "value": true
+    },
+    {
+      "name": "app.vaccinationCentersCount",
+      "value": 14
+    },
+    {
+      "name": "app.displaySanitaryCertificatesWallet",
+      "value": true
+    },
+    {
+      "name": "app.displaySanitaryCertificatesValidation",
+      "value": false
+    },
+    {
+      "name": "app.isAnalyticsOn",
+      "value": true
+    },
+    {
+      "name": "app.wallet.oldCertificateThresholdInDays",
+      "value": {
+        "b2": 3,
+        "test": 3
       }
-   ]
+    },
+    {
+      "name": "app.wallet.testCertificateValidityThresholdInHours",
+      "value": 72
+    },
+    {
+      "name": "app.wallet.testCertificateValidityThresholds",
+      "value": [
+        24,
+        48,
+        72
+      ]
+    },
+    {
+      "name": "app.walletPubKeys",
+      "value": [
+        {
+          "auth": "FR03",
+          "pubKeys": {
+            "AHP1": "-----BEGIN PUBLIC KEY-----MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEPnxJntwNwme9uHSasmGFFwdC0FWNEpucgzhjr+/AZ6UuTm3kL3ogEUAwKU0tShEVmZNK4/lM05h+0ZvtboJM/A==-----END PUBLIC KEY-----",
+            "AHP2": "-----BEGIN PUBLIC KEY-----MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEOYUgmx8pKu0UbyqQ/kt4+PXSpUprkO2YLHmzzoN66XjDW0AnSzXorFPe556p73Vawqaoy3qQKDIDB62IBYWBuA==-----END PUBLIC KEY-----",
+            "AV01": "-----BEGIN PUBLIC KEY-----MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE1T9uG2bEP7uWND6RT/lJs2y787BkEJoRMMLXvqPKFFC3ckqFAPnFjbiv/odlWH04a1P9CvaCRxG31FMEOFZyXA==-----END PUBLIC KEY-----",
+            "AV02": "-----BEGIN PUBLIC KEY-----MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE3jL6zQ0aQj9eJHUw4VDHB9sMoviLVIlADnoBwC43Md8p9w655z2bDhYEEajQ2amQzt+eU7HdWrvqY23Do91Izg==-----END PUBLIC KEY-----",
+            "ING1": "-----BEGIN PUBLIC KEY-----MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEaMOVmK4FAlYeU8tUGpQgtpuLgwSn/arX/4ltKt/wYCole7rB4ECRLtSH4domHU/Z1cjUmVfyGH6NcboWrys9ww==-----END PUBLIC KEY-----"
+          }
+        }
+      ]
+    },
+    {
+      "name": "app.displayActivityPass",
+      "value": false
+    },
+    {
+      "name": "app.activityPass.minRemainingHoursToRegenerate",
+      "value": 4
+    },
+    {
+      "name": "app.wallet.maxCertBeforeWarning",
+      "value": 15
+    },
+    {
+      "name": "app.isolation.duration",
+      "value": 691200
+    },
+    {
+      "name": "app.postIsolation.duration",
+      "value": 691200
+    },
+    {
+      "name": "app.isolation.durationCovid",
+      "value": 864000
+    },
+    {
+      "name": "app.minFilesRefreshInterval",
+      "value": 5
+    },
+    {
+      "name": "app.displayRecordVenues",
+      "value": true
+    },
+    {
+      "name": "app.displayPrivateEvent",
+      "value": false
+    },
+    {
+      "name": "app.privateEventVenueType",
+      "value": "PEV"
+    },
+    {
+      "name": "app.displayAttestation",
+      "value": true
+    },
+    {
+      "name": "app.push.displayOnSuccess",
+      "value": false
+    },
+    {
+      "name": "app.push.displayAll",
+      "value": false
+    },
+    {
+      "name": "app.proximityReactivation.reminderHours",
+      "value": [
+        1,
+        2,
+        4,
+        8,
+        12
+      ]
+    },
+    {
+      "name": "app.push.minHoursBetweenVisibleNotifications",
+      "value": 13
+    },
+    {
+      "name": "app.qrCode.deletionHours",
+      "value": 24
+    },
+    {
+      "name": "app.qrCode.expiredHours",
+      "value": 8
+    },
+    {
+      "name": "app.qrCode.formattedString",
+      "value": "Cree le: <creationDate> a <creationHour>;\nNom: <lastname>;\nPrenom: <firstname>;\nNaissance: <dob> a <cityofbirth>;\nAdresse: <address> <zip> <city>;\nSortie: <datetime-day> a <datetime-hour>;\nMotifs: <reason-code>"
+    },
+    {
+      "name": "app.qrCode.formattedStringDisplayed",
+      "value": "Créé le <creationDate> à <creationHour>\nNom : <lastname>\nPrénom : <firstname>\nNaissance : <dob> à <cityofbirth>\nAdresse : <address> <zip> <city>\nSortie : <datetime-day> à <datetime-hour>\nCode motif: <reason-code>"
+    },
+    {
+      "name": "app.qrCode.footerString",
+      "value": "<firstname> - <datetime-day>, <datetime-hour>\n<reason-shortlabel>"
+    },
+    {
+      "name": "app.venuesSalt",
+      "value": 100
+    },
+    {
+      "name": "app.venuesTimestampRoundingInterval",
+      "value": 900
+    },
+    {
+      "name": "app.venuesRetentionPeriod",
+      "value": 15
+    },
+    {
+      "name": "app.dataRetentionPeriod",
+      "value": 14
+    },
+    {
+      "name": "app.covidPlusWarning",
+      "value": 14
+    },
+    {
+      "name": "app.covidPlusNoTracing",
+      "value": 60
+    },
+    {
+      "name": "app.preSymptomsSpan",
+      "value": 2
+    },
+    {
+      "name": "app.positiveSampleSpan",
+      "value": 7
+    },
+    {
+      "name": "app.contagiousSpan",
+      "value": 10
+    },
+    {
+      "name": "app.quarantinePeriod",
+      "value": 7
+    },
+    {
+      "name": "app.randomStatusHour",
+      "value": 0.1
+    },
+    {
+      "name": "app.checkStatusFrequency",
+      "value": 12
+    },
+    {
+      "name": "app.minStatusRetryDuration",
+      "value": 3
+    },
+    {
+      "name": "app.appAvailability",
+      "value": true
+    },
+    {
+      "name": "app.minHourContactNotif",
+      "value": 7
+    },
+    {
+      "name": "app.maxHourContactNotif",
+      "value": 19
+    },
+    {
+      "name": "app.allowNoAdvertisingDevice",
+      "value": true
+    },
+    {
+      "name": "app.unsupportedDevices",
+      "value": []
+    },
+    {
+      "name": "app.displayCertificateConversion",
+      "value": true
+    },
+    {
+      "name": "app.certificateConversionUrl",
+      "value": "https://portail.tacv.myservices-ingroupe.com/api/client/convertor/decode/decodeDocument"
+    },
+    {
+      "name": "app.wallet.vaccin.daysAfterCompletion",
+      "value": [
+        {
+          "code": "DEFAULT",
+          "value": 7
+        },
+        {
+          "code": "EU/1/20/1525",
+          "value": 28
+        }
+      ]
+    },
+    {
+      "name": "app.wallet.vaccin.noWaitPeriod",
+      "value": [
+        {
+          "code": "DEFAULT",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "name": "app.wallet.confettiBirthRate",
+      "value": 150
+    },
+    {
+      "name": "app.wallet.certificateConversionSidepOnlyCode",
+      "value": [
+        "945584"
+      ]
+    },
+    {
+      "name": "app.wallet.conversionPublicKey",
+      "value": {
+        "prd01": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEo+LqBOIH0gXjHCVLIhY9zSpMdSvl7XqRZMquLtFlNROg895C3l2sv/gN8nVluqUtzZT3uTtblzY5jJCMgsbo7w=="
+      }
+    },
+    {
+      "name": "app.wallet.conversionApiVersion",
+      "value": 2
+    },
+    {
+      "name": "ble.serviceUUID",
+      "value": "0000fd64-0000-1000-8000-00805f9b34fb"
+    },
+    {
+      "name": "ble.characteristicUUID",
+      "value": "a8f12d00-ee67-478b-b95f-65d599407756"
+    },
+    {
+      "name": "ble.backgroundServiceManufacturerData",
+      "value": "1.0.0.0.0.0.0.0.0.0.0.8.0.0.0.0.0"
+    },
+    {
+      "name": "ble.filterConfig",
+      "value": "{\"a\":4.3429448190325175,\"b\":0.1,\"deltas\":[39.0,27.0,23.0,21.0,20.0,19.0,18.0,17.0,16.0,15.0],\"durationThreshold\":90,\"p0\":-66.0,\"rssiThreshold\":-25,\"timeOverlap\":60,\"timeWindow\":120,\"riskThreshold\":0.1}"
+    },
+    {
+      "name": "ble.filterMode",
+      "value": "RISKS"
+    },
+    {
+      "name": "ble.scanReportDelay",
+      "value": 5
+    },
+    {
+      "name": "ble.dontUseScannerHardwareBatching",
+      "value": [
+        "G3121",
+        "E5603",
+        "SM-G981B",
+        "CDY-NX9A",
+        "SM-J530F",
+        "SM-G770F",
+        "SM-G780F",
+        "SM-G781B",
+        "SM-G960F",
+        "SM-G965F",
+        "SM-G970F",
+        "SM-G973F",
+        "SM-G975F",
+        "SM-G977B",
+        "SM-G980F",
+        "SM-G981B",
+        "SM-G985F",
+        "SM-G986B",
+        "SM-G988B",
+        "SM-G991B",
+        "SM-G996B",
+        "SM-G998B",
+        "SM-N770F",
+        "SM-N970F",
+        "SM-N975F",
+        "SM-N976B",
+        "SM-N980F",
+        "SM-N981B",
+        "SM-N985F",
+        "SM-N986B",
+        "SM-F700F",
+        "SM-F707B",
+        "SM-F900F",
+        "SM-F916B",
+        "SM-A025G",
+        "SM-A125F",
+        "SM-A326B",
+        "SM-A415F",
+        "SM-A415FN",
+        "SM-A505FN",
+        "SM-A525F",
+        "SM-A526B",
+        "SM-A715F",
+        "SM-A805F",
+        "SM-M115F",
+        "SM-M315F",
+        "SM-M317F",
+        "SM-M515F",
+        "SM-A202F",
+        "SM-A207F",
+        "SM-G715FN",
+        "SM-J730F",
+        "SM-A515F",
+        "SM-J600FN"
+      ]
+    },
+    {
+      "name": "ble.calibration",
+      "value": [
+        {
+          "device_handset_model": "DEFAULT",
+          "rx_RSS_correction_factor": -5,
+          "tx_RSS_correction_factor": -30
+        },
+        {
+          "device_handset_model": "iPad",
+          "rx_RSS_correction_factor": -5,
+          "tx_RSS_correction_factor": -10
+        },
+        {
+          "device_handset_model": "iPhone",
+          "rx_RSS_correction_factor": -5,
+          "tx_RSS_correction_factor": -10
+        },
+        {
+          "device_handset_model": "iPhone8,4",
+          "rx_RSS_correction_factor": -5,
+          "tx_RSS_correction_factor": -10
+        },
+        {
+          "device_handset_model": "iPhone9,2",
+          "rx_RSS_correction_factor": -5,
+          "tx_RSS_correction_factor": -15
+        },
+        {
+          "device_handset_model": "iPhone9,4",
+          "rx_RSS_correction_factor": -5,
+          "tx_RSS_correction_factor": -15
+        },
+        {
+          "device_handset_model": "iPhone10,1",
+          "rx_RSS_correction_factor": -15,
+          "tx_RSS_correction_factor": -15
+        },
+        {
+          "device_handset_model": "iPhone10,2",
+          "rx_RSS_correction_factor": -5,
+          "tx_RSS_correction_factor": -15
+        },
+        {
+          "device_handset_model": "iPhone10,3",
+          "rx_RSS_correction_factor": -15,
+          "tx_RSS_correction_factor": -20
+        },
+        {
+          "device_handset_model": "iPhone10,4",
+          "rx_RSS_correction_factor": -15,
+          "tx_RSS_correction_factor": -15
+        },
+        {
+          "device_handset_model": "iPhone10,5",
+          "rx_RSS_correction_factor": -5,
+          "tx_RSS_correction_factor": -15
+        },
+        {
+          "device_handset_model": "iPhone10,6",
+          "rx_RSS_correction_factor": -15,
+          "tx_RSS_correction_factor": -20
+        },
+        {
+          "device_handset_model": "iPhone11,2",
+          "rx_RSS_correction_factor": -5,
+          "tx_RSS_correction_factor": -10
+        },
+        {
+          "device_handset_model": "iPhone11,4",
+          "rx_RSS_correction_factor": -5,
+          "tx_RSS_correction_factor": -10
+        },
+        {
+          "device_handset_model": "iPhone11,6",
+          "rx_RSS_correction_factor": -5,
+          "tx_RSS_correction_factor": -10
+        },
+        {
+          "device_handset_model": "iPhone11,8",
+          "rx_RSS_correction_factor": -5,
+          "tx_RSS_correction_factor": -10
+        },
+        {
+          "device_handset_model": "iPhone12,1",
+          "rx_RSS_correction_factor": -5,
+          "tx_RSS_correction_factor": -10
+        },
+        {
+          "device_handset_model": "iPhone12,3",
+          "rx_RSS_correction_factor": -5,
+          "tx_RSS_correction_factor": -10
+        },
+        {
+          "device_handset_model": "iPhone12,5",
+          "rx_RSS_correction_factor": -5,
+          "tx_RSS_correction_factor": -10
+        },
+        {
+          "device_handset_model": "iPhone12,8",
+          "rx_RSS_correction_factor": -5,
+          "tx_RSS_correction_factor": -10
+        },
+        {
+          "device_handset_model": "iPhone5,3",
+          "rx_RSS_correction_factor": -5,
+          "tx_RSS_correction_factor": -10
+        },
+        {
+          "device_handset_model": "iPhone5,4",
+          "rx_RSS_correction_factor": -5,
+          "tx_RSS_correction_factor": -10
+        },
+        {
+          "device_handset_model": "iPhone6,1",
+          "rx_RSS_correction_factor": -5,
+          "tx_RSS_correction_factor": -10
+        },
+        {
+          "device_handset_model": "iPhone6,2",
+          "rx_RSS_correction_factor": -5,
+          "tx_RSS_correction_factor": -10
+        },
+        {
+          "device_handset_model": "iPhone7,1",
+          "rx_RSS_correction_factor": -5,
+          "tx_RSS_correction_factor": -10
+        },
+        {
+          "device_handset_model": "iPhone7,2",
+          "rx_RSS_correction_factor": -5,
+          "tx_RSS_correction_factor": -15
+        },
+        {
+          "device_handset_model": "iPhone8,1",
+          "rx_RSS_correction_factor": -5,
+          "tx_RSS_correction_factor": -10
+        },
+        {
+          "device_handset_model": "iPhone8,2",
+          "rx_RSS_correction_factor": -5,
+          "tx_RSS_correction_factor": -10
+        },
+        {
+          "device_handset_model": "iPhone9,1",
+          "rx_RSS_correction_factor": -5,
+          "tx_RSS_correction_factor": -10
+        },
+        {
+          "device_handset_model": "iPhone9,3",
+          "rx_RSS_correction_factor": -5,
+          "tx_RSS_correction_factor": -10
+        },
+        {
+          "device_handset_model": "iPhone9,4",
+          "rx_RSS_correction_factor": -5,
+          "tx_RSS_correction_factor": -15
+        }
+      ]
+    }
+  ]
 }
