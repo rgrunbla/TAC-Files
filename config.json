@@ -121,12 +121,16 @@
       "value": false
     },
     {
-      "name": "app.activityPassSkipNegTestHours",
+      "name": "app.activityPass.skipNegTestHours",
       "value": 48
     },
     {
-      "name": "app.activityPassGenerationServerPublicKey",
+      "name": "app.activityPass.generationServerPublicKey",
       "value": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEj8aIK85UfgBFNmb8Iz4cSdRYzZaRCLlTiKmD9LYig7nYXYQFwuT8OddIFuFze9HgcvjSH8ClCauXkrutUGEoZg=="
+    },
+    {
+      "name": "app.activityPass.renewThreshold",
+      "value": 3
     },
     {
       "name": "app.wallet.maxCertBeforeWarning",
