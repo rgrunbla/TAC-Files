@@ -8605,6 +8605,57 @@ Certificate:
 Certificate:
     Data:
         Version: 3 (0x2)
+        Serial Number:
+            1d:00:00:00:07:45:87:0b:c0:80:cb:34:d4:00:00:00:00:00:07
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = IL, DC = IL, DC = GOV, DC = HEALTH, DC = MOH, ST = Israel, L = Jerusalem, O = Ministry of Health, OU = Digital Health, CN = CSCA-Health-DCG-IL-01
+        Validity
+            Not Before: Sep  5 07:16:00 2021 GMT
+            Not After : Sep  5 07:16:00 2023 GMT
+        Subject: C = IL, ST = Israel, L = Jerusalem, O = Ministry of Health, OU = Digital Health, CN = IL-NB-DSC-01
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:73:0f:94:65:49:eb:c8:fe:2b:a9:2c:3e:6b:cc:
+                    50:c3:8c:0b:1d:99:1c:bb:83:03:8c:93:fb:41:e0:
+                    54:12:90:ed:f3:18:78:8b:84:52:20:11:09:ac:19:
+                    00:ba:44:92:a1:b4:43:93:03:1b:d1:d4:82:b1:6c:
+                    0a:d2:b7:cc:81
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            1.3.6.1.4.1.311.21.7: 
+                0/.'+.....7.....J...l...:...V...c.....a......d...
+            X509v3 Extended Key Usage: 
+                Code Signing, 1.3.6.1.4.1.1847.2021.1.3, 1.3.6.1.4.1.1847.2021.1.1, 1.3.6.1.4.1.1847.2021.1.2
+            X509v3 Key Usage: critical
+                Digital Signature
+            1.3.6.1.4.1.311.21.10: 
+                090
+..+.......0..+.....7.e..0..+.....7.e..0..+.....7.e..
+            X509v3 Subject Key Identifier: 
+                C1:3E:61:1C:81:92:62:82:B1:25:E6:0A:5D:ED:AB:49:CF:6F:40:24
+            X509v3 Authority Key Identifier: 
+                keyid:05:BF:5D:AD:DB:E8:FA:34:CC:6D:66:57:D8:15:86:5B:13:D3:DE:EC
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://cdp.health.gov.il/crl/CSCA-Health-DCG-IL-01.crl
+
+            Authority Information Access: 
+                CA Issuers - URI:http://pki.health.gov.il/pki/CSCA-Health-DCG-IL-01.crt
+
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:96:8e:3b:f2:1a:8c:c7:e0:63:21:97:a7:7c:
+         d6:ce:4f:a2:50:0e:01:75:e2:a4:0b:e7:9c:fe:91:88:b1:ad:
+         e1:02:20:69:b4:93:19:8b:dd:36:97:a9:4c:47:50:ef:e1:7c:
+         28:c7:62:05:94:ad:50:9d:6e:b7:02:6a:54:dd:4e:bf:f3
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
         Serial Number: 6371152716399480010 (0x586ae1a3c6c18cca)
         Signature Algorithm: ecdsa-with-SHA256
         Issuer: C = MT, O = Government of Malta, CN = Malta DCC Signing CA
