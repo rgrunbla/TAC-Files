@@ -304,11 +304,12 @@
   "specificValues": {
     "blacklist": {
       "blacklist2DDOC": [
+        "dac376c09c5786a749c05cf5c8228a9297fa536cfe1b03ec6126fae6c28dcc04",
         "b3c08d702e1a580db02ab3cffdf4177e32f634bc40a3dc8423dadf99c1db74d6",
-        "7459877044d92cea191246d36b84de1c357dc583d7b499be16eb291a4eb317f1",
-        "dac376c09c5786a749c05cf5c8228a9297fa536cfe1b03ec6126fae6c28dcc04"
+        "7459877044d92cea191246d36b84de1c357dc583d7b499be16eb291a4eb317f1"
       ],
       "blacklistDCC": [
+        "1c5e43ef270a095db057daf058a7aea88eb35734389a848dd361ab9d75b47708",
         "afe98db8c94a83ec77e973acc7be55a994f3c160be27ce233e52e69760970b5c",
         "64027d2f1d6fdb211422398d3c01dacf5c3a60e41b9a2658cfb256a144eea8cd",
         "442144ef4acf47d71a469e04e10d58081dbdde67fb2ef4f94c6d0f02407d89bf",
@@ -318,8 +319,7 @@
         "7c719083052144206256f36ff90cfd2781e57da74123cb733bd154d2ddb294c2",
         "7d465e9fbd7fd0b8e7bb1f59507648817cbff0d1459d1bf4dfdb83782fa5bab2",
         "cd7cbbaaba00f2c5ebf21b6d0aad5b0d7e517e0ed3edf41c20203101af4cccf7",
-        "31127784d6487168f1dbacb6fadf93e3a3899681ca58e778f200348f400ac655",
-        "1c5e43ef270a095db057daf058a7aea88eb35734389a848dd361ab9d75b47708"
+        "31127784d6487168f1dbacb6fadf93e3a3899681ca58e778f200348f400ac655"
       ],
       "duplicateActivate": false,
       "duplicateRetentionPeriod": 5,
