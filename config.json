@@ -2,11 +2,11 @@
   "config": [
     {
       "name": "lastUpdate",
-      "value": "3 Sep 2021"
+      "value": "1 Oct 2021"
     },
     {
       "name": "version",
-      "value": 88
+      "value": 89
     },
     {
       "name": "versionCalibrationBle",
@@ -53,6 +53,10 @@
     {
       "name": "app.keyfigures.displayDepartmentLevel",
       "value": true
+    },
+    {
+      "name": "app.displayUrgentDgs",
+      "value": false
     },
     {
       "name": "app.displayIsolation",
