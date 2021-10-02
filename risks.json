@@ -20,6 +20,15 @@
         "section": "risk0.section1.title"
       },
       {
+        "description": "isolation.recommendation.initialCaseSafe.body",
+        "link": {
+          "action": "mcc.isolation.url",
+          "label": "isolation.recommendation.initialCaseAtRiskOrSick.title",
+          "type": "web"
+        },
+        "section": "isolation.recommendation.initialCaseSafe.title"
+      },
+      {
         "description": "risk.section.measures.body",
         "link": {
           "action": "GESTURES",
@@ -72,6 +81,15 @@
         "section": "risk2.section1.title"
       },
       {
+        "description": "isolation.recommendation.initialCaseSafe.body",
+        "link": {
+          "action": "mcc.isolation.url",
+          "label": "isolation.recommendation.initialCaseAtRiskOrSick.title",
+          "type": "web"
+        },
+        "section": "isolation.recommendation.initialCaseSafe.title"
+      },
+      {
         "description": "risk.section.test.body",
         "link": {
           "action": "risk.section.test.url",
@@ -121,6 +139,15 @@
       {
         "description": "risk3.section1.body",
         "section": "risk3.section1.title"
+      },
+      {
+        "description": "isolation.recommendation.initialCaseSafe.body",
+        "link": {
+          "action": "mcc.isolation.url",
+          "label": "isolation.recommendation.initialCaseAtRiskOrSick.title",
+          "type": "web"
+        },
+        "section": "isolation.recommendation.initialCaseSafe.title"
       },
       {
         "description": "risk.section.isolate.body",
@@ -177,6 +204,15 @@
       {
         "description": "risk4.section1.body",
         "section": "risk4.section1.title"
+      },
+      {
+        "description": "isolation.recommendation.initialCaseSafe.body",
+        "link": {
+          "action": "mcc.isolation.url",
+          "label": "isolation.recommendation.initialCaseAtRiskOrSick.title",
+          "type": "web"
+        },
+        "section": "isolation.recommendation.initialCaseSafe.title"
       },
       {
         "description": "risk.section.isolate.body",
