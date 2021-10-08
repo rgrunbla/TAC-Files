@@ -121,6 +121,15 @@
       ]
     },
     {
+      "name": "app.notif",
+      "value": {
+        "s": "notif.subtitle",
+        "t": "notif.title",
+        "u": "notif.url",
+        "v": 42
+      }
+    },
+    {
       "name": "app.displayActivityPass",
       "value": false
     },
