@@ -6923,42 +6923,6 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
-            42:1f:4d:bc:5f:cd:ed:82:f2:c0:f4:2e:da:13:03:1f:b7:62:24:3b
-        Signature Algorithm: ecdsa-with-SHA256
-        Issuer: C = FR, ST = Some-State, O = Inria
-        Validity
-            Not Before: Sep 17 08:47:41 2021 GMT
-            Not After : Sep 17 08:47:41 2022 GMT
-        Subject: C = FR, ST = Some-State, O = Inria
-        Subject Public Key Info:
-            Public Key Algorithm: id-ecPublicKey
-                Public-Key: (256 bit)
-                pub:
-                    04:50:e5:c6:fa:f3:1b:ce:9c:e4:77:4a:e6:a4:8f:
-                    1e:ad:80:a1:c1:35:92:3d:c9:c0:12:8f:77:06:21:
-                    f6:f2:10:10:f9:6c:ae:86:60:a5:59:2e:aa:e8:53:
-                    39:b7:d0:cc:f7:b3:3e:9e:30:90:6a:aa:e2:05:0d:
-                    e4:b4:7d:1e:54
-                ASN1 OID: prime256v1
-                NIST CURVE: P-256
-        X509v3 extensions:
-            X509v3 Subject Key Identifier: 
-                94:D7:BB:C4:BB:A2:7D:EB:08:A0:90:33:85:FC:AC:52:5B:87:37:DB
-            X509v3 Authority Key Identifier: 
-                keyid:94:D7:BB:C4:BB:A2:7D:EB:08:A0:90:33:85:FC:AC:52:5B:87:37:DB
-
-            X509v3 Basic Constraints: critical
-                CA:TRUE
-    Signature Algorithm: ecdsa-with-SHA256
-         30:45:02:20:4b:97:a1:19:26:5a:c7:23:a2:59:de:50:14:9a:
-         c4:89:b6:15:13:18:d5:c7:3a:ed:81:0d:60:38:5d:29:4c:9d:
-         02:21:00:a7:1e:77:f4:a6:97:84:85:7e:4a:8e:13:01:f2:b2:
-         b3:cd:1f:d7:76:ee:65:53:e2:6b:ac:5f:ad:2d:92:fb:10
-
-Certificate:
-    Data:
-        Version: 3 (0x2)
-        Serial Number:
             68:10:72:ed:77:81:d6:bb:d9:91:95:1a:31:89:45:0f
         Signature Algorithm: rsassaPss         
          Hash Algorithm: sha512
