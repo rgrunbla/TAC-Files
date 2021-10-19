@@ -764,6 +764,53 @@ Certificate:
 Certificate:
     Data:
         Version: 3 (0x2)
+        Serial Number: 1632739199 (0x61519f7f)
+        Signature Algorithm: ecdsa-with-SHA512
+        Issuer: C = GB, O = NHS Scotland, ST = Scotland, CN = Scotland DCC CSCA
+        Validity
+            Not Before: Sep 29 17:05:05 2021 GMT
+            Not After : Sep 29 17:35:05 2023 GMT
+        Subject: C = GB, O = NHS Scotland, ST = Scotland, CN = DSC_PRD_GB_NSS_01
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:af:d6:e3:d7:ad:e4:28:d0:4b:97:96:f1:5a:16:
+                    41:97:22:6f:de:91:da:d9:03:1b:db:83:80:75:76:
+                    70:24:de:b1:c7:60:91:d3:75:46:e0:38:50:99:df:
+                    70:cd:5b:8f:9b:0d:7a:e3:e4:fb:fe:c0:e6:a1:13:
+                    4e:87:84:1b:41
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 Issuer Alternative Name: 
+                email:pki@nhsx.nhs.uk, DNS:https://www.nhsx.nhs.uk/key-tools-and-info/public-key-infrastructures/csca, DirName:/L=GBR
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://pki.nhsx.nhs.uk/CRL/SCO_CSCA.crl
+                  URI:http://covid-status.service.nhsx.nhs.uk/CRL/SCO_CSCA.crl
+
+            X509v3 Private Key Usage Period: 
+                Not Before: Sep 29 17:05:05 2021 GMT, Not After: Mar 31 05:35:05 2022 GMT
+            X509v3 Authority Key Identifier: 
+                keyid:A6:4C:87:8A:F6:93:64:73:43:F7:CC:7E:2D:3A:7C:DE:65:FE:D5:E7
+
+            X509v3 Subject Key Identifier: 
+                97:6C:0D:F3:68:AB:82:E9:76:92:9B:A0:3D:65:D5:03:BA:BE:89:90
+    Signature Algorithm: ecdsa-with-SHA512
+         30:46:02:21:00:a4:d8:0d:cd:0d:af:c6:11:e0:26:2e:4d:07:
+         d2:bc:ab:49:74:7c:5c:4d:6b:6a:6a:98:49:7f:7f:0c:22:7d:
+         5b:02:21:00:d0:e0:35:fb:92:84:12:71:53:1c:9d:92:04:2d:
+         43:56:77:e3:c7:5f:a4:bc:9e:ec:3b:22:a3:8e:43:41:a4:f9
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
         Serial Number:
             50:8a:92:90:c6:ef:fb:4c:9b:c8:52:c1:e8:dc:e5:86
         Signature Algorithm: rsassaPss         
