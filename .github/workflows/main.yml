@@ -26,9 +26,9 @@ jobs:
           token: ${{ secrets.TOKEN }}
         run: "curl -s https://portail.tacv.myservices-ingroupe.com/api/client/configuration/synchronisation/tacv -H \"Authorization: Bearer ${token}\" | jq --sort-keys '. | del(.currentDate)' &> TAC-V_conf.json"
       - name: Pretty print TAC-V blacklist (qrcodes)
-        run: "cat TAC-V_conf.json | jq '. | .specificValues.blacklist.blacklistDCC' &> blacklist_qrcode_tacv.json"
+        run: "cat TAC-V_conf.json | jq '. | .specificValues.blacklist.blacklistDCC' |  jq '.' &> blacklist_qrcode_tacv.json"
       - name: Pretty print TAC-V blacklist (2d-doc)
-        run: "cat TAC-V_conf.json | jq '. | .specificValues.blacklist.blacklist2DDOC' &> blacklist_2ddoc_tacv.json"
+        run: "cat TAC-V_conf.json | jq '. | .specificValues.blacklist.blacklist2DDOC' | jq '.' &> blacklist_2ddoc_tacv.json"
       - name: Pretty print the DCC certificates
         run: "./decode_x509.py TAC-V_conf.json &> certificates.txt"
       - uses: stefanzweifel/git-auto-commit-action@v4
