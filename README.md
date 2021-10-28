@@ -8,3 +8,14 @@ Ce dépôt contient des fichiers relatifs à l'application Tous Anti Covid (TAC)
 - La liste des autorités de certifications reconnues par TAC-V dans `certificates.txt`, extraite de la config TAC-V présente dans `TAC-V_conf.json`.
 
 Ces fichiers sont téléchargés toutes les 15 minutes en utilisant l'intégration continue fournie par GitHub.
+
+# Hash computation
+
+## QRCodes
+
+```
+# hash = sha256( certificate_country + certificate_identifier)
+# For example :
+echo -n 'FRURN:UVCI:01:FR:T5DWTJYS4ZR8#4' | sha256sum
+643d26b5d632c0f35078ad379f65cc86e6995332a5a8670a144c5473fb2653b9
+```
