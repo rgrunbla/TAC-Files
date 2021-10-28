@@ -14,9 +14,9 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
       - name: Download 2DDoc blacklist
-        run: "wget -O blacklist_2ddoc.json https://app-static.tousanticovid.gouv.fr/json/version-${API_VERSION}/CertList/2ddoc_list.json"
+        run: "curl https://app-static.tousanticovid.gouv.fr/json/version-${API_VERSION}/CertList/2ddoc_list.json | jq '.' &> blacklits_2ddoc.json"
       - name: Download QRCode blacklist
-        run: "wget -O blacklist_qrcode.json https://app-static.tousanticovid.gouv.fr/json/version-${API_VERSION}/CertList/certlist.json"
+        run: "curl https://app-static.tousanticovid.gouv.fr/json/version-${API_VERSION}/CertList/certlist.json | jq '.' &> blacklist_qrcode.json"
       - name: Download various files
         env:
           FILES:  Calibration/calibrationBle.json Config/config.json Certs/dcc-certs.json Risks/risks.json
