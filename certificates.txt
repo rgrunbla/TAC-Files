@@ -14186,6 +14186,67 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            43:01:52:94:82:73:89:4f:cc:f3:76:72
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = AL, O = NAIS, CN = NAIS Class 3 Certification Authority
+        Validity
+            Not Before: Oct 20 12:00:14 2021 GMT
+            Not After : Oct 20 12:00:14 2022 GMT
+        Subject: C = AL, O = Ministria e Shendetesise dhe Mbrojtjes Sociale, OU = Production, CN = Ministria e Shendetesise dhe Mbrojtjes Sociale
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:93:28:ba:b1:ff:24:f3:f9:24:d8:a8:d3:04:d8:
+                    88:54:5a:67:21:e6:5c:8f:8a:14:5f:05:7c:92:4e:
+                    43:e8:1c:92:74:85:31:f6:34:83:e4:1b:92:89:4c:
+                    97:2a:62:20:84:a1:cf:be:98:a8:f4:ce:e7:62:49:
+                    59:09:db:ab:d3
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            Authority Information Access: 
+                OCSP - URI:http://ocsp.akshi.gov.al
+                CA Issuers - URI:http://certs.akshi.gov.al/class3.crt
+
+            X509v3 Key Usage: critical
+                Digital Signature, Non Repudiation
+            X509v3 Authority Key Identifier: 
+                keyid:87:26:A8:FB:DB:2B:51:9B:39:D0:98:D6:F4:C6:33:56:47:5C:D8:05
+
+            X509v3 Subject Key Identifier: 
+                63:D6:9D:4D:69:6C:FF:5A:2C:69:5F:C6:83:98:FF:F9:68:6C:40:F1
+            X509v3 Certificate Policies: 
+                Policy: 1.3.6.1.4.1.39148.10.1.1.3
+                  CPS: http://www.akshi.gov.al/repository
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl.akshi.gov.al/class3.crl
+                  URI:ldap://ldap.akshi.gov.al/CN=NAIS Class 3 Certification Authority,O=NAIS,C=AL?certificateRevocationList;binary
+
+    Signature Algorithm: sha256WithRSAEncryption
+         a6:f7:e3:37:46:5e:60:29:7a:38:7f:07:98:94:86:e1:47:0b:
+         f0:aa:d5:07:5b:aa:6b:f6:f4:38:f0:62:86:b7:8e:cd:53:74:
+         33:20:91:08:aa:94:63:e2:49:05:cd:92:d6:4f:0e:b2:c0:99:
+         b9:ca:27:b0:f2:dd:4d:6d:94:90:3c:4f:e6:81:6b:82:7c:c1:
+         37:84:e8:af:ed:c4:32:ad:9d:fd:34:d0:9e:1a:7e:f3:bd:a6:
+         d8:1e:06:72:4d:1b:44:c0:67:d0:dd:7d:31:b2:2b:76:28:b9:
+         8e:83:62:af:da:5c:1c:98:14:e4:8f:df:4d:37:a1:2f:dc:2d:
+         64:6a:0b:d6:8e:5c:51:4b:bd:4b:e8:58:30:83:f4:b8:d1:cf:
+         e8:d8:f1:42:1c:19:fa:5a:65:78:d0:94:b1:84:f8:a3:88:9c:
+         be:76:d6:dc:46:81:f3:82:81:22:60:9f:7b:32:2e:dd:0f:8c:
+         76:0c:16:98:6a:59:39:75:15:a2:25:fd:52:2c:96:ae:51:27:
+         cc:dc:e2:72:d5:e0:39:2b:9d:e7:12:7c:13:d6:54:7b:33:bc:
+         bb:55:0c:44:a6:3c:d9:78:b5:e4:a3:3a:14:c2:f6:a8:9e:ad:
+         79:30:bc:88:c8:d7:68:3c:61:55:94:83:02:fb:57:72:52:ca:
+         a8:8b:c0:ce
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             40:84:8a:1f:07:29:23:cc:82:0c:6a:4a:64:86:5a:b3
         Signature Algorithm: rsassaPss         
          Hash Algorithm: sha512
