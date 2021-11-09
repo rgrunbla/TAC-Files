@@ -1979,6 +1979,9 @@
       }
     },
     "notGreenCountries": [],
+    "ruleEngine": {
+      "messageOtModeFR": "Fonctionnalité en expérimentation. L’agent en charge du contrôle des preuves sanitaires  prend l’entière responsabilité de la bonne vérification et application  des règles sanitaires en vigueur"
+    },
     "testAntigenicList": {
       "945584": "94558-4 Antigénique COVID",
       "LP217198-3": "Rapid immunoassay"
