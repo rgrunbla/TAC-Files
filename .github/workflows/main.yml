@@ -28,15 +28,15 @@ jobs:
       - name: Download the countries from the TAC-V server
         env:
           token: ${{ secrets.TOKEN }}
-        run: "curl -s https://portail.tacv.myservices-ingroupe.com/api/client/configuration/synchronisation/countries/tacv -H \"Authorization: Bearer ${token}\" | jq --sort-keys '. | del(.currentDate)' &> TAC-V_countries.json"
+        run: "curl -s https://portail.tacv.myservices-ingroupe.com/api/client/configuration/countries/tacv -H \"Authorization: Bearer ${token}\" | jq --sort-keys '.' &> TAC-V_countries.json"
       - name: Download the valuesets from the TAC-V server
         env:
           token: ${{ secrets.TOKEN }}
-        run: "curl -s https://portail.tacv.myservices-ingroupe.com/api/client/configuration/synchronisation/valuesets/tacv -H \"Authorization: Bearer ${token}\" | jq --sort-keys '. | del(.currentDate)' &> TAC-V_valuesets.json"
+        run: "curl -s https://portail.tacv.myservices-ingroupe.com/api/client/configuration/valuesets/tacv -H \"Authorization: Bearer ${token}\" | jq --sort-keys '.' &> TAC-V_valuesets.json"
       - name: Download the rules from the TAC-V server
         env:
           token: ${{ secrets.TOKEN }}
-        run: "curl -s https://portail.tacv.myservices-ingroupe.com/api/client/configuration/synchronisation/rules/tacv -H \"Authorization: Bearer ${token}\" | jq --sort-keys '. | del(.currentDate)' &> TAC-V_rules.json"
+        run: "curl -s https://portail.tacv.myservices-ingroupe.com/api/client/configuration/rules/tacv -H \"Authorization: Bearer ${token}\" | jq --sort-keys '.' &> TAC-V_rules.json"
       - name: Pretty print TAC-V blacklist (qrcodes)
         run: "cat TAC-V_conf.json | jq '. | .specificValues.blacklist.blacklistDCC' |  jq '.' &> blacklist_qrcode_tacv.json"
       - name: Pretty print TAC-V blacklist (2d-doc)
