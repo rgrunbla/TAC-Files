@@ -2,6 +2,80 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            7a:d1:ae:90:70:c1:82:9a:a9:4f:cd:9e:5c:10:59:c2:45:aa:94:21
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = FR, O = Gouv, CN = CSCA-FRANCE
+        Validity
+            Not Before: Mar  9 23:00:00 2022 GMT
+            Not After : Mar  9 23:00:00 2024 GMT
+        Subject: C = FR, O = APHP, OU = 26750045200011, CN = DSC_FR_007
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:5c:91:88:21:91:d9:38:74:52:57:70:9d:5d:4a:
+                    46:a5:9f:7a:eb:40:41:fb:5e:5f:90:98:0e:f1:19:
+                    3c:1f:e4:e5:a9:e4:98:bc:12:1f:79:12:be:85:5a:
+                    5c:f4:6c:d4:70:58:8a:88:f5:34:8d:b5:d9:d2:ba:
+                    2b:a8:dc:b1:7e
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                F7:25:37:FF:5B:B5:E3:E6:FC:2E:95:06:E5:B7:36:7F:BA:C2:5C:9B
+            X509v3 Authority Key Identifier: 
+                keyid:BE:8A:2E:D6:C9:F9:20:4E:3A:27:03:08:97:4D:EC:FD:D9:7D:C5:E6
+
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://ants.gouv.fr/csca_crl
+
+            X509v3 Certificate Policies: 
+                Policy: 1.2.250.1.200.31.3.9.1.1
+
+            Authority Information Access: 
+                CA Issuers - URI:https://ant.gouv.fr/csca
+
+    Signature Algorithm: sha256WithRSAEncryption
+         0f:3b:4f:83:6d:0e:73:22:41:5b:10:22:0d:f9:21:a8:1f:b9:
+         bf:d6:3e:87:80:31:40:cd:ee:20:a3:52:1d:7f:95:37:9f:cb:
+         9a:df:01:70:7f:d4:e3:da:49:c6:8a:04:87:4a:40:60:14:ae:
+         d4:28:89:64:17:3e:1a:a2:d9:63:a7:8f:d9:53:88:8a:1a:e4:
+         e7:d2:8a:3a:5d:3e:de:12:2f:ca:42:53:47:64:79:31:b5:23:
+         bd:4d:00:91:1f:0d:0a:8a:05:c6:e6:90:3c:72:a4:96:70:2f:
+         5c:a1:8a:f9:ef:ee:2d:f3:61:7a:ed:63:47:a2:2d:b1:ea:c7:
+         8d:fa:c8:08:67:16:62:2e:e0:4d:32:3a:22:6f:09:d3:e6:57:
+         89:28:b0:30:0a:56:0e:b4:2a:68:15:2c:c0:65:fe:dc:4d:e6:
+         55:98:2c:a6:1d:aa:1e:1f:1e:7a:7e:d3:9d:5c:15:28:32:30:
+         53:30:54:50:10:fe:7d:f2:56:ae:53:65:b5:15:93:b0:b9:c6:
+         ce:48:8b:24:de:5a:40:86:11:be:6a:4c:c4:24:97:41:aa:8e:
+         e7:4b:b5:eb:15:19:71:8a:7b:d5:ee:c8:62:6b:dd:11:90:60:
+         5d:c8:d2:28:e3:35:3c:82:58:22:0d:22:2f:65:04:1b:bc:eb:
+         85:70:c6:4f:c7:10:0d:75:a0:f9:50:c2:c4:5d:bd:1c:5b:5c:
+         a9:19:6f:ab:f6:cf:db:53:04:60:85:04:f8:bc:33:47:a3:2e:
+         d6:a8:14:8f:83:26:ee:25:3f:96:6d:b1:a7:cd:e2:ad:41:e4:
+         a7:25:4d:2c:04:21:bb:29:3e:26:65:bb:16:34:66:38:9b:4d:
+         89:0b:83:19:cf:f0:c3:e5:a4:71:f6:2c:f3:e5:bc:35:4e:6d:
+         54:eb:5c:84:f9:58:af:59:16:33:69:c5:96:81:33:ab:75:47:
+         19:c7:bc:c0:ad:5e:f1:df:c0:62:8a:1c:3f:77:25:1a:a6:cf:
+         07:c6:fa:0f:e8:c5:81:24:eb:c0:bf:96:8a:21:bc:af:04:ec:
+         5c:8e:1f:b7:a1:98:cc:bc:a9:3a:2f:e1:14:95:29:62:ef:a7:
+         34:4b:b8:02:12:33:77:48:c2:e0:3d:b8:11:db:bd:b1:62:8a:
+         26:35:96:1a:a5:82:b0:2a:af:5f:bb:eb:cb:e4:f8:28:59:61:
+         21:7d:00:ce:ec:16:06:7c:9a:f2:57:e3:75:23:8b:01:a0:ea:
+         a1:d5:ae:70:b2:9e:85:12:28:fe:be:2d:60:ac:d8:8d:a5:32:
+         97:aa:96:8d:e5:42:8e:2c:ad:e9:6f:e2:c5:38:f1:13:5e:6f:
+         64:a9:ea:48:f8:fc:95:74
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             04:31:c6:0c:fc:00:ee:46:29
         Signature Algorithm: ecdsa-with-SHA256
         Issuer: CN = EADTrust ECC 256 SubCA For Qualified Certificates 2019, O = "European Agency of Digital Trust, S.L.", C = ES, organizationIdentifier = VATES-B85626240, OU = Legal Person
@@ -1179,6 +1253,80 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            32:12:48:06:b6:62:d8:50:14:84:b3:f0:37:b2:73:b2:db:e1:32:c5
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = FR, O = Gouv, CN = CSCA-FRANCE
+        Validity
+            Not Before: Dec  9 23:00:00 2021 GMT
+            Not After : Dec  9 23:00:00 2023 GMT
+        Subject: C = FR, O = APHP, OU = 26750045200011, CN = DSC_FR_006
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:fa:e6:ba:ab:e8:74:36:f5:35:ca:a7:62:b1:36:
+                    e2:ee:74:6a:bb:dc:69:5f:8a:81:49:4d:5b:a0:87:
+                    3a:3d:62:1b:63:81:0a:3d:34:90:97:14:fb:86:12:
+                    70:60:14:77:ec:f6:59:5f:c2:5d:38:18:75:66:a5:
+                    23:1b:d8:fc:ef
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                F9:E7:92:96:C6:16:01:18:4F:FE:E6:3F:7B:78:B2:0A:CB:A7:30:07
+            X509v3 Authority Key Identifier: 
+                keyid:BE:8A:2E:D6:C9:F9:20:4E:3A:27:03:08:97:4D:EC:FD:D9:7D:C5:E6
+
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://ants.gouv.fr/csca_crl
+
+            X509v3 Certificate Policies: 
+                Policy: 1.2.250.1.200.31.3.9.1.1
+
+            Authority Information Access: 
+                CA Issuers - URI:https://ant.gouv.fr/csca
+
+    Signature Algorithm: sha256WithRSAEncryption
+         9a:73:be:47:b5:5e:a0:44:11:b6:01:05:f3:d1:87:29:ac:94:
+         d9:01:95:be:55:93:87:87:e2:41:98:85:e4:04:45:33:8e:64:
+         6d:b1:37:b4:fd:2a:8e:86:ce:cc:e2:59:f9:5a:9a:ac:4f:a1:
+         13:fd:36:58:a0:64:d4:cb:aa:28:72:3a:b2:df:c3:2d:64:c5:
+         78:5b:db:06:49:27:51:fe:5b:5f:54:b9:20:ca:87:cf:ad:d3:
+         60:fd:7c:cd:18:41:7e:8d:9f:71:58:d0:90:a8:11:da:c4:1c:
+         d7:68:f8:54:6b:fa:7d:07:50:26:a1:fd:e4:b3:29:76:0a:17:
+         5c:3a:ee:f7:43:23:90:f6:a7:05:c4:1a:f4:53:50:c9:d8:ae:
+         99:0c:86:e2:31:db:bf:7f:bc:56:37:7e:79:1c:93:5f:18:56:
+         8a:8a:87:b9:c2:4a:d1:24:ec:62:bb:4b:1f:9f:5c:87:de:10:
+         92:e2:07:b9:88:9b:4b:be:ec:78:19:51:79:9b:4d:9b:45:8b:
+         48:7b:7d:be:16:b8:d0:02:0d:e9:1f:66:b2:c8:32:76:57:7f:
+         0f:e9:c2:22:f6:52:1d:a0:67:68:42:e0:3e:02:cf:26:f8:db:
+         25:e2:97:d7:99:e2:aa:69:21:74:82:b9:4f:56:58:53:87:d0:
+         56:eb:e3:7a:92:dc:9b:c3:5b:2b:81:f4:7e:4c:b2:af:4e:b4:
+         39:9e:f6:c4:5a:d0:e6:55:d7:61:34:66:ae:c1:20:75:60:70:
+         36:60:af:a7:ce:50:d2:f6:8f:34:f7:5b:ca:b8:51:52:08:25:
+         1e:35:6c:99:3c:7c:f0:e7:af:62:cf:10:32:f8:fb:b7:32:b5:
+         e2:ba:23:c8:49:f9:de:40:88:a4:97:71:28:56:8c:12:d6:fc:
+         96:a6:76:16:90:57:eb:52:98:13:db:7d:58:e0:82:2e:e7:0e:
+         ed:1d:e0:ff:89:e1:14:d2:da:bc:51:05:1a:98:cb:21:88:f1:
+         69:5c:9a:99:33:37:9a:c4:1a:9a:02:84:c3:45:89:8e:18:fa:
+         32:1a:22:8d:f7:d0:73:f3:70:45:72:1a:60:69:98:2d:31:01:
+         47:f9:7d:17:bc:4b:0b:af:d2:98:0c:3f:ac:bf:27:ee:65:92:
+         ea:98:83:c2:c6:ad:de:8c:5d:8e:d5:81:a8:7b:d1:df:1a:1f:
+         8b:5a:a9:70:ea:7e:2e:b2:a0:61:8b:1f:10:53:39:d4:4a:49:
+         10:c0:ce:0d:ac:20:db:41:43:92:c8:eb:4c:5c:6c:1b:2c:58:
+         86:9a:b9:60:e3:54:4c:88:9f:ad:c5:99:02:b5:29:ac:73:68:
+         87:ab:a6:07:9c:a3:54:d3
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             73:86:76:d6:c9:19:67:c5:f2:d3:b5:1b:18:ea:27:40:98:7f:de:e6
         Signature Algorithm: sha256WithRSAEncryption
         Issuer: C = FR, O = Gouv, CN = CSCA-FRANCE
@@ -1341,6 +1489,80 @@ Certificate:
          bc:85:7f:66:12:84:be:0b:d0:4a:2f:25:f7:0a:d8:f5:ce:93:
          2e:b3:01:36:b3:24:0c:45:89:cb:a6:bc:24:2b:eb:0f:df:6d:
          df:5b:6d:d5:3b:70:20:b7
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            68:64:60:f7:29:c4:96:28:4c:0f:4e:5c:91:77:3c:e1:65:4b:f1:fe
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = FR, O = Gouv, CN = CSCA-FRANCE
+        Validity
+            Not Before: Jan 11 23:00:00 2022 GMT
+            Not After : Jan 11 23:00:00 2024 GMT
+        Subject: C = FR, O = DGS, OU = 120036017, CN = DSCO_FR_0004
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:57:d6:70:ad:2b:0d:de:fa:f4:59:46:83:91:2e:
+                    14:cf:23:cb:cf:fd:b2:e2:19:bb:c8:49:c2:39:a0:
+                    22:76:b8:d9:95:59:48:8d:06:64:84:37:8d:2d:83:
+                    8b:29:c6:86:9c:40:50:c4:14:0d:a4:28:0b:4c:95:
+                    93:46:7a:29:3f
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                75:0C:D1:D6:2B:D3:EC:4F:22:A9:FB:9C:31:6A:5B:23:E6:DF:44:0B
+            X509v3 Authority Key Identifier: 
+                keyid:BE:8A:2E:D6:C9:F9:20:4E:3A:27:03:08:97:4D:EC:FD:D9:7D:C5:E6
+
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://ants.gouv.fr/csca_crl
+
+            X509v3 Certificate Policies: 
+                Policy: 1.2.250.1.200.31.3.9.1.1
+
+            Authority Information Access: 
+                CA Issuers - URI:https://ant.gouv.fr/csca
+
+    Signature Algorithm: sha256WithRSAEncryption
+         8c:4d:d3:a8:13:c1:fc:47:59:cc:01:43:0f:ad:3e:15:aa:36:
+         ff:dc:68:12:f3:33:c2:61:f8:3c:8e:41:6c:9a:9e:e9:28:69:
+         4f:b8:86:c4:26:e8:eb:b0:b3:bf:6d:09:d1:95:3e:70:d4:83:
+         0c:46:f3:13:37:60:63:a1:e4:2c:5b:85:bb:12:7f:38:a1:36:
+         6c:14:05:2d:85:ec:b8:01:ac:af:4f:5d:a3:0e:87:a1:17:e7:
+         e0:8c:78:c3:8c:58:f9:5c:f5:cf:ce:88:77:6a:aa:be:f2:58:
+         fb:fd:34:41:87:21:4a:ec:a1:89:3a:f8:f5:cd:99:4a:35:43:
+         cb:26:cd:6a:4b:cf:23:5d:b5:db:02:57:26:a0:7a:bf:70:ff:
+         98:40:d1:93:01:8f:b8:9d:64:50:2a:0d:55:81:56:d5:02:b4:
+         71:fa:42:a5:be:34:9d:d4:92:9f:af:aa:8f:bb:46:ea:55:ad:
+         77:5a:de:19:13:e9:ff:e2:72:73:b1:ca:01:fe:51:74:54:c3:
+         3a:8a:7a:78:bb:84:b0:c3:53:5c:5f:8d:df:24:83:5b:1a:ef:
+         35:51:a7:88:fc:75:e7:e6:be:ba:b6:b1:99:45:03:79:32:2c:
+         ac:83:4b:96:e4:ff:de:e0:7a:30:48:d9:6f:5e:7e:1a:39:a4:
+         ce:0a:cb:98:c3:b9:3f:f3:a0:0c:1b:7a:93:ee:bc:1e:9c:32:
+         8e:5e:bd:39:8c:8a:f4:28:a8:ef:64:f4:d0:2a:c1:ed:0e:bb:
+         b6:06:86:88:c0:1c:86:e7:2b:f4:a8:19:69:4a:3c:00:30:37:
+         30:fe:b5:22:15:83:b1:01:57:71:d6:08:c5:ac:52:ed:02:37:
+         bc:83:38:b8:da:b6:76:ee:a5:3d:dc:af:01:15:6b:d3:37:13:
+         a0:30:dd:cd:7b:28:ad:d8:a8:bc:97:25:63:92:02:24:7e:f1:
+         94:c4:db:dd:1a:b4:94:ff:e1:ef:a7:8e:3d:7e:7e:81:49:76:
+         20:1c:43:ec:86:f2:a8:8b:8c:60:d8:5f:1c:5b:4d:4e:81:f1:
+         71:f6:29:79:62:92:67:84:65:6d:6c:36:c6:9f:a6:0e:bb:8c:
+         6f:10:3c:f7:da:b9:91:ed:71:29:db:20:9c:24:dd:59:e2:e3:
+         52:10:72:8c:ad:91:cf:9b:e6:2c:69:1e:49:97:91:b1:60:0d:
+         1d:9a:17:91:b0:1f:9b:85:e9:0d:43:04:97:53:89:3d:d4:a4:
+         3b:23:d5:9a:86:46:b3:8a:76:3e:7c:38:02:c0:85:18:bf:7e:
+         26:d4:5d:52:64:25:cc:13:3f:25:c5:f7:97:53:dc:dd:8b:c4:
+         8b:84:b2:f6:f6:8a:5c:00
 
 Certificate:
     Data:
@@ -2283,6 +2505,80 @@ Certificate:
          f2:68:e8:9a:f5:35:e5:e5:a3:e4:46:a0:9a:c8:75:d4:4e:45:
          42:df:c8:c7:6f:89:49:4a:84:ff:25:ce:1d:51:84:14:0d:ca:
          2a:2b:81:24:4b:f0:3e:e8
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            18:85:75:d6:6e:81:e6:28:31:8a:18:e5:14:a4:64:c1:53:6c:38:02
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = FR, O = Gouv, CN = CSCA-FRANCE
+        Validity
+            Not Before: Mar  9 23:00:00 2022 GMT
+            Not After : Mar  9 23:00:00 2024 GMT
+        Subject: C = FR, O = APHP, OU = 26750045200011, CN = DSC_FR_008
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:15:ee:be:92:13:d7:1c:c5:cb:37:f8:0b:a5:62:
+                    62:f5:c9:8d:99:a9:59:27:f1:fd:2a:8e:6d:eb:e5:
+                    b5:17:a7:4f:69:46:27:4e:95:7f:47:20:81:c5:67:
+                    7d:be:98:23:48:a1:cb:0f:ae:85:8e:cc:4c:8e:9f:
+                    f7:43:c5:3e:90
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                1B:0A:6C:49:02:5A:48:28:64:5E:F0:D1:E2:B2:E8:BD:DD:17:C7:0C
+            X509v3 Authority Key Identifier: 
+                keyid:BE:8A:2E:D6:C9:F9:20:4E:3A:27:03:08:97:4D:EC:FD:D9:7D:C5:E6
+
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://ants.gouv.fr/csca_crl
+
+            X509v3 Certificate Policies: 
+                Policy: 1.2.250.1.200.31.3.9.1.1
+
+            Authority Information Access: 
+                CA Issuers - URI:https://ant.gouv.fr/csca
+
+    Signature Algorithm: sha256WithRSAEncryption
+         86:ba:72:4f:88:a9:8b:76:d5:e7:74:62:44:33:2e:db:52:78:
+         41:26:88:09:04:37:58:e1:0a:18:50:bf:5c:54:6c:01:55:e5:
+         73:47:2a:0a:87:52:c7:01:80:b5:38:bc:cf:6f:c9:32:3f:9d:
+         46:55:9b:d9:b5:b2:65:32:18:78:d3:1d:9b:0e:8c:80:fa:98:
+         9d:41:44:01:3e:cf:69:4a:e9:fc:ff:f7:af:cf:69:f6:4d:6b:
+         13:0d:9e:af:49:e3:60:74:4b:4b:66:c5:45:4a:75:4a:4c:b8:
+         23:a6:6e:08:24:34:b6:4f:fb:2b:dc:e9:46:64:c3:2b:ca:a7:
+         95:c7:c1:83:a7:15:72:b1:96:34:ad:16:7d:e7:79:8b:1c:74:
+         e1:e0:d5:62:d9:33:ab:d6:01:e8:80:a0:e9:2c:29:34:c8:84:
+         7c:69:cd:60:b5:d2:06:4b:13:6d:26:d5:1f:ea:07:e8:97:2f:
+         ac:2e:d4:51:f3:87:10:5a:a6:4d:88:5a:d8:93:1a:cf:3d:5e:
+         e6:28:3e:5c:bd:67:2a:62:5e:e8:ab:ff:f9:60:c5:07:23:d4:
+         68:8b:ff:4b:f5:fc:14:10:62:a1:fd:75:9e:e0:6a:d9:21:5e:
+         82:46:69:a3:19:8c:0d:fd:a2:a8:0e:b3:af:88:fc:e6:72:66:
+         34:ef:23:33:ba:4d:74:53:88:f9:40:61:c9:f4:1f:5e:3e:0b:
+         c6:91:13:29:de:64:7e:e6:1d:c6:d3:7c:eb:fc:fb:a2:22:19:
+         a2:b9:f8:5d:a2:60:0c:99:de:ad:97:41:bb:a0:09:7c:6b:86:
+         a9:ba:00:4d:e4:39:6e:27:8d:84:26:99:0a:f6:b1:c8:20:48:
+         be:db:e6:6f:90:d2:18:aa:ec:a8:61:c0:9a:9b:7f:c5:80:74:
+         2e:b9:e7:71:69:94:78:6f:7e:a6:e2:de:ec:63:6c:e6:5a:38:
+         e7:72:16:47:0a:fe:ba:16:02:44:55:82:16:26:6d:30:cf:f1:
+         e6:58:1b:fc:e3:b1:2b:52:e9:e8:28:b1:28:a5:8e:5c:1e:ba:
+         9f:ba:28:be:03:81:f3:3b:45:3d:fa:f6:19:c3:a0:c0:d9:1c:
+         2e:56:af:18:6b:95:5d:0e:56:d9:46:f6:b5:3a:ac:f3:0c:1e:
+         2b:5d:68:05:c0:f6:6e:97:07:ea:33:17:25:ad:11:de:8f:73:
+         3b:9b:8e:32:9c:d5:be:ed:fa:52:e3:80:03:17:2b:cb:37:a9:
+         38:71:2e:24:0d:0c:df:b8:bf:5b:45:c4:a2:47:df:94:a4:24:
+         06:0f:1b:4e:c7:a4:45:e7:f9:32:0b:00:5f:b2:15:e9:8a:79:
+         9a:c9:7a:d7:08:7e:28:34
 
 Certificate:
     Data:
@@ -8384,6 +8680,154 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            42:44:ad:dc:d1:0f:ed:e6:57:45:19:c0:54:60:34:ce:c9:31:f8:91
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = FR, O = Gouv, CN = CSCA-FRANCE
+        Validity
+            Not Before: Dec 21 23:00:00 2021 GMT
+            Not After : Dec 21 23:00:00 2023 GMT
+        Subject: C = FR, O = DGS, OU = 120036017, CN = DSCO_FR_0003
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:90:3b:45:46:e1:f9:e7:2d:22:f9:a8:0f:7f:9d:
+                    1d:b8:27:ca:6d:d4:25:a9:e6:56:94:d4:90:1a:23:
+                    42:98:74:36:bb:05:37:bb:3f:45:d7:f3:eb:cf:0c:
+                    08:f4:78:97:41:04:4d:88:77:52:0c:1a:5f:fe:20:
+                    64:15:1f:81:d4
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                4C:E6:F0:A4:1A:65:A1:F9:66:CB:FF:DD:E2:67:D4:87:70:51:49:ED
+            X509v3 Authority Key Identifier: 
+                keyid:BE:8A:2E:D6:C9:F9:20:4E:3A:27:03:08:97:4D:EC:FD:D9:7D:C5:E6
+
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://ants.gouv.fr/csca_crl
+
+            X509v3 Certificate Policies: 
+                Policy: 1.2.250.1.200.31.3.9.1.1
+
+            Authority Information Access: 
+                CA Issuers - URI:https://ant.gouv.fr/csca
+
+    Signature Algorithm: sha256WithRSAEncryption
+         70:58:3f:e2:74:d6:40:f7:48:e2:47:96:2e:55:c2:65:45:45:
+         80:4b:bf:bd:e6:24:e9:52:f1:27:51:3b:d2:16:b3:b2:8b:4d:
+         28:8c:00:cf:e2:cc:d6:29:f6:02:05:92:05:6c:35:ea:66:26:
+         6a:dc:70:ab:b9:8c:95:1a:11:98:64:8d:76:e1:be:19:c5:65:
+         0b:88:d1:cb:cc:72:cb:59:17:48:8d:20:53:76:be:e9:2b:da:
+         cb:08:29:e1:65:99:53:57:92:a8:d3:34:26:b0:be:9c:d5:d4:
+         82:ab:c2:9a:86:32:d8:5e:df:73:7a:ec:0b:64:be:62:d3:f9:
+         9f:02:7f:6f:74:d1:bf:0f:82:ae:24:66:3d:5d:51:e9:0c:b7:
+         3f:d1:c0:d9:df:f6:73:ae:dd:2a:f5:1f:4a:50:f3:8e:58:71:
+         4a:f4:d4:3b:05:b0:c1:72:0d:df:c4:12:62:37:38:60:47:ce:
+         fb:c4:00:0d:79:2a:4e:1f:c1:30:8b:63:b0:08:cb:d6:7f:70:
+         02:33:cb:6a:6f:94:ca:09:a4:f0:d0:17:5d:3f:24:85:74:20:
+         53:dd:fe:72:ed:36:2b:a5:53:77:9e:16:bc:d6:cd:7b:1a:c3:
+         b9:88:5c:b7:c3:69:ab:6d:62:63:fd:cd:cd:34:61:2b:e0:71:
+         4b:ce:25:ce:18:d1:91:77:5d:62:2b:3e:83:18:24:c3:45:26:
+         27:3e:02:35:5f:ea:e3:87:01:15:5b:e5:33:79:18:37:63:b6:
+         6c:f3:2f:b7:53:46:5f:b6:98:d4:57:a6:e3:a4:81:62:40:e3:
+         f4:bc:0d:53:e2:19:9f:0d:d3:36:d7:2e:5b:4b:02:7a:0a:5b:
+         58:fe:df:fb:0f:c5:7e:19:a6:0c:fe:91:26:3b:41:ad:81:ac:
+         0c:2f:8f:4d:e3:39:70:46:37:18:8c:3c:5b:f9:8a:52:c2:c2:
+         a4:90:b9:d0:3a:49:30:3a:56:53:ef:b8:ac:29:89:46:4e:67:
+         89:d5:48:c2:7c:71:1c:8a:99:a7:38:28:a6:fe:be:2f:ce:dc:
+         7b:06:19:b2:d8:03:75:a2:a9:1b:3d:a0:8d:c8:3b:8e:52:ed:
+         2d:24:1d:d2:cb:95:73:86:b1:0b:50:5b:16:d5:c5:1c:66:d5:
+         66:da:3a:ba:a4:fb:ec:71:08:82:a6:e0:fc:e2:c1:8f:41:80:
+         49:43:8b:ad:cb:1d:b3:ed:fb:39:2c:10:e0:aa:72:77:83:de:
+         f8:81:94:d2:e8:61:73:a9:bd:aa:7c:df:87:37:a0:bf:29:c7:
+         29:d2:c4:ba:76:51:7c:a0:8b:3f:04:52:36:4f:c9:52:d8:1c:
+         d2:19:c0:ab:df:df:2a:6c
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            12:7e:c4:63:7d:9b:21:02:3a:72:3a:fd:2e:cc:9d:68:14:64:60:b8
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = FR, O = Gouv, CN = CSCA-FRANCE
+        Validity
+            Not Before: Dec  9 23:00:00 2021 GMT
+            Not After : Dec  9 23:00:00 2023 GMT
+        Subject: C = FR, O = APHP, OU = 26750045200011, CN = DSC_FR_005
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:80:0f:d5:06:5c:21:dc:14:fa:2f:4d:be:68:19:
+                    1e:80:89:dc:e2:2d:0e:f9:da:6a:c5:39:d6:69:1e:
+                    25:16:d7:40:41:98:a1:f0:33:30:42:71:d3:13:e1:
+                    4c:62:1f:b7:10:b9:e8:fd:dd:e3:50:eb:6b:d8:a4:
+                    5f:32:2c:1c:83
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                9A:80:14:F7:15:7E:30:4B:73:6A:25:93:7C:80:72:7F:7A:AA:34:DC
+            X509v3 Authority Key Identifier: 
+                keyid:BE:8A:2E:D6:C9:F9:20:4E:3A:27:03:08:97:4D:EC:FD:D9:7D:C5:E6
+
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://ants.gouv.fr/csca_crl
+
+            X509v3 Certificate Policies: 
+                Policy: 1.2.250.1.200.31.3.9.1.1
+
+            Authority Information Access: 
+                CA Issuers - URI:https://ant.gouv.fr/csca
+
+    Signature Algorithm: sha256WithRSAEncryption
+         ba:1b:a1:43:e7:84:1a:0b:71:41:6d:0a:20:f1:ea:d7:bd:af:
+         63:a2:4c:e3:a5:4c:a7:5b:80:cf:2c:cc:96:43:13:92:d4:f9:
+         60:7d:e6:a4:1c:00:d1:11:5b:34:43:67:ab:2f:73:f5:f9:54:
+         71:4b:39:35:d5:1c:ec:b3:69:73:b4:a1:94:ea:bd:c6:d0:4b:
+         cb:59:e5:d3:f0:2e:85:8d:62:af:f8:48:fb:b7:38:ec:5a:8e:
+         3b:24:2e:5c:a9:f7:d8:39:c0:c9:5b:1f:ec:01:a0:4d:5b:f3:
+         ae:4e:21:b4:49:54:95:8c:8d:a9:dd:54:d2:3e:6b:82:d6:86:
+         50:10:ab:ed:a8:e9:02:80:3e:3f:30:29:71:99:58:a3:38:5d:
+         29:df:8e:31:87:f9:75:82:09:a8:a8:56:4f:ba:9c:86:fe:54:
+         78:23:1c:7a:d0:85:54:a1:ee:c7:60:b2:6b:8c:65:f7:5f:15:
+         95:6f:ed:c2:31:5a:88:05:49:99:35:a8:ef:c6:e0:e2:81:db:
+         4c:ab:d8:00:af:0c:a6:58:ae:a4:f7:2a:a6:96:ba:10:d3:95:
+         d6:b7:d8:08:f7:7b:8b:34:92:e7:66:61:eb:30:eb:d7:2d:af:
+         25:a7:a5:e0:c5:49:83:39:88:ef:16:12:16:08:28:75:3c:ef:
+         a7:c5:f6:f7:4e:5c:4a:6f:57:f5:13:40:26:ca:55:6d:da:cd:
+         fe:ff:b6:9f:d5:10:23:ef:4d:9f:e5:a1:2c:71:4b:4a:fb:73:
+         b0:01:ce:80:7d:4a:39:c7:51:ec:65:1f:4a:0a:6e:19:55:d1:
+         cb:c1:30:34:d5:45:9e:3c:63:12:9a:e5:13:b1:a2:54:1a:8d:
+         4f:63:eb:28:36:6d:ba:5d:c8:c5:bd:4d:92:30:7a:1d:4c:f6:
+         f9:32:3f:3b:82:10:32:88:c6:f2:6f:72:9d:36:77:89:a1:0e:
+         23:7d:7c:f6:ea:37:8d:df:2a:38:63:0f:9f:61:df:3c:d5:4b:
+         a4:0f:0a:ba:b0:6e:0f:a3:11:c7:58:6a:e4:2e:aa:19:a0:a6:
+         33:9d:e8:24:98:0c:8b:c1:91:36:67:89:65:1f:f2:50:f1:65:
+         8e:9b:ab:a8:d4:0a:a8:bd:7c:cc:a4:06:00:d7:9a:3a:3f:d3:
+         96:16:75:ef:f9:d6:fe:2f:6e:a7:68:b8:d6:9e:e3:98:b2:24:
+         ea:7e:b7:3c:95:c7:73:12:92:aa:29:d4:cc:31:f3:cb:9a:11:
+         dc:2f:70:c2:60:98:be:2b:7e:f7:02:f5:e3:e7:9b:f3:0a:45:
+         94:af:a8:0c:ef:8c:6d:b4:6b:6c:9e:6b:88:71:7b:1f:73:ab:
+         4b:c3:a4:16:94:9b:fa:2c
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             7e:f2:28:a9:8a:f8:a3:2f:c2:58:f1:47:3c:5a:15:81:38:00:3c:b5
         Signature Algorithm: ecdsa-with-SHA256
         Issuer: C = AM, L = Yerevan, O = Armed, OU = DGCOperations, CN = CSCA_DGC_AM_01
@@ -8952,6 +9396,80 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            24:56:0e:c5:02:f2:13:e2:a9:c1:8d:0e:34:e8:76:2b:79:04:c9:8c
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = FR, O = Gouv, CN = CSCA-FRANCE
+        Validity
+            Not Before: Nov  9 23:00:00 2021 GMT
+            Not After : Nov  9 23:00:00 2023 GMT
+        Subject: C = FR, O = DGS, OU = 120036017, CN = DSCO_FR_0001
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:a1:e8:77:0a:b3:66:df:98:1a:85:e5:4c:cd:ef:
+                    af:ec:be:43:2d:1b:c9:4b:2c:f6:ca:29:90:94:c3:
+                    d4:c0:d2:7d:e6:0f:f4:c0:8e:d5:75:89:ee:66:a0:
+                    0b:12:73:05:81:fd:8c:c4:1d:32:d7:83:ca:c0:34:
+                    dd:9a:c1:41:cf
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                AF:56:DD:D5:4C:5E:37:F2:43:8E:30:D8:43:57:17:B3:27:D9:22:0E
+            X509v3 Authority Key Identifier: 
+                keyid:BE:8A:2E:D6:C9:F9:20:4E:3A:27:03:08:97:4D:EC:FD:D9:7D:C5:E6
+
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://ants.gouv.fr/csca_crl
+
+            X509v3 Certificate Policies: 
+                Policy: 1.2.250.1.200.31.3.9.1.1
+
+            Authority Information Access: 
+                CA Issuers - URI:https://ant.gouv.fr/csca
+
+    Signature Algorithm: sha256WithRSAEncryption
+         5b:55:c5:10:af:a1:10:a0:2d:b8:87:c0:4f:e3:f2:87:71:b2:
+         04:f7:be:df:62:b0:06:4f:b6:47:c7:d3:f6:5d:fa:23:dd:7e:
+         c9:cf:c9:72:f6:bf:f4:ca:bb:8e:c8:05:79:b7:92:ea:c7:d5:
+         46:38:a2:fa:b4:37:6c:89:98:e9:12:4b:96:7e:cd:f9:41:08:
+         eb:5a:45:8f:d1:e2:ae:47:6c:af:57:0d:ee:74:d0:e4:c0:44:
+         89:76:c3:44:95:41:74:0f:69:0e:2c:2e:e8:96:e8:ac:99:12:
+         2e:6b:cd:ce:4b:f4:7c:a5:9b:91:ae:e5:a6:28:a3:33:3f:ad:
+         16:a7:a1:ee:42:80:9d:60:08:13:e4:93:05:bd:80:3a:8a:89:
+         cb:73:de:0d:fe:f7:68:0e:05:d3:1c:93:29:58:57:e5:a9:52:
+         68:07:c9:04:5a:05:a1:06:24:08:9c:0e:c2:3c:66:7b:44:88:
+         1b:44:6d:c9:0a:36:dc:fa:3b:47:2d:61:1f:86:c4:58:f9:e5:
+         be:ba:9f:40:4f:5c:4d:ef:a9:5f:a4:4f:88:33:ea:f3:94:15:
+         c6:4e:74:fe:0a:55:6d:1b:74:23:cd:02:89:44:e3:8c:8a:d8:
+         cd:24:b4:2f:6c:91:5b:c1:87:18:99:5c:3b:99:33:d6:64:fc:
+         c0:1a:49:fa:bd:b8:ee:42:e7:66:e1:17:e2:d8:3f:d4:f6:2e:
+         0a:7c:02:ee:b9:24:4e:e2:7f:ae:f5:01:9f:6a:b3:5e:cd:cf:
+         d6:50:83:88:9a:94:4d:a4:d8:be:02:13:81:44:5a:47:ae:17:
+         53:21:c8:69:52:0f:ca:e2:a5:c9:6e:72:d3:d3:07:a1:25:be:
+         8d:df:7c:13:dc:81:99:d2:c2:2a:ec:c0:69:5c:db:a7:05:c0:
+         77:22:53:23:de:d6:87:4d:7b:18:2d:cc:b1:52:f0:41:a0:92:
+         df:24:3c:25:f3:ac:0b:69:b9:50:f4:60:68:3a:75:83:07:36:
+         cd:5f:2d:c0:c0:c9:93:49:6c:8f:ec:b6:c2:77:c9:7d:80:b3:
+         ac:fe:f4:91:f3:58:0c:22:2c:26:6d:80:5b:3a:95:64:3e:ec:
+         8c:91:a5:ea:d6:7e:d5:8e:a1:3f:b7:97:00:8a:fa:e9:76:20:
+         cc:e6:1b:b2:9a:75:51:49:d9:49:f4:b0:0b:1e:33:52:cd:28:
+         4c:d1:69:ae:1a:be:a2:19:c0:02:64:45:40:4d:e2:eb:34:97:
+         ab:0a:cd:87:9e:67:6e:2e:e2:e3:62:60:52:9e:58:75:79:e0:
+         c7:15:c5:00:53:f5:53:5e:93:12:f9:72:fa:3b:6a:9f:69:d3:
+         a9:f3:7e:38:93:62:e5:79
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             5b:d0:61:54:5f:46:90:c4:96:e6:d1:1d:ea:87:e8:42
         Signature Algorithm: rsassaPss         
          Hash Algorithm: sha512
@@ -9297,6 +9815,80 @@ Certificate:
          45:86:a0:aa:fd:5f:1f:60:c7:bb:bf:8e:1e:01:1c:dd:e6:b7:
          99:02:21:00:e2:b7:b7:16:3e:92:d2:09:63:ab:db:90:07:a6:
          67:5c:70:72:ba:90:69:34:98:e9:40:3d:52:06:16:7b:2c:75
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            04:c9:76:26:80:64:cf:e4:56:8b:94:96:6e:99:f2:6a:53:0e:dd:58
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = FR, O = Gouv, CN = CSCA-FRANCE
+        Validity
+            Not Before: Nov 30 23:00:00 2021 GMT
+            Not After : Nov 30 23:00:00 2023 GMT
+        Subject: C = FR, O = DGS, OU = 120036017, CN = DSCO_FR_0002
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:b8:50:b9:de:09:60:31:bb:84:c1:f7:47:f7:b8:
+                    21:89:e1:b3:1a:58:31:30:89:cc:85:5c:f0:e1:55:
+                    fd:35:8a:c8:b9:ff:cc:ea:f9:c4:a1:f3:05:52:e1:
+                    fa:2c:8c:12:05:07:93:d9:9a:60:a2:72:77:e5:af:
+                    af:42:59:66:ac
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                83:0B:62:27:9F:38:AA:51:0A:E8:61:14:DE:29:D9:4E:DC:32:D0:BF
+            X509v3 Authority Key Identifier: 
+                keyid:BE:8A:2E:D6:C9:F9:20:4E:3A:27:03:08:97:4D:EC:FD:D9:7D:C5:E6
+
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://ants.gouv.fr/csca_crl
+
+            X509v3 Certificate Policies: 
+                Policy: 1.2.250.1.200.31.3.9.1.1
+
+            Authority Information Access: 
+                CA Issuers - URI:https://ant.gouv.fr/csca
+
+    Signature Algorithm: sha256WithRSAEncryption
+         0f:d5:2c:c5:5c:f2:d8:89:82:92:91:64:02:7d:91:92:16:56:
+         08:c3:70:22:53:d7:ae:91:4b:3b:92:7c:5f:76:75:0c:ba:67:
+         d1:78:19:d1:68:87:52:5e:ef:a8:18:d9:ff:5f:91:0e:ac:62:
+         e2:43:3b:a1:53:ce:cb:54:6c:a0:c8:d6:ac:c6:ad:f2:85:78:
+         51:e9:67:38:97:4b:3d:4e:6b:e7:d9:50:06:bd:1a:33:9d:b0:
+         8c:8b:0e:3b:33:a1:10:4b:18:1d:00:f6:9e:37:54:ad:9c:18:
+         8d:c6:05:bd:db:bb:45:8c:2c:17:0f:9b:19:b6:8c:6f:16:a4:
+         82:be:c3:9f:b1:a6:80:e4:bf:b8:e3:23:01:55:9d:5b:de:a6:
+         0b:e5:78:1e:af:98:53:2a:47:b1:a2:9c:93:29:ea:97:a3:b4:
+         46:12:b2:d7:3f:d0:89:cf:a2:be:13:66:c8:f3:3d:fb:57:83:
+         39:62:a1:aa:60:3d:89:86:55:34:12:55:ea:fa:cc:62:13:00:
+         b4:02:05:66:27:50:91:5d:e5:85:cf:0f:f2:3a:8e:db:70:cd:
+         5e:1b:fb:7b:74:39:73:0f:3a:2b:41:46:92:de:ed:47:37:54:
+         24:df:7f:81:11:8f:73:b4:12:4c:98:91:4c:12:f3:ee:5c:fd:
+         8e:d1:ac:cf:94:37:9d:c5:68:0a:1d:7c:14:56:eb:24:f8:55:
+         9f:98:27:8f:8b:ce:be:42:1e:c5:73:d7:26:9e:63:02:ca:95:
+         4b:6a:46:42:c1:bd:40:70:65:c8:b2:2a:1b:51:b9:61:b9:84:
+         a4:8a:48:4d:cd:6f:2f:f8:39:58:88:3a:95:20:47:4a:59:11:
+         4a:00:6c:64:d7:58:4b:80:14:67:a6:d5:11:ac:32:db:12:53:
+         89:65:ba:a3:d4:0a:04:3a:37:56:93:75:c6:f9:a5:06:77:df:
+         89:04:61:d3:eb:77:cb:18:ba:c6:60:c4:4a:3b:16:b2:74:57:
+         88:04:89:6b:50:45:d6:43:28:d3:41:fd:d1:ce:aa:e1:3b:ce:
+         a5:02:9d:99:82:22:20:50:bb:1b:0a:fc:1a:6e:c7:7f:36:0e:
+         a6:91:ff:86:24:b5:15:e9:63:d1:00:9d:47:aa:03:ff:b7:de:
+         02:f8:0b:79:14:50:90:20:49:65:c2:b8:6b:31:08:de:34:0d:
+         99:53:de:92:3f:c5:20:5b:20:4c:75:26:c6:69:e0:b1:c9:2d:
+         26:e2:2d:ad:09:f6:41:9e:ff:ed:a8:f0:db:c4:6e:3b:b3:f0:
+         d1:ab:f9:f8:bd:ce:81:3d:f6:f6:94:93:3e:5e:2a:dd:3a:9e:
+         95:dd:8b:91:8f:8d:12:f4
 
 Certificate:
     Data:
@@ -10373,6 +10965,80 @@ Certificate:
          63:50:fc:4a:52:fc:76:ff:1e:54:7f:26:31:72:85:25:e9:38:
          02:21:00:e6:3e:ca:85:aa:e3:c8:b9:69:ec:6b:57:bc:97:92:
          f8:7b:7e:d1:d8:1a:69:eb:2a:a4:c3:5f:b8:f1:fb:4e:62
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            20:79:0e:7b:f7:b9:35:96:73:f2:71:3f:af:74:21:d5:d7:a5:20:2f
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = FR, O = Gouv, CN = CSCA-FRANCE
+        Validity
+            Not Before: Nov  9 23:00:00 2021 GMT
+            Not After : Nov  9 23:00:00 2023 GMT
+        Subject: C = FR, O = DGS, OU = 120036017, CN = DSCO_FR_BK01
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:c3:ce:4a:31:49:d8:65:d1:1d:0d:88:79:87:20:
+                    5f:54:50:89:11:4c:f8:6e:16:c8:b5:df:76:3f:93:
+                    27:de:c5:d0:30:74:49:e2:00:92:26:53:47:30:36:
+                    9e:85:8c:d8:1d:04:0d:ba:7d:6d:ae:7f:5f:c9:0f:
+                    3d:8d:45:47:55
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                A8:EA:BB:19:00:2D:21:57:44:C6:BE:E0:BC:93:AB:5F:94:E4:A1:69
+            X509v3 Authority Key Identifier: 
+                keyid:BE:8A:2E:D6:C9:F9:20:4E:3A:27:03:08:97:4D:EC:FD:D9:7D:C5:E6
+
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://ants.gouv.fr/csca_crl
+
+            X509v3 Certificate Policies: 
+                Policy: 1.2.250.1.200.31.3.9.1.1
+
+            Authority Information Access: 
+                CA Issuers - URI:https://ant.gouv.fr/csca
+
+    Signature Algorithm: sha256WithRSAEncryption
+         78:3c:58:bc:3c:0f:1c:71:5c:5a:7a:5d:7c:a9:5e:77:10:c8:
+         60:38:1c:59:99:48:c2:c9:28:f5:34:d6:b9:a3:aa:92:de:47:
+         ee:7f:80:06:d1:8f:43:95:85:06:28:d0:1d:e4:1c:d5:0d:94:
+         0d:b8:23:68:ba:67:3c:7b:cc:a8:ce:0d:d0:96:68:ab:19:61:
+         f0:5e:3a:db:55:54:44:cc:b3:eb:34:5f:b6:b6:57:ff:4f:fe:
+         e0:a3:f2:d9:18:38:ec:42:9c:ac:af:ed:38:96:9f:5a:df:68:
+         76:71:25:2e:56:aa:8a:32:e4:8c:9e:ac:04:ce:86:e7:a2:2f:
+         d8:b1:a2:b3:00:a9:60:b9:a1:aa:9a:72:dc:8b:da:9b:13:b9:
+         05:91:8d:80:4d:b6:23:49:83:28:c0:5f:15:28:ee:32:13:25:
+         61:3e:80:62:64:5f:0c:c1:53:dc:75:11:c1:67:0a:84:79:7a:
+         21:c7:45:d8:d0:5a:20:13:2c:48:2a:71:b5:ab:63:29:a0:ca:
+         3e:83:f2:8d:50:1d:74:b6:70:e5:a5:5f:15:69:6f:86:b5:82:
+         15:c5:29:16:cd:f3:26:e5:80:74:81:d9:41:3a:8a:90:52:ff:
+         1a:9c:6e:dc:9c:1e:9c:32:d5:5a:63:6b:d5:46:d1:64:7f:2b:
+         85:35:d3:3a:aa:d1:71:d7:1d:09:7e:44:c3:de:29:07:18:23:
+         4a:ad:3c:a1:f7:c8:30:46:33:ea:d7:36:26:93:9e:64:47:01:
+         2c:79:a7:57:d8:4b:ff:fb:48:ad:b6:c4:80:6d:a3:6a:8e:3b:
+         61:e8:22:83:47:90:8e:a2:60:91:4f:93:d8:3a:24:fd:85:05:
+         a1:f4:3f:36:96:69:7e:10:cf:96:7f:4c:e6:78:85:f2:84:3a:
+         ff:b4:f9:93:9c:20:ab:e0:b9:3f:83:a3:09:c7:42:3a:f6:12:
+         3b:0e:28:1d:25:d2:7a:51:b5:b9:3d:1e:d4:70:87:44:d5:d5:
+         1b:fc:f0:57:bf:79:ae:ab:90:aa:1b:45:70:53:fb:d1:07:2a:
+         45:98:18:d8:1a:32:b6:f3:36:0e:09:a9:83:87:cb:00:22:be:
+         af:d7:9a:f4:cf:c2:45:69:76:9a:65:a7:bf:ec:15:8b:35:f1:
+         4d:3c:a8:bd:79:af:d9:45:e7:3b:70:cc:66:2b:80:4a:1b:b1:
+         d9:8e:61:cb:a7:55:b2:01:54:9f:46:fa:68:93:73:4f:1e:cc:
+         a6:60:6b:b5:ab:eb:b9:74:2f:61:62:ce:67:5b:59:ea:62:76:
+         7c:f5:13:6e:a7:e3:d9:79:3d:79:a4:03:a8:42:4e:35:a6:8f:
+         01:9d:d1:7d:4c:1e:58:9d
 
 Certificate:
     Data:
@@ -11468,6 +12134,80 @@ Certificate:
          57:7d:c6:f0:22:a7:5e:b3:2c:84:07:ea:42:05:ac:bd:b9:91:
          79:f9:90:cd:5d:dc:88:84:53:f7:8c:78:60:e7:52:78:76:80:
          1d:57:f5:e7:80:a0:0c:ce
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            72:76:2b:40:c1:60:2b:51:72:eb:8f:2d:b7:63:6a:f6:43:fb:8f:bb
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = FR, O = Gouv, CN = CSCA-FRANCE
+        Validity
+            Not Before: Feb  1 23:00:00 2022 GMT
+            Not After : Feb  1 23:00:00 2024 GMT
+        Subject: C = FR, O = DGS, OU = 120036017, CN = DSCO_FR_0005
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:b8:91:ff:7e:05:75:49:3d:9e:81:67:b8:98:95:
+                    d6:2f:a7:b9:a6:ed:f7:17:4f:01:ce:c6:24:0c:28:
+                    87:28:52:06:b5:78:fd:2e:e3:a6:f9:de:b1:88:1a:
+                    de:27:b3:4f:cc:6c:50:3f:53:ed:fd:4c:d1:02:70:
+                    ec:8e:6b:00:80
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                B0:EF:AB:36:9D:44:91:38:0C:E3:85:CF:7C:3C:60:44:82:E8:6C:33
+            X509v3 Authority Key Identifier: 
+                keyid:BE:8A:2E:D6:C9:F9:20:4E:3A:27:03:08:97:4D:EC:FD:D9:7D:C5:E6
+
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://ants.gouv.fr/csca_crl
+
+            X509v3 Certificate Policies: 
+                Policy: 1.2.250.1.200.31.3.9.1.1
+
+            Authority Information Access: 
+                CA Issuers - URI:https://ant.gouv.fr/csca
+
+    Signature Algorithm: sha256WithRSAEncryption
+         89:60:f4:73:2d:6f:b2:34:ff:3b:e1:07:f5:d9:30:70:43:a9:
+         14:3a:70:35:2f:4f:f3:5e:55:f6:af:70:da:a9:27:a6:40:c4:
+         0f:62:21:14:ce:6e:c8:e4:af:2a:8b:7c:20:15:cd:c9:57:1d:
+         4c:9d:8a:e5:fd:2b:e2:a1:8d:85:48:28:94:2a:53:90:67:83:
+         e1:89:3b:25:d4:60:8c:b5:46:a2:86:55:d2:b1:0e:93:05:3c:
+         d4:30:cd:75:40:41:38:c3:be:54:00:25:34:0b:b5:6c:89:9d:
+         9d:99:dd:33:54:38:95:df:3b:ef:52:bb:63:04:af:52:27:14:
+         74:80:86:08:7e:b3:1f:91:f6:e1:4c:19:cc:91:76:1a:3a:56:
+         5c:5b:c8:c9:4d:3d:f8:be:52:c4:f5:fb:d2:f4:d2:6e:b6:90:
+         a5:de:91:de:4f:9b:ab:64:8f:53:e0:44:39:db:01:f4:ca:a3:
+         02:4c:0f:11:a0:08:e4:ef:7f:af:9a:b4:dc:1d:62:13:b5:7a:
+         01:91:11:65:6f:f2:33:e6:1f:e5:ae:7c:12:f0:df:ad:36:c3:
+         36:d0:37:f0:c9:ec:a1:29:85:57:33:f6:f9:9e:56:de:eb:f5:
+         35:8c:4e:66:aa:39:b8:11:d4:32:0f:c9:01:ce:b2:c5:a1:7c:
+         0f:67:d3:bf:1d:45:81:14:b4:9c:a5:0e:4f:10:58:1c:9d:4b:
+         75:53:cd:c2:c1:80:90:3c:ca:ba:04:66:64:37:63:d9:e8:cf:
+         07:8b:ad:86:aa:e6:69:e6:51:dd:59:43:c1:c0:75:0b:9a:b2:
+         36:09:a5:92:52:3a:60:6e:24:85:40:fe:8c:86:34:08:c9:e8:
+         92:50:14:b2:93:9e:44:48:d3:0f:a5:1f:69:c1:0f:1e:ff:95:
+         d1:0a:5d:f5:af:a9:4a:a3:00:7f:5c:37:c3:fd:9e:98:41:43:
+         c6:58:dc:2f:f0:e0:5d:91:da:76:82:7f:f5:98:d7:1a:46:4a:
+         4c:b4:83:65:d9:a4:10:4f:8e:5b:86:2b:1d:43:fa:cf:34:a2:
+         75:93:66:74:05:81:84:fc:44:86:89:9f:11:0d:e2:18:04:1b:
+         ef:e9:bc:f1:ff:41:47:c4:9d:ce:27:7a:4d:67:9d:72:ba:fe:
+         5e:67:ec:05:1e:1a:0f:76:d0:7e:3a:f8:c4:c5:35:ac:7c:aa:
+         5c:52:06:f6:e4:b4:67:24:a6:64:c8:3d:6d:30:9a:bf:12:c8:
+         97:7d:a4:3f:56:e4:e3:e1:ba:9a:3f:24:f7:d3:2b:f8:4c:28:
+         df:f6:8e:55:91:e2:a2:a6:bb:11:0e:89:99:0e:0a:73:9e:d8:
+         e8:c2:e2:91:f4:25:98:2f
 
 Certificate:
     Data:
@@ -14242,6 +14982,80 @@ Certificate:
          bb:55:0c:44:a6:3c:d9:78:b5:e4:a3:3a:14:c2:f6:a8:9e:ad:
          79:30:bc:88:c8:d7:68:3c:61:55:94:83:02:fb:57:72:52:ca:
          a8:8b:c0:ce
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            76:9f:42:5e:73:85:ba:a5:6e:8a:24:fb:8e:0f:45:a1:dc:9e:00:26
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = FR, O = Gouv, CN = CSCA-FRANCE
+        Validity
+            Not Before: Feb 22 23:00:00 2022 GMT
+            Not After : Feb 22 23:00:00 2024 GMT
+        Subject: C = FR, O = DGS, OU = 120036017, CN = DSCO_FR_0006
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:d2:e7:22:25:3a:91:ff:77:f1:14:d6:7d:c9:e5:
+                    14:a0:f6:14:c7:7f:10:f0:e1:f5:8c:51:2c:26:a2:
+                    6f:7c:de:a3:af:1f:ac:f2:1d:76:56:aa:d4:1a:ff:
+                    fc:a0:16:3e:74:40:8c:87:24:8c:7a:f8:aa:f1:88:
+                    3a:91:3e:2b:d8
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                E8:7B:F3:9E:72:D5:9A:9A:D0:F6:2C:E3:69:31:79:F4:CE:7B:E1:EE
+            X509v3 Authority Key Identifier: 
+                keyid:BE:8A:2E:D6:C9:F9:20:4E:3A:27:03:08:97:4D:EC:FD:D9:7D:C5:E6
+
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://ants.gouv.fr/csca_crl
+
+            X509v3 Certificate Policies: 
+                Policy: 1.2.250.1.200.31.3.9.1.1
+
+            Authority Information Access: 
+                CA Issuers - URI:https://ant.gouv.fr/csca
+
+    Signature Algorithm: sha256WithRSAEncryption
+         17:0a:8b:ee:c8:d2:0c:0e:28:a1:1b:f1:60:8f:f8:4e:cd:4f:
+         33:f8:4e:cd:0b:dc:5f:9b:18:d7:5e:14:04:99:85:c4:10:00:
+         c1:70:b4:fa:09:39:f4:ac:3b:c2:3f:f6:9d:ae:5c:73:23:6b:
+         0c:95:5e:55:84:6a:76:f9:a0:75:8b:7d:a7:c2:ad:09:91:38:
+         84:10:40:11:df:b8:79:43:d0:df:98:74:71:5e:d5:6d:48:b6:
+         fc:c3:7a:8b:94:31:49:dd:7e:e0:44:77:4a:bb:29:c7:66:36:
+         7a:07:f4:49:cf:74:4b:7f:be:a2:d4:f0:f8:f5:3c:a0:f8:94:
+         8e:d3:00:bf:38:8f:2c:58:51:02:86:ce:3f:c3:e9:d2:ac:6b:
+         06:bc:e5:79:3a:fa:31:2e:70:75:49:f6:5a:61:3c:5c:97:6a:
+         d3:d1:1d:fd:5b:79:bb:bc:e3:26:c2:c0:e8:ee:63:d5:7d:eb:
+         e9:6d:cc:54:28:c2:59:1a:40:ee:ac:63:0d:b6:6e:d0:e5:b2:
+         39:5d:a7:08:0b:05:5e:a3:85:95:64:58:dc:fc:ad:64:77:52:
+         6f:a5:5f:a8:9d:cf:80:63:1e:79:3c:19:0b:74:1c:a1:30:41:
+         d8:09:6e:b3:22:03:29:24:7a:64:a0:87:10:78:5d:83:e7:ea:
+         23:74:9e:58:26:4c:e1:8f:25:33:83:80:e2:71:b2:f7:4b:c9:
+         7d:fe:e6:02:17:dc:e3:a9:fb:7a:c5:52:f1:ff:d4:b2:a5:60:
+         68:ac:ec:e4:9e:33:10:d0:7a:b3:80:57:ee:53:69:88:c7:29:
+         e1:99:84:b9:09:a6:04:72:9b:5a:68:7f:2a:51:6b:68:17:d5:
+         d5:4b:d9:49:fd:72:7f:6d:38:19:ac:ba:19:7b:30:03:35:80:
+         76:de:04:b9:70:e6:70:56:e4:ae:3d:bd:f0:19:84:cb:2a:43:
+         95:f5:3e:fc:85:cc:75:4f:9a:78:50:94:3f:ec:c8:02:b3:b9:
+         25:00:06:89:da:fa:85:25:d3:39:2f:dd:7c:68:c5:66:71:e1:
+         06:57:89:64:77:80:27:c2:8a:8e:7c:3f:50:c4:05:fd:18:e2:
+         57:a1:32:e3:49:ed:bd:6c:95:ae:8d:5d:14:98:f7:bc:35:52:
+         c8:3f:6e:20:f1:25:1e:41:6e:46:d3:53:fd:34:43:dc:c8:09:
+         58:2d:01:89:55:d8:28:2e:52:bd:7a:3c:6f:a8:de:4a:71:46:
+         39:23:be:0f:85:a3:d5:86:f5:db:4e:4f:27:19:3c:d7:16:10:
+         0b:1c:77:3a:73:2f:39:ad:53:a8:97:40:49:08:13:22:29:bd:
+         f5:92:c1:30:23:0b:78:84
 
 Certificate:
     Data:
