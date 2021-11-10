@@ -24,7 +24,8 @@ jobs:
       - name: Download the conf from the TAC-V server
         env:
           token: ${{ secrets.TOKEN }}
-        run: "curl -s https://portail.tacv.myservices-ingroupe.com/api/client/configuration/synchronisation/tacv -H \"Authorization: Bearer ${token}\" | jq --sort-keys '. | del(.currentDate)' &> TAC-V_conf.json"
+          FILES:  '"synchronisation/tacv TAC-V_conf.json" "countries/tacv TAC-V_countries.json" "valuesets/tacv TAC-V_valuesets.json" "rules/tacv TAC-V_rules.json"'
+        run: "for file in $FILES; do item=( $file ); curl -s https://portail.tacv.myservices-ingroupe.com/api/client/configuration/${item[0]} -H \"Authorization: Bearer ${token}\" | jq --sort-keys '. | del(.currentDate)' &> \"${item[1]}\"; done"
       - name: Pretty print TAC-V blacklist (qrcodes)
         run: "cat TAC-V_conf.json | jq '. | .specificValues.blacklist.blacklistDCC' |  jq '.' &> blacklist_qrcode_tacv.json"
       - name: Pretty print TAC-V blacklist (2d-doc)
