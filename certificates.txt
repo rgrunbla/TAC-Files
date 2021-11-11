@@ -4172,6 +4172,99 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            48:ee:3a:20:5e:09:8d:d5:d0:85:8d:19:a5:14:7e:00
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = CH, organizationIdentifier = VATCH-CHE-221.032.573, O = Bundesamt fuer Informatik und Telekommunikation (BIT), OU = Swiss Government PKI, CN = Swiss Government Regulated CA 02
+        Validity
+            Not Before: Nov  9 12:57:50 2021 GMT
+            Not After : Nov  9 12:57:50 2024 GMT
+        Subject: C = CH, ST = Bern, L = K\C3\B6niz, businessCategory = Government Entity, organizationIdentifier = NTRCH-CHE-467.023.568, O = Bundesamt f\C3\BCr Gesundheit (BAG), OU = GE-0220-BAG, OU = Taskforce BAG Covid-19, CN = CC_CH_1200005_0511
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (2048 bit)
+                Modulus:
+                    00:aa:cb:32:5d:f6:1a:ae:f8:d2:8f:eb:f6:5d:28:
+                    10:6f:a9:cf:ae:9c:7e:d2:9e:42:57:df:07:af:8a:
+                    d2:a5:c1:49:a3:c0:ce:51:fe:01:cd:60:f8:be:90:
+                    18:fa:4b:eb:1a:bc:67:bc:19:59:bf:e7:c1:ae:72:
+                    5c:03:8e:ae:3c:6a:44:d0:62:0b:96:a1:c5:c4:19:
+                    a6:f0:25:5b:01:2f:d4:16:b1:df:f4:3a:86:d0:08:
+                    8c:0f:dc:cb:06:c2:c2:5b:d3:3e:eb:39:48:42:45:
+                    f9:0a:c6:d6:6e:30:ae:9c:9a:32:48:30:50:c8:c9:
+                    af:a3:be:04:16:84:e9:24:c5:b4:e7:26:19:03:d5:
+                    91:48:61:9f:ea:a3:42:3f:14:64:5c:f2:1a:3b:8d:
+                    c5:30:b5:95:95:34:c2:02:71:ed:5f:31:e9:6a:41:
+                    b9:a9:90:d4:2c:b1:16:66:13:ac:ef:c2:93:f6:81:
+                    c2:71:30:5a:90:f6:f7:f2:98:14:4c:13:70:4c:53:
+                    0f:b9:29:b9:ee:3b:62:aa:6f:28:3d:bc:75:87:1c:
+                    50:19:be:97:c4:cb:88:6b:f7:8a:58:88:7c:cf:5f:
+                    e8:2c:e4:5a:8a:2c:71:53:a6:0d:1c:d3:c5:6e:5e:
+                    68:00:e5:fa:0a:33:7a:8b:e9:2b:23:6c:db:a6:2b:
+                    32:9d
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Subject Alternative Name: 
+                email:covid-zertifikat@bag.admin.ch
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Certificate Policies: 
+                Policy: 2.16.756.1.17.3.5.2.14
+                  CPS: http://www.pki.admin.ch/cps/CPS_2_16_756_1_17_3_5_0.pdf
+                  User Notice:
+                    Explicit Text: This is a regulated certificate for legal persons as defined by the Swiss federal law SR 943.03 ZertES
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://www.pki.admin.ch/crl/RegulatedCA02.crl
+
+            Authority Information Access: 
+                CA Issuers - URI:http://www.pki.admin.ch/aia/RegulatedCA02.crt
+                OCSP - URI:http://www.pki.admin.ch/aia/ocsp
+
+            qcStatements: 
+                0..0
+..+.......0.......I..0......F..0K.....F..0A0?.9http://www.pki.admin.ch/cps/PDS-SGPKI_Regulated_CA_02.pdf..EN0......F..0......F...
+            X509v3 Authority Key Identifier: 
+                keyid:34:0B:BE:F2:15:3E:A4:0F:57:07:E2:41:64:8B:32:11:D1:29:0B:61
+
+            X509v3 Subject Key Identifier: 
+                E6:FF:B6:77:B0:A9:38:47:FF:4F:CF:1D:DE:69:A6:A2:06:DE:8A:45
+    Signature Algorithm: sha256WithRSAEncryption
+         a1:35:0a:1a:4f:bb:33:62:42:ee:93:ac:b4:88:bb:d9:78:3b:
+         9d:00:de:e2:b6:bb:ea:79:da:9f:2e:ac:a7:e6:5b:99:26:bb:
+         13:be:ff:a3:b0:a9:4c:65:1d:45:86:9a:9f:41:eb:8b:79:a0:
+         97:ca:11:bf:11:a7:5e:aa:28:a2:41:d2:ad:4e:9c:ad:c3:c2:
+         00:47:9e:c0:dd:5f:8c:e1:5b:e5:c7:fe:83:ac:db:a0:95:b5:
+         17:e4:df:db:b1:a4:93:f2:c8:6b:eb:89:74:ef:24:04:82:44:
+         05:90:ff:c8:ab:62:4b:6b:76:13:77:87:a4:3a:b2:de:72:80:
+         5a:4c:36:3d:af:02:63:fc:91:4a:2b:05:1f:5f:38:de:03:d5:
+         a2:a7:52:d2:ea:ec:0e:28:af:0c:9c:9d:9c:2e:38:10:9b:d6:
+         51:cf:0b:64:e4:2f:96:80:a7:f7:e0:cb:ca:48:a2:af:ed:29:
+         25:90:32:05:e2:e3:62:e0:2a:6f:27:5c:c1:74:89:35:0e:cc:
+         b4:c1:0f:ff:bb:5c:6c:2d:67:35:64:61:72:4f:e4:a4:3a:13:
+         e0:9e:8a:3f:23:7f:be:ca:01:61:8e:69:fb:58:08:91:44:0d:
+         cf:52:48:a4:07:80:9b:a1:be:06:0b:e1:51:68:4a:51:36:20:
+         4c:5e:42:7a:aa:24:f0:25:c7:7b:ea:f1:b8:7d:46:68:a6:25:
+         29:ce:de:08:fd:f1:78:8b:05:5a:1d:ba:a8:08:d5:24:2b:22:
+         5b:a4:6d:c1:20:03:ac:03:7d:b0:b8:9a:b5:7a:75:35:a3:cb:
+         56:c5:27:b0:a1:df:a6:c9:16:40:37:44:af:a0:4d:0f:ba:b3:
+         ab:d5:b3:6e:34:40:45:3d:7c:5f:08:fb:d5:58:42:9f:8e:26:
+         bc:65:c1:c5:3b:bf:a7:fc:ed:a4:03:0b:1f:f6:f4:05:bd:14:
+         3e:d5:f0:e8:a2:2e:9b:90:80:e6:15:24:f6:eb:14:d8:b1:38:
+         a5:87:52:06:e6:b5:ef:1b:b1:32:96:ed:7a:bf:86:33:2d:2b:
+         ff:c4:59:17:1a:6f:9b:3e:65:c8:9b:33:b3:1b:16:d6:09:a5:
+         04:33:b1:87:e0:93:7a:13:cd:ad:53:fa:ea:2f:33:e2:8a:b6:
+         38:58:4c:8e:bb:af:7e:75:0a:94:98:c2:9a:74:8b:e9:1b:2b:
+         99:4e:bf:bf:9f:40:6b:78:e7:bf:ef:d6:d5:e4:ab:b9:9d:37:
+         36:0b:af:93:51:68:cb:a4:a0:91:68:59:81:af:aa:ff:82:08:
+         a8:fa:07:01:70:cd:57:52:a9:c4:20:a4:f9:24:21:a9:72:9c:
+         81:e3:5a:c5:55:06:54:c0
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             68:2d:62:f1:4e:15:a7:d3:bc:f4:aa:8d:08:69:e8:2f:f0:71:5e:95
         Signature Algorithm: sha256WithRSAEncryption
         Issuer: C = FR, O = Gouv, CN = CSCA-FRANCE
@@ -5232,51 +5325,6 @@ Certificate:
          1c:ff:1e:ca:37:c5:78:55:b4:f5:da:e3:62:5c:7c:32:6b:be:
          02:20:2e:c8:9b:d1:90:31:9b:71:11:5d:e3:dd:e0:d9:60:be:
          df:a5:21:2a:1f:10:79:48:8b:e0:84:06:92:5d:e6:c1
-
-Certificate:
-    Data:
-        Version: 3 (0x2)
-        Serial Number: 1632667091 (0x615085d3)
-        Signature Algorithm: ecdsa-with-SHA512
-        Issuer: C = GB, O = NHS Digital, CN = England DCC CSCA
-        Validity
-            Not Before: Sep 29 13:47:57 2021 GMT
-            Not After : Sep 29 14:17:57 2023 GMT
-        Subject: C = GB, O = NHS Digital, ST = Guernsey, CN = DSC_DCC_GB_GG_02
-        Subject Public Key Info:
-            Public Key Algorithm: id-ecPublicKey
-                Public-Key: (256 bit)
-                pub:
-                    04:b2:b7:0e:fa:73:4c:f0:e9:1c:3b:b2:21:6d:18:
-                    78:0f:80:fe:f9:38:2b:dc:fc:86:b7:da:ba:bd:79:
-                    12:c0:86:3a:bd:cb:57:45:79:1e:e1:67:6b:46:d5:
-                    9b:63:30:7c:c4:64:44:89:f3:71:4a:07:7a:15:d8:
-                    a4:f9:b8:38:e2
-                ASN1 OID: prime256v1
-                NIST CURVE: P-256
-        X509v3 extensions:
-            X509v3 Key Usage: critical
-                Digital Signature
-            X509v3 Issuer Alternative Name: 
-                email:pki@nhsx.nhs.uk, DNS:https://www.nhsx.nhs.uk/key-tools-and-info/public-key-infrastructures/csca, DirName:/L=GBR
-            X509v3 CRL Distribution Points: 
-
-                Full Name:
-                  URI:http://pki.nhsx.nhs.uk/CRL/ENG_CSCA.crl
-                  URI:http://covid-status.service.nhsx.nhs.uk/CRL/ENG_CSCA.crl
-
-            X509v3 Private Key Usage Period: 
-                Not Before: Sep 29 13:47:57 2021 GMT, Not After: Mar 31 02:17:57 2022 GMT
-            X509v3 Authority Key Identifier: 
-                keyid:DA:2E:CE:C3:F7:3A:FB:F8:BE:10:73:A8:C4:F1:88:BD:2B:D4:F1:CA
-
-            X509v3 Subject Key Identifier: 
-                5B:50:34:32:EE:C1:FB:FD:5D:B8:3B:A3:C0:0A:3F:34:27:93:1E:1C
-    Signature Algorithm: ecdsa-with-SHA512
-         30:45:02:21:00:df:58:0d:d8:63:ab:38:86:2b:eb:b8:f9:2f:
-         fa:ba:3a:ff:49:a2:e1:59:bb:81:8d:44:10:3f:2e:df:d9:3e:
-         2c:02:20:38:a7:f2:6d:17:25:6f:3c:91:9f:3f:ee:72:71:f5:
-         f0:1d:ab:f5:91:22:eb:3f:fb:2e:79:aa:35:9a:1b:3c:f1
 
 Certificate:
     Data:
