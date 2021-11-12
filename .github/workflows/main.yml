@@ -43,6 +43,10 @@ jobs:
         run: "cat TAC-V_conf.json | jq '. | .specificValues.blacklist.blacklist2DDOC' | jq '.' &> blacklist_2ddoc_tacv.json"
       - name: Pretty print the DCC certificates
         run: "./decode_x509.py TAC-V_conf.json &> certificates.txt"
+      - name: Pretty print rules
+        env:
+          token: ${{ secrets.TOKEN }}
+        run: "./get_rules.py &> TAC-V_rules-pretty.json"
       - name: Download SNCF blacklist
         run: "curl https://pretavoyager.sncf.com/api/getcertificates | jq '.' &> blacklist_sncf.json"
       - uses: stefanzweifel/git-auto-commit-action@v4
