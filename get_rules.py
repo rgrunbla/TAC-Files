@@ -28,7 +28,7 @@ while True:
         break
 
 rules = r.json()
-rule_hashes = [rule['hash'] for rule in rules]
+rule_hashes = sorted([rule['hash'] for rule in rules])
 
 retry = 0
 while True:
