@@ -5691,6 +5691,55 @@ Certificate:
 Certificate:
     Data:
         Version: 3 (0x2)
+        Serial Number: 8141167620974845941 (0x70fb3cd1491e1ff5)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = HR, O = AKD d.o.o., CN = Croatia DGC CSCA
+        Validity
+            Not Before: Nov  9 20:13:35 2021 GMT
+            Not After : Nov  9 20:13:34 2023 GMT
+        Subject: C = HR, O = AKD d.o.o., CN = Croatia DGC DS 002
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:b0:71:9c:b4:43:c5:a2:d7:a7:03:15:6a:62:bf:
+                    f9:66:d9:78:e8:15:3d:85:63:58:01:87:46:5a:28:
+                    62:1b:34:53:3a:05:f3:38:da:82:40:9a:81:df:ba:
+                    5a:70:0e:77:2f:b3:a5:5c:f1:4e:36:f4:fd:29:66:
+                    2f:6e:c5:5e:8b
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Authority Key Identifier: 
+                keyid:31:2B:1C:A3:C8:80:65:E1:1F:BD:04:92:D0:25:3C:7C:86:8F:52:D1
+
+            X509v3 Issuer Alternative Name: 
+                email:Croatia.DGC@dgc.hr, DirName:/L=HRV
+            X509v3 Subject Alternative Name: 
+                email:Croatia.DGC@dgc.hr, DirName:/L=HRV
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://dgc1.dgc.hr/croatia-dgc-csca.crl
+
+                Full Name:
+                  URI:http://dgc2.dgc.hr/croatia-dgc-csca.crl
+
+            X509v3 Subject Key Identifier: 
+                86:6A:CF:D4:85:AF:AB:9E:34:16:38:AF:FB:B5:64:DA:2F:17:E5:A5
+            X509v3 Private Key Usage Period: 
+                Not Before: Nov  9 20:13:35 2021 GMT, Not After: May  8 20:13:35 2022 GMT
+            X509v3 Key Usage: critical
+                Digital Signature
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:0b:8e:90:e9:5d:2e:7d:10:8a:64:76:f0:a3:10:
+         07:51:e9:43:ea:e3:50:9b:9e:15:80:6a:de:dd:19:3f:3e:cf:
+         02:21:00:e7:4b:c1:3c:6c:9a:e4:6d:b5:10:e0:e9:95:f4:08:
+         6c:70:8c:71:6e:ec:d7:f1:0b:0a:9d:ac:e7:7c:9f:9d:04
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
         Serial Number:
             01:79:cc:f8:be:3b:7e:60:5c:7b
         Signature Algorithm: ecdsa-with-SHA256
