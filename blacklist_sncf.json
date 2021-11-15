@@ -2530,6 +2530,40 @@
       },
       "publicKeyPem": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEnL9+WnIp9fvbcocZSGUFlSw9ffW/jbMONzcvm1X4c+pXOPEs7C4/83+PxS8Swea2hgm/tKt4PI0z8wgnIehojw=="
     },
+    "zrMytIH40Rk=": {
+      "serialNumber": "51f48076a230a64ab05e30e167ed097543da2020",
+      "subject": "C=IT, O=Ministero della Salute, CN=Italy DGC DSC 2",
+      "issuer": "C=IT, O=Ministero della Salute, CN=Italy DGC CSCA 1",
+      "notBefore": "2021-11-12T13:40:38.000Z",
+      "notAfter": "2023-11-12T13:40:37.000Z",
+      "signatureAlgorithm": "RSASSA-PKCS1-v1_5",
+      "fingerprint": "53178530a7f400fc1c0e38003930763f107a817b",
+      "publicKeyAlgorithm": {
+        "hash": {
+          "name": "SHA-256"
+        },
+        "name": "ECDSA",
+        "namedCurve": "P-256"
+      },
+      "publicKeyPem": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEhX3UYfApjRF+CwtZqZJga6pwzbvNic585TOlc0qa2DbRcer1H3FYNY1HErSbo3+tOLiYkPHbrbQdLTE05rymtA=="
+    },
+    "8hilYZIP6uI=": {
+      "serialNumber": "76d7c8c07e3d557de0ce383bb30d6890e3ff2802",
+      "subject": "C=IT, O=Ministero della Salute, CN=Italy DGC DSC 3",
+      "issuer": "C=IT, O=Ministero della Salute, CN=Italy DGC CSCA 1",
+      "notBefore": "2021-11-12T13:41:45.000Z",
+      "notAfter": "2023-11-12T13:41:44.000Z",
+      "signatureAlgorithm": "RSASSA-PKCS1-v1_5",
+      "fingerprint": "b1b6c4a28b93eeeb22cb0028354cd9a14270d516",
+      "publicKeyAlgorithm": {
+        "hash": {
+          "name": "SHA-256"
+        },
+        "name": "ECDSA",
+        "namedCurve": "P-256"
+      },
+      "publicKeyPem": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEGwlU23NYZQba7t++TVejbvPxgS6wdW8uE7UPe14VkhXoKINhhrCT0EWHP+aPim6apT46Ktd0lfoNVTsbg2QQ2A=="
+    },
     "e/YRqyv++qY=": {
       "serialNumber": "11587fbc2ddc8605",
       "subject": "C=LI, L=Vaduz, O=Liechtensteinische Landesverwaltung, CN=DGC-NB-DSC-RECOVERY-PROD-20210608, E=webmaster@llv.li",
