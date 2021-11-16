@@ -14058,6 +14058,44 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            7c:a5:4f:08:9d:83:48:e4:25:06:6b:b9:01:c8:16:2f:ea:6d:f7:09
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = MD, ST = Republic of Moldova, L = Chisinau, O = STISC, OU = CCCP, CN = Republic of Moldova National CSCA 01
+        Validity
+            Not Before: Oct 26 17:31:01 2021 GMT
+            Not After : Oct 26 17:31:01 2023 GMT
+        Subject: C = MD, ST = Republic of Moldova, L = Chisinau, O = Ministry of Health, CN = Republic of Moldova DSC 01
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:ba:b8:9d:e9:5e:9e:9e:76:86:31:8b:b5:87:c4:
+                    36:3c:52:7b:78:c9:23:ec:58:81:cc:11:22:40:c9:
+                    cd:6f:f6:33:02:3e:b4:83:a7:27:bd:7d:36:00:1f:
+                    84:e3:c1:e8:cf:86:a6:36:5a:da:94:a5:cb:dc:2b:
+                    e3:6b:11:c6:2f
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Subject Key Identifier: 
+                B6:4F:3F:E2:2E:21:8F:6B:03:16:7C:FE:A1:30:4F:33:78:2C:AE:25
+            X509v3 Authority Key Identifier: 
+                keyid:E6:57:AE:86:07:D4:52:08:31:05:83:72:D2:7F:AD:29:67:B8:EA:52
+
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.1847.2021.1.1, 1.3.6.1.4.1.1847.2021.1.2, 1.3.6.1.4.1.1847.2021.1.3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:34:3f:f0:8c:de:1b:30:aa:66:ed:96:04:42:19:
+         fb:0c:b3:60:c2:98:f1:90:c2:8a:95:25:8a:03:14:7c:b1:ff:
+         02:21:00:cd:8f:76:5c:21:19:55:72:79:5b:a0:a9:45:da:6c:
+         63:26:2c:dc:1c:87:23:6a:30:d7:40:06:81:f7:78:8f:6a
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             48:ae:1b:99:ee:f3:89:ab:bf:25:99:0c:f3:42:0e:2c:cf:22:6a:eb
         Signature Algorithm: ecdsa-with-SHA256
         Issuer: CN = CSCA Health NL, serialNumber = 1, OU = Ministry of Health Welfare and Sport, O = Kingdom of the Netherlands, C = NL
