@@ -9791,6 +9791,86 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            06:c1:72:f2:1c:0a:82:70:c0:64:6c:ff:6e:2f:fe:f0:db:09:6e:bb
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = RS, L = Beograd, organizationIdentifier = VATRS-110177886, O = Kancelarija za informacione tehnologije i elektronsku upravu, CN = RS NBCSCA
+        Validity
+            Not Before: Nov 15 14:34:18 2021 GMT
+            Not After : Nov 15 14:34:18 2023 GMT
+        Subject: CN = RS PROD DSC2, O = Kancelarija za informacione tehnologije i elektronsku upravu, C = RS
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (2048 bit)
+                Modulus:
+                    00:b5:cd:1d:99:43:d4:f3:02:c3:7d:84:d5:9d:25:
+                    c3:c6:10:ab:e0:01:c4:1b:e1:8a:4b:2d:77:a4:c1:
+                    88:e4:58:fc:20:ad:5e:f4:95:4b:ac:ba:1e:9a:d2:
+                    e7:95:a1:55:e5:60:0f:af:a1:bc:89:a9:5e:1b:d4:
+                    d5:f5:79:f0:7e:28:96:cc:06:b1:2d:3d:bc:bb:cf:
+                    fc:30:6e:23:8a:14:4a:c3:97:15:00:f0:b4:9a:2c:
+                    c0:07:29:e5:78:0c:d4:f9:d3:98:90:d1:65:9b:01:
+                    29:b7:a3:3a:f9:55:e5:df:d6:a2:95:df:d6:56:a3:
+                    27:67:42:3f:93:f5:60:d2:d4:1e:e6:54:bb:68:13:
+                    c1:b5:be:d6:25:a6:8e:62:1c:c3:c7:68:5c:bf:4c:
+                    fb:22:b6:12:06:68:a0:5a:09:77:8c:e3:b4:4c:df:
+                    bf:d6:f8:90:3e:d3:1b:b5:bb:c2:ea:0c:57:18:3c:
+                    90:f3:f1:c2:c2:0b:7a:f4:76:0d:0c:7a:c1:82:51:
+                    63:2c:8b:db:7a:52:ee:4e:c8:28:0e:8a:33:21:5f:
+                    81:50:a2:03:6a:5d:af:b4:01:af:77:57:03:ac:de:
+                    98:be:aa:a2:65:1c:2a:3a:7d:e0:b6:fd:68:8f:f5:
+                    e6:65:49:e5:ed:a3:2d:2a:2b:10:d4:cb:aa:29:51:
+                    e6:b5
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Non Repudiation
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Authority Key Identifier: 
+                keyid:F1:E1:71:28:C0:B2:62:8F:EE:28:C8:D7:45:48:EC:B7:3C:74:34:C8
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:https://cloud.eid.gov.rs/crl/nbcsca.crl
+
+            X509v3 Subject Key Identifier: 
+                E7:FB:D8:FB:6C:71:51:1C:03:57:66:CD:11:E6:08:14:63:16:48:B8
+    Signature Algorithm: sha256WithRSAEncryption
+         74:1e:c6:6a:79:44:af:0e:03:c8:ff:48:a8:70:52:98:94:4d:
+         2b:e0:42:0f:f6:fd:48:1d:43:6b:f9:c7:89:73:a3:c3:7d:71:
+         0e:9f:4b:95:71:63:96:0a:dc:2a:49:04:d1:33:f2:2e:6a:46:
+         6c:ec:0f:45:28:cc:eb:c4:78:b6:dc:ba:6d:cb:e2:10:a8:38:
+         f5:d6:86:c3:cc:71:19:1a:10:4c:18:9f:99:03:3f:81:2f:cf:
+         b8:aa:9a:ab:e2:1c:be:f8:04:1c:71:df:36:7d:59:57:e8:ab:
+         c4:82:6e:46:b0:cb:0a:f0:d8:7c:2d:a1:eb:a8:dd:72:8e:58:
+         32:b4:8e:c7:ac:7b:07:04:1d:6b:fd:31:f1:17:84:a8:d9:b7:
+         19:52:d2:fd:65:90:21:7f:e4:0b:d2:11:43:c8:63:3e:05:6a:
+         c3:de:0a:85:f7:d4:92:22:cc:4a:dd:65:92:d7:8b:2e:45:18:
+         ac:71:05:6e:8b:3f:b1:94:01:09:28:b8:a0:de:2d:92:ec:57:
+         fe:76:e3:ba:cd:00:32:02:62:4a:ce:c9:dd:a3:b5:96:37:ec:
+         16:3a:52:86:d8:34:7e:df:96:87:ea:6f:04:db:5d:fb:df:4f:
+         ec:43:f5:c6:f9:bb:23:d3:58:3d:7c:96:e9:1c:42:2a:c9:6a:
+         11:3a:e0:5b:1a:d9:91:3f:13:af:92:88:50:d1:b0:b4:da:cc:
+         42:2d:5b:46:d5:00:40:80:da:04:1d:f0:68:36:15:eb:01:30:
+         c9:49:6d:01:53:1b:15:dd:53:81:50:08:fd:f5:fd:29:48:73:
+         d0:c9:8e:8f:0a:20:47:f0:af:e9:21:31:15:1a:0f:dd:70:ab:
+         53:70:7e:67:f7:36:e0:78:aa:fd:e7:5f:aa:d0:23:d6:c0:a0:
+         23:6c:d3:f7:94:d4:0f:0b:a8:9e:2e:80:a7:f4:2d:41:e9:7c:
+         c4:e4:e7:ce:65:85:2c:87:29:e5:d7:f3:6d:d4:bb:97:0f:9e:
+         4d:39:67:5c:c3:54:9e:f6:56:b1:f9:ee:a1:13:b6:8f:b8:80:
+         9d:43:2b:68:8b:72:02:47:5a:45:10:ab:08:96:1f:28:16:cc:
+         3b:15:bc:52:2f:db:a0:91:48:8b:4a:d8:9a:55:da:06:4c:f2:
+         c4:d8:14:0a:2a:aa:e0:25:cf:20:24:be:e9:9d:bf:0a:60:e1:
+         a5:16:33:25:87:65:5d:16:f5:7e:f5:60:63:35:4e:8f:19:3d:
+         4d:6f:e1:d2:0e:07:b1:12:8c:6c:04:96:e0:f7:e5:aa:e5:62:
+         7f:48:8e:eb:d0:05:b9:ce:fb:ef:c2:af:f4:93:ab:69:fd:0d:
+         2f:e6:1b:65:c3:91:58:bf
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             5b:d0:61:54:5f:46:90:c4:96:e6:d1:1d:ea:87:e8:42
         Signature Algorithm: rsassaPss         
          Hash Algorithm: sha512
