@@ -2829,6 +2829,23 @@
       },
       "publicKeyPem": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEcrxlv5/uGbsaXM/QMSpvZV2iNtF0o4QBech6LGpy3OEefbJLf+4iqI19QNWtUXEjlMMytB4+1ESLHdXyki5X2g=="
     },
+    "p64sutu48UA=": {
+      "serialNumber": "7ca54f089d8348e425066bb901c8162fea6df709",
+      "subject": "C=MD, ST=Republic of Moldova, L=Chisinau, O=Ministry of Health, CN=Republic of Moldova DSC 01",
+      "issuer": "C=MD, ST=Republic of Moldova, L=Chisinau, O=STISC, OU=CCCP, CN=Republic of Moldova National CSCA 01",
+      "notBefore": "2021-10-26T17:31:01.000Z",
+      "notAfter": "2023-10-26T17:31:01.000Z",
+      "signatureAlgorithm": "ECDSA",
+      "fingerprint": "cbdd3750cda9899239f50eee5f9b09fadbb552f1",
+      "publicKeyAlgorithm": {
+        "hash": {
+          "name": "SHA-256"
+        },
+        "name": "ECDSA",
+        "namedCurve": "P-256"
+      },
+      "publicKeyPem": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEurid6V6ennaGMYu1h8Q2PFJ7eMkj7FiBzBEiQMnNb/YzAj60g6cnvX02AB+E48Hoz4amNlralKXL3CvjaxHGLw=="
+    },
     "KBPNEuXUvrY=": {
       "serialNumber": "01",
       "subject": "C=MK, ST=North Macedonia, L=Skopje, O=Ministry of Health\\, North Macedonia, OU=E-Health\\, North Macedonia, CN=zdravstvo.gov.mk, E=contact@zdravstvo.gov.mk",
