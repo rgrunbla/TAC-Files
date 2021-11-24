@@ -19781,6 +19781,90 @@
     },
     {
         "AffectedFields": [
+            "v.0",
+            "v.0.dn",
+            "v.0.dt",
+            "v.0.mp"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "NL",
+        "Description": [
+            {
+                "desc": "A vaccination is considered to be protective at the earliest 14 days after the second vaccination date.",
+                "lang": "en"
+            },
+            {
+                "desc": "Een vaccinatie wordt vanaf 14 dagen na de tweede vaccinatiedatum als beschermend aangemerkt.",
+                "lang": "nl"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-NL-0005",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    "if": [
+                        {
+                            "===": [
+                                {
+                                    "var": "payload.v.0.mp"
+                                },
+                                "EU/1/20/1525"
+                            ]
+                        },
+                        true,
+                        {
+                            "if": [
+                                {
+                                    ">": [
+                                        {
+                                            "var": "payload.v.0.dn"
+                                        },
+                                        2
+                                    ]
+                                },
+                                true,
+                                {
+                                    "not-before": [
+                                        {
+                                            "plusTime": [
+                                                {
+                                                    "var": "external.validationClock"
+                                                },
+                                                0,
+                                                "day"
+                                            ]
+                                        },
+                                        {
+                                            "plusTime": [
+                                                {
+                                                    "var": "payload.v.0.dt"
+                                                },
+                                                14,
+                                                "day"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-11-27T00:00:00+01:00",
+        "ValidTo": "2030-06-01T00:00:00Z",
+        "Version": "1.2.0"
+    },
+    {
+        "AffectedFields": [
             "t.0",
             "t.0.sc",
             "t.0.tt"
@@ -25047,6 +25131,81 @@
         "ValidFrom": "2021-10-11T00:00:00Z",
         "ValidTo": "2030-10-11T00:00:00Z",
         "Version": "1.0.0"
+    },
+    {
+        "AffectedFields": [
+            "v.0.dn",
+            "v.0.dt",
+            "v.0.mp"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "NL",
+        "Description": [
+            {
+                "desc": "A first vaccination with the Janssen vaccine has to be administered at least 28 days ago.",
+                "lang": "en"
+            },
+            {
+                "desc": "Een eerste vaccinatie met het Janssen-vaccin moet ten minste 28 dagen geleden uitgevoerd zijn.",
+                "lang": "nl"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-NL-0006",
+        "Logic": {
+            "if": [
+                {
+                    "===": [
+                        {
+                            "var": "payload.v.0.mp"
+                        },
+                        "EU/1/20/1525"
+                    ]
+                },
+                {
+                    "if": [
+                        {
+                            ">": [
+                                {
+                                    "var": "payload.v.0.dn"
+                                },
+                                1
+                            ]
+                        },
+                        true,
+                        {
+                            "not-before": [
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "external.validationClock"
+                                        },
+                                        0,
+                                        "day"
+                                    ]
+                                },
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "payload.v.0.dt"
+                                        },
+                                        28,
+                                        "day"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-11-27T00:00:00+01:00",
+        "ValidTo": "2030-06-01T00:00:00Z",
+        "Version": "1.1.0"
     },
     {
         "AffectedFields": [
