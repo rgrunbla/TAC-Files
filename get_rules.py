@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#! /usr/bin/env python3
 
 import json
 import requests
@@ -7,7 +7,7 @@ import os
 environ = os.environ
 
 token = environ['token']
-timeout = 10
+timeout = 30
 headers = {
     'Authorization': 'Bearer ' + token
 }
@@ -19,7 +19,6 @@ while True:
         exit(-1)
     
     r = requests.get('https://portail.tacv.myservices-ingroupe.com/api/client/configuration/rules/tacv', timeout=timeout, headers = headers)
-
     if r.status_code != 200:
         # Error trying to fetch rules. Retrying.
         retry += 1
