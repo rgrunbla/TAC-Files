@@ -3344,6 +3344,23 @@
       },
       "publicKeyPem": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEH2+GOTdCPhSUdDZmaM7hq/hRJkZCd3wPyOwB8lS30s4N81r4XFpv1Yev+1bfB4A173DByhZyIKkdnZc/FfaAXQ=="
     },
+    "6ptpKJA1J90=": {
+      "serialNumber": "2e8b88f33be316dac02d5f4cfdde81312c2e2463",
+      "subject": "C=TG, ST=MARITIME, L=LOME, O=INH, OU=INH, CN=inh.tg, E=wemboo.halatoko@inh.tg",
+      "issuer": "C=TG, ST=MARITIME, L=LOME, O=MENTD, OU=DCA, CN=e-certs.gouv.tg, E=support_it@support.gouv.tg",
+      "notBefore": "2021-11-25T08:54:40.000Z",
+      "notAfter": "2023-11-25T08:54:40.000Z",
+      "signatureAlgorithm": "ECDSA",
+      "fingerprint": "3e8fd576efb79fca389b8129fb8daeef368f7947",
+      "publicKeyAlgorithm": {
+        "hash": {
+          "name": "SHA-256"
+        },
+        "name": "ECDSA",
+        "namedCurve": "P-256"
+      },
+      "publicKeyPem": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE/t+Slm3djgmEU6EDiHQ9NbBluAowmiJ1WRBnCP8M+zS4nz8F8i3999918JYKA4wJni8OaHwhzb+ay8KJIxhNFA=="
+    },
     "gEIK4Q/lAG0=": {
       "serialNumber": "00a875f8a85cfe85f0",
       "subject": "C=TR, ST=ANKARA, L=ÃANKAYA, O=T.C. SAÄLIK BAKANLIÄI, OU=SAÄLIK BÄ°LGÄ° SÄ°STEMLERÄ° GENEL MÃDÃRLÃÄÃ, CN=healthpassgwuat.saglik.gov.tr",
@@ -6415,6 +6432,27 @@
     "17a3123b0a1bbf607ea0fc6a689c5bcb14df97c8aa7587f1b0fa9a3590e2fc81",
     "b506812bc89221d8a8cddfb66e9cca1f9cd653b87e124636a1cf5e36fad24cec",
     "3d3860cb7a2881922d140c9219f1443fa5695cc4569914c7e173e4e59b69ec19",
-    "a0887dcf70bd40972b41940561fd2c2dfbc74feec5daf2019c2876a79a22b422"
+    "a0887dcf70bd40972b41940561fd2c2dfbc74feec5daf2019c2876a79a22b422",
+    "70b137abced2e7ed6d10d913744451d6266149a18d7045f55eada2f299be1afa",
+    "9d151b6828ee0f393edad1fa009cbf7733783759804fd37a4a1f2bcb04023e03",
+    "efc2ac8ff68dc3de43f03cd7e01f61e546b95abf7e48370ed2c8acdcead6ec80",
+    "55dceb44c1a73c7abd126e57c793c7bf1223e7db320e0f149896ab52b606987b",
+    "8245e3dc54c86a250cbe54e1d57336e3e98acebb91eef01761dd69f67400cf2f",
+    "2a9ac1269624e39a61366b8145145d3ad38c652d9cebfcbc9a948155ed3192b5",
+    "e80d8725664031d8532d81c44931dc2cecf99f3c285e63babf6b2c0353bb77ab",
+    "edf059481f6a38a7c83d42ee48039cf589192d134c27010a8d547293c8b1a24c",
+    "fd6cadf6384b0c43bdc18c5c0e35305c4592ff5a01a50afda24da811f8fc75e2",
+    "d231994f05d3d5cb71817d7d252829fb69b1f86dc87660cd2c40e5b3b7845f39",
+    "a2fd6eab13e9c8bae2862be3ace23263b6dacd47dd8bf25dc23e463192ddfd5b",
+    "ab69c42f327fc685e055f419e056a27dd5b01d955146ca2b1932228b9ae4dc50",
+    "6bd0fcad7db198bc35ad02366d9e0a518eb92dc293fd430cb5f4bd0ca0bd0609",
+    "eebddbe09d585dbe6d8dda4ff7151f76c0ff838bc20b97cd8538614b50eccc28",
+    "a4faad020dfb8e045dad3a57a010860bf514e6c6dbd994fb46695a49497e9898",
+    "786b59c47c109a0243e9114e0c1c2c5150901a24621da9a59d93a6634e37ea3d",
+    "6dc652abeaf24a02d32c24e8370f66359bbf1525d120b9092d7db72bb5dfe947",
+    "cdd79041f4b07eba78e6287fa71db5ae07acd49f16f6d59857014fa745491fb5",
+    "099765d3311aaf9095dbcd5d1bfd4604d90a7d743a2a4acafabc5b0ed00674b5",
+    "4d1b61e5c50ec6f3bd632bb80f3322788a14d11e98f6ef6f6d6aadc420e29451",
+    "667b206a336f23a0056e658c62b0d3e4a61ed5bed35ebcadc18a90783953aee3"
   ]
 }
