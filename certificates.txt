@@ -15554,6 +15554,49 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            26:26:1a:c1:6d:53:8a:f5:6d:54:53:55:00:da:f1:7a:e3:ee:1e:0a
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = SG, ST = Singapore, O = Ministry Of Health, CN = csca.notarise.gov.sg
+        Validity
+            Not Before: Nov 25 02:55:58 2021 GMT
+            Not After : Nov 25 02:55:58 2023 GMT
+        Subject: C = SG, ST = Singapore, O = Ministry Of Health, CN = dsc.notarise.gov.sg
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:70:1e:5d:59:12:49:90:1d:6e:27:a9:06:4f:ff:
+                    05:99:e6:6f:4f:f7:25:32:33:e4:13:08:1f:9c:98:
+                    1b:82:fc:c0:36:4e:95:80:41:d6:9c:6a:89:ed:37:
+                    4b:a5:b3:bc:f9:cf:1f:4e:54:d8:3e:1a:fb:f8:fa:
+                    07:ad:5f:30:af
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Subject Key Identifier: 
+                DB:7D:0B:51:43:7E:D1:15:23:01:12:DB:8A:24:D1:AA:0F:C2:32:57
+            X509v3 Authority Key Identifier: 
+                keyid:39:37:05:B3:38:B9:F9:9E:23:0D:D1:C2:C1:B0:C3:B3:32:97:01:A5
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:https://www.notarise.gov.sg/csca.crl
+
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.1847.2021.1.1, 1.3.6.1.4.1.1847.2021.1.2, 1.3.6.1.4.1.1847.2021.1.3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:e8:17:47:14:7f:84:ed:77:db:15:8c:d6:e7:
+         7e:22:cc:43:45:dd:81:26:11:8d:59:85:78:29:1b:76:e9:89:
+         9d:02:21:00:b8:46:72:37:cb:cf:5f:31:6f:6d:06:94:08:1e:
+         bd:64:c5:a3:a8:f5:2c:0c:8c:ab:8e:4b:28:b7:1e:65:bf:06
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             76:94:bd:36:6b:2a:4e:3f:58:39:e7:0c:3d:9a:23:2c
         Signature Algorithm: rsassaPss         
          Hash Algorithm: sha512
