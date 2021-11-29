@@ -3616,6 +3616,23 @@
       },
       "publicKeyPem": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEvW8QeGk0YQMGQ/wG2vpPalRdoKNfd48O2qW5uP6gmgRm1OnrQr2gtH3XKxNfVDeuNuqeomsSRkDWa3DXqwLc4A=="
     },
+    "uP22Xh56SMM=": {
+      "serialNumber": "017d6c6d102c66c270f9",
+      "subject": "CN=AT DGC DSC, OU=PROD, OU=Internal HSMF, O=BMSGPK, C=AT, 2.5.4.5=2",
+      "issuer": "C=AT, O=BMSGPK, 2.5.4.5=001, CN=AT DGC CSCA 1",
+      "notBefore": "2021-11-29T16:00:26.000Z",
+      "notAfter": "2023-11-29T16:00:26.000Z",
+      "signatureAlgorithm": "ECDSA",
+      "fingerprint": "78b288424d81a996dd2d64c2910208c4bff261d3",
+      "publicKeyAlgorithm": {
+        "hash": {
+          "name": "SHA-256"
+        },
+        "name": "ECDSA",
+        "namedCurve": "P-256"
+      },
+      "publicKeyPem": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE4L/6FXPhU5Bn0Z8byu4KQXQtyCbGJ1frBcXH4Hy5eCrKzevc72e1TnAi2yCMytCyQ5ULvtRxrVYHIQvQkpcskg=="
+    },
     "e9SH8dtWwdY=": {
       "serialNumber": "739a56c15aa266ee4f",
       "subject": "CN=CERT-GENCAT-1S-21, 2.5.4.5=S0811001G, OU=SELLO ELECTRONICO, OU=Departament de Salut, 2.5.4.97=VATES-S0811001G, O=Departament de Salut de la Generalitat de Catalunya, C=ES",
