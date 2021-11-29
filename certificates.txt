@@ -12192,6 +12192,44 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            01:7d:6c:73:66:9e:41:99:6a:22
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = AT, O = BMSGPK, serialNumber = 001, CN = AT DGC CSCA 1
+        Validity
+            Not Before: Nov 29 16:07:22 2021 GMT
+            Not After : Nov 29 16:07:22 2023 GMT
+        Subject: C = AT, O = BMSGPK, serialNumber = 001002, CN = AT DGC DSC 2
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:e0:bf:fa:15:73:e1:53:90:67:d1:9f:1b:ca:ee:
+                    0a:41:74:2d:c8:26:c6:27:57:eb:05:c5:c7:e0:7c:
+                    b9:78:2a:ca:cd:eb:dc:ef:67:b5:4e:70:22:db:20:
+                    8c:ca:d0:b2:43:95:0b:be:d4:71:ad:56:07:21:0b:
+                    d0:92:97:2c:92
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Subject Key Identifier: 
+                85:3D:54:2E:41:02:43:5D:8F:FE:11:D2:D9:EC:BA:19:31:90:DE:09
+            X509v3 Authority Key Identifier: 
+                keyid:1F:22:AC:1C:65:16:29:B4:C1:98:B3:63:6F:BF:DD:09:9D:BB:7B:7B
+
+            X509v3 Private Key Usage Period: 
+                Not After: Jun 12 16:07:22 2022 GMT
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:b2:60:ff:c4:dd:37:a7:01:b3:31:f3:86:cb:
+         0a:33:f5:43:aa:7e:13:42:fd:43:a7:0a:a5:19:65:d6:23:5f:
+         2b:02:21:00:82:1a:e6:4f:c3:b1:11:c2:e4:0b:30:15:69:06:
+         5f:f1:03:b0:74:1b:43:10:81:30:9d:09:81:14:90:0a:a1:96
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             a8:75:f8:a8:5c:fe:85:f0
         Signature Algorithm: ecdsa-with-SHA1
         Issuer: C = TR, ST = ANKARA, L = \C3\83\C2\87ANKAYA, O = T.C. SA\C3\84\C2\9ELIK BAKANLI\C3\84\C2\9EI, OU = SA\C3\84\C2\9ELIK B\C3\84\C2\B0LG\C3\84\C2\B0 S\C3\84\C2\B0STEMLER\C3\84\C2\B0 GENEL M\C3\83\C2\9CD\C3\83\C2\9CRL\C3\83\C2\9C\C3\84\C2\9E\C3\83\C2\9C, CN = healthpassgwprod.saglik.gov.tr
