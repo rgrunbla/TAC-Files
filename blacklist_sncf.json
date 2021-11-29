@@ -85,6 +85,23 @@
       },
       "publicKeyPem": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEYE24qIKmdcfRWUh2TqklkfZ6nyNBpX4VHeLMxfFl8rkQ8Zku0bcnH5OZXckkSt+tKs+FGZ9tKJ1VtNDmedlL6w=="
     },
+    "ffwxqXFau6Q=": {
+      "serialNumber": "017d6c73669e41996a22",
+      "subject": "C=AT, O=BMSGPK, 2.5.4.5=001002, CN=AT DGC DSC 2",
+      "issuer": "C=AT, O=BMSGPK, 2.5.4.5=001, CN=AT DGC CSCA 1",
+      "notBefore": "2021-11-29T16:07:22.000Z",
+      "notAfter": "2023-11-29T16:07:22.000Z",
+      "signatureAlgorithm": "ECDSA",
+      "fingerprint": "0dd0fc1fe036d110b91e9704a68905b747e597fd",
+      "publicKeyAlgorithm": {
+        "hash": {
+          "name": "SHA-256"
+        },
+        "name": "ECDSA",
+        "namedCurve": "P-256"
+      },
+      "publicKeyPem": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE4L/6FXPhU5Bn0Z8byu4KQXQtyCbGJ1frBcXH4Hy5eCrKzevc72e1TnAi2yCMytCyQ5ULvtRxrVYHIQvQkpcskg=="
+    },
     "ODqaG8mnbro=": {
       "serialNumber": "5dfefffd3a560d58",
       "subject": "C=BE, O=eHealth - Belgium, CN=Belgium Covid19 DSC 01",
