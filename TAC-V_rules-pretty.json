@@ -20594,6 +20594,80 @@
     {
         "AffectedFields": [
             "v.0",
+            "v.0.dt",
+            "v.0.co"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "UA",
+        "Description": [
+            {
+                "desc": "Certificates based on a single dose of two-dose vaccine are valid for 30 days.",
+                "lang": "en"
+            },
+            {
+                "desc": "\u0421\u0435\u0440\u0442\u0438\u0444\u0456\u043a\u0430\u0442\u0438 \u043d\u0430 \u043f\u0456\u0434\u0441\u0442\u0430\u0432\u0456 \u043e\u0434\u043d\u0456\u0454\u0457 \u0434\u043e\u0437\u0438 \u0434\u0432\u043e\u0434\u043e\u0437\u043d\u043e\u0457 \u0432\u0430\u043a\u0446\u0438\u043d\u0438 \u0434\u0456\u044e\u0442\u044c 30 \u0434\u043d\u0456\u0432.",
+                "lang": "ua"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-UA-0030",
+        "Logic": {
+            "if": [
+                {
+                    "and": [
+                        {
+                            "===": [
+                                {
+                                    "var": "payload.v.0.dn"
+                                },
+                                1
+                            ]
+                        },
+                        {
+                            ">=": [
+                                {
+                                    "var": "payload.v.0.sd"
+                                },
+                                2
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "not-after": [
+                        {
+                            "plusTime": [
+                                {
+                                    "var": "external.validationClock"
+                                },
+                                0,
+                                "day"
+                            ]
+                        },
+                        {
+                            "plusTime": [
+                                {
+                                    "var": "payload.v.0.dt"
+                                },
+                                30,
+                                "day"
+                            ]
+                        }
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-06T00:00:01Z",
+        "ValidTo": "2030-06-01T00:00:00Z",
+        "Version": "1.0.0"
+    },
+    {
+        "AffectedFields": [
+            "v.0",
             "v.0.mp"
         ],
         "CertificateType": "Vaccination",
