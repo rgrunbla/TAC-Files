@@ -4642,6 +4642,77 @@
     },
     {
         "AffectedFields": [
+            "v.0"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "IE",
+        "Description": [
+            {
+                "desc": "Vaccine certificate is invalid for entry at this time as the date is outside the window.",
+                "lang": "en"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-IE-0004",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    "if": [
+                        {
+                            "===": [
+                                {
+                                    "var": "payload.v.0.mp"
+                                },
+                                "EU/1/20/1507"
+                            ]
+                        },
+                        {
+                            "not-after": [
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "payload.v.0.dt"
+                                        },
+                                        14,
+                                        "day"
+                                    ]
+                                },
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "external.validationClock"
+                                        },
+                                        0,
+                                        "day"
+                                    ]
+                                },
+                                {
+                                    "plusTime": [
+                                        "2022-06-30T23:59:59-00:00",
+                                        0,
+                                        "day"
+                                    ]
+                                }
+                            ]
+                        },
+                        true
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-04T00:00:00Z",
+        "ValidTo": "2030-06-01T00:00:00Z",
+        "Version": "1.0.2"
+    },
+    {
+        "AffectedFields": [
             "r.0",
             "r.0.fr"
         ],
@@ -11973,6 +12044,77 @@
     },
     {
         "AffectedFields": [
+            "v.0"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "IE",
+        "Description": [
+            {
+                "desc": "Vaccine certificate is invalid for entry at this time as the date is outside the window.",
+                "lang": "en"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-IE-0005",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    "if": [
+                        {
+                            "===": [
+                                {
+                                    "var": "payload.v.0.mp"
+                                },
+                                "EU/1/21/1529"
+                            ]
+                        },
+                        {
+                            "not-after": [
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "payload.v.0.dt"
+                                        },
+                                        15,
+                                        "day"
+                                    ]
+                                },
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "external.validationClock"
+                                        },
+                                        0,
+                                        "day"
+                                    ]
+                                },
+                                {
+                                    "plusTime": [
+                                        "2022-06-30T23:59:59-00:00",
+                                        0,
+                                        "day"
+                                    ]
+                                }
+                            ]
+                        },
+                        true
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-04T00:00:00Z",
+        "ValidTo": "2030-06-01T00:00:00Z",
+        "Version": "1.0.2"
+    },
+    {
+        "AffectedFields": [
             "t.0",
             "t.0.tt"
         ],
@@ -16124,6 +16266,77 @@
         "ValidFrom": "2021-10-01T00:00:00Z",
         "ValidTo": "2030-10-01T00:00:00Z",
         "Version": "1.0.0"
+    },
+    {
+        "AffectedFields": [
+            "v.0"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "IE",
+        "Description": [
+            {
+                "desc": "Vaccine certificate is invalid for entry at this time as the date is outside the window.",
+                "lang": "en"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-IE-0004",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    "if": [
+                        {
+                            "===": [
+                                {
+                                    "var": "payload.v.0.mp"
+                                },
+                                "EU/1/20/1525"
+                            ]
+                        },
+                        {
+                            "not-after": [
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "payload.v.0.dt"
+                                        },
+                                        14,
+                                        "day"
+                                    ]
+                                },
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "external.validationClock"
+                                        },
+                                        0,
+                                        "day"
+                                    ]
+                                },
+                                {
+                                    "plusTime": [
+                                        "2022-06-30T23:59:59-00:00",
+                                        0,
+                                        "day"
+                                    ]
+                                }
+                            ]
+                        },
+                        true
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-04T00:00:00Z",
+        "ValidTo": "2030-06-01T00:00:00Z",
+        "Version": "1.0.3"
     },
     {
         "AffectedFields": [
@@ -22772,6 +22985,77 @@
         "ValidFrom": "2021-10-01T00:00:00Z",
         "ValidTo": "2030-10-01T00:00:00Z",
         "Version": "1.0.0"
+    },
+    {
+        "AffectedFields": [
+            "v.0"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "IE",
+        "Description": [
+            {
+                "desc": "Vaccine certificate is invalid for entry at this time as the date is outside the window.",
+                "lang": "en"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-IE-0003",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    "if": [
+                        {
+                            "===": [
+                                {
+                                    "var": "payload.v.0.mp"
+                                },
+                                "EU/1/20/1528"
+                            ]
+                        },
+                        {
+                            "not-after": [
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "payload.v.0.dt"
+                                        },
+                                        7,
+                                        "day"
+                                    ]
+                                },
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "external.validationClock"
+                                        },
+                                        0,
+                                        "day"
+                                    ]
+                                },
+                                {
+                                    "plusTime": [
+                                        "2022-06-30T23:59:59-00:00",
+                                        0,
+                                        "day"
+                                    ]
+                                }
+                            ]
+                        },
+                        true
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-04T00:00:00Z",
+        "ValidTo": "2030-06-01T00:00:00Z",
+        "Version": "1.0.2"
     },
     {
         "AffectedFields": [
