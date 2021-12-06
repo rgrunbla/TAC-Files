@@ -1,0 +1,3421 @@
+[
+    {
+        "valueSetDate": "2021-09-29",
+        "valueSetId": "vaccines-covid-19-auth-holders",
+        "valueSetValues": {
+            "Bharat-Biotech": {
+                "active": true,
+                "display": "Bharat Biotech",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
+                "version": "1.0"
+            },
+            "FIOCRUZ": {
+                "active": true,
+                "display": "Fiocruz",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
+                "version": "1.3"
+            },
+            "Fiocruz": {
+                "active": true,
+                "display": "Fiocruz",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
+                "version": "1.3"
+            },
+            "Gamaleya-Research-Institute": {
+                "active": true,
+                "display": "Gamaleya Research Institute",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
+                "version": "1.0"
+            },
+            "ORG-100001417": {
+                "active": true,
+                "display": "Janssen-Cilag International",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100001699": {
+                "active": true,
+                "display": "AstraZeneca AB",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100001981": {
+                "active": true,
+                "display": "Serum Institute Of India Private Limited",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100006270": {
+                "active": true,
+                "display": "Curevac AG",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100007893": {
+                "active": true,
+                "display": "R-Pharm CJSC",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100010771": {
+                "active": true,
+                "display": "Sinopharm Weiqida Europe Pharmaceutical s.r.o. - Prague location",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100013793": {
+                "active": true,
+                "display": "CanSino Biologics",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100020693": {
+                "active": true,
+                "display": "China Sinopharm International Corp. - Beijing location",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100024420": {
+                "active": true,
+                "display": "Sinopharm Zhijun (Shenzhen) Pharmaceutical Co. Ltd. - Shenzhen location",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100030215": {
+                "active": true,
+                "display": "Biontech Manufacturing GmbH",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100031184": {
+                "active": true,
+                "display": "Moderna Biotech Spain S.L.",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100032020": {
+                "active": true,
+                "display": "Novavax CZ AS",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "R-Pharm": {
+                "active": true,
+                "display": "R-Pharm CJSC",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "Sinovac-Biotech": {
+                "active": true,
+                "display": "Sinovac Biotech",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
+                "version": "1.0"
+            },
+            "Vector-Institute": {
+                "active": true,
+                "display": "Vector Institute",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
+                "version": "1.0"
+            }
+        }
+    },
+    {
+        "valueSetDate": "2021-09-29",
+        "valueSetId": "vaccines-covid-19-names",
+        "valueSetValues": {
+            "BBIBP-CorV": {
+                "active": true,
+                "display": "BBIBP-CorV",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.0"
+            },
+            "CVnCoV": {
+                "active": true,
+                "display": "CVnCoV",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.0"
+            },
+            "Convidecia": {
+                "active": true,
+                "display": "Convidecia",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.0"
+            },
+            "CoronaVac": {
+                "active": true,
+                "display": "CoronaVac",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.0"
+            },
+            "Covaxin": {
+                "active": true,
+                "display": "Covaxin (also known as BBV152 A, B, C)",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.0"
+            },
+            "Covid-19-recombinant": {
+                "active": true,
+                "display": "Covid-19 (recombinant)",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.3"
+            },
+            "Covishield": {
+                "active": true,
+                "display": "Covishield (ChAdOx1_nCoV-19)",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.2"
+            },
+            "EU/1/20/1507": {
+                "active": true,
+                "display": "Spikevax (previously COVID-19 Vaccine Moderna)",
+                "lang": "en",
+                "system": "https://ec.europa.eu/health/documents/community-register/html/",
+                "version": ""
+            },
+            "EU/1/20/1525": {
+                "active": true,
+                "display": "COVID-19 Vaccine Janssen",
+                "lang": "en",
+                "system": "https://ec.europa.eu/health/documents/community-register/html/",
+                "version": ""
+            },
+            "EU/1/20/1528": {
+                "active": true,
+                "display": "Comirnaty",
+                "lang": "en",
+                "system": "https://ec.europa.eu/health/documents/community-register/html/",
+                "version": ""
+            },
+            "EU/1/21/1529": {
+                "active": true,
+                "display": "Vaxzevria",
+                "lang": "en",
+                "system": "https://ec.europa.eu/health/documents/community-register/html/",
+                "version": ""
+            },
+            "EpiVacCorona": {
+                "active": true,
+                "display": "EpiVacCorona",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.0"
+            },
+            "Inactivated-SARS-CoV-2-Vero-Cell": {
+                "active": true,
+                "display": "Inactivated SARS-CoV-2 (Vero Cell)",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.0"
+            },
+            "R-COVI": {
+                "active": true,
+                "display": "R-COVI",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.3"
+            },
+            "R-Covi": {
+                "active": true,
+                "display": "R-COVI",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.3"
+            },
+            "Sputnik-V": {
+                "active": true,
+                "display": "Sputnik-V",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.0"
+            }
+        }
+    },
+    {
+        "valueSetDate": "2019-11-01",
+        "valueSetId": "country-2-codes",
+        "valueSetValues": {
+            "AD": {
+                "active": true,
+                "display": "Andorra",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "AE": {
+                "active": true,
+                "display": "United Arab Emirates",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "AF": {
+                "active": true,
+                "display": "Afghanistan",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "AG": {
+                "active": true,
+                "display": "Antigua and Barbuda",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "AI": {
+                "active": true,
+                "display": "Anguilla",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "AL": {
+                "active": true,
+                "display": "Albania",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "AM": {
+                "active": true,
+                "display": "Armenia",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "AO": {
+                "active": true,
+                "display": "Angola",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "AQ": {
+                "active": true,
+                "display": "Antarctica",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "AR": {
+                "active": true,
+                "display": "Argentina",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "AS": {
+                "active": true,
+                "display": "American Samoa",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "AT": {
+                "active": true,
+                "display": "Austria",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "AU": {
+                "active": true,
+                "display": "Australia",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "AW": {
+                "active": true,
+                "display": "Aruba",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "AX": {
+                "active": true,
+                "display": "\u00c5land Islands",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "AZ": {
+                "active": true,
+                "display": "Azerbaijan",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "BA": {
+                "active": true,
+                "display": "Bosnia and Herzegovina",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "BB": {
+                "active": true,
+                "display": "Barbados",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "BD": {
+                "active": true,
+                "display": "Bangladesh",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "BE": {
+                "active": true,
+                "display": "Belgium",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "BF": {
+                "active": true,
+                "display": "Burkina Faso",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "BG": {
+                "active": true,
+                "display": "Bulgaria",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "BH": {
+                "active": true,
+                "display": "Bahrain",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "BI": {
+                "active": true,
+                "display": "Burundi",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "BJ": {
+                "active": true,
+                "display": "Benin",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "BL": {
+                "active": true,
+                "display": "Saint Barth\u00e9lemy",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "BM": {
+                "active": true,
+                "display": "Bermuda",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "BN": {
+                "active": true,
+                "display": "Brunei Darussalam",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "BO": {
+                "active": true,
+                "display": "Bolivia, Plurinational State of",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "BQ": {
+                "active": true,
+                "display": "Bonaire, Sint Eustatius and Saba",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "BR": {
+                "active": true,
+                "display": "Brazil",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "BS": {
+                "active": true,
+                "display": "Bahamas",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "BT": {
+                "active": true,
+                "display": "Bhutan",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "BV": {
+                "active": true,
+                "display": "Bouvet Island",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "BW": {
+                "active": true,
+                "display": "Botswana",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "BY": {
+                "active": true,
+                "display": "Belarus",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "BZ": {
+                "active": true,
+                "display": "Belize",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "CA": {
+                "active": true,
+                "display": "Canada",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "CC": {
+                "active": true,
+                "display": "Cocos (Keeling) Islands",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "CD": {
+                "active": true,
+                "display": "Congo, the Democratic Republic of the",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "CF": {
+                "active": true,
+                "display": "Central African Republic",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "CG": {
+                "active": true,
+                "display": "Congo",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "CH": {
+                "active": true,
+                "display": "Switzerland",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "CI": {
+                "active": true,
+                "display": "C\u00f4te d''Ivoire",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "CK": {
+                "active": true,
+                "display": "Cook Islands",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "CL": {
+                "active": true,
+                "display": "Chile",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "CM": {
+                "active": true,
+                "display": "Cameroon",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "CN": {
+                "active": true,
+                "display": "China",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "CO": {
+                "active": true,
+                "display": "Colombia",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "CR": {
+                "active": true,
+                "display": "Costa Rica",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "CU": {
+                "active": true,
+                "display": "Cuba",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "CV": {
+                "active": true,
+                "display": "Cabo Verde",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "CW": {
+                "active": true,
+                "display": "Cura\u00e7ao",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "CX": {
+                "active": true,
+                "display": "Christmas Island",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "CY": {
+                "active": true,
+                "display": "Cyprus",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "CZ": {
+                "active": true,
+                "display": "Czechia",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "DE": {
+                "active": true,
+                "display": "Germany",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "DJ": {
+                "active": true,
+                "display": "Djibouti",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "DK": {
+                "active": true,
+                "display": "Denmark",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "DM": {
+                "active": true,
+                "display": "Dominica",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "DO": {
+                "active": true,
+                "display": "Dominican Republic",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "DZ": {
+                "active": true,
+                "display": "Algeria",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "EC": {
+                "active": true,
+                "display": "Ecuador",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "EE": {
+                "active": true,
+                "display": "Estonia",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "EG": {
+                "active": true,
+                "display": "Egypt",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "EH": {
+                "active": true,
+                "display": "Western Sahara",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "ER": {
+                "active": true,
+                "display": "Eritrea",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "ES": {
+                "active": true,
+                "display": "Spain",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "ET": {
+                "active": true,
+                "display": "Ethiopia",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "FI": {
+                "active": true,
+                "display": "Finland",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "FJ": {
+                "active": true,
+                "display": "Fiji",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "FK": {
+                "active": true,
+                "display": "Falkland Islands (Malvinas)",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "FM": {
+                "active": true,
+                "display": "Micronesia, Federated States of",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "FO": {
+                "active": true,
+                "display": "Faroe Islands",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "FR": {
+                "active": true,
+                "display": "France",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "GA": {
+                "active": true,
+                "display": "Gabon",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "GB": {
+                "active": true,
+                "display": "United Kingdom of Great Britain and Northern Ireland",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "GD": {
+                "active": true,
+                "display": "Grenada",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "GE": {
+                "active": true,
+                "display": "Georgia",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "GF": {
+                "active": true,
+                "display": "French Guiana",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "GG": {
+                "active": true,
+                "display": "Guernsey",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "GH": {
+                "active": true,
+                "display": "Ghana",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "GI": {
+                "active": true,
+                "display": "Gibraltar",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "GL": {
+                "active": true,
+                "display": "Greenland",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "GM": {
+                "active": true,
+                "display": "Gambia",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "GN": {
+                "active": true,
+                "display": "Guinea",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "GP": {
+                "active": true,
+                "display": "Guadeloupe",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "GQ": {
+                "active": true,
+                "display": "Equatorial Guinea",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "GR": {
+                "active": true,
+                "display": "Greece",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "GS": {
+                "active": true,
+                "display": "South Georgia and the South Sandwich Islands",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "GT": {
+                "active": true,
+                "display": "Guatemala",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "GU": {
+                "active": true,
+                "display": "Guam",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "GW": {
+                "active": true,
+                "display": "Guinea-Bissau",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "GY": {
+                "active": true,
+                "display": "Guyana",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "HK": {
+                "active": true,
+                "display": "Hong Kong",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "HM": {
+                "active": true,
+                "display": "Heard Island and McDonald Islands",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "HN": {
+                "active": true,
+                "display": "Honduras",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "HR": {
+                "active": true,
+                "display": "Croatia",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "HT": {
+                "active": true,
+                "display": "Haiti",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "HU": {
+                "active": true,
+                "display": "Hungary",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "ID": {
+                "active": true,
+                "display": "Indonesia",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "IE": {
+                "active": true,
+                "display": "Ireland",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "IL": {
+                "active": true,
+                "display": "Israel",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "IM": {
+                "active": true,
+                "display": "Isle of Man",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "IN": {
+                "active": true,
+                "display": "India",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "IO": {
+                "active": true,
+                "display": "British Indian Ocean Territory",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "IQ": {
+                "active": true,
+                "display": "Iraq",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "IR": {
+                "active": true,
+                "display": "Iran, Islamic Republic of",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "IS": {
+                "active": true,
+                "display": "Iceland",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "IT": {
+                "active": true,
+                "display": "Italy",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "JE": {
+                "active": true,
+                "display": "Jersey",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "JM": {
+                "active": true,
+                "display": "Jamaica",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "JO": {
+                "active": true,
+                "display": "Jordan",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "JP": {
+                "active": true,
+                "display": "Japan",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "KE": {
+                "active": true,
+                "display": "Kenya",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "KG": {
+                "active": true,
+                "display": "Kyrgyzstan",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "KH": {
+                "active": true,
+                "display": "Cambodia",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "KI": {
+                "active": true,
+                "display": "Kiribati",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "KM": {
+                "active": true,
+                "display": "Comoros",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "KN": {
+                "active": true,
+                "display": "Saint Kitts and Nevis",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "KP": {
+                "active": true,
+                "display": "Korea, Democratic People''s Republic of",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "KR": {
+                "active": true,
+                "display": "Korea, Republic of",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "KW": {
+                "active": true,
+                "display": "Kuwait",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "KY": {
+                "active": true,
+                "display": "Cayman Islands",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "KZ": {
+                "active": true,
+                "display": "Kazakhstan",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "LA": {
+                "active": true,
+                "display": "Lao People''s Democratic Republic",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "LB": {
+                "active": true,
+                "display": "Lebanon",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "LC": {
+                "active": true,
+                "display": "Saint Lucia",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "LI": {
+                "active": true,
+                "display": "Liechtenstein",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "LK": {
+                "active": true,
+                "display": "Sri Lanka",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "LR": {
+                "active": true,
+                "display": "Liberia",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "LS": {
+                "active": true,
+                "display": "Lesotho",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "LT": {
+                "active": true,
+                "display": "Lithuania",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "LU": {
+                "active": true,
+                "display": "Luxembourg",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "LV": {
+                "active": true,
+                "display": "Latvia",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "LY": {
+                "active": true,
+                "display": "Libya",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "MA": {
+                "active": true,
+                "display": "Morocco",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "MC": {
+                "active": true,
+                "display": "Monaco",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "MD": {
+                "active": true,
+                "display": "Moldova, Republic of",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "ME": {
+                "active": true,
+                "display": "Montenegro",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "MF": {
+                "active": true,
+                "display": "Saint Martin (French part)",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "MG": {
+                "active": true,
+                "display": "Madagascar",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "MH": {
+                "active": true,
+                "display": "Marshall Islands",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "MK": {
+                "active": true,
+                "display": "Macedonia, the former Yugoslav Republic of",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "ML": {
+                "active": true,
+                "display": "Mali",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "MM": {
+                "active": true,
+                "display": "Myanmar",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "MN": {
+                "active": true,
+                "display": "Mongolia",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "MO": {
+                "active": true,
+                "display": "Macao",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "MP": {
+                "active": true,
+                "display": "Northern Mariana Islands",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "MQ": {
+                "active": true,
+                "display": "Martinique",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "MR": {
+                "active": true,
+                "display": "Mauritania",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "MS": {
+                "active": true,
+                "display": "Montserrat",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "MT": {
+                "active": true,
+                "display": "Malta",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "MU": {
+                "active": true,
+                "display": "Mauritius",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "MV": {
+                "active": true,
+                "display": "Maldives",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "MW": {
+                "active": true,
+                "display": "Malawi",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "MX": {
+                "active": true,
+                "display": "Mexico",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "MY": {
+                "active": true,
+                "display": "Malaysia",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "MZ": {
+                "active": true,
+                "display": "Mozambique",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "NA": {
+                "active": true,
+                "display": "Namibia",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "NC": {
+                "active": true,
+                "display": "New Caledonia",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "NE": {
+                "active": true,
+                "display": "Niger",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "NF": {
+                "active": true,
+                "display": "Norfolk Island",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "NG": {
+                "active": true,
+                "display": "Nigeria",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "NI": {
+                "active": true,
+                "display": "Nicaragua",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "NL": {
+                "active": true,
+                "display": "Netherlands",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "NO": {
+                "active": true,
+                "display": "Norway",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "NP": {
+                "active": true,
+                "display": "Nepal",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "NR": {
+                "active": true,
+                "display": "Nauru",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "NU": {
+                "active": true,
+                "display": "Niue",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "NZ": {
+                "active": true,
+                "display": "New Zealand",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "OM": {
+                "active": true,
+                "display": "Oman",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "PA": {
+                "active": true,
+                "display": "Panama",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "PE": {
+                "active": true,
+                "display": "Peru",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "PF": {
+                "active": true,
+                "display": "French Polynesia",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "PG": {
+                "active": true,
+                "display": "Papua New Guinea",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "PH": {
+                "active": true,
+                "display": "Philippines",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "PK": {
+                "active": true,
+                "display": "Pakistan",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "PL": {
+                "active": true,
+                "display": "Poland",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "PM": {
+                "active": true,
+                "display": "Saint Pierre and Miquelon",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "PN": {
+                "active": true,
+                "display": "Pitcairn",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "PR": {
+                "active": true,
+                "display": "Puerto Rico",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "PS": {
+                "active": true,
+                "display": "Palestine, State of",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "PT": {
+                "active": true,
+                "display": "Portugal",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "PW": {
+                "active": true,
+                "display": "Palau",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "PY": {
+                "active": true,
+                "display": "Paraguay",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "QA": {
+                "active": true,
+                "display": "Qatar",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "RE": {
+                "active": true,
+                "display": "R\u00e9union",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "RO": {
+                "active": true,
+                "display": "Romania",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "RS": {
+                "active": true,
+                "display": "Serbia",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "RU": {
+                "active": true,
+                "display": "Russian Federation",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "RW": {
+                "active": true,
+                "display": "Rwanda",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "SA": {
+                "active": true,
+                "display": "Saudi Arabia",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "SB": {
+                "active": true,
+                "display": "Solomon Islands",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "SC": {
+                "active": true,
+                "display": "Seychelles",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "SD": {
+                "active": true,
+                "display": "Sudan",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "SE": {
+                "active": true,
+                "display": "Sweden",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "SG": {
+                "active": true,
+                "display": "Singapore",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "SH": {
+                "active": true,
+                "display": "Saint Helena, Ascension and Tristan da Cunha",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "SI": {
+                "active": true,
+                "display": "Slovenia",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "SJ": {
+                "active": true,
+                "display": "Svalbard and Jan Mayen",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "SK": {
+                "active": true,
+                "display": "Slovakia",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "SL": {
+                "active": true,
+                "display": "Sierra Leone",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "SM": {
+                "active": true,
+                "display": "San Marino",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "SN": {
+                "active": true,
+                "display": "Senegal",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "SO": {
+                "active": true,
+                "display": "Somalia",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "SR": {
+                "active": true,
+                "display": "Suriname",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "SS": {
+                "active": true,
+                "display": "South Sudan",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "ST": {
+                "active": true,
+                "display": "Sao Tome and Principe",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "SV": {
+                "active": true,
+                "display": "El Salvador",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "SX": {
+                "active": true,
+                "display": "Sint Maarten (Dutch part)",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "SY": {
+                "active": true,
+                "display": "Syrian Arab Republic",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "SZ": {
+                "active": true,
+                "display": "Swaziland",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "TC": {
+                "active": true,
+                "display": "Turks and Caicos Islands",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "TD": {
+                "active": true,
+                "display": "Chad",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "TF": {
+                "active": true,
+                "display": "French Southern Territories",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "TG": {
+                "active": true,
+                "display": "Togo",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "TH": {
+                "active": true,
+                "display": "Thailand",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "TJ": {
+                "active": true,
+                "display": "Tajikistan",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "TK": {
+                "active": true,
+                "display": "Tokelau",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "TL": {
+                "active": true,
+                "display": "Timor-Leste",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "TM": {
+                "active": true,
+                "display": "Turkmenistan",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "TN": {
+                "active": true,
+                "display": "Tunisia",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "TO": {
+                "active": true,
+                "display": "Tonga",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "TR": {
+                "active": true,
+                "display": "Turkey",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "TT": {
+                "active": true,
+                "display": "Trinidad and Tobago",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "TV": {
+                "active": true,
+                "display": "Tuvalu",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "TW": {
+                "active": true,
+                "display": "Taiwan, Province of China",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "TZ": {
+                "active": true,
+                "display": "Tanzania, United Republic of",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "UA": {
+                "active": true,
+                "display": "Ukraine",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "UG": {
+                "active": true,
+                "display": "Uganda",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "UM": {
+                "active": true,
+                "display": "United States Minor Outlying Islands",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "US": {
+                "active": true,
+                "display": "United States of America",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "UY": {
+                "active": true,
+                "display": "Uruguay",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "UZ": {
+                "active": true,
+                "display": "Uzbekistan",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "VA": {
+                "active": true,
+                "display": "Holy See",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "VC": {
+                "active": true,
+                "display": "Saint Vincent and the Grenadines",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "VE": {
+                "active": true,
+                "display": "Venezuela, Bolivarian Republic of",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "VG": {
+                "active": true,
+                "display": "Virgin Islands, British",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "VI": {
+                "active": true,
+                "display": "Virgin Islands,",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "VN": {
+                "active": true,
+                "display": "Viet Nam",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "VU": {
+                "active": true,
+                "display": "Vanuatu",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "WF": {
+                "active": true,
+                "display": "Wallis and Futuna",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "WS": {
+                "active": true,
+                "display": "Samoa",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "XK": {
+                "active": true,
+                "display": "Kosovo, Republic of",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/countrycodes",
+                "version": "1.4"
+            },
+            "YE": {
+                "active": true,
+                "display": "Yemen",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "YT": {
+                "active": true,
+                "display": "Mayotte",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "ZA": {
+                "active": true,
+                "display": "South Africa",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "ZM": {
+                "active": true,
+                "display": "Zambia",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            },
+            "ZW": {
+                "active": true,
+                "display": "Zimbabwe",
+                "lang": "en",
+                "system": "urn:iso:std:iso:3166",
+                "version": ""
+            }
+        }
+    },
+    {
+        "valueSetDate": "2021-04-27",
+        "valueSetId": "covid-19-lab-result",
+        "valueSetValues": {
+            "260373001": {
+                "active": true,
+                "display": "Detected",
+                "lang": "en",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20210131"
+            },
+            "260415000": {
+                "active": true,
+                "display": "Not detected",
+                "lang": "en",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20210131"
+            }
+        }
+    },
+    {
+        "valueSetDate": "2021-04-27",
+        "valueSetId": "disease-agent-targeted",
+        "valueSetValues": {
+            "840539006": {
+                "active": true,
+                "display": "COVID-19",
+                "lang": "en",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20210131"
+            }
+        }
+    },
+    {
+        "valueSetDate": "2021-04-27",
+        "valueSetId": "sct-vaccines-covid-19",
+        "valueSetValues": {
+            "1119305005": {
+                "active": true,
+                "display": "SARS-CoV-2 antigen vaccine",
+                "lang": "en",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20210131"
+            },
+            "1119349007": {
+                "active": true,
+                "display": "SARS-CoV-2 mRNA vaccine",
+                "lang": "en",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20210131"
+            },
+            "J07BX03": {
+                "active": true,
+                "display": "covid-19 vaccines",
+                "lang": "en",
+                "system": "http://www.whocc.no/atc",
+                "version": "2021-01"
+            }
+        }
+    },
+    {
+        "valueSetDate": "2021-04-27",
+        "valueSetId": "covid-19-lab-test-type",
+        "valueSetValues": {
+            "LP217198-3": {
+                "active": true,
+                "display": "Rapid immunoassay",
+                "lang": "en",
+                "system": "http://loinc.org",
+                "version": "2.69"
+            },
+            "LP6464-4": {
+                "active": true,
+                "display": "Nucleic acid amplification with probe detection",
+                "lang": "en",
+                "system": "http://loinc.org",
+                "version": "2.69"
+            }
+        }
+    },
+    {
+        "valueSetDate": "2021-12-06",
+        "valueSetId": "covid-19-lab-test-manufacturer-and-name",
+        "valueSetValues": {
+            "1065": {
+                "active": true,
+                "display": "Becton Dickinson, BD Veritor\u2122 System for Rapid Detection of SARS CoV 2",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:13:00 CEST"
+            },
+            "1097": {
+                "active": true,
+                "display": "Quidel Corporation, Sofia SARS Antigen FIA",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-02-17 00:00:00 CET"
+            },
+            "1114": {
+                "active": true,
+                "display": "Sugentech, Inc, SGTi-flex COVID-19 Ag",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:25:03 CEST"
+            },
+            "1144": {
+                "active": true,
+                "display": "Green Cross Medical Science Corp., GENEDIA W COVID-19 Ag",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-05-11 00:00:00 CEST"
+            },
+            "1162": {
+                "active": true,
+                "display": "Nal von minden GmbH, NADAL COVID-19 Ag Test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-02-17 00:00:00 CET"
+            },
+            "1173": {
+                "active": true,
+                "display": "CerTest Biotec, CerTest SARS-CoV-2 Card test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-02-17 00:00:00 CET"
+            },
+            "1178": {
+                "active": true,
+                "display": "Shenzhen Microprofit Biotech Co., Ltd, SARS-CoV-2 Spike Protein Test Kit (Colloidal Gold Chromatographic Immunoassay)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-22 01:19:10 CEST"
+            },
+            "1180": {
+                "active": true,
+                "display": "MEDsan GmbH, MEDsan SARS-CoV-2 Antigen Rapid Test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-05-11 00:00:00 CEST"
+            },
+            "1190": {
+                "active": true,
+                "display": "m\u00f6Lab, m\u00f6-screen Corona Antigen Test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:23:14 CEST"
+            },
+            "1197": {
+                "active": true,
+                "display": "Goldsite Diagnostics Inc, SARS-CoV-2 Antigen Kit (Colloidal Gold)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-13 06:05:32 CEST"
+            },
+            "1199": {
+                "active": true,
+                "display": "Oncosem Onkolojik Sistemler San. ve Tic. A.S., CAT",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:23:41 CEST"
+            },
+            "1201": {
+                "active": true,
+                "display": "ScheBo Biotech AG, ScheBo SARS CoV-2 Quick Antigen",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:24:39 CEST"
+            },
+            "1215": {
+                "active": true,
+                "display": "Hangzhou Laihe Biotech Co., Ltd, LYHER Novel Coronavirus (COVID-19) Antigen Test Kit(Colloidal Gold)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:21:53 CEST"
+            },
+            "1216": {
+                "active": true,
+                "display": "Guangdong Longsee Biomedical Co., Ltd, COVID-19 Ag Rapid Test Kit (Immuno-Chromatography)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-13 05:42:33 CEST"
+            },
+            "1218": {
+                "active": true,
+                "display": "Siemens Healthineers, CLINITEST Rapid Covid-19 Antigen Test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-02-17 00:00:00 CET"
+            },
+            "1223": {
+                "active": true,
+                "display": "BIOSYNEX S.A., BIOSYNEX COVID-19 Ag BSS",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-02-17 00:00:00 CET"
+            },
+            "1225": {
+                "active": true,
+                "display": "DDS DIAGNOSTIC, Test Rapid Covid-19 Antigen (tampon nazofaringian)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:20:47 CEST"
+            },
+            "1232": {
+                "active": true,
+                "display": "Abbott Rapid Diagnostics, Panbio Covid-19 Ag Rapid Test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-02-17 00:00:00 CET"
+            },
+            "1236": {
+                "active": true,
+                "display": "BTNX Inc, Rapid Response COVID-19 Antigen Rapid Test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:20:40 CEST"
+            },
+            "1242": {
+                "active": true,
+                "display": "Bionote, Inc, NowCheck COVID-19 Ag Test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:07:07 CEST"
+            },
+            "1243": {
+                "active": true,
+                "display": "Edinburgh Genetics Limited, ActivXpress+ COVID-19 Antigen Complete Testing Kit",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-13 05:50:37 CEST"
+            },
+            "1244": {
+                "active": true,
+                "display": "GenBody, Inc, GenBody COVID-19 Ag",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": "2021-12-16 00:00:00 CET",
+                "version": "2021-07-07 05:20:53 CEST"
+            },
+            "1253": {
+                "active": true,
+                "display": "GenSure Biotech Inc, GenSure COVID-19 Antigen Rapid Kit",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:20:59 CEST"
+            },
+            "1257": {
+                "active": true,
+                "display": "Hangzhou AllTest Biotech Co., Ltd, COVID-19 Antigen Rapid Test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-06-16 00:00:00 CEST"
+            },
+            "1263": {
+                "active": true,
+                "display": "Humasis, Humasis COVID-19 Ag Test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-05-11 00:00:00 CEST"
+            },
+            "1266": {
+                "active": true,
+                "display": "Labnovation Technologies Inc, SARS-CoV-2 Antigen Rapid Test Kit",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:22:32 CEST"
+            },
+            "1267": {
+                "active": true,
+                "display": "LumiQuick Diagnostics Inc, QuickProfile COVID-19 Antigen Test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-05-11 00:00:00 CEST"
+            },
+            "1268": {
+                "active": true,
+                "display": "LumiraDX, LumiraDx SARS-CoV-2 Ag Test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-02-17 00:00:00 CET"
+            },
+            "1271": {
+                "active": true,
+                "display": "Precision Biosensor, Inc, Exdia COVID-19 Ag",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:23:54 CEST"
+            },
+            "1278": {
+                "active": true,
+                "display": "Xiamen Boson Biotech Co. Ltd, Rapid SARS-CoV-2 Antigen Test Card",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-02-17 00:00:00 CET"
+            },
+            "1286": {
+                "active": true,
+                "display": "BIOHIT HealthCare (Hefei) Co., Ltd, SARS-CoV-2 Antigen Rapid Test Kit (Fluorescence Immunochromatography)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-22 01:12:43 CEST"
+            },
+            "1295": {
+                "active": true,
+                "display": "Zhejiang Anji Saianfu Biotech Co., Ltd, reOpenTest COVID-19 Antigen Rapid Test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:26:30 CEST"
+            },
+            "1296": {
+                "active": true,
+                "display": "Zhejiang Anji Saianfu Biotech Co., Ltd, Andlucky\u2122 COVID-19 Antigen Rapid Test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:26:23 CEST"
+            },
+            "1304": {
+                "active": true,
+                "display": "AMEDA Labordiagnostik GmbH, AMP Rapid Test SARS-CoV-2 Ag",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-02-17 00:00:00 CET"
+            },
+            "1319": {
+                "active": true,
+                "display": "SGA Medikal, V-Chek SARS-CoV-2 Ag Rapid Test Kit (Colloidal Gold)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:24:45 CEST"
+            },
+            "1324": {
+                "active": true,
+                "display": "Guangzhou Decheng Biotechnology Co., LTD, V-CHEK, 2019-nCoV Ag Rapid Test Kit (Immunochromatography)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:06:03 CEST"
+            },
+            "1331": {
+                "active": true,
+                "display": "Beijing Lepu Medical Technology Co., Ltd, SARS-CoV-2 Antigen Rapid Test Kit (Colloidal Gold Immunochromatography)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-02-17 00:00:00 CET"
+            },
+            "1333": {
+                "active": true,
+                "display": "Joinstar Biomedical Technology Co., Ltd, COVID-19 Rapid Antigen Test (Colloidal Gold)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-05-11 00:00:00 CEST"
+            },
+            "1341": {
+                "active": true,
+                "display": "Qingdao Hightop Biotech Co., Ltd, SARS-CoV-2 Antigen Rapid Test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:23:59 CEST"
+            },
+            "1343": {
+                "active": true,
+                "display": "Zhejiang Orient Gene Biotech Co.,Ltd., Coronavirus Ag Rapid Test Cassette (Swab)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-02-17 00:00:00 CET"
+            },
+            "1357": {
+                "active": true,
+                "display": "SGA Medikal, V-Chek SARS-CoV-2 Rapid Ag Test (colloidal gold)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:10:17 CEST"
+            },
+            "1360": {
+                "active": true,
+                "display": "Guangdong Wesail Biotech Co., Ltd, COVID-19 Ag Test Kit",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:21:35 CEST"
+            },
+            "1363": {
+                "active": true,
+                "display": "Hangzhou Clongene Biotech Co., Ltd, Covid-19 Antigen Rapid Test Kit",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-02-17 00:00:00 CET"
+            },
+            "1365": {
+                "active": true,
+                "display": "Hangzhou Clongene Biotech Co., Ltd, COVID-19/Influenza A+B Antigen Combo Rapid Test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:21:41 CEST"
+            },
+            "1375": {
+                "active": true,
+                "display": "DIALAB GmbH, DIAQUICK COVID-19 Ag Cassette",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-05-11 00:00:00 CEST"
+            },
+            "1392": {
+                "active": true,
+                "display": "Hangzhou Testsea Biotechnology Co., Ltd, COVID-19 Antigen Test Cassette",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:22:21 CEST"
+            },
+            "1420": {
+                "active": true,
+                "display": "NanoEntek, FREND COVID-19 Ag",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:23:26 CEST"
+            },
+            "1437": {
+                "active": true,
+                "display": "Guangzhou Wondfo Biotech Co., Ltd, Wondfo 2019-nCoV Antigen Test (Lateral Flow Method)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-05-11 00:00:00 CEST"
+            },
+            "1443": {
+                "active": true,
+                "display": "Vitrosens Biotechnology Co., Ltd, RapidFor SARS-CoV-2 Rapid Ag Test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:25:23 CEST"
+            },
+            "1456": {
+                "active": true,
+                "display": "Xiamen Wiz Biotech Co., Ltd, SARS-CoV-2 Antigen Rapid Test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:26:12 CEST"
+            },
+            "1457": {
+                "active": true,
+                "display": "Acon Biotech (Hangzhou) Co., Ltd, Flowflex SARS-CoV-2 Antigen Rapid Test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-13 05:52:09 CEST"
+            },
+            "1465": {
+                "active": true,
+                "display": "Triplex International Biosciences Co., Ltd, SARS-CoV-2 Antigen Rapid Test Kit",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-13 05:59:28 CEST"
+            },
+            "1466": {
+                "active": true,
+                "display": "TODA PHARMA, TODA CORONADIAG Ag",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-05-11 00:00:00 CEST"
+            },
+            "1468": {
+                "active": true,
+                "display": "ACON Laboratories, Inc, Flowflex SARS-CoV-2 Antigen rapid test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-05-11 00:00:00 CEST"
+            },
+            "1481": {
+                "active": true,
+                "display": "MP Biomedicals, Rapid SARS-CoV-2 Antigen Test Card",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-05-11 00:00:00 CEST"
+            },
+            "1484": {
+                "active": true,
+                "display": "Beijing Wantai Biological Pharmacy Enterprise Co., Ltd, WANTAI SARS-CoV-2 Ag Rapid Test (FIA)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": "2021-12-16 00:00:00 CET",
+                "version": "2021-07-07 05:20:18 CEST"
+            },
+            "1485": {
+                "active": true,
+                "display": "Beijing Wantai Biological Pharmacy Enterprise Co., Ltd, WANTAI SARS-CoV-2 Ag Rapid Test (Colloidal Gold)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-14 02:19:53 CEST"
+            },
+            "1489": {
+                "active": true,
+                "display": "Safecare Biotech (Hangzhou) Co. Ltd, COVID-19 Antigen Rapid Test Kit (Swab)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-06-16 00:00:00 CEST"
+            },
+            "1490": {
+                "active": true,
+                "display": "Safecare Biotech (Hangzhou) Co. Ltd, Multi-Respiratory Virus Antigen Test Kit(Swab)  (Influenza A+B/ COVID-19)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:24:07 CEST"
+            },
+            "1494": {
+                "active": true,
+                "display": "BIOSYNEX S.A., BIOSYNEX COVID-19 Ag+ BSS",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:08:11 CEST"
+            },
+            "1495": {
+                "active": true,
+                "display": "Prognosis Biotech, Rapid Test Ag 2019-nCov",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:06:58 CEST"
+            },
+            "1501": {
+                "active": true,
+                "display": "New Gene (Hangzhou) Bioengineering Co., Ltd, COVID-19 Antigen Detection Kit",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:23:34 CEST"
+            },
+            "1574": {
+                "active": true,
+                "display": "Shenzhen Zhenrui Biotechnology Co., Ltd, Zhenrui \u00aeCOVID-19 Antigen Test Cassette",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:24:58 CEST"
+            },
+            "1581": {
+                "active": true,
+                "display": "CTK Biotech, Inc, OnSite COVID-19 Ag Rapid Test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:10:05 CEST"
+            },
+            "1599": {
+                "active": true,
+                "display": "Biomerica, Inc., Biomerica COVID-19 Antigen Rapid Test (nasopharyngeal swab)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:10:27 CEST"
+            },
+            "1604": {
+                "active": true,
+                "display": "Roche (SD BIOSENSOR), SARS-CoV-2 Rapid Antigen Test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-05-11 00:00:00 CEST"
+            },
+            "1606": {
+                "active": false,
+                "display": "RapiGEN Inc, BIOCREDIT COVID-19 Ag - SARS-CoV 2 Antigen test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-13 05:19:06 CEST"
+            },
+            "1610": {
+                "active": true,
+                "display": "Hangzhou Clongene Biotech Co., Ltd, COVID-19 Antigen Rapid Test Cassette",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:10:38 CEST"
+            },
+            "1618": {
+                "active": true,
+                "display": "Artron Laboratories Inc, Artron COVID-19 Antigen Test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-13 05:53:59 CEST"
+            },
+            "1654": {
+                "active": true,
+                "display": "Asan Pharmaceutical CO., LTD, Asan Easy Test COVID-19 Ag",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:19:48 CEST"
+            },
+            "1691": {
+                "active": true,
+                "display": "Chil T\u0131bbi Malzeme Sanayi ve Ticaret Limited \u015eirketi, CHIL COVID-19 Antigen Rapid Test (Nasopharyngeal / Oropharyngeal Swab-Casette)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-10-20 00:00:00 CEST"
+            },
+            "1736": {
+                "active": true,
+                "display": "Anhui Deep Blue Medical Technology Co., Ltd, COVID-19 (SARS-CoV-2) Antigen Test Kit(Colloidal Gold)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:19:10 CEST"
+            },
+            "1739": {
+                "active": true,
+                "display": "Eurobio Scientific, EBS SARS-CoV-2 Ag Rapid Test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:06:15 CEST"
+            },
+            "1747": {
+                "active": true,
+                "display": "Guangdong Hecin Scientific, Inc., 2019-nCoV Antigen Test Kit (colloidal gold method)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:21:29 CEST"
+            },
+            "1759": {
+                "active": true,
+                "display": "Hubei Jinjian Biology Co., Ltd, SARS-CoV-2 Antigen Test Kit",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-22 01:17:19 CEST"
+            },
+            "1762": {
+                "active": true,
+                "display": "Novatech, SARS CoV-2 Antigen Rapid Test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-23 09:12:05 CEST"
+            },
+            "1763": {
+                "active": true,
+                "display": "Xiamen AmonMed Biotechnology Co., Ltd, COVID-19 Antigen Rapid Test Kit (Colloidal Gold)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:26:04 CEST"
+            },
+            "1764": {
+                "active": true,
+                "display": "JOYSBIO (Tianjin) Biotechnology Co., Ltd, SARS-CoV-2 Antigen Rapid Test Kit (Colloidal Gold)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:22:26 CEST"
+            },
+            "1767": {
+                "active": true,
+                "display": "Healgen Scientific, Coronavirus Ag Rapid Test Cassette",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-02-17 00:00:00 CET"
+            },
+            "1768": {
+                "active": true,
+                "display": "Shenzhen Watmind Medical Co., Ltd, SARS-CoV-2 Ag Diagnostic Test Kit (Immuno-fluorescence)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:10:50 CEST"
+            },
+            "1769": {
+                "active": true,
+                "display": "Shenzhen Watmind Medical Co., Ltd, SARS-CoV-2 Ag Diagnostic Test Kit (Colloidal Gold)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-05-11 00:00:00 CEST"
+            },
+            "1773": {
+                "active": true,
+                "display": "Wuhan Life Origin Biotech Joint Stock Co., Ltd., The SARS-CoV-2 Antigen Assay Kit (Immunochromatography)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-13 06:02:47 CEST"
+            },
+            "1775": {
+                "active": true,
+                "display": "MEXACARE GmbH, MEXACARE COVID-19 Antigen Rapid Test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:13:13 CEST"
+            },
+            "1800": {
+                "active": true,
+                "display": "AVALUN SAS, Ksmart\u00ae SARS-COV2 Antigen Rapid Test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:12:25 CEST"
+            },
+            "1801": {
+                "active": true,
+                "display": "Innova Medical Group, Inc., Innova SARS CoV-2 Antigen Rapid Qualitative Test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-10-20 00:00:00 CEST"
+            },
+            "1813": {
+                "active": true,
+                "display": "Shenzhen Kisshealth Biotechnology Co., Ltd, SARS-CoV-2 Antigen Test Kit (GICA)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-10-20 00:00:00 CEST"
+            },
+            "1815": {
+                "active": true,
+                "display": "Anhui Deep Blue Medical Technology Co., Ltd, COVID-19 (SARS-CoV-2) Antigen Test Kit (Colloidal Gold) - Nasal Swab",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:18:58 CEST"
+            },
+            "1820": {
+                "active": true,
+                "display": "Getein Biotech, Inc, SARS-CoV-2 Antigen (Colloidal Gold)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-13 06:00:24 CEST"
+            },
+            "1822": {
+                "active": true,
+                "display": "Anbio (Xiamen) Biotechnology Co., Ltd, Rapid COVID-19 Antigen Test(Colloidal Gold)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:18:51 CEST"
+            },
+            "1833": {
+                "active": true,
+                "display": "AAZ-LMB, COVID-VIRO",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-05-11 00:00:00 CEST"
+            },
+            "1844": {
+                "active": true,
+                "display": "Hangzhou Immuno Biotech Co.,Ltd, Immunobio SARS-CoV-2 Antigen ANTERIOR NASAL Rapid Test Kit (minimal invasive)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:21:47 CEST"
+            },
+            "1855": {
+                "active": true,
+                "display": "GA Generic Assays GmbH, GA CoV-2 Antigen Rapid Test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-22 01:16:51 CEST"
+            },
+            "1870": {
+                "active": true,
+                "display": "Beijing Hotgen Biotech Co., Ltd, Novel Coronavirus 2019-nCoV Antigen Test (Colloidal Gold)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-05-11 00:00:00 CEST"
+            },
+            "1880": {
+                "active": true,
+                "display": "NG Biotech, Ninonasal",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-11-10 00:00:00 CET"
+            },
+            "1884": {
+                "active": true,
+                "display": "Xiamen Wiz Biotech Co., Ltd, SARS-CoV-2 Antigen Rapid Test (Colloidal Gold)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:26:18 CEST"
+            },
+            "1902": {
+                "active": true,
+                "display": "Zhuhai Encode Medical Engineering Co., Ltd, ENCODE SARS-COV-2 Antigen rapid Test Device",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-10-20 00:00:00 CEST"
+            },
+            "1906": {
+                "active": true,
+                "display": "Azure Biotech Inc, COVID-19 Antigen Rapid Test Device",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:20:10 CEST"
+            },
+            "1919": {
+                "active": true,
+                "display": "Core Technology Co., Ltd, Coretests COVID-19 Ag Test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-05-11 00:00:00 CEST"
+            },
+            "1920": {
+                "active": true,
+                "display": "Jiangsu Diagnostics Biotechnology Co.,Ltd., COVID-19 Antigen Rapid Test Cassette (Colloidal Gold)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-13 05:48:08 CEST"
+            },
+            "1929": {
+                "active": true,
+                "display": "Hoyotek Biomedical Co.,Ltd, Corona Virus (COVID-19) Antigen Rapid Test (Colloidal Gold)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-10-20 00:00:00 CEST"
+            },
+            "1934": {
+                "active": false,
+                "display": "Tody Laboratories Int., Coronavirus (SARS-CoV 2) Antigen - Oral Fluid",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-13 06:06:56 CEST"
+            },
+            "1957": {
+                "active": true,
+                "display": "Zhuhai Lituo Biotechnology Co., Ltd, COVID-19 Antigen Detection Kit (Colloidal Gold)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-13 06:03:58 CEST"
+            },
+            "1960": {
+                "active": true,
+                "display": "DiaSorin S.p.A, LIAISON\u00ae SARS-CoV-2 Ag",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-10-20 00:00:00 CEST"
+            },
+            "1967": {
+                "active": true,
+                "display": "Shenzhen Microprofit Biotech Co., Ltd, SARS-CoV-2 Antigen Test Kit (Colloidal Gold Chromatographic Immunoassay)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:07:15 CEST"
+            },
+            "1989": {
+                "active": true,
+                "display": "Boditech Med Inc, AFIAS COVID-19 Ag",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-22 01:15:14 CEST"
+            },
+            "2006": {
+                "active": true,
+                "display": "Jiangsu Medomics medical technology Co.,Ltd., SARS-CoV-2 antigen Test Kit (LFIA)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:13:27 CEST"
+            },
+            "2010": {
+                "active": true,
+                "display": "Atlas Link Technology Co., Ltd., NOVA Test\u00ae SARS-CoV-2 Antigen Rapid Test Kit (Colloidal Gold Immunochromatography)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:19:54 CEST"
+            },
+            "2012": {
+                "active": true,
+                "display": "Genrui Biotech Inc, SARS-CoV-2 Antigen Test Kit (Colloidal Gold)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:08:01 CEST"
+            },
+            "2013": {
+                "active": true,
+                "display": "Biotical Health S.L.U., biotical SARS-CoV-2 Ag Card",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-22 01:14:13 CEST"
+            },
+            "2017": {
+                "active": true,
+                "display": "Shenzhen Ultra-Diagnostics Biotec.Co.,Ltd, SARS-CoV-2 Antigen Test Kit",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-06-16 00:00:00 CEST"
+            },
+            "2026": {
+                "active": true,
+                "display": "Shenzhen Reagent Technology Co.,Ltd., SARS-CoV-2 antigen IVD kit SWAB",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-10-20 00:00:00 CEST"
+            },
+            "2029": {
+                "active": true,
+                "display": "Merlin Biomedical (Xiamen) Co., Ltd., SARS-CoV-2 Antigen Rapid Test Cassette",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:23:09 CEST"
+            },
+            "2031": {
+                "active": true,
+                "display": "Bio-Rad Laboratories / Zhejiang Orient Gene Biotech, Coronavirus Ag Rapid Test Cassette (Swab)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:08:22 CEST"
+            },
+            "2035": {
+                "active": true,
+                "display": "BioMaxima SA, SARS-CoV-2 Ag Rapid Test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-22 01:13:31 CEST"
+            },
+            "2052": {
+                "active": true,
+                "display": "SD BIOSENSOR Inc, STANDARD Q COVID-19 Ag Test Nasal",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:13:37 CEST"
+            },
+            "2067": {
+                "active": true,
+                "display": "BIOTEKE CORPORATION (WUXI) CO., LTD, SARS-CoV-2 Antigen Test Kit (colloidal gold method)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-13 05:51:35 CEST"
+            },
+            "2072": {
+                "active": true,
+                "display": "Beijing Jinwofu Bioengineering Technology Co.,Ltd., Novel Coronavirus (SARS-CoV-2) Antigen Rapid Test Kit",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-13 05:54:34 CEST"
+            },
+            "2074": {
+                "active": true,
+                "display": "Triplex International Biosciences (China) Co., LTD., SARS-CoV-2 Antigen Rapid Test Kit",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:25:18 CEST"
+            },
+            "2078": {
+                "active": true,
+                "display": "ArcDia International Oy Ltd, mariPOC Respi+",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-13 05:52:37 CEST"
+            },
+            "2079": {
+                "active": true,
+                "display": "ArcDia International Oy Ltd, mariPOC Quick Flu+",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-13 05:53:23 CEST"
+            },
+            "2089": {
+                "active": true,
+                "display": "Anhui Formaster Biosci Co., Ltd., New Coronavirus (COVID-19) Antigen Rapid Test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-10-20 00:00:00 CEST"
+            },
+            "2090": {
+                "active": true,
+                "display": "Wuhan UNscience Biotechnology Co., Ltd., SARS-CoV-2 Antigen Rapid Test Kit",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:13:58 CEST"
+            },
+            "2098": {
+                "active": true,
+                "display": "Wuhan EasyDiagnosis Biomedicine Co., Ltd., COVID-19 (SARS-CoV-2) Antigen Test Kit",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:25:36 CEST"
+            },
+            "2101": {
+                "active": true,
+                "display": "AXIOM Gesellschaft f\u00fcr Diagnostica und Biochemica mbH, COVID-19 Antigen Rapid Test Card",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:20:03 CEST"
+            },
+            "2103": {
+                "active": true,
+                "display": "VivaChek Biotech (Hangzhou) Co., Ltd, VivaDiag Pro SARS-CoV-2 Ag Rapid Test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": "2022-01-06 00:00:00 CET",
+                "version": "2021-07-07 05:25:29 CEST"
+            },
+            "2104": {
+                "active": true,
+                "display": "Nal von minden GmbH, NADAL COVID -19 Ag +Influenza A/B Test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:23:20 CEST"
+            },
+            "2107": {
+                "active": true,
+                "display": "Jiangsu Bioperfectus Technologies Co., Ltd., Novel Corona Virus (SARS-CoV-2) Ag Rapid Test Kit",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-13 05:43:08 CEST"
+            },
+            "2108": {
+                "active": true,
+                "display": "AESKU.DIAGNOSTICS GmbH & Co. KG, AESKU.RAPID SARS-CoV-2",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-06-16 00:00:00 CEST"
+            },
+            "2109": {
+                "active": true,
+                "display": "Shenzhen Lvshiyuan Biotechnology Co., Ltd., Green Spring SARS-CoV-2 Antigen-Rapid test-Set",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:24:52 CEST"
+            },
+            "2116": {
+                "active": true,
+                "display": "PerGrande BioTech Development Co., Ltd., SARS-CoV-2 Antigen Detection Kit (Colloidal Gold Immunochromatographic Assay)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:23:47 CEST"
+            },
+            "2128": {
+                "active": true,
+                "display": "Lumigenex (Suzhou) Co., Ltd, PocRoc\u00aeSARS-CoV-2 Antigen Rapid Test Kit (Colloidal Gold)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:22:40 CEST"
+            },
+            "2130": {
+                "active": true,
+                "display": "Affimedix, Inc., TestNOW\u00ae - COVID-19 Antigen Test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:18:37 CEST"
+            },
+            "2139": {
+                "active": true,
+                "display": "HANGZHOU LYSUN BIOTECHNOLOGY CO., LTD., COVID-19 Antigen Rapid Test Device\uff08Colloidal Gold\uff09",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:22:14 CEST"
+            },
+            "2143": {
+                "active": true,
+                "display": "Wuxi Biohermes Bio & Medical Technology Co., Ltd., SARS-CoV-2 Antigen Test Kit\uff08Lateral Flow Assay\uff09",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-10-20 00:00:00 CEST"
+            },
+            "2144": {
+                "active": true,
+                "display": "Jiangsu Well Biotech Co., Ltd., COVID-19 Ag Rapid Test Device",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-10-20 00:00:00 CEST"
+            },
+            "2147": {
+                "active": true,
+                "display": "Fujirebio, ESPLINE SARS-CoV-2",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:12:38 CEST"
+            },
+            "2150": {
+                "active": true,
+                "display": "Chongqing M&D Biotechnology Co. Ltd, 2019-nCoV Antigen Test Kit",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-10-20 00:00:00 CEST"
+            },
+            "2156": {
+                "active": true,
+                "display": "ROCHE Diagnostics, Elecsys\u00ae SARS-CoV-2 Antigen",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-10-20 00:00:00 CEST"
+            },
+            "2183": {
+                "active": true,
+                "display": "Getein Biotech, Inc., One Step Test for SARS-CoV-2 Antigen (Colloidal Gold)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:21:07 CEST"
+            },
+            "2200": {
+                "active": true,
+                "display": "NanoRepro AG, NanoRepro SARS-CoV-2 Antigen Rapid Test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-13 05:55:54 CEST"
+            },
+            "2228": {
+                "active": true,
+                "display": "Roche (SD BIOSENSOR), SARS-CoV-2 Rapid Antigen Test Nasal",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:05:08 CEST"
+            },
+            "2241": {
+                "active": true,
+                "display": "NESAPOR EUROPA SL, MARESKIT",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-22 01:17:55 CEST"
+            },
+            "2242": {
+                "active": true,
+                "display": "DNA Diagnostic, COVID-19 Antigen Detection Kit",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-22 01:16:00 CEST"
+            },
+            "2243": {
+                "active": true,
+                "display": "PCL Inc., PCL COVID19 Ag Gold",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:12:48 CEST"
+            },
+            "2247": {
+                "active": true,
+                "display": "BioGnost Ltd, CoviGnost AG Test Device 1x20",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-22 01:11:38 CEST"
+            },
+            "2273": {
+                "active": true,
+                "display": "Dr\u00e4ger Safety AG & Co. KGaA, Dr\u00e4ger Antigen Test SARS-CoV-2",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-10-20 00:00:00 CEST"
+            },
+            "2278": {
+                "active": true,
+                "display": "Innovation Biotech (Beijing) Co.,ltd, Novel Coronavirus (SARS-Cov-2) Antigen Rapid Test Cassette (swab)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-10-20 00:00:00 CEST"
+            },
+            "2282": {
+                "active": true,
+                "display": "Becton Dickinson, BD Kit For Rapid Detection of SARS-CoV-2",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-11-10 00:00:00 CET"
+            },
+            "2290": {
+                "active": true,
+                "display": "Rapid Pathogen Screening, Inc., LIAISON\u00ae Quick Detect Covid Ag Assay",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-22 01:18:29 CEST"
+            },
+            "2297": {
+                "active": true,
+                "display": "SureScreen Diagnostics, SARS-CoV-2 Rapid Antigen Test Cassette",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-10-20 00:00:00 CEST"
+            },
+            "2317": {
+                "active": true,
+                "display": "Hangzhou Immuno Biotech Co.,Ltd, SARS-CoV-2 Antigen Rapid Test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-23 12:29:27 CEST"
+            },
+            "2350": {
+                "active": true,
+                "display": "Assure Tech. (Hangzhou) Co., Ltd., ECOTEST COVID-19 Antigen Rapid Test Device",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-22 01:10:53 CEST"
+            },
+            "2374": {
+                "active": true,
+                "display": "Abioteq GmbH, Cora Gentest-19",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-10-20 00:00:00 CEST"
+            },
+            "2414": {
+                "active": true,
+                "display": "Shenzhen Huian Biosci Technology Co., Ltd., SARS-CoV-2 Antigen Test Kit (Colloidal Gold)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-10-20 00:00:00 CEST"
+            },
+            "2415": {
+                "active": true,
+                "display": "Shenzhen Dymind Biotechnology Co., Ltd, Sars-CoV-2 antigen test kit (colloidal gold)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-10-20 00:00:00 CEST"
+            },
+            "2419": {
+                "active": true,
+                "display": "InTec PRODUCTS, INC., Rapid SARS-CoV-2 Antigen Test (nasopharyngeal specimen)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-10-20 00:00:00 CEST"
+            },
+            "2494": {
+                "active": true,
+                "display": "Beijing O&D Biotech Co., Ltd., COVID-19 Antigen Rapid Test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-10-20 00:00:00 CEST"
+            },
+            "2506": {
+                "active": true,
+                "display": "Nanjing Norman Biological Technology Co.,Ltd, Novel Coronavirus (2019-nCoV) Antigen Testing Kit (Colloidal Gold)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-11-10 00:00:00 CET"
+            },
+            "2533": {
+                "active": true,
+                "display": "Dynamiker Biotechnology\uff08Tianjin) Co., Ltd., Dynamiker SARS-CoV-2 Ag Rapid Test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-10-20 00:00:00 CEST"
+            },
+            "2579": {
+                "active": true,
+                "display": "AccuBioTech Co.,Ltd, Accu-Tell SARS-CoV-2 Ag Cassette",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-10-20 00:00:00 CEST"
+            },
+            "308": {
+                "active": true,
+                "display": "PCL Inc, PCL COVID19 Ag Rapid FIA",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-05-11 00:00:00 CEST"
+            },
+            "344": {
+                "active": true,
+                "display": "SD BIOSENSOR Inc, STANDARD F COVID-19 Ag FIA",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-02-17 00:00:00 CET"
+            },
+            "345": {
+                "active": true,
+                "display": "SD BIOSENSOR Inc, STANDARD Q COVID-19 Ag Test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-02-17 00:00:00 CET"
+            },
+            "768": {
+                "active": true,
+                "display": "ArcDia International Ltd, mariPOC SARS-CoV-2",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-07 05:19:16 CEST"
+            },
+            "770": {
+                "active": true,
+                "display": "Assure Tech. (Hangzhou) Co., Ltd, ECOTEST COVID-19 Antigen Rapid Test Device",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2021-07-13 05:38:51 CEST"
+            }
+        }
+    }
+]
