@@ -85,14 +85,14 @@
       },
       "publicKeyPem": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEYE24qIKmdcfRWUh2TqklkfZ6nyNBpX4VHeLMxfFl8rkQ8Zku0bcnH5OZXckkSt+tKs+FGZ9tKJ1VtNDmedlL6w=="
     },
-    "jEQORRChRjk=": {
-      "serialNumber": "017d901f5b6577da9751",
-      "subject": "C=AT, O=BMSGPK, 2.5.4.5=001002, CN=AT DGC DSC 2",
+    "gNhlvKFJfEE=": {
+      "serialNumber": "017d90c41855f8a54d53",
+      "subject": "C=AT, O=BMSGPK, 2.5.4.5=001003, CN=AT DGC DSC 3",
       "issuer": "C=AT, O=BMSGPK, 2.5.4.5=001, CN=AT DGC CSCA 1",
-      "notBefore": "2021-12-06T14:21:53.000Z",
-      "notAfter": "2023-12-06T14:21:53.000Z",
+      "notBefore": "2021-12-06T17:21:50.000Z",
+      "notAfter": "2023-12-06T17:21:50.000Z",
       "signatureAlgorithm": "ECDSA",
-      "fingerprint": "03e774a983363d4bbd1e6148fd52eafac05c6af6",
+      "fingerprint": "95b3227e73298a10a25ffc3ea61b969571e5c21e",
       "publicKeyAlgorithm": {
         "hash": {
           "name": "SHA-256"
@@ -100,7 +100,7 @@
         "name": "ECDSA",
         "namedCurve": "P-256"
       },
-      "publicKeyPem": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEstVbZNQaWGq3ymcNLJCRp/6fRGvSSo7N0FhDWYnAiLjOKjKXXtcEifs+PwuGalJI7BjeSUdzfbkDHoJUtbNKog=="
+      "publicKeyPem": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAERFDliGDvd/2OKXevNNyURLSR+0qv7Ajz8C6yTLXJ1QbJCqPrQOVq4CXiyKiit98fWLotTelMpow4z1m09Ys6Ww=="
     },
     "ODqaG8mnbro=": {
       "serialNumber": "5dfefffd3a560d58",
