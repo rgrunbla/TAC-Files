@@ -13100,6 +13100,44 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            01:7d:90:1f:5b:65:77:da:97:51
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = AT, O = BMSGPK, serialNumber = 001, CN = AT DGC CSCA 1
+        Validity
+            Not Before: Dec  6 14:21:53 2021 GMT
+            Not After : Dec  6 14:21:53 2023 GMT
+        Subject: C = AT, O = BMSGPK, serialNumber = 001002, CN = AT DGC DSC 2
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:b2:d5:5b:64:d4:1a:58:6a:b7:ca:67:0d:2c:90:
+                    91:a7:fe:9f:44:6b:d2:4a:8e:cd:d0:58:43:59:89:
+                    c0:88:b8:ce:2a:32:97:5e:d7:04:89:fb:3e:3f:0b:
+                    86:6a:52:48:ec:18:de:49:47:73:7d:b9:03:1e:82:
+                    54:b5:b3:4a:a2
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Subject Key Identifier: 
+                63:1E:D2:F7:67:CE:D2:DF:89:0F:06:F1:4B:C1:E4:10:C0:46:88:7C
+            X509v3 Authority Key Identifier: 
+                keyid:1F:22:AC:1C:65:16:29:B4:C1:98:B3:63:6F:BF:DD:09:9D:BB:7B:7B
+
+            X509v3 Private Key Usage Period: 
+                Not After: Jun 20 14:21:53 2022 GMT
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:bf:43:64:e1:ee:f4:2c:e6:09:e8:3b:ec:bb:
+         1a:1e:6c:5f:d5:f4:ae:8f:6d:c4:49:f8:12:57:57:a2:12:b4:
+         d9:02:20:24:99:78:16:38:5f:e4:d0:ee:78:d2:b5:96:da:68:
+         68:20:bd:58:06:3a:39:8c:8b:ad:d6:53:83:95:ad:c0:35
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             7e:7f:ed:0c:80:b4:e1:73:67:d3:c0:de:74:3f:cc:82:fd:18:ed:0f
         Signature Algorithm: ecdsa-with-SHA256
         Issuer: C = NZ, O = Government of New Zealand, OU = Ministry of Health, CN = Vaccine CSCA
