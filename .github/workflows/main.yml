@@ -50,6 +50,10 @@ jobs:
         env:
           token: ${{ secrets.TOKEN }}
         run: "./get_rules.py &> TAC-V_rules-pretty.json"
+      - name: Pretty print valuesets
+        env:
+          token: ${{ secrets.TOKEN }}
+        run: "./get_valuesets.py &> TAC-V_valuesets-pretty.json"
       - name: Download SNCF blacklist
         run: "nix-shell -p curl jq --command \"curl --retry 5 --retry-delay 5 --retry-all-errors https://pretavoyager.sncf.com/api/getcertificates | jq '.' &> blacklist_sncf.json\""
       - uses: stefanzweifel/git-auto-commit-action@v4
