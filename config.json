@@ -2,11 +2,11 @@
   "config": [
     {
       "name": "lastUpdate",
-      "value": "13 Oct 2021"
+      "value": "3 Dec 2021"
     },
     {
       "name": "version",
-      "value": 93
+      "value": 104
     },
     {
       "name": "versionCalibrationBle",
@@ -55,6 +55,34 @@
       "value": true
     },
     {
+      "name": "app.keyfigures.compare",
+      "value": [
+        {
+          "k1": "sivicsidepvacsireanonvax",
+          "k2": "sivicsidepvacsireavax",
+          "t": "keyfigure.compare.vacsirea"
+        },
+        {
+          "k1": "sivicsidepvacsipcrplusnonvax",
+          "k2": "sivicsidepvacsipcrplusvax",
+          "t": "keyfigure.compare.vacsipcrplus"
+        }
+      ]
+    },
+    {
+      "name": "app.keyfigures.compareColors",
+      "value": [
+        {
+          "d": "#E17178",
+          "l": "#FF6F4D"
+        },
+        {
+          "d": "#70D8FF",
+          "l": "#5770BE"
+        }
+      ]
+    },
+    {
       "name": "app.displayUrgentDgs",
       "value": true
     },
@@ -64,7 +92,7 @@
     },
     {
       "name": "app.isolationMinRiskLevel",
-      "value": 3
+      "value": 3.0
     },
     {
       "name": "app.displayVaccination",
@@ -72,7 +100,7 @@
     },
     {
       "name": "app.vaccinationCentersCount",
-      "value": 14
+      "value": 30
     },
     {
       "name": "app.displaySanitaryCertificatesWallet",
@@ -119,6 +147,61 @@
           }
         }
       ]
+    },
+    {
+      "name": "app.isSmartwalletOn",
+      "value": false
+    },
+    {
+      "name": "app.smartwallet.notif",
+      "value": false
+    },
+    {
+      "name": "app.smartwallet.ages",
+      "value": {
+        "high": 65,
+        "low": 18,
+        "lowExpDays": 152
+      }
+    },
+    {
+      "name": "app.smartwallet.exp",
+      "value": {
+        "displayExpDays": 21,
+        "pivot1": "2021-12-15",
+        "pivot2": "2033-07-21",
+        "recNbDays": 180,
+        "vacc11DosesNbDays": 214,
+        "vacc22DosesNbDays": 214,
+        "vaccJan11DosesNbDays": 61
+      }
+    },
+    {
+      "name": "app.smartwallet.elg",
+      "value": {
+        "displayElgDays": 60,
+        "recNbDays": 153,
+        "vacc22DosesNbDays": 153,
+        "vaccJan11DosesNbDays": 31
+      }
+    },
+    {
+      "name": "app.smartwallet.vacc",
+      "value": {
+        "ar": [
+          "EU/1/20/1528",
+          "EU/1/20/1507"
+        ],
+        "az": [
+          "EU/1/21/1529",
+          "Covidshield",
+          "Covid-19-recombinant",
+          "R-COVI"
+        ],
+        "ja": [
+          "EU/1/20/1525"
+        ]
+      }
     },
     {
       "name": "app.notif",
@@ -196,24 +279,24 @@
     {
       "name": "app.proximityReactivation.reminderHours",
       "value": [
-        1,
-        2,
-        4,
-        8,
-        12
+        1.0,
+        2.0,
+        4.0,
+        8.0,
+        12.0
       ]
     },
     {
       "name": "app.push.minHoursBetweenVisibleNotifications",
-      "value": 13
+      "value": 13.0
     },
     {
       "name": "app.qrCode.deletionHours",
-      "value": 24
+      "value": 24.0
     },
     {
       "name": "app.qrCode.expiredHours",
-      "value": 8
+      "value": 8.0
     },
     {
       "name": "app.qrCode.formattedString",
@@ -221,7 +304,7 @@
     },
     {
       "name": "app.qrCode.formattedStringDisplayed",
-      "value": "Créé le <creationDate> à <creationHour>\nNom : <lastname>\nPrénom : <firstname>\nNaissance : <dob> à <cityofbirth>\nAdresse : <address> <zip> <city>\nSortie : <datetime-day> à <datetime-hour>\nCode motif: <reason-code>"
+      "value": "Cr\u00e9\u00e9 le <creationDate> \u00e0 <creationHour>\nNom : <lastname>\nPr\u00e9nom : <firstname>\nNaissance : <dob> \u00e0 <cityofbirth>\nAdresse : <address> <zip> <city>\nSortie : <datetime-day> \u00e0 <datetime-hour>\nCode motif: <reason-code>"
     },
     {
       "name": "app.qrCode.footerString",
@@ -273,11 +356,11 @@
     },
     {
       "name": "app.checkStatusFrequency",
-      "value": 12
+      "value": 12.0
     },
     {
       "name": "app.minStatusRetryDuration",
-      "value": 3
+      "value": 3.0
     },
     {
       "name": "app.appAvailability",
@@ -331,7 +414,7 @@
     },
     {
       "name": "app.wallet.confettiBirthRate",
-      "value": 150
+      "value": 150.0
     },
     {
       "name": "app.wallet.certificateConversionSidepOnlyCode",
