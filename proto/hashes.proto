@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+package tac;
+
+message Hashes {
+      repeated string hash = 1;
+}

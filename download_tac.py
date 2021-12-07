@@ -1,11 +1,12 @@
 #!/usr/bin/env nix-shell
-#! nix-shell -i python3 -p nix-update nix-prefetch-github python3Packages.requests
+#! nix-shell -i python3 -p nix-update nix-prefetch-github python3Packages.requests python3Packages.protobuf
 
 import json
 from io import BytesIO
 import requests
 import gzip    
-    
+from proto import hashes_pb2
+
 BASE_URL="https://app-static.tousanticovid.gouv.fr/"
 VERSIONED_PATH="json/version-36/"
 VERSIONED_SERVER_URL=BASE_URL+VERSIONED_PATH
@@ -95,22 +96,26 @@ URLS = {
 "config.json": CONFIG_URL
 }
 
+timeout = 10
+
 # Downloading Blacklists
 for filename, url in URLS_PB.items():
     out = []
     i = 0
     while True:
         print(f"Downloading chunk {i} : {url % i}")
-        response = requests.get(url % i)
+        try:
+            response = requests.get(url % i, timeout=timeout)
+        except requests.exceptions.ReadTimeout:
+            break
+
         if response.status_code != 200:
             break
         gzip_file = BytesIO(response.content)
         file = gzip.GzipFile(fileobj=gzip_file)
-        chunk = file.read().decode("utf-8")
-        for line in chunk.splitlines():
-            line = line.lstrip("@")
-            if line:
-                out.append(line)
+        hashes = hashes_pb2.Hashes()        
+        hashes.ParseFromString(file.read())
+        out += hashes.hash
         i+=1
     with open(filename, "w") as f:
         f.write(json.dumps(out, indent=2, sort_keys=True))
@@ -123,7 +128,11 @@ URLS = {
 # Downloading various files
 for filename, url in URLS.items():
     print(f"Downloading {url}")
-    response = requests.get(url)
+    try:
+        response = requests.get(url, timeout=timeout)
+    except requests.exceptions.ReadTimeout:
+       break
+        
     if response.status_code != 200:
         continue
     with open(filename, "w") as f:
