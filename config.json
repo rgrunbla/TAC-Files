@@ -6,7 +6,7 @@
     },
     {
       "name": "version",
-      "value": 104
+      "value": 105
     },
     {
       "name": "versionCalibrationBle",
@@ -168,6 +168,7 @@
       "name": "app.smartwallet.exp",
       "value": {
         "displayExpDays": 21,
+        "displayExpOnAllDcc": 240,
         "pivot1": "2021-12-15",
         "pivot2": "2033-07-21",
         "recNbDays": 180,
