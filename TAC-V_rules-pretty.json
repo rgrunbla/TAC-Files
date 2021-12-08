@@ -51239,6 +51239,78 @@
     },
     {
         "AffectedFields": [
+            "r.0",
+            "r.0.fr"
+        ],
+        "CertificateType": "Recovery",
+        "Country": "AL",
+        "Description": [
+            {
+                "desc": "The positive NAA test result (e.g., PCR) must be older than 11 days.",
+                "lang": "en"
+            },
+            {
+                "desc": "Der positive NAA-Test (z.B. PCR) muss mindestens 11 Tage zur\u00fcckliegen.",
+                "lang": "de"
+            },
+            {
+                "desc": "Le test TAN positif (p. ex. PCR) doit dater d\u2018au moins 11 jours.",
+                "lang": "fr"
+            },
+            {
+                "desc": "Deben haber transcurrido como m\u00ednimo 11 d\u00edas desde que una prueba de amplificaci\u00f3n de \u00e1cidos nucleicos (por ejemplo, una PCR) diese positivo.",
+                "lang": "es"
+            },
+            {
+                "desc": "Il NAAT positivo (ad es. test PRC) deve risalire minimo a 11 giorni fa.",
+                "lang": "it"
+            },
+            {
+                "desc": "Rezultati pozitiv i testit NAA (p.sh., PCR) duhet t\u00eb jet\u00eb m\u00eb i vjet\u00ebr se 11 dit\u00eb.",
+                "lang": "sq"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "RR-AL-0002",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.r.0"
+                },
+                {
+                    "not-before": [
+                        {
+                            "plusTime": [
+                                {
+                                    "var": "external.validationClock"
+                                },
+                                0,
+                                "day"
+                            ]
+                        },
+                        {
+                            "plusTime": [
+                                {
+                                    "var": "payload.r.0.fr"
+                                },
+                                11,
+                                "day"
+                            ]
+                        }
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-10T16:00:00Z",
+        "ValidTo": "2022-12-10T00:00:00Z",
+        "Version": "1.1.0"
+    },
+    {
+        "AffectedFields": [
             "t.0",
             "t.0.sc",
             "t.0.tt"
