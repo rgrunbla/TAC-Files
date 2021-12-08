@@ -76,6 +76,58 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            60:e1:48:3b:9e:0b:10:6a:8e:73:cc:3c:6e:ad:36:e5
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = SE, O = Swedish eHealth Agency, OU = Digital Covid Certificate Services, organizationIdentifier = 202100-6552, CN = Swedish Digital Covid Certificate CSCA
+        Validity
+            Not Before: Dec  8 15:24:13 2021 GMT
+            Not After : Dec  8 15:44:13 2023 GMT
+        Subject: C = SE, O = Swedish eHealth Agency, organizationIdentifier = 202100-6552, CN = DCC Signer 2112
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:36:a0:bd:08:58:30:a1:a6:ae:ab:56:07:dd:9f:
+                    5e:0a:aa:d0:32:3e:5b:68:43:6c:ef:76:09:6c:bf:
+                    a2:5d:54:ec:dd:a0:59:45:83:25:99:9b:07:74:3e:
+                    5f:4f:be:12:0a:a8:54:e7:37:c0:5b:e4:52:41:3b:
+                    97:e5:d1:77:ed
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            X509v3 Authority Key Identifier: 
+                keyid:02:4E:3A:DF:85:A7:54:87:70:AF:C4:A1:BD:8A:58:4D:1F:97:A6:FF:3D:E2:A8:67:62:0C:4A:82:CB:4B:82:BA
+
+            X509v3 Subject Key Identifier: 
+                4B:47:D5:3E:E7:C9:E8:FF:42:09:CB:A5:F9:E3:1A:71:51:A5:9D:0F:C0:2B:0A:32:1B:BB:EF:AE:38:69:14:53
+            X509v3 Key Usage: critical
+                Digital Signature, Key Agreement
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:https://dgcg.covidbevis.se/csca/crl/csca01.crl
+
+            Authority Information Access: 
+                OCSP - URI:https://dgcg.covidbevis.se/csca/ocsp/csca01
+
+            X509v3 Subject Alternative Name: 
+                email:registrator@ehalsomyndigheten.se
+    Signature Algorithm: ecdsa-with-SHA256
+         30:81:88:02:42:01:e9:2d:ab:16:12:4e:c8:12:b6:38:c8:3c:
+         4f:d8:64:c1:9d:1c:41:bd:e7:87:5a:10:aa:cb:ea:91:9e:0a:
+         77:4e:47:3f:6a:db:89:46:00:d8:3b:b1:73:cf:6b:db:76:51:
+         f4:26:5d:73:fa:5e:2e:24:09:be:9d:d9:be:0a:c7:c8:95:02:
+         42:01:97:13:a3:1e:ed:2f:a3:9f:60:9e:18:ea:67:16:bf:49:
+         17:a7:ae:1f:32:56:2b:2f:17:47:8d:29:ea:2e:d5:6a:48:95:
+         c9:9f:07:2f:91:44:3f:84:fb:d7:df:3c:c6:a6:d0:c6:d5:47:
+         ee:fb:5b:f8:f8:34:a7:36:1c:9a:eb:54:cd
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             04:31:c6:0c:fc:00:ee:46:29
         Signature Algorithm: ecdsa-with-SHA256
         Issuer: CN = EADTrust ECC 256 SubCA For Qualified Certificates 2019, O = "European Agency of Digital Trust, S.L.", C = ES, organizationIdentifier = VATES-B85626240, OU = Legal Person
