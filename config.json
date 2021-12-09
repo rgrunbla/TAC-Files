@@ -2,11 +2,11 @@
   "config": [
     {
       "name": "lastUpdate",
-      "value": "3 Dec 2021"
+      "value": "9 Dec 2021"
     },
     {
       "name": "version",
-      "value": 105
+      "value": 106
     },
     {
       "name": "versionCalibrationBle",
@@ -150,7 +150,7 @@
     },
     {
       "name": "app.isSmartwalletOn",
-      "value": false
+      "value": true
     },
     {
       "name": "app.smartwallet.notif",
@@ -170,7 +170,7 @@
         "displayExpDays": 21,
         "displayExpOnAllDcc": 240,
         "pivot1": "2021-12-15",
-        "pivot2": "2033-07-21",
+        "pivot2": "2022-01-15",
         "recNbDays": 180,
         "vacc11DosesNbDays": 214,
         "vacc22DosesNbDays": 214,
