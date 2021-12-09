@@ -235,6 +235,12 @@
   },
   {
     "country": "FR",
+    "hash": "41b2e96f02c9fa8ff2a7f9d10086bd3d3f1cb3a7bf1385897941c4d775551654",
+    "identifier": "GR-FR-0000",
+    "version": "1.0.3"
+  },
+  {
+    "country": "FR",
     "hash": "580686306287356f0dfc876f725fbc4f58343f08bb99ca6aceb8c7c7a3dd336f",
     "identifier": "GR-FR-0001",
     "version": "1.0.1"
@@ -1537,6 +1543,18 @@
   },
   {
     "country": "FR",
+    "hash": "58daaa80800edc874e3866f1e9c269670b9fcc6897ba9f5556a49ead806d3477",
+    "identifier": "RR-FR-0000",
+    "version": "1.0.3"
+  },
+  {
+    "country": "FR",
+    "hash": "f17084a88638a4c878aa9681eb4b7c6d00905f8450963c3f2fc14d7cccf7acf4",
+    "identifier": "RR-FR-0001",
+    "version": "1.0.3"
+  },
+  {
+    "country": "FR",
     "hash": "29afec667d533fbf104e31f4d767c59050cc83c37e9fba79497360ae453b573e",
     "identifier": "RR-FR-0001",
     "version": "1.0.2"
@@ -2596,6 +2614,12 @@
     "hash": "a0090a9faeb45fd03119e4d48cf554c2a45df940d14241220bf9425df08d720e",
     "identifier": "TR-FR-0002",
     "version": "1.0.1"
+  },
+  {
+    "country": "FR",
+    "hash": "f76fbd904d4bfdf8870a546bc70d42f415708ef92d5439765ebc1636f50302d4",
+    "identifier": "TR-FR-0002",
+    "version": "1.0.2"
   },
   {
     "country": "FR",
@@ -7045,9 +7069,21 @@
   },
   {
     "country": "FR",
+    "hash": "7382fbd1e5b0080e7c6dc11799c7246ca921f12052bc83a557fad6607edcbb6a",
+    "identifier": "VR-FR-0000",
+    "version": "1.0.3"
+  },
+  {
+    "country": "FR",
     "hash": "5eedabd880f7caef6d369fea6ed6d640808cfa26c8348f847cb49c47e9bd4b61",
     "identifier": "VR-FR-0000",
     "version": "1.0.2"
+  },
+  {
+    "country": "FR",
+    "hash": "c7dce415b194e73d55d72a723c2137d654976acc850ce2276be682565e6f1ace",
+    "identifier": "VR-FR-0001",
+    "version": "1.0.3"
   },
   {
     "country": "FR",
@@ -7063,9 +7099,21 @@
   },
   {
     "country": "FR",
+    "hash": "33c831f4939eb2ee1b0a47b3a6801d68c35f70af21bd5c779e48312f78ee2609",
+    "identifier": "VR-FR-0002",
+    "version": "1.0.2"
+  },
+  {
+    "country": "FR",
     "hash": "d2154e08547683b2e14a2f02faeafe003c3cca8361afe9fe347075b17b267b06",
     "identifier": "VR-FR-0003",
     "version": "1.0.2"
+  },
+  {
+    "country": "FR",
+    "hash": "cf04c176be88578672b5080a8a469f750dadb6bc6644714114abf3403cffabd2",
+    "identifier": "VR-FR-0003",
+    "version": "1.0.3"
   },
   {
     "country": "FR",
@@ -7075,9 +7123,27 @@
   },
   {
     "country": "FR",
+    "hash": "e13a470312efac33ab9615e74af5442eb39cb494c5e2159c4c134005d903d762",
+    "identifier": "VR-FR-0004",
+    "version": "1.0.3"
+  },
+  {
+    "country": "FR",
     "hash": "4d1ff7f7a52eb59e4f93752c227a09e2d1e6748fcdb32fa67ad1e9c4686f1147",
     "identifier": "VR-FR-0005",
     "version": "1.0.2"
+  },
+  {
+    "country": "FR",
+    "hash": "c7f8b3dac37bcefa70f47790f1ca2b1db1a15269ea1e86065af9e66c9423debc",
+    "identifier": "VR-FR-0005",
+    "version": "1.0.3"
+  },
+  {
+    "country": "FR",
+    "hash": "059bc696f499a85d3b0c6b6b5a8a8d925a19d6379accd43a7129f887e9661189",
+    "identifier": "VR-FR-0006",
+    "version": "1.0.3"
   },
   {
     "country": "FR",
@@ -7093,9 +7159,27 @@
   },
   {
     "country": "FR",
+    "hash": "b25c7c41ce038098d4a8cb63d812f17d003fbc305d15faa5677cd041b4f60e64",
+    "identifier": "VR-FR-0007",
+    "version": "1.0.3"
+  },
+  {
+    "country": "FR",
     "hash": "7c95ade9a6e9941d91a317df11dfff01cd6291adbd97f4cf0bb19719883d2a73",
     "identifier": "VR-FR-0008",
     "version": "1.0.0"
+  },
+  {
+    "country": "FR",
+    "hash": "76c8eca42689a2ba77265f4cce3d7befe8eda7f51ea10c95d54d37e85c2c0443",
+    "identifier": "VR-FR-0008",
+    "version": "1.0.1"
+  },
+  {
+    "country": "FR",
+    "hash": "209bcb7a37b7d85894c6149a93b5a748b61f9849aaf663666592a3841d2b9df4",
+    "identifier": "VR-FR-0009",
+    "version": "1.0.1"
   },
   {
     "country": "FR",
@@ -7108,6 +7192,12 @@
     "hash": "191dd63d78ac7d2c93aa9a8a29319911b7a0b1787f03f974014c2ce493be0c38",
     "identifier": "VR-FR-0010",
     "version": "1.0.0"
+  },
+  {
+    "country": "FR",
+    "hash": "8ec7c8f5f8117d1c2a9784615a4aa12b24d508a2f564df31ce903e7afadd395b",
+    "identifier": "VR-FR-0010",
+    "version": "1.0.1"
   },
   {
     "country": "BL",

@@ -1956,6 +1956,76 @@
     },
     {
         "AffectedFields": [
+            "v.0",
+            "v.0.dt",
+            "v.0.mp"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "FR",
+        "Description": [
+            {
+                "desc": "With BioNTech/Pfizer vaccine, a finished vaccination course is considered protective earliest from 28 days after the date of the last vaccination.",
+                "lang": "en"
+            },
+            {
+                "desc": "Avec le vaccin BioNTech/Pfizer, un parcours vaccinale termin\u00e9 est consider\u00e9 comme protecteur au plus t\u00f4t \u00e0 partir de 7 jours apr\u00e8s la date de la derni\u00e8re injection.",
+                "lang": "fr"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-FR-0006",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    "if": [
+                        {
+                            "===": [
+                                {
+                                    "var": "payload.v.0.mp"
+                                },
+                                "EU/1/20/1528"
+                            ]
+                        },
+                        {
+                            "not-before": [
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "external.validationClock"
+                                        },
+                                        0,
+                                        "day"
+                                    ]
+                                },
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "payload.v.0.dt"
+                                        },
+                                        7,
+                                        "day"
+                                    ]
+                                }
+                            ]
+                        },
+                        true
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-11T12:00:00Z",
+        "ValidTo": "2021-12-14T12:00:00Z",
+        "Version": "1.0.3"
+    },
+    {
+        "AffectedFields": [
             "t",
             "v"
         ],
@@ -9649,6 +9719,50 @@
     },
     {
         "AffectedFields": [
+            "v.0",
+            "v.0.ma"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "FR",
+        "Description": [
+            {
+                "desc": "Only manufacturers in the allowed valueset that have been approved by the EMA are allowed.",
+                "lang": "en"
+            },
+            {
+                "desc": "Seuls les fabicants approuv\u00e9s par l'AEM (Value set UE) sont accept\u00e9s en France.",
+                "lang": "fr"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-FR-0009",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    "in": [
+                        {
+                            "var": "payload.v.0.ma"
+                        },
+                        {
+                            "var": "external.valueSets.vaccines-covid-19-auth-holders"
+                        }
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-11T12:00:00Z",
+        "ValidTo": "2021-12-14T12:00:00Z",
+        "Version": "1.0.1"
+    },
+    {
+        "AffectedFields": [
             "t.1"
         ],
         "CertificateType": "Test",
@@ -16145,6 +16259,51 @@
     },
     {
         "AffectedFields": [
+            "v.0",
+            "v.0.dn",
+            "v.0.sd"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "FR",
+        "Description": [
+            {
+                "desc": "Vaccination doses must be equal or greater than expected doses.",
+                "lang": "en"
+            },
+            {
+                "desc": "Le nombre de doses prises doit etre superieur ou \u00e9gale au nombre de doses attendues.",
+                "lang": "fr"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-FR-0002",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    ">=": [
+                        {
+                            "var": "payload.v.0.dn"
+                        },
+                        {
+                            "var": "payload.v.0.sd"
+                        }
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-11T12:00:00Z",
+        "ValidTo": "2021-12-14T12:00:00Z",
+        "Version": "1.0.2"
+    },
+    {
+        "AffectedFields": [
             "r.0",
             "r.0.fr",
             "r.0.df",
@@ -20850,6 +21009,62 @@
         "ValidFrom": "2021-10-01T00:00:00Z",
         "ValidTo": "2030-10-01T00:00:00Z",
         "Version": "1.0.0"
+    },
+    {
+        "AffectedFields": [
+            "t"
+        ],
+        "CertificateType": "General",
+        "Country": "FR",
+        "Description": [
+            {
+                "desc": "Only test is allowed, and in a EU standard format.",
+                "lang": "en"
+            },
+            {
+                "desc": "Seuls un test est autoris\u00e9, et dans un format au standard UE.",
+                "lang": "fr"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "GR-FR-0000",
+        "Logic": {
+            "===": [
+                {
+                    "reduce": [
+                        [
+                            {
+                                "var": "payload.t"
+                            }
+                        ],
+                        {
+                            "+": [
+                                {
+                                    "var": "accumulator"
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "var": "current.0"
+                                        },
+                                        1,
+                                        0
+                                    ]
+                                }
+                            ]
+                        },
+                        0
+                    ]
+                },
+                1
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-11T12:00:00Z",
+        "ValidTo": "2030-12-11T00:00:00Z",
+        "Version": "1.0.3"
     },
     {
         "AffectedFields": [
@@ -28382,6 +28597,38 @@
         "ValidFrom": "2021-10-01T00:00:00Z",
         "ValidTo": "2030-10-01T00:00:00Z",
         "Version": "1.0.0"
+    },
+    {
+        "AffectedFields": [
+            "r.1"
+        ],
+        "CertificateType": "Recovery",
+        "Country": "FR",
+        "Description": [
+            {
+                "desc": " Recovery format is not EU standard.",
+                "lang": "en"
+            },
+            {
+                "desc": "Le format li\u00e9 au r\u00e9tablissement n'est pas au standard UE.",
+                "lang": "fr"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "RR-FR-0000",
+        "Logic": {
+            "!": [
+                {
+                    "var": "payload.r.1"
+                }
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-11T12:00:00Z",
+        "ValidTo": "2021-12-14T12:00:00Z",
+        "Version": "1.0.3"
     },
     {
         "AffectedFields": [
@@ -37497,6 +37744,38 @@
     },
     {
         "AffectedFields": [
+            "v.1"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "FR",
+        "Description": [
+            {
+                "desc": "Vaccin format is not EU standard.",
+                "lang": "en"
+            },
+            {
+                "desc": "Le format li\u00e9 au vaccin n'est pas au standard UE.",
+                "lang": "fr"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-FR-0000",
+        "Logic": {
+            "!": [
+                {
+                    "var": "payload.v.1"
+                }
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-11T12:00:00Z",
+        "ValidTo": "2021-12-14T12:00:00Z",
+        "Version": "1.0.3"
+    },
+    {
+        "AffectedFields": [
             "t.0",
             "t.0.sc",
             "t.0.tt"
@@ -38294,6 +38573,84 @@
         "ValidFrom": "2021-10-01T00:00:00Z",
         "ValidTo": "2030-10-01T00:00:00Z",
         "Version": "1.0.0"
+    },
+    {
+        "AffectedFields": [
+            "v.0",
+            "v.0.dt",
+            "v.0.mp"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "FR",
+        "Description": [
+            {
+                "desc": "With not Jansen vaccine, a finished vaccination course is considered protective earliest from 7 days after the date of the last vaccination.",
+                "lang": "en"
+            },
+            {
+                "desc": "Avec le vaccin autre que Jansen le sch\u00e9ma vaccinal est consid\u00e9r\u00e9 comme complet 7 jours apr\u00e8s la date de la derni\u00e8re injection.",
+                "lang": "fr"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-FR-0008",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    "if": [
+                        {
+                            "in": [
+                                {
+                                    "var": "payload.v.0.mp"
+                                },
+                                [
+                                    "EU/1/20/1528",
+                                    "EU/1/20/1507",
+                                    "EU/1/21/1529",
+                                    "Covishield",
+                                    "R-Covi",
+                                    "R-COVI",
+                                    "Covid-19 vaccine (recombinante)"
+                                ]
+                            ]
+                        },
+                        {
+                            "not-before": [
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "external.validationClock"
+                                        },
+                                        0,
+                                        "day"
+                                    ]
+                                },
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "payload.v.0.dt"
+                                        },
+                                        7,
+                                        "day"
+                                    ]
+                                }
+                            ]
+                        },
+                        true
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-11T12:00:00Z",
+        "ValidTo": "2021-12-14T12:00:00Z",
+        "Version": "1.0.1"
     },
     {
         "AffectedFields": [
@@ -45775,6 +46132,50 @@
         "ValidFrom": "2021-10-01T00:00:00Z",
         "ValidTo": "2030-10-01T00:00:00Z",
         "Version": "1.0.0"
+    },
+    {
+        "AffectedFields": [
+            "v.0",
+            "v.0.vp"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "FR",
+        "Description": [
+            {
+                "desc": "Only prophylactic agents in the allowed valueset that have been approved by the EMA are allowed.",
+                "lang": "en"
+            },
+            {
+                "desc": "Seuls les agents prophylactiques approuv\u00e9s par l'AEM (Value set UE) sont accept\u00e9s en France.",
+                "lang": "fr"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-FR-0010",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    "in": [
+                        {
+                            "var": "payload.v.0.vp"
+                        },
+                        {
+                            "var": "external.valueSets.sct-vaccines-covid-19"
+                        }
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-11T12:00:00Z",
+        "ValidTo": "2021-12-14T12:00:00Z",
+        "Version": "1.0.1"
     },
     {
         "AffectedFields": [
@@ -56866,6 +57267,76 @@
     {
         "AffectedFields": [
             "v.0",
+            "v.0.dt",
+            "v.0.mp"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "FR",
+        "Description": [
+            {
+                "desc": "With AstraZeneca vaccine, a finished vaccination course is considered protective earliest from 28 days after the date of the last vaccination.",
+                "lang": "en"
+            },
+            {
+                "desc": "Avec le vaccin AstraZeneca, un parcours vaccinale termin\u00e9 est consider\u00e9 comme protecteur au plus t\u00f4t \u00e0 partir de 7 jours apr\u00e8s la date de la derni\u00e8re injection.",
+                "lang": "fr"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-FR-0007",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    "if": [
+                        {
+                            "===": [
+                                {
+                                    "var": "payload.v.0.mp"
+                                },
+                                "EU/1/21/1529"
+                            ]
+                        },
+                        {
+                            "not-before": [
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "external.validationClock"
+                                        },
+                                        0,
+                                        "day"
+                                    ]
+                                },
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "payload.v.0.dt"
+                                        },
+                                        7,
+                                        "day"
+                                    ]
+                                }
+                            ]
+                        },
+                        true
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-11T12:00:00Z",
+        "ValidTo": "2021-12-14T12:00:00Z",
+        "Version": "1.0.3"
+    },
+    {
+        "AffectedFields": [
+            "v.0",
             "v.0.vp"
         ],
         "CertificateType": "Vaccination",
@@ -63813,6 +64284,57 @@
     },
     {
         "AffectedFields": [
+            "v.0",
+            "v.0.mp"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "FR",
+        "Description": [
+            {
+                "desc": "Only vaccines in the allowed valueset that have been approved by the ANSM or Covishield, R-COVI and Fiocruz-covid-19 vaccines are allowed.",
+                "lang": "en"
+            },
+            {
+                "desc": "Seuls les vaccins approuv\u00e9s par l'ANSM sont accept\u00e9s en France (Pfizer, Moderna, Astra Zeneca, Janssen, Covishield, R-covi et Covid 19 Vaccine).",
+                "lang": "fr"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-FR-0001",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    "in": [
+                        {
+                            "var": "payload.v.0.mp"
+                        },
+                        [
+                            "EU/1/20/1528",
+                            "EU/1/20/1507",
+                            "EU/1/21/1529",
+                            "EU/1/20/1525",
+                            "Covishield",
+                            "R-Covi",
+                            "R-COVI",
+                            "Covid-19 vaccine (recombinante)"
+                        ]
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-11T12:00:00Z",
+        "ValidTo": "2021-12-14T12:00:00Z",
+        "Version": "1.0.3"
+    },
+    {
+        "AffectedFields": [
             "t.1"
         ],
         "CertificateType": "Test",
@@ -63842,6 +64364,76 @@
         "ValidFrom": "2021-10-01T00:00:00Z",
         "ValidTo": "2030-10-01T00:00:00Z",
         "Version": "1.0.0"
+    },
+    {
+        "AffectedFields": [
+            "v.0",
+            "v.0.dt",
+            "v.0.mp"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "FR",
+        "Description": [
+            {
+                "desc": "With Moderna vaccine, a finished vaccination course is considered protective earliest from 28 days after the date of the last vaccination.",
+                "lang": "en"
+            },
+            {
+                "desc": "Avec le vaccin Moderna, un parcours vaccinale termin\u00e9 est consider\u00e9 comme protecteur au plus t\u00f4t \u00e0 partir de 7 jours apr\u00e8s la date de la derni\u00e8re injection.",
+                "lang": "fr"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-FR-0005",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    "if": [
+                        {
+                            "===": [
+                                {
+                                    "var": "payload.v.0.mp"
+                                },
+                                "EU/1/20/1507"
+                            ]
+                        },
+                        {
+                            "not-before": [
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "external.validationClock"
+                                        },
+                                        0,
+                                        "day"
+                                    ]
+                                },
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "payload.v.0.dt"
+                                        },
+                                        7,
+                                        "day"
+                                    ]
+                                }
+                            ]
+                        },
+                        true
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-11T12:00:00Z",
+        "ValidTo": "2021-12-14T12:00:00Z",
+        "Version": "1.0.3"
     },
     {
         "AffectedFields": [
@@ -66171,6 +66763,62 @@
         "ValidFrom": "2021-10-01T00:00:00Z",
         "ValidTo": "2030-10-01T00:00:00Z",
         "Version": "1.0.2"
+    },
+    {
+        "AffectedFields": [
+            "v.0",
+            "v.0.dt"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "FR",
+        "Description": [
+            {
+                "desc": "Date of vaccination must be before the current date.",
+                "lang": "en"
+            },
+            {
+                "desc": "La date de vaccination doit \u00eatre ant\u00e9rieure \u00e0 la date de lecture de la preuve de vaccination.",
+                "lang": "fr"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-FR-0003",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    "not-before": [
+                        {
+                            "plusTime": [
+                                {
+                                    "var": "external.validationClock"
+                                },
+                                0,
+                                "day"
+                            ]
+                        },
+                        {
+                            "plusTime": [
+                                {
+                                    "var": "payload.v.0.dt"
+                                },
+                                0,
+                                "day"
+                            ]
+                        }
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-11T12:00:00Z",
+        "ValidTo": "2021-12-14T12:00:00Z",
+        "Version": "1.0.3"
     },
     {
         "AffectedFields": [
@@ -72164,6 +72812,76 @@
     {
         "AffectedFields": [
             "v.0",
+            "v.0.dt",
+            "v.0.mp"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "FR",
+        "Description": [
+            {
+                "desc": "With Jansen vaccine, a finished vaccination course is considered protective earliest from 28 days after the date of the last vaccination.",
+                "lang": "en"
+            },
+            {
+                "desc": "Avec le vaccin Jansen, un parcours vaccinal termin\u00e9 est consider\u00e9 comme protecteur au plus t\u00f4t \u00e0 partir de 28 jours apr\u00e8s la date de la derni\u00e8re injection.",
+                "lang": "fr"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-FR-0004",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    "if": [
+                        {
+                            "===": [
+                                {
+                                    "var": "payload.v.0.mp"
+                                },
+                                "EU/1/20/1525"
+                            ]
+                        },
+                        {
+                            "not-before": [
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "external.validationClock"
+                                        },
+                                        0,
+                                        "day"
+                                    ]
+                                },
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "payload.v.0.dt"
+                                        },
+                                        28,
+                                        "day"
+                                    ]
+                                }
+                            ]
+                        },
+                        true
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-11T12:00:00Z",
+        "ValidTo": "2021-12-14T12:00:00Z",
+        "Version": "1.0.3"
+    },
+    {
+        "AffectedFields": [
+            "v.0",
             "v.0.vp"
         ],
         "CertificateType": "Vaccination",
@@ -77500,6 +78218,71 @@
     },
     {
         "AffectedFields": [
+            "r.0",
+            "r.0.fr"
+        ],
+        "CertificateType": "Recovery",
+        "Country": "FR",
+        "Description": [
+            {
+                "desc": "The Verification Datetime must be between +11 days and +180 days after the test date.",
+                "lang": "en"
+            },
+            {
+                "desc": "La date de verification doit etre comprise entre +11 jours et +183 jours apr\u00e8s la date de test.",
+                "lang": "fr"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "RR-FR-0001",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.r.0"
+                },
+                {
+                    "not-after": [
+                        {
+                            "plusTime": [
+                                {
+                                    "var": "payload.r.0.fr"
+                                },
+                                11,
+                                "day"
+                            ]
+                        },
+                        {
+                            "plusTime": [
+                                {
+                                    "var": "external.validationClock"
+                                },
+                                0,
+                                "day"
+                            ]
+                        },
+                        {
+                            "plusTime": [
+                                {
+                                    "var": "payload.r.0.fr"
+                                },
+                                183,
+                                "day"
+                            ]
+                        }
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-11T12:00:00Z",
+        "ValidTo": "2021-12-14T12:00:00Z",
+        "Version": "1.0.3"
+    },
+    {
+        "AffectedFields": [
             "v.0",
             "v.0.dt",
             "v.0.mp",
@@ -79567,6 +80350,62 @@
         "ValidFrom": "2021-07-26T00:00:00Z",
         "ValidTo": "2030-07-26T00:00:00Z",
         "Version": "1.0.0"
+    },
+    {
+        "AffectedFields": [
+            "t.0",
+            "t.0.sc"
+        ],
+        "CertificateType": "Test",
+        "Country": "FR",
+        "Description": [
+            {
+                "desc": "DateTime of Sample Collection must be less than 48 hours before the Verification Datetime.",
+                "lang": "en"
+            },
+            {
+                "desc": "La date du pr\u00e9l\u00e8vement de l'\u00e9chantillon doit avoir \u00e9t\u00e9 r\u00e9alis\u00e9e moins de 48 heures avant la date de v\u00e9rification.",
+                "lang": "fr"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "TR-FR-0002",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.t.0"
+                },
+                {
+                    "before": [
+                        {
+                            "plusTime": [
+                                {
+                                    "var": "external.validationClock"
+                                },
+                                0,
+                                "day"
+                            ]
+                        },
+                        {
+                            "plusTime": [
+                                {
+                                    "var": "payload.t.0.sc"
+                                },
+                                48,
+                                "hour"
+                            ]
+                        }
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-11T12:00:00Z",
+        "ValidTo": "2030-12-11T00:00:00Z",
+        "Version": "1.0.2"
     },
     {
         "AffectedFields": [
