@@ -3820,6 +3820,23 @@
       },
       "publicKeyPem": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEvW8QeGk0YQMGQ/wG2vpPalRdoKNfd48O2qW5uP6gmgRm1OnrQr2gtH3XKxNfVDeuNuqeomsSRkDWa3DXqwLc4A=="
     },
+    "ltgfqrs8IdI=": {
+      "serialNumber": "08ea0b6804f842fc724ece21c8b34b7f",
+      "subject": "CN=Alhosn DSC worker, O=Alhosn, C=AE",
+      "issuer": "C=AE, O=Ministry of Health & Prevention, CN=National CSCA of UAE",
+      "notBefore": "2021-10-06T16:25:09.000Z",
+      "notAfter": "2023-10-06T16:25:09.000Z",
+      "signatureAlgorithm": "ECDSA",
+      "fingerprint": "3bf2d84c3cd696de34bdd86c0a17d298dabbc505",
+      "publicKeyAlgorithm": {
+        "hash": {
+          "name": "SHA-256"
+        },
+        "name": "ECDSA",
+        "namedCurve": "P-256"
+      },
+      "publicKeyPem": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEmlrTLdtSzBKZEcWZ4n+DGYA7zAORp8nmaqftIoRB7CRaCSaAnx5Zmb6m4B/bdYQVJKb6EM3HbrnYIZNo0tAYjA=="
+    },
     "e9SH8dtWwdY=": {
       "serialNumber": "739a56c15aa266ee4f",
       "subject": "CN=CERT-GENCAT-1S-21, 2.5.4.5=S0811001G, OU=SELLO ELECTRONICO, OU=Departament de Salut, 2.5.4.97=VATES-S0811001G, O=Departament de Salut de la Generalitat de Catalunya, C=ES",
