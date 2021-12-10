@@ -6,8 +6,6 @@ on:
 
 jobs:
   tests:
-    env:
-      API_VERSION: 35
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
