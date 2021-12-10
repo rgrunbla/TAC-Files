@@ -14347,6 +14347,49 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            08:ea:0b:68:04:f8:42:fc:72:4e:ce:21:c8:b3:4b:7f
+        Signature Algorithm: ecdsa-with-SHA1
+        Issuer: C = AE, O = Ministry of Health & Prevention, CN = National CSCA of UAE
+        Validity
+            Not Before: Oct  6 16:25:09 2021 GMT
+            Not After : Oct  6 16:25:09 2023 GMT
+        Subject: CN = Alhosn DSC worker, O = Alhosn, C = AE
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:9a:5a:d3:2d:db:52:cc:12:99:11:c5:99:e2:7f:
+                    83:19:80:3b:cc:03:91:a7:c9:e6:6a:a7:ed:22:84:
+                    41:ec:24:5a:09:26:80:9f:1e:59:99:be:a6:e0:1f:
+                    db:75:84:15:24:a6:fa:10:cd:c7:6e:b9:d8:21:93:
+                    68:d2:d0:18:8c
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Subject Key Identifier: 
+                25:CC:99:FF:B1:44:E1:4C:C1:E4:DD:FA:17:4D:31:69:54:A3:94:72
+            X509v3 Authority Key Identifier: 
+                keyid:AE:AF:66:04:91:44:1E:E6:AE:4C:9E:2E:EF:48:F5:E8:F1:A5:5E:26
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl.exampledomain.example/CRL/CSCA.crl
+
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.1847.2021.1.1, 1.3.6.1.4.1.1847.2021.1.2, 1.3.6.1.4.1.1847.2021.1.3
+    Signature Algorithm: ecdsa-with-SHA1
+         30:46:02:21:00:99:f2:26:6a:22:ed:06:6a:ec:b0:5a:01:ea:
+         a3:1c:3d:7c:37:bd:03:15:78:bc:ba:c5:71:0a:10:5f:1f:6e:
+         bc:02:21:00:b4:34:d1:d4:55:8c:a5:9a:ff:96:12:2a:af:f9:
+         55:ef:8e:a7:9a:2f:c6:e3:f9:5f:0f:49:2f:7e:05:a1:e1:2f
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             7f:e5:79:a8:81:eb:00:10:55:ae:27:21:6b:30:da:12:06:34:c7:71
         Signature Algorithm: ecdsa-with-SHA256
         Issuer: CN = CSCA Health NL, serialNumber = 1, OU = Ministry of Health Welfare and Sport, O = Kingdom of the Netherlands, C = NL
