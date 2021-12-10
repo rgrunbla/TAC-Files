@@ -6,7 +6,7 @@
     },
     {
       "name": "version",
-      "value": 107
+      "value": 108
     },
     {
       "name": "versionCalibrationBle",
@@ -66,6 +66,16 @@
           "k1": "sivicsidepvacsipcrplusnonvax",
           "k2": "sivicsidepvacsipcrplusvax",
           "t": "keyfigure.compare.vacsipcrplus"
+        },
+        {
+          "k1": "couvcompletvaccination",
+          "k2": "tauxincidence",
+          "t": "keyfigure.compare.1"
+        },
+        {
+          "k1": "qrcodes",
+          "k2": "notification",
+          "t": "keyfigure.compare.2"
         }
       ]
     },
