@@ -2632,6 +2632,23 @@
       },
       "publicKeyPem": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEGwlU23NYZQba7t++TVejbvPxgS6wdW8uE7UPe14VkhXoKINhhrCT0EWHP+aPim6apT46Ktd0lfoNVTsbg2QQ2A=="
     },
+    "4vUVzV7f6kg=": {
+      "serialNumber": "41120ef36051fa867c332ea1255023c64e1dd322",
+      "subject": "C=LB, ST=Beirut, L=Beirut, O=Ministry of Public Health (MOPH), OU=Siren Analytics",
+      "issuer": "C=LB, ST=Jnah, L=Beirut, O=Ministry of Public Health (MOPH), OU=Siren Analytics, CN=CSCA_DGC_LB_01",
+      "notBefore": "2021-12-10T14:20:02.000Z",
+      "notAfter": "2022-06-08T14:20:02.000Z",
+      "signatureAlgorithm": "ECDSA",
+      "fingerprint": "d0ef071ba5db1268b1951a80ee0a40c9e3dd675e",
+      "publicKeyAlgorithm": {
+        "hash": {
+          "name": "SHA-256"
+        },
+        "name": "ECDSA",
+        "namedCurve": "P-256"
+      },
+      "publicKeyPem": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEFDFfEzPM21RWXsxx1WUrduwbIxCEQXvGONuKpvxVgWEHeNeEyd27x5Y36wYqfjpTQg6L/Mzilq/HROPmimpC5Q=="
+    },
     "e/YRqyv++qY=": {
       "serialNumber": "11587fbc2ddc8605",
       "subject": "C=LI, L=Vaduz, O=Liechtensteinische Landesverwaltung, CN=DGC-NB-DSC-RECOVERY-PROD-20210608, E=webmaster@llv.li",
