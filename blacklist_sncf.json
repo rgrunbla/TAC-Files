@@ -4539,6 +4539,28 @@
       },
       "publicKeyPem": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEManlPIcO9J8UBpHCAbku/KkAfiBrGLIre1buTIzhhoncL0YIO+DQ9uPs6UfzPKXzQq791V5I5avhmpQ6j2zFsQ=="
     },
+    "CiIlK77HFz0=": {
+      "serialNumber": "514299c440d8536d4b18200e23d73d198b9383f8",
+      "subject": "E=nhacard-eu@gov.cv, CN=Ministerio da Saude DSC, OU=Certificado Qualificado de Selo Electronico, OU=DIRECAO GERAL DE SAUDE, 2.5.4.97=VATCV-360859798, O=MINISTERIO DA SAUDE, C=CV",
+      "issuer": "C=CV, O=ICP-CV, OU=NOSI-Nucleo Operacional da Sociedade de Informacao, CN=NOSICA - G2",
+      "notBefore": "2021-12-07T19:26:23.000Z",
+      "notAfter": "2023-12-07T19:26:23.000Z",
+      "signatureAlgorithm": "RSASSA-PKCS1-v1_5",
+      "fingerprint": "c8c3655d784e87c4ba6ad3ee043282acd0d92ff6",
+      "publicKeyAlgorithm": {
+        "hash": {
+          "name": "SHA-256"
+        },
+        "name": "RSASSA-PKCS1-v1_5",
+        "publicExponent": {
+          "0": 1,
+          "1": 0,
+          "2": 1
+        },
+        "modulusLength": 2048
+      },
+      "publicKeyPem": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5YGiF7sEDB+UWGSeB3u2/cZQew+/LAi2Nzo0foSfhyQFe9Jp93MryQum5KM42bdHsckcFhpfscvD8Zzit68x1XtdylO70DYJgNfj3yeDrc5fZ4fcJE0f5HBA2MwHJXDHE1y7OZOdrJ/f9h//9tfSQbTYYTsqGGPPjpDTlW4ntqdKmWFPjgPT/+e/WAcpRU4w5Vob7VeMjGhiQ4/Tnkilz0q7NGSNDkDdIVModxc9KHjUAseQh28JCdFGlXkLLGOXhqYL1IlP1Fh2vDVBZQqtLb74C4fsjBxtfGYUXPgfC5XSl5LgJk9fNlPHgzmW270/kKowYaEamW377ynXmFzklwIDAQAB"
+    },
     "FhciF/j3plg=": {
       "serialNumber": "7904c820b5908787040000001600000021000000",
       "subject": "O=State enterprise \\\"DIIA\\\", CN=\\\"DIIA\\\". Green Certificate DSC 2, 2.5.4.5=22, C=UA, L=Kyiv",
