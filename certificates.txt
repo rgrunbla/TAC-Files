@@ -4693,6 +4693,101 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            51:42:99:c4:40:d8:53:6d:4b:18:20:0e:23:d7:3d:19:8b:93:83:f8
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = CV, O = ICP-CV, OU = NOSI-Nucleo Operacional da Sociedade de Informacao, CN = NOSICA - G2
+        Validity
+            Not Before: Dec  7 19:26:23 2021 GMT
+            Not After : Dec  7 19:26:23 2023 GMT
+        Subject: emailAddress = nhacard-eu@gov.cv, CN = Ministerio da Saude DSC, OU = Certificado Qualificado de Selo Electronico, OU = DIRECAO GERAL DE SAUDE, organizationIdentifier = VATCV-360859798, O = MINISTERIO DA SAUDE, C = CV
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (2048 bit)
+                Modulus:
+                    00:e5:81:a2:17:bb:04:0c:1f:94:58:64:9e:07:7b:
+                    b6:fd:c6:50:7b:0f:bf:2c:08:b6:37:3a:34:7e:84:
+                    9f:87:24:05:7b:d2:69:f7:73:2b:c9:0b:a6:e4:a3:
+                    38:d9:b7:47:b1:c9:1c:16:1a:5f:b1:cb:c3:f1:9c:
+                    e2:b7:af:31:d5:7b:5d:ca:53:bb:d0:36:09:80:d7:
+                    e3:df:27:83:ad:ce:5f:67:87:dc:24:4d:1f:e4:70:
+                    40:d8:cc:07:25:70:c7:13:5c:bb:39:93:9d:ac:9f:
+                    df:f6:1f:ff:f6:d7:d2:41:b4:d8:61:3b:2a:18:63:
+                    cf:8e:90:d3:95:6e:27:b6:a7:4a:99:61:4f:8e:03:
+                    d3:ff:e7:bf:58:07:29:45:4e:30:e5:5a:1b:ed:57:
+                    8c:8c:68:62:43:8f:d3:9e:48:a5:cf:4a:bb:34:64:
+                    8d:0e:40:dd:21:53:28:77:17:3d:28:78:d4:02:c7:
+                    90:87:6f:09:09:d1:46:95:79:0b:2c:63:97:86:a6:
+                    0b:d4:89:4f:d4:58:76:bc:35:41:65:0a:ad:2d:be:
+                    f8:0b:87:ec:8c:1c:6d:7c:66:14:5c:f8:1f:0b:95:
+                    d2:97:92:e0:26:4f:5f:36:53:c7:83:39:96:db:bd:
+                    3f:90:aa:30:61:a1:1a:99:6d:fb:ef:29:d7:98:5c:
+                    e4:97
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Authority Key Identifier: 
+                keyid:44:17:A1:17:15:0A:3F:99:32:6C:46:33:11:A7:01:B2:FB:B5:2C:62
+
+            Authority Information Access: 
+                OCSP - URI:https://ocsp.nosi.cv/ejbca/publicweb/status/ocsp
+
+            X509v3 Certificate Policies: 
+                Policy: 2.16.132.1.1.2.4
+                  CPS: https://pki.nosi.cv/dpc_nosica-g2.pdf
+                Policy: 2.16.132.1.2.2.4
+                  User Notice:
+                    Explicit Text: 
+                  CPS: https://pki.nosi.cv/pc_nosica-g2.pdf
+
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.1847.2021.1.3, 1.3.6.1.4.1.1847.2021.1.1, 1.3.6.1.4.1.1847.2021.1.2, E-mail Protection, Microsoft Smartcard Login, 1.2.840.113583.1.1.5
+            qcStatements: 
+                0)0......F..0......F..0......F..0......F...
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:https://crl.nosi.cv/crls/nosica-g2.crl
+
+            X509v3 Subject Key Identifier: 
+                BA:FC:6C:86:77:56:9C:78:7E:6C:A4:F5:64:40:80:67:AF:A6:B5:84
+            X509v3 Key Usage: critical
+                Digital Signature, Non Repudiation, Key Encipherment
+    Signature Algorithm: sha256WithRSAEncryption
+         3b:5d:b4:f4:5e:e1:19:6e:93:23:5c:ea:4f:76:6c:5b:20:63:
+         48:89:93:99:31:51:46:0d:8b:fd:6a:5a:20:02:d1:9d:b5:d7:
+         c1:64:c3:c8:51:35:13:31:dc:8e:4e:a2:81:3b:4c:eb:81:78:
+         63:c1:bf:3c:02:92:01:36:bf:49:b0:9a:06:3c:96:23:58:ef:
+         42:5c:f9:ce:cc:65:20:a9:7c:46:6c:97:02:8c:e1:c4:f4:8a:
+         5a:8c:85:c9:ae:d2:9d:ab:d6:70:04:6b:32:aa:26:5e:4b:50:
+         f2:eb:11:d4:9d:63:52:e3:41:37:fb:e7:96:dd:94:69:50:b8:
+         93:39:9d:92:c3:0d:e6:6d:05:1c:73:7a:78:5b:43:e2:c5:04:
+         9d:d3:40:9f:6f:b2:9d:16:55:c9:db:f0:da:29:ed:ca:fc:01:
+         98:a2:f3:1f:2d:1b:94:ab:c7:5a:cc:fd:95:2d:9c:2b:13:98:
+         0f:33:f4:7a:fb:c7:08:1b:5a:5d:e2:f3:63:97:37:b9:91:23:
+         23:10:ef:07:30:3a:d1:39:06:62:2e:18:31:31:a6:6b:1a:d1:
+         be:06:73:18:12:72:72:f1:32:a5:9a:57:b9:cc:63:3d:e3:6a:
+         5c:7e:0f:a1:72:66:7c:9d:52:10:6f:34:db:92:58:9a:2c:e0:
+         75:74:00:4e:b3:f1:8a:36:00:d9:1b:8b:48:b9:5f:71:2f:40:
+         ea:93:c8:80:0f:61:1d:f1:95:a9:4d:0a:47:0e:3e:79:03:00:
+         84:22:fe:d6:80:09:b7:75:bd:39:74:3a:28:a6:ec:a8:d0:b3:
+         42:86:cf:50:17:7e:c8:3c:14:29:78:1c:24:b0:58:48:18:2e:
+         69:c3:4f:7f:92:91:b9:36:2b:1b:01:d3:5b:a5:a0:c7:3c:fb:
+         ca:93:18:af:23:0b:de:86:b8:8a:86:ef:b8:d2:83:3f:0f:9b:
+         a1:c2:11:20:84:2c:a5:81:85:c4:39:ef:9f:30:4f:d1:02:7c:
+         55:86:89:13:67:2a:72:92:e5:bb:c2:ce:f9:72:89:93:94:6b:
+         dc:21:a7:d2:b7:51:c0:73:38:d4:62:fd:9d:27:ec:8b:12:2f:
+         e6:4a:fb:e0:b2:6a:d2:f3:8a:34:83:0c:4b:c8:9d:b8:81:e2:
+         f4:a2:cc:f5:f5:67:5d:2c:b4:6e:bb:e6:38:2e:dd:f2:32:57:
+         0d:ab:c4:98:90:ca:54:42:de:f3:90:12:89:f4:13:2f:e0:28:
+         f4:bf:5b:1a:ce:97:bc:96:7f:34:7b:33:ba:9d:1e:18:b6:78:
+         86:2c:3a:30:73:27:18:90:78:0d:a2:c5:7a:2c:3e:b0:ac:72:
+         4a:f5:ab:62:21:97:b1:9f
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             68:2d:62:f1:4e:15:a7:d3:bc:f4:aa:8d:08:69:e8:2f:f0:71:5e:95
         Signature Algorithm: sha256WithRSAEncryption
         Issuer: C = FR, O = Gouv, CN = CSCA-FRANCE
