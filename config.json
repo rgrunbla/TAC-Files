@@ -2,11 +2,11 @@
   "config": [
     {
       "name": "lastUpdate",
-      "value": "9 Dec 2021"
+      "value": "11 Dec 2021"
     },
     {
       "name": "version",
-      "value": 108
+      "value": 109
     },
     {
       "name": "versionCalibrationBle",
@@ -69,8 +69,8 @@
         },
         {
           "k1": "couvcompletvaccination",
-          "k2": "tauxincidence",
-          "t": "keyfigure.compare.1"
+          "k2": "tauxoccupation",
+          "t": "keyfigure.compare.3"
         },
         {
           "k1": "qrcodes",
