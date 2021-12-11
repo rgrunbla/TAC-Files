@@ -6,7 +6,7 @@
     },
     {
       "name": "version",
-      "value": 109
+      "value": 110
     },
     {
       "name": "versionCalibrationBle",
@@ -71,6 +71,11 @@
           "k1": "couvcompletvaccination",
           "k2": "tauxoccupation",
           "t": "keyfigure.compare.3"
+        },
+        {
+          "k1": "nombrecasj3",
+          "k2": "tauxoccupation",
+          "t": "keyfigure.compare.4"
         },
         {
           "k1": "qrcodes",
