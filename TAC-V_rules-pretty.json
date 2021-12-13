@@ -3367,6 +3367,63 @@
     {
         "AffectedFields": [
             "t.0",
+            "t.0.is",
+            "t.0.tt"
+        ],
+        "CertificateType": "Test",
+        "Country": "CZ",
+        "Description": [
+            {
+                "desc": "The PCR test must have a certificate issuer",
+                "lang": "en"
+            },
+            {
+                "desc": "PCR test mus\u00ed m\u00edt vydavatele certifik\u00e1tu",
+                "lang": "cs"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "TR-CZ-0006",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.t.0"
+                },
+                {
+                    "if": [
+                        {
+                            "===": [
+                                {
+                                    "var": "payload.t.0.tt"
+                                },
+                                "LP6464-4"
+                            ]
+                        },
+                        {
+                            "if": [
+                                {
+                                    "var": "payload.t.0.is"
+                                },
+                                true,
+                                false
+                            ]
+                        },
+                        true
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-15T23:00:00Z",
+        "ValidTo": "2031-12-15T23:00:00Z",
+        "Version": "3.0.0"
+    },
+    {
+        "AffectedFields": [
+            "t.0",
             "t.0.sc",
             "t.0.tt"
         ],
@@ -5525,6 +5582,62 @@
     },
     {
         "AffectedFields": [
+            "r.0",
+            "r.0.fr"
+        ],
+        "CertificateType": "Recovery",
+        "Country": "CZ",
+        "Description": [
+            {
+                "desc": "The positive PCR test result must be older than 10 days",
+                "lang": "en"
+            },
+            {
+                "desc": "Pozitivn\u00ed PCR test mus\u00ed b\u00fdt star\u0161\u00ed v\u00edce ne\u017e 10 dn\u00ed",
+                "lang": "cs"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "RR-CZ-0001",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.r.0"
+                },
+                {
+                    "not-before": [
+                        {
+                            "plusTime": [
+                                {
+                                    "var": "external.validationClock"
+                                },
+                                0,
+                                "day"
+                            ]
+                        },
+                        {
+                            "plusTime": [
+                                {
+                                    "var": "payload.r.0.fr"
+                                },
+                                10,
+                                "day"
+                            ]
+                        }
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-15T23:00:00Z",
+        "ValidTo": "2031-12-15T23:00:00Z",
+        "Version": "3.0.0"
+    },
+    {
+        "AffectedFields": [
             "v.0",
             "v.0.mp",
             "v.0.dt"
@@ -6295,6 +6408,76 @@
         "ValidFrom": "2021-07-26T00:00:00Z",
         "ValidTo": "2030-07-26T00:00:00Z",
         "Version": "1.0.0"
+    },
+    {
+        "AffectedFields": [
+            "v.0",
+            "v.0.mp",
+            "v.0.dt"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "CZ",
+        "Description": [
+            {
+                "desc": "Vaccination VAXZEVRIA may not be older than 1440 days",
+                "lang": "en"
+            },
+            {
+                "desc": "O\u010dkov\u00e1n\u00ed VAXZEVRIA nesm\u00ed b\u00fdt star\u0161\u00ed ne\u017e 1440 dn\u00ed",
+                "lang": "cs"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-CZ-0051",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    "if": [
+                        {
+                            "===": [
+                                {
+                                    "var": "payload.v.0.mp"
+                                },
+                                "EU/1/21/1529"
+                            ]
+                        },
+                        {
+                            "not-after": [
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "external.validationClock"
+                                        },
+                                        0,
+                                        "day"
+                                    ]
+                                },
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "payload.v.0.dt"
+                                        },
+                                        1440,
+                                        "day"
+                                    ]
+                                }
+                            ]
+                        },
+                        true
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-15T23:00:00Z",
+        "ValidTo": "2031-12-15T23:00:00Z",
+        "Version": "3.0.0"
     },
     {
         "AffectedFields": [
@@ -8941,6 +9124,65 @@
         "ValidFrom": "2021-10-01T00:00:00Z",
         "ValidTo": "2030-10-01T00:00:00Z",
         "Version": "1.0.0"
+    },
+    {
+        "AffectedFields": [
+            "v.0",
+            "v.0.dn",
+            "v.0.sd",
+            "v.0.mp"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "CZ",
+        "Description": [
+            {
+                "desc": "The certificate of the first dose of VAXZEVRIA is not accepted",
+                "lang": "en"
+            },
+            {
+                "desc": "Certifik\u00e1t prvn\u00ed d\u00e1vky VAXZEVRIA nen\u00ed akceptov\u00e1n",
+                "lang": "cs"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-CZ-0053",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    "if": [
+                        {
+                            "===": [
+                                {
+                                    "var": "payload.v.0.mp"
+                                },
+                                "EU/1/21/1529"
+                            ]
+                        },
+                        {
+                            ">=": [
+                                {
+                                    "var": "payload.v.0.dn"
+                                },
+                                {
+                                    "var": "payload.v.0.sd"
+                                }
+                            ]
+                        },
+                        true
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-15T23:00:00Z",
+        "ValidTo": "2031-12-15T23:00:00Z",
+        "Version": "3.0.0"
     },
     {
         "AffectedFields": [
@@ -14882,6 +15124,127 @@
         "ValidFrom": "2021-10-01T00:00:00Z",
         "ValidTo": "2030-10-01T00:00:00Z",
         "Version": "1.0.0"
+    },
+    {
+        "AffectedFields": [
+            "v.0",
+            "v.0.dn",
+            "v.0.sd",
+            "v.0.mp",
+            "v.0.dt"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "CZ",
+        "Description": [
+            {
+                "desc": "Vaccination Comirnaty must must be older than 14 days",
+                "lang": "en"
+            },
+            {
+                "desc": "Od dokon\u010den\u00e9ho o\u010dkov\u00e1n\u00ed Comirnaty mus\u00ed uplynout alespo\u0148 14 dn\u016f",
+                "lang": "cs"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-CZ-0032",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    "if": [
+                        {
+                            "and": [
+                                {
+                                    ">=": [
+                                        {
+                                            "var": "payload.v.0.dn"
+                                        },
+                                        {
+                                            "var": "payload.v.0.sd"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "===": [
+                                        {
+                                            "var": "payload.v.0.mp"
+                                        },
+                                        "EU/1/20/1528"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "in": [
+                                true,
+                                [
+                                    {
+                                        "not-before": [
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "external.validationClock"
+                                                    },
+                                                    0,
+                                                    "day"
+                                                ]
+                                            },
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "payload.v.0.dt"
+                                                    },
+                                                    14,
+                                                    "day"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        ">": [
+                                            {
+                                                "var": "payload.v.0.dn"
+                                            },
+                                            2
+                                        ]
+                                    },
+                                    {
+                                        "and": [
+                                            {
+                                                "===": [
+                                                    {
+                                                        "var": "payload.v.0.sd"
+                                                    },
+                                                    1
+                                                ]
+                                            },
+                                            {
+                                                "===": [
+                                                    {
+                                                        "var": "payload.v.0.dn"
+                                                    },
+                                                    1
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            ]
+                        },
+                        true
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-15T23:00:00Z",
+        "ValidTo": "2031-12-15T23:00:00Z",
+        "Version": "3.0.0"
     },
     {
         "AffectedFields": [
@@ -30909,6 +31272,65 @@
     },
     {
         "AffectedFields": [
+            "v.0",
+            "v.0.dn",
+            "v.0.sd",
+            "v.0.mp"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "CZ",
+        "Description": [
+            {
+                "desc": "The certificate of the first dose of Comirnaty 5-11 is not accepted",
+                "lang": "en"
+            },
+            {
+                "desc": "Certifik\u00e1t prvn\u00ed d\u00e1vky Comirnaty 5-11 nen\u00ed akceptov\u00e1n",
+                "lang": "cs"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-CZ-0043",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    "if": [
+                        {
+                            "===": [
+                                {
+                                    "var": "payload.v.0.mp"
+                                },
+                                "EU/1/20/1528"
+                            ]
+                        },
+                        {
+                            ">=": [
+                                {
+                                    "var": "payload.v.0.dn"
+                                },
+                                {
+                                    "var": "payload.v.0.sd"
+                                }
+                            ]
+                        },
+                        true
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-15T23:00:00Z",
+        "ValidTo": "2031-12-15T23:00:00Z",
+        "Version": "3.0.0"
+    },
+    {
+        "AffectedFields": [
             "t.1"
         ],
         "CertificateType": "Test",
@@ -31746,6 +32168,127 @@
         "ValidFrom": "2021-10-01T00:00:00Z",
         "ValidTo": "2030-10-01T00:00:00Z",
         "Version": "1.0.0"
+    },
+    {
+        "AffectedFields": [
+            "v.0",
+            "v.0.dn",
+            "v.0.sd",
+            "v.0.mp",
+            "v.0.dt"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "CZ",
+        "Description": [
+            {
+                "desc": "Vaccination SPIKEVAX must must be older than 14 days",
+                "lang": "en"
+            },
+            {
+                "desc": "Od dokon\u010den\u00e9ho o\u010dkov\u00e1n\u00ed SPIKEVAX mus\u00ed uplynout alespo\u0148 14 dn\u016f",
+                "lang": "cs"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-CZ-0012",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    "if": [
+                        {
+                            "and": [
+                                {
+                                    ">=": [
+                                        {
+                                            "var": "payload.v.0.dn"
+                                        },
+                                        {
+                                            "var": "payload.v.0.sd"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "===": [
+                                        {
+                                            "var": "payload.v.0.mp"
+                                        },
+                                        "EU/1/20/1507"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "in": [
+                                true,
+                                [
+                                    {
+                                        "not-before": [
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "external.validationClock"
+                                                    },
+                                                    0,
+                                                    "day"
+                                                ]
+                                            },
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "payload.v.0.dt"
+                                                    },
+                                                    14,
+                                                    "day"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        ">": [
+                                            {
+                                                "var": "payload.v.0.dn"
+                                            },
+                                            2
+                                        ]
+                                    },
+                                    {
+                                        "and": [
+                                            {
+                                                "===": [
+                                                    {
+                                                        "var": "payload.v.0.sd"
+                                                    },
+                                                    1
+                                                ]
+                                            },
+                                            {
+                                                "===": [
+                                                    {
+                                                        "var": "payload.v.0.dn"
+                                                    },
+                                                    1
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            ]
+                        },
+                        true
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-15T23:00:00Z",
+        "ValidTo": "2031-12-15T23:00:00Z",
+        "Version": "3.0.0"
     },
     {
         "AffectedFields": [
@@ -42567,6 +43110,64 @@
     {
         "AffectedFields": [
             "t.0",
+            "t.0.ma",
+            "t.0.tt"
+        ],
+        "CertificateType": "Test",
+        "Country": "CZ",
+        "Description": [
+            {
+                "desc": "The antigen test  must be included in the EU\u2019s Common list of COVID-19 rapid antigen tests",
+                "lang": "en"
+            },
+            {
+                "desc": "Antigenn\u00ed test mus\u00ed m\u00edt v\u00fdrobce uzn\u00e1van\u00e9ho v r\u00e1mci EU a mus\u00ed b\u00fdt sou\u010d\u00e1st\u00ed seznamu publikovan\u00fdch v\u00fdrobc\u016f",
+                "lang": "cs"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "TR-CZ-0003",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.t.0"
+                },
+                {
+                    "if": [
+                        {
+                            "===": [
+                                {
+                                    "var": "payload.t.0.tt"
+                                },
+                                "LP217198-3"
+                            ]
+                        },
+                        {
+                            "in": [
+                                {
+                                    "var": "payload.t.0.ma"
+                                },
+                                {
+                                    "var": "external.valueSets.covid-19-lab-test-manufacturer-and-name"
+                                }
+                            ]
+                        },
+                        true
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-15T23:00:00Z",
+        "ValidTo": "2031-12-15T23:00:00Z",
+        "Version": "3.0.0"
+    },
+    {
+        "AffectedFields": [
+            "t.0",
             "t.0.sc",
             "t.0.tt"
         ],
@@ -43499,6 +44100,54 @@
         "ValidFrom": "2021-10-01T00:00:00Z",
         "ValidTo": "2030-10-01T00:00:00Z",
         "Version": "1.0.0"
+    },
+    {
+        "AffectedFields": [
+            "v.0",
+            "v.0.mp"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "CZ",
+        "Description": [
+            {
+                "desc": "Only approved vaccines allowed",
+                "lang": "en"
+            },
+            {
+                "desc": "Vakc\u00edna mus\u00ed b\u00fdt na seznamu schv\u00e1len\u00fdch vakc\u00edn",
+                "lang": "cs"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-CZ-0001",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    "in": [
+                        {
+                            "var": "payload.v.0.mp"
+                        },
+                        [
+                            "EU/1/20/1507",
+                            "EU/1/20/1525",
+                            "EU/1/20/1528",
+                            "EU/1/20/1528",
+                            "EU/1/21/1529"
+                        ]
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-15T23:00:00Z",
+        "ValidTo": "2031-12-15T23:00:00Z",
+        "Version": "3.0.0"
     },
     {
         "AffectedFields": [
@@ -48973,6 +49622,76 @@
     },
     {
         "AffectedFields": [
+            "v.0",
+            "v.0.mp",
+            "v.0.dt"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "CZ",
+        "Description": [
+            {
+                "desc": "Vaccination SPIKEVAX may not be older than 1440 days",
+                "lang": "en"
+            },
+            {
+                "desc": "O\u010dkov\u00e1n\u00ed SPIKEVAX nesm\u00ed b\u00fdt star\u0161\u00ed ne\u017e 1440 dn\u00ed",
+                "lang": "cs"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-CZ-0011",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    "if": [
+                        {
+                            "===": [
+                                {
+                                    "var": "payload.v.0.mp"
+                                },
+                                "EU/1/20/1507"
+                            ]
+                        },
+                        {
+                            "not-after": [
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "external.validationClock"
+                                        },
+                                        0,
+                                        "day"
+                                    ]
+                                },
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "payload.v.0.dt"
+                                        },
+                                        1440,
+                                        "day"
+                                    ]
+                                }
+                            ]
+                        },
+                        true
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-15T23:00:00Z",
+        "ValidTo": "2031-12-15T23:00:00Z",
+        "Version": "3.0.0"
+    },
+    {
+        "AffectedFields": [
             "t.1"
         ],
         "CertificateType": "Test",
@@ -49362,6 +50081,76 @@
     {
         "AffectedFields": [
             "t.0",
+            "t.0.sc",
+            "t.0.tt"
+        ],
+        "CertificateType": "Test",
+        "Country": "CZ",
+        "Description": [
+            {
+                "desc": "The PCR test may ot be older than 72 hours ago",
+                "lang": "en"
+            },
+            {
+                "desc": "PCR test nesm\u00ed b\u00fdt star\u0161\u00ed v\u00edce ne\u017e 72 hodin",
+                "lang": "cs"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "TR-CZ-0002",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.t.0"
+                },
+                {
+                    "if": [
+                        {
+                            "===": [
+                                {
+                                    "var": "payload.t.0.tt"
+                                },
+                                "LP6464-4"
+                            ]
+                        },
+                        {
+                            "not-after": [
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "external.validationClock"
+                                        },
+                                        0,
+                                        "day"
+                                    ]
+                                },
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "payload.t.0.sc"
+                                        },
+                                        72,
+                                        "hour"
+                                    ]
+                                }
+                            ]
+                        },
+                        true
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-15T23:00:00Z",
+        "ValidTo": "2031-12-15T23:00:00Z",
+        "Version": "3.0.0"
+    },
+    {
+        "AffectedFields": [
+            "t.0",
             "t.0.tr"
         ],
         "CertificateType": "Test",
@@ -49488,6 +50277,76 @@
         "ValidFrom": "2021-10-01T00:00:00Z",
         "ValidTo": "2030-10-01T00:00:00Z",
         "Version": "1.0.0"
+    },
+    {
+        "AffectedFields": [
+            "v.0",
+            "v.0.mp",
+            "v.0.dt"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "CZ",
+        "Description": [
+            {
+                "desc": "Vaccination Comirnaty 5-11 may not be older than 1440 days",
+                "lang": "en"
+            },
+            {
+                "desc": "O\u010dkov\u00e1n\u00ed Comirnaty 5-11 nesm\u00ed b\u00fdt star\u0161\u00ed ne\u017e 1440 dn\u00ed",
+                "lang": "cs"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-CZ-0041",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    "if": [
+                        {
+                            "===": [
+                                {
+                                    "var": "payload.v.0.mp"
+                                },
+                                "EU/1/20/1528"
+                            ]
+                        },
+                        {
+                            "not-after": [
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "external.validationClock"
+                                        },
+                                        0,
+                                        "day"
+                                    ]
+                                },
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "payload.v.0.dt"
+                                        },
+                                        1440,
+                                        "day"
+                                    ]
+                                }
+                            ]
+                        },
+                        true
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-15T23:00:00Z",
+        "ValidTo": "2031-12-15T23:00:00Z",
+        "Version": "3.0.0"
     },
     {
         "AffectedFields": [
@@ -49894,6 +50753,127 @@
         "ValidFrom": "2021-10-01T00:00:00Z",
         "ValidTo": "2030-10-01T00:00:00Z",
         "Version": "1.0.0"
+    },
+    {
+        "AffectedFields": [
+            "v.0",
+            "v.0.dn",
+            "v.0.sd",
+            "v.0.mp",
+            "v.0.dt"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "CZ",
+        "Description": [
+            {
+                "desc": "Vaccination Comirnaty 5-11 must must be older than 14 days",
+                "lang": "en"
+            },
+            {
+                "desc": "Od dokon\u010den\u00e9ho o\u010dkov\u00e1n\u00ed Comirnaty 5-11 mus\u00ed uplynout alespo\u0148 14 dn\u016f",
+                "lang": "cs"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-CZ-0042",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    "if": [
+                        {
+                            "and": [
+                                {
+                                    ">=": [
+                                        {
+                                            "var": "payload.v.0.dn"
+                                        },
+                                        {
+                                            "var": "payload.v.0.sd"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "===": [
+                                        {
+                                            "var": "payload.v.0.mp"
+                                        },
+                                        "EU/1/20/1528"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "in": [
+                                true,
+                                [
+                                    {
+                                        "not-before": [
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "external.validationClock"
+                                                    },
+                                                    0,
+                                                    "day"
+                                                ]
+                                            },
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "payload.v.0.dt"
+                                                    },
+                                                    14,
+                                                    "day"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        ">": [
+                                            {
+                                                "var": "payload.v.0.dn"
+                                            },
+                                            2
+                                        ]
+                                    },
+                                    {
+                                        "and": [
+                                            {
+                                                "===": [
+                                                    {
+                                                        "var": "payload.v.0.sd"
+                                                    },
+                                                    1
+                                                ]
+                                            },
+                                            {
+                                                "===": [
+                                                    {
+                                                        "var": "payload.v.0.dn"
+                                                    },
+                                                    1
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            ]
+                        },
+                        true
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-15T23:00:00Z",
+        "ValidTo": "2031-12-15T23:00:00Z",
+        "Version": "3.0.0"
     },
     {
         "AffectedFields": [
@@ -54700,6 +55680,127 @@
         "ValidFrom": "2021-10-01T00:00:00Z",
         "ValidTo": "2030-10-01T00:00:00Z",
         "Version": "1.0.0"
+    },
+    {
+        "AffectedFields": [
+            "v.0",
+            "v.0.dn",
+            "v.0.sd",
+            "v.0.mp",
+            "v.0.dt"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "CZ",
+        "Description": [
+            {
+                "desc": "Vaccination VAXZEVRIA must must be older than 14 days",
+                "lang": "en"
+            },
+            {
+                "desc": "Od dokon\u010den\u00e9ho o\u010dkov\u00e1n\u00ed VAXZEVRIA mus\u00ed uplynout alespo\u0148 14 dn\u016f",
+                "lang": "cs"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-CZ-0052",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    "if": [
+                        {
+                            "and": [
+                                {
+                                    ">=": [
+                                        {
+                                            "var": "payload.v.0.dn"
+                                        },
+                                        {
+                                            "var": "payload.v.0.sd"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "===": [
+                                        {
+                                            "var": "payload.v.0.mp"
+                                        },
+                                        "EU/1/21/1529"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "in": [
+                                true,
+                                [
+                                    {
+                                        "not-before": [
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "external.validationClock"
+                                                    },
+                                                    0,
+                                                    "day"
+                                                ]
+                                            },
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "payload.v.0.dt"
+                                                    },
+                                                    14,
+                                                    "day"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        ">": [
+                                            {
+                                                "var": "payload.v.0.dn"
+                                            },
+                                            2
+                                        ]
+                                    },
+                                    {
+                                        "and": [
+                                            {
+                                                "===": [
+                                                    {
+                                                        "var": "payload.v.0.sd"
+                                                    },
+                                                    1
+                                                ]
+                                            },
+                                            {
+                                                "===": [
+                                                    {
+                                                        "var": "payload.v.0.dn"
+                                                    },
+                                                    1
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            ]
+                        },
+                        true
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-15T23:00:00Z",
+        "ValidTo": "2031-12-15T23:00:00Z",
+        "Version": "3.0.0"
     },
     {
         "AffectedFields": [
@@ -60321,6 +61422,63 @@
     },
     {
         "AffectedFields": [
+            "t.0",
+            "t.0.is",
+            "t.0.tt"
+        ],
+        "CertificateType": "Test",
+        "Country": "CZ",
+        "Description": [
+            {
+                "desc": "The Antigen test must have a certificate issuer. ",
+                "lang": "en"
+            },
+            {
+                "desc": "Antigenn\u00ed test mus\u00ed m\u00edt vydavatele certifik\u00e1tu",
+                "lang": "cs"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "TR-CZ-0005",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.t.0"
+                },
+                {
+                    "if": [
+                        {
+                            "===": [
+                                {
+                                    "var": "payload.t.0.tt"
+                                },
+                                "LP217198-3"
+                            ]
+                        },
+                        {
+                            "if": [
+                                {
+                                    "var": "payload.t.0.is"
+                                },
+                                true,
+                                false
+                            ]
+                        },
+                        true
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-15T23:00:00Z",
+        "ValidTo": "2031-12-15T23:00:00Z",
+        "Version": "3.0.0"
+    },
+    {
+        "AffectedFields": [
             "t",
             "v"
         ],
@@ -64338,6 +65496,65 @@
     {
         "AffectedFields": [
             "v.0",
+            "v.0.dn",
+            "v.0.sd",
+            "v.0.mp"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "CZ",
+        "Description": [
+            {
+                "desc": "The certificate of the first dose of SPIKEVAX is not accepted",
+                "lang": "en"
+            },
+            {
+                "desc": "Certifik\u00e1t prvn\u00ed d\u00e1vky SPIKEVAX nen\u00ed akceptov\u00e1n",
+                "lang": "cs"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-CZ-0013",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    "if": [
+                        {
+                            "===": [
+                                {
+                                    "var": "payload.v.0.mp"
+                                },
+                                "EU/1/20/1507"
+                            ]
+                        },
+                        {
+                            ">=": [
+                                {
+                                    "var": "payload.v.0.dn"
+                                },
+                                {
+                                    "var": "payload.v.0.sd"
+                                }
+                            ]
+                        },
+                        true
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-15T23:00:00Z",
+        "ValidTo": "2031-12-15T23:00:00Z",
+        "Version": "3.0.0"
+    },
+    {
+        "AffectedFields": [
+            "v.0",
             "v.0.mp",
             "v.0.dt"
         ],
@@ -66746,6 +67963,48 @@
         "ValidFrom": "2021-12-06T00:00:00+01:00",
         "ValidTo": "2030-06-01T00:00:00Z",
         "Version": "1.1.1"
+    },
+    {
+        "AffectedFields": [
+            "t.0",
+            "t.0.tr"
+        ],
+        "CertificateType": "Test",
+        "Country": "CZ",
+        "Description": [
+            {
+                "desc": "The test result must be negative",
+                "lang": "en"
+            },
+            {
+                "desc": "V\u00fdsledek testu mus\u00ed b\u00fdt negativn\u00ed",
+                "lang": "cs"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "TR-CZ-0004",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.t.0"
+                },
+                {
+                    "===": [
+                        {
+                            "var": "payload.t.0.tr"
+                        },
+                        "260415000"
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-15T23:00:00Z",
+        "ValidTo": "2031-12-15T23:00:00Z",
+        "Version": "3.0.0"
     },
     {
         "AffectedFields": [
@@ -69475,6 +70734,76 @@
     },
     {
         "AffectedFields": [
+            "t.0",
+            "t.0.sc",
+            "t.0.tt"
+        ],
+        "CertificateType": "Test",
+        "Country": "CZ",
+        "Description": [
+            {
+                "desc": "The antigen test may not be older than 48 hours ago",
+                "lang": "en"
+            },
+            {
+                "desc": "Antigenn\u00ed test nesm\u00ed b\u00fdt star\u0161\u00ed v\u00edce ne\u017e 48 hodin",
+                "lang": "cs"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "TR-CZ-0001",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.t.0"
+                },
+                {
+                    "if": [
+                        {
+                            "===": [
+                                {
+                                    "var": "payload.t.0.tt"
+                                },
+                                "LP217198-3"
+                            ]
+                        },
+                        {
+                            "not-after": [
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "external.validationClock"
+                                        },
+                                        0,
+                                        "day"
+                                    ]
+                                },
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "payload.t.0.sc"
+                                        },
+                                        48,
+                                        "hour"
+                                    ]
+                                }
+                            ]
+                        },
+                        true
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-15T23:00:00Z",
+        "ValidTo": "2031-12-15T23:00:00Z",
+        "Version": "3.0.0"
+    },
+    {
+        "AffectedFields": [
             "v.0",
             "v.0.vp"
         ],
@@ -71283,6 +72612,62 @@
         "ValidFrom": "2021-10-11T00:00:00Z",
         "ValidTo": "2030-10-11T00:00:00Z",
         "Version": "1.0.0"
+    },
+    {
+        "AffectedFields": [
+            "r.0",
+            "r.0.fr"
+        ],
+        "CertificateType": "Recovery",
+        "Country": "CZ",
+        "Description": [
+            {
+                "desc": "The positive PCR test result may not be older than 180 days",
+                "lang": "en"
+            },
+            {
+                "desc": "Pozitivn\u00ed PCR test nesm\u00ed b\u00fdt star\u0161\u00ed  v\u00edce ne\u017e 180 dn\u00ed",
+                "lang": "cs"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "RR-CZ-0002",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.r.0"
+                },
+                {
+                    "not-after": [
+                        {
+                            "plusTime": [
+                                {
+                                    "var": "external.validationClock"
+                                },
+                                0,
+                                "day"
+                            ]
+                        },
+                        {
+                            "plusTime": [
+                                {
+                                    "var": "payload.r.0.fr"
+                                },
+                                180,
+                                "day"
+                            ]
+                        }
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-15T23:00:00Z",
+        "ValidTo": "2031-12-15T23:00:00Z",
+        "Version": "3.0.0"
     },
     {
         "AffectedFields": [
@@ -75046,6 +76431,76 @@
     {
         "AffectedFields": [
             "v.0",
+            "v.0.mp",
+            "v.0.dt"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "CZ",
+        "Description": [
+            {
+                "desc": "Vaccination COVID-19 Vaccine Janssen may not be older than 1440 days",
+                "lang": "en"
+            },
+            {
+                "desc": "O\u010dkov\u00e1n\u00ed COVID-19 Vaccine Janssen nesm\u00ed b\u00fdt star\u0161\u00ed ne\u017e 1440 dn\u00ed",
+                "lang": "cs"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-CZ-0021",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    "if": [
+                        {
+                            "===": [
+                                {
+                                    "var": "payload.v.0.mp"
+                                },
+                                "EU/1/20/1525"
+                            ]
+                        },
+                        {
+                            "not-after": [
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "external.validationClock"
+                                        },
+                                        0,
+                                        "day"
+                                    ]
+                                },
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "payload.v.0.dt"
+                                        },
+                                        1440,
+                                        "day"
+                                    ]
+                                }
+                            ]
+                        },
+                        true
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-15T23:00:00Z",
+        "ValidTo": "2031-12-15T23:00:00Z",
+        "Version": "3.0.0"
+    },
+    {
+        "AffectedFields": [
+            "v.0",
             "v.0.ma"
         ],
         "CertificateType": "Vaccination",
@@ -75176,6 +76631,65 @@
         "ValidFrom": "2021-10-01T00:00:00Z",
         "ValidTo": "2030-10-01T00:00:00Z",
         "Version": "1.0.0"
+    },
+    {
+        "AffectedFields": [
+            "v.0",
+            "v.0.dn",
+            "v.0.sd",
+            "v.0.mp"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "CZ",
+        "Description": [
+            {
+                "desc": "The certificate of the first dose of Comirnaty is not accepted",
+                "lang": "en"
+            },
+            {
+                "desc": "Certifik\u00e1t prvn\u00ed d\u00e1vky Comirnaty nen\u00ed akceptov\u00e1n",
+                "lang": "cs"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-CZ-0033",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    "if": [
+                        {
+                            "===": [
+                                {
+                                    "var": "payload.v.0.mp"
+                                },
+                                "EU/1/20/1528"
+                            ]
+                        },
+                        {
+                            ">=": [
+                                {
+                                    "var": "payload.v.0.dn"
+                                },
+                                {
+                                    "var": "payload.v.0.sd"
+                                }
+                            ]
+                        },
+                        true
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-15T23:00:00Z",
+        "ValidTo": "2031-12-15T23:00:00Z",
+        "Version": "3.0.0"
     },
     {
         "AffectedFields": [
@@ -80562,6 +82076,105 @@
     {
         "AffectedFields": [
             "v.0",
+            "v.0.dn",
+            "v.0.sd",
+            "v.0.mp",
+            "v.0.dt"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "CZ",
+        "Description": [
+            {
+                "desc": "Vaccination COVID-19 Vaccine Janssen must must be older than 14 days",
+                "lang": "en"
+            },
+            {
+                "desc": "Od dokon\u010den\u00e9ho o\u010dkov\u00e1n\u00ed COVID-19 Vaccine Janssen mus\u00ed uplynout alespo\u0148 14 dn\u016f",
+                "lang": "cs"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-CZ-0022",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    "if": [
+                        {
+                            "and": [
+                                {
+                                    ">=": [
+                                        {
+                                            "var": "payload.v.0.dn"
+                                        },
+                                        {
+                                            "var": "payload.v.0.sd"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "===": [
+                                        {
+                                            "var": "payload.v.0.mp"
+                                        },
+                                        "EU/1/20/1525"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "if": [
+                                {
+                                    ">": [
+                                        {
+                                            "var": "payload.v.0.dn"
+                                        },
+                                        1
+                                    ]
+                                },
+                                true,
+                                {
+                                    "not-before": [
+                                        {
+                                            "plusTime": [
+                                                {
+                                                    "var": "external.validationClock"
+                                                },
+                                                0,
+                                                "day"
+                                            ]
+                                        },
+                                        {
+                                            "plusTime": [
+                                                {
+                                                    "var": "payload.v.0.dt"
+                                                },
+                                                14,
+                                                "day"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        true
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-15T23:00:00Z",
+        "ValidTo": "2031-12-15T23:00:00Z",
+        "Version": "3.0.0"
+    },
+    {
+        "AffectedFields": [
+            "v.0",
             "v.0.mp",
             "v.0.dt"
         ],
@@ -82270,6 +83883,76 @@
         "ValidFrom": "2021-10-01T00:00:00Z",
         "ValidTo": "2030-10-01T00:00:00Z",
         "Version": "1.0.0"
+    },
+    {
+        "AffectedFields": [
+            "v.0",
+            "v.0.mp",
+            "v.0.dt"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "CZ",
+        "Description": [
+            {
+                "desc": "Vaccination Comirnaty may not be older than 1440 days",
+                "lang": "en"
+            },
+            {
+                "desc": "O\u010dkov\u00e1n\u00ed Comirnaty nesm\u00ed b\u00fdt star\u0161\u00ed ne\u017e 1440 dn\u00ed",
+                "lang": "cs"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-CZ-0031",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    "if": [
+                        {
+                            "===": [
+                                {
+                                    "var": "payload.v.0.mp"
+                                },
+                                "EU/1/20/1528"
+                            ]
+                        },
+                        {
+                            "not-after": [
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "external.validationClock"
+                                        },
+                                        0,
+                                        "day"
+                                    ]
+                                },
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "payload.v.0.dt"
+                                        },
+                                        1440,
+                                        "day"
+                                    ]
+                                }
+                            ]
+                        },
+                        true
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-15T23:00:00Z",
+        "ValidTo": "2031-12-15T23:00:00Z",
+        "Version": "3.0.0"
     },
     {
         "AffectedFields": [
