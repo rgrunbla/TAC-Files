@@ -2,11 +2,11 @@
   "config": [
     {
       "name": "lastUpdate",
-      "value": "11 Dec 2021"
+      "value": "13 Dec 2021"
     },
     {
       "name": "version",
-      "value": 110
+      "value": 111
     },
     {
       "name": "versionCalibrationBle",
@@ -427,6 +427,10 @@
           "value": 3
         }
       ]
+    },
+    {
+      "name": "app.wallet.vaccin.noWaitDosesPivotDate",
+      "value": "2021-12-22"
     },
     {
       "name": "app.wallet.confettiBirthRate",
