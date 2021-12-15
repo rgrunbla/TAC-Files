@@ -2,11 +2,11 @@
   "config": [
     {
       "name": "lastUpdate",
-      "value": "14 Dec 2021"
+      "value": "15 Dec 2021"
     },
     {
       "name": "version",
-      "value": 112
+      "value": 113
     },
     {
       "name": "versionCalibrationBle",
@@ -195,7 +195,7 @@
     {
       "name": "app.smartwallet.elg",
       "value": {
-        "displayElgDays": 60,
+        "displayElgDays": 26,
         "recNbDays": 153,
         "vacc22DosesNbDays": 153,
         "vaccJan11DosesNbDays": 31
