@@ -7440,6 +7440,51 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            2b:f5:f8:37:6f:75:f4:e5:ff:5b:45:23:c9:6b:c2:9b:41:a4:7f:53
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = BG, O = Ministry of Health, OU = Health Information System, CN = Bulgaria DGC CSCA 1
+        Validity
+            Not Before: Dec 15 10:28:11 2021 GMT
+            Not After : Dec 15 10:28:11 2023 GMT
+        Subject: C = BG, L = Sofia, O = Ministry of Health, OU = Health Information System, CN = DGC DSC 5
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:81:73:76:7b:13:8e:ea:95:dc:db:95:3a:e5:75:
+                    d0:53:26:29:ef:6b:8d:a6:c7:4a:a5:45:43:16:a5:
+                    14:b9:fd:a8:4e:87:49:84:dc:4d:41:f2:da:99:57:
+                    2a:d1:94:82:b1:a6:53:dd:80:c6:c8:b3:5b:d8:3f:
+                    fb:9b:f9:05:61
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl.his.bg/csca1.crl
+
+            X509v3 Authority Key Identifier: 
+                keyid:57:8C:1C:F9:66:7B:E2:78:B6:FC:22:F2:BD:EE:E1:90:A6:3F:B1:56
+
+            X509v3 Subject Key Identifier: 
+                41:6B:59:4C:05:CA:CF:B7:1F:56:FB:FB:66:9C:3D:87:2D:BC:C6:76
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.1847.2021.1.1, 1.3.6.1.4.1.1847.2021.1.2, 1.3.6.1.4.1.1847.2021.1.3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:36:f9:25:e3:9e:d8:10:86:5a:54:3a:94:48:4c:
+         4e:d0:9f:b9:80:70:dd:ad:71:e4:8a:51:6f:f0:19:cc:22:b6:
+         02:21:00:8d:dc:0a:bd:a8:4e:1e:6f:9e:29:25:f5:22:0d:a9:
+         65:cf:82:34:78:af:44:72:8d:05:c6:7d:a5:08:54:79:2d
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             21:52:3c:fb:ba:42:24:a7:60:db:50:5f:d7:f9:0c:9c
         Signature Algorithm: sha256WithRSAEncryption
         Issuer: C = LV, O = VAS Latvijas Valsts radio un telev\C4\ABzijas centrs, organizationIdentifier = NTRLV-40003011203, CN = Digital Green Certificate CSCA
