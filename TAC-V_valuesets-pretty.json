@@ -2093,7 +2093,7 @@
         }
     },
     {
-        "valueSetDate": "2021-12-15",
+        "valueSetDate": "2021-12-16",
         "valueSetId": "covid-19-lab-test-manufacturer-and-name",
         "valueSetValues": {
             "1065": {
@@ -2273,12 +2273,12 @@
                 "version": "2021-07-13 05:50:37 CEST"
             },
             "1244": {
-                "active": true,
+                "active": false,
                 "display": "GenBody, Inc, GenBody COVID-19 Ag",
                 "lang": "en",
                 "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
-                "validUntil": "2021-12-16 00:00:00 CET",
-                "version": "2021-07-07 05:20:53 CEST"
+                "validUntil": null,
+                "version": "2021-12-16 00:00:00 CET"
             },
             "1253": {
                 "active": true,
@@ -2553,12 +2553,12 @@
                 "version": "2021-05-11 00:00:00 CEST"
             },
             "1484": {
-                "active": true,
+                "active": false,
                 "display": "Beijing Wantai Biological Pharmacy Enterprise Co., Ltd, WANTAI SARS-CoV-2 Ag Rapid Test (FIA)",
                 "lang": "en",
                 "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
-                "validUntil": "2021-12-16 00:00:00 CET",
-                "version": "2021-07-07 05:20:18 CEST"
+                "validUntil": null,
+                "version": "2021-12-16 00:00:00 CET"
             },
             "1485": {
                 "active": true,
