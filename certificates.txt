@@ -2806,6 +2806,49 @@ Certificate:
 Certificate:
     Data:
         Version: 3 (0x2)
+        Serial Number: 6739035976337231479 (0x5d85dd83fa288e77)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = LI, L = Vaduz, O = Liechtensteinische Landesverwaltung, CN = DGC-NB-CSCA-PROD-20210608, emailAddress = webmaster@llv.li
+        Validity
+            Not Before: Dec 17 08:41:00 2021 GMT
+            Not After : Dec 17 08:41:00 2023 GMT
+        Subject: C = LI, L = Vaduz, O = Liechtensteinische Landesverwaltung, CN = DGC-NB-DSC-TEST-PROD-202112, emailAddress = webmaster@llv.li
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:83:c9:17:80:c4:ca:7b:91:47:0a:42:9a:ce:17:
+                    ee:40:9b:9a:4d:ac:74:66:13:56:60:a6:a5:13:0d:
+                    30:26:fe:11:4d:e4:d4:4b:7f:f3:72:20:d9:c3:a3:
+                    4f:45:6e:1b:cb:eb:af:0d:bf:79:fa:80:86:54:c3:
+                    89:d3:fd:88:c7
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                87:37:45:DC:C0:A5:31:2D:5E:F7:F7:88:7D:B7:B8:5A:B6:C8:90:1F
+            X509v3 Key Usage: critical
+                Digital Signature
+            Netscape Comment: 
+                xca certificate
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl.llv.li/DGC-NB-CSCA-PROD-20210608
+
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.1847.2021.1.1
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:a7:1a:73:d9:eb:79:be:e7:a5:55:9d:09:3f:
+         0f:60:c5:49:68:b4:85:67:c5:67:c3:33:6a:13:14:38:8a:01:
+         00:02:20:50:78:75:e3:8e:f7:b3:7c:57:45:8b:d8:c9:eb:2a:
+         14:a9:df:6d:16:9b:b4:7b:86:a9:6a:5a:17:08:f3:11:59
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
         Serial Number:
             49:f0:25:57:94:68:ef:e8:51:a9:16:bd:90:7e:14:9f:de:57:20:64
         Signature Algorithm: ecdsa-with-SHA256
@@ -3756,6 +3799,49 @@ Certificate:
          89:40:9b:81:c7:d2:ff:01:aa:60:2a:83:3e:f0:8b:7f:28:3d:
          6f:02:20:19:f5:c3:6b:72:90:2f:0b:10:ef:34:6d:e4:d2:7a:
          8c:91:f3:e0:07:bb:57:12:21:9f:a2:fd:ac:22:4e:5f:1c
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            0d:5b:21:b8:7c:62:1e:22:4d:9a:b2:01:f0:13:70:ef:1b:6f:29:ce
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = ME, ST = Podgorica, L = Podgorica, O = MinistryOfHealth, OU = IT, CN = CSCA_DGC_PROD_ME_01
+        Validity
+            Not Before: Dec 17 13:49:53 2021 GMT
+            Not After : Dec 17 13:49:53 2023 GMT
+        Subject: C = ME, ST = Podgorica, L = Podgorica, O = MinistryOfHealth, OU = IT, CN = DSC_DGC_PROD_ME_01
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:d5:3e:8c:72:08:50:0e:62:81:94:c2:2e:9e:20:
+                    3e:7e:d6:f2:04:30:58:2a:b7:19:34:54:4d:9f:e8:
+                    2f:ac:23:cb:e6:0c:b1:d8:f8:32:14:7a:9a:45:31:
+                    54:89:c1:56:5c:2c:04:3f:96:93:6c:e1:e1:d8:1c:
+                    c8:00:7a:01:85
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Subject Key Identifier: 
+                9A:6A:0B:FC:72:19:7E:C2:89:3B:47:99:56:59:77:AC:34:70:71:98
+            X509v3 Authority Key Identifier: 
+                keyid:08:FF:29:0B:57:D6:09:87:1C:13:54:29:7C:54:54:41:78:72:68:D9
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://mju.gov.me/cert/CRL/CSCA.crl
+
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.1847.2021.1.1, 1.3.6.1.4.1.1847.2021.1.2, 1.3.6.1.4.1.1847.2021.1.3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:44:02:20:77:b4:05:44:2a:08:79:f3:65:5a:96:9f:a3:ab:
+         e9:ab:26:c1:21:89:00:73:19:52:59:49:bb:55:c4:5d:05:bb:
+         02:20:59:f8:6e:f2:34:66:b5:d5:c5:e5:07:32:b0:24:08:64:
+         e0:8d:8c:41:f6:87:3f:79:c6:f9:a6:f4:41:b0:94:01
 
 Certificate:
     Data:
@@ -13133,6 +13219,49 @@ Certificate:
          64:34:c0:ae:a5:4e:9c:fa:e8:d8:eb:80:0e:75:bd:d2:a7:da:
          cd:02:20:17:95:96:ad:22:33:b8:10:d5:c0:e0:7f:96:24:46:
          b8:65:41:d1:03:12:85:12:1f:ff:21:70:65:a1:4d:15:df
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 6788441790619346727 (0x5e3563d784486727)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = LI, L = Vaduz, O = Liechtensteinische Landesverwaltung, CN = DGC-NB-CSCA-PROD-20210608, emailAddress = webmaster@llv.li
+        Validity
+            Not Before: Dec 17 09:03:00 2021 GMT
+            Not After : Dec 17 09:03:00 2023 GMT
+        Subject: C = LI, L = Vaduz, O = Liechtensteinische Landesverwaltung, CN = DGC-NB-DSC-RECOVERY-PROD-202112, emailAddress = webmaster@llv.li
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:c3:8b:f1:36:7b:53:96:4a:be:c2:89:ff:82:6f:
+                    e5:44:72:7a:e6:42:56:fd:8e:9c:63:d5:2c:5e:11:
+                    c2:99:a8:59:2a:0a:6f:04:01:79:6c:53:21:47:f1:
+                    83:d8:e3:76:c1:10:34:02:10:d1:14:49:f8:1a:fe:
+                    87:3e:e6:98:c2
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                60:D9:B5:E8:FC:1C:45:8F:35:7A:BA:A1:04:93:0E:F1:FE:D4:91:60
+            X509v3 Key Usage: critical
+                Digital Signature
+            Netscape Comment: 
+                xca certificate
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl.llv.li/DGC-NB-CSCA-PROD-20210608
+
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.1847.2021.1.3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:44:02:20:26:95:26:01:a3:dd:96:c2:3a:36:eb:34:e1:bf:
+         df:1b:63:bd:00:2d:5e:b3:84:ee:de:2c:62:b5:d0:99:5e:5c:
+         02:20:39:5d:f6:f8:bb:c8:3d:f6:5c:8a:93:a8:7e:95:ef:ae:
+         64:27:32:99:0e:d4:33:95:e6:93:33:7f:f8:65:0f:f8
 
 Certificate:
     Data:
