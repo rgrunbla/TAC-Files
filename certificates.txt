@@ -17997,6 +17997,98 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            09:7a:93:31:b6:87:7d:8f:0e:b1:fa:55:d8:f5:45:9b:68:f2:99:10
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: CN = Correo Uruguayo - CA, O = Administraci\C3\B3n Nacional de Correos, C = UY
+        Validity
+            Not Before: Dec  6 15:50:53 2021 GMT
+            Not After : Dec  6 15:50:53 2023 GMT
+        Subject: CN = MINISTERIO DE SALUD PUBLICA, O = MINISTERIO DE SALUD PUBLICA, C = UY, serialNumber = RUC214048830014
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (2048 bit)
+                Modulus:
+                    00:bb:58:be:df:e7:94:1d:d3:c5:64:f9:c1:dc:4c:
+                    6a:00:7e:e9:65:ba:88:4e:44:92:a5:5f:c7:60:7f:
+                    22:b4:b4:dd:9b:b0:b2:b5:94:16:8b:0d:81:5e:31:
+                    47:ae:81:79:7d:da:72:97:a7:96:d2:a4:d2:05:e2:
+                    9a:a3:e7:52:9f:89:f2:07:c0:08:b3:81:79:6e:71:
+                    83:40:ea:86:03:f1:5e:4e:73:8e:48:05:f5:d2:6c:
+                    e3:16:d8:91:ac:cb:1f:f1:7f:ab:19:7c:16:77:d5:
+                    96:98:f9:35:1c:fd:14:64:41:36:4d:e3:13:9b:63:
+                    e2:ff:ce:1a:d0:80:88:fa:03:58:0d:3e:f2:0a:b1:
+                    99:7b:32:3c:32:6f:86:77:8a:10:67:59:dd:b7:63:
+                    6d:5e:2e:c1:59:ba:99:a0:fc:76:29:19:d2:59:1f:
+                    0a:a8:7f:1f:4e:21:37:50:45:d7:7c:98:ee:78:0d:
+                    b3:c0:8c:26:cd:53:45:09:c0:d4:04:a6:e5:6b:32:
+                    4c:4b:58:27:c3:4c:52:fb:e9:77:7d:d4:ad:e5:db:
+                    41:34:56:5c:34:d5:77:27:43:6b:89:dc:65:9c:8e:
+                    79:31:65:6a:b6:1b:f6:99:0e:d4:cd:ef:67:0f:c2:
+                    c7:e0:ad:e0:af:df:93:67:7e:46:f5:44:1e:dd:8e:
+                    00:61
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Authority Key Identifier: 
+                keyid:6C:E2:B0:26:8D:5B:D6:26:08:1F:98:5D:69:E0:0E:7F:55:EC:AE:76
+
+            Authority Information Access: 
+                CA Issuers - URI:http://ancca.correo.com.uy/ancca/ancca.cer
+                OCSP - URI:http://ancca.correo.com.uy/ancca/OCSP
+
+            X509v3 Certificate Policies: 
+                Policy: 2.16.858.10000157.66565.4
+                  CPS: http://uce.gub.uy/informacion-tecnica/politicas/cp_persona_juridica.pdf
+                Policy: 2.16.858.10000157.66565.6
+                  CPS: http://ancca.correo.com.uy/ancca/cps.pdf
+
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://ancca.correo.com.uy/ancca/ancca.crl
+
+            X509v3 Subject Key Identifier: 
+                93:1A:F2:D3:45:62:06:03:13:1D:06:54:32:E3:3E:4B:47:E8:BA:CA
+            X509v3 Key Usage: critical
+                Digital Signature, Non Repudiation, Key Encipherment, Data Encipherment
+    Signature Algorithm: sha256WithRSAEncryption
+         64:ac:ad:a6:b3:cf:5a:ee:14:11:35:8b:8c:e8:e8:54:68:88:
+         42:de:5d:0d:7e:bf:91:cf:62:2c:c9:4e:e6:b0:82:7e:8b:2c:
+         73:96:d7:96:1f:6e:70:d7:45:33:87:fb:d1:d2:ee:35:49:50:
+         4e:05:69:80:a4:67:1b:f2:d8:9e:9f:fb:5d:2e:56:eb:1a:a8:
+         3a:8b:27:cd:9a:7a:91:c3:d7:76:1d:89:00:39:71:1a:37:83:
+         8e:13:26:2a:09:a8:56:28:ff:22:99:8b:3d:f6:8f:45:cd:c1:
+         80:e4:b2:74:e2:31:09:13:13:72:90:22:05:dc:a3:c1:eb:3f:
+         6e:10:cd:f7:48:c2:37:77:91:c9:10:68:d5:4a:0d:a3:da:b6:
+         04:4c:9f:b9:1a:fc:a6:f3:d6:ec:4a:5b:bf:fd:f2:30:86:6c:
+         0c:46:56:f8:13:58:59:6f:07:01:a1:9f:16:8f:23:6b:1d:62:
+         ed:dc:1c:8e:c1:4d:62:e1:b0:85:b4:d3:45:5b:00:64:da:e5:
+         e3:8a:c3:4f:fe:da:8c:3e:45:1a:9f:64:a7:c2:de:a6:ce:1c:
+         86:e4:96:af:87:6b:2a:7c:68:05:31:4d:d2:62:c8:d1:f7:83:
+         bd:5b:34:08:74:84:fa:7f:fe:8e:82:e0:08:95:d5:ee:80:ca:
+         04:19:56:32:81:19:c2:1c:2a:70:1e:28:e6:8e:4e:9e:b2:7d:
+         6b:cc:79:33:d4:50:6e:9d:82:06:1d:9b:23:63:2d:e3:9b:4b:
+         fb:78:c3:68:4d:db:ae:fa:cc:43:fa:43:f5:0b:ab:fc:bd:9b:
+         82:8c:38:6b:10:86:2e:9e:0d:1c:be:23:c7:d1:c2:91:df:db:
+         7e:9d:d0:a3:e9:24:8f:9e:fd:da:f5:02:c9:63:6d:24:08:9d:
+         29:81:3f:45:9a:4d:04:5f:34:27:fc:eb:dd:41:f6:f2:6c:cd:
+         b2:24:bd:26:cf:68:3f:ef:11:60:e3:5f:39:6e:a2:20:79:39:
+         82:d7:5d:0e:f9:99:4d:a3:f0:40:c8:e9:6a:4e:40:cf:5f:d7:
+         28:38:aa:b6:de:43:af:0a:03:60:c0:cc:b0:3c:41:9f:38:d8:
+         78:88:b8:6b:0a:8f:1b:25:4b:e2:c3:60:c4:44:ce:52:18:a0:
+         27:84:d1:de:b4:68:48:0f:e4:0a:b2:bb:a4:d7:67:6c:bd:5a:
+         ac:27:0d:a4:39:fa:21:89:01:7e:41:28:22:1e:44:96:b6:2e:
+         04:e1:ae:32:35:01:a4:be:a7:7f:6f:31:62:59:1b:09:1b:06:
+         c8:dd:fa:14:48:24:5a:74:61:4e:97:4b:3e:12:d5:f6:29:4d:
+         b4:25:9c:51:6c:e7:9c:1f
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             50:0e:9b:1b:e3:69:cc:8b:42:52:fd:f7:70:78:ef:40
         Signature Algorithm: rsassaPss         
          Hash Algorithm: sha512
