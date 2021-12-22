@@ -3740,23 +3740,6 @@
       },
       "publicKeyPem": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE/t+Slm3djgmEU6EDiHQ9NbBluAowmiJ1WRBnCP8M+zS4nz8F8i3999918JYKA4wJni8OaHwhzb+ay8KJIxhNFA=="
     },
-    "3I94YIEMN5Q=": {
-      "serialNumber": "7debf44cf51052ff1a3b0dd4b03a69d9",
-      "subject": "C=TH, O=Ministry of Public Health (กระทรวงสาธารณสุข), CN=Ministry of Public Health - DGC Signer Certificate, 2.5.4.97=0994000241801",
-      "issuer": "CN=INET CA - G1, O=Internet Thailand Public Company Limited, C=TH",
-      "notBefore": "2021-11-24T13:48:21.000Z",
-      "notAfter": "2023-11-24T13:48:21.000Z",
-      "signatureAlgorithm": "RSASSA-PKCS1-v1_5",
-      "fingerprint": "72ab719a4b63ee4887a9d9c95d35535a71ffbaf5",
-      "publicKeyAlgorithm": {
-        "hash": {
-          "name": "SHA-256"
-        },
-        "name": "ECDSA",
-        "namedCurve": "P-256"
-      },
-      "publicKeyPem": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAErYuZsg8e0RlYRtH5rH8kqEG6IzR/uG3AHevcDoUIT+KdZmD0Ij2WMA0lvqfKwfOU6kwwJbuw5GmL/b7T6hNK8Q=="
-    },
     "gEIK4Q/lAG0=": {
       "serialNumber": "00a875f8a85cfe85f0",
       "subject": "C=TR, ST=ANKARA, L=ÃANKAYA, O=T.C. SAÄLIK BAKANLIÄI, OU=SAÄLIK BÄ°LGÄ° SÄ°STEMLERÄ° GENEL MÃDÃRLÃÄÃ, CN=healthpassgwuat.saglik.gov.tr",
