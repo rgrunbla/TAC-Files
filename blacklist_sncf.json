@@ -3689,6 +3689,23 @@
       },
       "publicKeyPem": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE4gGExz9UXm77v21gaWNSjjtigr9VIyGL9S92FqnF99YqS/ekrLWvW4N6fmHfUST9VJLJVaB9uP3SX1rXlfq7lg=="
     },
+    "fjT5xGlTa3c=": {
+      "serialNumber": "570025fae3dc4b96b6c3cb918f031b2a4a0c8b47",
+      "subject": "C=TW, O=Executive Yuan, OU=Ministry of Health and Welfare, OU=Centers for Disease Control, CN=Document Signer",
+      "issuer": "C=TW, O=Executive Yuan, OU=Ministry of Health and Welfare, OU=Centers for Disease Control, CN=Country Signing CA",
+      "notBefore": "2021-09-13T13:49:01.000Z",
+      "notAfter": "2022-09-13T13:49:00.000Z",
+      "signatureAlgorithm": "ECDSA",
+      "fingerprint": "d9d57ebc5fbbba81d1c2ac1cbfe793a2e9b380c5",
+      "publicKeyAlgorithm": {
+        "hash": {
+          "name": "SHA-256"
+        },
+        "name": "ECDSA",
+        "namedCurve": "P-256"
+      },
+      "publicKeyPem": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEKmgDuJ+3Qj2w2o3fFUOI6bWXfrXFOS2t/+pQkNwRgNzIvNbvmVpzQDPNwWkRGFD/tcrm9DAUscZYyvCnrcPbcA=="
+    },
     "S2V5M1BSTw==": {
       "serialNumber": "4f0e753c1291e6b8",
       "subject": "C=UK, O=NHSX, OU=COVID, CN=S2V5M1BSTw==",
