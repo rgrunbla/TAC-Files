@@ -13137,6 +13137,53 @@ Certificate:
 Certificate:
     Data:
         Version: 3 (0x2)
+        Serial Number:
+            57:00:25:fa:e3:dc:4b:96:b6:c3:cb:91:8f:03:1b:2a:4a:0c:8b:47
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = TW, O = Executive Yuan, OU = Ministry of Health and Welfare, OU = Centers for Disease Control, CN = Country Signing CA
+        Validity
+            Not Before: Sep 13 13:49:01 2021 GMT
+            Not After : Sep 13 13:49:00 2022 GMT
+        Subject: C = TW, O = Executive Yuan, OU = Ministry of Health and Welfare, OU = Centers for Disease Control, CN = Document Signer
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:2a:68:03:b8:9f:b7:42:3d:b0:da:8d:df:15:43:
+                    88:e9:b5:97:7e:b5:c5:39:2d:ad:ff:ea:50:90:dc:
+                    11:80:dc:c8:bc:d6:ef:99:5a:73:40:33:cd:c1:69:
+                    11:18:50:ff:b5:ca:e6:f4:30:14:b1:c6:58:ca:f0:
+                    a7:ad:c3:db:70
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Authority Key Identifier: 
+                keyid:08:2B:B6:8C:DF:21:F9:1F:A9:E3:4E:88:18:E6:CA:5D:55:EA:2A:E5
+
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.0.1847.2021.1.3, 1.3.6.1.4.1.0.1847.2021.1.1, 1.3.6.1.4.1.0.1847.2021.1.2
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:https://hca.mohw.gov.tw/download/CSCA/CRL/complete.crl
+                CRL Issuer:
+                  DirName:CN = Country Signing CA, OU = Centers for Disease Control, OU = Ministry of Health and Welfare, O = Executive Yuan, C = TW
+
+            X509v3 Subject Key Identifier: 
+                31:AF:43:8F:9C:23:2E:0A:18:A1:D0:9C:DC:19:00:FD:7C:1E:93:AE
+            X509v3 Key Usage: critical
+                Digital Signature
+    Signature Algorithm: ecdsa-with-SHA256
+         30:44:02:20:50:c0:68:7a:1e:8a:b4:81:5c:34:84:be:b9:eb:
+         73:01:2a:a9:65:68:aa:8e:d7:94:12:d8:4e:40:6c:72:1c:e2:
+         02:20:46:92:2a:da:1b:0b:ed:90:db:20:20:60:d9:7a:b1:a0:
+         c0:4c:a6:02:59:fa:a5:6d:78:4f:8e:ba:b5:e5:d3:c3
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
         Serial Number: 7134516018463169170 (0x6302e484bcd4da92)
         Signature Algorithm: ecdsa-with-SHA256
         Issuer: CN = CSCA TUNISIA DGC, O = AGENCE NATIONALE DE CERTIFICATION ELECTRONIQUE, C = TN
