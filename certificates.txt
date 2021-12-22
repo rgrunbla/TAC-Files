@@ -1660,6 +1660,91 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            7d:eb:f4:4c:f5:10:52:ff:1a:3b:0d:d4:b0:3a:69:d9
+        Signature Algorithm: sha512WithRSAEncryption
+        Issuer: CN = INET CA - G1, O = Internet Thailand Public Company Limited, C = TH
+        Validity
+            Not Before: Nov 24 13:48:21 2021 GMT
+            Not After : Nov 24 13:48:21 2023 GMT
+        Subject: C = TH, O = Ministry of Public Health (\E0\B8\81\E0\B8\A3\E0\B8\B0\E0\B8\97\E0\B8\A3\E0\B8\A7\E0\B8\87\E0\B8\AA\E0\B8\B2\E0\B8\98\E0\B8\B2\E0\B8\A3\E0\B8\93\E0\B8\AA\E0\B8\B8\E0\B8\82), CN = Ministry of Public Health - DGC Signer Certificate, organizationIdentifier = 0994000241801
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:ad:8b:99:b2:0f:1e:d1:19:58:46:d1:f9:ac:7f:
+                    24:a8:41:ba:23:34:7f:b8:6d:c0:1d:eb:dc:0e:85:
+                    08:4f:e2:9d:66:60:f4:22:3d:96:30:0d:25:be:a7:
+                    ca:c1:f3:94:ea:4c:30:25:bb:b0:e4:69:8b:fd:be:
+                    d3:ea:13:4a:f1
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Authority Key Identifier: 
+                keyid:B7:D2:C4:25:A6:77:25:08:96:56:9C:9F:AF:18:CC:2A:CF:2B:78:CF
+
+            X509v3 Subject Key Identifier: 
+                24:1F:E5:AC:57:FE:0B:80:43:5C:21:45:B8:8C:66:42:56:BE:E4:D9
+            X509v3 Key Usage: critical
+                Digital Signature, Non Repudiation
+            X509v3 Certificate Policies: 
+                Policy: 2.16.764.1.1.1
+                  CPS: http://nrca.go.th/publish.html
+                Policy: 2.16.764.1.1.3.1
+                  CPS: https://ca.inet.co.th/inetca/document.html
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://ca.inet.co.th/repository/crl/inetca/100-1/partition.crl
+
+                Full Name:
+                  URI:http://ca.inet.co.th/repository/crl/inetca/complete.crl
+
+            Authority Information Access: 
+                CA Issuers - URI:https://ca.inet.co.th/repository/certs/IssuedToThisCA.p7b
+                OCSP - URI:http://ocsp.inet.co.th/OCSP/ocsp
+
+            X509v3 Subject Alternative Name: 
+                email:spd.digitalhealth@health.moph.go.th, DirName:/CN=Office of the Permanent Secretary
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.0.1847.2021.1.1, 1.3.6.1.4.1.0.1847.2021.1.2, 1.3.6.1.4.1.0.1847.2021.1.3
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+    Signature Algorithm: sha512WithRSAEncryption
+         50:96:34:27:d4:55:94:b5:e0:39:21:f6:26:a1:aa:5d:10:c5:
+         0c:87:46:0c:08:1f:6e:2c:ac:4c:2c:4a:ab:4a:c4:74:8e:ab:
+         f0:55:b2:98:f0:4c:36:d4:a6:a7:3b:9f:88:24:2f:89:63:30:
+         4c:1e:c9:88:57:c4:04:4e:7e:9e:7e:06:45:7a:1b:b5:12:42:
+         ef:69:67:8c:f2:aa:a3:96:d9:2a:40:17:3b:36:4c:ff:00:b6:
+         29:e8:ff:d0:0b:e7:5a:9c:74:72:b7:58:5a:80:2c:94:d7:81:
+         f4:3f:fb:49:7d:4c:83:19:e2:d3:33:39:91:7c:c1:43:06:d3:
+         62:2a:29:32:5e:7d:77:aa:60:26:b0:80:6b:ae:61:1b:61:a2:
+         4f:78:be:c9:24:46:37:48:1b:32:0a:e6:75:9e:7a:10:4d:4b:
+         46:28:16:ee:44:6a:75:89:d6:19:65:d5:99:f0:88:ca:f7:a2:
+         dd:db:37:02:2b:6c:91:ed:0a:50:84:55:b7:08:2d:8e:cb:86:
+         ae:29:70:d9:5b:37:ff:a7:f0:52:81:6a:0d:c6:0f:2e:d3:38:
+         e3:f3:21:26:c6:20:7b:e4:78:ce:aa:04:08:9a:ed:94:39:8b:
+         df:1b:b0:23:5f:0c:8f:f4:4e:e5:1f:23:06:8d:44:78:53:b4:
+         e8:a0:78:1b:94:89:16:c3:ed:e4:b8:5c:83:8f:64:42:da:8b:
+         59:3a:b6:87:b7:40:c9:a4:f4:5b:fb:d4:e3:db:cd:1a:c9:e3:
+         be:71:42:5a:0d:b2:d1:2f:2b:e6:c1:a8:76:73:9f:31:1b:93:
+         84:07:df:78:eb:ec:fe:e5:44:8e:1c:c3:7b:73:c2:c2:37:38:
+         60:ca:72:d8:d3:6b:77:5d:df:a5:03:9f:a6:b7:ff:bc:cc:1f:
+         47:2f:40:a6:fb:c3:31:41:9a:c4:a1:3d:5d:46:44:56:ad:a4:
+         fa:9a:2c:46:2b:82:2e:93:11:db:a7:13:34:aa:70:a4:97:4b:
+         9d:11:88:6b:3a:df:65:67:ce:89:63:17:ef:db:c6:38:6a:01:
+         ef:84:1f:29:53:c2:41:9c:e3:75:84:99:a5:93:47:31:3a:fb:
+         c1:c0:43:20:28:b5:70:b7:5d:58:33:fd:cf:1f:95:a4:67:57:
+         9f:b3:e6:01:77:3b:03:da:b9:75:80:01:3d:14:59:d7:4f:a2:
+         d6:c9:f4:8e:27:1c:0c:ee:e1:6e:6e:82:e0:d3:dc:0a:ed:13:
+         d5:93:28:f9:8d:d2:64:fa:5e:10:0c:61:0b:14:2e:91:4a:0a:
+         c8:82:49:45:cd:3c:4a:96:b0:bb:f3:ce:bf:3b:bd:63:d9:7c:
+         fb:0b:0a:22:9f:68:0c:d4
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             3d:cf:9e:86:6b:a2:b4:6e:74
         Signature Algorithm: ecdsa-with-SHA256
         Issuer: CN = EADTrust ECC 256 SubCA For Qualified Certificates 2019, O = "European Agency of Digital Trust, S.L.", C = ES, organizationIdentifier = VATES-B85626240, OU = Legal Person
