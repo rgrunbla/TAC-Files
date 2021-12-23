@@ -2,11 +2,11 @@
   "config": [
     {
       "name": "lastUpdate",
-      "value": "20 Dec 2021"
+      "value": "23 Dec 2021"
     },
     {
       "name": "version",
-      "value": 114
+      "value": 115
     },
     {
       "name": "versionCalibrationBle",
@@ -147,6 +147,21 @@
         48,
         72
       ]
+    },
+    {
+      "name": "app.wallet.dccKids",
+      "value": {
+        "age": 11,
+        "s": [
+          "\ud83d\udc3c",
+          "\ud83d\udc30",
+          "\ud83d\udc3b",
+          "\ud83e\udd81",
+          "\ud83d\udc31",
+          "\ud83d\udc2f",
+          "\ud83d\udc28"
+        ]
+      }
     },
     {
       "name": "app.walletPubKeys",
