@@ -1,5 +1,18 @@
 [
     {
+        "valueSetDate": "2021-04-27",
+        "valueSetId": "disease-agent-targeted",
+        "valueSetValues": {
+            "840539006": {
+                "active": true,
+                "display": "COVID-19",
+                "lang": "en",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20210131"
+            }
+        }
+    },
+    {
         "valueSetDate": "2021-09-29",
         "valueSetId": "vaccines-covid-19-auth-holders",
         "valueSetValues": {
@@ -135,6 +148,33 @@
                 "lang": "en",
                 "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
                 "version": "1.0"
+            }
+        }
+    },
+    {
+        "valueSetDate": "2021-04-27",
+        "valueSetId": "sct-vaccines-covid-19",
+        "valueSetValues": {
+            "1119305005": {
+                "active": true,
+                "display": "SARS-CoV-2 antigen vaccine",
+                "lang": "en",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20210131"
+            },
+            "1119349007": {
+                "active": true,
+                "display": "SARS-CoV-2 mRNA vaccine",
+                "lang": "en",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20210131"
+            },
+            "J07BX03": {
+                "active": true,
+                "display": "covid-19 vaccines",
+                "lang": "en",
+                "system": "http://www.whocc.no/atc",
+                "version": "2021-01"
             }
         }
     },
