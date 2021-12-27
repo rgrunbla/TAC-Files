@@ -6,7 +6,7 @@
     },
     {
       "name": "version",
-      "value": 116
+      "value": 117
     },
     {
       "name": "versionCalibrationBle",
@@ -59,12 +59,12 @@
       "value": [
         {
           "k1": "sivicsidepvacsireanonvax",
-          "k2": "sivicsidepvacsireavax",
+          "k2": "sivicsidepvacsireavax6plusrappel",
           "t": "keyfigure.compare.vacsirea"
         },
         {
           "k1": "sivicsidepvacsipcrplusnonvax",
-          "k2": "sivicsidepvacsipcrplusvax",
+          "k2": "sivicsidepvacsipcrplusvax6plusrappel",
           "t": "keyfigure.compare.vacsipcrplus"
         },
         {
@@ -211,8 +211,8 @@
       "name": "app.smartwallet.elg",
       "value": {
         "displayElgDays": 26,
-        "recNbDays": 122,
-        "vacc22DosesNbDays": 122,
+        "recNbDays": 92,
+        "vacc22DosesNbDays": 92,
         "vaccJan11DosesNbDays": 31
       }
     },
