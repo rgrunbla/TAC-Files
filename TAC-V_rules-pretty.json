@@ -2481,6 +2481,89 @@
     {
         "AffectedFields": [
             "v.0",
+            "v.0.dt",
+            "v.0.dn",
+            "v.0.mp"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "ME",
+        "Description": [
+            {
+                "desc": "For those who have not received the second dose, the first dose of the one-dose vaccine is valid for 6 months from the date of administration.",
+                "lang": "en"
+            },
+            {
+                "desc": "Za lica koja nisu primila drugu dozu, prva doza vakcine koja se prima u jednoj dozi je validna 6 mjeseci od datuma primanja.",
+                "lang": "sr"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-ME-0007",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    "if": [
+                        {
+                            "and": [
+                                {
+                                    "===": [
+                                        {
+                                            "var": "payload.v.0.dn"
+                                        },
+                                        1
+                                    ]
+                                },
+                                {
+                                    "===": [
+                                        {
+                                            "var": "payload.v.0.mp"
+                                        },
+                                        "EU/1/20/1525"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "not-after": [
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "external.validationClock"
+                                        },
+                                        0,
+                                        "day"
+                                    ]
+                                },
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "payload.v.0.dt"
+                                        },
+                                        180,
+                                        "day"
+                                    ]
+                                }
+                            ]
+                        },
+                        true
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-29T12:00:00Z",
+        "ValidTo": "2030-06-01T00:00:00Z",
+        "Version": "1.0.0"
+    },
+    {
+        "AffectedFields": [
+            "v.0",
             "v.0.dn",
             "v.0.sd"
         ],
@@ -60278,6 +60361,89 @@
         "SchemaVersion": "1.0.0",
         "Type": "Acceptance",
         "ValidFrom": "2021-12-04T00:00:00Z",
+        "ValidTo": "2030-06-01T00:00:00Z",
+        "Version": "1.0.0"
+    },
+    {
+        "AffectedFields": [
+            "v.0",
+            "v.0.dt",
+            "v.0.dn",
+            "v.0.sd"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "ME",
+        "Description": [
+            {
+                "desc": "For those who have not received the third dose, the second dose of the two-dose vaccine is valid for 6 months from the date of administration.",
+                "lang": "en"
+            },
+            {
+                "desc": "Za lica koja nisu primila trecu dozu, druga doza vakcine koja se prima u dvije doze je validna 6 mjeseci od datuma primanja.",
+                "lang": "sr"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-ME-0006",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    "if": [
+                        {
+                            "and": [
+                                {
+                                    "===": [
+                                        {
+                                            "var": "payload.v.0.dn"
+                                        },
+                                        2
+                                    ]
+                                },
+                                {
+                                    "===": [
+                                        {
+                                            "var": "payload.v.0.sd"
+                                        },
+                                        2
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "not-after": [
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "external.validationClock"
+                                        },
+                                        0,
+                                        "day"
+                                    ]
+                                },
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "payload.v.0.dt"
+                                        },
+                                        180,
+                                        "day"
+                                    ]
+                                }
+                            ]
+                        },
+                        true
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2021-12-29T12:00:00Z",
         "ValidTo": "2030-06-01T00:00:00Z",
         "Version": "1.0.0"
     },
