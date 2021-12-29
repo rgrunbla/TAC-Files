@@ -2,11 +2,11 @@
   "config": [
     {
       "name": "lastUpdate",
-      "value": "24 Dec 2021"
+      "value": "29 Dec 2021"
     },
     {
       "name": "version",
-      "value": 117
+      "value": 118
     },
     {
       "name": "versionCalibrationBle",
@@ -63,13 +63,18 @@
           "t": "keyfigure.compare.vacsirea"
         },
         {
+          "k1": "nombrecas",
+          "k2": "deces",
+          "t": "keyfigure.compare.5"
+        },
+        {
           "k1": "sivicsidepvacsipcrplusnonvax",
           "k2": "sivicsidepvacsipcrplusvax6plusrappel",
           "t": "keyfigure.compare.vacsipcrplus"
         },
         {
           "k1": "couvcompletvaccination",
-          "k2": "tauxoccupation",
+          "k2": "patientsrea",
           "t": "keyfigure.compare.3"
         },
         {
