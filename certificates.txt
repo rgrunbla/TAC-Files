@@ -6895,6 +6895,49 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            5a:83:b9:7a:d6:3c:11:96:cf:7f:c3:89:16:85:80:1d:fb:cf:c1:63
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = SG, ST = Singapore, O = Ministry Of Health, CN = csca.notarise.gov.sg
+        Validity
+            Not Before: Jan  3 03:37:09 2022 GMT
+            Not After : Jan  3 03:37:09 2024 GMT
+        Subject: C = SG, ST = Singapore, O = Ministry Of Health, CN = dsc.notarise.gov.sg
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:62:bd:2a:f2:6f:c1:9f:c8:2c:c1:16:06:c1:e8:
+                    5a:a2:2d:c0:1a:b3:3b:12:7f:a1:41:3e:59:7c:e7:
+                    e2:5a:fb:72:97:35:a1:28:25:1e:2b:44:2b:10:7d:
+                    57:43:11:d5:40:6e:e3:0f:e9:3e:39:a2:2b:a8:20:
+                    ce:cb:54:f6:77
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Subject Key Identifier: 
+                B1:AF:05:ED:E9:FE:59:8C:08:C0:B9:09:74:4A:4D:A2:4D:23:45:3D
+            X509v3 Authority Key Identifier: 
+                keyid:39:37:05:B3:38:B9:F9:9E:23:0D:D1:C2:C1:B0:C3:B3:32:97:01:A5
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:https://www.notarise.gov.sg/csca.crl
+
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.1847.2021.1.1, 1.3.6.1.4.1.1847.2021.1.2, 1.3.6.1.4.1.1847.2021.1.3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:73:14:8c:d1:ba:9d:4f:44:db:c7:1c:2f:14:02:
+         f9:19:05:53:fe:3c:b1:7f:0a:f7:51:63:44:a0:8c:03:36:fe:
+         02:21:00:c3:ef:b7:47:9f:f3:39:4c:9d:50:2f:ac:16:2f:43:
+         83:9c:42:fc:fc:9a:4e:88:a6:58:7a:a6:0a:14:c3:04:61
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             79:65:d2:a9:4f:88:22:6a:28:0b:b5:e3:0a:32:22:79
         Signature Algorithm: sha256WithRSAEncryption
         Issuer: C = CH, organizationIdentifier = VATCH-CHE-221.032.573, O = Bundesamt fuer Informatik und Telekommunikation (BIT), OU = Swiss Government PKI, CN = Swiss Government Regulated CA 02
