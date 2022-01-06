@@ -2093,7 +2093,7 @@
         }
     },
     {
-        "valueSetDate": "2022-01-05",
+        "valueSetDate": "2022-01-06",
         "valueSetId": "covid-19-lab-test-manufacturer-and-name",
         "valueSetValues": {
             "1065": {
@@ -3153,12 +3153,12 @@
                 "version": "2021-07-07 05:20:03 CEST"
             },
             "2103": {
-                "active": true,
+                "active": false,
                 "display": "VivaChek Biotech (Hangzhou) Co., Ltd, VivaDiag Pro SARS CoV 2 Ag Rapid Test",
                 "lang": "en",
                 "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
-                "validUntil": "2022-01-06 00:00:00 CET",
-                "version": "2021-07-07 05:25:29 CEST"
+                "validUntil": null,
+                "version": "2022-01-06 00:00:00 CET"
             },
             "2104": {
                 "active": true,
