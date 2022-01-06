@@ -2,11 +2,11 @@
   "config": [
     {
       "name": "lastUpdate",
-      "value": "29 Dec 2021"
+      "value": "06 Jan 2022"
     },
     {
       "name": "version",
-      "value": 118
+      "value": 119
     },
     {
       "name": "versionCalibrationBle",
@@ -66,6 +66,11 @@
           "k1": "nombrecas",
           "k2": "deces",
           "t": "keyfigure.compare.5"
+        },
+        {
+          "k1": "omicron",
+          "k2": "delta",
+          "t": "keyfigure.compare.6"
         },
         {
           "k1": "sivicsidepvacsipcrplusnonvax",
