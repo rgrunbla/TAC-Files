@@ -12141,6 +12141,46 @@ Certificate:
 Certificate:
     Data:
         Version: 3 (0x2)
+        Serial Number:
+            59:00:00:00:07:46:b6:ff:0b:a8:da:ab:ee:00:00:00:00:00:07
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = NO, O = Norsk helsenett SF, CN = NO NHN CSCA PROD
+        Validity
+            Not Before: Dec 14 09:43:35 2021 GMT
+            Not After : Dec 14 09:53:35 2023 GMT
+        Subject: C = NO, O = Norwegian Institute of Public Health, CN = DSC AN EU 6
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:c0:f8:26:07:3b:14:b6:e1:1c:71:b4:93:2e:ec:
+                    a1:44:29:41:68:4a:b8:4d:0a:c3:6a:fa:9c:44:da:
+                    09:7c:95:99:8f:4c:6a:b4:4f:0c:67:83:07:62:84:
+                    8b:bd:b3:1b:31:a6:a3:83:90:60:34:63:51:1d:2b:
+                    95:3e:b8:08:06
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.0.1847.2021.1.1, 1.3.6.1.4.1.0.1847.2021.1.2, 1.3.6.1.4.1.0.1847.2021.1.3
+            X509v3 Subject Key Identifier: 
+                69:0F:56:D1:C6:A5:83:F6:4E:49:57:7B:52:27:2C:88:2A:07:B5:AA
+            X509v3 Authority Key Identifier: 
+                keyid:D7:90:47:A3:2A:E6:B5:B4:24:BB:4C:4F:0E:B2:66:4E:66:D8:F4:37
+
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:df:0f:8d:bb:b6:ca:1a:83:05:67:d3:9a:fa:
+         03:7e:e1:d1:84:60:3b:45:c8:30:9f:42:0f:60:28:7a:64:1e:
+         48:02:21:00:ef:d5:f2:61:13:dd:9b:b3:24:fa:84:8d:02:f9:
+         87:14:0f:5e:57:eb:63:07:32:29:bf:85:0a:95:06:97:a0:b8
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
         Serial Number: 2008837342304508155 (0x1be0d2eb679998fb)
         Signature Algorithm: ecdsa-with-SHA256
         Issuer: C = BE, O = eHealth - Belgium, CN = Belgium Covid19 Country Signing CA 01
@@ -12177,6 +12217,46 @@ Certificate:
          9e:17:8f:f2:e1:14:fe:b5:0d:95:7d:81:8e:78:53:8e:d2:e2:
          02:21:00:f1:4f:dd:4f:5e:90:79:7d:79:c1:ce:c4:bd:28:11:
          9d:3f:e0:67:5a:21:9d:44:d3:09:c1:16:f0:7d:f1:43:e6
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            59:00:00:00:04:57:8a:92:20:55:c0:e1:df:00:00:00:00:00:04
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = NO, O = Norsk helsenett SF, CN = NO NHN CSCA PROD
+        Validity
+            Not Before: Jun  7 09:17:12 2021 GMT
+            Not After : Jun  7 09:27:12 2023 GMT
+        Subject: C = NO, O = Norwegian Institute of Public Health, CN = DSC HN EU 3
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:c3:f2:f9:22:a4:13:04:44:e2:23:66:15:56:42:
+                    77:65:bd:e2:2e:53:ea:ad:41:2b:4a:2d:94:bd:66:
+                    ff:d7:3f:5f:a0:f0:0a:d5:d8:64:41:7b:3b:eb:72:
+                    4d:a0:bc:96:a9:e9:55:9e:10:49:cb:89:9d:47:ed:
+                    35:c5:40:b5:dc
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.0.1847.2021.1.1, 1.3.6.1.4.1.0.1847.2021.1.2, 1.3.6.1.4.1.0.1847.2021.1.3
+            X509v3 Subject Key Identifier: 
+                6D:9C:18:61:76:F5:27:29:F3:05:08:CF:4D:C8:87:8B:D3:03:15:B7
+            X509v3 Authority Key Identifier: 
+                keyid:D7:90:47:A3:2A:E6:B5:B4:24:BB:4C:4F:0E:B2:66:4E:66:D8:F4:37
+
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:27:12:db:6e:03:2e:2f:15:2f:cb:22:5e:e6:7f:
+         44:2b:0f:63:25:2f:a9:a8:49:8a:d6:30:af:80:53:5b:86:62:
+         02:21:00:fc:79:f5:a1:a7:63:e1:71:35:cc:8f:3a:53:c3:a7:
+         17:9f:94:d5:ff:b3:0f:df:2e:a3:79:94:3f:a4:2f:96:52
 
 Certificate:
     Data:
@@ -18045,6 +18125,46 @@ Certificate:
          9d:49:65:5c:30:dc:ba:7c:5e:d3:2b:7b:ff:fe:c6:2d:60:e6:
          27:01:60:c8:09:fd:a8:20:ef:9e:8b:aa:65:0a:61:d6:22:ec:
          bc:90:42:b1:ea:51:57:71
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            59:00:00:00:08:24:47:9c:a4:75:00:f6:65:00:00:00:00:00:08
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = NO, O = Norsk helsenett SF, CN = NO NHN CSCA PROD
+        Validity
+            Not Before: Dec 14 09:43:38 2021 GMT
+            Not After : Dec 14 09:53:38 2023 GMT
+        Subject: C = NO, O = Norwegian Institute of Public Health, CN = DSC AN EU 7
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:5b:81:8f:6c:c3:56:a8:91:ea:0e:a9:9d:18:4a:
+                    41:de:ff:82:de:28:1f:dd:0c:23:01:bf:ee:d3:09:
+                    14:52:aa:e0:b5:0b:1d:92:9b:37:80:13:52:1b:ff:
+                    61:de:9f:cb:34:9c:51:84:3a:67:45:8f:02:40:87:
+                    44:4e:b9:d6:82
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.0.1847.2021.1.1, 1.3.6.1.4.1.0.1847.2021.1.2, 1.3.6.1.4.1.0.1847.2021.1.3
+            X509v3 Subject Key Identifier: 
+                5C:F9:4B:98:A3:E6:C3:9E:DC:14:79:DE:0B:26:AD:17:10:F9:B0:C3
+            X509v3 Authority Key Identifier: 
+                keyid:D7:90:47:A3:2A:E6:B5:B4:24:BB:4C:4F:0E:B2:66:4E:66:D8:F4:37
+
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+    Signature Algorithm: ecdsa-with-SHA256
+         30:44:02:20:77:38:83:35:fc:98:5a:82:ea:36:25:49:ff:2b:
+         94:4b:f8:2d:53:78:b3:e1:20:62:f5:fb:4a:c5:c5:91:b8:b5:
+         02:20:36:f3:a1:18:7e:35:a5:39:5b:72:44:49:3b:89:61:d2:
+         b6:7b:fa:29:1a:27:48:16:5d:1d:fd:92:fe:38:5d:7f
 
 Certificate:
     Data:
