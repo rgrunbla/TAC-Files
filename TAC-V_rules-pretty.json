@@ -67271,6 +67271,138 @@
     },
     {
         "AffectedFields": [
+            "v.0",
+            "v.0.dn",
+            "v.0.sd",
+            "v.0.dt"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "LU",
+        "Description": [
+            {
+                "desc": "The vaccine must have been administered no longer than 9 months ago.",
+                "lang": "en"
+            },
+            {
+                "desc": "La vaccination ne doit pas dater de plus de neuf mois",
+                "lang": "fr"
+            },
+            {
+                "desc": "La vaccinazione non pu\u00f2 risalire a pi\u00f9 di 9 mesi fa.",
+                "lang": "it"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-LU-0002",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    "if": [
+                        {
+                            "===": [
+                                {
+                                    "var": "payload.v.0.dn"
+                                },
+                                {
+                                    "var": "payload.v.0.sd"
+                                }
+                            ]
+                        },
+                        {
+                            "if": [
+                                {
+                                    "<": [
+                                        {
+                                            "var": "payload.v.0.dn"
+                                        },
+                                        3
+                                    ]
+                                },
+                                {
+                                    "not-after": [
+                                        {
+                                            "plusTime": [
+                                                {
+                                                    "var": "external.validationClock"
+                                                },
+                                                0,
+                                                "day"
+                                            ]
+                                        },
+                                        {
+                                            "plusTime": [
+                                                {
+                                                    "var": "payload.v.0.dt"
+                                                },
+                                                270,
+                                                "day"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "not-after": [
+                                        {
+                                            "plusTime": [
+                                                {
+                                                    "var": "external.validationClock"
+                                                },
+                                                0,
+                                                "day"
+                                            ]
+                                        },
+                                        {
+                                            "plusTime": [
+                                                {
+                                                    "var": "payload.v.0.dt"
+                                                },
+                                                366,
+                                                "day"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "not-after": [
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "external.validationClock"
+                                        },
+                                        0,
+                                        "day"
+                                    ]
+                                },
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "payload.v.0.dt"
+                                        },
+                                        366,
+                                        "day"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2022-01-13T18:00:00Z",
+        "ValidTo": "2030-06-01T00:00:00Z",
+        "Version": "1.5.0"
+    },
+    {
+        "AffectedFields": [
             "r.1"
         ],
         "CertificateType": "Recovery",
