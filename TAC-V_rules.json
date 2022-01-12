@@ -2160,6 +2160,12 @@
     "version": "1.0.0"
   },
   {
+    "country": "RO",
+    "hash": "650d8d8cc1cf6f3690c3663b1b9aa0fafb3ccc015337e466f1086200ab1bfd56",
+    "identifier": "RR-RO-0002",
+    "version": "1.0.1"
+  },
+  {
     "country": "RS",
     "hash": "f424b45722de40ef871228ac17836b8a8e308b667b9cfa84bca1681d5226142c",
     "identifier": "RR-RS-0001",
@@ -11983,14 +11989,20 @@
   },
   {
     "country": "UA",
+    "hash": "478290363049f7caad34a16663ddf4100a2f5a2c899fdab0bf08d9824c454533",
+    "identifier": "VR-UA-0001",
+    "version": "1.2.0"
+  },
+  {
+    "country": "UA",
     "hash": "5f095c3874e4903a14f69f5247d824b4665ce0829d62da423b75cdb8e36a41e3",
     "identifier": "VR-UA-0001",
     "version": "1.1.0"
   },
   {
     "country": "UA",
-    "hash": "478290363049f7caad34a16663ddf4100a2f5a2c899fdab0bf08d9824c454533",
-    "identifier": "VR-UA-0001",
+    "hash": "1d05dd973eee6bc99b030774532e31da0ca8ae65529452f4960e110bc0af5762",
+    "identifier": "VR-UA-0003",
     "version": "1.2.0"
   },
   {
@@ -12001,8 +12013,8 @@
   },
   {
     "country": "UA",
-    "hash": "1d05dd973eee6bc99b030774532e31da0ca8ae65529452f4960e110bc0af5762",
-    "identifier": "VR-UA-0003",
+    "hash": "3b189844a812082f969b02923b21649fe6a7396a1bf8cbd54e05c1bd47130cec",
+    "identifier": "VR-UA-0006",
     "version": "1.2.0"
   },
   {
@@ -12010,12 +12022,6 @@
     "hash": "3dbb6dfbc3136c8eb77776b5cb20e6c2f3524838e04c33b61522e956861095bb",
     "identifier": "VR-UA-0006",
     "version": "1.1.0"
-  },
-  {
-    "country": "UA",
-    "hash": "3b189844a812082f969b02923b21649fe6a7396a1bf8cbd54e05c1bd47130cec",
-    "identifier": "VR-UA-0006",
-    "version": "1.2.0"
   },
   {
     "country": "UA",
