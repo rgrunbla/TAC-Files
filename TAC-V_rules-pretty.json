@@ -72668,62 +72668,6 @@
     },
     {
         "AffectedFields": [
-            "r.0",
-            "r.0.fr"
-        ],
-        "CertificateType": "Recovery",
-        "Country": "ME",
-        "Description": [
-            {
-                "desc": "The positive NAA test result (e.g., PCR) must be older than 10 days.",
-                "lang": "en"
-            },
-            {
-                "desc": "Pozitivan rezultat NAA testa (npr. PCR testa) mora biti stariji od 10 dana.",
-                "lang": "sr"
-            }
-        ],
-        "Engine": "CERTLOGIC",
-        "EngineVersion": "0.7.5",
-        "Identifier": "RR-ME-0001",
-        "Logic": {
-            "if": [
-                {
-                    "var": "payload.r.0"
-                },
-                {
-                    "not-before": [
-                        {
-                            "plusTime": [
-                                {
-                                    "var": "external.validationClock"
-                                },
-                                0,
-                                "day"
-                            ]
-                        },
-                        {
-                            "plusTime": [
-                                {
-                                    "var": "payload.r.0.fr"
-                                },
-                                10,
-                                "day"
-                            ]
-                        }
-                    ]
-                },
-                true
-            ]
-        },
-        "SchemaVersion": "1.0.0",
-        "Type": "Acceptance",
-        "ValidFrom": "2021-12-24T12:00:00Z",
-        "ValidTo": "2030-01-01T00:00:00Z",
-        "Version": "1.0.0"
-    },
-    {
-        "AffectedFields": [
             "t.0",
             "t.0.sc",
             "t.0.tt"
