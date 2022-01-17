@@ -2,11 +2,11 @@
   "config": [
     {
       "name": "lastUpdate",
-      "value": "06 Jan 2022"
+      "value": "17 Jan 2022"
     },
     {
       "name": "version",
-      "value": 120
+      "value": 121
     },
     {
       "name": "versionCalibrationBle",
@@ -397,7 +397,7 @@
     },
     {
       "name": "app.checkStatusFrequency",
-      "value": 12.0
+      "value": 10.0
     },
     {
       "name": "app.minStatusRetryDuration",
