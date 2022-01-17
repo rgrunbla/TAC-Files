@@ -10968,6 +10968,18 @@
     "version": "1.0.2"
   },
   {
+    "country": "MT",
+    "hash": "3213781e785191eee6b0b5aca611a053b63c3574d15d37704ceca491bab134e5",
+    "identifier": "VR-MT-0002",
+    "version": "3.0.0"
+  },
+  {
+    "country": "MT",
+    "hash": "a47c0684f4c1178633a7ca023b7298a9d6052941b561187cbd703b2120411a1e",
+    "identifier": "VR-MT-0003",
+    "version": "1.0.1"
+  },
+  {
     "country": "FR",
     "hash": "910b2737b8d60297659040fd11a1524bf74d83b3b0261140dcd418b512442eba",
     "identifier": "VR-MTFR-0000",
@@ -11989,15 +12001,15 @@
   },
   {
     "country": "SK",
-    "hash": "774604968fe2aa2cac2e9f8fcecf0f14694749064fecb3baf14c8c33d21f4aa7",
-    "identifier": "VR-SK-0000",
-    "version": "1.0.0"
-  },
-  {
-    "country": "SK",
     "hash": "91f85a9c71a236f900c98d782f68bdefc4a33e6a0e803014539c96f200c83f7b",
     "identifier": "VR-SK-0000",
     "version": "1.0.1"
+  },
+  {
+    "country": "SK",
+    "hash": "774604968fe2aa2cac2e9f8fcecf0f14694749064fecb3baf14c8c33d21f4aa7",
+    "identifier": "VR-SK-0000",
+    "version": "1.0.0"
   },
   {
     "country": "SK",
@@ -12025,20 +12037,14 @@
   },
   {
     "country": "SK",
-    "hash": "abdf2845b1836c277c73334d66761ed5a5ca6afad336a8c2e097e5be7987bc21",
-    "identifier": "VR-SK-0004",
-    "version": "1.0.0"
-  },
-  {
-    "country": "SK",
     "hash": "23874e8f7257e2e19250d06f85fef2722cbb76de83f9cccbf53c3b4de8af39aa",
     "identifier": "VR-SK-0004",
     "version": "1.0.1"
   },
   {
     "country": "SK",
-    "hash": "888d09092f72e2fc217d42032382cdd1ec8a7cddd0dc36d903982a6daf9c0c86",
-    "identifier": "VR-SK-0005",
+    "hash": "abdf2845b1836c277c73334d66761ed5a5ca6afad336a8c2e097e5be7987bc21",
+    "identifier": "VR-SK-0004",
     "version": "1.0.0"
   },
   {
@@ -12049,8 +12055,8 @@
   },
   {
     "country": "SK",
-    "hash": "7be5794863d8d440e87501600efb319170066d2bf4a3312c0450194b73c7f40e",
-    "identifier": "VR-SK-0006",
+    "hash": "888d09092f72e2fc217d42032382cdd1ec8a7cddd0dc36d903982a6daf9c0c86",
+    "identifier": "VR-SK-0005",
     "version": "1.0.0"
   },
   {
@@ -12058,6 +12064,12 @@
     "hash": "10625a261d38b7fb80623f64fd966a1d85f35417e9eae71c059418c3bb32f473",
     "identifier": "VR-SK-0006",
     "version": "1.0.1"
+  },
+  {
+    "country": "SK",
+    "hash": "7be5794863d8d440e87501600efb319170066d2bf4a3312c0450194b73c7f40e",
+    "identifier": "VR-SK-0006",
+    "version": "1.0.0"
   },
   {
     "country": "SK",
