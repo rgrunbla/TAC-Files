@@ -6,7 +6,7 @@
     },
     {
       "name": "version",
-      "value": 123
+      "value": 124
     },
     {
       "name": "versionCalibrationBle",
@@ -211,9 +211,12 @@
         "displayExpOnAllDcc": 240,
         "pivot1": "2021-12-15",
         "pivot2": "2022-01-15",
+        "pivot3": "2022-02-15",
         "recNbDays": 180,
         "vacc11DosesNbDays": 214,
+        "vacc11DosesNbNewDays": 122,
         "vacc22DosesNbDays": 214,
+        "vacc22DosesNbNewDays": 122,
         "vaccJan11DosesNbDays": 61
       }
     },
