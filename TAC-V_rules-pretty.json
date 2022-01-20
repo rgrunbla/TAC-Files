@@ -38099,6 +38099,104 @@
     {
         "AffectedFields": [
             "v.0",
+            "v.0.dt",
+            "v.0.mp",
+            "v.0.sd",
+            "v.0.dn"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "EE",
+        "Description": [
+            {
+                "desc": "Verification Datetime must be more than 14 days after the last date of vaccination (except for Cominarty vaccine and booster dose).",
+                "lang": "en"
+            },
+            {
+                "desc": "Vaktsineerimisest peab m\u00f6\u00f6das olema v\u00e4hemalt 14 p\u00e4eva (va t\u00f5hustusdoosi ja Comirnaty vaktsiini puhul)",
+                "lang": "ee"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-EE-0005",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    "if": [
+                        {
+                            "and": [
+                                {
+                                    "!": [
+                                        {
+                                            "===": [
+                                                {
+                                                    "var": "payload.v.0.mp"
+                                                },
+                                                "EU/1/20/1528"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "<=": [
+                                        {
+                                            "var": "payload.v.0.dn"
+                                        },
+                                        {
+                                            "var": "payload.v.0.sd"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "<=": [
+                                        {
+                                            "var": "payload.v.0.dn"
+                                        },
+                                        2
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "not-before": [
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "external.validationClock"
+                                        },
+                                        0,
+                                        "day"
+                                    ]
+                                },
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "payload.v.0.dt"
+                                        },
+                                        14,
+                                        "day"
+                                    ]
+                                }
+                            ]
+                        },
+                        true
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2022-02-01T00:00:00Z",
+        "ValidTo": "2023-02-01T00:00:00Z",
+        "Version": "1.0.4"
+    },
+    {
+        "AffectedFields": [
+            "v.0",
             "v.0.dn",
             "v.0.sd",
             "v.0.mp",
@@ -56659,6 +56757,100 @@
         "ValidFrom": "2022-01-09T15:30:00Z",
         "ValidTo": "2031-01-05T00:00:00Z",
         "Version": "1.4.0"
+    },
+    {
+        "AffectedFields": [
+            "v.0",
+            "v.0.dt",
+            "v.0.mp",
+            "v.0.sd",
+            "v.0.dn"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "EE",
+        "Description": [
+            {
+                "desc": "Verification Datetime must be more than 7 days after the last date of vaccination with Comirnaty vaccine (except for booster dose).",
+                "lang": "en"
+            },
+            {
+                "desc": "Vaktsineerimisest peab Comirnaty vaktsiini puhul olema m\u00f6\u00f6das v\u00e4hemalt 7 p\u00e4eva (va t\u00f5hustusdoosi puhul).",
+                "lang": "ee"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-EE-0004",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    "if": [
+                        {
+                            "and": [
+                                {
+                                    "===": [
+                                        {
+                                            "var": "payload.v.0.mp"
+                                        },
+                                        "EU/1/20/1528"
+                                    ]
+                                },
+                                {
+                                    "<=": [
+                                        {
+                                            "var": "payload.v.0.dn"
+                                        },
+                                        {
+                                            "var": "payload.v.0.sd"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "<=": [
+                                        {
+                                            "var": "payload.v.0.dn"
+                                        },
+                                        2
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "not-before": [
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "external.validationClock"
+                                        },
+                                        0,
+                                        "day"
+                                    ]
+                                },
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "payload.v.0.dt"
+                                        },
+                                        7,
+                                        "day"
+                                    ]
+                                }
+                            ]
+                        },
+                        true
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2022-02-01T00:00:00Z",
+        "ValidTo": "2023-02-01T00:00:00Z",
+        "Version": "1.0.4"
     },
     {
         "AffectedFields": [
@@ -75737,6 +75929,79 @@
     {
         "AffectedFields": [
             "v.0",
+            "v.0.dt",
+            "v.0.sd",
+            "v.0.dn"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "EE",
+        "Description": [
+            {
+                "desc": "Verification Datetime must be less than 365 days after the date of booster dose.",
+                "lang": "en"
+            },
+            {
+                "desc": "T\u00f5hustusdoosist ei tohi olla m\u00f6\u00f6das rohkem kui 365 p\u00e4eva.",
+                "lang": "ee"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-EE-0006",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    "if": [
+                        {
+                            ">": [
+                                {
+                                    "var": "payload.v.0.dn"
+                                },
+                                {
+                                    "var": "payload.v.0.sd"
+                                }
+                            ]
+                        },
+                        {
+                            "not-after": [
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "external.validationClock"
+                                        },
+                                        0,
+                                        "day"
+                                    ]
+                                },
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "payload.v.0.dt"
+                                        },
+                                        365,
+                                        "day"
+                                    ]
+                                }
+                            ]
+                        },
+                        true
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2022-02-01T00:00:00Z",
+        "ValidTo": "2023-02-01T00:00:00Z",
+        "Version": "1.0.4"
+    },
+    {
+        "AffectedFields": [
+            "v.0",
             "v.0.vp"
         ],
         "CertificateType": "Vaccination",
@@ -92876,6 +93141,91 @@
     },
     {
         "AffectedFields": [
+            "v.0",
+            "v.0.dt",
+            "v.0.sd",
+            "v.0.dn"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "EE",
+        "Description": [
+            {
+                "desc": "Verification Datetime must be less than 270 days after the last date of full vaccination.",
+                "lang": "en"
+            },
+            {
+                "desc": "T\u00e4isvaktsineeritusest ei tohi olla m\u00f6\u00f6das rohkem kui 270 p\u00e4eva.",
+                "lang": "ee"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-EE-0003",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    "if": [
+                        {
+                            "and": [
+                                {
+                                    "===": [
+                                        {
+                                            "var": "payload.v.0.dn"
+                                        },
+                                        {
+                                            "var": "payload.v.0.sd"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "<=": [
+                                        {
+                                            "var": "payload.v.0.dn"
+                                        },
+                                        2
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "not-after": [
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "external.validationClock"
+                                        },
+                                        0,
+                                        "day"
+                                    ]
+                                },
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "payload.v.0.dt"
+                                        },
+                                        270,
+                                        "day"
+                                    ]
+                                }
+                            ]
+                        },
+                        true
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2022-02-01T00:00:00Z",
+        "ValidTo": "2023-02-01T00:00:00Z",
+        "Version": "1.0.4"
+    },
+    {
+        "AffectedFields": [
             "t.0",
             "t.0.ma",
             "t.0.tt"
@@ -101183,6 +101533,77 @@
         "ValidFrom": "2021-10-01T00:00:00Z",
         "ValidTo": "2030-10-01T00:00:00Z",
         "Version": "1.0.0"
+    },
+    {
+        "AffectedFields": [
+            "v.0",
+            "v.0.dt",
+            "v.0.sd",
+            "v.0.dn"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "EE",
+        "Description": [
+            {
+                "desc": "Verification Datetime must be less than 365 days after the date of booster dose.",
+                "lang": "en"
+            },
+            {
+                "desc": "T\u00f5hustusdoosist ei tohi olla m\u00f6\u00f6das rohkem kui 365 p\u00e4eva",
+                "lang": "ee"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-EE-0007",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    "if": [
+                        {
+                            ">=": [
+                                {
+                                    "var": "payload.v.0.dn"
+                                },
+                                3
+                            ]
+                        },
+                        {
+                            "not-after": [
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "external.validationClock"
+                                        },
+                                        0,
+                                        "day"
+                                    ]
+                                },
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "payload.v.0.dt"
+                                        },
+                                        365,
+                                        "day"
+                                    ]
+                                }
+                            ]
+                        },
+                        true
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2022-02-01T00:00:00Z",
+        "ValidTo": "2023-02-01T00:00:00Z",
+        "Version": "1.0.4"
     },
     {
         "AffectedFields": [
