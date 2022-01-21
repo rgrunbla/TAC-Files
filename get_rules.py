@@ -1,4 +1,5 @@
-#! /usr/bin/env python3
+#!/usr/bin/env nix-shell
+#! nix-shell -i python3 -p nix-update nix-prefetch-github python3Packages.requests python3Packages.protobuf
 
 import json
 import requests
@@ -7,7 +8,7 @@ import os
 environ = os.environ
 
 token = environ['token']
-timeout = 30
+timeout = 60
 headers = {
     'Authorization': 'Bearer ' + token
 }
