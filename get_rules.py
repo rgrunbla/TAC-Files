@@ -4,6 +4,7 @@
 import json
 import requests
 import os
+import time
 
 environ = os.environ
 
@@ -23,6 +24,7 @@ while True:
     if r.status_code != 200:
         # Error trying to fetch rules. Retrying.
         retry += 1
+        time.sleep(30)
         continue
     else:
         break
@@ -40,6 +42,7 @@ while True:
 
     if r.status_code != 200:
         retry += 1
+        time.sleep(30)
         continue
     else:
         break
