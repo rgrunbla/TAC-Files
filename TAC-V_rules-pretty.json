@@ -22156,6 +22156,160 @@
     },
     {
         "AffectedFields": [
+            "v.0",
+            "v.0.dt",
+            "v.0.mp",
+            "v.0.dn",
+            "v.0.sd"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "LT",
+        "Description": [
+            {
+                "desc": "Pa\u017eym\u0117jimas galioja 270 dien\u0173 po pilnos vakcinacijos",
+                "lang": "lt"
+            },
+            {
+                "desc": "DCC is valid 270 days after full vacination",
+                "lang": "en"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "1.0.0",
+        "Identifier": "VR-LT-0005",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    "if": [
+                        {
+                            "after": [
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "external.validationClock"
+                                        },
+                                        0,
+                                        "day"
+                                    ]
+                                },
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "payload.v.0.dt"
+                                        },
+                                        270,
+                                        "day"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "if": [
+                                {
+                                    "and": [
+                                        {
+                                            "===": [
+                                                {
+                                                    "var": "payload.v.0.dn"
+                                                },
+                                                2
+                                            ]
+                                        },
+                                        {
+                                            "===": [
+                                                {
+                                                    "var": "payload.v.0.sd"
+                                                },
+                                                1
+                                            ]
+                                        }
+                                    ]
+                                },
+                                true,
+                                {
+                                    "if": [
+                                        {
+                                            "===": [
+                                                {
+                                                    "var": "payload.v.0.mp"
+                                                },
+                                                "EU/1/20/1525"
+                                            ]
+                                        },
+                                        {
+                                            "if": [
+                                                {
+                                                    "and": [
+                                                        {
+                                                            "===": [
+                                                                {
+                                                                    "var": "payload.v.0.dn"
+                                                                },
+                                                                2
+                                                            ]
+                                                        },
+                                                        {
+                                                            "===": [
+                                                                {
+                                                                    "var": "payload.v.0.sd"
+                                                                },
+                                                                2
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                true,
+                                                false
+                                            ]
+                                        },
+                                        {
+                                            "if": [
+                                                {
+                                                    "and": [
+                                                        {
+                                                            "===": [
+                                                                {
+                                                                    "var": "payload.v.0.dn"
+                                                                },
+                                                                3
+                                                            ]
+                                                        },
+                                                        {
+                                                            "<=": [
+                                                                2,
+                                                                {
+                                                                    "var": "payload.v.0.sd"
+                                                                },
+                                                                3
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                true,
+                                                false
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        true
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2022-02-01T06:00:00Z",
+        "ValidTo": "2024-11-29T00:00:00Z",
+        "Version": "1.0.0"
+    },
+    {
+        "AffectedFields": [
             "t.0.tg",
             "v.0.tg"
         ],
