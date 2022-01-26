@@ -89228,6 +89228,91 @@
     },
     {
         "AffectedFields": [
+            "v.0",
+            "v.0.dt",
+            "v.0.sd",
+            "v.0.dn"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "EE",
+        "Description": [
+            {
+                "desc": "Verification Datetime must be less than 270 days after the last date of full vaccination. Check the age! The certificate is valid if the owner is under 18 years of age.",
+                "lang": "en"
+            },
+            {
+                "desc": "Vaktsineerimisest on m\u00f6\u00f6das \u00fcle 9 kuu. Kontrolli vanust! T\u00f5end kehtib, kui omanik on alla 18-aastane.",
+                "lang": "ee"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-EE-0003",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    "if": [
+                        {
+                            "and": [
+                                {
+                                    "===": [
+                                        {
+                                            "var": "payload.v.0.dn"
+                                        },
+                                        {
+                                            "var": "payload.v.0.sd"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "<=": [
+                                        {
+                                            "var": "payload.v.0.dn"
+                                        },
+                                        2
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "not-after": [
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "external.validationClock"
+                                        },
+                                        0,
+                                        "day"
+                                    ]
+                                },
+                                {
+                                    "plusTime": [
+                                        {
+                                            "var": "payload.v.0.dt"
+                                        },
+                                        270,
+                                        "day"
+                                    ]
+                                }
+                            ]
+                        },
+                        true
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2022-02-01T00:00:00Z",
+        "ValidTo": "2023-02-01T00:00:00Z",
+        "Version": "1.0.4"
+    },
+    {
+        "AffectedFields": [
             "t.0",
             "t.0.sc",
             "t.0.tt"
@@ -93017,62 +93102,6 @@
     },
     {
         "AffectedFields": [
-            "v.0",
-            "v.0.dt"
-        ],
-        "CertificateType": "Vaccination",
-        "Country": "EE",
-        "Description": [
-            {
-                "desc": "Verification Datetime must be less than 365 days after the last date of vaccination.",
-                "lang": "en"
-            },
-            {
-                "desc": "Vaktsineerimisest ei tohi olla m\u00f6\u00f6das rohkem kui 365 p\u00e4eva",
-                "lang": "ee"
-            }
-        ],
-        "Engine": "CERTLOGIC",
-        "EngineVersion": "0.7.5",
-        "Identifier": "VR-EE-0003",
-        "Logic": {
-            "if": [
-                {
-                    "var": "payload.v.0"
-                },
-                {
-                    "not-after": [
-                        {
-                            "plusTime": [
-                                {
-                                    "var": "external.validationClock"
-                                },
-                                0,
-                                "day"
-                            ]
-                        },
-                        {
-                            "plusTime": [
-                                {
-                                    "var": "payload.v.0.dt"
-                                },
-                                365,
-                                "day"
-                            ]
-                        }
-                    ]
-                },
-                true
-            ]
-        },
-        "SchemaVersion": "1.0.0",
-        "Type": "Acceptance",
-        "ValidFrom": "2021-09-06T00:00:00Z",
-        "ValidTo": "2022-09-01T00:00:00Z",
-        "Version": "1.0.2"
-    },
-    {
-        "AffectedFields": [
             "t.0",
             "t.0.sc",
             "t.0.tt"
@@ -95926,91 +95955,6 @@
         "ValidFrom": "2021-10-01T00:00:00Z",
         "ValidTo": "2030-10-01T00:00:00Z",
         "Version": "1.0.0"
-    },
-    {
-        "AffectedFields": [
-            "v.0",
-            "v.0.dt",
-            "v.0.sd",
-            "v.0.dn"
-        ],
-        "CertificateType": "Vaccination",
-        "Country": "EE",
-        "Description": [
-            {
-                "desc": "Verification Datetime must be less than 270 days after the last date of full vaccination.",
-                "lang": "en"
-            },
-            {
-                "desc": "T\u00e4isvaktsineeritusest ei tohi olla m\u00f6\u00f6das rohkem kui 270 p\u00e4eva.",
-                "lang": "ee"
-            }
-        ],
-        "Engine": "CERTLOGIC",
-        "EngineVersion": "0.7.5",
-        "Identifier": "VR-EE-0003",
-        "Logic": {
-            "if": [
-                {
-                    "var": "payload.v.0"
-                },
-                {
-                    "if": [
-                        {
-                            "and": [
-                                {
-                                    "===": [
-                                        {
-                                            "var": "payload.v.0.dn"
-                                        },
-                                        {
-                                            "var": "payload.v.0.sd"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "<=": [
-                                        {
-                                            "var": "payload.v.0.dn"
-                                        },
-                                        2
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "not-after": [
-                                {
-                                    "plusTime": [
-                                        {
-                                            "var": "external.validationClock"
-                                        },
-                                        0,
-                                        "day"
-                                    ]
-                                },
-                                {
-                                    "plusTime": [
-                                        {
-                                            "var": "payload.v.0.dt"
-                                        },
-                                        270,
-                                        "day"
-                                    ]
-                                }
-                            ]
-                        },
-                        true
-                    ]
-                },
-                true
-            ]
-        },
-        "SchemaVersion": "1.0.0",
-        "Type": "Acceptance",
-        "ValidFrom": "2022-02-01T00:00:00Z",
-        "ValidTo": "2023-02-01T00:00:00Z",
-        "Version": "1.0.4"
     },
     {
         "AffectedFields": [
