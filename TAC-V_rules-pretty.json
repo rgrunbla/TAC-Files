@@ -20255,6 +20255,226 @@
     },
     {
         "AffectedFields": [
+            "v.0",
+            "v.0.dn",
+            "v.0.sd",
+            "v.0.mp",
+            "v.0.dt"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "LV",
+        "Description": [
+            {
+                "desc": "Kop\u0161 vakcin\u0101cijas pamatkursa pabeig\u0161anas pag\u0101ju\u0161as vismaz 14 dienas, bet ne vair\u0101k k\u0101 270 dienas. Balstvakcin\u0101cijas sertifik\u0101ts ir der\u012bgs s\u0101kot ar balstvakc\u012bnas sa\u0146em\u0161anas dienu un ir beztermi\u0146a.",
+                "lang": "lv"
+            },
+            {
+                "desc": "At least 14 days must have elapsed since completing the primary course of immunization but not more than 270. A booster shot or vaccination of someone who recovered from COVID-19 is valid immediately as long as it is clearly identified as such.",
+                "lang": "en"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-LV-0010",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    "if": [
+                        {
+                            "and": [
+                                {
+                                    "not-before": [
+                                        {
+                                            "plusTime": [
+                                                {
+                                                    "var": "external.validationClock"
+                                                },
+                                                0,
+                                                "day"
+                                            ]
+                                        },
+                                        {
+                                            "plusTime": [
+                                                {
+                                                    "var": "payload.v.0.dt"
+                                                },
+                                                15,
+                                                "day"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "before": [
+                                        {
+                                            "plusTime": [
+                                                {
+                                                    "var": "external.validationClock"
+                                                },
+                                                0,
+                                                "day"
+                                            ]
+                                        },
+                                        {
+                                            "plusTime": [
+                                                {
+                                                    "var": "payload.v.0.dt"
+                                                },
+                                                270,
+                                                "day"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "and": [
+                                        {
+                                            "<=": [
+                                                {
+                                                    "var": "payload.v.0.dn"
+                                                },
+                                                2
+                                            ]
+                                        },
+                                        {
+                                            "===": [
+                                                {
+                                                    "var": "payload.v.0.dn"
+                                                },
+                                                {
+                                                    "var": "payload.v.0.sd"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        true,
+                        {
+                            "if": [
+                                {
+                                    "and": [
+                                        {
+                                            ">=": [
+                                                {
+                                                    "var": "payload.v.0.dn"
+                                                },
+                                                3
+                                            ]
+                                        },
+                                        {
+                                            ">=": [
+                                                {
+                                                    "var": "payload.v.0.dn"
+                                                },
+                                                {
+                                                    "var": "payload.v.0.sd"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                true,
+                                {
+                                    "if": [
+                                        {
+                                            "and": [
+                                                {
+                                                    "and": [
+                                                        {
+                                                            ">=": [
+                                                                {
+                                                                    "var": "payload.v.0.dn"
+                                                                },
+                                                                2
+                                                            ]
+                                                        },
+                                                        {
+                                                            ">=": [
+                                                                {
+                                                                    "var": "payload.v.0.dn"
+                                                                },
+                                                                {
+                                                                    "var": "payload.v.0.sd"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "===": [
+                                                        {
+                                                            "var": "payload.v.0.mp"
+                                                        },
+                                                        "EU/1/20/1525"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        true,
+                                        {
+                                            "and": [
+                                                {
+                                                    "and": [
+                                                        {
+                                                            "===": [
+                                                                {
+                                                                    "var": "payload.v.0.sd"
+                                                                },
+                                                                1
+                                                            ]
+                                                        },
+                                                        {
+                                                            "===": [
+                                                                {
+                                                                    "var": "payload.v.0.dn"
+                                                                },
+                                                                2
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "in": [
+                                                        {
+                                                            "var": "payload.v.0.mp"
+                                                        },
+                                                        [
+                                                            "EU/1/20/1528",
+                                                            "EU/1/20/1507",
+                                                            "EU/1/21/1529",
+                                                            "EU/1/20/1525",
+                                                            "Covishield",
+                                                            "BBIBP-CorV",
+                                                            "CoronaVac",
+                                                            "Covaxin",
+                                                            "NVX-CoV2373"
+                                                        ]
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2022-02-01T00:00:00Z",
+        "ValidTo": "2030-06-01T00:00:00Z",
+        "Version": "1.1.0"
+    },
+    {
+        "AffectedFields": [
             "t.0",
             "t.0.tt"
         ],
