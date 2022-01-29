@@ -31187,6 +31187,120 @@
     },
     {
         "AffectedFields": [
+            "dob",
+            "v.0",
+            "v.0.dn",
+            "v.0.sd",
+            "v.0.dt"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "SI",
+        "Description": [
+            {
+                "desc": "For a person over 18 years of age, a vaccination cycle is finished 270 days after a finished primary vaccination 2/2, unless it's followed by booster vaccinations.",
+                "lang": "en"
+            },
+            {
+                "desc": "Za osebo, starej\u0161o od 18 let, se cikel cepljenj zaklju\u010di 270 dni po zaklju\u010denem osnovnem cepljenju 2/2, razen \u010de mu sledijo po\u017eivitveni odmerki.",
+                "lang": "si"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-SI-0004",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    "if": [
+                        {
+                            "and": [
+                                {
+                                    "===": [
+                                        {
+                                            "var": "payload.v.0.dn"
+                                        },
+                                        2
+                                    ]
+                                },
+                                {
+                                    "===": [
+                                        {
+                                            "var": "payload.v.0.sd"
+                                        },
+                                        2
+                                    ]
+                                },
+                                {
+                                    "after": [
+                                        {
+                                            "plusTime": [
+                                                {
+                                                    "var": "external.validationClock"
+                                                },
+                                                0,
+                                                "day"
+                                            ]
+                                        },
+                                        {
+                                            "plusTime": [
+                                                {
+                                                    "var": "payload.v.0.dt"
+                                                },
+                                                271,
+                                                "day"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "if": [
+                                {
+                                    "var": "payload.dob"
+                                },
+                                {
+                                    "before": [
+                                        {
+                                            "plusTime": [
+                                                {
+                                                    "var": "external.validationClock"
+                                                },
+                                                0,
+                                                "day"
+                                            ]
+                                        },
+                                        {
+                                            "plusTime": [
+                                                {
+                                                    "var": "payload.dob"
+                                                },
+                                                18,
+                                                "year"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                false
+                            ]
+                        },
+                        true
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2022-02-01T00:00:00Z",
+        "ValidTo": "2030-06-01T00:00:00Z",
+        "Version": "1.1.0"
+    },
+    {
+        "AffectedFields": [
             "t.0",
             "t.0.sc",
             "t.0.tt"
@@ -39876,6 +39990,120 @@
         "ValidFrom": "2021-10-01T00:00:00Z",
         "ValidTo": "2030-10-01T00:00:00Z",
         "Version": "1.0.0"
+    },
+    {
+        "AffectedFields": [
+            "dob",
+            "v.0",
+            "v.0.dn",
+            "v.0.sd",
+            "v.0.dt"
+        ],
+        "CertificateType": "Vaccination",
+        "Country": "SI",
+        "Description": [
+            {
+                "desc": "For a person over 18 years of age, a vaccination cycle is finished 270 days after a finished primary vaccination 1/1, unless it's followed by booster vaccinations.",
+                "lang": "en"
+            },
+            {
+                "desc": "Za osebo, starej\u0161o od 18 let, se cikel cepljenj zaklju\u010di 270 dni po zaklju\u010denem osnovnem cepljenju 1/1, razen \u010de mu sledijo po\u017eivitveni odmerki.",
+                "lang": "si"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "VR-SI-0003",
+        "Logic": {
+            "if": [
+                {
+                    "var": "payload.v.0"
+                },
+                {
+                    "if": [
+                        {
+                            "and": [
+                                {
+                                    "===": [
+                                        {
+                                            "var": "payload.v.0.dn"
+                                        },
+                                        1
+                                    ]
+                                },
+                                {
+                                    "===": [
+                                        {
+                                            "var": "payload.v.0.sd"
+                                        },
+                                        1
+                                    ]
+                                },
+                                {
+                                    "after": [
+                                        {
+                                            "plusTime": [
+                                                {
+                                                    "var": "external.validationClock"
+                                                },
+                                                0,
+                                                "day"
+                                            ]
+                                        },
+                                        {
+                                            "plusTime": [
+                                                {
+                                                    "var": "payload.v.0.dt"
+                                                },
+                                                271,
+                                                "day"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "if": [
+                                {
+                                    "var": "payload.dob"
+                                },
+                                {
+                                    "before": [
+                                        {
+                                            "plusTime": [
+                                                {
+                                                    "var": "external.validationClock"
+                                                },
+                                                0,
+                                                "day"
+                                            ]
+                                        },
+                                        {
+                                            "plusTime": [
+                                                {
+                                                    "var": "payload.dob"
+                                                },
+                                                18,
+                                                "year"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                false
+                            ]
+                        },
+                        true
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2022-02-01T00:00:00Z",
+        "ValidTo": "2030-06-01T00:00:00Z",
+        "Version": "1.1.0"
     },
     {
         "AffectedFields": [
@@ -58242,6 +58470,67 @@
     },
     {
         "AffectedFields": [
+            "t.0.sc",
+            "t.0.tt"
+        ],
+        "CertificateType": "Test",
+        "Country": "SI",
+        "Description": [
+            {
+                "desc": "DateTime of Sample Collection must be less than 24 hours before the Verification Datetime for a test of type RAT (rapid antigen test).",
+                "lang": "en"
+            },
+            {
+                "desc": "\u010cas odvzema vzorca ne sme biti starej\u0161i od 24 ur za HAG test.",
+                "lang": "si"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "TR-SI-0005",
+        "Logic": {
+            "if": [
+                {
+                    "===": [
+                        {
+                            "var": "payload.t.0.tt"
+                        },
+                        "LP217198-3"
+                    ]
+                },
+                {
+                    "before": [
+                        {
+                            "plusTime": [
+                                {
+                                    "var": "external.validationClock"
+                                },
+                                0,
+                                "day"
+                            ]
+                        },
+                        {
+                            "plusTime": [
+                                {
+                                    "var": "payload.t.0.sc"
+                                },
+                                24,
+                                "hour"
+                            ]
+                        }
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2022-02-01T00:00:00Z",
+        "ValidTo": "2030-06-01T00:00:00Z",
+        "Version": "1.1.1"
+    },
+    {
+        "AffectedFields": [
             "v.0",
             "v.0.mp"
         ],
@@ -68267,6 +68556,67 @@
         "ValidFrom": "2021-10-01T00:00:00Z",
         "ValidTo": "2030-10-01T00:00:00Z",
         "Version": "1.0.0"
+    },
+    {
+        "AffectedFields": [
+            "t.0.sc",
+            "t.0.tt"
+        ],
+        "CertificateType": "Test",
+        "Country": "SI",
+        "Description": [
+            {
+                "desc": "DateTime of Sample Collection must be less than 48 hours before the Verification Datetime for a test of type NAA (PCR test).",
+                "lang": "en"
+            },
+            {
+                "desc": "\u010cas odvzema vzorca ne sme biti starej\u0161i od 48 ur za PCR test.",
+                "lang": "si"
+            }
+        ],
+        "Engine": "CERTLOGIC",
+        "EngineVersion": "0.7.5",
+        "Identifier": "TR-SI-0006",
+        "Logic": {
+            "if": [
+                {
+                    "===": [
+                        {
+                            "var": "payload.t.0.tt"
+                        },
+                        "LP6464-4"
+                    ]
+                },
+                {
+                    "before": [
+                        {
+                            "plusTime": [
+                                {
+                                    "var": "external.validationClock"
+                                },
+                                0,
+                                "day"
+                            ]
+                        },
+                        {
+                            "plusTime": [
+                                {
+                                    "var": "payload.t.0.sc"
+                                },
+                                48,
+                                "hour"
+                            ]
+                        }
+                    ]
+                },
+                true
+            ]
+        },
+        "SchemaVersion": "1.0.0",
+        "Type": "Acceptance",
+        "ValidFrom": "2022-02-01T00:00:00Z",
+        "ValidTo": "2030-06-01T00:00:00Z",
+        "Version": "1.1.1"
     },
     {
         "AffectedFields": [
