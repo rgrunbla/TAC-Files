@@ -8,7 +8,7 @@ import gzip
 from proto import hashes_pb2
 
 BASE_URL="https://app-static.tousanticovid.gouv.fr/"
-VERSIONED_PATH="json/version-36/"
+VERSIONED_PATH="json/version-37/"
 VERSIONED_SERVER_URL=BASE_URL+VERSIONED_PATH
 
 MAINTENANCE_BASE_URL="https://app.tousanticovid.gouv.fr/"
