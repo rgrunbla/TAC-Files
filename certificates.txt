@@ -6383,6 +6383,49 @@ Certificate:
 
 Certificate:
     Data:
+        Version: 3 (0x2)
+        Serial Number:
+            5e:8e:19:03:8c:b4:6a:13:59:cc:d9:1b:e9:f2:12:34:59:6a:fe:79
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = LB, ST = Jnah, L = Beirut, O = Ministry of Public Health (MOPH), OU = Siren Analytics, CN = CSCA_DGC_LB_01
+        Validity
+            Not Before: Feb  1 08:25:42 2022 GMT
+            Not After : Jul 31 08:25:42 2022 GMT
+        Subject: C = LB, ST = Jnah, L = Beirut, O = Ministry Of Public Health (MOPH), OU = Siren Analytics, CN = CSCA_DGC_LB_01
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:be:11:1a:56:30:f4:83:6f:fb:34:a8:b5:78:9a:
+                    83:dd:c1:ba:31:63:e9:d8:4d:ac:db:3a:16:9e:5d:
+                    3b:4f:5e:3b:47:31:aa:f4:95:27:94:07:d5:aa:58:
+                    74:f0:c3:74:e8:b0:c3:e3:9d:c6:0a:d0:f3:3f:af:
+                    7c:6d:dd:7c:fb
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Subject Key Identifier: 
+                31:5C:0A:F6:1A:91:A6:5D:2F:BE:53:FD:0C:33:37:8B:2D:2B:14:75
+            X509v3 Authority Key Identifier: 
+                keyid:8C:CA:2F:A2:9F:B2:1C:94:41:B0:3A:93:AB:AE:05:7B:19:51:B4:7D
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://empty
+
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.1847.2021.1.2
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:2b:92:8b:01:61:8e:6e:3f:6f:94:df:62:ec:5d:
+         d3:d6:10:4c:b7:74:4a:88:00:34:2b:2e:5e:f9:da:14:91:23:
+         02:21:00:ac:a5:93:bc:da:6f:70:74:d0:0b:d4:fd:bd:16:07:
+         44:8f:00:53:0d:42:13:09:aa:80:0d:f9:d6:9b:07:cb:ad
+
+Certificate:
+    Data:
         Version: 1 (0x0)
         Serial Number: 28747 (0x704b)
         Signature Algorithm: ecdsa-with-SHA256
@@ -16706,6 +16749,49 @@ Certificate:
          75:d0:92:19:9c:61:cc:a6:96:b3:74:60:99:f8:46:24:47:a8:
          4a:62:1d:58:3a:37:92:1d:82:10:42:27:a0:5e:f7:73:07:e2:
          db:3c:44:43:3e:b1:ea:1c
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            2a:98:0c:14:55:fd:55:f6:4a:d2:b3:de:01:78:93:ca:24:28:36:36
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = SG, ST = Singapore, O = Ministry Of Health, CN = csca.notarise.gov.sg
+        Validity
+            Not Before: Feb  1 02:52:55 2022 GMT
+            Not After : Feb  1 02:52:55 2024 GMT
+        Subject: C = SG, ST = Singapore, O = Ministry Of Health, CN = dsc.notarise.gov.sg
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:52:4c:af:e3:91:9c:d4:d0:79:18:0c:d7:8b:ff:
+                    97:32:69:5b:b2:ba:6d:1e:3a:78:01:22:10:c6:32:
+                    f7:85:f8:52:68:eb:f9:d0:3d:00:3e:1c:ce:0e:4f:
+                    b5:55:bd:98:02:f8:99:63:e7:0b:07:d6:0c:23:ad:
+                    1d:6e:a4:3c:8c
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Subject Key Identifier: 
+                DA:A8:63:B9:18:9F:95:94:9F:16:C1:1E:C2:CE:5A:2C:8B:A1:F8:61
+            X509v3 Authority Key Identifier: 
+                keyid:39:37:05:B3:38:B9:F9:9E:23:0D:D1:C2:C1:B0:C3:B3:32:97:01:A5
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:https://www.notarise.gov.sg/csca.crl
+
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.1847.2021.1.1, 1.3.6.1.4.1.1847.2021.1.2, 1.3.6.1.4.1.1847.2021.1.3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:84:b7:cc:2c:95:41:45:38:fa:7d:16:07:fd:
+         20:34:73:dd:58:8b:fa:24:75:cf:2f:71:11:59:2a:f8:7d:99:
+         41:02:21:00:e6:8e:c8:f7:22:63:25:44:0e:52:98:df:62:13:
+         a8:2d:d8:2a:a2:bf:43:61:cb:a3:ca:38:46:7e:bd:83:b4:40
 
 Certificate:
     Data:

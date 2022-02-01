@@ -2,11 +2,11 @@
   "config": [
     {
       "name": "lastUpdate",
-      "value": "19 Jan 2022"
+      "value": "31 Jan 2022"
     },
     {
       "name": "version",
-      "value": 125
+      "value": 134
     },
     {
       "name": "versionCalibrationBle",
@@ -37,6 +37,18 @@
       "value": [
         "https://signal-static.tousanticovid.gouv.fr/"
       ]
+    },
+    {
+      "name": "app.displayMultipass",
+      "value": true
+    },
+    {
+      "name": "app.multipass.list",
+      "value": {
+        "maxDcc": 2,
+        "minDcc": 2,
+        "testMaxHours": 24
+      }
     },
     {
       "name": "app.ameliUrl",
@@ -147,6 +159,13 @@
       }
     },
     {
+      "name": "app.wallet.recoveryValidityThresholdInDays",
+      "value": {
+        "maxDays": 180,
+        "minDays": 11
+      }
+    },
+    {
       "name": "app.wallet.testCertificateValidityThresholdInHours",
       "value": 72
     },
@@ -201,6 +220,7 @@
       "value": {
         "high": 65,
         "low": 18,
+        "lowElg": 12,
         "lowExpDays": 31
       }
     },
@@ -213,11 +233,14 @@
         "pivot2": "2022-01-15",
         "pivot3": "2022-02-15",
         "recNbDays": 180,
+        "recNbNewDays": 122,
         "vacc11DosesNbDays": 214,
         "vacc11DosesNbNewDays": 122,
         "vacc22DosesNbDays": 214,
         "vacc22DosesNbNewDays": 122,
-        "vaccJan11DosesNbDays": 61
+        "vaccJan11DosesNbDays": 61,
+        "vaccJan22DosesNbDays": 61,
+        "vaccJan22DosesNbNewDays": 61
       }
     },
     {
@@ -225,8 +248,13 @@
       "value": {
         "displayElgDays": 26,
         "recNbDays": 92,
+        "recNbDaysLow": 184,
         "vacc22DosesNbDays": 92,
-        "vaccJan11DosesNbDays": 31
+        "vacc22DosesNbDaysLow": 184,
+        "vaccJan11DosesNbDays": 31,
+        "vaccJan11DosesNbDaysLow": 31,
+        "vaccJan22DosesNbDays": 31,
+        "vaccJan22DosesNbDaysLow": 31
       }
     },
     {
@@ -244,7 +272,8 @@
           "R-Covi"
         ],
         "ja": [
-          "EU/1/20/1525"
+          "EU/1/20/1525",
+          "EU/1/21/1618"
         ]
       }
     },
