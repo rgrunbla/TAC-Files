@@ -2,49 +2,53 @@
 #! nix-shell -i python3 -p nix-update nix-prefetch-github python3Packages.requests python3Packages.protobuf
 
 import json
-import requests
+import urllib.request
 import os
 import time
+import requests
 
 environ = os.environ
 
 token = environ['token']
-timeout = 60
+timeout = 5
 headers = {
     'Authorization': 'Bearer ' + token
 }
-
 retry = 0
 while True:
     if retry > 10:
         print("Error fetching hashes. Exiting")
         exit(-1)
     
-    r = requests.get('https://portail.tacv.myservices-ingroupe.com/api/client/configuration/rules/tacv', timeout=timeout, headers = headers)
-    if r.status_code != 200:
-        # Error trying to fetch rules. Retrying.
+    url = 'https://portail.tacv.myservices-ingroupe.com/api/client/configuration/rules/tacv'
+    req = urllib.request.Request(url, headers=headers)
+    r = urllib.request.urlopen(req)
+    if r.getcode() != 200:
+        print("Error trying to fetch rules. Retrying.")
         retry += 1
-        time.sleep(30)
+        time.sleep(5)
         continue
     else:
         break
-
-rules = r.json()
+rules = json.loads(r.read().decode(r.info().get_param('charset') or 'utf-8'))
 rule_hashes = sorted([rule['hash'] for rule in rules])
+chunk_size = 100
+data = []
+for i in range(0, len(rule_hashes), chunk_size):
+    hashes = rule_hashes[i:i+chunk_size]
+    retry = 0
+    while True:
+        if retry > 10:
+            print("Error fetching rules. Exiting.")
+            exit(-1)
+        r = requests.post('https://portail.tacv.myservices-ingroupe.com/api/client/configuration/rules/hashes/tacv', timeout=timeout, headers = headers, json = hashes)
 
-retry = 0
-while True:
-    if retry > 10:
-        print("Error fetching rules. Exiting.")
-        exit(-1)
+        if r.status_code != 200:
+            retry += 1
+            time.sleep(5)
+            continue
+        else:
+            break
+    data.append(r.json())
 
-    r = requests.post('https://portail.tacv.myservices-ingroupe.com/api/client/configuration/rules/hashes/tacv', timeout=timeout, headers = headers, json = rule_hashes)
-
-    if r.status_code != 200:
-        retry += 1
-        time.sleep(30)
-        continue
-    else:
-        break
-
-print(json.dumps(r.json(), indent=4, sort_keys=True))
+print(json.dumps(data, indent=4, sort_keys=True))

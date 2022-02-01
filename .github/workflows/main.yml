@@ -19,19 +19,27 @@ jobs:
       - name: Download the conf from the TAC-V server
         env:
           token: ${{ secrets.TOKEN }}
-        run: "nix-shell -p curl jq --command \"curl --retry 5 --retry-delay 5 --retry-all-errors -s https://portail.tacv.myservices-ingroupe.com/api/client/configuration/synchronisation/tacv --oauth2-bearer ${token} | jq --sort-keys '. | del(.currentDate)' &> TAC-V_conf.json\""
+        run: "nix-shell -p curl --command \"curl --retry 5 --retry-delay 5 --retry-all-errors -s https://portail.tacv.myservices-ingroupe.com/api/client/configuration/synchronisation/tacv --oauth2-bearer ${token} -o _TAC-V_conf.json\""
+      - name: Format the conf
+        run: "nix-shell -p jq --command \"jq --sort-keys '. | del(.currentDate)' _TAC-V_conf.json &> TAC-V_conf.json; rm _TAC-V_conf.json\""
       - name: Download the countries from the TAC-V server
         env:
           token: ${{ secrets.TOKEN }}
-        run: "nix-shell -p curl jq --command \"curl --retry 5 --retry-delay 5 --retry-all-errors -s https://portail.tacv.myservices-ingroupe.com/api/client/configuration/countries/tacv --oauth2-bearer ${token} | jq --sort-keys '.' &> TAC-V_countries.json\""
+        run: "nix-shell -p curl --command \"curl --retry 5 --retry-delay 5 --retry-all-errors -s https://portail.tacv.myservices-ingroupe.com/api/client/configuration/countries/tacv --oauth2-bearer ${token}  -o _TAC-V_countries.json\""
+      - name: Format the countries 
+        run: "nix-shell -p jq --command \"jq --sort-keys '.' _TAC-V_countries.json &> TAC-V_countries.json; rm _TAC-V_countries.json\""
       - name: Download the valuesets from the TAC-V server
         env:
           token: ${{ secrets.TOKEN }}
-        run: "nix-shell -p curl jq --command \"curl --retry 5 --retry-delay 5 --retry-all-errors -s https://portail.tacv.myservices-ingroupe.com/api/client/configuration/valuesets/tacv --oauth2-bearer ${token} | jq --sort-keys '.' &> TAC-V_valuesets.json\""
+        run: "nix-shell -p curl --command \"curl --retry 5 --retry-delay 5 --retry-all-errors -s https://portail.tacv.myservices-ingroupe.com/api/client/configuration/valuesets/tacv --oauth2-bearer ${token} -o _TAC-V_valuesets.json\""
+      - name: Format the valuesets 
+        run: "nix-shell -p jq --command \"jq --sort-keys '.' _TAC-V_valuesets.json &> TAC-V_valuesets.json; rm _TAC-V_valuesets.json\""
       - name: Download the rules from the TAC-V server
         env:
           token: ${{ secrets.TOKEN }}
-        run: "nix-shell -p curl jq --command \"curl --retry 5 --retry-delay 5 --retry-all-errors -s https://portail.tacv.myservices-ingroupe.com/api/client/configuration/rules/tacv --oauth2-bearer ${token} | jq --sort-keys '.' &> TAC-V_rules.json\""
+        run: "nix-shell -p curl --command \"curl --retry 5 --retry-delay 5 --retry-all-errors -s https://portail.tacv.myservices-ingroupe.com/api/client/configuration/rules/tacv --oauth2-bearer ${token} -o _TAC-V_rules.json\""
+      - name: Format the rules 
+        run: "nix-shell -p jq --command \"jq --sort-keys '.' _TAC-V_rules.json &> TAC-V_rules.json; rm _TAC-V_rules.json\""
       - name: Pretty print TAC-V blacklist (qrcodes)
         run: "cat TAC-V_conf.json | jq '. | .specificValues.blacklist.blacklistDCC' |  jq '.' &> blacklist_qrcode_tacv.json"
       - name: Pretty print TAC-V blacklist (2d-doc)
@@ -46,8 +54,6 @@ jobs:
         env:
           token: ${{ secrets.TOKEN }}
         run: "./get_valuesets.py &> TAC-V_valuesets-pretty.json"
-      - name: Download SNCF blacklist
-        run: "nix-shell -p curl jq --command \"curl --retry 5 --retry-delay 5 --retry-all-errors https://pretavoyager.sncf.com/api/getcertificates | jq '.' &> blacklist_sncf.json\""
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Automatic Update
