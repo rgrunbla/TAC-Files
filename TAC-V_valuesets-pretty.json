@@ -2053,7 +2053,7 @@
         }
     },
     {
-        "valueSetDate": "2022-02-02",
+        "valueSetDate": "2022-02-03",
         "valueSetId": "covid-19-lab-test-manufacturer-and-name",
         "valueSetValues": {
             "1065": {
@@ -2433,12 +2433,12 @@
                 "version": "2021-07-07 05:21:41 CEST"
             },
             "1375": {
-                "active": true,
+                "active": false,
                 "display": "DIALAB GmbH, DIAQUICK COVID-19 Ag Cassette",
                 "lang": "en",
                 "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
-                "validUntil": "2022-02-03 00:00:00 CET",
-                "version": "2021-05-11 00:00:00 CEST"
+                "validUntil": null,
+                "version": "2022-02-03 00:00:00 CET"
             },
             "1392": {
                 "active": true,
@@ -2985,12 +2985,12 @@
                 "version": "2021-07-07 05:13:27 CEST"
             },
             "2010": {
-                "active": true,
+                "active": false,
                 "display": "Atlas Link Technology Co., Ltd., NOVA Test\u00ae SARS-CoV-2 Antigen Rapid Test Kit (Colloidal Gold Immunochromatography)",
                 "lang": "en",
                 "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
-                "validUntil": "2022-02-03 00:00:00 CET",
-                "version": "2021-07-07 05:19:54 CEST"
+                "validUntil": null,
+                "version": "2022-02-03 00:00:00 CET"
             },
             "2012": {
                 "active": true,
