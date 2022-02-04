@@ -49,7 +49,7 @@ jobs:
       - name: Download the 2DDOC blacklist from the TAC-V server
         env:
           token: ${{ secrets.TOKEN }}
-        run: "nix-shell -p curl --command \"curl --retry 5 --retry-delay 5 --retry-all-errors -s  https://portail.tacv.myservices-ingroupe.com/api/client/configuration/2ddoc/tacv/dcc/0 --oauth2-bearer ${token} -o _TAC-V_blacklist_2ddoc.json\""
+        run: "nix-shell -p curl --command \"curl --retry 5 --retry-delay 5 --retry-all-errors -s  https://portail.tacv.myservices-ingroupe.com/api/client/configuration/blacklist/tacv/2ddoc/0 --oauth2-bearer ${token} -o _TAC-V_blacklist_2ddoc.json\""
       - name: Format 2DDOC blacklist
         run: "nix-shell -p jq --command \"jq --sort-keys '.' _TAC-V_blacklist_2ddoc.json &> blacklist_2ddoc_tacv.json; rm _TAC-V_blacklist_2ddoc.json\""
       - name: Pretty print the DCC certificates
