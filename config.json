@@ -6,7 +6,7 @@
     },
     {
       "name": "version",
-      "value": 135
+      "value": 136
     },
     {
       "name": "versionCalibrationBle",
@@ -161,9 +161,9 @@
     {
       "name": "app.wallet.recoveryValidityThresholdInDays",
       "value": {
-        "maxDays": 169,
+        "maxDays": 173,
         "minDays": 11,
-        "warning": "valid from minDays to minDays plus maxDays (169 for 180), can be overiden by calculated expiration"
+        "warning": "valid from minDays to minDays plus maxDays (173 for 184), can be overiden by calculated expiration"
       }
     },
     {
