@@ -6,7 +6,7 @@
     },
     {
       "name": "version",
-      "value": 136
+      "value": 137
     },
     {
       "name": "versionCalibrationBle",
@@ -217,6 +217,34 @@
       "value": true
     },
     {
+      "name": "app.smartwallet.engine",
+      "value": {
+        "displayElgDays": 26,
+        "displayExpDays": 21,
+        "displayExpOnAllDcc": 240
+      }
+    },
+    {
+      "name": "app.smartwallet.vacc",
+      "value": {
+        "ar": [
+          "EU/1/20/1528",
+          "EU/1/20/1507"
+        ],
+        "az": [
+          "EU/1/21/1529",
+          "Covidshield",
+          "Covid-19-recombinant",
+          "R-COVI",
+          "R-Covi"
+        ],
+        "ja": [
+          "EU/1/20/1525",
+          "EU/1/21/1618"
+        ]
+      }
+    },
+    {
       "name": "app.smartwallet.ages",
       "value": {
         "high": 65,
@@ -256,26 +284,6 @@
         "vaccJan11DosesNbDaysLow": 31,
         "vaccJan22DosesNbDays": 31,
         "vaccJan22DosesNbDaysLow": 31
-      }
-    },
-    {
-      "name": "app.smartwallet.vacc",
-      "value": {
-        "ar": [
-          "EU/1/20/1528",
-          "EU/1/20/1507"
-        ],
-        "az": [
-          "EU/1/21/1529",
-          "Covidshield",
-          "Covid-19-recombinant",
-          "R-COVI",
-          "R-Covi"
-        ],
-        "ja": [
-          "EU/1/20/1525",
-          "EU/1/21/1618"
-        ]
       }
     },
     {
