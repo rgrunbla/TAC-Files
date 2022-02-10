@@ -20813,6 +20813,44 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            45:41:03:7b:95:51:54:2f:b1:16:eb:f3:6d:00:f1:23:e3:5c:1b:74
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = GB, ST = NI, L = Belfast, O = Department of Health, OU = DHCNI, CN = CSCA_DGC_GB_NI_01
+        Validity
+            Not Before: Feb  8 22:28:42 2022 GMT
+            Not After : Feb  8 22:28:42 2024 GMT
+        Subject: CN = DSC_DGC_GB_NI_02, OU = DHCNI, O = Department of Health, L = Belfast, ST = NI, C = GB
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:3e:13:9b:2b:22:ae:ec:ea:70:07:50:05:e9:89:
+                    9f:bc:08:67:ed:08:95:3e:39:88:29:c5:7c:19:6b:
+                    55:ff:b2:1f:78:92:44:80:4e:3a:bd:08:1e:ab:e1:
+                    01:41:4b:a9:39:38:d5:e4:bd:42:b0:63:3d:22:22:
+                    4a:d3:25:05:41
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Subject Key Identifier: 
+                59:AD:A3:EC:F9:45:27:BE:F7:8C:C4:C3:77:27:5F:82:D7:E7:BE:BF
+            X509v3 Authority Key Identifier: 
+                keyid:CF:03:1F:37:F7:CF:A7:B3:25:6C:D9:96:0F:48:09:B2:D3:4D:1C:67
+
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.1847.2021.1.1, 1.3.6.1.4.1.1847.2021.1.2, 1.3.6.1.4.1.1847.2021.1.3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:44:02:20:6b:d8:57:32:5f:12:77:00:a5:45:9f:72:12:0b:
+         6c:11:c5:fd:d1:69:f2:59:f8:e6:43:c1:2d:de:a5:b1:0e:c3:
+         02:20:04:ea:55:0c:b4:60:8c:d8:18:9e:69:9b:ae:32:09:c3:
+         82:a5:af:b4:39:d7:77:bd:21:ad:0b:38:81:55:15:cf
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             50:0e:9b:1b:e3:69:cc:8b:42:52:fd:f7:70:78:ef:40
         Signature Algorithm: rsassaPss         
          Hash Algorithm: sha512
