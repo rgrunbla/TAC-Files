@@ -13958,38 +13958,6 @@
         },
         {
             "AffectedFields": [
-                "r.1"
-            ],
-            "CertificateType": "Recovery",
-            "Country": "LT",
-            "Description": [
-                {
-                    "desc": "Vieno tipo persirgimo \u012fvykis",
-                    "lang": "lt"
-                },
-                {
-                    "desc": "At most one recovery event.",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "1.0.0",
-            "Identifier": "RR-LT-0000",
-            "Logic": {
-                "!": [
-                    {
-                        "var": "payload.r.1"
-                    }
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-07-04T15:00:00Z",
-            "ValidTo": "2023-07-04T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
                 "t.0",
                 "t.0.ma",
                 "t.0.tt"
@@ -14096,6 +14064,38 @@
             "Type": "Acceptance",
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "r.1"
+            ],
+            "CertificateType": "Recovery",
+            "Country": "LT",
+            "Description": [
+                {
+                    "desc": "Vieno tipo persirgimo \u012fvykis",
+                    "lang": "lt"
+                },
+                {
+                    "desc": "At most one recovery event.",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "1.0.0",
+            "Identifier": "RR-LT-0000",
+            "Logic": {
+                "!": [
+                    {
+                        "var": "payload.r.1"
+                    }
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-07-04T15:00:00Z",
+            "ValidTo": "2023-07-04T00:00:00Z",
             "Version": "1.0.0"
         },
         {
@@ -23940,6 +23940,82 @@
         },
         {
             "AffectedFields": [
+                "t.0.tg",
+                "v.0.tg"
+            ],
+            "CertificateType": "General",
+            "Country": "FR",
+            "Description": [
+                {
+                    "desc": "The \"disease or agent targeted\" must be COVID-19 of the value set list.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "La maladie cibl\u00e9e doit etre le COVID-19 de la value set.",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "GR-MTFR-0001",
+            "Logic": {
+                "!": [
+                    {
+                        "and": [
+                            {
+                                "!": [
+                                    {
+                                        "in": [
+                                            {
+                                                "var": "payload.t.0.tg"
+                                            },
+                                            {
+                                                "var": "external.valueSets.disease-agent-targeted"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "!": [
+                                    {
+                                        "in": [
+                                            {
+                                                "var": "payload.v.0.tg"
+                                            },
+                                            {
+                                                "var": "external.valueSets.disease-agent-targeted"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "!": [
+                                    {
+                                        "in": [
+                                            {
+                                                "var": "payload.r.0.tg"
+                                            },
+                                            {
+                                                "var": "external.valueSets.disease-agent-targeted"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-01T00:00:00Z",
+            "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
                 "r.0",
                 "r.0.fr",
                 "r.0.df",
@@ -24065,82 +24141,6 @@
             "Type": "Acceptance",
             "ValidFrom": "2021-07-04T15:00:00Z",
             "ValidTo": "2023-07-04T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "t.0.tg",
-                "v.0.tg"
-            ],
-            "CertificateType": "General",
-            "Country": "FR",
-            "Description": [
-                {
-                    "desc": "The \"disease or agent targeted\" must be COVID-19 of the value set list.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "La maladie cibl\u00e9e doit etre le COVID-19 de la value set.",
-                    "lang": "fr"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "GR-MTFR-0001",
-            "Logic": {
-                "!": [
-                    {
-                        "and": [
-                            {
-                                "!": [
-                                    {
-                                        "in": [
-                                            {
-                                                "var": "payload.t.0.tg"
-                                            },
-                                            {
-                                                "var": "external.valueSets.disease-agent-targeted"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "!": [
-                                    {
-                                        "in": [
-                                            {
-                                                "var": "payload.v.0.tg"
-                                            },
-                                            {
-                                                "var": "external.valueSets.disease-agent-targeted"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "!": [
-                                    {
-                                        "in": [
-                                            {
-                                                "var": "payload.r.0.tg"
-                                            },
-                                            {
-                                                "var": "external.valueSets.disease-agent-targeted"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-01T00:00:00Z",
-            "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.0"
         },
         {
@@ -28793,55 +28793,6 @@
         },
         {
             "AffectedFields": [
-                "t.0.ma",
-                "t.0.tt"
-            ],
-            "CertificateType": "Test",
-            "Country": "LT",
-            "Description": [
-                {
-                    "desc": "Jei greitas antigeno tyrimas, testas turi b\u016bti i\u0161 patvirtint\u0173 test\u0173 s\u0105ra\u0161o",
-                    "lang": "lt"
-                },
-                {
-                    "desc": "If the test type is RAT then the test must be in the list of accepted RAT tests.",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "1.0.0",
-            "Identifier": "TR-LT-0002",
-            "Logic": {
-                "if": [
-                    {
-                        "===": [
-                            {
-                                "var": "payload.t.0.tt"
-                            },
-                            "LP217198-3"
-                        ]
-                    },
-                    {
-                        "in": [
-                            {
-                                "var": "payload.t.0.ma"
-                            },
-                            {
-                                "var": "external.valueSets.covid-19-lab-test-manufacturer-and-name"
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-07-04T15:00:00Z",
-            "ValidTo": "2023-07-04T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
                 "v.0",
                 "v.0.mp",
                 "v.0.dt"
@@ -28909,6 +28860,55 @@
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.2"
+        },
+        {
+            "AffectedFields": [
+                "t.0.ma",
+                "t.0.tt"
+            ],
+            "CertificateType": "Test",
+            "Country": "LT",
+            "Description": [
+                {
+                    "desc": "Jei greitas antigeno tyrimas, testas turi b\u016bti i\u0161 patvirtint\u0173 test\u0173 s\u0105ra\u0161o",
+                    "lang": "lt"
+                },
+                {
+                    "desc": "If the test type is RAT then the test must be in the list of accepted RAT tests.",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "1.0.0",
+            "Identifier": "TR-LT-0002",
+            "Logic": {
+                "if": [
+                    {
+                        "===": [
+                            {
+                                "var": "payload.t.0.tt"
+                            },
+                            "LP217198-3"
+                        ]
+                    },
+                    {
+                        "in": [
+                            {
+                                "var": "payload.t.0.ma"
+                            },
+                            {
+                                "var": "external.valueSets.covid-19-lab-test-manufacturer-and-name"
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-07-04T15:00:00Z",
+            "ValidTo": "2023-07-04T00:00:00Z",
+            "Version": "1.0.0"
         },
         {
             "AffectedFields": [
@@ -34099,38 +34099,6 @@
             "Version": "1.0.0"
         },
         {
-            "AffectedFields": [
-                "v.1"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "LT",
-            "Description": [
-                {
-                    "desc": "Vienas skiepijimo \u012fvykis",
-                    "lang": "lt"
-                },
-                {
-                    "desc": "One type of event of vaccination",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "1.0.0",
-            "Identifier": "VR-LT-0000",
-            "Logic": {
-                "!": [
-                    {
-                        "var": "payload.v.1"
-                    }
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-07-04T15:00:00Z",
-            "ValidTo": "2023-07-04T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
             "AffectedFields": [],
             "CertificateType": "General",
             "Country": "PM",
@@ -34299,6 +34267,38 @@
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.2"
+        },
+        {
+            "AffectedFields": [
+                "v.1"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "LT",
+            "Description": [
+                {
+                    "desc": "Vienas skiepijimo \u012fvykis",
+                    "lang": "lt"
+                },
+                {
+                    "desc": "One type of event of vaccination",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "1.0.0",
+            "Identifier": "VR-LT-0000",
+            "Logic": {
+                "!": [
+                    {
+                        "var": "payload.v.1"
+                    }
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-07-04T15:00:00Z",
+            "ValidTo": "2023-07-04T00:00:00Z",
+            "Version": "1.0.0"
         },
         {
             "AffectedFields": [
@@ -38272,213 +38272,6 @@
         },
         {
             "AffectedFields": [
-                "v.0",
-                "v.0.dt",
-                "v.0.mp",
-                "v.0.dn",
-                "v.0.sd"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "LT",
-            "Description": [
-                {
-                    "desc": "Pa\u017eym\u0117jimas galioja 270 dien\u0173 po pilnos vakcinacijos",
-                    "lang": "lt"
-                },
-                {
-                    "desc": "DCC is valid 270 days after full vacination",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "1.0.0",
-            "Identifier": "VR-LT-0005",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        "if": [
-                            {
-                                "before": [
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "payload.dob"
-                                            },
-                                            18,
-                                            "year"
-                                        ]
-                                    },
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "external.validationClock"
-                                            },
-                                            0,
-                                            "day"
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "if": [
-                                    {
-                                        "after": [
-                                            {
-                                                "plusTime": [
-                                                    {
-                                                        "var": "external.validationClock"
-                                                    },
-                                                    0,
-                                                    "day"
-                                                ]
-                                            },
-                                            {
-                                                "plusTime": [
-                                                    {
-                                                        "var": "payload.v.0.dt"
-                                                    },
-                                                    270,
-                                                    "day"
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "if": [
-                                            {
-                                                "and": [
-                                                    {
-                                                        ">=": [
-                                                            {
-                                                                "var": "payload.v.0.dn"
-                                                            },
-                                                            2
-                                                        ]
-                                                    },
-                                                    {
-                                                        "===": [
-                                                            {
-                                                                "var": "payload.v.0.sd"
-                                                            },
-                                                            1
-                                                        ]
-                                                    }
-                                                ]
-                                            },
-                                            true,
-                                            {
-                                                "if": [
-                                                    {
-                                                        "===": [
-                                                            {
-                                                                "var": "payload.v.0.mp"
-                                                            },
-                                                            "EU/1/20/1525"
-                                                        ]
-                                                    },
-                                                    {
-                                                        "if": [
-                                                            {
-                                                                "and": [
-                                                                    {
-                                                                        "===": [
-                                                                            {
-                                                                                "var": "payload.v.0.dn"
-                                                                            },
-                                                                            2
-                                                                        ]
-                                                                    },
-                                                                    {
-                                                                        "===": [
-                                                                            {
-                                                                                "var": "payload.v.0.sd"
-                                                                            },
-                                                                            2
-                                                                        ]
-                                                                    }
-                                                                ]
-                                                            },
-                                                            true,
-                                                            false
-                                                        ]
-                                                    },
-                                                    {
-                                                        "if": [
-                                                            {
-                                                                "and": [
-                                                                    {
-                                                                        ">=": [
-                                                                            {
-                                                                                "var": "payload.v.0.dn"
-                                                                            },
-                                                                            3
-                                                                        ]
-                                                                    },
-                                                                    {
-                                                                        "===": [
-                                                                            {
-                                                                                "var": "payload.v.0.sd"
-                                                                            },
-                                                                            2
-                                                                        ]
-                                                                    }
-                                                                ]
-                                                            },
-                                                            true,
-                                                            {
-                                                                "if": [
-                                                                    {
-                                                                        "and": [
-                                                                            {
-                                                                                ">": [
-                                                                                    {
-                                                                                        "var": "payload.v.0.sd"
-                                                                                    },
-                                                                                    2
-                                                                                ]
-                                                                            },
-                                                                            {
-                                                                                "===": [
-                                                                                    {
-                                                                                        "var": "payload.v.0.sd"
-                                                                                    },
-                                                                                    {
-                                                                                        "var": "payload.v.0.dn"
-                                                                                    }
-                                                                                ]
-                                                                            }
-                                                                        ]
-                                                                    },
-                                                                    true,
-                                                                    false
-                                                                ]
-                                                            }
-                                                        ]
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    true
-                                ]
-                            },
-                            true
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-02-07T06:00:00Z",
-            "ValidTo": "2024-11-29T00:00:00Z",
-            "Version": "1.1.0"
-        },
-        {
-            "AffectedFields": [
                 "t.0",
                 "t.0.sc",
                 "t.0.tt"
@@ -39072,6 +38865,213 @@
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.2"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
+                "v.0.dt",
+                "v.0.mp",
+                "v.0.dn",
+                "v.0.sd"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "LT",
+            "Description": [
+                {
+                    "desc": "Pa\u017eym\u0117jimas galioja 270 dien\u0173 po pilnos vakcinacijos",
+                    "lang": "lt"
+                },
+                {
+                    "desc": "DCC is valid 270 days after full vacination",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "1.0.0",
+            "Identifier": "VR-LT-0005",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        "if": [
+                            {
+                                "before": [
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "payload.dob"
+                                            },
+                                            18,
+                                            "year"
+                                        ]
+                                    },
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "external.validationClock"
+                                            },
+                                            0,
+                                            "day"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "if": [
+                                    {
+                                        "after": [
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "external.validationClock"
+                                                    },
+                                                    0,
+                                                    "day"
+                                                ]
+                                            },
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "payload.v.0.dt"
+                                                    },
+                                                    270,
+                                                    "day"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "if": [
+                                            {
+                                                "and": [
+                                                    {
+                                                        ">=": [
+                                                            {
+                                                                "var": "payload.v.0.dn"
+                                                            },
+                                                            2
+                                                        ]
+                                                    },
+                                                    {
+                                                        "===": [
+                                                            {
+                                                                "var": "payload.v.0.sd"
+                                                            },
+                                                            1
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            true,
+                                            {
+                                                "if": [
+                                                    {
+                                                        "===": [
+                                                            {
+                                                                "var": "payload.v.0.mp"
+                                                            },
+                                                            "EU/1/20/1525"
+                                                        ]
+                                                    },
+                                                    {
+                                                        "if": [
+                                                            {
+                                                                "and": [
+                                                                    {
+                                                                        "===": [
+                                                                            {
+                                                                                "var": "payload.v.0.dn"
+                                                                            },
+                                                                            2
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "===": [
+                                                                            {
+                                                                                "var": "payload.v.0.sd"
+                                                                            },
+                                                                            2
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            },
+                                                            true,
+                                                            false
+                                                        ]
+                                                    },
+                                                    {
+                                                        "if": [
+                                                            {
+                                                                "and": [
+                                                                    {
+                                                                        ">=": [
+                                                                            {
+                                                                                "var": "payload.v.0.dn"
+                                                                            },
+                                                                            3
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "===": [
+                                                                            {
+                                                                                "var": "payload.v.0.sd"
+                                                                            },
+                                                                            2
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            },
+                                                            true,
+                                                            {
+                                                                "if": [
+                                                                    {
+                                                                        "and": [
+                                                                            {
+                                                                                ">": [
+                                                                                    {
+                                                                                        "var": "payload.v.0.sd"
+                                                                                    },
+                                                                                    2
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                                "===": [
+                                                                                    {
+                                                                                        "var": "payload.v.0.sd"
+                                                                                    },
+                                                                                    {
+                                                                                        "var": "payload.v.0.dn"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    true,
+                                                                    false
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    true
+                                ]
+                            },
+                            true
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-02-07T06:00:00Z",
+            "ValidTo": "2024-11-29T00:00:00Z",
+            "Version": "1.1.0"
         },
         {
             "AffectedFields": [
@@ -49141,38 +49141,6 @@
         },
         {
             "AffectedFields": [
-                "t.1"
-            ],
-            "CertificateType": "Test",
-            "Country": "LT",
-            "Description": [
-                {
-                    "desc": "Vieno tipo tyrimo rezultat\u0173 \u012fvykis",
-                    "lang": "lt"
-                },
-                {
-                    "desc": "One type of test result event",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "1.0.0",
-            "Identifier": "TR-LT-0000",
-            "Logic": {
-                "!": [
-                    {
-                        "var": "payload.t.1"
-                    }
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-07-04T15:00:00Z",
-            "ValidTo": "2023-07-04T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
                 "t.0",
                 "t.0.sc",
                 "t.0.tt"
@@ -49231,6 +49199,38 @@
             "Type": "Acceptance",
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "t.1"
+            ],
+            "CertificateType": "Test",
+            "Country": "LT",
+            "Description": [
+                {
+                    "desc": "Vieno tipo tyrimo rezultat\u0173 \u012fvykis",
+                    "lang": "lt"
+                },
+                {
+                    "desc": "One type of test result event",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "1.0.0",
+            "Identifier": "TR-LT-0000",
+            "Logic": {
+                "!": [
+                    {
+                        "var": "payload.t.1"
+                    }
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-07-04T15:00:00Z",
+            "ValidTo": "2023-07-04T00:00:00Z",
             "Version": "1.0.0"
         },
         {
@@ -63996,6 +63996,42 @@
         },
         {
             "AffectedFields": [
+                "t.0",
+                "t.0.tt"
+            ],
+            "CertificateType": "Test",
+            "Country": "FR",
+            "Description": [
+                {
+                    "desc": "The test type must be one of the value set list (RAT OR NAA).",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Le type de test doit \u00eatre l'une des valeurs propos\u00e9es du value set (RAT OR NAA).",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-MTFR-0001",
+            "Logic": {
+                "in": [
+                    {
+                        "var": "payload.t.0.tt"
+                    },
+                    {
+                        "var": "external.valueSets.covid-19-lab-test-type"
+                    }
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-01T00:00:00Z",
+            "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
                 "t.0.tt",
                 "t.0.sc"
             ],
@@ -64053,42 +64089,6 @@
             "Type": "Acceptance",
             "ValidFrom": "2021-07-04T15:00:00Z",
             "ValidTo": "2023-07-04T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "t.0",
-                "t.0.tt"
-            ],
-            "CertificateType": "Test",
-            "Country": "FR",
-            "Description": [
-                {
-                    "desc": "The test type must be one of the value set list (RAT OR NAA).",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Le type de test doit \u00eatre l'une des valeurs propos\u00e9es du value set (RAT OR NAA).",
-                    "lang": "fr"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-MTFR-0001",
-            "Logic": {
-                "in": [
-                    {
-                        "var": "payload.t.0.tt"
-                    },
-                    {
-                        "var": "external.valueSets.covid-19-lab-test-type"
-                    }
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-01T00:00:00Z",
-            "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.0"
         },
         {
@@ -74293,6 +74293,36 @@
             "Version": "1.3.0"
         },
         {
+            "AffectedFields": [],
+            "CertificateType": "General",
+            "Country": "GF",
+            "Description": [
+                {
+                    "desc": "Rules for this travel are not to be used.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Les r\u00e8gles de ce voyage ne sont pas \u00e0 prendre en compte.",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "GR-FRGF-9999",
+            "Logic": {
+                "===": [
+                    1,
+                    1
+                ]
+            },
+            "Modifier": "Exclusion",
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-01T00:00:00Z",
+            "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
             "AffectedFields": [
                 "t.0",
                 "t.0.tt"
@@ -74335,36 +74365,6 @@
             "Type": "Acceptance",
             "ValidFrom": "2021-07-04T15:00:00Z",
             "ValidTo": "2023-07-04T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [],
-            "CertificateType": "General",
-            "Country": "GF",
-            "Description": [
-                {
-                    "desc": "Rules for this travel are not to be used.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Les r\u00e8gles de ce voyage ne sont pas \u00e0 prendre en compte.",
-                    "lang": "fr"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "GR-FRGF-9999",
-            "Logic": {
-                "===": [
-                    1,
-                    1
-                ]
-            },
-            "Modifier": "Exclusion",
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-01T00:00:00Z",
-            "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.0"
         },
         {
@@ -84533,6 +84533,111 @@
         },
         {
             "AffectedFields": [
+                "t.0.tg"
+            ],
+            "CertificateType": "General",
+            "Country": "FR",
+            "Description": [
+                {
+                    "desc": "The \"disease or agent targeted\" must be COVID-19 of the value set list.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "La maladie cibl\u00e9e doit \u00eatre le COVID-19 de la value set.",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "GR-MWFR-0001",
+            "Logic": {
+                "in": [
+                    {
+                        "var": "payload.t.0.tg"
+                    },
+                    {
+                        "var": "external.valueSets.disease-agent-targeted"
+                    }
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-01T00:00:00Z",
+            "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
+                "v.0.mp",
+                "v.0.dt"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "GP",
+            "Description": [
+                {
+                    "desc": "With not Jansen vaccine, a finished vaccination course is considered protective earliest from 7 days after the date of the last vaccination or immediately after the booster injection. ",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Avec le vaccin autre que Jansen le sch\u00e9ma vaccinal est consid\u00e9r\u00e9 comme complet 7 jours apr\u00e8s la date de la derni\u00e8re injection ou imm\u00e9diatement apr\u00e8s l'injection de rappel.",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-MFGP-0006",
+            "Logic": {
+                "if": [
+                    {
+                        "in": [
+                            {
+                                "var": "payload.v.0.mp"
+                            },
+                            [
+                                "EU/1/20/1528",
+                                "EU/1/20/1507",
+                                "EU/1/21/1529",
+                                "Covishield",
+                                "R-Covi",
+                                "R-COVI",
+                                "Covid-19 vaccine (recombinante)"
+                            ]
+                        ]
+                    },
+                    {
+                        "not-before": [
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "external.validationClock"
+                                    },
+                                    0,
+                                    "day"
+                                ]
+                            },
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "payload.v.0.dt"
+                                    },
+                                    7,
+                                    "day"
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-01T00:00:00Z",
+            "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.2"
+        },
+        {
+            "AffectedFields": [
                 "v.0",
                 "v.0.dt",
                 "v.0.mp",
@@ -84659,111 +84764,6 @@
             "ValidFrom": "2022-02-12T12:00:00Z",
             "ValidTo": "2024-11-29T00:00:00Z",
             "Version": "3.1.0"
-        },
-        {
-            "AffectedFields": [
-                "t.0.tg"
-            ],
-            "CertificateType": "General",
-            "Country": "FR",
-            "Description": [
-                {
-                    "desc": "The \"disease or agent targeted\" must be COVID-19 of the value set list.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "La maladie cibl\u00e9e doit \u00eatre le COVID-19 de la value set.",
-                    "lang": "fr"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "GR-MWFR-0001",
-            "Logic": {
-                "in": [
-                    {
-                        "var": "payload.t.0.tg"
-                    },
-                    {
-                        "var": "external.valueSets.disease-agent-targeted"
-                    }
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-01T00:00:00Z",
-            "ValidTo": "2030-10-01T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
-                "v.0.mp",
-                "v.0.dt"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "GP",
-            "Description": [
-                {
-                    "desc": "With not Jansen vaccine, a finished vaccination course is considered protective earliest from 7 days after the date of the last vaccination or immediately after the booster injection. ",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Avec le vaccin autre que Jansen le sch\u00e9ma vaccinal est consid\u00e9r\u00e9 comme complet 7 jours apr\u00e8s la date de la derni\u00e8re injection ou imm\u00e9diatement apr\u00e8s l'injection de rappel.",
-                    "lang": "fr"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-MFGP-0006",
-            "Logic": {
-                "if": [
-                    {
-                        "in": [
-                            {
-                                "var": "payload.v.0.mp"
-                            },
-                            [
-                                "EU/1/20/1528",
-                                "EU/1/20/1507",
-                                "EU/1/21/1529",
-                                "Covishield",
-                                "R-Covi",
-                                "R-COVI",
-                                "Covid-19 vaccine (recombinante)"
-                            ]
-                        ]
-                    },
-                    {
-                        "not-before": [
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "external.validationClock"
-                                    },
-                                    0,
-                                    "day"
-                                ]
-                            },
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "payload.v.0.dt"
-                                    },
-                                    7,
-                                    "day"
-                                ]
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-01T00:00:00Z",
-            "ValidTo": "2030-10-01T00:00:00Z",
-            "Version": "1.0.2"
         },
         {
             "AffectedFields": [
@@ -94640,68 +94640,6 @@
             "AffectedFields": [
                 "v.0",
                 "v.0.mp",
-                "v.0.dn"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "LT",
-            "Description": [
-                {
-                    "desc": "Sustiprinan\u010dioji vakcina 3/3 gali b\u016bti Comirnaty (EU/1/20/1528), Spikevax(EU/1/20/1507) arba Janssen (EU/1/20/1525)",
-                    "lang": "lt"
-                },
-                {
-                    "desc": "The booster vaccine 3/3 can be Comirnaty, Spikevax or Janssen",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "1.0.0",
-            "Identifier": "VR-LT-0004",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        "if": [
-                            {
-                                "===": [
-                                    {
-                                        "var": "payload.v.0.mp"
-                                    },
-                                    "EU/1/21/1529"
-                                ]
-                            },
-                            {
-                                "if": [
-                                    {
-                                        ">": [
-                                            {
-                                                "var": "payload.v.0.dn"
-                                            },
-                                            2
-                                        ]
-                                    },
-                                    false,
-                                    true
-                                ]
-                            },
-                            true
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-01-08T12:00:00Z",
-            "ValidTo": "2024-11-29T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
-                "v.0.mp",
                 "v.0.dt"
             ],
             "CertificateType": "Vaccination",
@@ -94837,6 +94775,68 @@
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.2"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
+                "v.0.mp",
+                "v.0.dn"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "LT",
+            "Description": [
+                {
+                    "desc": "Sustiprinan\u010dioji vakcina 3/3 gali b\u016bti Comirnaty (EU/1/20/1528), Spikevax(EU/1/20/1507) arba Janssen (EU/1/20/1525)",
+                    "lang": "lt"
+                },
+                {
+                    "desc": "The booster vaccine 3/3 can be Comirnaty, Spikevax or Janssen",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "1.0.0",
+            "Identifier": "VR-LT-0004",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        "if": [
+                            {
+                                "===": [
+                                    {
+                                        "var": "payload.v.0.mp"
+                                    },
+                                    "EU/1/21/1529"
+                                ]
+                            },
+                            {
+                                "if": [
+                                    {
+                                        ">": [
+                                            {
+                                                "var": "payload.v.0.dn"
+                                            },
+                                            2
+                                        ]
+                                    },
+                                    false,
+                                    true
+                                ]
+                            },
+                            true
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-01-08T12:00:00Z",
+            "ValidTo": "2024-11-29T00:00:00Z",
+            "Version": "1.0.0"
         },
         {
             "AffectedFields": [
@@ -99520,6 +99520,40 @@
         },
         {
             "AffectedFields": [
+                "t.0",
+                "t.0.tr"
+            ],
+            "CertificateType": "Test",
+            "Country": "FR",
+            "Description": [
+                {
+                    "desc": "Test result must be negative.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Le resultat du test doit etre negatif.",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-MTFR-0002",
+            "Logic": {
+                "===": [
+                    {
+                        "var": "payload.t.0.tr"
+                    },
+                    "260415000"
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-01T00:00:00Z",
+            "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
                 "r.0",
                 "r.0.df",
                 "r.0.du"
@@ -99629,40 +99663,6 @@
             "Type": "Acceptance",
             "ValidFrom": "2021-07-04T15:00:00Z",
             "ValidTo": "2023-07-04T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "t.0",
-                "t.0.tr"
-            ],
-            "CertificateType": "Test",
-            "Country": "FR",
-            "Description": [
-                {
-                    "desc": "Test result must be negative.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Le resultat du test doit etre negatif.",
-                    "lang": "fr"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-MTFR-0002",
-            "Logic": {
-                "===": [
-                    {
-                        "var": "payload.t.0.tr"
-                    },
-                    "260415000"
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-01T00:00:00Z",
-            "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.0"
         },
         {
@@ -104050,6 +104050,49 @@
                 "v.0.mp"
             ],
             "CertificateType": "Vaccination",
+            "Country": "FR",
+            "Description": [
+                {
+                    "desc": "Only vaccines in the allowed valueset that have been approved by the ANSM or Covishield, R-COVI and Fiocruz-covid-19 vaccines are allowed.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Seuls les vaccins approuv\u00e9s par l'ANSM sont accept\u00e9s en France (Pfizer, Moderna, Astra Zeneca, Janssen, Covishield, R-covi et Covid 19 Vaccine).",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-MTFR-0001",
+            "Logic": {
+                "in": [
+                    {
+                        "var": "payload.v.0.mp"
+                    },
+                    [
+                        "EU/1/20/1525",
+                        "EU/1/20/1528",
+                        "EU/1/20/1507",
+                        "EU/1/21/1529",
+                        "Covishield",
+                        "R-Covi",
+                        "R-COVI",
+                        "Covid-19 vaccine (recombinante)"
+                    ]
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-01T00:00:00Z",
+            "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
+                "v.0.mp"
+            ],
+            "CertificateType": "Vaccination",
             "Country": "LT",
             "Description": [
                 {
@@ -104091,49 +104134,6 @@
             "ValidFrom": "2022-02-12T12:00:00Z",
             "ValidTo": "2024-02-12T00:00:00Z",
             "Version": "1.1.0"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
-                "v.0.mp"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "FR",
-            "Description": [
-                {
-                    "desc": "Only vaccines in the allowed valueset that have been approved by the ANSM or Covishield, R-COVI and Fiocruz-covid-19 vaccines are allowed.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Seuls les vaccins approuv\u00e9s par l'ANSM sont accept\u00e9s en France (Pfizer, Moderna, Astra Zeneca, Janssen, Covishield, R-covi et Covid 19 Vaccine).",
-                    "lang": "fr"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-MTFR-0001",
-            "Logic": {
-                "in": [
-                    {
-                        "var": "payload.v.0.mp"
-                    },
-                    [
-                        "EU/1/20/1525",
-                        "EU/1/20/1528",
-                        "EU/1/20/1507",
-                        "EU/1/21/1529",
-                        "Covishield",
-                        "R-Covi",
-                        "R-COVI",
-                        "Covid-19 vaccine (recombinante)"
-                    ]
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-01T00:00:00Z",
-            "ValidTo": "2030-10-01T00:00:00Z",
-            "Version": "1.0.0"
         },
         {
             "AffectedFields": [
