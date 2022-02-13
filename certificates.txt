@@ -17486,6 +17486,49 @@ Certificate:
 Certificate:
     Data:
         Version: 3 (0x2)
+        Serial Number:
+            4f:ec:31:91:22:56:ad:97:ca:99:3e:11:a4:c0:47:d2:3a:d3:0b:a1
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN = DGC Country Signing CA, OU = Public Service Development Agency, O = Ministry of Justice of Georgia, C = GE
+        Validity
+            Not Before: Oct 29 16:07:08 2021 GMT
+            Not After : Oct 28 16:07:07 2025 GMT
+        Subject: CN = DGC Country Signing CA, OU = Public Service Development Agency, O = Ministry of Justice of Georgia, C = GE
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:e0:95:a8:cf:ca:9f:21:57:f1:7e:f0:22:54:eb:
+                    be:8d:9f:a4:29:af:1e:24:8b:52:55:40:73:2e:6e:
+                    5a:b6:51:58:e4:75:b2:94:6d:f6:50:33:fb:6c:6f:
+                    2a:fa:4c:9d:23:85:e3:6c:ae:b9:eb:9b:ed:3f:a0:
+                    b4:1f:76:96:29
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            X509v3 Authority Key Identifier: 
+                keyid:67:4D:32:78:3F:6F:2E:27:08:D1:AB:61:E0:7B:F5:35:DD:DD:CD:B0
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl.cra.ge/dgccountrysigningca.crl
+
+            X509v3 Subject Key Identifier: 
+                67:4D:32:78:3F:6F:2E:27:08:D1:AB:61:E0:7B:F5:35:DD:DD:CD:B0
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+    Signature Algorithm: ecdsa-with-SHA256
+         30:44:02:20:3f:23:c5:21:1e:db:03:b6:92:93:f3:87:a8:84:
+         20:66:a5:8f:9a:b3:89:1a:b1:39:85:63:d3:2e:c4:03:b2:f6:
+         02:20:22:97:e6:e0:a6:08:d8:5e:b9:7c:7f:ea:66:b9:56:40:
+         d4:66:a6:29:9e:90:1f:98:ee:99:40:80:95:8b:92:b7
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
         Serial Number: 3716072551804350432 (0x3392244c19e0afe0)
         Signature Algorithm: rsassaPss         
          Hash Algorithm: sha256
