@@ -55853,40 +55853,6 @@
         },
         {
             "AffectedFields": [
-                "t.0",
-                "t.0.tr"
-            ],
-            "CertificateType": "Test",
-            "Country": "PM",
-            "Description": [
-                {
-                    "desc": "Test result must be negative.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Le r\u00e9sultat du test doit \u00eatre n\u00e9gatif.",
-                    "lang": "fr"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-FRPM-0002",
-            "Logic": {
-                "===": [
-                    {
-                        "var": "payload.t.0.tr"
-                    },
-                    "260415000"
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-01T00:00:00Z",
-            "ValidTo": "2030-10-01T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
                 "v.0",
                 "v.0.mp"
             ],
@@ -59506,6 +59472,80 @@
         },
         {
             "AffectedFields": [
+                "t.0.sc",
+                "t.0.tt",
+                "t.0.tr"
+            ],
+            "CertificateType": "Test",
+            "Country": "SI",
+            "Description": [
+                {
+                    "desc": "DateTime of Sample Collection must be less than 48 hours before the Verification Datetime for a negative (\"not detected\") test of type RAT (rapid antigen test).",
+                    "lang": "en"
+                },
+                {
+                    "desc": "\u010cas odvzema vzorca ne sme biti starej\u0161i od 48 ur za negativen (\"not detected\") HAG test.",
+                    "lang": "si"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-SI-0005",
+            "Logic": {
+                "if": [
+                    {
+                        "and": [
+                            {
+                                "===": [
+                                    {
+                                        "var": "payload.t.0.tt"
+                                    },
+                                    "LP217198-3"
+                                ]
+                            },
+                            {
+                                "===": [
+                                    {
+                                        "var": "payload.t.0.tr"
+                                    },
+                                    "260415000"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "before": [
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "external.validationClock"
+                                    },
+                                    0,
+                                    "day"
+                                ]
+                            },
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "payload.t.0.sc"
+                                    },
+                                    48,
+                                    "hour"
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-02-19T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.3.0"
+        },
+        {
+            "AffectedFields": [
                 "t.0",
                 "t.0.sc",
                 "t.0.tt"
@@ -60938,6 +60978,40 @@
     [
         {
             "AffectedFields": [
+                "t.0",
+                "t.0.tr"
+            ],
+            "CertificateType": "Test",
+            "Country": "PM",
+            "Description": [
+                {
+                    "desc": "Test result must be negative.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Le r\u00e9sultat du test doit \u00eatre n\u00e9gatif.",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-FRPM-0002",
+            "Logic": {
+                "===": [
+                    {
+                        "var": "payload.t.0.tr"
+                    },
+                    "260415000"
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-01T00:00:00Z",
+            "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
                 "t.1"
             ],
             "CertificateType": "Test",
@@ -61352,42 +61426,6 @@
                         ]
                     },
                     true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-01T00:00:00Z",
-            "ValidTo": "2030-10-01T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "t.0",
-                "t.0.tt"
-            ],
-            "CertificateType": "Test",
-            "Country": "GP",
-            "Description": [
-                {
-                    "desc": "The test type must be one of the value set list (RAT OR NAA).",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Le type de test doit \u00eatre l'une des valeurs propos\u00e9es du value set (RAT OR NAA).",
-                    "lang": "fr"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-GP-0001",
-            "Logic": {
-                "in": [
-                    {
-                        "var": "payload.t.0.tt"
-                    },
-                    {
-                        "var": "external.valueSets.covid-19-lab-test-type"
-                    }
                 ]
             },
             "SchemaVersion": "1.0.0",
@@ -63672,43 +63710,6 @@
         },
         {
             "AffectedFields": [
-                "v.0",
-                "v.0.dn",
-                "v.0.sd"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "YT",
-            "Description": [
-                {
-                    "desc": "Vaccination doses must be equal or greater than expected doses.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Le nombre de doses prises doit \u00eatre sup\u00e9rieur ou \u00e9gale au nombre de doses attendues.",
-                    "lang": "fr"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-YT-0004",
-            "Logic": {
-                ">=": [
-                    {
-                        "var": "payload.v.0.dn"
-                    },
-                    {
-                        "var": "payload.v.0.sd"
-                    }
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-01T00:00:00Z",
-            "ValidTo": "2030-10-01T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
                 "t.0",
                 "t.0.tr"
             ],
@@ -64386,6 +64387,67 @@
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.2"
+        },
+        {
+            "AffectedFields": [
+                "t.0.sc",
+                "t.0.tt"
+            ],
+            "CertificateType": "Test",
+            "Country": "SI",
+            "Description": [
+                {
+                    "desc": "DateTime of Sample Collection must be less than 72 hours before the Verification Datetime for a test of type NAA (PCR test).",
+                    "lang": "en"
+                },
+                {
+                    "desc": "\u010cas odvzema vzorca ne sme biti starej\u0161i od 72 ur za PCR test.",
+                    "lang": "si"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-SI-0006",
+            "Logic": {
+                "if": [
+                    {
+                        "===": [
+                            {
+                                "var": "payload.t.0.tt"
+                            },
+                            "LP6464-4"
+                        ]
+                    },
+                    {
+                        "before": [
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "external.validationClock"
+                                    },
+                                    0,
+                                    "day"
+                                ]
+                            },
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "payload.t.0.sc"
+                                    },
+                                    72,
+                                    "hour"
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-02-19T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.2.0"
         },
         {
             "AffectedFields": [
@@ -66503,6 +66565,42 @@
         },
         {
             "AffectedFields": [
+                "t.0",
+                "t.0.tt"
+            ],
+            "CertificateType": "Test",
+            "Country": "GP",
+            "Description": [
+                {
+                    "desc": "The test type must be one of the value set list (RAT OR NAA).",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Le type de test doit \u00eatre l'une des valeurs propos\u00e9es du value set (RAT OR NAA).",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-GP-0001",
+            "Logic": {
+                "in": [
+                    {
+                        "var": "payload.t.0.tt"
+                    },
+                    {
+                        "var": "external.valueSets.covid-19-lab-test-type"
+                    }
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-01T00:00:00Z",
+            "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
                 "v.0",
                 "v.0.ma"
             ],
@@ -66563,42 +66661,6 @@
                         "var": "payload.t.0.tr"
                     },
                     "260415000"
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-01T00:00:00Z",
-            "ValidTo": "2030-10-01T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
-                "v.0.ma"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "GF",
-            "Description": [
-                {
-                    "desc": "Only manufacturers of vaccines that have been approved by the ANSM are allowed.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Seuls les fabricants des vacins qui ont \u00e9t\u00e9 approuv\u00e9s par l'ANSM, sont autoris\u00e9s.",
-                    "lang": "fr"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-GPGF-0002",
-            "Logic": {
-                "in": [
-                    {
-                        "var": "payload.v.0.ma"
-                    },
-                    {
-                        "var": "external.valueSets.vaccines-covid-19-auth-holders"
-                    }
                 ]
             },
             "SchemaVersion": "1.0.0",
@@ -67523,68 +67585,6 @@
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.2"
-        },
-        {
-            "AffectedFields": [
-                "t.0",
-                "t.0.sc",
-                "t.0.tt"
-            ],
-            "CertificateType": "Test",
-            "Country": "MF",
-            "Description": [
-                {
-                    "desc": "The test should be a PCR test of less than 72 hours.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Le test doit \u00eatre un test PCR de moins de 72 heures.",
-                    "lang": "fr"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-BLMF-0003",
-            "Logic": {
-                "if": [
-                    {
-                        "===": [
-                            {
-                                "var": "payload.t.0.tt"
-                            },
-                            "LP6464-4"
-                        ]
-                    },
-                    {
-                        "before": [
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "external.validationClock"
-                                    },
-                                    0,
-                                    "day"
-                                ]
-                            },
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "payload.t.0.sc"
-                                    },
-                                    72,
-                                    "hour"
-                                ]
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-01T00:00:00Z",
-            "ValidTo": "2030-10-01T00:00:00Z",
-            "Version": "1.0.0"
         },
         {
             "AffectedFields": [
@@ -69257,6 +69257,43 @@
             "ValidFrom": "2022-02-16T15:00:00Z",
             "ValidTo": "2023-02-16T00:00:00Z",
             "Version": "2.2.0"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
+                "v.0.dn",
+                "v.0.sd"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "YT",
+            "Description": [
+                {
+                    "desc": "Vaccination doses must be equal or greater than expected doses.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Le nombre de doses prises doit \u00eatre sup\u00e9rieur ou \u00e9gale au nombre de doses attendues.",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-YT-0004",
+            "Logic": {
+                ">=": [
+                    {
+                        "var": "payload.v.0.dn"
+                    },
+                    {
+                        "var": "payload.v.0.sd"
+                    }
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-01T00:00:00Z",
+            "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
         },
         {
             "AffectedFields": [
@@ -71733,6 +71770,42 @@
         },
         {
             "AffectedFields": [
+                "v.0",
+                "v.0.ma"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "GF",
+            "Description": [
+                {
+                    "desc": "Only manufacturers of vaccines that have been approved by the ANSM are allowed.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Seuls les fabricants des vacins qui ont \u00e9t\u00e9 approuv\u00e9s par l'ANSM, sont autoris\u00e9s.",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-GPGF-0002",
+            "Logic": {
+                "in": [
+                    {
+                        "var": "payload.v.0.ma"
+                    },
+                    {
+                        "var": "external.valueSets.vaccines-covid-19-auth-holders"
+                    }
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-01T00:00:00Z",
+            "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
                 "r.0",
                 "t.0",
                 "v.1",
@@ -72772,6 +72845,68 @@
         {
             "AffectedFields": [
                 "t.0",
+                "t.0.sc",
+                "t.0.tt"
+            ],
+            "CertificateType": "Test",
+            "Country": "MF",
+            "Description": [
+                {
+                    "desc": "The test should be a PCR test of less than 72 hours.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Le test doit \u00eatre un test PCR de moins de 72 heures.",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-BLMF-0003",
+            "Logic": {
+                "if": [
+                    {
+                        "===": [
+                            {
+                                "var": "payload.t.0.tt"
+                            },
+                            "LP6464-4"
+                        ]
+                    },
+                    {
+                        "before": [
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "external.validationClock"
+                                    },
+                                    0,
+                                    "day"
+                                ]
+                            },
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "payload.t.0.sc"
+                                    },
+                                    72,
+                                    "hour"
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-01T00:00:00Z",
+            "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "t.0",
                 "t.0.tt"
             ],
             "CertificateType": "Test",
@@ -73162,68 +73297,6 @@
                         ]
                     },
                     1
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-01T00:00:00Z",
-            "ValidTo": "2030-10-01T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "t.0",
-                "t.0.sc",
-                "t.0.tt"
-            ],
-            "CertificateType": "Test",
-            "Country": "FR",
-            "Description": [
-                {
-                    "desc": "The test should be a PCR test of less than 24 hours.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Le test doit \u00eatre un test PCR de moins de 24 heures.",
-                    "lang": "fr"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-IEFR-0003",
-            "Logic": {
-                "if": [
-                    {
-                        "===": [
-                            {
-                                "var": "payload.t.0.tt"
-                            },
-                            "LP6464-4"
-                        ]
-                    },
-                    {
-                        "before": [
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "external.validationClock"
-                                    },
-                                    0,
-                                    "day"
-                                ]
-                            },
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "payload.t.0.sc"
-                                    },
-                                    24,
-                                    "hour"
-                                ]
-                            }
-                        ]
-                    },
-                    true
                 ]
             },
             "SchemaVersion": "1.0.0",
@@ -74942,68 +75015,6 @@
                                         "var": "payload.t.0.sc"
                                     },
                                     48,
-                                    "hour"
-                                ]
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-01T00:00:00Z",
-            "ValidTo": "2030-10-01T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "t.0",
-                "t.0.sc",
-                "t.0.tt"
-            ],
-            "CertificateType": "Test",
-            "Country": "FR",
-            "Description": [
-                {
-                    "desc": "The test should be a PCR test of less than 72 hours.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Le test doit \u00eatre un test PCR de moins de 72 heures.",
-                    "lang": "fr"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-PMFR-0005",
-            "Logic": {
-                "if": [
-                    {
-                        "===": [
-                            {
-                                "var": "payload.t.0.tt"
-                            },
-                            "LP6464-4"
-                        ]
-                    },
-                    {
-                        "before": [
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "external.validationClock"
-                                    },
-                                    0,
-                                    "day"
-                                ]
-                            },
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "payload.t.0.sc"
-                                    },
-                                    72,
                                     "hour"
                                 ]
                             }
@@ -78323,43 +78334,6 @@
         {
             "AffectedFields": [
                 "v.0",
-                "v.0.dn",
-                "v.0.sd"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "MF",
-            "Description": [
-                {
-                    "desc": "Vaccination doses must be equal or greater than expected doses.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Le nombre de doses prises doit \u00eatre sup\u00e9rieur ou \u00e9gale au nombre de doses attendues.",
-                    "lang": "fr"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-BLMF-0004",
-            "Logic": {
-                ">=": [
-                    {
-                        "var": "payload.v.0.dn"
-                    },
-                    {
-                        "var": "payload.v.0.sd"
-                    }
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-01T00:00:00Z",
-            "ValidTo": "2030-10-01T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
                 "v.0.mp",
                 "v.0.dt"
             ],
@@ -78553,43 +78527,6 @@
         },
         {
             "AffectedFields": [
-                "v.0",
-                "v.0.dn",
-                "v.0.sd"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "FR",
-            "Description": [
-                {
-                    "desc": "Vaccination doses must be equal or greater than expected doses.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Le nombre de doses prises doit \u00eatre sup\u00e9rieur ou \u00e9gale au nombre de doses attendues.",
-                    "lang": "fr"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-SIFR-0004",
-            "Logic": {
-                ">=": [
-                    {
-                        "var": "payload.v.0.dn"
-                    },
-                    {
-                        "var": "payload.v.0.sd"
-                    }
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-01T00:00:00Z",
-            "ValidTo": "2030-10-01T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
                 "t.0.tg",
                 "v.0.tg",
                 "r.0.tg"
@@ -78657,6 +78594,68 @@
                             }
                         ]
                     }
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-01T00:00:00Z",
+            "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "t.0",
+                "t.0.sc",
+                "t.0.tt"
+            ],
+            "CertificateType": "Test",
+            "Country": "FR",
+            "Description": [
+                {
+                    "desc": "The test should be a PCR test of less than 24 hours.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Le test doit \u00eatre un test PCR de moins de 24 heures.",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-IEFR-0003",
+            "Logic": {
+                "if": [
+                    {
+                        "===": [
+                            {
+                                "var": "payload.t.0.tt"
+                            },
+                            "LP6464-4"
+                        ]
+                    },
+                    {
+                        "before": [
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "external.validationClock"
+                                    },
+                                    0,
+                                    "day"
+                                ]
+                            },
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "payload.t.0.sc"
+                                    },
+                                    24,
+                                    "hour"
+                                ]
+                            }
+                        ]
+                    },
+                    true
                 ]
             },
             "SchemaVersion": "1.0.0",
@@ -79994,6 +79993,68 @@
                                         "var": "payload.t.0.sc"
                                     },
                                     48,
+                                    "hour"
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-01T00:00:00Z",
+            "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "t.0",
+                "t.0.sc",
+                "t.0.tt"
+            ],
+            "CertificateType": "Test",
+            "Country": "FR",
+            "Description": [
+                {
+                    "desc": "The test should be a PCR test of less than 72 hours.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Le test doit \u00eatre un test PCR de moins de 72 heures.",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-PMFR-0005",
+            "Logic": {
+                "if": [
+                    {
+                        "===": [
+                            {
+                                "var": "payload.t.0.tt"
+                            },
+                            "LP6464-4"
+                        ]
+                    },
+                    {
+                        "before": [
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "external.validationClock"
+                                    },
+                                    0,
+                                    "day"
+                                ]
+                            },
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "payload.t.0.sc"
+                                    },
+                                    72,
                                     "hour"
                                 ]
                             }
@@ -83423,6 +83484,43 @@
         },
         {
             "AffectedFields": [
+                "v.0",
+                "v.0.dn",
+                "v.0.sd"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "MF",
+            "Description": [
+                {
+                    "desc": "Vaccination doses must be equal or greater than expected doses.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Le nombre de doses prises doit \u00eatre sup\u00e9rieur ou \u00e9gale au nombre de doses attendues.",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-BLMF-0004",
+            "Logic": {
+                ">=": [
+                    {
+                        "var": "payload.v.0.dn"
+                    },
+                    {
+                        "var": "payload.v.0.sd"
+                    }
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-01T00:00:00Z",
+            "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
                 "t.0",
                 "t.0.tr"
             ],
@@ -83850,6 +83948,43 @@
                     },
                     {
                         "var": "external.valueSets.disease-agent-targeted"
+                    }
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-01T00:00:00Z",
+            "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
+                "v.0.dn",
+                "v.0.sd"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "FR",
+            "Description": [
+                {
+                    "desc": "Vaccination doses must be equal or greater than expected doses.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Le nombre de doses prises doit \u00eatre sup\u00e9rieur ou \u00e9gale au nombre de doses attendues.",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-SIFR-0004",
+            "Logic": {
+                ">=": [
+                    {
+                        "var": "payload.v.0.dn"
+                    },
+                    {
+                        "var": "payload.v.0.sd"
                     }
                 ]
             },
@@ -84494,42 +84629,6 @@
         {
             "AffectedFields": [
                 "v.0",
-                "v.0.vp"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "FR",
-            "Description": [
-                {
-                    "desc": "Only prophylactic agents in the allowed valueset that have been approved by the EMA are allowed.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Seuls les agents prophylactiques approuv\u00e9s par l'AEM (Value set UE) sont accept\u00e9s en France.",
-                    "lang": "fr"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-HRFR-0003",
-            "Logic": {
-                "in": [
-                    {
-                        "var": "payload.v.0.vp"
-                    },
-                    {
-                        "var": "external.valueSets.sct-vaccines-covid-19"
-                    }
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-01T00:00:00Z",
-            "ValidTo": "2030-10-01T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
                 "v.0.mp"
             ],
             "CertificateType": "Vaccination",
@@ -84562,42 +84661,6 @@
                         "R-COVI",
                         "Covid-19 vaccine (recombinante)"
                     ]
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-01T00:00:00Z",
-            "ValidTo": "2030-10-01T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
-                "v.0.vp"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "NC",
-            "Description": [
-                {
-                    "desc": "Only prophylactic agents in the allowed valueset that have been approved by the EMA are allowed.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Seuls les agents prophylactiques approuv\u00e9s par l'AEM (Value set UE) sont accept\u00e9s en France.",
-                    "lang": "fr"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-FRNC-0003",
-            "Logic": {
-                "in": [
-                    {
-                        "var": "payload.v.0.vp"
-                    },
-                    {
-                        "var": "external.valueSets.sct-vaccines-covid-19"
-                    }
                 ]
             },
             "SchemaVersion": "1.0.0",
@@ -86875,120 +86938,6 @@
             "Type": "Acceptance",
             "ValidFrom": "2021-07-30T00:00:00Z",
             "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "v.1"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "GP",
-            "Description": [
-                {
-                    "desc": "Vaccin format is not EU standard.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Le format li\u00e9 au vaccin n'est pas au standard UE.",
-                    "lang": "fr"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-GFGP-0000",
-            "Logic": {
-                "!": [
-                    {
-                        "var": "payload.v.1"
-                    }
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-01T00:00:00Z",
-            "ValidTo": "2030-10-01T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "t.0",
-                "t.0.sc",
-                "t.0.tt"
-            ],
-            "CertificateType": "Test",
-            "Country": "RO",
-            "Description": [
-                {
-                    "desc": "The sample for an NAA test (e.g. PCR) must have been taken no longer than 72 hours ago.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Die Probe f\u00fcr einen NAA-Test (z.B. PCR) darf nicht l\u00e4nger als 72 Stunden zur\u00fcckliegen.",
-                    "lang": "de"
-                },
-                {
-                    "desc": "L'\u00e9chantillon pour un test NAA (par exemple PCR) ne doit pas avoir \u00e9t\u00e9 pr\u00e9lev\u00e9 il y a plus de 72 heures.",
-                    "lang": "fr"
-                },
-                {
-                    "desc": "La muestra para una prueba de NAA (p. Ej. PCR) no debe haberse tomado hace m\u00e1s de 72 horas.",
-                    "lang": "es"
-                },
-                {
-                    "desc": "Il campione per un test NAA (es. PCR) deve essere stato prelevato non pi\u00f9 di 72 ore prima.",
-                    "lang": "it"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-RO-0002",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.t.0"
-                    },
-                    {
-                        "if": [
-                            {
-                                "===": [
-                                    {
-                                        "var": "payload.t.0.tt"
-                                    },
-                                    "LP6464-4"
-                                ]
-                            },
-                            {
-                                "not-after": [
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "external.validationClock"
-                                            },
-                                            0,
-                                            "day"
-                                        ]
-                                    },
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "payload.t.0.sc"
-                                            },
-                                            72,
-                                            "hour"
-                                        ]
-                                    }
-                                ]
-                            },
-                            true
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-08-13T00:00:00Z",
-            "ValidTo": "2031-01-01T00:00:00Z",
             "Version": "1.0.0"
         },
         {
@@ -89293,6 +89242,42 @@
         {
             "AffectedFields": [
                 "v.0",
+                "v.0.vp"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "FR",
+            "Description": [
+                {
+                    "desc": "Only prophylactic agents in the allowed valueset that have been approved by the EMA are allowed.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Seuls les agents prophylactiques approuv\u00e9s par l'AEM (Value set UE) sont accept\u00e9s en France.",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-HRFR-0003",
+            "Logic": {
+                "in": [
+                    {
+                        "var": "payload.v.0.vp"
+                    },
+                    {
+                        "var": "external.valueSets.sct-vaccines-covid-19"
+                    }
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-01T00:00:00Z",
+            "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
                 "v.0.mp",
                 "v.0.dt"
             ],
@@ -89641,6 +89626,42 @@
             "Type": "Acceptance",
             "ValidFrom": "2021-07-26T00:00:00Z",
             "ValidTo": "2030-07-26T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
+                "v.0.vp"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "NC",
+            "Description": [
+                {
+                    "desc": "Only prophylactic agents in the allowed valueset that have been approved by the EMA are allowed.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Seuls les agents prophylactiques approuv\u00e9s par l'AEM (Value set UE) sont accept\u00e9s en France.",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-FRNC-0003",
+            "Logic": {
+                "in": [
+                    {
+                        "var": "payload.v.0.vp"
+                    },
+                    {
+                        "var": "external.valueSets.sct-vaccines-covid-19"
+                    }
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-01T00:00:00Z",
+            "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.0"
         },
         {
@@ -92380,6 +92401,38 @@
         },
         {
             "AffectedFields": [
+                "v.1"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "GP",
+            "Description": [
+                {
+                    "desc": "Vaccin format is not EU standard.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Le format li\u00e9 au vaccin n'est pas au standard UE.",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-GFGP-0000",
+            "Logic": {
+                "!": [
+                    {
+                        "var": "payload.v.1"
+                    }
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-01T00:00:00Z",
+            "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
                 "t.0",
                 "t.0.sc",
                 "t.0.tt"
@@ -92495,6 +92548,88 @@
             "ValidFrom": "2022-02-06T13:42:12Z",
             "ValidTo": "2030-06-01T00:00:00Z",
             "Version": "1.0.2"
+        },
+        {
+            "AffectedFields": [
+                "t.0",
+                "t.0.sc",
+                "t.0.tt"
+            ],
+            "CertificateType": "Test",
+            "Country": "RO",
+            "Description": [
+                {
+                    "desc": "The sample for an NAA test (e.g. PCR) must have been taken no longer than 72 hours ago.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Die Probe f\u00fcr einen NAA-Test (z.B. PCR) darf nicht l\u00e4nger als 72 Stunden zur\u00fcckliegen.",
+                    "lang": "de"
+                },
+                {
+                    "desc": "L'\u00e9chantillon pour un test NAA (par exemple PCR) ne doit pas avoir \u00e9t\u00e9 pr\u00e9lev\u00e9 il y a plus de 72 heures.",
+                    "lang": "fr"
+                },
+                {
+                    "desc": "La muestra para una prueba de NAA (p. Ej. PCR) no debe haberse tomado hace m\u00e1s de 72 horas.",
+                    "lang": "es"
+                },
+                {
+                    "desc": "Il campione per un test NAA (es. PCR) deve essere stato prelevato non pi\u00f9 di 72 ore prima.",
+                    "lang": "it"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-RO-0002",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.t.0"
+                    },
+                    {
+                        "if": [
+                            {
+                                "===": [
+                                    {
+                                        "var": "payload.t.0.tt"
+                                    },
+                                    "LP6464-4"
+                                ]
+                            },
+                            {
+                                "not-after": [
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "external.validationClock"
+                                            },
+                                            0,
+                                            "day"
+                                        ]
+                                    },
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "payload.t.0.sc"
+                                            },
+                                            72,
+                                            "hour"
+                                        ]
+                                    }
+                                ]
+                            },
+                            true
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-08-13T00:00:00Z",
+            "ValidTo": "2031-01-01T00:00:00Z",
+            "Version": "1.0.0"
         },
         {
             "AffectedFields": [
@@ -93218,43 +93353,6 @@
             "ValidFrom": "2022-01-31T00:00:00Z",
             "ValidTo": "2031-01-01T00:00:00Z",
             "Version": "1.0.8"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
-                "v.0.dn",
-                "v.0.sd"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "_C",
-            "Description": [
-                {
-                    "desc": "Vaccination doses must be equal or greater than expected doses.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Le nombre de doses prises doit \u00eatre sup\u00e9rieur ou \u00e9gale au nombre de doses attendues.",
-                    "lang": "fr"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-FR_C-0004",
-            "Logic": {
-                ">=": [
-                    {
-                        "var": "payload.v.0.dn"
-                    },
-                    {
-                        "var": "payload.v.0.sd"
-                    }
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-01T00:00:00Z",
-            "ValidTo": "2030-10-01T00:00:00Z",
-            "Version": "1.0.0"
         },
         {
             "AffectedFields": [
@@ -95686,68 +95784,6 @@
         },
         {
             "AffectedFields": [
-                "v.0",
-                "v.0.mp",
-                "v.0.dn"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "LT",
-            "Description": [
-                {
-                    "desc": "Sustiprinan\u010dioji vakcina 3/3 gali b\u016bti Comirnaty (EU/1/20/1528), Spikevax(EU/1/20/1507) arba Janssen (EU/1/20/1525)",
-                    "lang": "lt"
-                },
-                {
-                    "desc": "The booster vaccine 3/3 can be Comirnaty, Spikevax or Janssen",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "1.0.0",
-            "Identifier": "VR-LT-0004",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        "if": [
-                            {
-                                "===": [
-                                    {
-                                        "var": "payload.v.0.mp"
-                                    },
-                                    "EU/1/21/1529"
-                                ]
-                            },
-                            {
-                                "if": [
-                                    {
-                                        ">": [
-                                            {
-                                                "var": "payload.v.0.dn"
-                                            },
-                                            2
-                                        ]
-                                    },
-                                    false,
-                                    true
-                                ]
-                            },
-                            true
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-01-08T12:00:00Z",
-            "ValidTo": "2024-11-29T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
                 "r.0",
                 "r.0.fr"
             ],
@@ -98152,52 +98188,33 @@
         },
         {
             "AffectedFields": [
-                "t"
+                "v.0",
+                "v.0.dn",
+                "v.0.sd"
             ],
-            "CertificateType": "General",
-            "Country": "PF",
+            "CertificateType": "Vaccination",
+            "Country": "_C",
             "Description": [
                 {
-                    "desc": "Only test is allowed, and in a EU standard format.",
+                    "desc": "Vaccination doses must be equal or greater than expected doses.",
                     "lang": "en"
                 },
                 {
-                    "desc": "Seuls un test est autoris\u00e9, et dans un format au standard UE.",
+                    "desc": "Le nombre de doses prises doit \u00eatre sup\u00e9rieur ou \u00e9gale au nombre de doses attendues.",
                     "lang": "fr"
                 }
             ],
             "Engine": "CERTLOGIC",
             "EngineVersion": "0.7.5",
-            "Identifier": "GR-FRPF-0000",
+            "Identifier": "VR-FR_C-0004",
             "Logic": {
-                "===": [
+                ">=": [
                     {
-                        "reduce": [
-                            [
-                                {
-                                    "var": "payload.t"
-                                }
-                            ],
-                            {
-                                "+": [
-                                    {
-                                        "var": "accumulator"
-                                    },
-                                    {
-                                        "if": [
-                                            {
-                                                "var": "current.0"
-                                            },
-                                            1,
-                                            0
-                                        ]
-                                    }
-                                ]
-                            },
-                            0
-                        ]
+                        "var": "payload.v.0.dn"
                     },
-                    1
+                    {
+                        "var": "payload.v.0.sd"
+                    }
                 ]
             },
             "SchemaVersion": "1.0.0",
@@ -98655,41 +98672,6 @@
                 "!": [
                     {
                         "var": "payload.t.1"
-                    }
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-01T00:00:00Z",
-            "ValidTo": "2030-10-01T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "t.0.tg"
-            ],
-            "CertificateType": "General",
-            "Country": "MF",
-            "Description": [
-                {
-                    "desc": "The \"disease or agent targeted\" must be COVID-19 of the value set list.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "La maladie cibl\u00e9e doit \u00eatre le COVID-19 de la value set.",
-                    "lang": "fr"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "GR-_RMF-0001",
-            "Logic": {
-                "in": [
-                    {
-                        "var": "payload.t.0.tg"
-                    },
-                    {
-                        "var": "external.valueSets.disease-agent-targeted"
                     }
                 ]
             },
@@ -100891,6 +100873,68 @@
             "Type": "Acceptance",
             "ValidFrom": "2021-07-04T15:00:00Z",
             "ValidTo": "2023-07-04T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
+                "v.0.mp",
+                "v.0.dn"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "LT",
+            "Description": [
+                {
+                    "desc": "Sustiprinan\u010dioji vakcina 3/3 gali b\u016bti Comirnaty (EU/1/20/1528), Spikevax(EU/1/20/1507) arba Janssen (EU/1/20/1525)",
+                    "lang": "lt"
+                },
+                {
+                    "desc": "The booster vaccine 3/3 can be Comirnaty, Spikevax or Janssen",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "1.0.0",
+            "Identifier": "VR-LT-0004",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        "if": [
+                            {
+                                "===": [
+                                    {
+                                        "var": "payload.v.0.mp"
+                                    },
+                                    "EU/1/21/1529"
+                                ]
+                            },
+                            {
+                                "if": [
+                                    {
+                                        ">": [
+                                            {
+                                                "var": "payload.v.0.dn"
+                                            },
+                                            2
+                                        ]
+                                    },
+                                    false,
+                                    true
+                                ]
+                            },
+                            true
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-01-08T12:00:00Z",
+            "ValidTo": "2024-11-29T00:00:00Z",
             "Version": "1.0.0"
         },
         {
@@ -103548,6 +103592,62 @@
         },
         {
             "AffectedFields": [
+                "t"
+            ],
+            "CertificateType": "General",
+            "Country": "PF",
+            "Description": [
+                {
+                    "desc": "Only test is allowed, and in a EU standard format.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Seuls un test est autoris\u00e9, et dans un format au standard UE.",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "GR-FRPF-0000",
+            "Logic": {
+                "===": [
+                    {
+                        "reduce": [
+                            [
+                                {
+                                    "var": "payload.t"
+                                }
+                            ],
+                            {
+                                "+": [
+                                    {
+                                        "var": "accumulator"
+                                    },
+                                    {
+                                        "if": [
+                                            {
+                                                "var": "current.0"
+                                            },
+                                            1,
+                                            0
+                                        ]
+                                    }
+                                ]
+                            },
+                            0
+                        ]
+                    },
+                    1
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-01T00:00:00Z",
+            "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
                 "t.0",
                 "t.0.ma",
                 "t.0.tt"
@@ -104145,6 +104245,41 @@
                 "!": [
                     {
                         "var": "payload.t.1"
+                    }
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-01T00:00:00Z",
+            "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "t.0.tg"
+            ],
+            "CertificateType": "General",
+            "Country": "MF",
+            "Description": [
+                {
+                    "desc": "The \"disease or agent targeted\" must be COVID-19 of the value set list.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "La maladie cibl\u00e9e doit \u00eatre le COVID-19 de la value set.",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "GR-_RMF-0001",
+            "Logic": {
+                "in": [
+                    {
+                        "var": "payload.t.0.tg"
+                    },
+                    {
+                        "var": "external.valueSets.disease-agent-targeted"
                     }
                 ]
             },
