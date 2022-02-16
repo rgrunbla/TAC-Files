@@ -2053,7 +2053,7 @@
         }
     },
     {
-        "valueSetDate": "2022-02-15",
+        "valueSetDate": "2022-02-16",
         "valueSetId": "covid-19-lab-test-manufacturer-and-name",
         "valueSetValues": {
             "1065": {
@@ -2353,12 +2353,12 @@
                 "version": "2021-07-07 05:24:45 CEST"
             },
             "1324": {
-                "active": true,
+                "active": false,
                 "display": "Guangzhou Decheng Biotechnology Co., LTD, V-CHEK, 2019-nCoV Ag Rapid Test Kit (Immunochromatography)",
                 "lang": "en",
                 "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
-                "validUntil": "2022-02-16 00:00:00 CET",
-                "version": "2021-07-07 05:06:03 CEST"
+                "validUntil": null,
+                "version": "2022-02-16 00:00:00 CET"
             },
             "1331": {
                 "active": true,
@@ -2921,12 +2921,12 @@
                 "version": "2021-10-20 00:00:00 CEST"
             },
             "1906": {
-                "active": true,
+                "active": false,
                 "display": "Azure Biotech Inc, COVID-19 Antigen Rapid Test Device",
                 "lang": "en",
                 "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
-                "validUntil": "2022-02-16 00:00:00 CET",
-                "version": "2021-07-07 05:20:10 CEST"
+                "validUntil": null,
+                "version": "2022-02-16 00:00:00 CET"
             },
             "1919": {
                 "active": true,
