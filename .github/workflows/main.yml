@@ -14,33 +14,9 @@ jobs:
       - uses: cachix/install-nix-action@v15
         with:
           nix_path: nixpkgs=channel:nixos-21.11
-      - name: Download blacklists and various files
-        run: ./download_tac.py
-      - name: Download the conf from the TAC-V server
-        env:
-          token: ${{ secrets.TOKEN }}
-        run: "nix-shell -p curl --command \"curl --retry 5 --retry-delay 5 --retry-all-errors -s https://portail.tacv.myservices-ingroupe.com/api/client/configuration/synchronisation/tacv --oauth2-bearer ${token} -o _TAC-V_conf.json\""
-      - name: Format the conf
-        run: "nix-shell -p jq --command \"jq --sort-keys '. | del(.currentDate)' _TAC-V_conf.json &> TAC-V_conf.json; rm _TAC-V_conf.json\""
-      - name: Download the countries from the TAC-V server
-        env:
-          token: ${{ secrets.TOKEN }}
-        run: "nix-shell -p curl --command \"curl --retry 5 --retry-delay 5 --retry-all-errors -s https://portail.tacv.myservices-ingroupe.com/api/client/configuration/countries/tacv --oauth2-bearer ${token}  -o _TAC-V_countries.json\""
-      - name: Format the countries 
-        run: "nix-shell -p jq --command \"jq --sort-keys '.' _TAC-V_countries.json &> TAC-V_countries.json; rm _TAC-V_countries.json\""
-      - name: Download the valuesets from the TAC-V server
-        env:
-          token: ${{ secrets.TOKEN }}
-        run: "nix-shell -p curl --command \"curl --retry 5 --retry-delay 5 --retry-all-errors -s https://portail.tacv.myservices-ingroupe.com/api/client/configuration/valuesets/tacv --oauth2-bearer ${token} -o _TAC-V_valuesets.json\""
-      - name: Format the valuesets 
-        run: "nix-shell -p jq --command \"jq --sort-keys '.' _TAC-V_valuesets.json &> TAC-V_valuesets.json; rm _TAC-V_valuesets.json\""
-      - name: Download the rules from the TAC-V server
-        env:
-          token: ${{ secrets.TOKEN }}
-        run: "nix-shell -p curl --command \"curl --retry 5 --retry-delay 5 --retry-all-errors -s https://portail.tacv.myservices-ingroupe.com/api/client/configuration/rules/tacv --oauth2-bearer ${token} -o _TAC-V_rules.json\""
-      - name: Format the rules 
-        run: "nix-shell -p jq --command \"jq --sort-keys '.' _TAC-V_rules.json &> TAC-V_rules.json; rm _TAC-V_rules.json\""
-      - name: Download the 2D-DOC and DCC certificates from the TAC-V servers
+      - name: Download blacklists and various files for the TAC application
+        run: "./download_tac.py"
+      - name: Download blacklists and various files for the TAC-V application
         run: "./download_tacv.py"
         env:
           token: ${{ secrets.TOKEN }}

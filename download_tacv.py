@@ -10,6 +10,11 @@ from requests.adapters import HTTPAdapter
 from requests.packages.urllib3.util.retry import Retry
 
 token = os.environ.get('token')
+
+if token == None:
+    print("The token needs to be available in the environment.")
+    exit(0)
+
 retry_strategy = Retry(
     total=3,
     status_forcelist=[429, 500, 502, 503, 504],
@@ -49,6 +54,13 @@ def download_blacklist(session, hash_type, filename):
     with open(filename, 'w') as handler:
         handler.write(d)
 
+def download_tacv(session, file_type, filename):
+    url = f'https://portail.tacv.myservices-ingroupe.com/api/client/configuration/{file_type}/tacv'
+    answer = session.get(url, allow_redirects=True).json()
+    d = json.dumps(answer, indent=2, sort_keys=True, ensure_ascii=False)
+    with open(filename, 'w') as handler:
+        handler.write(d)
+
 session = EnhancedSession()
 session.mount("https://", adapter)
 session.mount("http://", adapter)
@@ -61,3 +73,7 @@ session.headers.update(
 
 download_blacklist(session, 'dcc', "blacklist_qrcode_tacv.json")
 download_blacklist(session, '2ddoc', "blacklist_2ddoc_tacv.json")
+download_tacv(session, "synchronisation", "TAC-V_conf.json")
+download_tacv(session, "valuesets", "TAC-V_valuesets.json")
+download_tacv(session, "countries", "TAC-V_countries.json")
+download_tacv(session, "rules", "TAC-V_rules.json")
