@@ -5147,6 +5147,49 @@ Certificate:
 Certificate:
     Data:
         Version: 3 (0x2)
+        Serial Number:
+            54:23:ed:5e:3f:b9:5f:67:df:3f:f6:3f:1f:8b:ce:64:1f:a1:f2:97
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = BJ, O = MINISTERE DE LA SANTE, CN = CSCA_DGC_BJ_01
+        Validity
+            Not Before: Feb  6 12:13:14 2022 GMT
+            Not After : Feb  6 12:13:14 2024 GMT
+        Subject: C = BJ, ST = Littoral, O = MINISTERE DE LA SANTE, CN = DS-Sanitaire-01
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:d5:e6:9f:42:41:67:10:77:60:99:d3:b8:66:40:
+                    27:a7:39:d5:26:53:76:be:15:db:e5:cc:dc:ff:33:
+                    be:f3:62:9b:a7:93:c8:52:6b:56:89:dd:70:9c:b5:
+                    9c:46:fe:4d:8d:5c:77:32:d8:e9:53:cb:d1:4f:85:
+                    f6:7a:3e:fd:26
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Subject Key Identifier: 
+                23:67:F0:37:B7:05:C4:DA:02:AC:AB:59:08:36:C0:01:FD:ED:F3:3D
+            X509v3 Authority Key Identifier: 
+                keyid:DB:C2:66:70:77:FD:AB:41:C9:C6:F8:37:94:AE:E8:B5:A7:5B:42:E9
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://anssi.bj/CRL/CSCA_DGC_BJ_01.crl
+
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.1847.2021.1.1
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:ce:9a:1d:0a:98:6b:87:db:1c:25:a6:af:cb:
+         d5:2e:c5:f3:9e:69:2c:b9:17:91:40:8c:67:bd:33:f2:97:db:
+         bf:02:20:21:a6:c1:77:c6:47:ed:37:da:8d:df:f8:c4:2a:02:
+         e7:74:8b:55:ed:d9:fe:00:54:bc:86:2f:c2:18:d9:6c:f9
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
         Serial Number: 5256202099015749317 (0x48f1c7f5e37f0ec5)
         Signature Algorithm: ecdsa-with-SHA256
         Issuer: CN = Poland DGC RootCSCA 1, O = Ministry of Health, C = PL
@@ -18898,6 +18941,49 @@ Certificate:
          ee:cf:15:e4:c1:81:2b:35:f2:ea:ac:c2:82:72:ff:0b:fc:99:
          25:02:20:58:57:a1:a0:9b:05:d8:d1:ca:07:46:c8:6e:58:71:
          95:12:e1:9f:42:d6:2e:15:49:e7:dd:c6:fa:b2:74:e0:aa
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            54:23:ed:5e:3f:b9:5f:67:df:3f:f6:3f:1f:8b:ce:64:1f:a1:f2:96
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = BJ, O = MINISTERE DE LA SANTE, CN = CSCA_DGC_BJ_01
+        Validity
+            Not Before: Feb  6 12:04:13 2022 GMT
+            Not After : Feb  6 12:04:13 2024 GMT
+        Subject: C = BJ, ST = Littoral, O = MINISTERE DE LA SANTE, CN = DS-Sanitaire-01
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:de:97:06:03:90:6d:42:c2:c0:03:c4:80:2d:b3:
+                    76:57:3c:8a:3a:3b:0b:45:6c:33:40:04:af:af:5a:
+                    ec:5c:1f:97:61:e5:ae:9f:6e:ca:22:52:0c:49:3e:
+                    fa:bb:e0:9e:19:1d:24:c1:8e:d6:95:fe:49:db:e5:
+                    25:20:b3:47:a8
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Subject Key Identifier: 
+                1F:77:CB:CE:30:C6:0E:67:8D:A5:55:B5:CD:27:03:13:58:25:09:48
+            X509v3 Authority Key Identifier: 
+                keyid:DB:C2:66:70:77:FD:AB:41:C9:C6:F8:37:94:AE:E8:B5:A7:5B:42:E9
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://anssi.bj/CRL/CSCA_DGC_BJ_01.crl
+
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.1847.2021.1.2
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:88:83:26:d3:40:51:da:33:da:ca:2d:5d:2b:
+         39:0d:cf:99:e8:56:40:25:21:09:2a:51:02:19:3c:4c:e0:7f:
+         3e:02:21:00:a9:c3:15:2b:34:58:ce:db:68:78:1d:e1:f6:b1:
+         a2:12:e6:fb:9d:0c:c7:94:1a:13:d2:63:11:df:96:f5:fc:92
 
 Certificate:
     Data:
