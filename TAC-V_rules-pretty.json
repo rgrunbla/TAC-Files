@@ -104530,54 +104530,6 @@
         },
         {
             "AffectedFields": [
-                "v.0",
-                "v.0.mp"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "LT",
-            "Description": [
-                {
-                    "desc": "Leid\u017eiamos vakcinos pagal ES klasifikatori\u0173",
-                    "lang": "lt"
-                },
-                {
-                    "desc": "Only vaccines in the allowed valueset that have been approved by the EMA are allowed.",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "1.0.0",
-            "Identifier": "VR-LT-0001",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        "in": [
-                            {
-                                "var": "payload.v.0.mp"
-                            },
-                            [
-                                "EU/1/20/1528",
-                                "EU/1/20/1507",
-                                "EU/1/21/1529",
-                                "EU/1/20/1525",
-                                "Covishield"
-                            ]
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-02-12T12:00:00Z",
-            "ValidTo": "2024-02-12T00:00:00Z",
-            "Version": "1.1.0"
-        },
-        {
-            "AffectedFields": [
                 "t",
                 "v"
             ],
