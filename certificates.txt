@@ -17140,6 +17140,80 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            f1:5a:9c:d6:ac:d8:e1:9d:9d:d4:2f:3c:66:15:8e:54:c4:65:15
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = MC, O = Principality of Monaco, OU = Foreign Office of Monaco, CN = CSCAPKI_MC
+        Validity
+            Not Before: Mar  2 13:59:58 2022 GMT
+            Not After : Sep  1 13:59:58 2023 GMT
+        Subject: C = MC, O = Principality of Monaco, OU = Ministry of Health and Social Affairs, CN = DSPKI_MC_DGC_1
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:99:fd:ad:1c:18:64:8d:cc:03:e7:3b:c9:62:a9:
+                    cb:53:8d:1a:c4:f5:92:49:f3:bc:e1:67:dc:6f:02:
+                    bb:15:f8:f8:52:10:e5:c3:5b:d9:9b:ab:cd:c4:9d:
+                    d8:11:0c:fc:db:e3:2c:81:5a:15:1e:30:1f:82:f9:
+                    28:85:9e:52:33
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Subject Alternative Name: 
+                DNS:www.gouv.mc, DirName:/L=MCO
+            X509v3 Issuer Alternative Name: 
+                URI:https://csca-mco.gouv.mc, DirName:/L=MCO
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.0.1847.2021.1.1, 1.3.6.1.4.1.0.1847.2021.1.2, 1.3.6.1.4.1.0.1847.2021.1.3
+            X509v3 Private Key Usage Period: 
+                Not Before: Mar  2 12:47:06 2022 GMT, Not After: Sep  2 12:47:06 2022 GMT
+            X509v3 Subject Key Identifier: 
+                B8:2E:E0:56:56:05:50:0F:92:55:BE:34:44:C0:77:C1:53:18:43:6A
+            X509v3 Authority Key Identifier: 
+                keyid:30:32:9C:7C:FE:7D:8F:02:ED:C5:12:5A:E0:EB:57:BF:E8:85:89:29
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:https://csca-mco.gouv.mc/MCO.crl
+
+    Signature Algorithm: sha256WithRSAEncryption
+         5b:41:b4:13:7e:80:5c:fe:8b:65:19:ab:63:0e:90:2b:54:5c:
+         a7:ec:6b:38:4e:16:a9:a6:f1:cb:04:f7:8e:1c:bd:a0:84:f2:
+         e1:27:1a:2d:36:6f:9e:af:93:eb:bc:fd:e1:41:89:61:a3:0a:
+         b2:22:8c:4b:4d:4e:62:8e:d4:6b:39:49:a0:24:75:35:cd:6a:
+         1f:2e:b8:2b:6a:0c:34:92:44:83:6d:0a:64:a2:39:c9:b9:b5:
+         5b:fa:c6:81:da:34:a6:4f:81:75:e0:e6:82:e0:ce:19:90:ec:
+         04:a9:3d:f1:86:8c:c2:28:11:47:ba:53:e2:f8:37:e5:8d:b1:
+         28:a0:00:da:c9:df:19:0a:0d:eb:f7:ee:75:2b:b4:98:e7:9b:
+         ea:7d:7f:c9:2f:ed:55:a5:50:f9:aa:c0:13:9a:17:2e:82:70:
+         9a:78:1a:6b:31:cf:78:e0:3e:08:43:e8:ab:9b:57:d8:5e:e0:
+         01:06:64:5e:b2:b2:c3:61:04:ff:70:f0:e4:68:c4:17:51:91:
+         f9:17:6c:a4:39:fc:20:1a:dd:72:81:b5:ee:56:8b:7c:90:9d:
+         c7:2f:c5:c2:22:47:f9:15:ec:59:a7:40:ef:20:46:30:93:bb:
+         f3:02:bd:0d:80:e7:6d:41:17:ac:4d:2e:0a:a0:19:d1:4c:eb:
+         6f:0b:4a:29:ac:d0:fa:98:e6:f8:c6:c6:7b:37:85:52:9d:b5:
+         2d:7e:3f:9a:12:00:bd:32:4b:55:8e:38:85:aa:96:1c:b2:08:
+         b0:35:f4:04:f2:92:ce:b5:c6:e6:90:e4:82:37:d0:ad:34:f4:
+         59:50:a8:77:b7:54:3f:fd:ae:b5:cf:4e:df:48:c6:d7:07:8d:
+         0f:be:fe:bf:a2:a4:c6:a9:9e:db:3f:f8:92:67:3e:94:88:27:
+         a6:69:89:e1:1f:5a:8c:38:e4:40:25:cd:35:bf:65:13:45:92:
+         ab:87:01:ff:08:70:6d:fd:e6:35:27:7b:72:c1:ee:1b:76:3f:
+         28:13:ff:ab:58:2a:db:ff:15:5f:4a:17:ce:20:b0:63:04:7c:
+         27:c6:f9:65:e2:a6:31:31:07:9a:26:61:75:98:3d:d3:44:aa:
+         aa:b4:01:3a:1a:86:b5:a2:19:f5:6a:5c:38:37:61:28:d9:e6:
+         71:cd:a2:76:58:2a:c0:85:d0:50:d7:96:76:9e:23:9c:11:c5:
+         a0:34:ce:46:8b:26:ef:4d:41:b1:73:a2:45:51:36:99:af:3b:
+         a2:24:54:62:fb:4d:2f:e5:61:7e:4a:56:34:94:14:22:24:09:
+         f8:69:1b:a1:d1:64:3f:29:6b:0f:55:52:cf:4f:ff:63:f9:c8:
+         c1:23:64:e3:55:94:db:b8
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             58:9f:04:5b:be:e0:31:e5:ea:1e:c3:68:4d:3b:d0:16
         Signature Algorithm: sha256WithRSAEncryption
         Issuer: C = CH, organizationIdentifier = VATCH-CHE-221.032.573, O = Bundesamt fuer Informatik und Telekommunikation (BIT), OU = Swiss Government PKI, CN = Swiss Government Regulated CA 02
