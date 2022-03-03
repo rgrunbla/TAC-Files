@@ -13108,6 +13108,44 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            7d:d1:4a:d0:1b:6d:08:bd:8e:65:31:a7:dd:db:82:96:d8:d0:66:2f
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN = CSCA Saude, serialNumber = 001, O = Republica Portuguesa - Portuguese Republic, C = PT
+        Validity
+            Not Before: Feb 16 16:30:59 2022 GMT
+            Not After : Feb 16 16:30:58 2024 GMT
+        Subject: CN = DGC DS, serialNumber = 003, O = Republica Portuguesa - Portuguese Republic, C = PT
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:d8:63:76:4c:5d:7c:ad:ed:0e:79:2e:1e:13:08:
+                    ad:7e:e0:e8:a2:35:35:25:54:a0:f8:bf:3d:ad:89:
+                    5b:29:48:b9:07:35:c8:dc:8c:df:1c:4a:fd:e8:8a:
+                    50:5e:01:0a:26:4b:18:8e:7a:61:5e:6c:ff:c7:9a:
+                    a0:14:b9:72:0a
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Authority Key Identifier: 
+                keyid:7E:32:BC:6F:97:2E:F9:5F:EB:D0:15:47:67:9F:89:8C:CA:21:68:0E
+
+            X509v3 Subject Key Identifier: 
+                58:62:FC:25:99:BD:7D:6A:A7:16:9D:77:35:30:1C:D0:E3:6B:4C:F5
+            X509v3 Key Usage: critical
+                Digital Signature
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:ae:5c:3d:3a:3b:00:13:d2:04:2f:7a:9e:32:
+         b4:b3:1c:f0:4b:32:58:2e:d1:16:39:bc:f4:ed:d2:26:58:fc:
+         e8:02:20:37:92:0b:bd:19:2a:25:1c:5e:58:1c:a2:ab:12:ae:
+         3c:94:26:47:5b:46:5a:08:69:04:a8:95:e0:30:ae:00:e8
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             ac:e3:3f:75:d1:03:3c:2c:11:b6:df:c5:d8:4b:b0:ad
         Signature Algorithm: ecdsa-with-SHA256
         Issuer: C = SE, O = Swedish eHealth Agency, OU = Digital Covid Certificate Services, organizationIdentifier = 202100-6552, CN = Swedish Digital Covid Certificate CSCA
@@ -19012,6 +19050,44 @@ Certificate:
          2f:21:b5:e1:07:b1:6b:c3:8d:62:21:5f:a9:9f:ce:19:9e:6c:
          73:ec:36:e4:7a:d2:04:0b:0f:30:fe:1b:c3:cd:36:eb:72:2d:
          10:51:f3:c2:93:b3:e5:bf
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            27:73:fd:8a:2e:6e:f5:18:15:35:1f:18:9b:2a:2b:22:84:f8:a0:61
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN = CSCA Saude, serialNumber = 001, O = Republica Portuguesa - Portuguese Republic, C = PT
+        Validity
+            Not Before: Feb 16 16:32:15 2022 GMT
+            Not After : Feb 16 16:32:14 2024 GMT
+        Subject: CN = DGC DS, serialNumber = 004, O = Republica Portuguesa - Portuguese Republic, C = PT
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:3e:05:fc:3b:49:26:e5:71:75:bd:4a:e2:ab:27:
+                    5a:75:9c:13:4d:b7:0e:e6:e0:ae:27:70:f3:b6:9e:
+                    83:f0:1e:0a:a1:a6:e7:3d:18:09:01:64:5c:f6:b2:
+                    e6:13:9f:d0:69:6e:70:b5:61:71:4a:ff:86:26:e2:
+                    8f:05:fb:25:b3
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Authority Key Identifier: 
+                keyid:7E:32:BC:6F:97:2E:F9:5F:EB:D0:15:47:67:9F:89:8C:CA:21:68:0E
+
+            X509v3 Subject Key Identifier: 
+                B4:FA:48:29:5F:73:02:09:53:D0:20:63:64:7C:20:30:6A:BD:16:54
+            X509v3 Key Usage: critical
+                Digital Signature
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:a7:b5:33:c8:80:16:7b:4d:36:29:bf:0a:1d:
+         33:da:95:20:b7:6b:b3:70:93:5a:4c:4b:30:89:e2:b8:42:02:
+         f9:02:21:00:93:04:e9:05:4d:27:ba:fd:84:0e:2a:53:15:a7:
+         f4:a4:21:b3:96:59:29:ae:5c:c4:70:81:44:51:f1:d9:c9:34
 
 Certificate:
     Data:
