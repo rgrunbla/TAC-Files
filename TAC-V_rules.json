@@ -1986,12 +1986,6 @@
     "version": "1.0.1"
   },
   {
-    "country": "IE",
-    "hash": "00deb73ca7ac3b6300e8602b1d417430ef24323290bb8f0d92f42e991e03cde6",
-    "identifier": "RR-IE-0002",
-    "version": "1.0.2"
-  },
-  {
     "country": "LT",
     "hash": "1ede02b3b69197fedfbc46cdbd3dd18e8e44a42e4a16898672efe3b136095221",
     "identifier": "RR-LT-0000",
@@ -9865,15 +9859,15 @@
   },
   {
     "country": "IE",
-    "hash": "25408053e45b86fbb9baa99b17fad34a6f8937e4433b31a401353d1c344549f5",
+    "hash": "3fa4b4f0fc10426b906d9b17ec5d5c87e45d259a823be878880cdd9923e8955b",
     "identifier": "VR-IE-0003",
-    "version": "1.0.4"
+    "version": "1.0.5"
   },
   {
     "country": "IE",
-    "hash": "54d4607a6a720a23841926441ede89d1a83685e110c4ba1083d1c01245581fe5",
-    "identifier": "VR-IE-0006",
-    "version": "1.0.5"
+    "hash": "25408053e45b86fbb9baa99b17fad34a6f8937e4433b31a401353d1c344549f5",
+    "identifier": "VR-IE-0003",
+    "version": "1.0.4"
   },
   {
     "country": "IE",
@@ -9883,9 +9877,21 @@
   },
   {
     "country": "IE",
+    "hash": "cc57731f085c055a7638142fe3bb63e5e52613b3451f74e88cc5b935828fa45b",
+    "identifier": "VR-IE-0011",
+    "version": "1.0.2"
+  },
+  {
+    "country": "IE",
     "hash": "38002eaca599351dcfbc2766f57a630a9172210e6defedf518578588bfa39a6b",
     "identifier": "VR-IE-0012",
     "version": "1.0.1"
+  },
+  {
+    "country": "IE",
+    "hash": "5e5a95bff55ab94426bbe8c2283ebe377f95bfabe45178950f53b75353131c93",
+    "identifier": "VR-IE-0012",
+    "version": "1.0.2"
   },
   {
     "country": "FR",
