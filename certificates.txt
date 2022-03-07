@@ -21864,6 +21864,53 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            2c:e2:53:06:5c:97:cd:15:48:20:63:45:32:d6:a0:fc:92:ce:a1:61
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN = Faroe Islands Health Authority CSCA v1, O = Gjaldstovan, C = FO
+        Validity
+            Not Before: Jul  8 14:36:26 2021 GMT
+            Not After : Jul  8 14:36:26 2023 GMT
+        Subject: CN = DSC_DGC_FO_345334_RECOVERY_01, O = SJUKRAHUSVERKID, C = FO
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:2e:50:1b:8e:5a:a0:c4:8f:f8:45:29:13:7b:8f:
+                    2e:8e:b1:ed:91:f6:cc:41:79:50:6c:08:f7:ad:c4:
+                    a8:57:47:19:84:01:c2:15:61:4a:22:26:6d:7b:53:
+                    32:72:c6:25:48:f8:0d:04:f8:78:46:45:9f:7b:e8:
+                    b2:e6:2a:64:95
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Authority Key Identifier: 
+                keyid:EE:3C:81:A6:E6:1E:B6:51:74:44:E0:D0:F4:30:33:E2:EA:6A:BE:A1
+
+            X509v3 Certificate Policies: 
+                Policy: 1.2.208.189.2.1.1
+                  CPS: https://repository.samleiki.fo/legal-repository/ehealth
+
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.1847.2021.1.3
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl.samleiki.fo/Faroe-Islands-Health-Authority-CSCA-v1.crl
+
+            X509v3 Subject Key Identifier: 
+                97:49:28:16:C9:67:5A:D2:34:77:F1:7C:7A:C8:9C:7D:EC:E9:1D:45
+            X509v3 Key Usage: critical
+                Digital Signature
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:ee:12:59:6a:ee:93:cc:ea:a8:1a:29:38:57:
+         a0:ce:d0:ad:74:19:15:d3:6f:be:58:ad:90:b4:d7:09:4d:e8:
+         08:02:20:01:73:c9:17:b2:57:4e:9f:2d:bf:e8:51:2e:02:92:
+         19:77:72:fc:e8:e0:92:13:b7:c8:8a:2f:3e:00:be:51:96
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             51:f4:80:76:a2:30:a6:4a:b0:5e:30:e1:67:ed:09:75:43:da:20:20
         Signature Algorithm: sha256WithRSAEncryption
         Issuer: C = IT, O = Ministero della Salute, CN = Italy DGC CSCA 1
