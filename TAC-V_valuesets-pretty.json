@@ -1915,6 +1915,26 @@
         }
     },
     {
+        "valueSetDate": "2021-04-27",
+        "valueSetId": "covid-19-lab-result",
+        "valueSetValues": {
+            "260373001": {
+                "active": true,
+                "display": "Detected",
+                "lang": "en",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20210131"
+            },
+            "260415000": {
+                "active": true,
+                "display": "Not detected",
+                "lang": "en",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20210131"
+            }
+        }
+    },
+    {
         "valueSetDate": "2022-03-07",
         "valueSetId": "covid-19-lab-test-manufacturer-and-name",
         "valueSetValues": {
@@ -2862,6 +2882,14 @@
                 "validUntil": null,
                 "version": "2021-07-07 05:07:15 CEST"
             },
+            "1988": {
+                "active": true,
+                "display": "Inzek International trading, Biozek covid-19 Antigen Rapidtest BCOV-502",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2022-03-04 00:00:00 CET"
+            },
             "1989": {
                 "active": true,
                 "display": "Boditech Med Inc, AFIAS COVID-19 Ag",
@@ -3190,6 +3218,14 @@
                 "validUntil": null,
                 "version": "2021-07-13 05:55:54 CEST"
             },
+            "2201": {
+                "active": true,
+                "display": "Zybio Inc., SARS-CoV-2 Antigen Assay Kit (Colloidal Gold Method)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2022-03-04 00:00:00 CET"
+            },
             "2228": {
                 "active": true,
                 "display": "Roche (SD BIOSENSOR), SARS-CoV-2 Rapid Antigen Test Nasal",
@@ -3245,6 +3281,14 @@
                 "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
                 "validUntil": null,
                 "version": "2021-12-08 00:00:00 CET"
+            },
+            "2257": {
+                "active": true,
+                "display": "Hangzhou AllTest Biotech Co., Ltd., SARS-CoV-2 Antigen Rapid Test (Nasal Swab)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2022-03-04 00:00:00 CET"
             },
             "2260": {
                 "active": true,
@@ -3382,6 +3426,14 @@
                 "validUntil": null,
                 "version": "2021-11-10 00:00:00 CET"
             },
+            "2519": {
+                "active": true,
+                "display": "BIOLAN HEALTH, S.L., COVID-19 Antigen Rapid Test (Colloidal Gold Method)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2022-03-04 00:00:00 CET"
+            },
             "2533": {
                 "active": true,
                 "display": "Dynamiker Biotechnology\uff08Tianjin) Co., Ltd., Dynamiker SARS-CoV-2 Ag Rapid Test",
@@ -3454,6 +3506,14 @@
                 "validUntil": null,
                 "version": "2021-12-08 00:00:00 CET"
             },
+            "2672": {
+                "active": true,
+                "display": "Pierenkemper GmbH, (SARS-CoV-2) Antigen Rapid Test COVIDENT COVID-19",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2022-03-04 00:00:00 CET"
+            },
             "2684": {
                 "active": true,
                 "display": "Zhejiang Gene Science Co., Ltd, Novel Coronavirus (COVID-19) Antigen Detection Kit",
@@ -3478,6 +3538,14 @@
                 "validUntil": null,
                 "version": "2021-12-21 00:00:00 CET"
             },
+            "2724": {
+                "active": true,
+                "display": "Fosun Diagnostics (Shanghai) Co.,Ltd., Fosun Covid-19 Ag CARD",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2022-03-04 00:00:00 CET"
+            },
             "2741": {
                 "active": true,
                 "display": "OSANG Healthcare Co., Ltd, GeneFinder COVID-19 Ag Plus Rapid Test",
@@ -3485,6 +3553,14 @@
                 "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
                 "validUntil": null,
                 "version": "2021-12-21 00:00:00 CET"
+            },
+            "2742": {
+                "active": true,
+                "display": "Wuhan HealthCare Biotechnology Co., Ltd., SARS-CoV-2 Antigen Test Kit (Colloidal Gold)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2022-03-04 00:00:00 CET"
             },
             "2746": {
                 "active": true,
@@ -3573,26 +3649,6 @@
                 "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
                 "validUntil": null,
                 "version": "2021-07-13 05:38:51 CEST"
-            }
-        }
-    },
-    {
-        "valueSetDate": "2021-04-27",
-        "valueSetId": "covid-19-lab-result",
-        "valueSetValues": {
-            "260373001": {
-                "active": true,
-                "display": "Detected",
-                "lang": "en",
-                "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20210131"
-            },
-            "260415000": {
-                "active": true,
-                "display": "Not detected",
-                "lang": "en",
-                "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20210131"
             }
         }
     },
