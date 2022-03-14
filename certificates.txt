@@ -20787,6 +20787,87 @@ Certificate:
 
 Certificate:
     Data:
+        Version: 1 (0x0)
+        Serial Number: 1 (0x1)
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = MK, ST = North Macedonia, L = Skopje, O = Ministry of Health, CN = zdravstvo.gov.mk, emailAddress = contact@zdravstvo.gov.mk
+        Validity
+            Not Before: Mar 14 12:07:32 2022 GMT
+            Not After : Mar 14 12:07:32 2023 GMT
+        Subject: C = MK, ST = North Macedonia, L = Skopje, O = "Nikob Laboratory, North Macedonia", OU = "Nikob Laboratory, North Macedonia", CN = nikobmedical.mk, emailAddress = info@nikoblab.mk
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (4096 bit)
+                Modulus:
+                    00:de:9f:ef:e1:30:9d:44:c9:53:49:c9:ab:b7:d5:
+                    d9:8c:0b:38:2b:db:c1:7c:93:b0:4c:81:57:0e:85:
+                    40:80:60:da:53:89:67:ca:c3:f7:4d:eb:34:37:88:
+                    80:0c:c8:6a:ba:ba:d2:60:55:55:b8:a8:5d:90:5d:
+                    30:74:56:37:c2:a4:05:18:c9:cf:ca:e4:6e:2b:c7:
+                    4f:e3:9e:58:87:f7:03:c3:79:a3:13:6f:7f:5e:20:
+                    c7:63:38:4f:3c:87:a4:09:bd:eb:fe:19:e4:7f:b0:
+                    fc:61:00:54:a0:3b:6c:86:18:09:ac:58:0d:0b:2a:
+                    fc:26:f4:84:95:11:bf:7d:33:f0:0b:d5:d6:c0:2b:
+                    49:4b:d8:ae:9b:05:ef:0d:bf:e8:af:c2:1d:4b:b7:
+                    7e:0c:71:78:c5:e8:f0:44:50:39:ea:dd:9a:f6:0f:
+                    f8:09:7c:f1:99:1c:90:2d:cf:73:4e:02:b0:8b:5b:
+                    d7:5c:fb:d8:c4:7d:8a:d9:4f:ad:f0:8c:2e:1b:08:
+                    3a:13:5d:db:bc:ee:e9:07:d0:9a:9b:1c:75:96:f8:
+                    c8:7b:5b:be:c2:cd:36:a4:28:06:55:6e:96:63:91:
+                    38:ea:92:27:88:bd:b9:e8:44:b0:56:d8:cf:ae:01:
+                    75:4d:3f:73:b2:ca:6f:f0:74:82:ea:ff:fb:5e:72:
+                    82:8d:41:33:d7:2d:84:d1:b8:40:8c:bc:23:c7:12:
+                    b3:ac:2a:04:ff:eb:b5:73:29:f4:6b:fa:97:4e:fc:
+                    90:e9:67:87:16:14:fa:94:83:b7:3f:c5:b7:91:71:
+                    86:8a:f6:7b:38:38:6f:62:9a:1a:8d:10:97:5b:36:
+                    dd:0a:7b:25:7b:46:82:21:8a:aa:d7:e9:66:85:d5:
+                    ba:72:1b:c0:3c:5d:bd:8d:6b:b8:0a:ea:60:30:50:
+                    46:9f:d5:b9:4f:5a:fd:4a:9b:c8:07:0f:aa:da:1e:
+                    2c:8b:e3:95:8d:d2:c6:a3:ff:52:1e:59:10:14:fe:
+                    f2:f3:16:40:ef:30:56:30:cb:88:5c:7a:6c:17:a1:
+                    30:d4:f5:56:dc:ac:c6:31:f7:03:30:6b:42:c5:b8:
+                    6f:16:0d:cb:eb:13:16:38:5a:3d:f4:26:ff:ee:5c:
+                    21:12:09:e4:0e:1c:d1:2c:5c:f4:d7:28:6f:ae:d7:
+                    25:f9:b7:22:59:c0:33:9d:ec:26:a9:2f:4c:37:1d:
+                    af:d0:2f:1d:c3:1e:02:5b:e6:b0:df:77:28:23:2c:
+                    6a:52:d2:22:63:b0:10:a0:ab:d7:08:5a:dd:fb:26:
+                    0c:38:a1:29:73:ad:9a:26:2e:c4:39:34:34:72:ca:
+                    30:47:80:06:c3:31:3d:d3:55:ae:42:40:d9:65:02:
+                    d4:02:6d
+                Exponent: 65537 (0x10001)
+    Signature Algorithm: sha256WithRSAEncryption
+         98:26:72:81:8d:83:90:ee:bd:10:76:48:ee:ba:7a:6a:8b:df:
+         03:b4:b8:8e:69:14:23:f3:75:a4:39:ed:fc:95:9b:95:6a:26:
+         84:32:00:0b:f8:02:09:b7:1a:1d:ad:8a:05:05:48:cb:d5:bf:
+         60:0a:4b:8f:c8:cf:95:a8:f1:a2:e6:06:df:05:75:f7:19:59:
+         73:dc:a4:e8:4a:71:1d:5d:ca:47:43:a9:16:96:51:12:20:9c:
+         14:62:4a:0a:28:c4:c9:cf:90:92:5d:1c:f8:6b:6d:6d:6a:9b:
+         28:ea:f3:91:e0:e9:54:05:70:fe:6f:13:6c:54:66:6a:af:11:
+         94:74:67:8b:30:05:3c:79:0a:74:a3:c7:0e:93:de:5b:fe:38:
+         77:7d:94:44:31:fb:c1:29:cb:d4:71:30:ef:1c:21:a6:3e:e7:
+         54:ad:db:30:ec:1e:7c:25:ef:00:66:e8:44:8e:19:6b:9b:48:
+         f4:2d:8b:45:73:2b:06:21:f2:25:8f:13:81:49:e4:aa:c7:7d:
+         26:3f:f8:38:da:e7:1f:5e:89:f1:b2:2d:4f:f8:74:f7:c8:09:
+         93:8c:b7:61:d0:c4:bc:b7:59:75:13:84:91:ca:da:a2:74:1a:
+         d7:54:81:7b:6e:ee:f9:50:b1:bb:fd:9c:63:f4:15:2b:59:01:
+         52:11:4a:a5:14:ec:cd:ff:2e:49:72:c8:75:85:ab:c8:e5:32:
+         d2:99:08:a4:cc:63:c1:26:ec:50:9a:5e:b3:c8:ec:81:88:c2:
+         0d:83:5a:c4:84:17:0f:eb:f7:c8:b4:da:93:f3:97:e6:ba:15:
+         de:ac:de:82:d6:48:eb:fb:2e:25:70:50:72:60:25:ee:d5:89:
+         2b:1d:0c:37:b2:c6:06:82:5a:a8:ff:d5:90:0d:ab:26:85:2d:
+         c6:a1:91:41:86:5a:41:25:0b:97:18:1b:ea:5f:4e:63:56:c2:
+         11:b2:34:aa:5a:3e:1d:86:04:b7:60:68:7b:a5:89:5c:ea:24:
+         da:81:41:a5:d7:42:24:2a:68:0a:27:24:97:ae:07:db:c2:ac:
+         f8:1d:f9:eb:92:0e:f2:6b:36:52:71:5e:86:8d:83:c2:ff:e4:
+         ec:12:20:08:91:32:e1:79:5d:8b:83:5e:5e:53:71:55:8f:4d:
+         c3:50:6d:13:c7:7e:d2:ec:74:71:92:6d:33:70:e2:ad:66:d4:
+         a0:05:5b:a5:7f:82:19:b9:e8:68:e8:12:c8:4f:1a:f6:6a:a5:
+         61:c4:7f:ae:ae:60:b5:20:9e:05:73:a7:a7:b1:e0:1d:63:19:
+         5c:de:53:15:1c:08:c9:c2:e0:ce:a2:2d:36:b5:7f:08:29:eb:
+         bb:72:00:b3:0a:f7:4f:9b
+
+Certificate:
+    Data:
         Version: 3 (0x2)
         Serial Number:
             76:9f:42:5e:73:85:ba:a5:6e:8a:24:fb:8e:0f:45:a1:dc:9e:00:26
