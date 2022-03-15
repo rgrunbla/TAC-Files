@@ -67651,6 +67651,63 @@
         {
             "AffectedFields": [
                 "v.0",
+                "v.0.dn",
+                "v.0.sd"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "DE",
+            "Description": [
+                {
+                    "desc": "The vaccination schedule must be complete (e.g., 1/1, 2/2).",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Die Impfreihe muss vollz\u00e4hlig sein (z.B. 1/1, 2/2).",
+                    "lang": "de"
+                },
+                {
+                    "desc": "La s\u00e9rie vaccinale doit \u00eatre compl\u00e8te (p. ex. 1/1, 2/2).",
+                    "lang": "fr"
+                },
+                {
+                    "desc": "La pauta de vacunaci\u00f3n debe estar completa (por ejemplo, 1/1, 2/2).",
+                    "lang": "es"
+                },
+                {
+                    "desc": "Il ciclo di vaccinazione deve essere stato completato (ad es. 1/1, 2/2).",
+                    "lang": "it"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-DE-0001",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        ">=": [
+                            {
+                                "var": "payload.v.0.dn"
+                            },
+                            {
+                                "var": "payload.v.0.sd"
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-03-18T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.2"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
                 "v.0.mp",
                 "v.0.dt"
             ],
@@ -69412,121 +69469,6 @@
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
-                "v.0.dn",
-                "v.0.dt",
-                "v.0.mp",
-                "v.0.sd"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "NL",
-            "Description": [
-                {
-                    "desc": "A vaccination is considered to be protective at the earliest 14 days after the second vaccination date.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Een vaccinatie wordt vanaf 14 dagen na de tweede vaccinatiedatum als beschermend aangemerkt.",
-                    "lang": "nl"
-                },
-                {
-                    "desc": "Eine Impfung gilt ab fr\u00fchestens 14 Tage nach dem zweiten Impftermin als sch\u00fctzend.",
-                    "lang": "de"
-                },
-                {
-                    "desc": "Une vaccination est consid\u00e9r\u00e9e comme protectrice au plus t\u00f4t \u00e0 partir de 14 jours apr\u00e8s la deuxi\u00e8me date de vaccination..",
-                    "lang": "fr"
-                },
-                {
-                    "desc": "Una vacuna se considera protectora a partir de los 14 d\u00edas posteriores a la fecha de la segunda vacunaci\u00f3n.",
-                    "lang": "es"
-                },
-                {
-                    "desc": "Una vaccinazione \u00e8 considerata protettiva a partire da 14 giorni dopo la seconda data di vaccinazione.",
-                    "lang": "it"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-NL-0005",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        "if": [
-                            {
-                                "===": [
-                                    {
-                                        "var": "payload.v.0.mp"
-                                    },
-                                    "EU/1/20/1525"
-                                ]
-                            },
-                            true,
-                            {
-                                "if": [
-                                    {
-                                        "and": [
-                                            {
-                                                "===": [
-                                                    {
-                                                        "var": "payload.v.0.dn"
-                                                    },
-                                                    {
-                                                        "var": "payload.v.0.sd"
-                                                    }
-                                                ]
-                                            },
-                                            {
-                                                "<=": [
-                                                    {
-                                                        "var": "payload.v.0.dn"
-                                                    },
-                                                    2
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "not-before": [
-                                            {
-                                                "plusTime": [
-                                                    {
-                                                        "var": "external.validationClock"
-                                                    },
-                                                    0,
-                                                    "day"
-                                                ]
-                                            },
-                                            {
-                                                "plusTime": [
-                                                    {
-                                                        "var": "payload.v.0.dt"
-                                                    },
-                                                    14,
-                                                    "day"
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    true
-                                ]
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-02-01T00:00:00+01:00",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.3.0"
         },
         {
             "AffectedFields": [
@@ -73939,6 +73881,121 @@
         },
         {
             "AffectedFields": [
+                "v.0",
+                "v.0.dn",
+                "v.0.dt",
+                "v.0.mp",
+                "v.0.sd"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "NL",
+            "Description": [
+                {
+                    "desc": "A vaccination is considered to be protective at the earliest 14 days after the second vaccination date.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Een vaccinatie wordt vanaf 14 dagen na de tweede vaccinatiedatum als beschermend aangemerkt.",
+                    "lang": "nl"
+                },
+                {
+                    "desc": "Eine Impfung gilt ab fr\u00fchestens 14 Tage nach dem zweiten Impftermin als sch\u00fctzend.",
+                    "lang": "de"
+                },
+                {
+                    "desc": "Une vaccination est consid\u00e9r\u00e9e comme protectrice au plus t\u00f4t \u00e0 partir de 14 jours apr\u00e8s la deuxi\u00e8me date de vaccination..",
+                    "lang": "fr"
+                },
+                {
+                    "desc": "Una vacuna se considera protectora a partir de los 14 d\u00edas posteriores a la fecha de la segunda vacunaci\u00f3n.",
+                    "lang": "es"
+                },
+                {
+                    "desc": "Una vaccinazione \u00e8 considerata protettiva a partire da 14 giorni dopo la seconda data di vaccinazione.",
+                    "lang": "it"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-NL-0005",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        "if": [
+                            {
+                                "===": [
+                                    {
+                                        "var": "payload.v.0.mp"
+                                    },
+                                    "EU/1/20/1525"
+                                ]
+                            },
+                            true,
+                            {
+                                "if": [
+                                    {
+                                        "and": [
+                                            {
+                                                "===": [
+                                                    {
+                                                        "var": "payload.v.0.dn"
+                                                    },
+                                                    {
+                                                        "var": "payload.v.0.sd"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "<=": [
+                                                    {
+                                                        "var": "payload.v.0.dn"
+                                                    },
+                                                    2
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "not-before": [
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "external.validationClock"
+                                                    },
+                                                    0,
+                                                    "day"
+                                                ]
+                                            },
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "payload.v.0.dt"
+                                                    },
+                                                    14,
+                                                    "day"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    true
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-02-01T00:00:00+01:00",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.3.0"
+        },
+        {
+            "AffectedFields": [
                 "t.0",
                 "t.0.sc",
                 "t.0.tt"
@@ -74267,63 +74324,6 @@
                                 "LP217198-3",
                                 "LP6464-4"
                             ]
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-07-03T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
-                "v.0.dn",
-                "v.0.sd"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "DE",
-            "Description": [
-                {
-                    "desc": "The vaccination schedule must be complete (e.g., 1/1, 2/2).",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Die Impfreihe muss vollst\u00e4ndig sein (z.B. 1/1, 2/2).",
-                    "lang": "de"
-                },
-                {
-                    "desc": "La s\u00e9rie vaccinale doit \u00eatre compl\u00e8te (p. ex. 1/1, 2/2).",
-                    "lang": "fr"
-                },
-                {
-                    "desc": "La pauta de vacunaci\u00f3n debe estar completa (por ejemplo, 1/1, 2/2).",
-                    "lang": "es"
-                },
-                {
-                    "desc": "Il ciclo di vaccinazione deve essere stato completato (ad es. 1/1, 2/2).",
-                    "lang": "it"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-DE-0001",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        ">=": [
-                            {
-                                "var": "payload.v.0.dn"
-                            },
-                            {
-                                "var": "payload.v.0.sd"
-                            }
                         ]
                     },
                     true
@@ -76609,68 +76609,6 @@
             "Type": "Acceptance",
             "ValidFrom": "2021-07-26T00:00:00Z",
             "ValidTo": "2030-07-26T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
-                "v.0.mp",
-                "v.0.dt"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "GF",
-            "Description": [
-                {
-                    "desc": "With Jansen vaccine, a finished vaccination course is considered protective earliest from 28 days after the date of the last vaccination.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Avec le vaccin Janssen, le sch\u00e9ma vaccinal est consid\u00e9r\u00e9 comme complet 28 jours apr\u00e8s la date de la derni\u00e8re injection.",
-                    "lang": "fr"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-GF-0005",
-            "Logic": {
-                "if": [
-                    {
-                        "===": [
-                            {
-                                "var": "payload.v.0.mp"
-                            },
-                            "EU/1/20/1525"
-                        ]
-                    },
-                    {
-                        "not-before": [
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "external.validationClock"
-                                    },
-                                    0,
-                                    "day"
-                                ]
-                            },
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "payload.v.0.dt"
-                                    },
-                                    28,
-                                    "day"
-                                ]
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-01T00:00:00Z",
-            "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.0"
         },
         {
@@ -79664,6 +79602,63 @@
         {
             "AffectedFields": [
                 "v.0",
+                "v.0.dn",
+                "v.0.sd"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "DE",
+            "Description": [
+                {
+                    "desc": "The vaccination schedule must be complete (e.g., 1/1, 2/2).",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Die Impfreihe muss vollst\u00e4ndig sein (z.B. 1/1, 2/2).",
+                    "lang": "de"
+                },
+                {
+                    "desc": "La s\u00e9rie vaccinale doit \u00eatre compl\u00e8te (p. ex. 1/1, 2/2).",
+                    "lang": "fr"
+                },
+                {
+                    "desc": "La pauta de vacunaci\u00f3n debe estar completa (por ejemplo, 1/1, 2/2).",
+                    "lang": "es"
+                },
+                {
+                    "desc": "Il ciclo di vaccinazione deve essere stato completato (ad es. 1/1, 2/2).",
+                    "lang": "it"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-DE-0001",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        ">=": [
+                            {
+                                "var": "payload.v.0.dn"
+                            },
+                            {
+                                "var": "payload.v.0.sd"
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-07-03T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
                 "v.0.mp",
                 "v.0.dt"
             ],
@@ -81795,6 +81790,68 @@
             "ValidFrom": "2022-02-12T12:00:00Z",
             "ValidTo": "2024-11-29T00:00:00Z",
             "Version": "3.1.0"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
+                "v.0.mp",
+                "v.0.dt"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "GF",
+            "Description": [
+                {
+                    "desc": "With Jansen vaccine, a finished vaccination course is considered protective earliest from 28 days after the date of the last vaccination.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Avec le vaccin Janssen, le sch\u00e9ma vaccinal est consid\u00e9r\u00e9 comme complet 28 jours apr\u00e8s la date de la derni\u00e8re injection.",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-GF-0005",
+            "Logic": {
+                "if": [
+                    {
+                        "===": [
+                            {
+                                "var": "payload.v.0.mp"
+                            },
+                            "EU/1/20/1525"
+                        ]
+                    },
+                    {
+                        "not-before": [
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "external.validationClock"
+                                    },
+                                    0,
+                                    "day"
+                                ]
+                            },
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "payload.v.0.dt"
+                                    },
+                                    28,
+                                    "day"
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-01T00:00:00Z",
+            "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
         },
         {
             "AffectedFields": [
@@ -84591,105 +84648,6 @@
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
-                "v.0.dn",
-                "v.0.sd",
-                "v.0.mp",
-                "v.0.dt"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "CZ",
-            "Description": [
-                {
-                    "desc": "Vaccination COVID-19 Vaccine Janssen must must be older than 14 days",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Od dokon\u010den\u00e9ho o\u010dkov\u00e1n\u00ed COVID-19 Vaccine Janssen mus\u00ed uplynout alespo\u0148 14 dn\u016f",
-                    "lang": "cs"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-CZ-0022",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        "if": [
-                            {
-                                "and": [
-                                    {
-                                        ">=": [
-                                            {
-                                                "var": "payload.v.0.dn"
-                                            },
-                                            {
-                                                "var": "payload.v.0.sd"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "===": [
-                                            {
-                                                "var": "payload.v.0.mp"
-                                            },
-                                            "EU/1/20/1525"
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "if": [
-                                    {
-                                        ">": [
-                                            {
-                                                "var": "payload.v.0.dn"
-                                            },
-                                            1
-                                        ]
-                                    },
-                                    true,
-                                    {
-                                        "not-before": [
-                                            {
-                                                "plusTime": [
-                                                    {
-                                                        "var": "external.validationClock"
-                                                    },
-                                                    0,
-                                                    "day"
-                                                ]
-                                            },
-                                            {
-                                                "plusTime": [
-                                                    {
-                                                        "var": "payload.v.0.dt"
-                                                    },
-                                                    14,
-                                                    "day"
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            true
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-02-27T23:00:00Z",
-            "ValidTo": "2032-02-27T23:00:00Z",
-            "Version": "6.0.0"
         },
         {
             "AffectedFields": [
@@ -89498,38 +89456,6 @@
         },
         {
             "AffectedFields": [
-                "r.1"
-            ],
-            "CertificateType": "Recovery",
-            "Country": "_C",
-            "Description": [
-                {
-                    "desc": " Recovery format is not EU standard.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Le format li\u00e9 au r\u00e9tablissement n'est pas au standard UE.",
-                    "lang": "fr"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "RR-FR_C-0000",
-            "Logic": {
-                "!": [
-                    {
-                        "var": "payload.r.1"
-                    }
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-01T00:00:00Z",
-            "ValidTo": "2030-10-01T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
                 "t.0.tg",
                 "v.0.tg"
             ],
@@ -89589,6 +89515,105 @@
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.1"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
+                "v.0.dn",
+                "v.0.sd",
+                "v.0.mp",
+                "v.0.dt"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "CZ",
+            "Description": [
+                {
+                    "desc": "Vaccination COVID-19 Vaccine Janssen must must be older than 14 days",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Od dokon\u010den\u00e9ho o\u010dkov\u00e1n\u00ed COVID-19 Vaccine Janssen mus\u00ed uplynout alespo\u0148 14 dn\u016f",
+                    "lang": "cs"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-CZ-0022",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        "if": [
+                            {
+                                "and": [
+                                    {
+                                        ">=": [
+                                            {
+                                                "var": "payload.v.0.dn"
+                                            },
+                                            {
+                                                "var": "payload.v.0.sd"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "===": [
+                                            {
+                                                "var": "payload.v.0.mp"
+                                            },
+                                            "EU/1/20/1525"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "if": [
+                                    {
+                                        ">": [
+                                            {
+                                                "var": "payload.v.0.dn"
+                                            },
+                                            1
+                                        ]
+                                    },
+                                    true,
+                                    {
+                                        "not-before": [
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "external.validationClock"
+                                                    },
+                                                    0,
+                                                    "day"
+                                                ]
+                                            },
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "payload.v.0.dt"
+                                                    },
+                                                    14,
+                                                    "day"
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            true
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-02-27T23:00:00Z",
+            "ValidTo": "2032-02-27T23:00:00Z",
+            "Version": "6.0.0"
         },
         {
             "AffectedFields": [
@@ -92911,42 +92936,6 @@
         },
         {
             "AffectedFields": [
-                "v.0",
-                "v.0.ma"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "_F",
-            "Description": [
-                {
-                    "desc": "Only manufacturers of vaccines that have been approved by the ANSM are allowed.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Seuls les fabricants des vacins qui ont \u00e9t\u00e9 approuv\u00e9s par l'ANSM, sont autoris\u00e9s.",
-                    "lang": "fr"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-PF_F-0002",
-            "Logic": {
-                "in": [
-                    {
-                        "var": "payload.v.0.ma"
-                    },
-                    {
-                        "var": "external.valueSets.vaccines-covid-19-auth-holders"
-                    }
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-01T00:00:00Z",
-            "ValidTo": "2030-10-01T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
                 "t.1"
             ],
             "CertificateType": "Test",
@@ -94515,6 +94504,38 @@
                     },
                     {
                         "var": "external.valueSets.covid-19-lab-test-type"
+                    }
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-01T00:00:00Z",
+            "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "r.1"
+            ],
+            "CertificateType": "Recovery",
+            "Country": "_C",
+            "Description": [
+                {
+                    "desc": " Recovery format is not EU standard.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Le format li\u00e9 au r\u00e9tablissement n'est pas au standard UE.",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "RR-FR_C-0000",
+            "Logic": {
+                "!": [
+                    {
+                        "var": "payload.r.1"
                     }
                 ]
             },
@@ -97888,6 +97909,42 @@
         },
         {
             "AffectedFields": [
+                "v.0",
+                "v.0.ma"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "_F",
+            "Description": [
+                {
+                    "desc": "Only manufacturers of vaccines that have been approved by the ANSM are allowed.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Seuls les fabricants des vacins qui ont \u00e9t\u00e9 approuv\u00e9s par l'ANSM, sont autoris\u00e9s.",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-PF_F-0002",
+            "Logic": {
+                "in": [
+                    {
+                        "var": "payload.v.0.ma"
+                    },
+                    {
+                        "var": "external.valueSets.vaccines-covid-19-auth-holders"
+                    }
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-01T00:00:00Z",
+            "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
                 "t.1"
             ],
             "CertificateType": "Test",
@@ -99583,76 +99640,6 @@
             "ValidFrom": "2022-02-18T12:00:00Z",
             "ValidTo": "2030-06-01T00:00:00Z",
             "Version": "1.0.1"
-        },
-        {
-            "AffectedFields": [
-                "t.0",
-                "t.0.sc",
-                "t.0.tt"
-            ],
-            "CertificateType": "General",
-            "Country": "TG",
-            "Description": [
-                {
-                    "desc": "The sample for an NAA test (e.g., PCR) must have been taken no longer than 7 days ago.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Le pr\u00e9l\u00e8vement pour un test TAN (p. ex. PCR) ne doit pas dater de plus de 7 jours.",
-                    "lang": "fr"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "2.0.1",
-            "Identifier": "GR-TG-0001",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.t.0"
-                    },
-                    {
-                        "if": [
-                            {
-                                "===": [
-                                    {
-                                        "var": "payload.t.0.tt"
-                                    },
-                                    "LP6464-4"
-                                ]
-                            },
-                            {
-                                "not-after": [
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "external.validationClock"
-                                            },
-                                            0,
-                                            "day"
-                                        ]
-                                    },
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "payload.t.0.sc"
-                                            },
-                                            7,
-                                            "day"
-                                        ]
-                                    }
-                                ]
-                            },
-                            true
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-11-27T22:20:15Z",
-            "ValidTo": "2025-11-26T22:20:15Z",
-            "Version": "1.0.0"
         },
         {
             "AffectedFields": [
@@ -102982,6 +102969,76 @@
             "ValidFrom": "2022-02-27T23:00:00Z",
             "ValidTo": "2032-02-27T23:00:00Z",
             "Version": "6.0.0"
+        },
+        {
+            "AffectedFields": [
+                "t.0",
+                "t.0.sc",
+                "t.0.tt"
+            ],
+            "CertificateType": "General",
+            "Country": "TG",
+            "Description": [
+                {
+                    "desc": "The sample for an NAA test (e.g., PCR) must have been taken no longer than 7 days ago.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Le pr\u00e9l\u00e8vement pour un test TAN (p. ex. PCR) ne doit pas dater de plus de 7 jours.",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "2.0.1",
+            "Identifier": "GR-TG-0001",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.t.0"
+                    },
+                    {
+                        "if": [
+                            {
+                                "===": [
+                                    {
+                                        "var": "payload.t.0.tt"
+                                    },
+                                    "LP6464-4"
+                                ]
+                            },
+                            {
+                                "not-after": [
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "external.validationClock"
+                                            },
+                                            0,
+                                            "day"
+                                        ]
+                                    },
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "payload.t.0.sc"
+                                            },
+                                            7,
+                                            "day"
+                                        ]
+                                    }
+                                ]
+                            },
+                            true
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-11-27T22:20:15Z",
+            "ValidTo": "2025-11-26T22:20:15Z",
+            "Version": "1.0.0"
         },
         {
             "AffectedFields": [
