@@ -5571,50 +5571,6 @@
         },
         {
             "AffectedFields": [
-                "r.0",
-                "r.0.tg"
-            ],
-            "CertificateType": "Recovery",
-            "Country": "LV",
-            "Description": [
-                {
-                    "desc": "P\u0101rslimo\u0161anas sertifik\u0101ts ir izsniegts par Covid-19 saslim\u0161anu",
-                    "lang": "lv"
-                },
-                {
-                    "desc": "Disease or agent targeted is ICD-10 or SNOMED CT (GPS) 840539006",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "RR-LV-0001",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.r.0"
-                    },
-                    {
-                        "in": [
-                            {
-                                "var": "payload.r.0.tg"
-                            },
-                            [
-                                "840539006"
-                            ]
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-01-10T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
                 "r",
                 "t",
                 "v"
@@ -7413,6 +7369,50 @@
             "Type": "Acceptance",
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "r.0",
+                "r.0.tg"
+            ],
+            "CertificateType": "Recovery",
+            "Country": "LV",
+            "Description": [
+                {
+                    "desc": "P\u0101rslimo\u0161anas sertifik\u0101ts ir izsniegts par Covid-19 saslim\u0161anu",
+                    "lang": "lv"
+                },
+                {
+                    "desc": "Disease or agent targeted is ICD-10 or SNOMED CT (GPS) 840539006",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "RR-LV-0001",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.r.0"
+                    },
+                    {
+                        "in": [
+                            {
+                                "var": "payload.r.0.tg"
+                            },
+                            [
+                                "840539006"
+                            ]
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-01-10T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
             "Version": "1.0.0"
         },
         {
@@ -20903,48 +20903,6 @@
         },
         {
             "AffectedFields": [
-                "t.0",
-                "t.0.tr"
-            ],
-            "CertificateType": "Test",
-            "Country": "LV",
-            "Description": [
-                {
-                    "desc": "Testa rezult\u0101ts ir negat\u012bvs",
-                    "lang": "lv"
-                },
-                {
-                    "desc": "The test result is Not Detected",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-LV-0004",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.t.0"
-                    },
-                    {
-                        "===": [
-                            {
-                                "var": "payload.t.0.tr"
-                            },
-                            "260415000"
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-01-10T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
                 "t.1"
             ],
             "CertificateType": "Test",
@@ -22689,6 +22647,48 @@
             "Type": "Acceptance",
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "t.0",
+                "t.0.tr"
+            ],
+            "CertificateType": "Test",
+            "Country": "LV",
+            "Description": [
+                {
+                    "desc": "Testa rezult\u0101ts ir negat\u012bvs",
+                    "lang": "lv"
+                },
+                {
+                    "desc": "The test result is Not Detected",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-LV-0004",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.t.0"
+                    },
+                    {
+                        "===": [
+                            {
+                                "var": "payload.t.0.tr"
+                            },
+                            "260415000"
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-01-10T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
             "Version": "1.0.0"
         },
         {
@@ -25246,60 +25246,6 @@
         },
         {
             "AffectedFields": [
-                "v.0",
-                "v.0.sd"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "LV",
-            "Description": [
-                {
-                    "desc": "Devu skaits pilnam vakcin\u0101cijas ciklam ir robe\u017e\u0101s no 1 l\u012bdz 12",
-                    "lang": "lv"
-                },
-                {
-                    "desc": "Number of vaccine vaccination doses for full vaccination cycle is between 1 and 12",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-LV-0006",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        "and": [
-                            {
-                                ">=": [
-                                    {
-                                        "var": "payload.v.0.sd"
-                                    },
-                                    1
-                                ]
-                            },
-                            {
-                                "<=": [
-                                    {
-                                        "var": "payload.v.0.sd"
-                                    },
-                                    12
-                                ]
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-01-10T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
                 "v.1"
             ],
             "CertificateType": "Vaccination",
@@ -27562,6 +27508,60 @@
             "Type": "Acceptance",
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
+                "v.0.sd"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "LV",
+            "Description": [
+                {
+                    "desc": "Devu skaits pilnam vakcin\u0101cijas ciklam ir robe\u017e\u0101s no 1 l\u012bdz 12",
+                    "lang": "lv"
+                },
+                {
+                    "desc": "Number of vaccine vaccination doses for full vaccination cycle is between 1 and 12",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-LV-0006",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        "and": [
+                            {
+                                ">=": [
+                                    {
+                                        "var": "payload.v.0.sd"
+                                    },
+                                    1
+                                ]
+                            },
+                            {
+                                "<=": [
+                                    {
+                                        "var": "payload.v.0.sd"
+                                    },
+                                    12
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-01-10T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
             "Version": "1.0.0"
         },
         {
@@ -30364,52 +30364,6 @@
         {
             "AffectedFields": [
                 "v.0",
-                "v.0.vp"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "LV",
-            "Description": [
-                {
-                    "desc": "Vakcin\u0101cija ir veikta ar apstiprin\u0101tu vakc\u012bnas veidu: mRNA vai antig\u0113na vakc\u012bnu.",
-                    "lang": "lv"
-                },
-                {
-                    "desc": "Vaccine/prophylaxis is 1119349007 COVID-19 mRNA vaccine OR 1119305005 COVID-19 antigen vaccine.",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-LV-0003",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        "in": [
-                            {
-                                "var": "payload.v.0.vp"
-                            },
-                            [
-                                "1119349007",
-                                "1119305005",
-                                "J07BX03"
-                            ]
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-01-10T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
                 "v.0.mp",
                 "v.0.dt"
             ],
@@ -32342,6 +32296,52 @@
         },
         {
             "AffectedFields": [
+                "v.0",
+                "v.0.vp"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "LV",
+            "Description": [
+                {
+                    "desc": "Vakcin\u0101cija ir veikta ar apstiprin\u0101tu vakc\u012bnas veidu: mRNA vai antig\u0113na vakc\u012bnu.",
+                    "lang": "lv"
+                },
+                {
+                    "desc": "Vaccine/prophylaxis is 1119349007 COVID-19 mRNA vaccine OR 1119305005 COVID-19 antigen vaccine.",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-LV-0003",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        "in": [
+                            {
+                                "var": "payload.v.0.vp"
+                            },
+                            [
+                                "1119349007",
+                                "1119305005",
+                                "J07BX03"
+                            ]
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-01-10T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
                 "t",
                 "v"
             ],
@@ -32493,6 +32493,227 @@
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
+                "v.0.dn",
+                "v.0.sd",
+                "v.0.mp",
+                "v.0.dt"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "LV",
+            "Description": [
+                {
+                    "desc": "Kop\u0161 vakcin\u0101cijas pamatkursa pabeig\u0161anas pag\u0101ju\u0161as vismaz 14 dienas, bet ne vair\u0101k k\u0101 270 dienas. Balstvakcin\u0101cijas sertifik\u0101ts ir der\u012bgs s\u0101kot ar balstvakc\u012bnas sa\u0146em\u0161anas dienu un ir beztermi\u0146a.",
+                    "lang": "lv"
+                },
+                {
+                    "desc": "At least 14 days must have elapsed since completing the primary course of immunization but not more than 270. A booster shot or vaccination of someone who recovered from COVID-19 is valid immediately as long as it is clearly identified as such.",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-LV-0010",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        "if": [
+                            {
+                                "and": [
+                                    {
+                                        "not-before": [
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "external.validationClock"
+                                                    },
+                                                    0,
+                                                    "day"
+                                                ]
+                                            },
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "payload.v.0.dt"
+                                                    },
+                                                    15,
+                                                    "day"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "before": [
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "external.validationClock"
+                                                    },
+                                                    0,
+                                                    "day"
+                                                ]
+                                            },
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "payload.v.0.dt"
+                                                    },
+                                                    270,
+                                                    "day"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "and": [
+                                            {
+                                                "<=": [
+                                                    {
+                                                        "var": "payload.v.0.dn"
+                                                    },
+                                                    2
+                                                ]
+                                            },
+                                            {
+                                                "===": [
+                                                    {
+                                                        "var": "payload.v.0.dn"
+                                                    },
+                                                    {
+                                                        "var": "payload.v.0.sd"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            true,
+                            {
+                                "if": [
+                                    {
+                                        "and": [
+                                            {
+                                                ">=": [
+                                                    {
+                                                        "var": "payload.v.0.dn"
+                                                    },
+                                                    3
+                                                ]
+                                            },
+                                            {
+                                                ">=": [
+                                                    {
+                                                        "var": "payload.v.0.dn"
+                                                    },
+                                                    {
+                                                        "var": "payload.v.0.sd"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    true,
+                                    {
+                                        "if": [
+                                            {
+                                                "and": [
+                                                    {
+                                                        "and": [
+                                                            {
+                                                                ">=": [
+                                                                    {
+                                                                        "var": "payload.v.0.dn"
+                                                                    },
+                                                                    2
+                                                                ]
+                                                            },
+                                                            {
+                                                                ">=": [
+                                                                    {
+                                                                        "var": "payload.v.0.dn"
+                                                                    },
+                                                                    {
+                                                                        "var": "payload.v.0.sd"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "===": [
+                                                            {
+                                                                "var": "payload.v.0.mp"
+                                                            },
+                                                            "EU/1/20/1525"
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            true,
+                                            {
+                                                "and": [
+                                                    {
+                                                        "and": [
+                                                            {
+                                                                "===": [
+                                                                    {
+                                                                        "var": "payload.v.0.sd"
+                                                                    },
+                                                                    1
+                                                                ]
+                                                            },
+                                                            {
+                                                                "===": [
+                                                                    {
+                                                                        "var": "payload.v.0.dn"
+                                                                    },
+                                                                    2
+                                                                ]
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "in": [
+                                                            {
+                                                                "var": "payload.v.0.mp"
+                                                            },
+                                                            [
+                                                                "EU/1/20/1528",
+                                                                "EU/1/20/1507",
+                                                                "EU/1/21/1529",
+                                                                "EU/1/20/1525",
+                                                                "Covishield",
+                                                                "BBIBP-CorV",
+                                                                "CoronaVac",
+                                                                "Covaxin",
+                                                                "NVX-CoV2373",
+                                                                "EU/1/21/1618"
+                                                            ]
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-02-28T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.1.1"
         },
         {
             "AffectedFields": [
@@ -33552,227 +33773,6 @@
             "ValidFrom": "2022-02-18T12:00:00Z",
             "ValidTo": "2030-08-08T00:00:00Z",
             "Version": "1.0.1"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
-                "v.0.dn",
-                "v.0.sd",
-                "v.0.mp",
-                "v.0.dt"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "LV",
-            "Description": [
-                {
-                    "desc": "Kop\u0161 vakcin\u0101cijas pamatkursa pabeig\u0161anas pag\u0101ju\u0161as vismaz 14 dienas, bet ne vair\u0101k k\u0101 270 dienas. Balstvakcin\u0101cijas sertifik\u0101ts ir der\u012bgs s\u0101kot ar balstvakc\u012bnas sa\u0146em\u0161anas dienu un ir beztermi\u0146a.",
-                    "lang": "lv"
-                },
-                {
-                    "desc": "At least 14 days must have elapsed since completing the primary course of immunization but not more than 270. A booster shot or vaccination of someone who recovered from COVID-19 is valid immediately as long as it is clearly identified as such.",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-LV-0010",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        "if": [
-                            {
-                                "and": [
-                                    {
-                                        "not-before": [
-                                            {
-                                                "plusTime": [
-                                                    {
-                                                        "var": "external.validationClock"
-                                                    },
-                                                    0,
-                                                    "day"
-                                                ]
-                                            },
-                                            {
-                                                "plusTime": [
-                                                    {
-                                                        "var": "payload.v.0.dt"
-                                                    },
-                                                    15,
-                                                    "day"
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "before": [
-                                            {
-                                                "plusTime": [
-                                                    {
-                                                        "var": "external.validationClock"
-                                                    },
-                                                    0,
-                                                    "day"
-                                                ]
-                                            },
-                                            {
-                                                "plusTime": [
-                                                    {
-                                                        "var": "payload.v.0.dt"
-                                                    },
-                                                    270,
-                                                    "day"
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "and": [
-                                            {
-                                                "<=": [
-                                                    {
-                                                        "var": "payload.v.0.dn"
-                                                    },
-                                                    2
-                                                ]
-                                            },
-                                            {
-                                                "===": [
-                                                    {
-                                                        "var": "payload.v.0.dn"
-                                                    },
-                                                    {
-                                                        "var": "payload.v.0.sd"
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            true,
-                            {
-                                "if": [
-                                    {
-                                        "and": [
-                                            {
-                                                ">=": [
-                                                    {
-                                                        "var": "payload.v.0.dn"
-                                                    },
-                                                    3
-                                                ]
-                                            },
-                                            {
-                                                ">=": [
-                                                    {
-                                                        "var": "payload.v.0.dn"
-                                                    },
-                                                    {
-                                                        "var": "payload.v.0.sd"
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    true,
-                                    {
-                                        "if": [
-                                            {
-                                                "and": [
-                                                    {
-                                                        "and": [
-                                                            {
-                                                                ">=": [
-                                                                    {
-                                                                        "var": "payload.v.0.dn"
-                                                                    },
-                                                                    2
-                                                                ]
-                                                            },
-                                                            {
-                                                                ">=": [
-                                                                    {
-                                                                        "var": "payload.v.0.dn"
-                                                                    },
-                                                                    {
-                                                                        "var": "payload.v.0.sd"
-                                                                    }
-                                                                ]
-                                                            }
-                                                        ]
-                                                    },
-                                                    {
-                                                        "===": [
-                                                            {
-                                                                "var": "payload.v.0.mp"
-                                                            },
-                                                            "EU/1/20/1525"
-                                                        ]
-                                                    }
-                                                ]
-                                            },
-                                            true,
-                                            {
-                                                "and": [
-                                                    {
-                                                        "and": [
-                                                            {
-                                                                "===": [
-                                                                    {
-                                                                        "var": "payload.v.0.sd"
-                                                                    },
-                                                                    1
-                                                                ]
-                                                            },
-                                                            {
-                                                                "===": [
-                                                                    {
-                                                                        "var": "payload.v.0.dn"
-                                                                    },
-                                                                    2
-                                                                ]
-                                                            }
-                                                        ]
-                                                    },
-                                                    {
-                                                        "in": [
-                                                            {
-                                                                "var": "payload.v.0.mp"
-                                                            },
-                                                            [
-                                                                "EU/1/20/1528",
-                                                                "EU/1/20/1507",
-                                                                "EU/1/21/1529",
-                                                                "EU/1/20/1525",
-                                                                "Covishield",
-                                                                "BBIBP-CorV",
-                                                                "CoronaVac",
-                                                                "Covaxin",
-                                                                "NVX-CoV2373",
-                                                                "EU/1/21/1618"
-                                                            ]
-                                                        ]
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-02-28T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.1.1"
         },
         {
             "AffectedFields": [
@@ -51214,115 +51214,6 @@
         {
             "AffectedFields": [
                 "t.0",
-                "t.0.tg"
-            ],
-            "CertificateType": "Test",
-            "Country": "LV",
-            "Description": [
-                {
-                    "desc": "Test\u0113\u0161anas sertifik\u0101ts ir izsniegts par Covid-19 saslim\u0161anu",
-                    "lang": "lv"
-                },
-                {
-                    "desc": "Disease or agent targeted is ICD-10 or SNOMED CT (GPS) 840539006",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-LV-0002",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.t.0"
-                    },
-                    {
-                        "in": [
-                            {
-                                "var": "payload.t.0.tg"
-                            },
-                            [
-                                "840539006"
-                            ]
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-01-10T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "r.0",
-                "r.0.fr"
-            ],
-            "CertificateType": "Recovery",
-            "Country": "LV",
-            "Description": [
-                {
-                    "desc": "P\u0101rslimo\u0161anas sertifik\u0101ts ir sp\u0113k\u0101",
-                    "lang": "lv"
-                },
-                {
-                    "desc": "Recovery certificate is valid",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "RR-LV-0003",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.r.0"
-                    },
-                    {
-                        "not-after": [
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "payload.r.0.fr"
-                                    },
-                                    11,
-                                    "day"
-                                ]
-                            },
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "external.validationClock"
-                                    },
-                                    0,
-                                    "day"
-                                ]
-                            },
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "payload.r.0.fr"
-                                    },
-                                    180,
-                                    "day"
-                                ]
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-01-10T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "t.0",
                 "t.0.tt"
             ],
             "CertificateType": "Test",
@@ -53059,6 +52950,50 @@
         },
         {
             "AffectedFields": [
+                "t.0",
+                "t.0.tg"
+            ],
+            "CertificateType": "Test",
+            "Country": "LV",
+            "Description": [
+                {
+                    "desc": "Test\u0113\u0161anas sertifik\u0101ts ir izsniegts par Covid-19 saslim\u0161anu",
+                    "lang": "lv"
+                },
+                {
+                    "desc": "Disease or agent targeted is ICD-10 or SNOMED CT (GPS) 840539006",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-LV-0002",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.t.0"
+                    },
+                    {
+                        "in": [
+                            {
+                                "var": "payload.t.0.tg"
+                            },
+                            [
+                                "840539006"
+                            ]
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-01-10T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
                 "t.1"
             ],
             "CertificateType": "Test",
@@ -53185,6 +53120,71 @@
             "Type": "Acceptance",
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "r.0",
+                "r.0.fr"
+            ],
+            "CertificateType": "Recovery",
+            "Country": "LV",
+            "Description": [
+                {
+                    "desc": "P\u0101rslimo\u0161anas sertifik\u0101ts ir sp\u0113k\u0101",
+                    "lang": "lv"
+                },
+                {
+                    "desc": "Recovery certificate is valid",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "RR-LV-0003",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.r.0"
+                    },
+                    {
+                        "not-after": [
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "payload.r.0.fr"
+                                    },
+                                    11,
+                                    "day"
+                                ]
+                            },
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "external.validationClock"
+                                    },
+                                    0,
+                                    "day"
+                                ]
+                            },
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "payload.r.0.fr"
+                                    },
+                                    180,
+                                    "day"
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-01-10T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
             "Version": "1.0.0"
         },
         {
@@ -60785,76 +60785,6 @@
         },
         {
             "AffectedFields": [
-                "t.0",
-                "t.0.sc",
-                "t.0.tt"
-            ],
-            "CertificateType": "Test",
-            "Country": "LV",
-            "Description": [
-                {
-                    "desc": "Kop\u0161 RAT testa veik\u0161anas nav pag\u0101jis vair\u0101k k\u0101 48 stundas",
-                    "lang": "lv"
-                },
-                {
-                    "desc": "The sample for an antigen test (e.g., rapid test) must have been taken no longer than 48 hours ago.",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-LV-0028",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.t.0"
-                    },
-                    {
-                        "if": [
-                            {
-                                "===": [
-                                    {
-                                        "var": "payload.t.0.tt"
-                                    },
-                                    "LP217198-3"
-                                ]
-                            },
-                            {
-                                "not-after": [
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "external.validationClock"
-                                            },
-                                            0,
-                                            "day"
-                                        ]
-                                    },
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "payload.t.0.sc"
-                                            },
-                                            48,
-                                            "hour"
-                                        ]
-                                    }
-                                ]
-                            },
-                            true
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-01-10T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
                 "v.0",
                 "v.0.dn",
                 "v.0.sd"
@@ -62608,6 +62538,59 @@
         },
         {
             "AffectedFields": [
+                "v.0",
+                "v.0.mp"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "LV",
+            "Description": [
+                {
+                    "desc": "Vakcin\u0101cija ir veikta ar Latvij\u0101 atz\u012btu Covid-19 vakc\u012bnas medikamentu vai no PVO saraksta.",
+                    "lang": "lv"
+                },
+                {
+                    "desc": "Vaccine medicinal product is approved in Latvia or by WHO.",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-LV-0004",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        "in": [
+                            {
+                                "var": "payload.v.0.mp"
+                            },
+                            [
+                                "EU/1/20/1528",
+                                "EU/1/21/1529",
+                                "EU/1/20/1507",
+                                "EU/1/20/1525",
+                                "Covishield",
+                                "BBIBP-CorV",
+                                "CoronaVac",
+                                "Covaxin",
+                                "NVX-CoV2373",
+                                "EU/1/21/1618"
+                            ]
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-02-28T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.1"
+        },
+        {
+            "AffectedFields": [
                 "t.0",
                 "t.0.sc",
                 "t.0.tt"
@@ -62954,6 +62937,76 @@
             "Type": "Acceptance",
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "t.0",
+                "t.0.sc",
+                "t.0.tt"
+            ],
+            "CertificateType": "Test",
+            "Country": "LV",
+            "Description": [
+                {
+                    "desc": "Kop\u0161 RAT testa veik\u0161anas nav pag\u0101jis vair\u0101k k\u0101 48 stundas",
+                    "lang": "lv"
+                },
+                {
+                    "desc": "The sample for an antigen test (e.g., rapid test) must have been taken no longer than 48 hours ago.",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-LV-0028",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.t.0"
+                    },
+                    {
+                        "if": [
+                            {
+                                "===": [
+                                    {
+                                        "var": "payload.t.0.tt"
+                                    },
+                                    "LP217198-3"
+                                ]
+                            },
+                            {
+                                "not-after": [
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "external.validationClock"
+                                            },
+                                            0,
+                                            "day"
+                                        ]
+                                    },
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "payload.t.0.sc"
+                                            },
+                                            48,
+                                            "hour"
+                                        ]
+                                    }
+                                ]
+                            },
+                            true
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-01-10T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
             "Version": "1.0.0"
         },
         {
@@ -63882,59 +63935,6 @@
             "SchemaVersion": "1.0.0",
             "Type": "Acceptance",
             "ValidFrom": "2022-02-18T12:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.1"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
-                "v.0.mp"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "LV",
-            "Description": [
-                {
-                    "desc": "Vakcin\u0101cija ir veikta ar Latvij\u0101 atz\u012btu Covid-19 vakc\u012bnas medikamentu vai no PVO saraksta.",
-                    "lang": "lv"
-                },
-                {
-                    "desc": "Vaccine medicinal product is approved in Latvia or by WHO.",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-LV-0004",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        "in": [
-                            {
-                                "var": "payload.v.0.mp"
-                            },
-                            [
-                                "EU/1/20/1528",
-                                "EU/1/21/1529",
-                                "EU/1/20/1507",
-                                "EU/1/20/1525",
-                                "Covishield",
-                                "BBIBP-CorV",
-                                "CoronaVac",
-                                "Covaxin",
-                                "NVX-CoV2373",
-                                "EU/1/21/1618"
-                            ]
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-02-28T00:00:00Z",
             "ValidTo": "2030-06-01T00:00:00Z",
             "Version": "1.0.1"
         },
@@ -76550,50 +76550,6 @@
         {
             "AffectedFields": [
                 "v.0",
-                "v.0.tg"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "LV",
-            "Description": [
-                {
-                    "desc": "Vakcin\u0101cijas sertifik\u0101ts ir izsniegts par Covid-19 vakcin\u0101ciju.",
-                    "lang": "lv"
-                },
-                {
-                    "desc": "Disease or agent targeted is ICD-10 or SNOMED CT (GPS) 840539006.",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-LV-0002",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        "in": [
-                            {
-                                "var": "payload.v.0.tg"
-                            },
-                            [
-                                "840539006"
-                            ]
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-01-10T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
                 "v.0.dn",
                 "v.0.sd",
                 "v.0.dt"
@@ -78449,6 +78405,50 @@
             "Type": "Acceptance",
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
+                "v.0.tg"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "LV",
+            "Description": [
+                {
+                    "desc": "Vakcin\u0101cijas sertifik\u0101ts ir izsniegts par Covid-19 vakcin\u0101ciju.",
+                    "lang": "lv"
+                },
+                {
+                    "desc": "Disease or agent targeted is ICD-10 or SNOMED CT (GPS) 840539006.",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-LV-0002",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        "in": [
+                            {
+                                "var": "payload.v.0.tg"
+                            },
+                            [
+                                "840539006"
+                            ]
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-01-10T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
             "Version": "1.0.0"
         },
         {
@@ -96635,130 +96635,6 @@
         {
             "AffectedFields": [
                 "v.0",
-                "v.0.dn"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "LV",
-            "Description": [
-                {
-                    "desc": "Sa\u0146emt\u0101 vakc\u012bnas deva ir robe\u017e\u0101s no 1 l\u012bdz 12",
-                    "lang": "lv"
-                },
-                {
-                    "desc": "Number in a series of vaccinations is between 1 and 12",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-LV-0005",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        "and": [
-                            {
-                                ">=": [
-                                    {
-                                        "var": "payload.v.0.dn"
-                                    },
-                                    1
-                                ]
-                            },
-                            {
-                                "<=": [
-                                    {
-                                        "var": "payload.v.0.dn"
-                                    },
-                                    12
-                                ]
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-01-10T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "t.0",
-                "t.0.sc",
-                "t.0.tt"
-            ],
-            "CertificateType": "Test",
-            "Country": "LV",
-            "Description": [
-                {
-                    "desc": "Kop\u0161 NAAT testa veik\u0161anas nav pag\u0101jis vair\u0101k k\u0101 72 stundas",
-                    "lang": "lv"
-                },
-                {
-                    "desc": "The sample for an NAAT test (e.g., PCR) must have been taken no longer than 72 hours ago.",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-LV-0018",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.t.0"
-                    },
-                    {
-                        "if": [
-                            {
-                                "===": [
-                                    {
-                                        "var": "payload.t.0.tt"
-                                    },
-                                    "LP6464-4"
-                                ]
-                            },
-                            {
-                                "not-after": [
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "external.validationClock"
-                                            },
-                                            0,
-                                            "day"
-                                        ]
-                                    },
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "payload.t.0.sc"
-                                            },
-                                            72,
-                                            "hour"
-                                        ]
-                                    }
-                                ]
-                            },
-                            true
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-01-10T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
                 "v.0.dn",
                 "v.0.sd",
                 "v.0.dt"
@@ -98292,6 +98168,60 @@
         },
         {
             "AffectedFields": [
+                "v.0",
+                "v.0.dn"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "LV",
+            "Description": [
+                {
+                    "desc": "Sa\u0146emt\u0101 vakc\u012bnas deva ir robe\u017e\u0101s no 1 l\u012bdz 12",
+                    "lang": "lv"
+                },
+                {
+                    "desc": "Number in a series of vaccinations is between 1 and 12",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-LV-0005",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        "and": [
+                            {
+                                ">=": [
+                                    {
+                                        "var": "payload.v.0.dn"
+                                    },
+                                    1
+                                ]
+                            },
+                            {
+                                "<=": [
+                                    {
+                                        "var": "payload.v.0.dn"
+                                    },
+                                    12
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-01-10T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
                 "t.0",
                 "t.0.tr"
             ],
@@ -98634,6 +98564,76 @@
             "Type": "Acceptance",
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "t.0",
+                "t.0.sc",
+                "t.0.tt"
+            ],
+            "CertificateType": "Test",
+            "Country": "LV",
+            "Description": [
+                {
+                    "desc": "Kop\u0161 NAAT testa veik\u0161anas nav pag\u0101jis vair\u0101k k\u0101 72 stundas",
+                    "lang": "lv"
+                },
+                {
+                    "desc": "The sample for an NAAT test (e.g., PCR) must have been taken no longer than 72 hours ago.",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-LV-0018",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.t.0"
+                    },
+                    {
+                        "if": [
+                            {
+                                "===": [
+                                    {
+                                        "var": "payload.t.0.tt"
+                                    },
+                                    "LP6464-4"
+                                ]
+                            },
+                            {
+                                "not-after": [
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "external.validationClock"
+                                            },
+                                            0,
+                                            "day"
+                                        ]
+                                    },
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "payload.t.0.sc"
+                                            },
+                                            72,
+                                            "hour"
+                                        ]
+                                    }
+                                ]
+                            },
+                            true
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-01-10T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
             "Version": "1.0.0"
         },
         {
