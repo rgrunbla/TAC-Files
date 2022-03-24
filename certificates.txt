@@ -4897,6 +4897,51 @@ Certificate:
 Certificate:
     Data:
         Version: 3 (0x2)
+        Serial Number: 1632667123 (0x615085f3)
+        Signature Algorithm: ecdsa-with-SHA512
+        Issuer: C = GB, O = NHS Digital, CN = England DCC CSCA
+        Validity
+            Not Before: Mar 22 16:50:55 2022 GMT
+            Not After : Mar 22 17:20:55 2024 GMT
+        Subject: C = GB, O = NHS Digital, ST = England & Wales, CN = DSC-DCC-GB-ENG-05
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:97:37:f0:89:58:e4:f9:68:94:16:c0:c0:62:e1:
+                    5f:53:f7:1d:e7:94:5c:e5:da:cb:7d:a6:97:86:59:
+                    90:c0:76:69:3b:e0:b7:fa:6d:76:3b:89:1c:c6:44:
+                    ed:e7:50:78:c5:af:14:24:03:ed:6e:07:9b:2e:bd:
+                    50:73:9d:9b:49
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Issuer Alternative Name: 
+                email:pki@nhsx.nhs.uk, DNS:https://www.nhsx.nhs.uk/key-tools-and-info/public-key-infrastructures/csca, DirName:/L=GBR
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://pki.nhsx.nhs.uk/CRL/ENG_CSCA.crl
+                  URI:http://covid-status.service.nhsx.nhs.uk/CRL/ENG_CSCA.crl
+
+            X509v3 Private Key Usage Period: 
+                Not Before: Mar 22 16:50:55 2022 GMT, Not After: Sep 21 11:20:55 2022 GMT
+            X509v3 Authority Key Identifier: 
+                keyid:DA:2E:CE:C3:F7:3A:FB:F8:BE:10:73:A8:C4:F1:88:BD:2B:D4:F1:CA
+
+            X509v3 Subject Key Identifier: 
+                80:69:1E:A1:6B:25:2F:63:44:C7:46:D6:07:A5:99:79:CB:02:C6:7C
+    Signature Algorithm: ecdsa-with-SHA512
+         30:46:02:21:00:b5:5d:df:a5:5e:3f:d6:1c:04:a9:b4:21:d0:
+         72:14:15:86:c1:c7:34:cd:36:ac:f6:f7:d1:dc:ce:dc:22:c5:
+         6f:02:21:00:86:d5:bb:00:7c:e8:18:16:d9:5e:2a:a0:2c:e7:
+         12:d1:82:fd:1e:b8:7c:b6:15:1a:f1:66:60:95:d1:de:29:e8
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
         Serial Number:
             25:40:06:01:7a:71:1e:c5:35:4b:cd:8b:72:72:12:82:04:eb:65:87
         Signature Algorithm: ecdsa-with-SHA256
@@ -8258,6 +8303,51 @@ Certificate:
 Certificate:
     Data:
         Version: 3 (0x2)
+        Serial Number: 1632667126 (0x615085f6)
+        Signature Algorithm: ecdsa-with-SHA512
+        Issuer: C = GB, O = NHS Digital, CN = England DCC CSCA
+        Validity
+            Not Before: Mar 22 16:53:42 2022 GMT
+            Not After : Mar 22 17:23:42 2024 GMT
+        Subject: C = GB, O = NHS Digital, ST = Isle Of Man, CN = DSC-DCC-GB-IM-05
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:63:01:5b:de:2f:54:bd:f6:80:52:0a:e3:7f:0a:
+                    46:d2:27:de:df:bb:8e:2e:37:04:65:a3:3d:10:2c:
+                    93:3b:7d:11:43:90:d5:53:b6:ff:73:a0:51:cc:fc:
+                    1c:de:62:7b:9c:71:25:e1:ea:cc:3f:2d:f5:6e:03:
+                    6f:b4:78:7c:7e
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Issuer Alternative Name: 
+                email:pki@nhsx.nhs.uk, DNS:https://www.nhsx.nhs.uk/key-tools-and-info/public-key-infrastructures/csca, DirName:/L=GBR
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://pki.nhsx.nhs.uk/CRL/ENG_CSCA.crl
+                  URI:http://covid-status.service.nhsx.nhs.uk/CRL/ENG_CSCA.crl
+
+            X509v3 Private Key Usage Period: 
+                Not Before: Mar 22 16:53:42 2022 GMT, Not After: Sep 21 11:23:42 2022 GMT
+            X509v3 Authority Key Identifier: 
+                keyid:DA:2E:CE:C3:F7:3A:FB:F8:BE:10:73:A8:C4:F1:88:BD:2B:D4:F1:CA
+
+            X509v3 Subject Key Identifier: 
+                02:9B:B6:85:2A:AC:D9:42:5D:FB:09:B6:E3:23:2B:EF:0D:22:0F:04
+    Signature Algorithm: ecdsa-with-SHA512
+         30:46:02:21:00:db:fe:ea:62:66:1d:41:51:e6:71:80:28:4c:
+         9d:53:63:2a:06:99:4b:e6:f7:33:1e:03:b5:b8:9d:8d:13:b1:
+         b7:02:21:00:bc:95:f9:d6:ee:9f:56:97:30:d1:e1:1e:c8:25:
+         93:c7:44:57:25:7f:df:e8:b7:c1:86:4c:d6:99:8b:af:78:16
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
         Serial Number:
             79:65:d2:a9:4f:88:22:6a:28:0b:b5:e3:0a:32:22:79
         Signature Algorithm: sha256WithRSAEncryption
@@ -10923,6 +11013,51 @@ Certificate:
 Certificate:
     Data:
         Version: 3 (0x2)
+        Serial Number: 1632667125 (0x615085f5)
+        Signature Algorithm: ecdsa-with-SHA512
+        Issuer: C = GB, O = NHS Digital, CN = England DCC CSCA
+        Validity
+            Not Before: Mar 22 16:52:40 2022 GMT
+            Not After : Mar 22 17:22:40 2024 GMT
+        Subject: C = GB, O = NHS Digital, ST = Gibraltar, CN = DSC-DCC-GB-GI-04
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:e2:19:4a:a4:e1:5a:0f:1e:23:42:47:d7:24:21:
+                    eb:f3:41:16:dc:db:30:9f:cd:33:d5:1c:77:7b:94:
+                    91:87:53:8b:63:8b:bb:3c:0a:2c:3a:dd:f0:dc:af:
+                    e6:54:52:36:83:31:d4:3c:8b:74:ad:2a:43:37:28:
+                    ee:6a:81:33:1c
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Issuer Alternative Name: 
+                email:pki@nhsx.nhs.uk, DNS:https://www.nhsx.nhs.uk/key-tools-and-info/public-key-infrastructures/csca, DirName:/L=GBR
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://pki.nhsx.nhs.uk/CRL/ENG_CSCA.crl
+                  URI:http://covid-status.service.nhsx.nhs.uk/CRL/ENG_CSCA.crl
+
+            X509v3 Private Key Usage Period: 
+                Not Before: Mar 22 16:52:40 2022 GMT, Not After: Sep 21 11:22:40 2022 GMT
+            X509v3 Authority Key Identifier: 
+                keyid:DA:2E:CE:C3:F7:3A:FB:F8:BE:10:73:A8:C4:F1:88:BD:2B:D4:F1:CA
+
+            X509v3 Subject Key Identifier: 
+                47:CF:E5:2D:12:8D:5C:24:1D:FA:51:2F:60:9D:2F:02:01:C6:81:BD
+    Signature Algorithm: ecdsa-with-SHA512
+         30:44:02:20:42:f1:01:f5:d6:26:c4:97:78:73:f1:c2:9d:8e:
+         04:0e:b4:ee:0f:ff:06:9f:7a:a6:4a:3b:10:1c:02:7d:42:f6:
+         02:20:7a:a6:37:ed:ec:f8:68:ae:6c:af:c8:9c:e7:fa:eb:64:
+         b0:3d:54:3c:a9:56:fe:43:b4:61:ab:bf:f2:81:cd:db
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
         Serial Number:
             3b:2b:67:1a:b9:99:a3:4c:a9:e2:a7:34:80:bc:62:a4:9f:86:88:f3
         Signature Algorithm: sha256WithRSAEncryption
@@ -12447,6 +12582,51 @@ Certificate:
          dc:2f:70:c2:60:98:be:2b:7e:f7:02:f5:e3:e7:9b:f3:0a:45:
          94:af:a8:0c:ef:8c:6d:b4:6b:6c:9e:6b:88:71:7b:1f:73:ab:
          4b:c3:a4:16:94:9b:fa:2c
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 1632667127 (0x615085f7)
+        Signature Algorithm: ecdsa-with-SHA512
+        Issuer: C = GB, O = NHS Digital, CN = England DCC CSCA
+        Validity
+            Not Before: Mar 22 16:54:26 2022 GMT
+            Not After : Mar 22 17:24:26 2024 GMT
+        Subject: C = GB, O = NHS Digital, ST = Jersey, CN = DSC-DCC-GB-JE-04
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:9a:34:2b:d8:4f:b7:4f:aa:cd:30:41:90:35:32:
+                    21:25:97:6d:12:6b:f6:f5:29:1f:39:05:da:ca:78:
+                    20:d7:6d:d9:84:4c:e5:56:68:d3:94:c7:f5:49:0d:
+                    2e:6f:06:4b:94:22:17:7a:0a:31:59:8e:0f:6d:c4:
+                    df:55:30:c1:bb
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Issuer Alternative Name: 
+                email:pki@nhsx.nhs.uk, DNS:https://www.nhsx.nhs.uk/key-tools-and-info/public-key-infrastructures/csca, DirName:/L=GBR
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://pki.nhsx.nhs.uk/CRL/ENG_CSCA.crl
+                  URI:http://covid-status.service.nhsx.nhs.uk/CRL/ENG_CSCA.crl
+
+            X509v3 Private Key Usage Period: 
+                Not Before: Mar 22 16:54:26 2022 GMT, Not After: Sep 21 11:24:26 2022 GMT
+            X509v3 Authority Key Identifier: 
+                keyid:DA:2E:CE:C3:F7:3A:FB:F8:BE:10:73:A8:C4:F1:88:BD:2B:D4:F1:CA
+
+            X509v3 Subject Key Identifier: 
+                86:0A:E1:07:CC:54:A8:A4:D3:B1:2C:78:66:CB:23:AA:AE:3F:A1:16
+    Signature Algorithm: ecdsa-with-SHA512
+         30:45:02:21:00:bc:ca:5b:97:d2:44:4b:6e:28:e7:6b:c7:eb:
+         5b:48:40:0f:d0:17:2c:cb:17:2e:1c:32:10:52:f2:b6:c3:5b:
+         dd:02:20:4b:f4:a1:85:6d:f5:0d:82:b4:c5:28:75:67:de:c8:
+         bc:fa:84:11:93:09:f1:84:aa:20:f8:b1:db:76:24:8f:ad
 
 Certificate:
     Data:
@@ -20229,6 +20409,51 @@ Certificate:
          78:71:21:b1:a0:1e:20:d5:8e:09:18:f7:fc:6f:84:e2:67:de:
          f6:c6:b3:ee:9a:5d:a7:e6:a1:6f:aa:4c:bc:9c:6f:25:72:ea:
          ab:07:99:f8:6c:e7:aa:21
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 1632667124 (0x615085f4)
+        Signature Algorithm: ecdsa-with-SHA512
+        Issuer: C = GB, O = NHS Digital, CN = England DCC CSCA
+        Validity
+            Not Before: Mar 22 16:51:38 2022 GMT
+            Not After : Mar 22 17:21:38 2024 GMT
+        Subject: C = GB, O = NHS Digital, ST = Guernsey, CN = DSC-DCC-GB-GG-04
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:ec:a3:30:06:c7:dc:5d:46:88:05:50:9f:81:f9:
+                    3d:79:4d:95:ac:64:35:ac:3e:ed:29:9c:73:2d:19:
+                    dd:d9:82:31:63:2b:b8:90:3c:42:34:bb:86:ad:06:
+                    53:e6:16:76:c3:88:89:6e:10:92:2b:7d:0f:78:16:
+                    9d:52:b7:51:9d
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Issuer Alternative Name: 
+                email:pki@nhsx.nhs.uk, DNS:https://www.nhsx.nhs.uk/key-tools-and-info/public-key-infrastructures/csca, DirName:/L=GBR
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://pki.nhsx.nhs.uk/CRL/ENG_CSCA.crl
+                  URI:http://covid-status.service.nhsx.nhs.uk/CRL/ENG_CSCA.crl
+
+            X509v3 Private Key Usage Period: 
+                Not Before: Mar 22 16:51:38 2022 GMT, Not After: Sep 21 11:21:38 2022 GMT
+            X509v3 Authority Key Identifier: 
+                keyid:DA:2E:CE:C3:F7:3A:FB:F8:BE:10:73:A8:C4:F1:88:BD:2B:D4:F1:CA
+
+            X509v3 Subject Key Identifier: 
+                A6:74:55:7B:0C:BD:DC:B1:21:95:CA:9B:08:3E:5D:88:86:A2:0D:6D
+    Signature Algorithm: ecdsa-with-SHA512
+         30:45:02:21:00:fe:54:13:e8:f5:e5:ba:5d:a2:53:22:cf:56:
+         5f:f7:96:48:a1:29:48:88:41:af:1d:6c:1d:98:1f:35:c6:6d:
+         c1:02:20:07:bf:ea:70:84:89:db:fc:2d:e8:cf:16:f7:aa:e4:
+         4c:36:f2:e2:47:cc:b0:24:58:65:5a:6f:74:70:7d:31:15
 
 Certificate:
     Data:
