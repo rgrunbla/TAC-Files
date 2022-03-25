@@ -67014,6 +67014,38 @@
         },
         {
             "AffectedFields": [
+                "t.1"
+            ],
+            "CertificateType": "Test",
+            "Country": "WF",
+            "Description": [
+                {
+                    "desc": "Test format is not EU standard.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Le format li\u00e9 au test n'est pas au standard UE.",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-_RWF-0000",
+            "Logic": {
+                "!": [
+                    {
+                        "var": "payload.t.1"
+                    }
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-01T00:00:00Z",
+            "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
                 "t.0",
                 "t.0.ma",
                 "t.0.tt"
@@ -67131,47 +67163,6 @@
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
-                "v.0.dn",
-                "v.0.sd"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "MT",
-            "Description": [
-                {
-                    "desc": "The vaccination schedule must be complete (e.g., 1/1, 2/2,3/3).",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-MT-0003",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        "===": [
-                            {
-                                "var": "payload.v.0.dn"
-                            },
-                            {
-                                "var": "payload.v.0.sd"
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-01-20T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.1"
         },
         {
             "AffectedFields": [
@@ -71221,6 +71212,55 @@
         },
         {
             "AffectedFields": [
+                "t.0.ma",
+                "t.0.tt"
+            ],
+            "CertificateType": "Test",
+            "Country": "UA",
+            "Description": [
+                {
+                    "desc": "If the test type is \"RAT\" then the \"test product and manufacturer\" MUST be in the valueset list, if it's NAA return true.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "\u042f\u043a\u0449\u043e \u0442\u0438\u043f\u043e\u043c \u0442\u0435\u0441\u0442\u0443 \u0454 \"RAT\" \u0442\u043e\u0434\u0456 \"test product and manufacturer\" \u041f\u041e\u0412\u0418\u041d\u041d\u0406 \u0431\u0443\u0442\u0438 \u0432 \u0441\u043f\u0438\u0441\u043a\u0443 \u043d\u0430\u0431\u043e\u0440\u0456\u0432 \u0437\u043d\u0430\u0447\u0435\u043d\u044c, \u044f\u043a\u0449\u043e \u0446\u0435 \u041f\u041b\u0420 - \u043f\u043e\u0432\u0435\u0440\u0442\u0430\u0454 true.",
+                    "lang": "ua"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-UA-0002",
+            "Logic": {
+                "if": [
+                    {
+                        "===": [
+                            {
+                                "var": "payload.t.0.tt"
+                            },
+                            "LP217198-3"
+                        ]
+                    },
+                    {
+                        "in": [
+                            {
+                                "var": "payload.t.0.ma"
+                            },
+                            {
+                                "var": "external.valueSets.covid-19-lab-test-manufacturer-and-name"
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-08-22T10:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
                 "t"
             ],
             "CertificateType": "General",
@@ -72242,38 +72282,6 @@
                         ]
                     },
                     true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-01T00:00:00Z",
-            "ValidTo": "2030-10-01T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "t.1"
-            ],
-            "CertificateType": "Test",
-            "Country": "WF",
-            "Description": [
-                {
-                    "desc": "Test format is not EU standard.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Le format li\u00e9 au test n'est pas au standard UE.",
-                    "lang": "fr"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-_RWF-0000",
-            "Logic": {
-                "!": [
-                    {
-                        "var": "payload.t.1"
-                    }
                 ]
             },
             "SchemaVersion": "1.0.0",
@@ -76714,55 +76722,6 @@
         },
         {
             "AffectedFields": [
-                "t.0.ma",
-                "t.0.tt"
-            ],
-            "CertificateType": "Test",
-            "Country": "UA",
-            "Description": [
-                {
-                    "desc": "If the test type is \"RAT\" then the \"test product and manufacturer\" MUST be in the valueset list, if it's NAA return true.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "\u042f\u043a\u0449\u043e \u0442\u0438\u043f\u043e\u043c \u0442\u0435\u0441\u0442\u0443 \u0454 \"RAT\" \u0442\u043e\u0434\u0456 \"test product and manufacturer\" \u041f\u041e\u0412\u0418\u041d\u041d\u0406 \u0431\u0443\u0442\u0438 \u0432 \u0441\u043f\u0438\u0441\u043a\u0443 \u043d\u0430\u0431\u043e\u0440\u0456\u0432 \u0437\u043d\u0430\u0447\u0435\u043d\u044c, \u044f\u043a\u0449\u043e \u0446\u0435 \u041f\u041b\u0420 - \u043f\u043e\u0432\u0435\u0440\u0442\u0430\u0454 true.",
-                    "lang": "ua"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-UA-0002",
-            "Logic": {
-                "if": [
-                    {
-                        "===": [
-                            {
-                                "var": "payload.t.0.tt"
-                            },
-                            "LP217198-3"
-                        ]
-                    },
-                    {
-                        "in": [
-                            {
-                                "var": "payload.t.0.ma"
-                            },
-                            {
-                                "var": "external.valueSets.covid-19-lab-test-manufacturer-and-name"
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-08-22T10:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
                 "t.0",
                 "t.0.tr"
             ],
@@ -78487,6 +78446,38 @@
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "r.1"
+            ],
+            "CertificateType": "Recovery",
+            "Country": "BL",
+            "Description": [
+                {
+                    "desc": " Recovery format is not EU standard.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Le format li\u00e9 au r\u00e9tablissement n'est pas au standard UE.",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "RR-GPBL-0000",
+            "Logic": {
+                "!": [
+                    {
+                        "var": "payload.r.1"
+                    }
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-01T00:00:00Z",
+            "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.2"
         },
         {
             "AffectedFields": [
@@ -83117,38 +83108,6 @@
         },
         {
             "AffectedFields": [
-                "r.1"
-            ],
-            "CertificateType": "Recovery",
-            "Country": "BL",
-            "Description": [
-                {
-                    "desc": " Recovery format is not EU standard.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Le format li\u00e9 au r\u00e9tablissement n'est pas au standard UE.",
-                    "lang": "fr"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "RR-GPBL-0000",
-            "Logic": {
-                "!": [
-                    {
-                        "var": "payload.r.1"
-                    }
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-01T00:00:00Z",
-            "ValidTo": "2030-10-01T00:00:00Z",
-            "Version": "1.0.2"
-        },
-        {
-            "AffectedFields": [
                 "t.0",
                 "t.0.tt"
             ],
@@ -85833,6 +85792,159 @@
         },
         {
             "AffectedFields": [
+                "r.0",
+                "r.0.df",
+                "r.0.du",
+                "r.0.fr"
+            ],
+            "CertificateType": "Recovery",
+            "Country": "NL",
+            "Description": [
+                {
+                    "desc": "The validity start date must be greater than or equal to the first positive test date +11 days and validity end date must be less than or equal to the first postive test date +180.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Das Datum des G\u00fcltigkeitsbeginns muss gr\u00f6\u00dfer oder gleich dem Datum des ersten positiven Tests +11 Tage und das Datum des G\u00fcltigkeitsendes muss kleiner oder gleich dem Datum des ersten positiven Tests +180 sein.",
+                    "lang": "de"
+                },
+                {
+                    "desc": "La date de d\u00e9but de validit\u00e9 doit \u00eatre sup\u00e9rieure ou \u00e9gale \u00e0 la date du premier test positif +11 jours et la date de fin de validit\u00e9 doit \u00eatre inf\u00e9rieure ou \u00e9gale \u00e0 la date du premier test positif +180.",
+                    "lang": "fr"
+                },
+                {
+                    "desc": "La fecha de inicio de la validez debe ser mayor o igual a la fecha de la primera prueba positiva +11 d\u00edas y la fecha de finalizaci\u00f3n de la validez debe ser menor o igual a la fecha de la primera prueba positiva +180.",
+                    "lang": "es"
+                },
+                {
+                    "desc": "La data di inizio validit\u00e0 deve essere maggiore o uguale alla data del primo test positivo +11 giorni e la data di fine validit\u00e0 deve essere minore o uguale alla data del primo test positivo +180.",
+                    "lang": "it"
+                },
+                {
+                    "desc": "De begindatum van de geldigheid moet groter zijn dan of gelijk zijn aan de datum van de eerste positieve test +11 dagen en de einddatum van de geldigheid moet kleiner zijn dan of gelijk zijn aan de datum van de eerste positieve test +180.",
+                    "lang": "nl"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "RR-NL-0004",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.r.0"
+                    },
+                    {
+                        "not-after": [
+                            {
+                                "if": [
+                                    {
+                                        "after": [
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "payload.r.0.df"
+                                                    },
+                                                    0,
+                                                    "day"
+                                                ]
+                                            },
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "payload.r.0.fr"
+                                                    },
+                                                    11,
+                                                    "day"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "payload.r.0.df"
+                                            },
+                                            0,
+                                            "day"
+                                        ]
+                                    },
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "payload.r.0.fr"
+                                            },
+                                            11,
+                                            "day"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "external.validationClock"
+                                    },
+                                    0,
+                                    "day"
+                                ]
+                            },
+                            {
+                                "if": [
+                                    {
+                                        "before": [
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "payload.r.0.du"
+                                                    },
+                                                    0,
+                                                    "day"
+                                                ]
+                                            },
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "payload.r.0.fr"
+                                                    },
+                                                    180,
+                                                    "day"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "payload.r.0.du"
+                                            },
+                                            0,
+                                            "day"
+                                        ]
+                                    },
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "payload.r.0.fr"
+                                            },
+                                            180,
+                                            "day"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-03-28T00:00:00+01:00",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.1.2"
+        },
+        {
+            "AffectedFields": [
                 "v.0",
                 "v.0.ma"
             ],
@@ -87898,6 +88010,42 @@
                         "var": "payload.t.0.tr"
                     },
                     "260415000"
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-01T00:00:00Z",
+            "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
+                "v.0.vp"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "BL",
+            "Description": [
+                {
+                    "desc": "Only prophylactic agents in the allowed valueset that have been approved by the EMA are allowed.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Seuls les agents prophylactiques approuv\u00e9s par l'AEM (Value set UE) sont accept\u00e9s en France.",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-GPBL-0003",
+            "Logic": {
+                "in": [
+                    {
+                        "var": "payload.v.0.vp"
+                    },
+                    {
+                        "var": "external.valueSets.sct-vaccines-covid-19"
+                    }
                 ]
             },
             "SchemaVersion": "1.0.0",
@@ -90482,159 +90630,6 @@
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "r.0",
-                "r.0.df",
-                "r.0.du",
-                "r.0.fr"
-            ],
-            "CertificateType": "Recovery",
-            "Country": "NL",
-            "Description": [
-                {
-                    "desc": "The validity start date must be greater than or equal to the first positive test date +11 days and validity end date must be less than or equal to the first postive test date +180.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Das Datum des G\u00fcltigkeitsbeginns muss gr\u00f6\u00dfer oder gleich dem Datum des ersten positiven Tests +11 Tage und das Datum des G\u00fcltigkeitsendes muss kleiner oder gleich dem Datum des ersten positiven Tests +180 sein.",
-                    "lang": "de"
-                },
-                {
-                    "desc": "La date de d\u00e9but de validit\u00e9 doit \u00eatre sup\u00e9rieure ou \u00e9gale \u00e0 la date du premier test positif +11 jours et la date de fin de validit\u00e9 doit \u00eatre inf\u00e9rieure ou \u00e9gale \u00e0 la date du premier test positif +180.",
-                    "lang": "fr"
-                },
-                {
-                    "desc": "La fecha de inicio de la validez debe ser mayor o igual a la fecha de la primera prueba positiva +11 d\u00edas y la fecha de finalizaci\u00f3n de la validez debe ser menor o igual a la fecha de la primera prueba positiva +180.",
-                    "lang": "es"
-                },
-                {
-                    "desc": "La data di inizio validit\u00e0 deve essere maggiore o uguale alla data del primo test positivo +11 giorni e la data di fine validit\u00e0 deve essere minore o uguale alla data del primo test positivo +180.",
-                    "lang": "it"
-                },
-                {
-                    "desc": "De begindatum van de geldigheid moet groter zijn dan of gelijk zijn aan de datum van de eerste positieve test +11 dagen en de einddatum van de geldigheid moet kleiner zijn dan of gelijk zijn aan de datum van de eerste positieve test +180.",
-                    "lang": "nl"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "RR-NL-0004",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.r.0"
-                    },
-                    {
-                        "not-after": [
-                            {
-                                "if": [
-                                    {
-                                        "after": [
-                                            {
-                                                "plusTime": [
-                                                    {
-                                                        "var": "payload.r.0.df"
-                                                    },
-                                                    0,
-                                                    "day"
-                                                ]
-                                            },
-                                            {
-                                                "plusTime": [
-                                                    {
-                                                        "var": "payload.r.0.fr"
-                                                    },
-                                                    11,
-                                                    "day"
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "payload.r.0.df"
-                                            },
-                                            0,
-                                            "day"
-                                        ]
-                                    },
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "payload.r.0.fr"
-                                            },
-                                            11,
-                                            "day"
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "external.validationClock"
-                                    },
-                                    0,
-                                    "day"
-                                ]
-                            },
-                            {
-                                "if": [
-                                    {
-                                        "before": [
-                                            {
-                                                "plusTime": [
-                                                    {
-                                                        "var": "payload.r.0.du"
-                                                    },
-                                                    0,
-                                                    "day"
-                                                ]
-                                            },
-                                            {
-                                                "plusTime": [
-                                                    {
-                                                        "var": "payload.r.0.fr"
-                                                    },
-                                                    180,
-                                                    "day"
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "payload.r.0.du"
-                                            },
-                                            0,
-                                            "day"
-                                        ]
-                                    },
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "payload.r.0.fr"
-                                            },
-                                            180,
-                                            "day"
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-03-28T00:00:00+01:00",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.1.2"
         },
         {
             "AffectedFields": [
@@ -93340,42 +93335,6 @@
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.2"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
-                "v.0.vp"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "BL",
-            "Description": [
-                {
-                    "desc": "Only prophylactic agents in the allowed valueset that have been approved by the EMA are allowed.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Seuls les agents prophylactiques approuv\u00e9s par l'AEM (Value set UE) sont accept\u00e9s en France.",
-                    "lang": "fr"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-GPBL-0003",
-            "Logic": {
-                "in": [
-                    {
-                        "var": "payload.v.0.vp"
-                    },
-                    {
-                        "var": "external.valueSets.sct-vaccines-covid-19"
-                    }
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-01T00:00:00Z",
-            "ValidTo": "2030-10-01T00:00:00Z",
-            "Version": "1.0.0"
         },
         {
             "AffectedFields": [
@@ -96087,6 +96046,56 @@
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.1"
+        },
+        {
+            "AffectedFields": [
+                "t.0",
+                "t.0.ma",
+                "t.0.tt"
+            ],
+            "CertificateType": "Test",
+            "Country": "FR",
+            "Description": [
+                {
+                    "desc": "The antigen test (e.g., rapid test) must be included in the EU\u2019s \"Common list of COVID-19 rapid antigen tests\".",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Le test antig\u00e9nique (p. ex. test rapide) doit figurer sur la liste commune des tests antig\u00e9niques rapides \u00ab Common list of rapid antigen tests \u00bb de l\u2019UE.",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-FIFR-0005",
+            "Logic": {
+                "if": [
+                    {
+                        "===": [
+                            {
+                                "var": "payload.t.0.tt"
+                            },
+                            "LP217198-3"
+                        ]
+                    },
+                    {
+                        "in": [
+                            {
+                                "var": "payload.t.0.ma"
+                            },
+                            {
+                                "var": "external.valueSets.covid-19-lab-test-manufacturer-and-name"
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-07-26T00:00:00Z",
+            "ValidTo": "2030-07-26T00:00:00Z",
+            "Version": "1.0.0"
         },
         {
             "AffectedFields": [
@@ -98872,6 +98881,42 @@
         },
         {
             "AffectedFields": [
+                "v.0",
+                "v.0.ma"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "FR",
+            "Description": [
+                {
+                    "desc": "Only manufacturers of vaccines that have been approved by the ANSM are allowed.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Seuls les fabricants des vacins qui ont \u00e9t\u00e9 approuv\u00e9s par l'ANSM, sont autoris\u00e9s.",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-MFFR-0002",
+            "Logic": {
+                "in": [
+                    {
+                        "var": "payload.v.0.ma"
+                    },
+                    {
+                        "var": "external.valueSets.vaccines-covid-19-auth-holders"
+                    }
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-01T00:00:00Z",
+            "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
                 "t.0",
                 "t.0.sc",
                 "t.0.tt"
@@ -100702,56 +100747,6 @@
             "Type": "Acceptance",
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "t.0",
-                "t.0.ma",
-                "t.0.tt"
-            ],
-            "CertificateType": "Test",
-            "Country": "FR",
-            "Description": [
-                {
-                    "desc": "The antigen test (e.g., rapid test) must be included in the EU\u2019s \"Common list of COVID-19 rapid antigen tests\".",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Le test antig\u00e9nique (p. ex. test rapide) doit figurer sur la liste commune des tests antig\u00e9niques rapides \u00ab Common list of rapid antigen tests \u00bb de l\u2019UE.",
-                    "lang": "fr"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-FIFR-0005",
-            "Logic": {
-                "if": [
-                    {
-                        "===": [
-                            {
-                                "var": "payload.t.0.tt"
-                            },
-                            "LP217198-3"
-                        ]
-                    },
-                    {
-                        "in": [
-                            {
-                                "var": "payload.t.0.ma"
-                            },
-                            {
-                                "var": "external.valueSets.covid-19-lab-test-manufacturer-and-name"
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-07-26T00:00:00Z",
-            "ValidTo": "2030-07-26T00:00:00Z",
             "Version": "1.0.0"
         },
         {
@@ -102804,42 +102799,6 @@
             "Engine": "CERTLOGIC",
             "EngineVersion": "0.7.5",
             "Identifier": "VR-HUFR-0002",
-            "Logic": {
-                "in": [
-                    {
-                        "var": "payload.v.0.ma"
-                    },
-                    {
-                        "var": "external.valueSets.vaccines-covid-19-auth-holders"
-                    }
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-01T00:00:00Z",
-            "ValidTo": "2030-10-01T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
-                "v.0.ma"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "FR",
-            "Description": [
-                {
-                    "desc": "Only manufacturers of vaccines that have been approved by the ANSM are allowed.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Seuls les fabricants des vacins qui ont \u00e9t\u00e9 approuv\u00e9s par l'ANSM, sont autoris\u00e9s.",
-                    "lang": "fr"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-MFFR-0002",
             "Logic": {
                 "in": [
                     {
