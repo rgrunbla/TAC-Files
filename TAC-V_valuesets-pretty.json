@@ -3801,6 +3801,27 @@
                 "system": "http://snomed.info/sct",
                 "version": "http://snomed.info/sct/900000000000207008/version/20210131"
             },
+            "1157024006": {
+                "active": true,
+                "display": "Inactivated whole SARS-CoV-2 antigen vaccine",
+                "lang": "en",
+                "system": "http://snomed.info/sct",
+                "version": "2022-01-31"
+            },
+            "1162643001": {
+                "active": true,
+                "display": "SARS-CoV-2 recombinant spike protein antigen vaccine",
+                "lang": "en",
+                "system": "http://snomed.info/sct",
+                "version": "2022-01-31"
+            },
+            "29061000087103": {
+                "active": true,
+                "display": "COVID-19 non-replicating viral vector vaccine",
+                "lang": "en",
+                "system": "http://snomed.info/sct",
+                "version": "2022-01-31"
+            },
             "J07BX03": {
                 "active": true,
                 "display": "covid-19 vaccines",
