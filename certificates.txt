@@ -13537,51 +13537,6 @@ Certificate:
 Certificate:
     Data:
         Version: 3 (0x2)
-        Serial Number: 1632667125 (0x615085f5)
-        Signature Algorithm: ecdsa-with-SHA512
-        Issuer: C = GB, O = NHS Digital, CN = England DCC CSCA
-        Validity
-            Not Before: Mar 22 16:52:40 2022 GMT
-            Not After : Mar 22 17:22:40 2024 GMT
-        Subject: C = GB, O = NHS Digital, ST = Gibraltar, CN = DSC-DCC-GB-GI-04
-        Subject Public Key Info:
-            Public Key Algorithm: id-ecPublicKey
-                Public-Key: (256 bit)
-                pub:
-                    04:e2:19:4a:a4:e1:5a:0f:1e:23:42:47:d7:24:21:
-                    eb:f3:41:16:dc:db:30:9f:cd:33:d5:1c:77:7b:94:
-                    91:87:53:8b:63:8b:bb:3c:0a:2c:3a:dd:f0:dc:af:
-                    e6:54:52:36:83:31:d4:3c:8b:74:ad:2a:43:37:28:
-                    ee:6a:81:33:1c
-                ASN1 OID: prime256v1
-                NIST CURVE: P-256
-        X509v3 extensions:
-            X509v3 Key Usage: critical
-                Digital Signature
-            X509v3 Issuer Alternative Name: 
-                email:pki@nhsx.nhs.uk, DNS:https://www.nhsx.nhs.uk/key-tools-and-info/public-key-infrastructures/csca, DirName:/L=GBR
-            X509v3 CRL Distribution Points: 
-
-                Full Name:
-                  URI:http://pki.nhsx.nhs.uk/CRL/ENG_CSCA.crl
-                  URI:http://covid-status.service.nhsx.nhs.uk/CRL/ENG_CSCA.crl
-
-            X509v3 Private Key Usage Period: 
-                Not Before: Mar 22 16:52:40 2022 GMT, Not After: Sep 21 11:22:40 2022 GMT
-            X509v3 Authority Key Identifier: 
-                keyid:DA:2E:CE:C3:F7:3A:FB:F8:BE:10:73:A8:C4:F1:88:BD:2B:D4:F1:CA
-
-            X509v3 Subject Key Identifier: 
-                47:CF:E5:2D:12:8D:5C:24:1D:FA:51:2F:60:9D:2F:02:01:C6:81:BD
-    Signature Algorithm: ecdsa-with-SHA512
-         30:44:02:20:42:f1:01:f5:d6:26:c4:97:78:73:f1:c2:9d:8e:
-         04:0e:b4:ee:0f:ff:06:9f:7a:a6:4a:3b:10:1c:02:7d:42:f6:
-         02:20:7a:a6:37:ed:ec:f8:68:ae:6c:af:c8:9c:e7:fa:eb:64:
-         b0:3d:54:3c:a9:56:fe:43:b4:61:ab:bf:f2:81:cd:db
-
-Certificate:
-    Data:
-        Version: 3 (0x2)
         Serial Number:
             3b:2b:67:1a:b9:99:a3:4c:a9:e2:a7:34:80:bc:62:a4:9f:86:88:f3
         Signature Algorithm: sha256WithRSAEncryption
