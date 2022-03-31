@@ -67383,6 +67383,66 @@
         },
         {
             "AffectedFields": [
+                "r",
+                "t",
+                "v"
+            ],
+            "CertificateType": "General",
+            "Country": "CY",
+            "Description": [
+                {
+                    "desc": "Exactly one type of event.",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "GR-CY-0000",
+            "Logic": {
+                "===": [
+                    {
+                        "reduce": [
+                            [
+                                {
+                                    "var": "payload.r"
+                                },
+                                {
+                                    "var": "payload.t"
+                                },
+                                {
+                                    "var": "payload.v"
+                                }
+                            ],
+                            {
+                                "+": [
+                                    {
+                                        "var": "accumulator"
+                                    },
+                                    {
+                                        "if": [
+                                            {
+                                                "var": "current.0"
+                                            },
+                                            1,
+                                            0
+                                        ]
+                                    }
+                                ]
+                            },
+                            0
+                        ]
+                    },
+                    1
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-04-03T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "2.1.4"
+        },
+        {
+            "AffectedFields": [
                 "r.0.tg",
                 "t.0.tg",
                 "v.0.tg"
@@ -71124,70 +71184,6 @@
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.1"
-        },
-        {
-            "AffectedFields": [
-                "t",
-                "v",
-                "r"
-            ],
-            "CertificateType": "General",
-            "Country": "_C",
-            "Description": [
-                {
-                    "desc": "Only a vaccine, test or recovery is allowed, and in a EU standard format.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Seuls un vaccin, un test ou un r\u00e9tablissement est autoris\u00e9, et dans un format au standard UE.",
-                    "lang": "fr"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "GR-FR_C-0000",
-            "Logic": {
-                "===": [
-                    {
-                        "reduce": [
-                            [
-                                {
-                                    "var": "payload.t"
-                                },
-                                {
-                                    "var": "payload.v"
-                                },
-                                {
-                                    "var": "payload.r"
-                                }
-                            ],
-                            {
-                                "+": [
-                                    {
-                                        "var": "accumulator"
-                                    },
-                                    {
-                                        "if": [
-                                            {
-                                                "var": "current.0"
-                                            },
-                                            1,
-                                            0
-                                        ]
-                                    }
-                                ]
-                            },
-                            0
-                        ]
-                    },
-                    1
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-01T00:00:00Z",
-            "ValidTo": "2030-10-01T00:00:00Z",
-            "Version": "1.0.0"
         },
         {
             "AffectedFields": [
@@ -75673,6 +75669,70 @@
                     {
                         "var": "payload.t.1"
                     }
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-01T00:00:00Z",
+            "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "t",
+                "v",
+                "r"
+            ],
+            "CertificateType": "General",
+            "Country": "_C",
+            "Description": [
+                {
+                    "desc": "Only a vaccine, test or recovery is allowed, and in a EU standard format.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Seuls un vaccin, un test ou un r\u00e9tablissement est autoris\u00e9, et dans un format au standard UE.",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "GR-FR_C-0000",
+            "Logic": {
+                "===": [
+                    {
+                        "reduce": [
+                            [
+                                {
+                                    "var": "payload.t"
+                                },
+                                {
+                                    "var": "payload.v"
+                                },
+                                {
+                                    "var": "payload.r"
+                                }
+                            ],
+                            {
+                                "+": [
+                                    {
+                                        "var": "accumulator"
+                                    },
+                                    {
+                                        "if": [
+                                            {
+                                                "var": "current.0"
+                                            },
+                                            1,
+                                            0
+                                        ]
+                                    }
+                                ]
+                            },
+                            0
+                        ]
+                    },
+                    1
                 ]
             },
             "SchemaVersion": "1.0.0",
