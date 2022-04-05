@@ -8525,6 +8525,44 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            12:d8:a2:07:a2:4c:2c:75:9c:c7:54:a4:c0:e6:74:67:82:0b:60:35
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = MY, CN = Malaysia Covid19 Country Signing CA 01, O = Ministry of Health
+        Validity
+            Not Before: Jul 30 09:39:55 2021 GMT
+            Not After : Jul 30 09:39:55 2023 GMT
+        Subject: C = MY, CN = Malaysia Covid19 DSC 01, O = Ministry of Health
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:6c:fe:73:66:19:7f:35:fb:df:93:d3:9c:9a:3e:
+                    24:57:3e:81:9c:c7:ac:c5:ec:72:3c:c1:d6:fa:f6:
+                    ef:78:2c:d0:c0:28:f8:30:e9:10:69:07:02:f7:7d:
+                    96:df:e7:f9:fc:55:76:d3:cd:44:2a:5a:76:ce:12:
+                    fd:92:cd:2a:2d
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                52:49:C1:93:34:68:F0:73:1D:BB:EB:B8:04:25:3C:32:F1:6B:31:99
+            X509v3 Authority Key Identifier: 
+                keyid:1A:B2:F2:9D:38:97:76:96:B7:E2:32:9E:C8:EA:19:EB:D6:47:7A:F2
+
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            X509v3 Key Usage: 
+                Digital Signature
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:06:eb:e5:72:a7:cc:e7:db:cb:7a:b4:b5:1f:de:
+         b0:ae:d0:1d:fb:a4:2d:f0:fd:44:af:28:40:56:38:00:a7:e8:
+         02:21:00:b0:8e:5b:70:51:75:16:0d:86:58:d7:d0:d3:92:f3:
+         59:ad:05:f6:d8:fd:a8:8f:1d:cb:a5:06:32:70:eb:30:bf
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             77:81:00:b1:33:d6:b7:2e:4c:7d:ba:4d:87:c5:f6:b9
         Signature Algorithm: ecdsa-with-SHA384
         Issuer: C = DE, O = D-Trust GmbH, CN = D-TRUST CA 4-21-2 2021, organizationIdentifier = NTRDE-HRB74346
