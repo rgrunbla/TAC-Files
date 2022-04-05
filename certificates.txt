@@ -20885,6 +20885,49 @@ Certificate:
 Certificate:
     Data:
         Version: 3 (0x2)
+        Serial Number:
+            63:15:84:54:d3:55:38:85:e9:b9:ab:14:0b:0a:2d:40:63:93:a9:c0
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = CO, ST = BOGOTA, L = BOGOTA, O = MINISTERIO DE SALUD Y PROTECCION SOCIAL, OU = OTIC, CN = CDVCOL.SISPRO.GOV.CO
+        Validity
+            Not Before: Apr  4 21:02:34 2022 GMT
+            Not After : Apr  3 21:02:34 2024 GMT
+        Subject: C = CO, O = Gobierno de Colombia, OU = Ministerio de Salud, CN = Gesti\C3\B3n de Credencial de Inmunizaci\C3\B3n
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:21:16:b7:59:f6:27:09:84:da:1e:fe:fc:c2:b9:
+                    45:a3:75:f4:2c:e4:1c:31:4f:24:a4:1c:e5:a1:a1:
+                    2e:73:ec:98:8d:49:69:8e:4f:1c:76:ce:6c:4d:75:
+                    ce:82:fd:df:ee:bb:27:bd:91:e6:cd:1c:a3:c7:00:
+                    29:5c:99:5c:80
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Subject Key Identifier: 
+                FE:EC:ED:2B:E4:4A:99:76:E2:45:C5:B7:C1:4F:AF:9B:4F:25:FC:F2
+            X509v3 Authority Key Identifier: 
+                keyid:50:BC:78:A2:49:67:B8:3A:7F:BE:C4:4A:EF:E8:47:80:D8:5D:05:69
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl.exampledomain.example/CRL/CSCA.crl
+
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.1847.2021.1.1, 1.3.6.1.4.1.1847.2021.1.2, 1.3.6.1.4.1.1847.2021.1.3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:c9:4c:ae:82:97:64:78:48:7f:69:2a:3e:43:
+         81:7b:53:96:2b:83:be:54:a7:c1:1b:39:e6:17:58:cb:f4:d1:
+         78:02:20:06:8f:79:ee:f0:73:93:35:13:42:7c:71:78:0b:88:
+         7c:ed:d9:a0:89:ae:ac:e2:c7:fa:e6:39:e8:31:7d:51:d9
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
         Serial Number: 94895612704 (0x1618382320)
         Signature Algorithm: sha256WithRSAEncryption
         Issuer: C = RO, O = Ministerul Sanatatii, CN = AC Ministerul Sanatatii
