@@ -25072,6 +25072,49 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            5d:f0:6d:46:22:89:0e:eb:fe:58:a4:1e:0b:ef:b3:90:f8:3e:09:96
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = SG, ST = Singapore, O = Ministry Of Health, CN = csca.notarise.gov.sg
+        Validity
+            Not Before: Apr 25 03:35:40 2022 GMT
+            Not After : Apr 24 03:35:40 2024 GMT
+        Subject: C = SG, ST = Singapore, O = Ministry Of Health, CN = dsc.notarise.gov.sg
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:03:0f:63:c1:cc:71:71:5e:7a:2b:a6:44:36:54:
+                    34:32:98:6d:cd:60:99:a2:ae:43:9b:82:b7:5e:6b:
+                    40:eb:e4:d7:97:1e:0f:e8:52:f6:5c:b7:08:b4:7a:
+                    b9:4a:cf:09:c6:60:6e:72:d6:83:21:4a:af:df:2b:
+                    f5:7c:fb:ee:b8
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Subject Key Identifier: 
+                94:C5:07:F8:C7:A7:A6:2A:28:2D:83:28:6C:B1:7F:38:B9:91:D2:8B
+            X509v3 Authority Key Identifier: 
+                keyid:39:37:05:B3:38:B9:F9:9E:23:0D:D1:C2:C1:B0:C3:B3:32:97:01:A5
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:https://www.notarise.gov.sg/csca.crl
+
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.1847.2021.1.1, 1.3.6.1.4.1.1847.2021.1.2, 1.3.6.1.4.1.1847.2021.1.3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:a6:cf:32:64:92:5e:df:f1:63:93:9d:c1:c2:
+         8b:91:74:5e:86:5b:97:a2:7e:4e:c7:12:84:85:af:76:f6:28:
+         8a:02:20:5c:06:ca:67:3c:e2:f8:88:35:5f:a5:3f:56:4a:a7:
+         3e:57:fa:94:75:5c:d4:f9:af:22:48:77:45:c9:67:22:cc
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             7c:a5:4f:08:9d:83:48:e4:25:06:6b:b9:01:c8:16:2f:ea:6d:f7:09
         Signature Algorithm: ecdsa-with-SHA256
         Issuer: C = MD, ST = Republic of Moldova, L = Chisinau, O = STISC, OU = CCCP, CN = Republic of Moldova National CSCA 01
