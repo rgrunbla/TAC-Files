@@ -22934,6 +22934,49 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            60:51:ea:69:d7:c3:8a:e1:7d:69:da:84:42:8c:df:00:08:8d:1d:7d
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = SG, ST = Singapore, O = Ministry Of Health, CN = csca.notarise.gov.sg
+        Validity
+            Not Before: Apr 25 03:11:29 2022 GMT
+            Not After : Apr 24 03:11:29 2024 GMT
+        Subject: C = SG, ST = Singapore, O = Ministry Of Health, CN = dsc.notarise.gov.sg
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:3f:93:4f:98:43:86:ce:84:2b:70:90:8b:62:0e:
+                    70:f4:22:76:c3:ca:05:2e:c7:59:58:a9:f8:57:cf:
+                    94:f4:3a:1e:ce:04:ec:d5:67:39:03:a8:d4:8d:c4:
+                    78:c1:68:0d:a3:bb:d3:58:bc:4a:9b:cc:cd:af:54:
+                    6a:ef:c7:f6:e7
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Subject Key Identifier: 
+                E6:4E:67:85:78:30:68:8A:59:A2:56:74:BA:75:FB:AF:7B:DD:E5:9D
+            X509v3 Authority Key Identifier: 
+                keyid:39:37:05:B3:38:B9:F9:9E:23:0D:D1:C2:C1:B0:C3:B3:32:97:01:A5
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:https://www.notarise.gov.sg/csca.crl
+
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.1847.2021.1.1, 1.3.6.1.4.1.1847.2021.1.2, 1.3.6.1.4.1.1847.2021.1.3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:0a:00:92:e1:de:22:af:23:15:94:5b:ff:d4:8a:
+         25:7a:26:68:fa:b9:67:93:b8:32:59:09:16:22:2f:37:f7:79:
+         02:21:00:a1:39:ae:13:aa:78:ea:f4:34:dc:36:ff:1a:22:00:
+         a8:31:de:1f:2c:2e:e7:e0:9a:f5:44:3c:48:67:44:ef:7b
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             02:44:74:bb:fd:03:60:73:ff
         Signature Algorithm: ecdsa-with-SHA256
         Issuer: CN = EADTrust ECC 256 SubCA For Qualified Certificates 2019, O = "European Agency of Digital Trust, S.L.", C = ES, organizationIdentifier = VATES-B85626240, OU = Legal Person
