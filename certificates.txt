@@ -2711,6 +2711,46 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            73:b8:6d:9f:02:ae:2e:f0:03:f3:14:0d:df:f8:fc:84:0e:f7:7a:69
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = SI, O = "NIJZ, National Institute of Public Health of Slovenia", OU = NIJZ eHealth, CN = Slovenian Digital Covid Certificate CSCA 2022
+        Validity
+            Not Before: Apr 28 12:44:46 2022 GMT
+            Not After : Apr 27 12:44:46 2024 GMT
+        Subject: C = SI, O = "NIJZ, National Institute of Public Health of Slovenia", OU = NIJZ eHealth, CN = Slovenian Digital Covid Certificate Signer 2022
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:c9:99:9b:8d:d2:c1:6b:0d:68:5b:73:94:de:ab:
+                    c7:a2:eb:0f:d2:ff:04:e2:72:a1:be:b1:dc:1a:97:
+                    98:5e:e6:06:2a:66:43:ab:ae:af:42:f0:20:34:8e:
+                    8e:06:cd:11:45:54:01:cb:e0:90:dc:0a:7f:b0:cf:
+                    80:f4:0a:aa:c3
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Subject Key Identifier: 
+                F8:C2:26:32:65:CB:E2:AB:00:8B:8C:8F:3F:F8:8F:33:50:EA:3B:32
+            X509v3 Authority Key Identifier: 
+                keyid:0F:61:74:FA:BE:5A:16:42:CC:B4:D4:C7:B1:CE:CD:B0:66:0C:E3:0F
+
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.0.1847.2021.1.1, 1.3.6.1.4.1.0.1847.2021.1.2, 1.3.6.1.4.1.0.1847.2021.1.3
+            X509v3 Private Key Usage Period: 
+                Not Before: Apr 28 09:00:00 2022 GMT, Not After: Apr 28 09:00:00 2023 GMT
+    Signature Algorithm: ecdsa-with-SHA256
+         30:44:02:20:09:d4:02:2d:82:0b:dd:5e:38:e8:b3:81:cb:46:
+         62:fb:66:63:b9:2e:d4:c6:44:10:b6:79:3a:4d:b0:6b:81:9f:
+         02:20:36:59:a3:15:2c:55:9a:63:a2:31:ba:be:ea:2a:22:4d:
+         3a:ea:72:df:44:1c:34:19:80:da:e8:c6:d3:9e:55:e5
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             1d:96:cb:e4:c8:4a:dd:12:28:f7:d5:c4:57:4c:58:ea:38:81:ad:09
         Signature Algorithm: sha256WithRSAEncryption
         Issuer: C = FR, O = Gouv, CN = CSCA-FRANCE
