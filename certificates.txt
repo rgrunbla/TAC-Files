@@ -14395,6 +14395,99 @@ Certificate:
 Certificate:
     Data:
         Version: 3 (0x2)
+        Serial Number:
+            72:05:11:04:2d:8f:00:28:c9:a9:81:c3:de:06:d4:d5
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = CH, organizationIdentifier = VATCH-CHE-221.032.573, O = Bundesamt fuer Informatik und Telekommunikation (BIT), OU = Swiss Government PKI, CN = Swiss Government Regulated CA 02
+        Validity
+            Not Before: Jan 11 14:38:46 2022 GMT
+            Not After : Jan 11 14:38:46 2025 GMT
+        Subject: C = CH, ST = Bern, L = K\C3\B6niz, businessCategory = Government Entity, organizationIdentifier = NTRCH-CHE-467.023.568, O = Bundesamt f\C3\BCr Gesundheit (BAG), OU = GE-0220-BAG, OU = Taskforce BAG Covid-19, CN = CC_CH01_REP_Testcertificate_05_01
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (2048 bit)
+                Modulus:
+                    00:da:e6:7f:21:12:57:7f:89:2d:c8:b1:cf:dd:24:
+                    13:f7:f2:c3:e2:8d:23:3b:5e:20:8b:3b:61:fa:91:
+                    25:4c:38:68:db:a6:cb:87:54:76:12:bf:ab:0d:f4:
+                    3a:35:62:54:fe:7a:c0:6d:14:97:b3:cc:ba:48:23:
+                    9e:cd:b4:a2:39:31:61:f0:67:5f:43:20:db:f5:56:
+                    b3:b1:63:fe:f7:63:fa:ab:cf:55:1a:c9:a3:99:ba:
+                    09:77:9d:69:b4:35:cf:8b:fb:b7:e1:49:31:38:ca:
+                    9c:bc:b3:24:5e:eb:c8:3a:0a:00:53:85:97:3b:28:
+                    97:75:03:f1:d3:c3:3f:b2:65:b8:1d:87:85:ad:75:
+                    9c:43:19:8d:b1:19:31:cc:14:f6:ca:e9:2b:4f:81:
+                    f0:85:04:0c:d7:cc:a0:f2:4d:8a:6a:6c:9d:e8:c0:
+                    aa:c5:f2:07:35:0f:68:ed:f4:fc:78:b5:a8:73:bf:
+                    56:5e:aa:f6:ea:9f:1f:9b:53:cb:6a:ce:f4:46:8e:
+                    cb:42:33:5d:ce:62:f3:8e:ff:76:79:e1:fa:d4:0e:
+                    5e:f9:56:ec:7b:b1:93:47:43:9f:8d:51:27:03:cc:
+                    ea:7d:25:b6:c9:fb:68:24:d4:14:65:68:37:8b:74:
+                    48:57:60:9b:51:46:9d:cb:83:c4:b1:ae:29:01:10:
+                    ab:fd
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Subject Alternative Name: 
+                email:covid-zertifikat@bag.admin.ch
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Certificate Policies: 
+                Policy: 2.16.756.1.17.3.5.2.14
+                  CPS: http://www.pki.admin.ch/cps/CPS_2_16_756_1_17_3_5_0.pdf
+                  User Notice:
+                    Explicit Text: This is a regulated certificate for legal persons as defined by the Swiss federal law SR 943.03 ZertES
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://www.pki.admin.ch/crl/RegulatedCA02.crl
+
+            Authority Information Access: 
+                CA Issuers - URI:http://www.pki.admin.ch/aia/RegulatedCA02.crt
+                OCSP - URI:http://www.pki.admin.ch/aia/ocsp
+
+            qcStatements: 
+                0..0
+..+.......0.......I..0......F..0K.....F..0A0?.9http://www.pki.admin.ch/cps/PDS-SGPKI_Regulated_CA_02.pdf..EN0......F..0......F...
+            X509v3 Authority Key Identifier: 
+                keyid:34:0B:BE:F2:15:3E:A4:0F:57:07:E2:41:64:8B:32:11:D1:29:0B:61
+
+            X509v3 Subject Key Identifier: 
+                27:F9:39:39:82:2A:6B:5A:78:7D:48:30:92:C2:98:59:D9:AB:1A:16
+    Signature Algorithm: sha256WithRSAEncryption
+         0f:14:0c:6d:86:ed:a7:45:8a:0a:5f:00:94:07:40:d6:d0:a0:
+         f5:bf:d3:c7:a1:25:7d:1d:bd:8c:33:73:ff:ef:de:80:49:05:
+         94:9a:ee:90:4c:2e:1f:2f:e2:71:0c:35:fd:4a:7a:77:6b:02:
+         fa:f8:bc:3d:26:39:4f:e9:79:a1:12:e8:47:09:f6:03:10:11:
+         1f:0c:6d:be:55:59:72:d4:6a:56:be:27:83:51:8a:13:0f:a0:
+         dd:d7:65:4c:ad:83:c8:4d:21:36:37:95:b2:b9:c2:26:8f:5b:
+         86:1b:9e:c6:26:07:dc:9f:36:6c:6a:85:8f:54:8d:67:b0:0d:
+         c9:55:0c:96:0c:7b:9d:11:f2:58:a6:0b:2d:4d:c4:06:05:0a:
+         a8:e3:9c:4f:2d:2c:b4:4c:ff:e2:5b:2f:78:a7:6c:8c:1a:c5:
+         80:54:45:9b:4e:90:cb:b6:34:bd:6e:f6:be:e3:c6:9d:7e:bb:
+         58:e5:bd:7b:9f:91:fc:b9:41:97:16:26:f3:fb:fe:9b:b4:16:
+         35:1d:29:82:d8:23:07:39:20:a1:cc:73:53:c5:9f:73:cf:69:
+         de:65:25:a0:ed:66:99:76:f9:83:71:f0:44:8b:48:3b:a9:6d:
+         44:71:65:36:64:8d:18:2b:67:a9:ec:dc:c6:78:75:19:c8:81:
+         eb:2b:12:14:27:c9:86:a1:e0:6e:0a:6d:84:1a:a3:57:66:f2:
+         6e:9d:8b:0d:e3:64:4e:05:18:d4:aa:ff:cc:87:58:ee:a8:85:
+         70:4b:b4:cf:d2:3b:82:61:da:cc:5f:0c:9a:cc:4e:b0:3b:8c:
+         17:8e:3b:ce:24:fc:81:2d:fb:99:e7:64:4c:d3:37:0b:02:df:
+         b4:5e:1b:1f:80:dc:f7:ce:df:95:cf:03:0e:5f:bb:59:81:ac:
+         48:cd:7c:38:87:88:4a:a5:c8:11:8e:a3:98:25:c9:e9:eb:15:
+         62:0b:52:71:e9:a6:cc:b3:2d:df:dd:6d:9e:8a:ec:33:aa:82:
+         c5:1a:e0:5c:36:26:d5:08:30:41:02:48:ba:5c:f4:19:4d:79:
+         67:62:21:3b:37:c8:7b:42:fd:a6:20:b5:7f:b8:e6:f4:a7:96:
+         95:b1:31:30:50:a1:ac:c5:a6:71:b6:41:05:24:99:11:ce:8a:
+         40:fd:1c:2d:c6:d3:a1:5b:2d:cb:1f:2a:bd:94:ac:f4:42:1b:
+         83:df:af:2d:91:ba:12:d4:22:0b:b2:3f:55:20:db:1f:e0:bf:
+         00:ff:5f:0b:f4:a4:7e:59:c5:43:ab:4e:2a:9e:70:24:7e:0c:
+         8b:a5:bb:bb:71:4e:10:2b:15:40:77:89:38:31:33:1f:ac:5c:
+         39:25:cb:8c:27:eb:96:e5
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
         Serial Number: 4231234004767720428 (0x3ab85ce8c7bbc3ec)
         Signature Algorithm: rsassaPss         
          Hash Algorithm: sha256
