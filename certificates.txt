@@ -3428,6 +3428,33 @@ Certificate:
 
 Certificate:
     Data:
+        Version: 1 (0x0)
+        Serial Number: 20545 (0x5041)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN = IS DGC CSCA 1, serialNumber = 1, OU = Directorate of Health, O = Directorate of Health, C = IS
+        Validity
+            Not Before: May  6 14:48:54 2022 GMT
+            Not After : May  5 14:48:54 2024 GMT
+        Subject: CN = IS-DSC-2, serialNumber = 3, OU = Directorate of Health, O = Directorate of Health, C = IS
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:8a:98:43:3a:dd:24:53:e2:9d:a3:cf:41:16:bd:
+                    45:79:d8:5f:89:94:54:10:78:b5:00:9f:6d:2d:7d:
+                    ec:37:e6:e0:c3:5d:3d:77:5d:65:97:de:c1:55:a2:
+                    26:04:01:c6:a1:69:61:e2:25:d0:29:2d:86:78:a9:
+                    b6:99:71:9f:b3
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:7e:90:06:c8:92:ce:13:71:db:5d:02:ff:bb:4d:
+         72:3e:f1:26:40:9d:16:00:4b:e0:80:7e:4f:af:85:c0:8e:45:
+         02:21:00:d6:a0:7d:64:8e:a2:a5:13:a3:88:44:b6:c3:08:2a:
+         91:2d:05:7c:36:39:7d:ce:11:a0:a5:b3:6a:95:77:fb:37
+
+Certificate:
+    Data:
         Version: 3 (0x2)
         Serial Number:
             70:eb:77:82:c8:0d:84:17:5c:7c:42:78:a8:4c:40:76:81:92:5c:85
@@ -17064,6 +17091,33 @@ Certificate:
          4d:6f:e1:d2:0e:07:b1:12:8c:6c:04:96:e0:f7:e5:aa:e5:62:
          7f:48:8e:eb:d0:05:b9:ce:fb:ef:c2:af:f4:93:ab:69:fd:0d:
          2f:e6:1b:65:c3:91:58:bf
+
+Certificate:
+    Data:
+        Version: 1 (0x0)
+        Serial Number: 21999 (0x55ef)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN = IS DGC CSCA 1, serialNumber = 1, OU = Directorate of Health, O = Directorate of Health, C = IS
+        Validity
+            Not Before: May  6 14:53:05 2022 GMT
+            Not After : May  5 14:53:05 2024 GMT
+        Subject: CN = IS-DSC-testrec-2, serialNumber = 4, OU = Directorate of Health, O = Directorate of Health, C = IS
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:ec:53:63:08:4a:14:55:bf:d8:3e:34:6e:53:4a:
+                    b0:c1:98:17:88:18:fa:3a:fb:db:a8:86:71:88:22:
+                    76:f0:28:ce:a9:10:4a:a3:bb:a0:19:68:53:44:5c:
+                    fc:94:86:11:f9:2a:f8:37:51:9e:cf:fa:cc:a4:5e:
+                    ce:c2:43:97:6c
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:c7:19:5d:f6:74:db:48:29:45:bb:45:f4:72:
+         b6:9f:42:b6:8b:bb:d0:37:db:f3:e3:f5:50:9a:8d:fd:a5:73:
+         ca:02:21:00:9e:93:e6:00:58:08:13:01:4e:14:2e:c0:43:e1:
+         2b:b1:df:b8:21:f9:fd:ec:55:9e:87:53:4c:b7:25:24:22:da
 
 Certificate:
     Data:
