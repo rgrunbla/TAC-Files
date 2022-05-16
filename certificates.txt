@@ -17891,6 +17891,97 @@ Certificate:
 Certificate:
     Data:
         Version: 3 (0x2)
+        Serial Number: 3375557512897510327 (0x2ed863ac6b283bb7)
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = VN, O = Ban C\C6\A1 y\E1\BA\BFu Ch\C3\ADnh ph\E1\BB\A7, CN = CA ph\E1\BB\A5c v\E1\BB\A5 c\C3\A1c c\C6\A1 quan Nh\C3\A0 n\C6\B0\E1\BB\9Bc G2
+        Validity
+            Not Before: Jul 15 11:43:43 2021 GMT
+            Not After : Jul 14 11:43:43 2026 GMT
+        Subject: C = VN, L = H\C3\80 N\E1\BB\98I, O = B\E1\BB\98 Y T\E1\BA\BE, OU = C\E1\BB\A4C Y T\E1\BA\BE D\E1\BB\B0 PH\C3\92NG, CN = CH\E1\BB\A8NG NH\E1\BA\ACN TI\C3\8AM CH\E1\BB\A6NG - C\E1\BB\A4C Y T\E1\BA\BE D\E1\BB\B0 PH\C3\92NG
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (2048 bit)
+                Modulus:
+                    00:b3:af:37:fc:22:09:72:2f:35:5e:20:32:cb:29:
+                    ff:2c:1c:ef:57:b4:38:ee:d4:08:0c:18:d7:d7:e7:
+                    5c:6c:68:4d:ed:e6:90:42:f3:37:2f:cb:69:89:b3:
+                    62:59:50:44:3f:d8:d6:3b:31:cc:25:41:af:e6:e3:
+                    a3:5e:ce:fa:cf:97:cf:11:61:cd:91:bf:26:cb:6a:
+                    b2:26:de:4d:dd:25:d0:40:e6:9f:6b:89:63:f5:ac:
+                    2f:63:b2:85:66:63:f0:8a:fc:9f:5d:8c:35:f6:79:
+                    60:93:ea:e1:24:73:55:cd:9d:c7:cf:1f:83:cb:89:
+                    66:26:95:20:76:1e:63:f4:77:7b:33:d3:ef:56:f8:
+                    28:78:76:7b:2a:87:a0:7d:a9:e8:3d:11:61:54:dc:
+                    29:e8:1a:43:38:11:c7:2d:34:0b:43:94:d4:b0:63:
+                    52:97:a4:d7:a3:43:ce:e5:88:29:65:1c:41:8c:0e:
+                    73:87:4d:98:c4:b4:50:de:f8:25:2c:32:b1:55:f9:
+                    a1:90:ee:73:de:42:b6:c5:cc:d5:5a:61:3a:7d:9f:
+                    65:e9:d9:e1:e7:84:e1:b7:4e:37:4f:85:ae:14:bc:
+                    a0:24:23:be:ca:2c:95:b2:23:5c:d8:6e:58:f1:fd:
+                    dc:3f:b5:5f:d4:1f:6c:bb:6b:9e:07:66:67:98:f1:
+                    8c:8b
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Authority Key Identifier: 
+                keyid:50:BE:CF:A0:BD:EA:0F:9F:4E:91:28:A3:2A:EB:7C:EE:F0:2F:C8:BA
+
+            Authority Information Access: 
+                CA Issuers - URI:http://ca.gov.vn/pki/pub/crt/cpcag2.crt
+                OCSP - URI:http://ocsp.ca.gov.vn
+
+            X509v3 Subject Alternative Name: 
+                email:cytdp@moh.gov.vn
+            X509v3 Certificate Policies: 
+                Policy: 2.16.704.1.1.1.1.1
+                  CPS: https://ca.gov.vn/pki/pub/policies/CP
+
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication, E-mail Protection, Microsoft Smartcard Login
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://ca.gov.vn/pki/pub/crl/cpcag2.crl
+
+            X509v3 Subject Key Identifier: 
+                2E:3E:67:51:B3:39:5D:4B:AB:0A:EA:24:2E:7E:28:B2:8D:8F:FA:36
+            X509v3 Key Usage: critical
+                Digital Signature, Non Repudiation, Key Encipherment, Data Encipherment
+    Signature Algorithm: sha256WithRSAEncryption
+         0f:73:58:6b:d3:c7:d2:aa:cd:ff:02:ac:82:8f:99:0a:a6:8d:
+         f5:d7:ae:02:ae:37:81:ae:55:91:75:eb:3a:17:29:09:99:bd:
+         ca:af:49:42:a5:2e:1f:71:e0:38:a5:ed:01:7b:24:3f:13:b2:
+         93:62:9c:cc:a6:fd:a7:d3:b6:74:21:3f:c8:18:15:e4:46:e7:
+         39:f7:40:1f:e1:c7:f9:80:19:0b:67:74:3b:3f:0e:d8:84:3f:
+         fb:f6:52:26:6b:d0:23:75:20:bf:7b:b2:5d:59:75:b3:de:cd:
+         ac:0f:6d:97:01:ae:a8:5a:12:ec:eb:f6:c7:0a:21:41:e9:ca:
+         ee:82:b2:6c:c0:f0:c5:25:75:5f:13:20:53:1e:62:05:4b:b1:
+         2b:3f:fd:6e:96:f7:5d:fe:bd:3b:74:e8:39:3f:65:93:e6:e6:
+         e9:e4:f0:d3:e4:5d:84:f0:88:ee:6a:1a:fa:93:01:7a:1a:4f:
+         09:91:ef:8d:80:86:89:ef:5b:96:bf:19:76:bd:17:c5:cf:7c:
+         44:98:77:29:58:69:e3:94:31:97:28:3a:73:9d:4d:84:ac:b4:
+         54:6c:ba:70:df:7c:df:c5:b8:15:6d:ec:f0:7d:84:60:e8:b8:
+         e4:d0:6f:4a:3f:d4:6d:f7:cc:b5:8a:4f:5c:7d:8f:da:b1:cf:
+         4d:96:e7:db:51:75:4b:7e:6c:af:49:7d:76:d7:f7:32:fd:38:
+         f8:fa:c2:b6:90:6a:2f:b3:08:f4:d4:3a:5e:3f:a6:37:46:b6:
+         bf:3b:30:b7:ee:07:ae:e8:29:24:cb:3e:a8:c2:a9:05:ac:7c:
+         b5:11:38:22:7f:e4:f6:94:6c:4f:1d:d9:42:3d:29:d9:a3:37:
+         e8:d8:1c:03:d2:08:db:e2:6d:35:0e:9a:af:79:b2:9d:ea:be:
+         29:ce:9d:31:0f:83:e2:76:18:a0:df:b6:d6:47:31:71:11:7f:
+         20:70:ab:c4:88:6b:fe:6e:f6:5d:ba:ca:3a:08:dc:95:68:01:
+         f2:ee:94:99:a9:f3:3b:0d:18:97:c3:09:5b:6a:c5:8d:c4:db:
+         a0:9b:75:fc:02:7f:c4:27:5e:72:d0:13:6f:7a:6c:f6:94:f0:
+         c3:15:68:73:b7:93:0a:eb:fb:11:91:b6:95:0c:cf:4d:da:e4:
+         bc:a6:31:44:50:a4:de:6c:db:f3:e1:3b:7d:b5:21:41:4b:e8:
+         b3:35:3f:ff:e1:7c:b0:d1:48:f4:a3:e5:03:66:9c:70:e4:de:
+         75:10:ec:0e:ab:4a:f2:8d:65:17:1d:b2:e0:5f:8a:1f:dd:05:
+         ad:33:f1:59:1a:a8:ad:96:c8:aa:0c:49:48:0d:d3:0c:50:9f:
+         05:68:a9:53:6d:f5:24:8c
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
         Serial Number:
             12:53:70:8a:2f:4d:a3:4f:ac:1d:08:72:44:25:38:f0:b0:77:d1:0d
         Signature Algorithm: sha256WithRSAEncryption
