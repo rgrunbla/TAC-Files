@@ -7928,6 +7928,104 @@
         {
             "AffectedFields": [
                 "v.0",
+                "v.0.dt",
+                "v.0.dn",
+                "v.0.sd"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "ES",
+            "Description": [
+                {
+                    "desc": "At least 14 days must have elapsed since completing the primary course of immunization. A booster shot is valid immediately.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Seit dem Abschluss der Grundimmunisierung m\u00fcssen mindestens 14 Tage vergangen sein. Eine Auffrischimpfung ist sofort g\u00fcltig.",
+                    "lang": "de"
+                },
+                {
+                    "desc": "Une fois la primo-vaccination effectu\u00e9e, il faut attendre au moins 14 jours. Une injection de rappel est valable imm\u00e9diatement.",
+                    "lang": "fr"
+                },
+                {
+                    "desc": "Deben haber transcurrido al menos 14 d\u00edas desde la finalizaci\u00f3n de la inmunizaci\u00f3n b\u00e1sica. Una vacuna de refuerzo ser\u00e1 v\u00e1lida de forma inmediata.",
+                    "lang": "es"
+                },
+                {
+                    "desc": "Devono essere passati minimo 14 giorni dalla vaccinazione finale necessaria per l\u2019immunizzazione di base. Il richiamo del vaccino \u00e8 valido da subito.",
+                    "lang": "it"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-ES-0003",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        "if": [
+                            {
+                                "not-before": [
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "external.validationClock"
+                                            },
+                                            0,
+                                            "day"
+                                        ]
+                                    },
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "payload.v.0.dt"
+                                            },
+                                            15,
+                                            "day"
+                                        ]
+                                    }
+                                ]
+                            },
+                            true,
+                            {
+                                "if": [
+                                    {
+                                        ">": [
+                                            {
+                                                "var": "payload.v.0.dn"
+                                            },
+                                            2
+                                        ]
+                                    },
+                                    true,
+                                    {
+                                        ">": [
+                                            {
+                                                "var": "payload.v.0.dn"
+                                            },
+                                            {
+                                                "var": "payload.v.0.sd"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-05-23T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.2"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
                 "v.0.vp"
             ],
             "CertificateType": "Vaccination",
@@ -8290,112 +8388,6 @@
             "ValidFrom": "2022-02-18T12:00:00Z",
             "ValidTo": "2030-06-01T00:00:00Z",
             "Version": "1.0.1"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
-                "v.0.dt",
-                "v.0.dn",
-                "v.0.sd"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "ES",
-            "Description": [
-                {
-                    "desc": "Verification Datetime must be more than 0 days and less than 270 days after the last date of vaccination. Booster DN = SD && SD > 2",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Der Zeitpunkt der Verifizierung muss mehr als 0 Tage und weniger als 270 Tage nach dem letzten Impfdatum liegen. Booster DN = SD && SD > 2",
-                    "lang": "de"
-                },
-                {
-                    "desc": "La date de v\u00e9rification doit \u00eatre sup\u00e9rieure \u00e0 0 jours et inf\u00e9rieure \u00e0 270 jours apr\u00e8s la derni\u00e8re date de vaccination. Booster DN = SD && SD > 2",
-                    "lang": "fr"
-                },
-                {
-                    "desc": "La fecha de verificaci\u00f3n debe ser superior a 0 d\u00edas e inferior a 270 d\u00edas despu\u00e9s de la \u00faltima fecha de vacunaci\u00f3n. Booster DN = SD && SD > 2",
-                    "lang": "es"
-                },
-                {
-                    "desc": "La data di verifica deve essere pi\u00f9 di 0 giorni e meno di 270 giorni dopo l'ultima data di vaccinazione. Booster DN = SD && SD > 2",
-                    "lang": "it"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-ES-0005",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        "if": [
-                            {
-                                "and": [
-                                    {
-                                        ">": [
-                                            {
-                                                "var": "payload.v.0.sd"
-                                            },
-                                            2
-                                        ]
-                                    },
-                                    {
-                                        "===": [
-                                            {
-                                                "var": "payload.v.0.sd"
-                                            },
-                                            {
-                                                "var": "payload.v.0.dn"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "not-after": [
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "payload.v.0.dt"
-                                            },
-                                            0,
-                                            "day"
-                                        ]
-                                    },
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "external.validationClock"
-                                            },
-                                            0,
-                                            "day"
-                                        ]
-                                    },
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "payload.v.0.dt"
-                                            },
-                                            271,
-                                            "day"
-                                        ]
-                                    }
-                                ]
-                            },
-                            true
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-02-18T12:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.0"
         },
         {
             "AffectedFields": [
@@ -56909,6 +56901,115 @@
         },
         {
             "AffectedFields": [
+                "dob",
+                "v.0",
+                "v.0.dt"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "ES",
+            "Description": [
+                {
+                    "desc": "The primary vaccination may have been completed 270 days ago at most. For people under 18, the primary vaccination is valid for an unlimited period.",
+                    "lang": "en"
+                },
+                {
+                    "desc": " Seit dem Abschluss der Grundimmunisierung d\u00fcrfen maximal 270 Tage vergangen sein. Bei Personen unter 18 Jahren ist die Grundimmunisierung unbegrenzt g\u00fcltig.",
+                    "lang": "de"
+                },
+                {
+                    "desc": "Un maximum de 270 jours doit s'\u00eatre \u00e9coul\u00e9 depuis l'ach\u00e8vement du sch\u00e9ma de primovaccination. Chez les personnes de moins de 18 ans, la dur\u00e9e de validit\u00e9 de la primovaccination est illimit\u00e9e.",
+                    "lang": "fr"
+                },
+                {
+                    "desc": "Puede transcurrir un m\u00e1ximo de 270 d\u00edas una vez finalizada la inmunizaci\u00f3n de base. En menores de 18 a\u00f1os, la inmunizaci\u00f3n de base es v\u00e1lida indefinidamente.",
+                    "lang": "es"
+                },
+                {
+                    "desc": "Dalla conclusione del ciclo vaccinale primario pu\u00f2 essere trascorso un massimo di 270 giorni. Per i minori di 18 anni, l\u2019immunizzazione di base \u00e8 valida illimitatamente.",
+                    "lang": "it"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-ES-0004",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        "if": [
+                            {
+                                "not-after": [
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "external.validationClock"
+                                            },
+                                            0,
+                                            "day"
+                                        ]
+                                    },
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "payload.v.0.dt"
+                                            },
+                                            270,
+                                            "day"
+                                        ]
+                                    }
+                                ]
+                            },
+                            true,
+                            {
+                                "if": [
+                                    {
+                                        "===": [
+                                            {
+                                                "var": "payload.dob"
+                                            },
+                                            ""
+                                        ]
+                                    },
+                                    false,
+                                    {
+                                        "not-after": [
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "external.validationClock"
+                                                    },
+                                                    0,
+                                                    "day"
+                                                ]
+                                            },
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "payload.dob"
+                                                    },
+                                                    6575,
+                                                    "day"
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-05-23T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.1"
+        },
+        {
+            "AffectedFields": [
                 "v.0",
                 "v.0.dn",
                 "v.0.sd"
@@ -58154,56 +58255,6 @@
             "Type": "Acceptance",
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "t.0",
-                "t.0.ma",
-                "t.0.tt"
-            ],
-            "CertificateType": "Test",
-            "Country": "MQ",
-            "Description": [
-                {
-                    "desc": "The antigen test (e.g., rapid test) must be included in the EU\u2019s \"Common list of COVID-19 rapid antigen tests\".",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Le test antig\u00e9nique (p. ex. test rapide) doit figurer sur la liste commune des tests antig\u00e9niques rapides \u00ab Common list of rapid antigen tests \u00bb de l\u2019UE.",
-                    "lang": "fr"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-_OMQ-0005",
-            "Logic": {
-                "if": [
-                    {
-                        "===": [
-                            {
-                                "var": "payload.t.0.tt"
-                            },
-                            "LP217198-3"
-                        ]
-                    },
-                    {
-                        "in": [
-                            {
-                                "var": "payload.t.0.ma"
-                            },
-                            {
-                                "var": "external.valueSets.covid-19-lab-test-manufacturer-and-name"
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-07-26T00:00:00Z",
-            "ValidTo": "2030-07-26T00:00:00Z",
             "Version": "1.0.0"
         },
         {
@@ -61179,51 +61230,6 @@
         {
             "AffectedFields": [
                 "t.0",
-                "t.0.tt"
-            ],
-            "CertificateType": "Test",
-            "Country": "SI",
-            "Description": [
-                {
-                    "desc": "The test type must be one of the value set list (RAT OR NAA).",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Vrsta testa mora biti na seznamu veljavnih testov.",
-                    "lang": "si"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-SI-0001",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.t.0"
-                    },
-                    {
-                        "in": [
-                            {
-                                "var": "payload.t.0.tt"
-                            },
-                            [
-                                "LP217198-3",
-                                "LP6464-4"
-                            ]
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-07-30T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "t.0",
                 "t.0.tr",
                 "t.0.tt"
             ],
@@ -63414,6 +63420,56 @@
             "Type": "Acceptance",
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "t.0",
+                "t.0.ma",
+                "t.0.tt"
+            ],
+            "CertificateType": "Test",
+            "Country": "MQ",
+            "Description": [
+                {
+                    "desc": "The antigen test (e.g., rapid test) must be included in the EU\u2019s \"Common list of COVID-19 rapid antigen tests\".",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Le test antig\u00e9nique (p. ex. test rapide) doit figurer sur la liste commune des tests antig\u00e9niques rapides \u00ab Common list of rapid antigen tests \u00bb de l\u2019UE.",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-_OMQ-0005",
+            "Logic": {
+                "if": [
+                    {
+                        "===": [
+                            {
+                                "var": "payload.t.0.tt"
+                            },
+                            "LP217198-3"
+                        ]
+                    },
+                    {
+                        "in": [
+                            {
+                                "var": "payload.t.0.ma"
+                            },
+                            {
+                                "var": "external.valueSets.covid-19-lab-test-manufacturer-and-name"
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-07-26T00:00:00Z",
+            "ValidTo": "2030-07-26T00:00:00Z",
             "Version": "1.0.0"
         },
         {
@@ -66658,6 +66714,51 @@
         },
         {
             "AffectedFields": [
+                "t.0",
+                "t.0.tt"
+            ],
+            "CertificateType": "Test",
+            "Country": "SI",
+            "Description": [
+                {
+                    "desc": "The test type must be one of the value set list (RAT OR NAA).",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Vrsta testa mora biti na seznamu veljavnih testov.",
+                    "lang": "si"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-SI-0001",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.t.0"
+                    },
+                    {
+                        "in": [
+                            {
+                                "var": "payload.t.0.tt"
+                            },
+                            [
+                                "LP217198-3",
+                                "LP6464-4"
+                            ]
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-07-30T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
                 "v.0",
                 "v.0.mp",
                 "v.0.dt"
@@ -68848,48 +68949,6 @@
         {
             "AffectedFields": [
                 "t.0",
-                "t.0.tt"
-            ],
-            "CertificateType": "Test",
-            "Country": "MQ",
-            "Description": [
-                {
-                    "desc": "The test type must be one of the value set list (RAT OR NAA).",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Le type de test doit \u00eatre l'une des valeurs propos\u00e9es du value set (RAT OR NAA).",
-                    "lang": "fr"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-MFMQ-0001",
-            "Logic": {
-                "if": [
-                    {
-                        "in": [
-                            {
-                                "var": "payload.t.0.tt"
-                            },
-                            {
-                                "var": "external.valueSets.covid-19-lab-test-type"
-                            }
-                        ]
-                    },
-                    true,
-                    false
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-01T00:00:00Z",
-            "ValidTo": "2030-10-01T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "t.0",
                 "t.0.ma",
                 "t.0.tt"
             ],
@@ -70632,124 +70691,6 @@
                                             true
                                         ]
                                     },
-                                    true
-                                ]
-                            },
-                            true
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-04-07T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "2.1.4"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
-                "dob",
-                "v.0.dn",
-                "v.0.dt",
-                "v.0.sd"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "CY",
-            "Description": [
-                {
-                    "desc": "274 days after 2/2 is ok, and >=18",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-CY-0006",
-            "Logic": {
-                "if": [
-                    {
-                        "and": [
-                            {
-                                "var": "payload.v.0"
-                            },
-                            {
-                                "var": "payload.v.0.dn"
-                            },
-                            {
-                                "var": "payload.v.0.sd"
-                            }
-                        ]
-                    },
-                    {
-                        "if": [
-                            {
-                                "after": [
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "external.validationClock"
-                                            },
-                                            0,
-                                            "day"
-                                        ]
-                                    },
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "payload.dob"
-                                            },
-                                            6575,
-                                            "day"
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "if": [
-                                    {
-                                        "and": [
-                                            {
-                                                "===": [
-                                                    2,
-                                                    {
-                                                        "var": "payload.v.0.dn"
-                                                    }
-                                                ]
-                                            },
-                                            {
-                                                "===": [
-                                                    2,
-                                                    {
-                                                        "var": "payload.v.0.sd"
-                                                    }
-                                                ]
-                                            },
-                                            {
-                                                "after": [
-                                                    {
-                                                        "plusTime": [
-                                                            {
-                                                                "var": "external.validationClock"
-                                                            },
-                                                            0,
-                                                            "day"
-                                                        ]
-                                                    },
-                                                    {
-                                                        "plusTime": [
-                                                            {
-                                                                "var": "payload.v.0.dt"
-                                                            },
-                                                            274,
-                                                            "day"
-                                                        ]
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    false,
                                     true
                                 ]
                             },
@@ -74467,6 +74408,48 @@
         {
             "AffectedFields": [
                 "t.0",
+                "t.0.tt"
+            ],
+            "CertificateType": "Test",
+            "Country": "MQ",
+            "Description": [
+                {
+                    "desc": "The test type must be one of the value set list (RAT OR NAA).",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Le type de test doit \u00eatre l'une des valeurs propos\u00e9es du value set (RAT OR NAA).",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-MFMQ-0001",
+            "Logic": {
+                "if": [
+                    {
+                        "in": [
+                            {
+                                "var": "payload.t.0.tt"
+                            },
+                            {
+                                "var": "external.valueSets.covid-19-lab-test-type"
+                            }
+                        ]
+                    },
+                    true,
+                    false
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-01T00:00:00Z",
+            "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "t.0",
                 "t.0.sc",
                 "t.0.tt"
             ],
@@ -76280,6 +76263,124 @@
                                             "hour"
                                         ]
                                     }
+                                ]
+                            },
+                            true
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-04-07T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "2.1.4"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
+                "dob",
+                "v.0.dn",
+                "v.0.dt",
+                "v.0.sd"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "CY",
+            "Description": [
+                {
+                    "desc": "274 days after 2/2 is ok, and >=18",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-CY-0006",
+            "Logic": {
+                "if": [
+                    {
+                        "and": [
+                            {
+                                "var": "payload.v.0"
+                            },
+                            {
+                                "var": "payload.v.0.dn"
+                            },
+                            {
+                                "var": "payload.v.0.sd"
+                            }
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "after": [
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "external.validationClock"
+                                            },
+                                            0,
+                                            "day"
+                                        ]
+                                    },
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "payload.dob"
+                                            },
+                                            6575,
+                                            "day"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "if": [
+                                    {
+                                        "and": [
+                                            {
+                                                "===": [
+                                                    2,
+                                                    {
+                                                        "var": "payload.v.0.dn"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "===": [
+                                                    2,
+                                                    {
+                                                        "var": "payload.v.0.sd"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "after": [
+                                                    {
+                                                        "plusTime": [
+                                                            {
+                                                                "var": "external.validationClock"
+                                                            },
+                                                            0,
+                                                            "day"
+                                                        ]
+                                                    },
+                                                    {
+                                                        "plusTime": [
+                                                            {
+                                                                "var": "payload.v.0.dt"
+                                                            },
+                                                            274,
+                                                            "day"
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    false,
+                                    true
                                 ]
                             },
                             true
