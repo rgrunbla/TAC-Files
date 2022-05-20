@@ -1,5 +1,33 @@
 Certificate:
     Data:
+        Version: 1 (0x0)
+        Serial Number:
+            19:af:94:ad:2d:8d:b9:cf:00:64:7c:26:25:25:e8:cc:db:dd:84:69
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = ID, ST = DKI Jakarta, L = Jakarta Selatan, O = Kementerian Kesehatan Republik Indonesia, OU = Digital Transformation Office, CN = CSCA_DGC_ID_03
+        Validity
+            Not Before: Apr  8 16:10:52 2022 GMT
+            Not After : Apr  7 16:10:52 2024 GMT
+        Subject: C = ID, ST = DKI Jakarta, L = South Jakarta, O = Ministry of Health Republic of Indonesia, CN = eu.kemkes.go.id
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:f5:8a:a0:35:79:a6:5e:05:a2:8c:b8:3a:72:2e:
+                    de:44:af:cf:55:6a:db:d5:84:81:ab:3a:4a:7a:4f:
+                    2b:e0:bf:d0:86:5f:91:fb:89:7e:84:98:b6:43:e4:
+                    a1:ca:12:6d:04:bd:83:f7:26:1a:8f:26:32:92:40:
+                    be:f8:ba:66:c7
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:22:e4:c9:0b:40:90:a1:6c:e2:18:30:4a:5b:aa:
+         21:54:f2:5a:6d:ff:d4:cd:cb:2b:a4:93:62:72:1f:00:ad:8b:
+         02:21:00:9c:8b:db:0a:61:31:ab:d6:fc:ea:37:d9:22:c0:d8:
+         2a:9f:b7:dd:88:70:28:79:36:33:c7:0f:3f:22:04:54:f3
+
+Certificate:
+    Data:
         Version: 3 (0x2)
         Serial Number:
             01:80:50:7c:8a:11:f5:7f:4b:f7
