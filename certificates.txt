@@ -3601,6 +3601,82 @@ Certificate:
 Certificate:
     Data:
         Version: 3 (0x2)
+        Serial Number: 36 (0x24)
+        Signature Algorithm: rsassaPss         
+         Hash Algorithm: sha256
+         Mask Algorithm: mgf1 with sha256
+          Salt Length: 0x20
+         Trailer Field: 0xBC (default)
+        Issuer: C = EE, O = Estonia, OU = Police and Border Guard Board, serialNumber = 01-2020, CN = CSCA_Estonia
+        Validity
+            Not Before: May 17 11:03:14 2022 GMT
+            Not After : Nov 12 11:03:14 2024 GMT
+        Subject: C = EE, O = Estonia, OU = Health and Welfare Information Systems Centre, CN = 01-2022_DCC, serialNumber = 01-2022
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:49:14:0d:c1:f6:c7:4e:bb:3f:97:cd:fe:7b:fd:
+                    ad:27:d4:82:84:d1:d6:2b:9f:d3:92:0f:ca:84:48:
+                    20:15:5e:3e:73:d9:b0:db:3c:6e:41:17:71:dd:32:
+                    c6:b1:5d:0f:f9:17:97:08:2f:f8:ed:b5:08:b7:fe:
+                    6e:cd:89:3c:16
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                68:5E:F8:23:5D:1A:9C:A9:C0:43:A4:F8:07:27:85:92:06:94:74:AC
+            X509v3 Private Key Usage Period: 
+                Not Before: May 17 11:03:14 2022 GMT, Not After: Nov 13 11:03:14 2022 GMT
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:https://www.pki.politsei.ee/csca.crl
+
+            X509v3 Authority Key Identifier: 
+                keyid:55:AB:D2:6F:85:7E:EE:40:E0:61:4A:DF:98:3E:2B:B6:93:6C:55:BC
+
+    Signature Algorithm: rsassaPss         
+         Hash Algorithm: sha256
+         Mask Algorithm: mgf1 with sha256
+          Salt Length: 0x20
+         Trailer Field: 0xBC (default)
+
+         93:9a:79:9f:78:91:04:28:4b:ce:66:7d:cb:a4:ca:5f:ba:85:
+         13:df:42:db:5a:be:88:af:76:4d:4a:a3:24:63:5d:37:4c:47:
+         67:ba:ff:69:c2:ac:b5:87:29:45:ec:1f:16:fd:48:bb:ff:2a:
+         75:9a:64:49:43:ce:dd:3f:59:e2:a4:10:ed:65:b4:6e:96:9d:
+         55:3d:23:97:fc:a8:66:5e:d9:bc:a6:89:ad:49:8d:e7:b0:ed:
+         27:c2:11:45:2e:4d:87:be:de:45:f6:c2:09:6c:7f:44:1e:9c:
+         7d:34:17:e1:f1:f6:d9:ff:3c:c7:09:2d:79:3c:57:cd:dc:ca:
+         ee:a8:a8:aa:35:ea:fd:6c:86:c2:2b:78:3e:e7:13:1a:55:3f:
+         54:6b:9b:f9:3a:c7:49:12:48:fe:ba:fa:44:fe:f8:75:f3:a3:
+         25:a7:c9:f3:c7:2f:4a:52:cc:0a:2c:b8:b4:68:29:6f:4b:c4:
+         d0:ab:62:2c:3c:8b:e2:99:b0:5a:96:8f:92:77:c5:b2:dd:5f:
+         b0:db:f5:cf:e2:c3:a6:88:08:51:f8:35:12:dc:1f:c1:41:92:
+         fc:dd:62:93:87:31:d4:b5:f3:92:bf:05:d3:eb:dd:97:12:d9:
+         a6:c2:14:59:8d:69:30:02:b7:46:65:f9:d0:d4:ad:a7:fa:d0:
+         cd:ef:2d:cb:98:50:06:83:e4:a2:3d:8f:59:9c:bb:07:20:df:
+         b5:90:30:10:3a:ee:e2:f8:03:a0:e5:ae:e8:85:1c:d5:a6:10:
+         63:35:8f:2c:f9:8a:2c:e9:4b:59:b4:2b:72:7a:ab:5f:ba:e3:
+         14:29:a2:f8:6d:35:c7:3a:d2:16:5d:36:45:71:3f:d3:b2:19:
+         3d:0e:ac:9a:1e:3b:4b:57:e7:3b:30:59:df:e9:f8:b9:7d:96:
+         5c:1e:0a:41:d3:88:18:13:29:8c:a2:01:54:0e:95:ac:f3:dc:
+         e4:f4:2f:4c:c5:e5:6a:1b:01:9f:2c:a3:53:ca:7b:cf:e2:c0:
+         f3:b6:06:0d:69:8d:51:30:fb:a6:eb:1c:28:1e:c8:ea:7f:33:
+         cb:f7:21:37:21:22:89:ec:4c:60:cc:96:11:7e:bd:9d:91:93:
+         7e:e9:fa:19:d9:4d:76:c0:94:54:96:c9:3d:fc:df:e8:c1:94:
+         87:1b:f4:53:53:ed:74:6d:94:5c:06:fb:9a:7b:e7:58:46:3b:
+         8e:c1:1d:54:ad:4a:ea:95:71:84:ef:aa:43:6f:a6:0d:d4:17:
+         e3:9f:ea:d4:8e:54:e0:65:0f:d5:f0:0e:62:50:f1:df:51:e9:
+         57:9d:4a:f5:20:b8:5c:da:5a:14:d0:63:b0:fd:83:42:0a:e2:
+         84:55:7a:97:f8:3a:87:8d
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
         Serial Number:
             0c:37:44:91:c9:4f:08:6b:28
         Signature Algorithm: ecdsa-with-SHA256
