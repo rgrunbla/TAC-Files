@@ -29566,6 +29566,49 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            23:ee:d8:c0:66:b8:61:2e:75:45:36:d7:81:f5:0c:2a:26:2c:59:26
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = SG, ST = Singapore, O = Ministry Of Health, CN = csca.notarise.gov.sg
+        Validity
+            Not Before: May 25 03:19:17 2022 GMT
+            Not After : May 24 03:19:17 2024 GMT
+        Subject: C = SG, ST = Singapore, O = Ministry Of Health, CN = dsc.notarise.gov.sg
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:63:4f:e1:25:26:df:b7:89:b9:11:b4:2b:8b:f4:
+                    b8:1c:61:c6:a1:95:82:a8:b9:f9:ce:aa:9b:54:6a:
+                    29:f2:7b:21:fb:7d:1b:19:30:df:69:62:9d:ee:67:
+                    f9:9f:b8:cc:66:19:b2:53:60:04:cc:e0:e8:17:38:
+                    01:23:b5:e6:aa
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Subject Key Identifier: 
+                87:BC:03:83:BB:5C:4B:2D:C1:75:18:EB:25:50:25:AC:FD:2E:18:54
+            X509v3 Authority Key Identifier: 
+                keyid:39:37:05:B3:38:B9:F9:9E:23:0D:D1:C2:C1:B0:C3:B3:32:97:01:A5
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:https://www.notarise.gov.sg/csca.crl
+
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.1847.2021.1.1, 1.3.6.1.4.1.1847.2021.1.2, 1.3.6.1.4.1.1847.2021.1.3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:c3:38:be:ff:a2:ac:f5:d5:d3:bc:09:4e:41:
+         e8:b9:a7:09:64:96:58:de:6d:76:f9:bc:94:e8:f0:b8:ed:42:
+         00:02:21:00:a1:4b:46:0c:07:0b:c1:ec:f3:24:43:00:56:37:
+         4d:20:77:d1:30:1f:5a:18:2a:77:43:b1:67:3b:6c:00:f9:36
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             5a:0f:71:de:9d:5a:87:0b:19:71:50:4b:4c:ac:92:ab:ba:f6:0c:66
         Signature Algorithm: sha256WithRSAEncryption
         Issuer: C = FR, O = Gouv, CN = CSCA-FRANCE
