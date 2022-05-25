@@ -2319,6 +2319,80 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            d5:eb:40:82:6b:3b:9f:af:24:cc:e2:05:83:69:27:32:e8:32:69
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = FR, O = Gouv, CN = CSCA-FRANCE
+        Validity
+            Not Before: May 24 22:00:00 2022 GMT
+            Not After : May 24 22:00:00 2024 GMT
+        Subject: C = FR, O = DGS, OU = 120036017, CN = DSC_FR_01003
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:a9:11:4e:68:26:7c:3a:7b:83:58:4a:2a:dd:2b:
+                    44:be:1c:e1:c2:f6:7f:94:a1:09:28:a9:00:9b:a7:
+                    a6:b7:0f:5b:61:a6:e0:38:e4:f2:40:24:01:f2:24:
+                    66:1c:95:a3:d9:ed:bb:c7:1b:87:1a:73:d4:98:8c:
+                    69:74:5e:b9:09
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                C9:1A:2D:8C:F7:2D:14:61:91:AA:DA:FA:7B:D9:15:65:18:11:A3:85
+            X509v3 Authority Key Identifier: 
+                keyid:BE:8A:2E:D6:C9:F9:20:4E:3A:27:03:08:97:4D:EC:FD:D9:7D:C5:E6
+
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://ants.gouv.fr/csca_crl
+
+            X509v3 Certificate Policies: 
+                Policy: 1.2.250.1.200.31.3.9.1.1
+
+            Authority Information Access: 
+                CA Issuers - URI:https://ant.gouv.fr/csca
+
+    Signature Algorithm: sha256WithRSAEncryption
+         8c:99:3b:ed:5f:7b:32:0e:c3:5d:a5:04:b6:a7:cd:4a:a8:c8:
+         24:78:d5:b0:03:e1:db:c9:76:99:09:b1:aa:d0:ab:ae:ab:08:
+         a0:83:23:89:52:d8:80:3d:94:30:31:c5:7b:cb:c1:16:76:5c:
+         84:33:dc:b6:24:19:12:df:74:e2:b2:5b:0d:e2:e7:69:41:57:
+         92:95:b4:b7:52:59:5f:ee:94:b4:3c:de:4e:26:c5:f2:75:2e:
+         92:c5:51:9b:4d:2b:74:33:a2:b2:be:53:00:1b:10:93:d7:ea:
+         9e:08:7e:e4:a1:32:ab:9f:b3:5e:11:c5:58:75:61:01:1b:36:
+         4b:62:6c:6e:f9:3a:27:a1:d0:c7:fe:f3:85:a8:cc:5d:cb:e5:
+         3a:7b:e7:71:fb:5a:65:94:fe:31:75:65:b8:7b:16:1d:58:aa:
+         22:0c:15:f5:a6:ab:e9:fe:c9:be:8f:c1:72:0f:1f:6a:ee:31:
+         87:15:b5:c1:d1:05:12:4f:15:0e:76:00:5a:7a:01:d2:c2:39:
+         b3:6c:55:87:57:ce:91:f4:63:b8:95:b6:33:c0:65:90:65:3e:
+         28:7a:23:9e:20:bd:bd:f5:96:ca:b0:1e:01:21:4c:61:56:ee:
+         12:65:5f:1b:15:9f:1a:10:9b:41:07:dd:fa:8e:87:0e:85:f1:
+         e1:89:c4:6b:f5:07:bf:f5:ed:39:57:c0:63:9f:57:7c:3d:ce:
+         27:24:d9:62:0d:b5:b3:55:e8:20:49:3d:f2:cd:a2:a3:c9:f0:
+         c4:fd:ac:50:7c:87:18:5e:12:35:d8:b0:b2:5c:cb:f3:4d:ed:
+         49:4e:30:18:35:7d:28:bd:1a:bc:fe:d7:79:71:05:c1:31:53:
+         83:6c:a3:a9:b2:fd:36:5c:9f:70:1b:b7:b2:9f:ac:aa:92:96:
+         f5:5c:c3:c9:07:64:4a:11:21:64:3e:d9:ce:63:5d:0e:7f:b5:
+         78:ca:16:70:77:90:7c:de:bc:62:74:21:6e:a2:eb:51:7d:66:
+         79:ff:62:92:9a:84:e5:1b:07:1b:a2:a8:e3:38:11:0b:c0:ac:
+         0a:92:77:69:9a:b4:89:78:c5:96:a4:3e:93:5d:32:ef:0e:ff:
+         c5:13:e5:6f:4c:24:a6:00:c0:d1:08:3d:58:78:c5:94:51:e2:
+         e9:74:63:58:c6:b9:46:f2:2e:e5:6c:62:d7:22:6a:25:4e:ff:
+         7e:de:62:8f:e5:b7:ac:91:c5:a1:da:e1:19:c4:97:af:e6:0d:
+         5c:35:67:dc:b3:d6:48:47:53:c9:9c:4e:69:b8:fd:86:6a:07:
+         19:4a:32:37:4b:14:31:1f:8b:19:a6:43:dd:1f:5a:3f:56:6b:
+         54:52:b4:57:36:db:7a:cd
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             33:23:66:f5:85:3c:e1:83:09:83:8e:01:3e:cd:e0:26
         Signature Algorithm: sha256WithRSAEncryption
         Issuer: C = CH, organizationIdentifier = VATCH-CHE-221.032.573, O = Bundesamt fuer Informatik und Telekommunikation (BIT), OU = Swiss Government PKI, CN = Swiss Government Regulated CA 02
