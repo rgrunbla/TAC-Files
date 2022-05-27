@@ -5708,6 +5708,49 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            60:e6:43:ef:bf:b9:30:10:82:7d:00:81:27:d0:4a:5a:91:2c:15:87
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = TG, ST = MARITIME, L = LOME, O = MENTD, OU = DCA, CN = e-certs.gouv.tg, emailAddress = support_it@support.gouv.tg
+        Validity
+            Not Before: May 27 00:15:08 2022 GMT
+            Not After : May 26 00:15:08 2024 GMT
+        Subject: C = TG, ST = MARITIME, L = LOME, O = INH, OU = INH, CN = inh.tg, emailAddress = wemboo.halatoko@inh.tg
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:6d:da:13:f4:49:1b:fc:e6:78:d0:b3:df:99:4e:
+                    af:04:a7:cf:fa:32:69:19:42:77:ef:60:e6:e0:31:
+                    2c:a7:75:98:28:f4:5c:53:cd:9a:f6:47:a6:27:d2:
+                    1e:a6:02:64:5f:45:6a:d6:36:9b:69:ba:89:e2:6c:
+                    f2:72:46:fe:1e
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Subject Key Identifier: 
+                91:F8:F1:09:69:D6:4F:F8:12:D5:A0:FB:C6:A1:F4:4B:1C:6B:5B:FF
+            X509v3 Authority Key Identifier: 
+                keyid:24:5A:87:3E:2D:A8:4A:78:80:C8:14:C8:03:85:94:7F:1F:6B:6A:34
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:https://e-certs.gouv.tg/crl/hcert/covid19
+
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.1847.2021.1.1, 1.3.6.1.4.1.1847.2021.1.2, 1.3.6.1.4.1.1847.2021.1.3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:2e:20:c7:86:89:2b:75:63:51:85:ed:82:c2:dc:
+         e8:e1:e5:07:fa:53:08:46:f2:b0:45:18:90:ee:e1:9c:54:09:
+         02:21:00:f5:c9:54:53:fa:dc:85:ca:fc:1f:50:0e:a4:51:cb:
+         ea:c2:a2:57:bd:d8:89:cb:49:d2:48:cb:9a:bb:31:11:58
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             41:64:be:e1:f2:c2:bd:fc:71:2e:12:10:b7:65:b3:58
         Signature Algorithm: rsassaPss         
          Hash Algorithm: sha512
