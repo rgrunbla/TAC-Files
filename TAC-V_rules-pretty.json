@@ -50079,6 +50079,269 @@
             "Version": "1.0.0"
         },
         {
+            "AffectedFields": [
+                "v.0",
+                "v.0.dt",
+                "v.0.mp",
+                "v.0.dn"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "AL",
+            "Description": [
+                {
+                    "desc": "At least 14 days must have elapsed since completing the primary course of immunization. A booster shot is valid immediately as long as it is clearly identified as such.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Seit dem Abschluss der Grundimmunisierung m\u00fcssen mindestens 14 Tage vergangen sein. Eine Auffrischungsimpfung ist sofort g\u00fcltig, falls sie eindeutig als solche erkennbar ist.",
+                    "lang": "de"
+                },
+                {
+                    "desc": "Une fois la primo-vaccination effectu\u00e9e, il faut attendre au moins 14 jours. Une injection de rappel est valable imm\u00e9diatement, si elle est clairement identifiable comme telle.",
+                    "lang": "fr"
+                },
+                {
+                    "desc": "Deben haber transcurrido al menos 14 d\u00edas desde la finalizaci\u00f3n de la inmunizaci\u00f3n b\u00e1sica. Una vacuna de refuerzo ser\u00e1 v\u00e1lida de forma inmediata si es claramente reconocible como tal.",
+                    "lang": "es"
+                },
+                {
+                    "desc": "Devono essere passati minimo 14 giorni dalla vaccinazione finale necessaria per l'immunizzazione di base. Il richiamo del vaccino \u00e8 valido da subito purch\u00e9 sia riconoscibile come tale in maniera univoca.",
+                    "lang": "it"
+                },
+                {
+                    "desc": "Duhet t\u00eb ken\u00eb kaluar t\u00eb pakt\u00ebn 14 dit\u00eb nga p\u00ebrfundimi i ciklit par\u00ebsor t\u00eb imunizimit. Nj\u00eb vaksin\u00eb p\u00ebrforcuese \u00ebsht\u00eb e vlefshme menj\u00ebher\u00eb, p\u00ebr sa koh\u00eb q\u00eb identifikohet qart\u00eb si e till\u00eb.",
+                    "lang": "sq"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-AL-0002",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        "if": [
+                            {
+                                "and": [
+                                    {
+                                        "not-before": [
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "external.validationClock"
+                                                    },
+                                                    0,
+                                                    "day"
+                                                ]
+                                            },
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "payload.v.0.dt"
+                                                    },
+                                                    15,
+                                                    "day"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "and": [
+                                            {
+                                                "<=": [
+                                                    {
+                                                        "var": "payload.v.0.dn"
+                                                    },
+                                                    2
+                                                ]
+                                            },
+                                            {
+                                                "===": [
+                                                    {
+                                                        "var": "payload.v.0.dn"
+                                                    },
+                                                    {
+                                                        "var": "payload.v.0.sd"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            true,
+                            {
+                                "if": [
+                                    {
+                                        "and": [
+                                            {
+                                                ">=": [
+                                                    {
+                                                        "var": "payload.v.0.dn"
+                                                    },
+                                                    3
+                                                ]
+                                            },
+                                            {
+                                                ">=": [
+                                                    {
+                                                        "var": "payload.v.0.dn"
+                                                    },
+                                                    {
+                                                        "var": "payload.v.0.sd"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    true,
+                                    {
+                                        "if": [
+                                            {
+                                                "and": [
+                                                    {
+                                                        "and": [
+                                                            {
+                                                                ">=": [
+                                                                    {
+                                                                        "var": "payload.v.0.dn"
+                                                                    },
+                                                                    2
+                                                                ]
+                                                            },
+                                                            {
+                                                                ">=": [
+                                                                    {
+                                                                        "var": "payload.v.0.dn"
+                                                                    },
+                                                                    {
+                                                                        "var": "payload.v.0.sd"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "===": [
+                                                            {
+                                                                "var": "payload.v.0.mp"
+                                                            },
+                                                            "EU/1/20/1525"
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            true,
+                                            {
+                                                "and": [
+                                                    {
+                                                        "===": [
+                                                            {
+                                                                "var": "payload.v.0.sd"
+                                                            },
+                                                            1
+                                                        ]
+                                                    },
+                                                    {
+                                                        "===": [
+                                                            {
+                                                                "var": "payload.v.0.dn"
+                                                            },
+                                                            2
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-02-16T15:00:00Z",
+            "ValidTo": "2023-02-16T00:00:00Z",
+            "Version": "2.2.0"
+        },
+        {
+            "AffectedFields": [
+                "r.0",
+                "r.0.fr"
+            ],
+            "CertificateType": "Recovery",
+            "Country": "AL",
+            "Description": [
+                {
+                    "desc": "The positive NAA test result (e.g., PCR) must be older than 11 days.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Der positive NAA-Test (z.B. PCR) muss mindestens 11 Tage zur\u00fcckliegen.",
+                    "lang": "de"
+                },
+                {
+                    "desc": "Le test TAN positif (p. ex. PCR) doit dater d\u2018au moins 11 jours.",
+                    "lang": "fr"
+                },
+                {
+                    "desc": "Deben haber transcurrido como m\u00ednimo 11 d\u00edas desde que una prueba de amplificaci\u00f3n de \u00e1cidos nucleicos (por ejemplo, una PCR) diese positivo.",
+                    "lang": "es"
+                },
+                {
+                    "desc": "Il NAAT positivo (ad es. test PRC) deve risalire minimo a 11 giorni fa.",
+                    "lang": "it"
+                },
+                {
+                    "desc": "Rezultati pozitiv i testit NAA (p.sh., PCR) duhet t\u00eb jet\u00eb m\u00eb i vjet\u00ebr se 11 dit\u00eb.",
+                    "lang": "sq"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "RR-AL-0002",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.r.0"
+                    },
+                    {
+                        "not-before": [
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "external.validationClock"
+                                    },
+                                    0,
+                                    "day"
+                                ]
+                            },
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "payload.r.0.fr"
+                                    },
+                                    11,
+                                    "day"
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-12-10T16:00:00Z",
+            "ValidTo": "2022-12-10T00:00:00Z",
+            "Version": "1.1.0"
+        },
+        {
             "AffectedFields": [],
             "CertificateType": "General",
             "Country": "GF",
@@ -51073,269 +51336,6 @@
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.2"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
-                "v.0.dt",
-                "v.0.mp",
-                "v.0.dn"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "AL",
-            "Description": [
-                {
-                    "desc": "At least 14 days must have elapsed since completing the primary course of immunization. A booster shot is valid immediately as long as it is clearly identified as such.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Seit dem Abschluss der Grundimmunisierung m\u00fcssen mindestens 14 Tage vergangen sein. Eine Auffrischungsimpfung ist sofort g\u00fcltig, falls sie eindeutig als solche erkennbar ist.",
-                    "lang": "de"
-                },
-                {
-                    "desc": "Une fois la primo-vaccination effectu\u00e9e, il faut attendre au moins 14 jours. Une injection de rappel est valable imm\u00e9diatement, si elle est clairement identifiable comme telle.",
-                    "lang": "fr"
-                },
-                {
-                    "desc": "Deben haber transcurrido al menos 14 d\u00edas desde la finalizaci\u00f3n de la inmunizaci\u00f3n b\u00e1sica. Una vacuna de refuerzo ser\u00e1 v\u00e1lida de forma inmediata si es claramente reconocible como tal.",
-                    "lang": "es"
-                },
-                {
-                    "desc": "Devono essere passati minimo 14 giorni dalla vaccinazione finale necessaria per l'immunizzazione di base. Il richiamo del vaccino \u00e8 valido da subito purch\u00e9 sia riconoscibile come tale in maniera univoca.",
-                    "lang": "it"
-                },
-                {
-                    "desc": "Duhet t\u00eb ken\u00eb kaluar t\u00eb pakt\u00ebn 14 dit\u00eb nga p\u00ebrfundimi i ciklit par\u00ebsor t\u00eb imunizimit. Nj\u00eb vaksin\u00eb p\u00ebrforcuese \u00ebsht\u00eb e vlefshme menj\u00ebher\u00eb, p\u00ebr sa koh\u00eb q\u00eb identifikohet qart\u00eb si e till\u00eb.",
-                    "lang": "sq"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-AL-0002",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        "if": [
-                            {
-                                "and": [
-                                    {
-                                        "not-before": [
-                                            {
-                                                "plusTime": [
-                                                    {
-                                                        "var": "external.validationClock"
-                                                    },
-                                                    0,
-                                                    "day"
-                                                ]
-                                            },
-                                            {
-                                                "plusTime": [
-                                                    {
-                                                        "var": "payload.v.0.dt"
-                                                    },
-                                                    15,
-                                                    "day"
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "and": [
-                                            {
-                                                "<=": [
-                                                    {
-                                                        "var": "payload.v.0.dn"
-                                                    },
-                                                    2
-                                                ]
-                                            },
-                                            {
-                                                "===": [
-                                                    {
-                                                        "var": "payload.v.0.dn"
-                                                    },
-                                                    {
-                                                        "var": "payload.v.0.sd"
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            true,
-                            {
-                                "if": [
-                                    {
-                                        "and": [
-                                            {
-                                                ">=": [
-                                                    {
-                                                        "var": "payload.v.0.dn"
-                                                    },
-                                                    3
-                                                ]
-                                            },
-                                            {
-                                                ">=": [
-                                                    {
-                                                        "var": "payload.v.0.dn"
-                                                    },
-                                                    {
-                                                        "var": "payload.v.0.sd"
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    true,
-                                    {
-                                        "if": [
-                                            {
-                                                "and": [
-                                                    {
-                                                        "and": [
-                                                            {
-                                                                ">=": [
-                                                                    {
-                                                                        "var": "payload.v.0.dn"
-                                                                    },
-                                                                    2
-                                                                ]
-                                                            },
-                                                            {
-                                                                ">=": [
-                                                                    {
-                                                                        "var": "payload.v.0.dn"
-                                                                    },
-                                                                    {
-                                                                        "var": "payload.v.0.sd"
-                                                                    }
-                                                                ]
-                                                            }
-                                                        ]
-                                                    },
-                                                    {
-                                                        "===": [
-                                                            {
-                                                                "var": "payload.v.0.mp"
-                                                            },
-                                                            "EU/1/20/1525"
-                                                        ]
-                                                    }
-                                                ]
-                                            },
-                                            true,
-                                            {
-                                                "and": [
-                                                    {
-                                                        "===": [
-                                                            {
-                                                                "var": "payload.v.0.sd"
-                                                            },
-                                                            1
-                                                        ]
-                                                    },
-                                                    {
-                                                        "===": [
-                                                            {
-                                                                "var": "payload.v.0.dn"
-                                                            },
-                                                            2
-                                                        ]
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-02-16T15:00:00Z",
-            "ValidTo": "2023-02-16T00:00:00Z",
-            "Version": "2.2.0"
-        },
-        {
-            "AffectedFields": [
-                "r.0",
-                "r.0.fr"
-            ],
-            "CertificateType": "Recovery",
-            "Country": "AL",
-            "Description": [
-                {
-                    "desc": "The positive NAA test result (e.g., PCR) must be older than 11 days.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Der positive NAA-Test (z.B. PCR) muss mindestens 11 Tage zur\u00fcckliegen.",
-                    "lang": "de"
-                },
-                {
-                    "desc": "Le test TAN positif (p. ex. PCR) doit dater d\u2018au moins 11 jours.",
-                    "lang": "fr"
-                },
-                {
-                    "desc": "Deben haber transcurrido como m\u00ednimo 11 d\u00edas desde que una prueba de amplificaci\u00f3n de \u00e1cidos nucleicos (por ejemplo, una PCR) diese positivo.",
-                    "lang": "es"
-                },
-                {
-                    "desc": "Il NAAT positivo (ad es. test PRC) deve risalire minimo a 11 giorni fa.",
-                    "lang": "it"
-                },
-                {
-                    "desc": "Rezultati pozitiv i testit NAA (p.sh., PCR) duhet t\u00eb jet\u00eb m\u00eb i vjet\u00ebr se 11 dit\u00eb.",
-                    "lang": "sq"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "RR-AL-0002",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.r.0"
-                    },
-                    {
-                        "not-before": [
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "external.validationClock"
-                                    },
-                                    0,
-                                    "day"
-                                ]
-                            },
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "payload.r.0.fr"
-                                    },
-                                    11,
-                                    "day"
-                                ]
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-12-10T16:00:00Z",
-            "ValidTo": "2022-12-10T00:00:00Z",
-            "Version": "1.1.0"
         },
         {
             "AffectedFields": [
