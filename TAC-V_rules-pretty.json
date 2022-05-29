@@ -1203,6 +1203,66 @@
         {
             "AffectedFields": [
                 "t.0",
+                "t.0.sc"
+            ],
+            "CertificateType": "Test",
+            "Country": "FI",
+            "Description": [
+                {
+                    "desc": "Test has expired (72 h)",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Testi on vanhentunut (72 tuntia)",
+                    "lang": "fi"
+                },
+                {
+                    "desc": "Testet \u00e4r f\u00f6r\u00e5ldrat (72 timmar)",
+                    "lang": "sv"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-FI-0002",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.t.0"
+                    },
+                    {
+                        "before": [
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "external.validationClock"
+                                    },
+                                    0,
+                                    "day"
+                                ]
+                            },
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "payload.t.0.sc"
+                                    },
+                                    72,
+                                    "hour"
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-04-10T23:59:59Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.4"
+        },
+        {
+            "AffectedFields": [
+                "t.0",
                 "t.0.tr",
                 "t.0.tt",
                 "payload.t.0.sc"
@@ -2962,66 +3022,6 @@
             "ValidFrom": "2021-12-24T12:00:00Z",
             "ValidTo": "2030-01-01T00:00:00Z",
             "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "t.0",
-                "t.0.sc"
-            ],
-            "CertificateType": "Test",
-            "Country": "FI",
-            "Description": [
-                {
-                    "desc": "Test has expired (72 h)",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Testi on vanhentunut (72 tuntia)",
-                    "lang": "fi"
-                },
-                {
-                    "desc": "Testet \u00e4r f\u00f6r\u00e5ldrat (72 timmar)",
-                    "lang": "sv"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-FI-0002",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.t.0"
-                    },
-                    {
-                        "before": [
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "external.validationClock"
-                                    },
-                                    0,
-                                    "day"
-                                ]
-                            },
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "payload.t.0.sc"
-                                    },
-                                    72,
-                                    "hour"
-                                ]
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-04-10T23:59:59Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.4"
         },
         {
             "AffectedFields": [
@@ -7060,6 +7060,66 @@
         {
             "AffectedFields": [
                 "v.0",
+                "v.0.dt"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "FI",
+            "Description": [
+                {
+                    "desc": "Vaccination date is invalid",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Rokotusp\u00e4iv\u00e4 on virheellinen",
+                    "lang": "fi"
+                },
+                {
+                    "desc": "Vaccinationsdatumet \u00e4r felaktigt",
+                    "lang": "sv"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-FI-0002",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        "not-before": [
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "external.validationClock"
+                                    },
+                                    0,
+                                    "day"
+                                ]
+                            },
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "payload.v.0.dt"
+                                    },
+                                    0,
+                                    "day"
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-04-10T23:59:59Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.4"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
                 "v.0.vp"
             ],
             "CertificateType": "Vaccination",
@@ -8626,66 +8686,6 @@
             "ValidFrom": "2022-01-15T12:00:00Z",
             "ValidTo": "2030-01-01T00:00:00Z",
             "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
-                "v.0.dt"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "FI",
-            "Description": [
-                {
-                    "desc": "Vaccination date is invalid",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Rokotusp\u00e4iv\u00e4 on virheellinen",
-                    "lang": "fi"
-                },
-                {
-                    "desc": "Vaccinationsdatumet \u00e4r felaktigt",
-                    "lang": "sv"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-FI-0002",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        "not-before": [
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "external.validationClock"
-                                    },
-                                    0,
-                                    "day"
-                                ]
-                            },
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "payload.v.0.dt"
-                                    },
-                                    0,
-                                    "day"
-                                ]
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-04-10T23:59:59Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.4"
         },
         {
             "AffectedFields": [
@@ -12731,6 +12731,110 @@
         },
         {
             "AffectedFields": [
+                "v.1"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "FI",
+            "Description": [
+                {
+                    "desc": "Vaccination certificate has more than one entry",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Rokotustodistus ei ole m\u00e4\u00e4ritysten mukainen",
+                    "lang": "fi"
+                },
+                {
+                    "desc": "Intyget om coronavaccinationer uppfyller inte best\u00e4mningarna",
+                    "lang": "sv"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-FI-0000",
+            "Logic": {
+                "!": [
+                    {
+                        "var": "payload.v.1"
+                    }
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-04-10T23:59:59Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.4"
+        },
+        {
+            "AffectedFields": [
+                "r",
+                "t",
+                "v"
+            ],
+            "CertificateType": "General",
+            "Country": "FI",
+            "Description": [
+                {
+                    "desc": "Certificate contains multiple certificate types",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Todistus sis\u00e4lt\u00e4\u00e4 useita todistustyyppej\u00e4",
+                    "lang": "fi"
+                },
+                {
+                    "desc": "Intyget inneh\u00e5ller olika typer av intyg",
+                    "lang": "sv"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "GR-FI-0000",
+            "Logic": {
+                "===": [
+                    {
+                        "reduce": [
+                            [
+                                {
+                                    "var": "payload.r"
+                                },
+                                {
+                                    "var": "payload.t"
+                                },
+                                {
+                                    "var": "payload.v"
+                                }
+                            ],
+                            {
+                                "+": [
+                                    {
+                                        "var": "accumulator"
+                                    },
+                                    {
+                                        "if": [
+                                            {
+                                                "var": "current.0"
+                                            },
+                                            1,
+                                            0
+                                        ]
+                                    }
+                                ]
+                            },
+                            0
+                        ]
+                    },
+                    1
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-04-10T23:59:59Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.4"
+        },
+        {
+            "AffectedFields": [
                 "r.0",
                 "r.0.fr"
             ],
@@ -14826,110 +14930,6 @@
             "ValidFrom": "2022-02-27T23:00:00Z",
             "ValidTo": "2032-02-27T23:00:00Z",
             "Version": "6.0.0"
-        },
-        {
-            "AffectedFields": [
-                "v.1"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "FI",
-            "Description": [
-                {
-                    "desc": "Vaccination certificate has more than one entry",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Rokotustodistus ei ole m\u00e4\u00e4ritysten mukainen",
-                    "lang": "fi"
-                },
-                {
-                    "desc": "Intyget om coronavaccinationer uppfyller inte best\u00e4mningarna",
-                    "lang": "sv"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-FI-0000",
-            "Logic": {
-                "!": [
-                    {
-                        "var": "payload.v.1"
-                    }
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-04-10T23:59:59Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.4"
-        },
-        {
-            "AffectedFields": [
-                "r",
-                "t",
-                "v"
-            ],
-            "CertificateType": "General",
-            "Country": "FI",
-            "Description": [
-                {
-                    "desc": "Certificate contains multiple certificate types",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Todistus sis\u00e4lt\u00e4\u00e4 useita todistustyyppej\u00e4",
-                    "lang": "fi"
-                },
-                {
-                    "desc": "Intyget inneh\u00e5ller olika typer av intyg",
-                    "lang": "sv"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "GR-FI-0000",
-            "Logic": {
-                "===": [
-                    {
-                        "reduce": [
-                            [
-                                {
-                                    "var": "payload.r"
-                                },
-                                {
-                                    "var": "payload.t"
-                                },
-                                {
-                                    "var": "payload.v"
-                                }
-                            ],
-                            {
-                                "+": [
-                                    {
-                                        "var": "accumulator"
-                                    },
-                                    {
-                                        "if": [
-                                            {
-                                                "var": "current.0"
-                                            },
-                                            1,
-                                            0
-                                        ]
-                                    }
-                                ]
-                            },
-                            0
-                        ]
-                    },
-                    1
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-04-10T23:59:59Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.4"
         },
         {
             "AffectedFields": [
@@ -23533,6 +23533,67 @@
         },
         {
             "AffectedFields": [
+                "r.0",
+                "r.0.df",
+                "r.0.du"
+            ],
+            "CertificateType": "Recovery",
+            "Country": "FI",
+            "Description": [
+                {
+                    "desc": "The recovery issue date is not before the validity date",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Sairastamistodistuksen voimassaoloajoissa on ristiriita",
+                    "lang": "fi"
+                },
+                {
+                    "desc": "Giltighetstiderna i intyget om tillfrisknande fr\u00e5n covid-19 strider mot varandra",
+                    "lang": "sv"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "RR-FI-0002",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.r.0"
+                    },
+                    {
+                        "before": [
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "payload.r.0.df"
+                                    },
+                                    0,
+                                    "day"
+                                ]
+                            },
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "payload.r.0.du"
+                                    },
+                                    0,
+                                    "day"
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-04-10T23:59:59Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.4"
+        },
+        {
+            "AffectedFields": [
                 "v.0.dn",
                 "v.0.dt",
                 "v.0.mp"
@@ -23922,6 +23983,147 @@
             "ValidFrom": "2022-03-07T13:00:00Z",
             "ValidTo": "2032-03-07T13:00:00Z",
             "Version": "1.0.5"
+        },
+        {
+            "AffectedFields": [
+                "r.0",
+                "r.0.df",
+                "r.0.du",
+                "r.0.fr"
+            ],
+            "CertificateType": "Recovery",
+            "Country": "FI",
+            "Description": [
+                {
+                    "desc": "Recovery certificate is not valid",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Sairastamistodistus ei ole voimassa",
+                    "lang": "fi"
+                },
+                {
+                    "desc": "Intyget om tillfrisknande fr\u00e5n covid-19 \u00e4r inte giltigt",
+                    "lang": "sv"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "RR-FI-0003",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.r.0"
+                    },
+                    {
+                        "not-after": [
+                            {
+                                "if": [
+                                    {
+                                        "after": [
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "payload.r.0.df"
+                                                    },
+                                                    0,
+                                                    "day"
+                                                ]
+                                            },
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "payload.r.0.fr"
+                                                    },
+                                                    11,
+                                                    "day"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "payload.r.0.df"
+                                            },
+                                            0,
+                                            "day"
+                                        ]
+                                    },
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "payload.r.0.fr"
+                                            },
+                                            11,
+                                            "day"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "external.validationClock"
+                                    },
+                                    0,
+                                    "day"
+                                ]
+                            },
+                            {
+                                "if": [
+                                    {
+                                        "before": [
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "payload.r.0.du"
+                                                    },
+                                                    0,
+                                                    "day"
+                                                ]
+                                            },
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "payload.r.0.fr"
+                                                    },
+                                                    180,
+                                                    "day"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "payload.r.0.du"
+                                            },
+                                            0,
+                                            "day"
+                                        ]
+                                    },
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "payload.r.0.fr"
+                                            },
+                                            180,
+                                            "day"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-04-10T23:59:59Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.4"
         },
         {
             "AffectedFields": [
@@ -24956,208 +25158,6 @@
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "r.0",
-                "r.0.df",
-                "r.0.du"
-            ],
-            "CertificateType": "Recovery",
-            "Country": "FI",
-            "Description": [
-                {
-                    "desc": "The recovery issue date is not before the validity date",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Sairastamistodistuksen voimassaoloajoissa on ristiriita",
-                    "lang": "fi"
-                },
-                {
-                    "desc": "Giltighetstiderna i intyget om tillfrisknande fr\u00e5n covid-19 strider mot varandra",
-                    "lang": "sv"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "RR-FI-0002",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.r.0"
-                    },
-                    {
-                        "before": [
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "payload.r.0.df"
-                                    },
-                                    0,
-                                    "day"
-                                ]
-                            },
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "payload.r.0.du"
-                                    },
-                                    0,
-                                    "day"
-                                ]
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-04-10T23:59:59Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.4"
-        },
-        {
-            "AffectedFields": [
-                "r.0",
-                "r.0.df",
-                "r.0.du",
-                "r.0.fr"
-            ],
-            "CertificateType": "Recovery",
-            "Country": "FI",
-            "Description": [
-                {
-                    "desc": "Recovery certificate is not valid",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Sairastamistodistus ei ole voimassa",
-                    "lang": "fi"
-                },
-                {
-                    "desc": "Intyget om tillfrisknande fr\u00e5n covid-19 \u00e4r inte giltigt",
-                    "lang": "sv"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "RR-FI-0003",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.r.0"
-                    },
-                    {
-                        "not-after": [
-                            {
-                                "if": [
-                                    {
-                                        "after": [
-                                            {
-                                                "plusTime": [
-                                                    {
-                                                        "var": "payload.r.0.df"
-                                                    },
-                                                    0,
-                                                    "day"
-                                                ]
-                                            },
-                                            {
-                                                "plusTime": [
-                                                    {
-                                                        "var": "payload.r.0.fr"
-                                                    },
-                                                    11,
-                                                    "day"
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "payload.r.0.df"
-                                            },
-                                            0,
-                                            "day"
-                                        ]
-                                    },
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "payload.r.0.fr"
-                                            },
-                                            11,
-                                            "day"
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "external.validationClock"
-                                    },
-                                    0,
-                                    "day"
-                                ]
-                            },
-                            {
-                                "if": [
-                                    {
-                                        "before": [
-                                            {
-                                                "plusTime": [
-                                                    {
-                                                        "var": "payload.r.0.du"
-                                                    },
-                                                    0,
-                                                    "day"
-                                                ]
-                                            },
-                                            {
-                                                "plusTime": [
-                                                    {
-                                                        "var": "payload.r.0.fr"
-                                                    },
-                                                    180,
-                                                    "day"
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "payload.r.0.du"
-                                            },
-                                            0,
-                                            "day"
-                                        ]
-                                    },
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "payload.r.0.fr"
-                                            },
-                                            180,
-                                            "day"
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-04-10T23:59:59Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.4"
         },
         {
             "AffectedFields": [
@@ -29110,6 +29110,42 @@
         },
         {
             "AffectedFields": [
+                "t.1"
+            ],
+            "CertificateType": "Test",
+            "Country": "FI",
+            "Description": [
+                {
+                    "desc": "Test certificate has more than one entry",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Testitodistus ei ole m\u00e4\u00e4ritysten mukainen",
+                    "lang": "fi"
+                },
+                {
+                    "desc": "Intyget om covid-19-test uppfyller inte best\u00e4mningarna",
+                    "lang": "sv"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-FI-0000",
+            "Logic": {
+                "!": [
+                    {
+                        "var": "payload.t.1"
+                    }
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-04-10T23:59:59Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.4"
+        },
+        {
+            "AffectedFields": [
                 "t.0.tg"
             ],
             "CertificateType": "General",
@@ -30539,42 +30575,6 @@
             "ValidFrom": "2022-01-12T17:00:00Z",
             "ValidTo": "2030-01-01T00:00:00Z",
             "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "t.1"
-            ],
-            "CertificateType": "Test",
-            "Country": "FI",
-            "Description": [
-                {
-                    "desc": "Test certificate has more than one entry",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Testitodistus ei ole m\u00e4\u00e4ritysten mukainen",
-                    "lang": "fi"
-                },
-                {
-                    "desc": "Intyget om covid-19-test uppfyller inte best\u00e4mningarna",
-                    "lang": "sv"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-FI-0000",
-            "Logic": {
-                "!": [
-                    {
-                        "var": "payload.t.1"
-                    }
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-04-10T23:59:59Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.4"
         },
         {
             "AffectedFields": [
@@ -45176,6 +45176,100 @@
         },
         {
             "AffectedFields": [
+                "t.0",
+                "t.0.tt"
+            ],
+            "CertificateType": "Test",
+            "Country": "FI",
+            "Description": [
+                {
+                    "desc": "Test type is not RAT or NAAT",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Testityyppi ei ole RAT eik\u00e4 NAAT",
+                    "lang": "fi"
+                },
+                {
+                    "desc": "Testets typ \u00e4r inte RAT och inte heller NAAT",
+                    "lang": "sv"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-FI-0001",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.t.0"
+                    },
+                    {
+                        "in": [
+                            {
+                                "var": "payload.t.0.tt"
+                            },
+                            {
+                                "var": "external.valueSets.covid-19-lab-test-type"
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-04-10T23:59:59Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.4"
+        },
+        {
+            "AffectedFields": [
+                "t.0",
+                "t.0.tr"
+            ],
+            "CertificateType": "Test",
+            "Country": "FI",
+            "Description": [
+                {
+                    "desc": "Test result must be negative",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Testituloksen pit\u00e4\u00e4 olla negatiivinen",
+                    "lang": "fi"
+                },
+                {
+                    "desc": "Testresultatet m\u00e5ste vara negativt",
+                    "lang": "sv"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-FI-0003",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.t.0"
+                    },
+                    {
+                        "===": [
+                            {
+                                "var": "payload.t.0.tr"
+                            },
+                            "260415000"
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-04-10T23:59:59Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.4"
+        },
+        {
+            "AffectedFields": [
                 "v.0",
                 "v.0.dn",
                 "v.0.sd"
@@ -46452,100 +46546,6 @@
             "ValidFrom": "2022-02-27T23:00:00Z",
             "ValidTo": "2032-02-27T23:00:00Z",
             "Version": "6.0.0"
-        },
-        {
-            "AffectedFields": [
-                "t.0",
-                "t.0.tt"
-            ],
-            "CertificateType": "Test",
-            "Country": "FI",
-            "Description": [
-                {
-                    "desc": "Test type is not RAT or NAAT",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Testityyppi ei ole RAT eik\u00e4 NAAT",
-                    "lang": "fi"
-                },
-                {
-                    "desc": "Testets typ \u00e4r inte RAT och inte heller NAAT",
-                    "lang": "sv"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-FI-0001",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.t.0"
-                    },
-                    {
-                        "in": [
-                            {
-                                "var": "payload.t.0.tt"
-                            },
-                            {
-                                "var": "external.valueSets.covid-19-lab-test-type"
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-04-10T23:59:59Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.4"
-        },
-        {
-            "AffectedFields": [
-                "t.0",
-                "t.0.tr"
-            ],
-            "CertificateType": "Test",
-            "Country": "FI",
-            "Description": [
-                {
-                    "desc": "Test result must be negative",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Testituloksen pit\u00e4\u00e4 olla negatiivinen",
-                    "lang": "fi"
-                },
-                {
-                    "desc": "Testresultatet m\u00e5ste vara negativt",
-                    "lang": "sv"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-FI-0003",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.t.0"
-                    },
-                    {
-                        "===": [
-                            {
-                                "var": "payload.t.0.tr"
-                            },
-                            "260415000"
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-04-10T23:59:59Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.4"
         },
         {
             "AffectedFields": [
@@ -55475,6 +55475,42 @@
         },
         {
             "AffectedFields": [
+                "r.1"
+            ],
+            "CertificateType": "Recovery",
+            "Country": "FI",
+            "Description": [
+                {
+                    "desc": "Recovery certificate has more than one entry",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Sairastamistodistus ei ole m\u00e4\u00e4ritysten mukainen",
+                    "lang": "fi"
+                },
+                {
+                    "desc": "Intyget om tillfrisknande fr\u00e5n covid-19 uppfyller inte best\u00e4mningarna",
+                    "lang": "sv"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "RR-FI-0000",
+            "Logic": {
+                "!": [
+                    {
+                        "var": "payload.r.1"
+                    }
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-04-10T23:59:59Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.4"
+        },
+        {
+            "AffectedFields": [
                 "t",
                 "v",
                 "r"
@@ -55908,6 +55944,55 @@
             "ValidFrom": "2021-12-18T17:00:00Z",
             "ValidTo": "2031-12-19T00:00:00Z",
             "Version": "1.3.0"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
+                "v.0.dn",
+                "v.0.sd"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "FI",
+            "Description": [
+                {
+                    "desc": "Vaccination series is not full",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Rokotussarja ei ole t\u00e4ysi",
+                    "lang": "fi"
+                },
+                {
+                    "desc": "Vaccinationsserien \u00e4r inte fullst\u00e4ndig",
+                    "lang": "sv"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-FI-0001",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        ">=": [
+                            {
+                                "var": "payload.v.0.dn"
+                            },
+                            {
+                                "var": "payload.v.0.sd"
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-04-10T23:59:59Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.4"
         },
         {
             "AffectedFields": [
@@ -58033,91 +58118,6 @@
             "ValidFrom": "2022-02-27T23:00:00Z",
             "ValidTo": "2032-02-27T23:00:00Z",
             "Version": "6.0.0"
-        },
-        {
-            "AffectedFields": [
-                "r.1"
-            ],
-            "CertificateType": "Recovery",
-            "Country": "FI",
-            "Description": [
-                {
-                    "desc": "Recovery certificate has more than one entry",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Sairastamistodistus ei ole m\u00e4\u00e4ritysten mukainen",
-                    "lang": "fi"
-                },
-                {
-                    "desc": "Intyget om tillfrisknande fr\u00e5n covid-19 uppfyller inte best\u00e4mningarna",
-                    "lang": "sv"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "RR-FI-0000",
-            "Logic": {
-                "!": [
-                    {
-                        "var": "payload.r.1"
-                    }
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-04-10T23:59:59Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.4"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
-                "v.0.dn",
-                "v.0.sd"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "FI",
-            "Description": [
-                {
-                    "desc": "Vaccination series is not full",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Rokotussarja ei ole t\u00e4ysi",
-                    "lang": "fi"
-                },
-                {
-                    "desc": "Vaccinationsserien \u00e4r inte fullst\u00e4ndig",
-                    "lang": "sv"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-FI-0001",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        ">=": [
-                            {
-                                "var": "payload.v.0.dn"
-                            },
-                            {
-                                "var": "payload.v.0.sd"
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-04-10T23:59:59Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.4"
         },
         {
             "AffectedFields": [
@@ -61325,6 +61325,98 @@
         },
         {
             "AffectedFields": [
+                "r.0",
+                "r.0.tg",
+                "t.0",
+                "t.0.tg",
+                "v.0",
+                "v.0.tg"
+            ],
+            "CertificateType": "General",
+            "Country": "FI",
+            "Description": [
+                {
+                    "desc": "Certificate is not for COVID-19",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Todistus ei koske COVID-19 -virusta",
+                    "lang": "fi"
+                },
+                {
+                    "desc": "Intyget g\u00e4ller inte covid-19-viruset",
+                    "lang": "sv"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "GR-FI-0001",
+            "Logic": {
+                "and": [
+                    {
+                        "if": [
+                            {
+                                "var": "payload.r.0"
+                            },
+                            {
+                                "in": [
+                                    {
+                                        "var": "payload.r.0.tg"
+                                    },
+                                    {
+                                        "var": "external.valueSets.disease-agent-targeted"
+                                    }
+                                ]
+                            },
+                            true
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "var": "payload.t.0"
+                            },
+                            {
+                                "in": [
+                                    {
+                                        "var": "payload.t.0.tg"
+                                    },
+                                    {
+                                        "var": "external.valueSets.disease-agent-targeted"
+                                    }
+                                ]
+                            },
+                            true
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "var": "payload.v.0"
+                            },
+                            {
+                                "in": [
+                                    {
+                                        "var": "payload.v.0.tg"
+                                    },
+                                    {
+                                        "var": "external.valueSets.disease-agent-targeted"
+                                    }
+                                ]
+                            },
+                            true
+                        ]
+                    }
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-04-10T23:59:59Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.4"
+        },
+        {
+            "AffectedFields": [
                 "t.0",
                 "t.0.sc",
                 "t.0.tt"
@@ -61421,6 +61513,95 @@
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
+                "v.0.dn",
+                "v.0.dt",
+                "v.0.sd"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "FI",
+            "Description": [
+                {
+                    "desc": "Full vaccination series is not valid yet (7 days)",
+                    "lang": "en"
+                },
+                {
+                    "desc": "T\u00e4ydest\u00e4 rokotussarja ei ole viel\u00e4 voimassa (7 p\u00e4iv\u00e4\u00e4)",
+                    "lang": "fi"
+                },
+                {
+                    "desc": "Den fullst\u00e4ndiga vaccinationsserien \u00e4r inte \u00e4nnu giltig (7 dagar)",
+                    "lang": "sv"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-FI-0003",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        "if": [
+                            {
+                                "and": [
+                                    {
+                                        "===": [
+                                            {
+                                                "var": "payload.v.0.dn"
+                                            },
+                                            {
+                                                "var": "payload.v.0.sd"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "<=": [
+                                            {
+                                                "var": "payload.v.0.dn"
+                                            },
+                                            2
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "not-before": [
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "external.validationClock"
+                                            },
+                                            0,
+                                            "day"
+                                        ]
+                                    },
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "payload.v.0.dt"
+                                            },
+                                            7,
+                                            "day"
+                                        ]
+                                    }
+                                ]
+                            },
+                            true
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-04-10T23:59:59Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.4"
         },
         {
             "AffectedFields": [
@@ -62364,187 +62545,6 @@
             "ValidFrom": "2021-12-24T12:00:00Z",
             "ValidTo": "2030-01-01T00:00:00Z",
             "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "r.0",
-                "r.0.tg",
-                "t.0",
-                "t.0.tg",
-                "v.0",
-                "v.0.tg"
-            ],
-            "CertificateType": "General",
-            "Country": "FI",
-            "Description": [
-                {
-                    "desc": "Certificate is not for COVID-19",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Todistus ei koske COVID-19 -virusta",
-                    "lang": "fi"
-                },
-                {
-                    "desc": "Intyget g\u00e4ller inte covid-19-viruset",
-                    "lang": "sv"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "GR-FI-0001",
-            "Logic": {
-                "and": [
-                    {
-                        "if": [
-                            {
-                                "var": "payload.r.0"
-                            },
-                            {
-                                "in": [
-                                    {
-                                        "var": "payload.r.0.tg"
-                                    },
-                                    {
-                                        "var": "external.valueSets.disease-agent-targeted"
-                                    }
-                                ]
-                            },
-                            true
-                        ]
-                    },
-                    {
-                        "if": [
-                            {
-                                "var": "payload.t.0"
-                            },
-                            {
-                                "in": [
-                                    {
-                                        "var": "payload.t.0.tg"
-                                    },
-                                    {
-                                        "var": "external.valueSets.disease-agent-targeted"
-                                    }
-                                ]
-                            },
-                            true
-                        ]
-                    },
-                    {
-                        "if": [
-                            {
-                                "var": "payload.v.0"
-                            },
-                            {
-                                "in": [
-                                    {
-                                        "var": "payload.v.0.tg"
-                                    },
-                                    {
-                                        "var": "external.valueSets.disease-agent-targeted"
-                                    }
-                                ]
-                            },
-                            true
-                        ]
-                    }
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-04-10T23:59:59Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.4"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
-                "v.0.dn",
-                "v.0.dt",
-                "v.0.sd"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "FI",
-            "Description": [
-                {
-                    "desc": "Full vaccination series is not valid yet (7 days)",
-                    "lang": "en"
-                },
-                {
-                    "desc": "T\u00e4ydest\u00e4 rokotussarja ei ole viel\u00e4 voimassa (7 p\u00e4iv\u00e4\u00e4)",
-                    "lang": "fi"
-                },
-                {
-                    "desc": "Den fullst\u00e4ndiga vaccinationsserien \u00e4r inte \u00e4nnu giltig (7 dagar)",
-                    "lang": "sv"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-FI-0003",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        "if": [
-                            {
-                                "and": [
-                                    {
-                                        "===": [
-                                            {
-                                                "var": "payload.v.0.dn"
-                                            },
-                                            {
-                                                "var": "payload.v.0.sd"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "<=": [
-                                            {
-                                                "var": "payload.v.0.dn"
-                                            },
-                                            2
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "not-before": [
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "external.validationClock"
-                                            },
-                                            0,
-                                            "day"
-                                        ]
-                                    },
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "payload.v.0.dt"
-                                            },
-                                            7,
-                                            "day"
-                                        ]
-                                    }
-                                ]
-                            },
-                            true
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-04-10T23:59:59Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.4"
         },
         {
             "AffectedFields": [
@@ -71906,6 +71906,76 @@
         },
         {
             "AffectedFields": [
+                "r.0",
+                "r.0.df",
+                "r.0.du"
+            ],
+            "CertificateType": "Recovery",
+            "Country": "FI",
+            "Description": [
+                {
+                    "desc": "Recovery certificate is not valid yet or has expired",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Sairastamistodistus ei ole voimassa",
+                    "lang": "fi"
+                },
+                {
+                    "desc": "Intyget om tillfrisknande fr\u00e5n covid-19 \u00e4r inte giltigt",
+                    "lang": "sv"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "RR-FI-0001",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.r.0"
+                    },
+                    {
+                        "not-after": [
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "payload.r.0.df"
+                                    },
+                                    0,
+                                    "day"
+                                ]
+                            },
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "external.validationClock"
+                                    },
+                                    0,
+                                    "day"
+                                ]
+                            },
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "payload.r.0.du"
+                                    },
+                                    0,
+                                    "day"
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-04-10T23:59:59Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.4"
+        },
+        {
+            "AffectedFields": [
                 "v.0",
                 "v.0.dt",
                 "v.0.mp"
@@ -72181,6 +72251,187 @@
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
+                "v.0.mp"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "FI",
+            "Description": [
+                {
+                    "desc": "Vaccination product is not accepted",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Rokotevalmiste ei ole hyv\u00e4ksytty",
+                    "lang": "fi"
+                },
+                {
+                    "desc": "Vaccinationspreparatet har inte godk\u00e4nts",
+                    "lang": "sv"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-FI-0005",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        "in": [
+                            {
+                                "var": "payload.v.0.mp"
+                            },
+                            [
+                                "EU/1/20/1528",
+                                "EU/1/20/1507",
+                                "EU/1/21/1529",
+                                "EU/1/20/1525",
+                                "BBIBP-CorV",
+                                "CoronaVac",
+                                "Covaxin",
+                                "Covishield",
+                                "EU/1/21/1618",
+                                "Covovax"
+                            ]
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-04-10T23:59:59Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.4"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
+                "v.0.ci",
+                "v.0.dt",
+                "r.0",
+                "r.0.ci",
+                "r.0.df"
+            ],
+            "CertificateType": "General",
+            "Country": "FI",
+            "Description": [
+                {
+                    "desc": "Tourist pass expired (30 days)",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Turistipassi on vanhentunut (30 p\u00e4iv\u00e4\u00e4)",
+                    "lang": "fi"
+                },
+                {
+                    "desc": "Turistpasset \u00e4r f\u00f6r\u00e5ldrat (30 dagar)",
+                    "lang": "sv"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "GR-FI-0002",
+            "Logic": {
+                "and": [
+                    {
+                        "if": [
+                            {
+                                "var": "payload.v.0"
+                            },
+                            {
+                                "if": [
+                                    {
+                                        "===": [
+                                            {
+                                                "var": "payload.v.0.ci"
+                                            },
+                                            "Joint Authority of the Helsinki and Uusimaa Hospital District"
+                                        ]
+                                    },
+                                    {
+                                        "not-after": [
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "external.validationClock"
+                                                    },
+                                                    0,
+                                                    "day"
+                                                ]
+                                            },
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "payload.v.0.dt"
+                                                    },
+                                                    30,
+                                                    "day"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    true
+                                ]
+                            },
+                            true
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "var": "payload.r.0"
+                            },
+                            {
+                                "if": [
+                                    {
+                                        "===": [
+                                            {
+                                                "var": "payload.r.0.ci"
+                                            },
+                                            "Joint Authority of the Helsinki and Uusimaa Hospital District"
+                                        ]
+                                    },
+                                    {
+                                        "not-after": [
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "external.validationClock"
+                                                    },
+                                                    0,
+                                                    "day"
+                                                ]
+                                            },
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "payload.r.0.df"
+                                                    },
+                                                    30,
+                                                    "day"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    true
+                                ]
+                            },
+                            true
+                        ]
+                    }
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-04-10T23:59:59Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.4"
         },
         {
             "AffectedFields": [
@@ -73268,257 +73519,6 @@
             "ValidFrom": "2021-12-24T12:00:00Z",
             "ValidTo": "2030-01-01T00:00:00Z",
             "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "r.0",
-                "r.0.df",
-                "r.0.du"
-            ],
-            "CertificateType": "Recovery",
-            "Country": "FI",
-            "Description": [
-                {
-                    "desc": "Recovery certificate is not valid yet or has expired",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Sairastamistodistus ei ole voimassa",
-                    "lang": "fi"
-                },
-                {
-                    "desc": "Intyget om tillfrisknande fr\u00e5n covid-19 \u00e4r inte giltigt",
-                    "lang": "sv"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "RR-FI-0001",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.r.0"
-                    },
-                    {
-                        "not-after": [
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "payload.r.0.df"
-                                    },
-                                    0,
-                                    "day"
-                                ]
-                            },
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "external.validationClock"
-                                    },
-                                    0,
-                                    "day"
-                                ]
-                            },
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "payload.r.0.du"
-                                    },
-                                    0,
-                                    "day"
-                                ]
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-04-10T23:59:59Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.4"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
-                "v.0.mp"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "FI",
-            "Description": [
-                {
-                    "desc": "Vaccination product is not accepted",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Rokotevalmiste ei ole hyv\u00e4ksytty",
-                    "lang": "fi"
-                },
-                {
-                    "desc": "Vaccinationspreparatet har inte godk\u00e4nts",
-                    "lang": "sv"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-FI-0005",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        "in": [
-                            {
-                                "var": "payload.v.0.mp"
-                            },
-                            [
-                                "EU/1/20/1528",
-                                "EU/1/20/1507",
-                                "EU/1/21/1529",
-                                "EU/1/20/1525",
-                                "BBIBP-CorV",
-                                "CoronaVac",
-                                "Covaxin",
-                                "Covishield",
-                                "EU/1/21/1618",
-                                "Covovax"
-                            ]
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-04-10T23:59:59Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.4"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
-                "v.0.ci",
-                "v.0.dt",
-                "r.0",
-                "r.0.ci",
-                "r.0.df"
-            ],
-            "CertificateType": "General",
-            "Country": "FI",
-            "Description": [
-                {
-                    "desc": "Tourist pass expired (30 days)",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Turistipassi on vanhentunut (30 p\u00e4iv\u00e4\u00e4)",
-                    "lang": "fi"
-                },
-                {
-                    "desc": "Turistpasset \u00e4r f\u00f6r\u00e5ldrat (30 dagar)",
-                    "lang": "sv"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "GR-FI-0002",
-            "Logic": {
-                "and": [
-                    {
-                        "if": [
-                            {
-                                "var": "payload.v.0"
-                            },
-                            {
-                                "if": [
-                                    {
-                                        "===": [
-                                            {
-                                                "var": "payload.v.0.ci"
-                                            },
-                                            "Joint Authority of the Helsinki and Uusimaa Hospital District"
-                                        ]
-                                    },
-                                    {
-                                        "not-after": [
-                                            {
-                                                "plusTime": [
-                                                    {
-                                                        "var": "external.validationClock"
-                                                    },
-                                                    0,
-                                                    "day"
-                                                ]
-                                            },
-                                            {
-                                                "plusTime": [
-                                                    {
-                                                        "var": "payload.v.0.dt"
-                                                    },
-                                                    30,
-                                                    "day"
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    true
-                                ]
-                            },
-                            true
-                        ]
-                    },
-                    {
-                        "if": [
-                            {
-                                "var": "payload.r.0"
-                            },
-                            {
-                                "if": [
-                                    {
-                                        "===": [
-                                            {
-                                                "var": "payload.r.0.ci"
-                                            },
-                                            "Joint Authority of the Helsinki and Uusimaa Hospital District"
-                                        ]
-                                    },
-                                    {
-                                        "not-after": [
-                                            {
-                                                "plusTime": [
-                                                    {
-                                                        "var": "external.validationClock"
-                                                    },
-                                                    0,
-                                                    "day"
-                                                ]
-                                            },
-                                            {
-                                                "plusTime": [
-                                                    {
-                                                        "var": "payload.r.0.df"
-                                                    },
-                                                    30,
-                                                    "day"
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    true
-                                ]
-                            },
-                            true
-                        ]
-                    }
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-04-10T23:59:59Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.4"
         },
         {
             "AffectedFields": [
@@ -77806,6 +77806,180 @@
         },
         {
             "AffectedFields": [
+                "dob",
+                "v.0",
+                "v.0.dt",
+                "v.0.dn",
+                "v.0.mp",
+                "v.0.sd"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "FI",
+            "Description": [
+                {
+                    "desc": "Full vaccination series has expired (270 days)",
+                    "lang": "en"
+                },
+                {
+                    "desc": "T\u00e4ysi rokotussarja on vanhentunut (270 p\u00e4iv\u00e4\u00e4)",
+                    "lang": "fi"
+                },
+                {
+                    "desc": "Den fullst\u00e4ndiga vaccinationsserien \u00e4r f\u00f6r\u00e5ldrad (270 dagar)",
+                    "lang": "sv"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-FI-0004",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        "if": [
+                            {
+                                "if": [
+                                    {
+                                        ">": [
+                                            {
+                                                "var": "payload.v.0.dn"
+                                            },
+                                            {
+                                                "var": "payload.v.0.sd"
+                                            }
+                                        ]
+                                    },
+                                    true,
+                                    {
+                                        "if": [
+                                            {
+                                                "and": [
+                                                    {
+                                                        "===": [
+                                                            {
+                                                                "var": "payload.v.0.dn"
+                                                            },
+                                                            {
+                                                                "var": "payload.v.0.sd"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        ">": [
+                                                            {
+                                                                "var": "payload.v.0.dn"
+                                                            },
+                                                            2
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            true,
+                                            {
+                                                "and": [
+                                                    {
+                                                        "===": [
+                                                            {
+                                                                "var": "payload.v.0.dn"
+                                                            },
+                                                            2
+                                                        ]
+                                                    },
+                                                    {
+                                                        "===": [
+                                                            {
+                                                                "var": "payload.v.0.sd"
+                                                            },
+                                                            2
+                                                        ]
+                                                    },
+                                                    {
+                                                        "===": [
+                                                            {
+                                                                "var": "payload.v.0.mp"
+                                                            },
+                                                            "EU/1/20/1525"
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            true,
+                            {
+                                "if": [
+                                    {
+                                        "if": [
+                                            {
+                                                "var": "payload.dob"
+                                            },
+                                            {
+                                                "after": [
+                                                    {
+                                                        "plusTime": [
+                                                            {
+                                                                "var": "payload.dob"
+                                                            },
+                                                            0,
+                                                            "year"
+                                                        ]
+                                                    },
+                                                    {
+                                                        "plusTime": [
+                                                            {
+                                                                "var": "external.validationClock"
+                                                            },
+                                                            -18,
+                                                            "year"
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            false
+                                        ]
+                                    },
+                                    true,
+                                    {
+                                        "before": [
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "external.validationClock"
+                                                    },
+                                                    0,
+                                                    "day"
+                                                ]
+                                            },
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "payload.v.0.dt"
+                                                    },
+                                                    270,
+                                                    "day"
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-04-10T23:59:59Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.4"
+        },
+        {
+            "AffectedFields": [
                 "v.0",
                 "v.0.dt",
                 "v.0.mp"
@@ -78648,180 +78822,6 @@
             "ValidFrom": "2022-02-27T23:00:00Z",
             "ValidTo": "2032-02-27T23:00:00Z",
             "Version": "6.0.0"
-        },
-        {
-            "AffectedFields": [
-                "dob",
-                "v.0",
-                "v.0.dt",
-                "v.0.dn",
-                "v.0.mp",
-                "v.0.sd"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "FI",
-            "Description": [
-                {
-                    "desc": "Full vaccination series has expired (270 days)",
-                    "lang": "en"
-                },
-                {
-                    "desc": "T\u00e4ysi rokotussarja on vanhentunut (270 p\u00e4iv\u00e4\u00e4)",
-                    "lang": "fi"
-                },
-                {
-                    "desc": "Den fullst\u00e4ndiga vaccinationsserien \u00e4r f\u00f6r\u00e5ldrad (270 dagar)",
-                    "lang": "sv"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-FI-0004",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        "if": [
-                            {
-                                "if": [
-                                    {
-                                        ">": [
-                                            {
-                                                "var": "payload.v.0.dn"
-                                            },
-                                            {
-                                                "var": "payload.v.0.sd"
-                                            }
-                                        ]
-                                    },
-                                    true,
-                                    {
-                                        "if": [
-                                            {
-                                                "and": [
-                                                    {
-                                                        "===": [
-                                                            {
-                                                                "var": "payload.v.0.dn"
-                                                            },
-                                                            {
-                                                                "var": "payload.v.0.sd"
-                                                            }
-                                                        ]
-                                                    },
-                                                    {
-                                                        ">": [
-                                                            {
-                                                                "var": "payload.v.0.dn"
-                                                            },
-                                                            2
-                                                        ]
-                                                    }
-                                                ]
-                                            },
-                                            true,
-                                            {
-                                                "and": [
-                                                    {
-                                                        "===": [
-                                                            {
-                                                                "var": "payload.v.0.dn"
-                                                            },
-                                                            2
-                                                        ]
-                                                    },
-                                                    {
-                                                        "===": [
-                                                            {
-                                                                "var": "payload.v.0.sd"
-                                                            },
-                                                            2
-                                                        ]
-                                                    },
-                                                    {
-                                                        "===": [
-                                                            {
-                                                                "var": "payload.v.0.mp"
-                                                            },
-                                                            "EU/1/20/1525"
-                                                        ]
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            true,
-                            {
-                                "if": [
-                                    {
-                                        "if": [
-                                            {
-                                                "var": "payload.dob"
-                                            },
-                                            {
-                                                "after": [
-                                                    {
-                                                        "plusTime": [
-                                                            {
-                                                                "var": "payload.dob"
-                                                            },
-                                                            0,
-                                                            "year"
-                                                        ]
-                                                    },
-                                                    {
-                                                        "plusTime": [
-                                                            {
-                                                                "var": "external.validationClock"
-                                                            },
-                                                            -18,
-                                                            "year"
-                                                        ]
-                                                    }
-                                                ]
-                                            },
-                                            false
-                                        ]
-                                    },
-                                    true,
-                                    {
-                                        "before": [
-                                            {
-                                                "plusTime": [
-                                                    {
-                                                        "var": "external.validationClock"
-                                                    },
-                                                    0,
-                                                    "day"
-                                                ]
-                                            },
-                                            {
-                                                "plusTime": [
-                                                    {
-                                                        "var": "payload.v.0.dt"
-                                                    },
-                                                    270,
-                                                    "day"
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-04-10T23:59:59Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.4"
         },
         {
             "AffectedFields": [
