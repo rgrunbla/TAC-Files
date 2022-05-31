@@ -50970,6 +50970,36 @@
         },
         {
             "AffectedFields": [
+                "v"
+            ],
+            "CertificateType": "General",
+            "Country": "CH",
+            "Description": [
+                {
+                    "desc": "EU/EFTA citizens and their family members, irrespective of their nationality, have rights of free movement. Entry to the country is currently possible without pandemic-related measures.",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "GR-CH-0002",
+            "Logic": {
+                "if": [
+                    true,
+                    true,
+                    {
+                        "var": "payload.v"
+                    }
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-03-06T00:00:00Z",
+            "ValidTo": "2031-01-01T00:00:00Z",
+            "Version": "1.0.12"
+        },
+        {
+            "AffectedFields": [
                 "t.0",
                 "t.0.sc",
                 "t.0.tt"
@@ -51518,36 +51548,6 @@
             "ValidFrom": "2022-02-27T23:00:00Z",
             "ValidTo": "2032-02-27T23:00:00Z",
             "Version": "6.0.0"
-        },
-        {
-            "AffectedFields": [
-                "v"
-            ],
-            "CertificateType": "General",
-            "Country": "CH",
-            "Description": [
-                {
-                    "desc": "EU/EFTA citizens and their family members, irrespective of their nationality, have rights of free movement. Entry to the country is currently possible without pandemic-related measures.",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "GR-CH-0002",
-            "Logic": {
-                "if": [
-                    true,
-                    true,
-                    {
-                        "var": "payload.v"
-                    }
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-03-06T00:00:00Z",
-            "ValidTo": "2031-01-01T00:00:00Z",
-            "Version": "1.0.12"
         },
         {
             "AffectedFields": [
