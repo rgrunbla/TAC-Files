@@ -9886,6 +9886,57 @@ Certificate:
 
 Certificate:
     Data:
+        Version: 3 (0x2)
+        Serial Number: 7073077247401883465 (0x62289e4820497749)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN = CSCA TUNISIA DGC, O = AGENCE NATIONALE DE CERTIFICATION ELECTRONIQUE, C = TN
+        Validity
+            Not Before: May 30 13:32:03 2022 GMT
+            Not After : May 29 13:32:03 2024 GMT
+        Subject: CN = CENTRE INFORMATIQUE DU MINISTERE DE LA SANTE PUBLIQUE, O = CENTRE INFORMATIQUE DU MINISTERE DE LA SANTE PUBLIQUE, C = TN
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:53:77:09:62:22:7e:eb:5b:a6:57:2c:bf:30:d0:
+                    ee:9f:bf:97:1c:9e:bd:6f:b4:ff:c3:06:78:73:c8:
+                    4c:bd:1b:fe:93:e0:6e:66:3b:01:4d:71:f6:38:20:
+                    00:bb:c7:a8:e6:cd:be:ac:d9:44:e7:6e:68:2a:75:
+                    df:6a:3b:37:61
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            Authority Information Access: 
+                CA Issuers - URI:http://www.tuntrust.tn/pub/cscatndgc.crt
+
+            X509v3 Subject Key Identifier: 
+                A9:BD:3E:B0:76:69:92:8C:A2:4D:30:6D:28:B4:95:DE:1A:E0:A5:04
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Authority Key Identifier: 
+                keyid:2D:D2:BB:A9:DB:64:15:1C:FA:8A:99:2B:EE:3F:2B:75:17:5C:32:5A
+
+            X509v3 Private Key Usage Period: 
+                Not After: Nov 27 13:32:03 2022 GMT
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://www.tuntrust.tn/cscatndgc.crl
+
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.0.1847.2021.1.3, 1.3.6.1.4.1.0.1847.2021.1.1, 1.3.6.1.4.1.0.1847.2021.1.2
+    Signature Algorithm: ecdsa-with-SHA256
+         30:65:02:31:00:f3:d0:7d:bc:09:df:c6:69:0e:20:b0:be:80:
+         60:85:61:41:d8:f0:d6:70:c2:39:0b:3c:ab:78:4f:67:12:b4:
+         6b:ae:59:2b:b1:a4:8a:f8:cb:19:1f:a4:2b:d3:e1:1c:5c:02:
+         30:34:e0:ca:aa:81:c4:d4:62:b1:11:ad:5c:c3:64:04:56:58:
+         cd:d2:37:cb:96:8e:b2:c9:09:b2:49:5f:41:f0:c2:26:c8:57:
+         85:d0:88:59:7c:ca:9e:aa:6a:3b:68:9c:48
+
+Certificate:
+    Data:
         Version: 1 (0x0)
         Serial Number: 28747 (0x704b)
         Signature Algorithm: ecdsa-with-SHA256
