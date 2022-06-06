@@ -3088,173 +3088,6 @@
         {
             "AffectedFields": [
                 "r.0",
-                "r.0.tg"
-            ],
-            "CertificateType": "Recovery",
-            "Country": "LV",
-            "Description": [
-                {
-                    "desc": "P\u0101rslimo\u0161anas sertifik\u0101ts ir izsniegts par Covid-19 saslim\u0161anu",
-                    "lang": "lv"
-                },
-                {
-                    "desc": "Disease or agent targeted is ICD-10 or SNOMED CT (GPS) 840539006",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "RR-LV-0001",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.r.0"
-                    },
-                    {
-                        "in": [
-                            {
-                                "var": "payload.r.0.tg"
-                            },
-                            [
-                                "840539006"
-                            ]
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-01-10T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "t.0",
-                "t.0.sc",
-                "t.0.tt"
-            ],
-            "CertificateType": "Test",
-            "Country": "GP",
-            "Description": [
-                {
-                    "desc": "The test should be a Antigenic test of less than 48 hours.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Le test doit \u00eatre un test Antig\u00e9nique de moins de 48 heures.",
-                    "lang": "fr"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-MFGP-0004",
-            "Logic": {
-                "if": [
-                    {
-                        "===": [
-                            {
-                                "var": "payload.t.0.tt"
-                            },
-                            "LP217198-3"
-                        ]
-                    },
-                    {
-                        "before": [
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "external.validationClock"
-                                    },
-                                    0,
-                                    "day"
-                                ]
-                            },
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "payload.t.0.sc"
-                                    },
-                                    48,
-                                    "hour"
-                                ]
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-01T00:00:00Z",
-            "ValidTo": "2030-10-01T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "t.0.sc",
-                "t.0.tt"
-            ],
-            "CertificateType": "Test",
-            "Country": "EE",
-            "Description": [
-                {
-                    "desc": "DateTime of Sample Collection must be less than 72 hours before the Verification Datetime for a test of type NAA (PCR test).",
-                    "lang": "en"
-                },
-                {
-                    "desc": "NAA test (nt PCR) peab olema tehtud kuni 72 tundi enne t\u00f5endi kontrolli.",
-                    "lang": "ee"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-EE-0004",
-            "Logic": {
-                "if": [
-                    {
-                        "===": [
-                            {
-                                "var": "payload.t.0.tt"
-                            },
-                            "LP6464-4"
-                        ]
-                    },
-                    {
-                        "before": [
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "external.validationClock"
-                                    },
-                                    0,
-                                    "day"
-                                ]
-                            },
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "payload.t.0.sc"
-                                    },
-                                    72,
-                                    "hour"
-                                ]
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-09-06T00:00:00Z",
-            "ValidTo": "2022-09-01T00:00:00Z",
-            "Version": "1.0.2"
-        },
-        {
-            "AffectedFields": [
-                "r.0",
                 "r.0.tg",
                 "t.0",
                 "t.0.tg",
@@ -3404,6 +3237,50 @@
         },
         {
             "AffectedFields": [
+                "r.0",
+                "r.0.tg"
+            ],
+            "CertificateType": "Recovery",
+            "Country": "LV",
+            "Description": [
+                {
+                    "desc": "P\u0101rslimo\u0161anas sertifik\u0101ts ir izsniegts par Covid-19 saslim\u0161anu",
+                    "lang": "lv"
+                },
+                {
+                    "desc": "Disease or agent targeted is ICD-10 or SNOMED CT (GPS) 840539006",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "RR-LV-0001",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.r.0"
+                    },
+                    {
+                        "in": [
+                            {
+                                "var": "payload.r.0.tg"
+                            },
+                            [
+                                "840539006"
+                            ]
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-01-10T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
                 "t.0",
                 "t.0.tr"
             ],
@@ -3440,6 +3317,129 @@
             "ValidFrom": "2021-12-09T00:00:00Z",
             "ValidTo": "2030-06-01T00:00:00Z",
             "Version": "1.0.12"
+        },
+        {
+            "AffectedFields": [
+                "t.0",
+                "t.0.sc",
+                "t.0.tt"
+            ],
+            "CertificateType": "Test",
+            "Country": "GP",
+            "Description": [
+                {
+                    "desc": "The test should be a Antigenic test of less than 48 hours.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Le test doit \u00eatre un test Antig\u00e9nique de moins de 48 heures.",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-MFGP-0004",
+            "Logic": {
+                "if": [
+                    {
+                        "===": [
+                            {
+                                "var": "payload.t.0.tt"
+                            },
+                            "LP217198-3"
+                        ]
+                    },
+                    {
+                        "before": [
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "external.validationClock"
+                                    },
+                                    0,
+                                    "day"
+                                ]
+                            },
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "payload.t.0.sc"
+                                    },
+                                    48,
+                                    "hour"
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-01T00:00:00Z",
+            "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "t.0.sc",
+                "t.0.tt"
+            ],
+            "CertificateType": "Test",
+            "Country": "EE",
+            "Description": [
+                {
+                    "desc": "DateTime of Sample Collection must be less than 72 hours before the Verification Datetime for a test of type NAA (PCR test).",
+                    "lang": "en"
+                },
+                {
+                    "desc": "NAA test (nt PCR) peab olema tehtud kuni 72 tundi enne t\u00f5endi kontrolli.",
+                    "lang": "ee"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-EE-0004",
+            "Logic": {
+                "if": [
+                    {
+                        "===": [
+                            {
+                                "var": "payload.t.0.tt"
+                            },
+                            "LP6464-4"
+                        ]
+                    },
+                    {
+                        "before": [
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "external.validationClock"
+                                    },
+                                    0,
+                                    "day"
+                                ]
+                            },
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "payload.t.0.sc"
+                                    },
+                                    72,
+                                    "hour"
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-09-06T00:00:00Z",
+            "ValidTo": "2022-09-01T00:00:00Z",
+            "Version": "1.0.2"
         },
         {
             "AffectedFields": [
@@ -14987,6 +14987,63 @@
         },
         {
             "AffectedFields": [
+                "r.0",
+                "r.0.fr"
+            ],
+            "CertificateType": "Recovery",
+            "Country": "AT",
+            "Description": [
+                {
+                    "desc": "The positive NAA test result (e.g., PCR) must be no older than 180 days.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Der positive NAA-Test (z.B. PCR) darf maximal 180 Tage zur\u00fcckliegen.",
+                    "lang": "de"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "RR-AT-0002",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.r.0"
+                    },
+                    {
+                        "not-after": [
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "external.validationClock"
+                                    },
+                                    0,
+                                    "day"
+                                ]
+                            },
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "payload.r.0.fr"
+                                    },
+                                    180,
+                                    "day"
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "Region": "AT",
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-12-09T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.12"
+        },
+        {
+            "AffectedFields": [
                 "t.0",
                 "t.0.tr"
             ],
@@ -15357,63 +15414,6 @@
             "ValidFrom": "2021-07-26T00:00:00Z",
             "ValidTo": "2030-07-26T00:00:00Z",
             "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "r.0",
-                "r.0.fr"
-            ],
-            "CertificateType": "Recovery",
-            "Country": "AT",
-            "Description": [
-                {
-                    "desc": "The positive NAA test result (e.g., PCR) must be no older than 180 days.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Der positive NAA-Test (z.B. PCR) darf maximal 180 Tage zur\u00fcckliegen.",
-                    "lang": "de"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "RR-AT-0002",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.r.0"
-                    },
-                    {
-                        "not-after": [
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "external.validationClock"
-                                    },
-                                    0,
-                                    "day"
-                                ]
-                            },
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "payload.r.0.fr"
-                                    },
-                                    180,
-                                    "day"
-                                ]
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "Region": "AT",
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-12-09T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.12"
         },
         {
             "AffectedFields": [
@@ -19639,6 +19639,35 @@
         },
         {
             "AffectedFields": [
+                "t.1"
+            ],
+            "CertificateType": "Test",
+            "Country": "AT",
+            "Description": [
+                {
+                    "desc": "At most one t-event.",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-AT-0000",
+            "Logic": {
+                "!": [
+                    {
+                        "var": "payload.t.1"
+                    }
+                ]
+            },
+            "Region": "AT",
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-12-09T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.12"
+        },
+        {
+            "AffectedFields": [
                 "v.0",
                 "v.0.sd"
             ],
@@ -19789,35 +19818,6 @@
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "t.1"
-            ],
-            "CertificateType": "Test",
-            "Country": "AT",
-            "Description": [
-                {
-                    "desc": "At most one t-event.",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-AT-0000",
-            "Logic": {
-                "!": [
-                    {
-                        "var": "payload.t.1"
-                    }
-                ]
-            },
-            "Region": "AT",
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-12-09T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.12"
         },
         {
             "AffectedFields": [
@@ -25040,6 +25040,93 @@
         },
         {
             "AffectedFields": [
+                "v.1"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "AT",
+            "Description": [
+                {
+                    "desc": "At most one v-event.",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-AT-0000",
+            "Logic": {
+                "!": [
+                    {
+                        "var": "payload.v.1"
+                    }
+                ]
+            },
+            "Region": "AT",
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-12-09T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.12"
+        },
+        {
+            "AffectedFields": [
+                "t.0.sc",
+                "t.0.tt"
+            ],
+            "CertificateType": "Test",
+            "Country": "AT",
+            "Description": [
+                {
+                    "desc": "DateTime of Sample Collection must be less than 72 hours before the Verification Datetime for a test of type NAA (PCR test).",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-AT-0006",
+            "Logic": {
+                "if": [
+                    {
+                        "===": [
+                            {
+                                "var": "payload.t.0.tt"
+                            },
+                            "LP6464-4"
+                        ]
+                    },
+                    {
+                        "before": [
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "external.validationClock"
+                                    },
+                                    0,
+                                    "day"
+                                ]
+                            },
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "payload.t.0.sc"
+                                    },
+                                    72,
+                                    "hour"
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "Region": "AT",
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-12-09T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.12"
+        },
+        {
+            "AffectedFields": [
                 "v.0",
                 "v.0.dn",
                 "v.0.sd",
@@ -25519,93 +25606,6 @@
             "ValidFrom": "2021-07-26T00:00:00Z",
             "ValidTo": "2030-07-26T00:00:00Z",
             "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "v.1"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "AT",
-            "Description": [
-                {
-                    "desc": "At most one v-event.",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-AT-0000",
-            "Logic": {
-                "!": [
-                    {
-                        "var": "payload.v.1"
-                    }
-                ]
-            },
-            "Region": "AT",
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-12-09T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.12"
-        },
-        {
-            "AffectedFields": [
-                "t.0.sc",
-                "t.0.tt"
-            ],
-            "CertificateType": "Test",
-            "Country": "AT",
-            "Description": [
-                {
-                    "desc": "DateTime of Sample Collection must be less than 72 hours before the Verification Datetime for a test of type NAA (PCR test).",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-AT-0006",
-            "Logic": {
-                "if": [
-                    {
-                        "===": [
-                            {
-                                "var": "payload.t.0.tt"
-                            },
-                            "LP6464-4"
-                        ]
-                    },
-                    {
-                        "before": [
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "external.validationClock"
-                                    },
-                                    0,
-                                    "day"
-                                ]
-                            },
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "payload.t.0.sc"
-                                    },
-                                    72,
-                                    "hour"
-                                ]
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "Region": "AT",
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-12-09T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.12"
         },
         {
             "AffectedFields": [
@@ -30697,6 +30697,35 @@
         },
         {
             "AffectedFields": [
+                "r.1"
+            ],
+            "CertificateType": "Recovery",
+            "Country": "AT",
+            "Description": [
+                {
+                    "desc": "At most one r-event.",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "RR-AT-0000",
+            "Logic": {
+                "!": [
+                    {
+                        "var": "payload.r.1"
+                    }
+                ]
+            },
+            "Region": "AT",
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-12-09T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.12"
+        },
+        {
+            "AffectedFields": [
                 "v.0",
                 "v.0.mp"
             ],
@@ -30883,35 +30912,6 @@
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "r.1"
-            ],
-            "CertificateType": "Recovery",
-            "Country": "AT",
-            "Description": [
-                {
-                    "desc": "At most one r-event.",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "RR-AT-0000",
-            "Logic": {
-                "!": [
-                    {
-                        "var": "payload.r.1"
-                    }
-                ]
-            },
-            "Region": "AT",
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-12-09T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.12"
         },
         {
             "AffectedFields": [
@@ -35940,6 +35940,112 @@
         },
         {
             "AffectedFields": [
+                "r.0",
+                "r.0.fr"
+            ],
+            "CertificateType": "Recovery",
+            "Country": "AT",
+            "Description": [
+                {
+                    "desc": "The positive NAA test result (e.g., PCR) must be older than 11 days.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Der positive NAA-Test (z.B. PCR) muss mindestens 11 Tage zur\u00fcckliegen.",
+                    "lang": "de"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "RR-AT-0001",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.r.0"
+                    },
+                    {
+                        "not-before": [
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "external.validationClock"
+                                    },
+                                    0,
+                                    "day"
+                                ]
+                            },
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "payload.r.0.fr"
+                                    },
+                                    11,
+                                    "day"
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "Region": "AT",
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-12-09T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.12"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
+                "v.0.dn",
+                "v.0.sd",
+                "v.0.dt"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "AT",
+            "Description": [
+                {
+                    "desc": "If (sequencenumber < total number of doses) (AT: 'Erstimpfung') -> not valid anymore",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-AT-0007",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        "if": [
+                            {
+                                "<": [
+                                    {
+                                        "var": "payload.v.0.dn"
+                                    },
+                                    {
+                                        "var": "payload.v.0.sd"
+                                    }
+                                ]
+                            },
+                            false,
+                            true
+                        ]
+                    },
+                    true
+                ]
+            },
+            "Region": "AT",
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-12-09T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.12"
+        },
+        {
+            "AffectedFields": [
                 "t.0",
                 "t.0.tt"
             ],
@@ -36244,112 +36350,6 @@
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "r.0",
-                "r.0.fr"
-            ],
-            "CertificateType": "Recovery",
-            "Country": "AT",
-            "Description": [
-                {
-                    "desc": "The positive NAA test result (e.g., PCR) must be older than 11 days.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Der positive NAA-Test (z.B. PCR) muss mindestens 11 Tage zur\u00fcckliegen.",
-                    "lang": "de"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "RR-AT-0001",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.r.0"
-                    },
-                    {
-                        "not-before": [
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "external.validationClock"
-                                    },
-                                    0,
-                                    "day"
-                                ]
-                            },
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "payload.r.0.fr"
-                                    },
-                                    11,
-                                    "day"
-                                ]
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "Region": "AT",
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-12-09T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.12"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
-                "v.0.dn",
-                "v.0.sd",
-                "v.0.dt"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "AT",
-            "Description": [
-                {
-                    "desc": "If (sequencenumber < total number of doses) (AT: 'Erstimpfung') -> not valid anymore",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-AT-0007",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        "if": [
-                            {
-                                "<": [
-                                    {
-                                        "var": "payload.v.0.dn"
-                                    },
-                                    {
-                                        "var": "payload.v.0.sd"
-                                    }
-                                ]
-                            },
-                            false,
-                            true
-                        ]
-                    },
-                    true
-                ]
-            },
-            "Region": "AT",
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-12-09T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.12"
         },
         {
             "AffectedFields": [
@@ -46434,6 +46434,47 @@
         {
             "AffectedFields": [
                 "t.0",
+                "t.0.tt"
+            ],
+            "CertificateType": "Test",
+            "Country": "AT",
+            "Description": [
+                {
+                    "desc": "The test type must be NAA (PCR). RAT no longer allowed.",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-AT-0001",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.t.0"
+                    },
+                    {
+                        "in": [
+                            {
+                                "var": "payload.t.0.tt"
+                            },
+                            [
+                                "LP6464-4"
+                            ]
+                        ]
+                    },
+                    true
+                ]
+            },
+            "Region": "AT",
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-12-09T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.12"
+        },
+        {
+            "AffectedFields": [
+                "t.0",
                 "t.0.sc",
                 "t.0.tt"
             ],
@@ -46719,47 +46760,6 @@
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "t.0",
-                "t.0.tt"
-            ],
-            "CertificateType": "Test",
-            "Country": "AT",
-            "Description": [
-                {
-                    "desc": "The test type must be NAA (PCR). RAT no longer allowed.",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-AT-0001",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.t.0"
-                    },
-                    {
-                        "in": [
-                            {
-                                "var": "payload.t.0.tt"
-                            },
-                            [
-                                "LP6464-4"
-                            ]
-                        ]
-                    },
-                    true
-                ]
-            },
-            "Region": "AT",
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-12-09T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.12"
         },
         {
             "AffectedFields": [
@@ -62653,6 +62653,144 @@
         },
         {
             "AffectedFields": [
+                "v.0",
+                "v.0.mp"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "AT",
+            "Description": [
+                {
+                    "desc": "Only vaccines in the allowed valueset are allowed, additionally limited by the Austrian Einreiseverordung",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-AT-0001",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        "in": [
+                            {
+                                "var": "payload.v.0.mp"
+                            },
+                            [
+                                "EU/1/20/1528",
+                                "EU/1/20/1507",
+                                "EU/1/21/1529",
+                                "EU/1/20/1525",
+                                "BBIBP-CorV",
+                                "CoronaVac"
+                            ]
+                        ]
+                    },
+                    true
+                ]
+            },
+            "Region": "AT",
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-12-09T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.12"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
+                "v.0.dn",
+                "v.0.sd",
+                "v.0.dt"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "AT",
+            "Description": [
+                {
+                    "desc": "If (total number of doses = 1) and (sequencenumber >= total number of doses) (AT: 'vollst. Immunisierung bei 1/1') Verification Datetime must be more than 22 days and less than 270 days after vaccination date (and vaccination date not in the future).",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-AT-0006",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        "if": [
+                            {
+                                "<=": [
+                                    {
+                                        "var": "payload.v.0.sd"
+                                    },
+                                    1
+                                ]
+                            },
+                            {
+                                "if": [
+                                    {
+                                        ">=": [
+                                            {
+                                                "var": "payload.v.0.dn"
+                                            },
+                                            {
+                                                "var": "payload.v.0.sd"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "not-after": [
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "payload.v.0.dt"
+                                                    },
+                                                    22,
+                                                    "day"
+                                                ]
+                                            },
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "external.validationClock"
+                                                    },
+                                                    0,
+                                                    "day"
+                                                ]
+                                            },
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "payload.v.0.dt"
+                                                    },
+                                                    270,
+                                                    "day"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    true
+                                ]
+                            },
+                            true
+                        ]
+                    },
+                    true
+                ]
+            },
+            "Region": "AT",
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-12-09T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.12"
+        },
+        {
+            "AffectedFields": [
                 "t.0",
                 "t.0.tr"
             ],
@@ -62805,144 +62943,6 @@
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
-                "v.0.mp"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "AT",
-            "Description": [
-                {
-                    "desc": "Only vaccines in the allowed valueset are allowed, additionally limited by the Austrian Einreiseverordung",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-AT-0001",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        "in": [
-                            {
-                                "var": "payload.v.0.mp"
-                            },
-                            [
-                                "EU/1/20/1528",
-                                "EU/1/20/1507",
-                                "EU/1/21/1529",
-                                "EU/1/20/1525",
-                                "BBIBP-CorV",
-                                "CoronaVac"
-                            ]
-                        ]
-                    },
-                    true
-                ]
-            },
-            "Region": "AT",
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-12-09T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.12"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
-                "v.0.dn",
-                "v.0.sd",
-                "v.0.dt"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "AT",
-            "Description": [
-                {
-                    "desc": "If (total number of doses = 1) and (sequencenumber >= total number of doses) (AT: 'vollst. Immunisierung bei 1/1') Verification Datetime must be more than 22 days and less than 270 days after vaccination date (and vaccination date not in the future).",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-AT-0006",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        "if": [
-                            {
-                                "<=": [
-                                    {
-                                        "var": "payload.v.0.sd"
-                                    },
-                                    1
-                                ]
-                            },
-                            {
-                                "if": [
-                                    {
-                                        ">=": [
-                                            {
-                                                "var": "payload.v.0.dn"
-                                            },
-                                            {
-                                                "var": "payload.v.0.sd"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "not-after": [
-                                            {
-                                                "plusTime": [
-                                                    {
-                                                        "var": "payload.v.0.dt"
-                                                    },
-                                                    22,
-                                                    "day"
-                                                ]
-                                            },
-                                            {
-                                                "plusTime": [
-                                                    {
-                                                        "var": "external.validationClock"
-                                                    },
-                                                    0,
-                                                    "day"
-                                                ]
-                                            },
-                                            {
-                                                "plusTime": [
-                                                    {
-                                                        "var": "payload.v.0.dt"
-                                                    },
-                                                    270,
-                                                    "day"
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    true
-                                ]
-                            },
-                            true
-                        ]
-                    },
-                    true
-                ]
-            },
-            "Region": "AT",
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-12-09T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.12"
         },
         {
             "AffectedFields": [
