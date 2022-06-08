@@ -8709,6 +8709,51 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            7c:5e:cf:ec:36:8b:e4:9a:75:a4:fb:40:b6:06:a5:f0:f0:61:ae:e8
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN = DGC Country Signing CA, OU = Public Service Development Agency, O = Ministry of Justice of Georgia, C = GE
+        Validity
+            Not Before: Jun  7 16:38:56 2022 GMT
+            Not After : Jun  6 16:38:55 2024 GMT
+        Subject: CN = DGC DS Signer 2, OU = LEPL Information Technologies Agency, O = "Ministry of Internally Displaced Persons From the Occupied Territories, Labour, Health and Social Affairs of Georgia", C = GE
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:44:73:ea:b3:b5:d0:c1:78:8a:b8:3c:09:9b:39:
+                    55:45:f7:cd:70:f2:b5:9e:85:2d:84:e5:75:ba:ca:
+                    ed:36:9c:3a:72:9e:74:ac:81:40:60:82:45:20:6e:
+                    ff:06:67:a2:d5:49:bb:a9:70:98:64:1e:8f:c9:10:
+                    a7:22:85:ad:b0
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Authority Key Identifier: 
+                keyid:67:4D:32:78:3F:6F:2E:27:08:D1:AB:61:E0:7B:F5:35:DD:DD:CD:B0
+
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.1847.2021.1.3, 1.3.6.1.4.1.1847.2021.1.1, 1.3.6.1.4.1.1847.2021.1.2
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl.cra.ge/dgccountrysigningca.crl
+
+            X509v3 Subject Key Identifier: 
+                A5:FB:E2:7B:C3:F9:47:73:F7:F3:7F:8F:73:6A:4B:7F:3D:22:3E:3B
+            X509v3 Key Usage: critical
+                Digital Signature
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:dc:ec:f3:72:f4:c0:a4:dc:c6:98:0f:76:34:
+         3e:8c:db:60:9c:0b:ef:55:cf:06:1e:5e:6f:21:f5:77:34:ff:
+         a7:02:21:00:fc:9c:e8:98:32:aa:cd:97:b4:ed:c2:e7:a2:32:
+         cb:02:f4:75:2a:60:b0:69:80:1f:2c:7d:1d:6a:88:90:5e:c8
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             74:95:55:e7:ab:55:fa:3b:2a:b3:f4:82:ca:e9:45:00
         Signature Algorithm: rsassaPss         
          Hash Algorithm: sha512
