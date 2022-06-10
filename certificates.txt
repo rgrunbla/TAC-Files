@@ -13945,6 +13945,46 @@ Certificate:
 Certificate:
     Data:
         Version: 3 (0x2)
+        Serial Number: 1041457398932927499 (0xe73fffc8819740b)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = BE, O = eHealth - Belgium, CN = Belgium Covid19 Country Signing CA 01
+        Validity
+            Not Before: Jun  9 14:39:28 2022 GMT
+            Not After : Jun  9 14:39:28 2024 GMT
+        Subject: C = BE, O = eHealth - Belgium, CN = Belgium Covid19 DSC 03
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:cd:39:93:79:b7:6e:30:bc:28:4e:17:4a:d9:97:
+                    e1:31:74:d0:b3:a8:d6:12:b0:2a:e5:f4:6b:84:44:
+                    92:48:d2:33:35:c2:51:39:c5:05:55:90:de:4e:9f:
+                    ce:ed:b9:f9:fe:00:ad:21:57:f4:7c:90:3b:5c:a5:
+                    c4:e9:c1:56:28
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                2A:F6:F7:66:B9:78:2A:28:E4:D4:B3:C9:B6:7A:B2:6F:6B:7A:92:04
+            X509v3 Authority Key Identifier: 
+                keyid:31:CE:28:26:B7:DB:CB:91:64:F5:E2:D9:48:CB:AD:A5:68:6F:5F:D5
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://cert-app.be/revokedList/dgc_csca01.crl
+
+            X509v3 Key Usage: critical
+                Digital Signature
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:59:8c:1b:63:d7:2a:1f:91:20:05:fd:e4:e1:d8:
+         11:e7:ab:2a:65:84:dd:1d:af:aa:8c:02:f0:08:9f:68:81:6a:
+         02:21:00:b3:a5:56:8a:80:41:29:17:ad:00:25:bd:16:72:9a:
+         74:a1:11:59:64:c8:bd:35:7c:14:db:5b:78:06:b2:24:99
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
         Serial Number:
             02:c0:10:c9:59:34:4b:cf:4f:b9:5a:28:a2:79:9d:06:16:39:b5:23
         Signature Algorithm: sha256WithRSAEncryption
