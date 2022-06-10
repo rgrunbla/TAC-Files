@@ -9,7 +9,7 @@ from proto import hashes_pb2
 
 BASE_URL="https://app.tousanticovid.gouv.fr/"
 STATIC_BASE_URL="https://app-static.tousanticovid.gouv.fr/"
-VERSIONED_PATH="json/version-37/"
+VERSIONED_PATH="json/version-40/"
 VERSIONED_SERVER_URL=STATIC_BASE_URL+VERSIONED_PATH
 
 MAINTENANCE_FOLDER="maintenance/"
