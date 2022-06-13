@@ -25396,6 +25396,71 @@ Certificate:
 Certificate:
     Data:
         Version: 3 (0x2)
+        Serial Number:
+            3d:ab:ae:81:17:fb:7a:54:b3
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN = EADTrust ECC 256 SubCA For Qualified Certificates 2019, O = "European Agency of Digital Trust, S.L.", C = ES, organizationIdentifier = VATES-B85626240, OU = Legal Person
+        Validity
+            Not Before: Jun 10 08:30:00 2022 GMT
+            Not After : Jun 10 08:29:00 2024 GMT
+        Subject: CN = FIRMA CERTIFICADO COVID DIGITAL UE 2S2022, serialNumber = Q2801221I, OU = SELLO ELECTRONICO, OU = DG SISTEMAS DE INFORMACION Y EQUIPAMIENTOS SANITARIOS, organizationIdentifier = VATES-Q2801221I, O = SERVICIO MADRILE\C3\91O DE SALUD, C = ES
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:96:94:be:31:e8:04:5a:f9:98:bb:92:51:1f:59:
+                    36:bf:bf:26:54:6f:4c:94:19:21:81:60:bf:3a:b0:
+                    f2:5c:5e:c1:d7:92:f3:32:19:b5:3b:71:0c:e3:82:
+                    bc:bc:01:4f:19:58:97:52:e4:4e:d7:39:ab:0a:69:
+                    ad:72:16:53:e6
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Authority Key Identifier: 
+                keyid:D3:4C:6C:3A:BD:36:FE:70:87:23:87:3A:EE:3D:90:CF:CB:9B:F7:21
+
+            Authority Information Access: 
+                CA Issuers - URI:http://ca.eadtrust.eu/eadtrust-subca-ecc256eadlp2019.crt
+                OCSP - URI:http://ocsp.eadtrust.eu
+
+            X509v3 Issuer Alternative Name: 
+                email:ca@eadtrust.eu, URI:http://www.eadtrust.eu, URI:http://ca.eadtrust.eu, URI:http://policy.eadtrust.eu
+            X509v3 Subject Alternative Name: 
+                DirName:/2.16.724.1.3.5.6.2.1=SELLO ELECTRONICO DE NIVEL MEDIO/2.16.724.1.3.5.6.2.2=SERVICIO MADRILE\xC3\x91O DE SALUD/2.16.724.1.3.5.6.2.3=Q2801221I
+            X509v3 Certificate Policies: 
+                Policy: 2.16.724.1.3.5.6.2
+                Policy: 0.4.0.194112.1.1
+                  User Notice:
+                    Explicit Text: European Telecommunications Standards Institute. eIDAS European Regulation Compliant
+                Policy: 1.3.6.1.4.1.501.2.1.1.0.41233
+                  CPS: http://policy.eadtrust.eu
+                  User Notice:
+                    Explicit Text: Certificado cualificado de sello electrónico de Administración, órgano o entidad de derecho público, nivel Medio/Sustancial. Consulte las condiciones de uso en http://policy.eadtrust.eu
+
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication, E-mail Protection
+            qcStatements: 
+                0..0...+.......0.......I..0......F..0......F.....0......F..0......F...0l.....F..0b00.*https://eadtrust.eu/en/documents-in-force/..en0..(https://eadtrust.eu/documentos-vigentes/..es
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl.eadtrust.eu/eadtrust-subca-ecc256eadlp2019.crl
+
+            X509v3 Subject Key Identifier: 
+                17:24:E5:43:30:2C:99:9C:F3:81:68:E2:47:B8:6F:C0:37:59:30:65
+            X509v3 Key Usage: critical
+                Digital Signature, Non Repudiation, Key Encipherment
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:2e:b5:3e:69:c5:e6:74:aa:66:39:f5:a7:9a:ec:
+         e4:db:6b:60:6f:61:fd:fa:c7:e6:a3:ea:10:5b:db:0a:11:89:
+         02:21:00:d1:05:6c:87:cd:1b:ba:40:5b:c2:03:a9:49:12:8f:
+         04:81:5d:fd:bf:a3:ae:59:36:80:98:53:f0:8a:92:af:86
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
         Serial Number: 1632667093 (0x615085d5)
         Signature Algorithm: ecdsa-with-SHA512
         Issuer: C = GB, O = NHS Digital, CN = England DCC CSCA
