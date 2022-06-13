@@ -2,11 +2,11 @@
   "config": [
     {
       "name": "lastUpdate",
-      "value": "1 Feb 2022"
+      "value": "25 May 2022"
     },
     {
       "name": "version",
-      "value": 138
+      "value": 152
     },
     {
       "name": "versionCalibrationBle",
@@ -39,14 +39,26 @@
       ]
     },
     {
+      "name": "app.isTracingFeatureActivated",
+      "value": true
+    },
+    {
+      "name": "app.displaySickLeave",
+      "value": false
+    },
+    {
       "name": "app.displayMultipass",
       "value": true
     },
     {
+      "name": "app.displayBoost",
+      "value": false
+    },
+    {
       "name": "app.multipass.list",
       "value": {
-        "maxDcc": 2,
-        "minDcc": 2,
+        "maxDcc": 3,
+        "minDcc": 1,
         "testMaxHours": 24
       }
     },
@@ -80,11 +92,6 @@
           "t": "keyfigure.compare.5"
         },
         {
-          "k1": "omicron",
-          "k2": "delta",
-          "t": "keyfigure.compare.6"
-        },
-        {
           "k1": "sivicsidepvacsipcrplusnonvax",
           "k2": "sivicsidepvacsipcrplusvax6plusrappel",
           "t": "keyfigure.compare.vacsipcrplus"
@@ -103,6 +110,11 @@
           "k1": "qrcodes",
           "k2": "notification",
           "t": "keyfigure.compare.2"
+        },
+        {
+          "k1": "omicron",
+          "k2": "delta",
+          "t": "keyfigure.compare.6"
         }
       ]
     },
@@ -150,6 +162,10 @@
     {
       "name": "app.isAnalyticsOn",
       "value": true
+    },
+    {
+      "name": "app.blacklistFreqInMinutes",
+      "value": 1440
     },
     {
       "name": "app.wallet.oldCertificateThresholdInDays",
@@ -219,9 +235,8 @@
     {
       "name": "app.smartwallet.engine",
       "value": {
-        "displayElgDays": 26,
-        "displayExpDays": 21,
-        "displayExpOnAllDcc": 240
+        "displayElgDays": 60,
+        "displayExpDays": 21
       }
     },
     {
@@ -239,51 +254,8 @@
           "R-Covi"
         ],
         "ja": [
-          "EU/1/20/1525",
-          "EU/1/21/1618"
+          "EU/1/20/1525"
         ]
-      }
-    },
-    {
-      "name": "app.smartwallet.ages",
-      "value": {
-        "high": 65,
-        "low": 18,
-        "lowElg": 12,
-        "lowExpDays": 31
-      }
-    },
-    {
-      "name": "app.smartwallet.exp",
-      "value": {
-        "displayExpDays": 21,
-        "displayExpOnAllDcc": 240,
-        "pivot1": "2021-12-15",
-        "pivot2": "2022-01-15",
-        "pivot3": "2022-02-15",
-        "recNbDays": 180,
-        "recNbNewDays": 122,
-        "vacc11DosesNbDays": 214,
-        "vacc11DosesNbNewDays": 122,
-        "vacc22DosesNbDays": 214,
-        "vacc22DosesNbNewDays": 122,
-        "vaccJan11DosesNbDays": 61,
-        "vaccJan22DosesNbDays": 61,
-        "vaccJan22DosesNbNewDays": 61
-      }
-    },
-    {
-      "name": "app.smartwallet.elg",
-      "value": {
-        "displayElgDays": 26,
-        "recNbDays": 92,
-        "recNbDaysLow": 184,
-        "vacc22DosesNbDays": 92,
-        "vacc22DosesNbDaysLow": 184,
-        "vaccJan11DosesNbDays": 31,
-        "vaccJan11DosesNbDaysLow": 31,
-        "vaccJan22DosesNbDays": 31,
-        "vaccJan22DosesNbDaysLow": 31
       }
     },
     {
@@ -337,7 +309,7 @@
     },
     {
       "name": "app.displayRecordVenues",
-      "value": true
+      "value": false
     },
     {
       "name": "app.displayPrivateEvent",
@@ -443,7 +415,7 @@
     },
     {
       "name": "app.minStatusRetryDuration",
-      "value": 3.0
+      "value": 8.0
     },
     {
       "name": "app.appAvailability",
@@ -526,6 +498,10 @@
     {
       "name": "ble.characteristicUUID",
       "value": "a8f12d00-ee67-478b-b95f-65d599407756"
+    },
+    {
+      "name": "ble.keepAliveCharacteristicUUID",
+      "value": "a8f12d00-ee67-478b-b95f-65d599407742"
     },
     {
       "name": "ble.backgroundServiceManufacturerData",
