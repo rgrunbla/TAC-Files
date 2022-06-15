@@ -3088,6 +3088,50 @@
         {
             "AffectedFields": [
                 "r.0",
+                "r.0.tg"
+            ],
+            "CertificateType": "Recovery",
+            "Country": "LV",
+            "Description": [
+                {
+                    "desc": "P\u0101rslimo\u0161anas sertifik\u0101ts ir izsniegts par Covid-19 saslim\u0161anu",
+                    "lang": "lv"
+                },
+                {
+                    "desc": "Disease or agent targeted is ICD-10 or SNOMED CT (GPS) 840539006",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "RR-LV-0001",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.r.0"
+                    },
+                    {
+                        "in": [
+                            {
+                                "var": "payload.r.0.tg"
+                            },
+                            [
+                                "840539006"
+                            ]
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-01-10T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "r.0",
                 "r.0.tg",
                 "t.0",
                 "t.0.tg",
@@ -3234,50 +3278,6 @@
             "ValidFrom": "2021-12-09T00:00:00Z",
             "ValidTo": "2030-06-01T00:00:00Z",
             "Version": "1.0.12"
-        },
-        {
-            "AffectedFields": [
-                "r.0",
-                "r.0.tg"
-            ],
-            "CertificateType": "Recovery",
-            "Country": "LV",
-            "Description": [
-                {
-                    "desc": "P\u0101rslimo\u0161anas sertifik\u0101ts ir izsniegts par Covid-19 saslim\u0161anu",
-                    "lang": "lv"
-                },
-                {
-                    "desc": "Disease or agent targeted is ICD-10 or SNOMED CT (GPS) 840539006",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "RR-LV-0001",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.r.0"
-                    },
-                    {
-                        "in": [
-                            {
-                                "var": "payload.r.0.tg"
-                            },
-                            [
-                                "840539006"
-                            ]
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-01-10T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.0"
         },
         {
             "AffectedFields": [
@@ -14987,6 +14987,48 @@
         },
         {
             "AffectedFields": [
+                "t.0",
+                "t.0.tr"
+            ],
+            "CertificateType": "Test",
+            "Country": "LV",
+            "Description": [
+                {
+                    "desc": "Testa rezult\u0101ts ir negat\u012bvs",
+                    "lang": "lv"
+                },
+                {
+                    "desc": "The test result is Not Detected",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-LV-0004",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.t.0"
+                    },
+                    {
+                        "===": [
+                            {
+                                "var": "payload.t.0.tr"
+                            },
+                            "260415000"
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-01-10T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
                 "r.0",
                 "r.0.fr"
             ],
@@ -15041,48 +15083,6 @@
             "ValidFrom": "2021-12-09T00:00:00Z",
             "ValidTo": "2030-06-01T00:00:00Z",
             "Version": "1.0.12"
-        },
-        {
-            "AffectedFields": [
-                "t.0",
-                "t.0.tr"
-            ],
-            "CertificateType": "Test",
-            "Country": "LV",
-            "Description": [
-                {
-                    "desc": "Testa rezult\u0101ts ir negat\u012bvs",
-                    "lang": "lv"
-                },
-                {
-                    "desc": "The test result is Not Detected",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-LV-0004",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.t.0"
-                    },
-                    {
-                        "===": [
-                            {
-                                "var": "payload.t.0.tr"
-                            },
-                            "260415000"
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-01-10T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.0"
         },
         {
             "AffectedFields": [
@@ -25040,93 +25040,6 @@
         },
         {
             "AffectedFields": [
-                "v.1"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "AT",
-            "Description": [
-                {
-                    "desc": "At most one v-event.",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-AT-0000",
-            "Logic": {
-                "!": [
-                    {
-                        "var": "payload.v.1"
-                    }
-                ]
-            },
-            "Region": "AT",
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-12-09T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.12"
-        },
-        {
-            "AffectedFields": [
-                "t.0.sc",
-                "t.0.tt"
-            ],
-            "CertificateType": "Test",
-            "Country": "AT",
-            "Description": [
-                {
-                    "desc": "DateTime of Sample Collection must be less than 72 hours before the Verification Datetime for a test of type NAA (PCR test).",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-AT-0006",
-            "Logic": {
-                "if": [
-                    {
-                        "===": [
-                            {
-                                "var": "payload.t.0.tt"
-                            },
-                            "LP6464-4"
-                        ]
-                    },
-                    {
-                        "before": [
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "external.validationClock"
-                                    },
-                                    0,
-                                    "day"
-                                ]
-                            },
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "payload.t.0.sc"
-                                    },
-                                    72,
-                                    "hour"
-                                ]
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "Region": "AT",
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-12-09T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.12"
-        },
-        {
-            "AffectedFields": [
                 "v.0",
                 "v.0.dn",
                 "v.0.sd",
@@ -25345,6 +25258,93 @@
             "ValidFrom": "2022-02-28T00:00:00Z",
             "ValidTo": "2030-06-01T00:00:00Z",
             "Version": "1.1.1"
+        },
+        {
+            "AffectedFields": [
+                "v.1"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "AT",
+            "Description": [
+                {
+                    "desc": "At most one v-event.",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-AT-0000",
+            "Logic": {
+                "!": [
+                    {
+                        "var": "payload.v.1"
+                    }
+                ]
+            },
+            "Region": "AT",
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-12-09T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.12"
+        },
+        {
+            "AffectedFields": [
+                "t.0.sc",
+                "t.0.tt"
+            ],
+            "CertificateType": "Test",
+            "Country": "AT",
+            "Description": [
+                {
+                    "desc": "DateTime of Sample Collection must be less than 72 hours before the Verification Datetime for a test of type NAA (PCR test).",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-AT-0006",
+            "Logic": {
+                "if": [
+                    {
+                        "===": [
+                            {
+                                "var": "payload.t.0.tt"
+                            },
+                            "LP6464-4"
+                        ]
+                    },
+                    {
+                        "before": [
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "external.validationClock"
+                                    },
+                                    0,
+                                    "day"
+                                ]
+                            },
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "payload.t.0.sc"
+                                    },
+                                    72,
+                                    "hour"
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "Region": "AT",
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-12-09T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.12"
         },
         {
             "AffectedFields": [
@@ -46434,47 +46434,6 @@
         {
             "AffectedFields": [
                 "t.0",
-                "t.0.tt"
-            ],
-            "CertificateType": "Test",
-            "Country": "AT",
-            "Description": [
-                {
-                    "desc": "The test type must be NAA (PCR). RAT no longer allowed.",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-AT-0001",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.t.0"
-                    },
-                    {
-                        "in": [
-                            {
-                                "var": "payload.t.0.tt"
-                            },
-                            [
-                                "LP6464-4"
-                            ]
-                        ]
-                    },
-                    true
-                ]
-            },
-            "Region": "AT",
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-12-09T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.12"
-        },
-        {
-            "AffectedFields": [
-                "t.0",
                 "t.0.sc",
                 "t.0.tt"
             ],
@@ -46541,6 +46500,47 @@
             "ValidFrom": "2022-01-10T00:00:00Z",
             "ValidTo": "2030-06-01T00:00:00Z",
             "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "t.0",
+                "t.0.tt"
+            ],
+            "CertificateType": "Test",
+            "Country": "AT",
+            "Description": [
+                {
+                    "desc": "The test type must be NAA (PCR). RAT no longer allowed.",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-AT-0001",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.t.0"
+                    },
+                    {
+                        "in": [
+                            {
+                                "var": "payload.t.0.tt"
+                            },
+                            [
+                                "LP6464-4"
+                            ]
+                        ]
+                    },
+                    true
+                ]
+            },
+            "Region": "AT",
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-12-09T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.12"
         },
         {
             "AffectedFields": [
