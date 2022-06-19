@@ -1988,6 +1988,26 @@
         }
     },
     {
+        "valueSetDate": "2021-04-27",
+        "valueSetId": "covid-19-lab-test-type",
+        "valueSetValues": {
+            "LP217198-3": {
+                "active": true,
+                "display": "Rapid immunoassay",
+                "lang": "en",
+                "system": "http://loinc.org",
+                "version": "2.69"
+            },
+            "LP6464-4": {
+                "active": true,
+                "display": "Nucleic acid amplification with probe detection",
+                "lang": "en",
+                "system": "http://loinc.org",
+                "version": "2.69"
+            }
+        }
+    },
+    {
         "valueSetDate": "2019-11-01",
         "valueSetId": "country-2-codes",
         "valueSetValues": {
