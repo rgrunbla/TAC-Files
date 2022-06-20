@@ -6,7 +6,7 @@
     },
     {
       "name": "version",
-      "value": 152
+      "value": 153
     },
     {
       "name": "versionCalibrationBle",
@@ -231,6 +231,10 @@
     {
       "name": "app.smartwallet.notif",
       "value": true
+    },
+    {
+      "name": "app.smartwallet.notifElgDays",
+      "value": 20
     },
     {
       "name": "app.smartwallet.engine",
