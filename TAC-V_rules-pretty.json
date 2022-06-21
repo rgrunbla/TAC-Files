@@ -8448,38 +8448,6 @@
         },
         {
             "AffectedFields": [
-                "r.1"
-            ],
-            "CertificateType": "Recovery",
-            "Country": "LT",
-            "Description": [
-                {
-                    "desc": "Vieno tipo persirgimo \u012fvykis",
-                    "lang": "lt"
-                },
-                {
-                    "desc": "At most one recovery event.",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "1.0.0",
-            "Identifier": "RR-LT-0000",
-            "Logic": {
-                "!": [
-                    {
-                        "var": "payload.r.1"
-                    }
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-07-04T15:00:00Z",
-            "ValidTo": "2023-07-04T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
                 "t.0",
                 "t.0.tt"
             ],
@@ -8607,6 +8575,38 @@
             "Type": "Acceptance",
             "ValidFrom": "2021-07-03T00:00:00Z",
             "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "r.1"
+            ],
+            "CertificateType": "Recovery",
+            "Country": "LT",
+            "Description": [
+                {
+                    "desc": "Vieno tipo persirgimo \u012fvykis",
+                    "lang": "lt"
+                },
+                {
+                    "desc": "At most one recovery event.",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "1.0.0",
+            "Identifier": "RR-LT-0000",
+            "Logic": {
+                "!": [
+                    {
+                        "var": "payload.r.1"
+                    }
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-07-04T15:00:00Z",
+            "ValidTo": "2023-07-04T00:00:00Z",
             "Version": "1.0.0"
         },
         {
@@ -14469,6 +14469,145 @@
         },
         {
             "AffectedFields": [
+                "dob",
+                "v.0",
+                "v.0.dt",
+                "v.0.sd",
+                "v.0.dn"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "DE",
+            "Description": [
+                {
+                    "desc": "The primary vaccination may have been completed 270 days ago at most. Booster vaccinations are valid for an unlimited period. For people under 18, the primary vaccination is valid for an unlimited period.",
+                    "lang": "en"
+                },
+                {
+                    "desc": " Seit dem Abschluss der Grundimmunisierung d\u00fcrfen maximal 270 Tage vergangen sein. Eine Auffrischimpfung ist unbegrenzt g\u00fcltig. Bei Personen unter 18 Jahren ist die Grundimmunisierung unbegrenzt g\u00fcltig.",
+                    "lang": "de"
+                },
+                {
+                    "desc": "Un maximum de 270 jours doit s'\u00eatre \u00e9coul\u00e9 depuis l'ach\u00e8vement du sch\u00e9ma de primovaccination. La dur\u00e9e de validit\u00e9 d'une vaccination de rappel est illimit\u00e9e. Chez les personnes de moins de 18 ans, la dur\u00e9e de validit\u00e9 de la primovaccination est illimit\u00e9e.",
+                    "lang": "fr"
+                },
+                {
+                    "desc": "Puede transcurrir un m\u00e1ximo de 270 d\u00edas una vez finalizada la inmunizaci\u00f3n de base. La vacuna de refuerzo tiene una validez indefinida. En menores de 18 a\u00f1os, la inmunizaci\u00f3n de base es v\u00e1lida indefinidamente.",
+                    "lang": "es"
+                },
+                {
+                    "desc": "Dalla conclusione del ciclo vaccinale primario pu\u00f2 essere trascorso un massimo di 270 giorni. La dose di richiamo ha validit\u00e0 illimitata. Per i minori di 18 anni, l\u2019immunizzazione di base \u00e8 valida illimitatamente.",
+                    "lang": "it"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-DE-0004",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        "if": [
+                            {
+                                "not-after": [
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "external.validationClock"
+                                            },
+                                            0,
+                                            "day"
+                                        ]
+                                    },
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "payload.v.0.dt"
+                                            },
+                                            270,
+                                            "day"
+                                        ]
+                                    }
+                                ]
+                            },
+                            true,
+                            {
+                                "if": [
+                                    {
+                                        ">": [
+                                            {
+                                                "var": "payload.v.0.dn"
+                                            },
+                                            2
+                                        ]
+                                    },
+                                    true,
+                                    {
+                                        "if": [
+                                            {
+                                                ">": [
+                                                    {
+                                                        "var": "payload.v.0.dn"
+                                                    },
+                                                    {
+                                                        "var": "payload.v.0.sd"
+                                                    }
+                                                ]
+                                            },
+                                            true,
+                                            {
+                                                "if": [
+                                                    {
+                                                        "===": [
+                                                            {
+                                                                "var": "payload.dob"
+                                                            },
+                                                            ""
+                                                        ]
+                                                    },
+                                                    false,
+                                                    {
+                                                        "not-after": [
+                                                            {
+                                                                "plusTime": [
+                                                                    {
+                                                                        "var": "external.validationClock"
+                                                                    },
+                                                                    0,
+                                                                    "day"
+                                                                ]
+                                                            },
+                                                            {
+                                                                "plusTime": [
+                                                                    {
+                                                                        "var": "payload.dob"
+                                                                    },
+                                                                    6575,
+                                                                    "day"
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-04-04T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.4"
+        },
+        {
+            "AffectedFields": [
                 "r.0",
                 "r.0.fr",
                 "r.0.df",
@@ -14757,145 +14896,6 @@
             "ValidFrom": "2022-03-26T06:00:00Z",
             "ValidTo": "2024-11-29T00:00:00Z",
             "Version": "1.2.0"
-        },
-        {
-            "AffectedFields": [
-                "dob",
-                "v.0",
-                "v.0.dt",
-                "v.0.sd",
-                "v.0.dn"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "DE",
-            "Description": [
-                {
-                    "desc": "The primary vaccination may have been completed 270 days ago at most. Booster vaccinations are valid for an unlimited period. For people under 18, the primary vaccination is valid for an unlimited period.",
-                    "lang": "en"
-                },
-                {
-                    "desc": " Seit dem Abschluss der Grundimmunisierung d\u00fcrfen maximal 270 Tage vergangen sein. Eine Auffrischimpfung ist unbegrenzt g\u00fcltig. Bei Personen unter 18 Jahren ist die Grundimmunisierung unbegrenzt g\u00fcltig.",
-                    "lang": "de"
-                },
-                {
-                    "desc": "Un maximum de 270 jours doit s'\u00eatre \u00e9coul\u00e9 depuis l'ach\u00e8vement du sch\u00e9ma de primovaccination. La dur\u00e9e de validit\u00e9 d'une vaccination de rappel est illimit\u00e9e. Chez les personnes de moins de 18 ans, la dur\u00e9e de validit\u00e9 de la primovaccination est illimit\u00e9e.",
-                    "lang": "fr"
-                },
-                {
-                    "desc": "Puede transcurrir un m\u00e1ximo de 270 d\u00edas una vez finalizada la inmunizaci\u00f3n de base. La vacuna de refuerzo tiene una validez indefinida. En menores de 18 a\u00f1os, la inmunizaci\u00f3n de base es v\u00e1lida indefinidamente.",
-                    "lang": "es"
-                },
-                {
-                    "desc": "Dalla conclusione del ciclo vaccinale primario pu\u00f2 essere trascorso un massimo di 270 giorni. La dose di richiamo ha validit\u00e0 illimitata. Per i minori di 18 anni, l\u2019immunizzazione di base \u00e8 valida illimitatamente.",
-                    "lang": "it"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-DE-0004",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        "if": [
-                            {
-                                "not-after": [
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "external.validationClock"
-                                            },
-                                            0,
-                                            "day"
-                                        ]
-                                    },
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "payload.v.0.dt"
-                                            },
-                                            270,
-                                            "day"
-                                        ]
-                                    }
-                                ]
-                            },
-                            true,
-                            {
-                                "if": [
-                                    {
-                                        ">": [
-                                            {
-                                                "var": "payload.v.0.dn"
-                                            },
-                                            2
-                                        ]
-                                    },
-                                    true,
-                                    {
-                                        "if": [
-                                            {
-                                                ">": [
-                                                    {
-                                                        "var": "payload.v.0.dn"
-                                                    },
-                                                    {
-                                                        "var": "payload.v.0.sd"
-                                                    }
-                                                ]
-                                            },
-                                            true,
-                                            {
-                                                "if": [
-                                                    {
-                                                        "===": [
-                                                            {
-                                                                "var": "payload.dob"
-                                                            },
-                                                            ""
-                                                        ]
-                                                    },
-                                                    false,
-                                                    {
-                                                        "not-after": [
-                                                            {
-                                                                "plusTime": [
-                                                                    {
-                                                                        "var": "external.validationClock"
-                                                                    },
-                                                                    0,
-                                                                    "day"
-                                                                ]
-                                                            },
-                                                            {
-                                                                "plusTime": [
-                                                                    {
-                                                                        "var": "payload.dob"
-                                                                    },
-                                                                    6575,
-                                                                    "day"
-                                                                ]
-                                                            }
-                                                        ]
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-04-04T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.4"
         },
         {
             "AffectedFields": [
@@ -19498,51 +19498,6 @@
         },
         {
             "AffectedFields": [
-                "v.0",
-                "v.0.dn",
-                "v.0.sd"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "LT",
-            "Description": [
-                {
-                    "desc": "Turi b\u016bti pilnas skiepijimo dozi\u0173 kursas.",
-                    "lang": "lt"
-                },
-                {
-                    "desc": "The vaccination course must be completed to provide enough protection.",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "1.0.0",
-            "Identifier": "VR-LT-0002",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        ">=": [
-                            {
-                                "var": "payload.v.0.dn"
-                            },
-                            {
-                                "var": "payload.v.0.sd"
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-07-04T15:00:00Z",
-            "ValidTo": "2023-07-04T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
                 "r.0",
                 "r.0.fr"
             ],
@@ -19653,6 +19608,51 @@
             "Type": "Acceptance",
             "ValidFrom": "2021-07-03T00:00:00Z",
             "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
+                "v.0.dn",
+                "v.0.sd"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "LT",
+            "Description": [
+                {
+                    "desc": "Turi b\u016bti pilnas skiepijimo dozi\u0173 kursas.",
+                    "lang": "lt"
+                },
+                {
+                    "desc": "The vaccination course must be completed to provide enough protection.",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "1.0.0",
+            "Identifier": "VR-LT-0002",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        ">=": [
+                            {
+                                "var": "payload.v.0.dn"
+                            },
+                            {
+                                "var": "payload.v.0.sd"
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-07-04T15:00:00Z",
+            "ValidTo": "2023-07-04T00:00:00Z",
             "Version": "1.0.0"
         },
         {
@@ -24989,38 +24989,6 @@
         },
         {
             "AffectedFields": [
-                "v.1"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "LT",
-            "Description": [
-                {
-                    "desc": "Vienas skiepijimo \u012fvykis",
-                    "lang": "lt"
-                },
-                {
-                    "desc": "One type of event of vaccination",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "1.0.0",
-            "Identifier": "VR-LT-0000",
-            "Logic": {
-                "!": [
-                    {
-                        "var": "payload.v.1"
-                    }
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-07-04T15:00:00Z",
-            "ValidTo": "2023-07-04T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
                 "v.0",
                 "v.0.ma"
             ],
@@ -25053,6 +25021,38 @@
             "Type": "Acceptance",
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "v.1"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "LT",
+            "Description": [
+                {
+                    "desc": "Vienas skiepijimo \u012fvykis",
+                    "lang": "lt"
+                },
+                {
+                    "desc": "One type of event of vaccination",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "1.0.0",
+            "Identifier": "VR-LT-0000",
+            "Logic": {
+                "!": [
+                    {
+                        "var": "payload.v.1"
+                    }
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-07-04T15:00:00Z",
+            "ValidTo": "2023-07-04T00:00:00Z",
             "Version": "1.0.0"
         },
         {
@@ -30036,48 +30036,6 @@
         },
         {
             "AffectedFields": [
-                "t.0",
-                "t.0.tr"
-            ],
-            "CertificateType": "Test",
-            "Country": "LT",
-            "Description": [
-                {
-                    "desc": "Testo rezultatas turi b\u016bti - Nerasta",
-                    "lang": "lt"
-                },
-                {
-                    "desc": "Test result must be negative (not detected).",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "1.0.0",
-            "Identifier": "TR-LT-0005",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.t.0"
-                    },
-                    {
-                        "===": [
-                            {
-                                "var": "payload.t.0.tr"
-                            },
-                            "260415000"
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-07-04T15:00:00Z",
-            "ValidTo": "2023-07-04T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
                 "r.0",
                 "r.0.fr"
             ],
@@ -30268,6 +30226,48 @@
             "ValidFrom": "2022-02-24T17:00:00Z",
             "ValidTo": "2030-06-01T00:00:00Z",
             "Version": "1.0.6"
+        },
+        {
+            "AffectedFields": [
+                "t.0",
+                "t.0.tr"
+            ],
+            "CertificateType": "Test",
+            "Country": "LT",
+            "Description": [
+                {
+                    "desc": "Testo rezultatas turi b\u016bti - Nerasta",
+                    "lang": "lt"
+                },
+                {
+                    "desc": "Test result must be negative (not detected).",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "1.0.0",
+            "Identifier": "TR-LT-0005",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.t.0"
+                    },
+                    {
+                        "===": [
+                            {
+                                "var": "payload.t.0.tr"
+                            },
+                            "260415000"
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-07-04T15:00:00Z",
+            "ValidTo": "2023-07-04T00:00:00Z",
+            "Version": "1.0.0"
         },
         {
             "AffectedFields": [
@@ -35807,38 +35807,6 @@
         },
         {
             "AffectedFields": [
-                "t.1"
-            ],
-            "CertificateType": "Test",
-            "Country": "LT",
-            "Description": [
-                {
-                    "desc": "Vieno tipo tyrimo rezultat\u0173 \u012fvykis",
-                    "lang": "lt"
-                },
-                {
-                    "desc": "One type of test result event",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "1.0.0",
-            "Identifier": "TR-LT-0000",
-            "Logic": {
-                "!": [
-                    {
-                        "var": "payload.t.1"
-                    }
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-07-04T15:00:00Z",
-            "ValidTo": "2023-07-04T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
                 "t.0",
                 "t.0.tt"
             ],
@@ -35940,6 +35908,38 @@
             "ValidFrom": "2022-02-24T17:00:00Z",
             "ValidTo": "2030-06-01T00:00:00Z",
             "Version": "1.0.3"
+        },
+        {
+            "AffectedFields": [
+                "t.1"
+            ],
+            "CertificateType": "Test",
+            "Country": "LT",
+            "Description": [
+                {
+                    "desc": "Vieno tipo tyrimo rezultat\u0173 \u012fvykis",
+                    "lang": "lt"
+                },
+                {
+                    "desc": "One type of test result event",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "1.0.0",
+            "Identifier": "TR-LT-0000",
+            "Logic": {
+                "!": [
+                    {
+                        "var": "payload.t.1"
+                    }
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-07-04T15:00:00Z",
+            "ValidTo": "2023-07-04T00:00:00Z",
+            "Version": "1.0.0"
         },
         {
             "AffectedFields": [
@@ -46375,6 +46375,58 @@
         },
         {
             "AffectedFields": [
+                "v.0",
+                "v.0.mp"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "PL",
+            "Description": [
+                {
+                    "desc": "Akceptowane s\u0105 tylko szczepionki z zestawu warto\u015bci, kt\u00f3re zosta\u0142y zatwierdzone przez EMA: Comirnaty (Pfizer), Moderna (Spikevax), Vaxzevria (AstraZeneca), Jannsen, Nuvaxovid.",
+                    "lang": "pl"
+                },
+                {
+                    "desc": "Only vaccines in the allowed valueset that have been approved by the EMA are allowed.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Nur die folgenden Impfstoffe werden akzeptiert: Vaxzevria (AstraZeneca), Comirnaty (Pfizer), Janssen, Moderna (Spikevax), Nuvaxovid.",
+                    "lang": "de"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-PL-0000",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        "in": [
+                            {
+                                "var": "payload.v.0.mp"
+                            },
+                            [
+                                "EU/1/20/1528",
+                                "EU/1/20/1507",
+                                "EU/1/21/1529",
+                                "EU/1/20/1525",
+                                "EU/1/21/1618"
+                            ]
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-02-26T00:00:00Z",
+            "ValidTo": "2030-10-11T00:00:00Z",
+            "Version": "1.1.1"
+        },
+        {
+            "AffectedFields": [
                 "t.0.tt",
                 "t.0.sc"
             ],
@@ -46433,58 +46485,6 @@
             "ValidFrom": "2021-07-04T15:00:00Z",
             "ValidTo": "2023-07-04T00:00:00Z",
             "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
-                "v.0.mp"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "PL",
-            "Description": [
-                {
-                    "desc": "Akceptowane s\u0105 tylko szczepionki z zestawu warto\u015bci, kt\u00f3re zosta\u0142y zatwierdzone przez EMA: Comirnaty (Pfizer), Moderna (Spikevax), Vaxzevria (AstraZeneca), Jannsen, Nuvaxovid.",
-                    "lang": "pl"
-                },
-                {
-                    "desc": "Only vaccines in the allowed valueset that have been approved by the EMA are allowed.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Nur die folgenden Impfstoffe werden akzeptiert: Vaxzevria (AstraZeneca), Comirnaty (Pfizer), Janssen, Moderna (Spikevax), Nuvaxovid.",
-                    "lang": "de"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-PL-0000",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        "in": [
-                            {
-                                "var": "payload.v.0.mp"
-                            },
-                            [
-                                "EU/1/20/1528",
-                                "EU/1/20/1507",
-                                "EU/1/21/1529",
-                                "EU/1/20/1525",
-                                "EU/1/21/1618"
-                            ]
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-02-26T00:00:00Z",
-            "ValidTo": "2030-10-11T00:00:00Z",
-            "Version": "1.1.1"
         },
         {
             "AffectedFields": [
@@ -57821,100 +57821,6 @@
         },
         {
             "AffectedFields": [
-                "t.0",
-                "t.0.tt"
-            ],
-            "CertificateType": "Test",
-            "Country": "LT",
-            "Description": [
-                {
-                    "desc": "Tyrimas gali b\u016bti greitas antigeno tyrimas arba PGR tyrimas",
-                    "lang": "lt"
-                },
-                {
-                    "desc": "The test type can be RAT or NAA.",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "1.0.0",
-            "Identifier": "TR-LT-0001",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.t.0"
-                    },
-                    {
-                        "in": [
-                            {
-                                "var": "payload.t.0.tt"
-                            },
-                            [
-                                "LP217198-3",
-                                "LP6464-4"
-                            ]
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-07-04T15:00:00Z",
-            "ValidTo": "2023-07-04T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
-                "v.0.mp"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "LT",
-            "Description": [
-                {
-                    "desc": "Leid\u017eiamos vakcinos pagal ES klasifikatori\u0173",
-                    "lang": "lt"
-                },
-                {
-                    "desc": "Only vaccines in the allowed valueset that have been approved by the EMA are allowed.",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "1.0.0",
-            "Identifier": "VR-LT-0001",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        "in": [
-                            {
-                                "var": "payload.v.0.mp"
-                            },
-                            [
-                                "EU/1/20/1528",
-                                "EU/1/20/1507",
-                                "EU/1/21/1529",
-                                "EU/1/20/1525",
-                                "Covishield",
-                                "EU/1/21/1618"
-                            ]
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-02-23T12:00:00Z",
-            "ValidTo": "2023-07-04T00:00:00Z",
-            "Version": "1.2.0"
-        },
-        {
-            "AffectedFields": [
                 "t.0.sc",
                 "t.0.tt"
             ],
@@ -58167,6 +58073,100 @@
             "ValidFrom": "2021-07-03T00:00:00Z",
             "ValidTo": "2030-06-01T00:00:00Z",
             "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "t.0",
+                "t.0.tt"
+            ],
+            "CertificateType": "Test",
+            "Country": "LT",
+            "Description": [
+                {
+                    "desc": "Tyrimas gali b\u016bti greitas antigeno tyrimas arba PGR tyrimas",
+                    "lang": "lt"
+                },
+                {
+                    "desc": "The test type can be RAT or NAA.",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "1.0.0",
+            "Identifier": "TR-LT-0001",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.t.0"
+                    },
+                    {
+                        "in": [
+                            {
+                                "var": "payload.t.0.tt"
+                            },
+                            [
+                                "LP217198-3",
+                                "LP6464-4"
+                            ]
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-07-04T15:00:00Z",
+            "ValidTo": "2023-07-04T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
+                "v.0.mp"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "LT",
+            "Description": [
+                {
+                    "desc": "Leid\u017eiamos vakcinos pagal ES klasifikatori\u0173",
+                    "lang": "lt"
+                },
+                {
+                    "desc": "Only vaccines in the allowed valueset that have been approved by the EMA are allowed.",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "1.0.0",
+            "Identifier": "VR-LT-0001",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        "in": [
+                            {
+                                "var": "payload.v.0.mp"
+                            },
+                            [
+                                "EU/1/20/1528",
+                                "EU/1/20/1507",
+                                "EU/1/21/1529",
+                                "EU/1/20/1525",
+                                "Covishield",
+                                "EU/1/21/1618"
+                            ]
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-02-23T12:00:00Z",
+            "ValidTo": "2023-07-04T00:00:00Z",
+            "Version": "1.2.0"
         },
         {
             "AffectedFields": [
@@ -67468,135 +67468,6 @@
         {
             "AffectedFields": [
                 "v.0",
-                "v.0.dt",
-                "v.0.mp",
-                "v.0.dn",
-                "v.0.sd"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "LT",
-            "Description": [
-                {
-                    "desc": "Skiepijimo apsauga prasideda po 14 dien\u0173 po pilno skiepijimo kurso, ir i\u0161karto po sustiprinan\u010dio skiepo",
-                    "lang": "lt"
-                },
-                {
-                    "desc": "The full vaccination protection starts up 14 days after full vaccination and right away after booster",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "1.0.0",
-            "Identifier": "VR-LT-0003",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        "if": [
-                            {
-                                "not-before": [
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "external.validationClock"
-                                            },
-                                            0,
-                                            "day"
-                                        ]
-                                    },
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "payload.v.0.dt"
-                                            },
-                                            14,
-                                            "day"
-                                        ]
-                                    }
-                                ]
-                            },
-                            true,
-                            {
-                                "if": [
-                                    {
-                                        "===": [
-                                            {
-                                                "var": "payload.v.0.mp"
-                                            },
-                                            "EU/1/20/1525"
-                                        ]
-                                    },
-                                    {
-                                        "if": [
-                                            {
-                                                ">": [
-                                                    {
-                                                        "var": "payload.v.0.dn"
-                                                    },
-                                                    1
-                                                ]
-                                            },
-                                            true,
-                                            false
-                                        ]
-                                    },
-                                    {
-                                        "if": [
-                                            {
-                                                "and": [
-                                                    {
-                                                        "===": [
-                                                            {
-                                                                "var": "payload.v.0.dn"
-                                                            },
-                                                            2
-                                                        ]
-                                                    },
-                                                    {
-                                                        "===": [
-                                                            {
-                                                                "var": "payload.v.0.sd"
-                                                            },
-                                                            1
-                                                        ]
-                                                    }
-                                                ]
-                                            },
-                                            true,
-                                            {
-                                                "if": [
-                                                    {
-                                                        ">": [
-                                                            {
-                                                                "var": "payload.v.0.dn"
-                                                            },
-                                                            2
-                                                        ]
-                                                    },
-                                                    true,
-                                                    false
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-02-12T12:00:00Z",
-            "ValidTo": "2024-11-29T00:00:00Z",
-            "Version": "3.1.0"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
                 "v.0.dt"
             ],
             "CertificateType": "Vaccination",
@@ -67795,6 +67666,135 @@
             "ValidFrom": "2021-07-03T00:00:00Z",
             "ValidTo": "2030-06-01T00:00:00Z",
             "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
+                "v.0.dt",
+                "v.0.mp",
+                "v.0.dn",
+                "v.0.sd"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "LT",
+            "Description": [
+                {
+                    "desc": "Skiepijimo apsauga prasideda po 14 dien\u0173 po pilno skiepijimo kurso, ir i\u0161karto po sustiprinan\u010dio skiepo",
+                    "lang": "lt"
+                },
+                {
+                    "desc": "The full vaccination protection starts up 14 days after full vaccination and right away after booster",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "1.0.0",
+            "Identifier": "VR-LT-0003",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        "if": [
+                            {
+                                "not-before": [
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "external.validationClock"
+                                            },
+                                            0,
+                                            "day"
+                                        ]
+                                    },
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "payload.v.0.dt"
+                                            },
+                                            14,
+                                            "day"
+                                        ]
+                                    }
+                                ]
+                            },
+                            true,
+                            {
+                                "if": [
+                                    {
+                                        "===": [
+                                            {
+                                                "var": "payload.v.0.mp"
+                                            },
+                                            "EU/1/20/1525"
+                                        ]
+                                    },
+                                    {
+                                        "if": [
+                                            {
+                                                ">": [
+                                                    {
+                                                        "var": "payload.v.0.dn"
+                                                    },
+                                                    1
+                                                ]
+                                            },
+                                            true,
+                                            false
+                                        ]
+                                    },
+                                    {
+                                        "if": [
+                                            {
+                                                "and": [
+                                                    {
+                                                        "===": [
+                                                            {
+                                                                "var": "payload.v.0.dn"
+                                                            },
+                                                            2
+                                                        ]
+                                                    },
+                                                    {
+                                                        "===": [
+                                                            {
+                                                                "var": "payload.v.0.sd"
+                                                            },
+                                                            1
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            true,
+                                            {
+                                                "if": [
+                                                    {
+                                                        ">": [
+                                                            {
+                                                                "var": "payload.v.0.dn"
+                                                            },
+                                                            2
+                                                        ]
+                                                    },
+                                                    true,
+                                                    false
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-02-12T12:00:00Z",
+            "ValidTo": "2024-11-29T00:00:00Z",
+            "Version": "3.1.0"
         },
         {
             "AffectedFields": [
@@ -73110,6 +73110,52 @@
         },
         {
             "AffectedFields": [
+                "t.0",
+                "t.0.tr"
+            ],
+            "CertificateType": "Test",
+            "Country": "PL",
+            "Description": [
+                {
+                    "desc": "Wynik testu musi by\u0107 ujemny (\"not detected\").",
+                    "lang": "pl"
+                },
+                {
+                    "desc": "Test result must be negative (\"not detected\").",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Das Ergebnis des Tests muss negativ sein.",
+                    "lang": "de"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-PL-0002",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.t.0"
+                    },
+                    {
+                        "===": [
+                            {
+                                "var": "payload.t.0.tr"
+                            },
+                            "260415000"
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-11T00:00:00Z",
+            "ValidTo": "2030-10-11T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
                 "t.0.tt",
                 "t.0.sc"
             ],
@@ -73256,52 +73302,6 @@
             "ValidFrom": "2021-07-09T12:00:00Z",
             "ValidTo": "2022-07-09T00:00:00Z",
             "Version": "1.0.1"
-        },
-        {
-            "AffectedFields": [
-                "t.0",
-                "t.0.tr"
-            ],
-            "CertificateType": "Test",
-            "Country": "PL",
-            "Description": [
-                {
-                    "desc": "Wynik testu musi by\u0107 ujemny (\"not detected\").",
-                    "lang": "pl"
-                },
-                {
-                    "desc": "Test result must be negative (\"not detected\").",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Das Ergebnis des Tests muss negativ sein.",
-                    "lang": "de"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-PL-0002",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.t.0"
-                    },
-                    {
-                        "===": [
-                            {
-                                "var": "payload.t.0.tr"
-                            },
-                            "260415000"
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-11T00:00:00Z",
-            "ValidTo": "2030-10-11T00:00:00Z",
-            "Version": "1.0.0"
         },
         {
             "AffectedFields": [
