@@ -10099,6 +10099,74 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            68:df:b2:9f:49:27:a5:a5:43:8d:4b:da:25:3b:a8:04:f6:d6:03:bc
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = IT, O = Ministero della Salute, CN = Italy DGC CSCA 1
+        Validity
+            Not Before: Jun 22 10:06:57 2022 GMT
+            Not After : Jun 21 10:06:56 2024 GMT
+        Subject: C = IT, O = Ministero della Salute, CN = Italy DGC DSC 7
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:a1:ca:0f:44:fe:c6:74:69:c4:df:26:48:6f:0e:
+                    53:00:44:57:e7:00:01:7a:48:ad:b8:14:d1:9c:fa:
+                    c6:d5:dd:20:1c:0e:f0:70:0f:53:8b:22:d2:81:53:
+                    fe:82:d8:77:e2:54:8c:8e:9b:ca:c4:43:63:25:e5:
+                    84:7b:73:35:c0
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Authority Key Identifier: 
+                keyid:BE:54:E5:69:5E:67:92:40:89:97:60:41:00:07:FA:4B:45:50:B0:FF
+
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.1847.2021.1.3
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:ldap://cads.dgc.gov.it/CN=Italy%20DGC%20CSCA%20x\1,O=Ministero%20della%20Salute,C=IT
+
+            X509v3 Subject Key Identifier: 
+                E0:CD:4C:D5:F3:96:DE:57:11:0A:CA:E0:05:3B:28:81:4C:28:3D:85
+            X509v3 Key Usage: critical
+                Digital Signature
+    Signature Algorithm: sha256WithRSAEncryption
+         98:23:fd:df:00:8b:98:08:fd:14:47:14:9c:4c:f0:ee:f3:ce:
+         82:a7:87:bc:ee:71:d6:d0:cc:5a:d2:aa:04:e2:8b:64:d2:22:
+         e7:3e:c4:f5:d6:63:8c:61:74:da:85:e1:99:f2:40:eb:62:4e:
+         06:2b:3b:e4:5d:1c:88:3f:ea:b1:eb:96:28:cd:bb:b7:b1:1c:
+         99:a5:ca:6d:9b:20:51:87:02:6f:67:6d:65:10:88:92:ff:d0:
+         22:5f:05:19:62:32:b3:64:47:ac:00:13:3c:59:1b:70:03:9f:
+         7f:95:b6:c7:39:54:a9:89:66:e3:10:e5:79:6c:24:8f:c3:06:
+         13:3f:06:3a:0c:83:21:3d:93:da:eb:37:c8:51:63:e7:55:30:
+         e0:54:f8:54:6a:76:70:c7:e6:50:f3:9d:09:68:50:43:64:d5:
+         ac:e4:7b:69:54:cd:86:f1:67:c3:c3:36:da:14:1f:f5:f5:cd:
+         f6:ed:5e:79:8b:4a:14:bb:27:e4:75:24:e6:84:8b:83:af:a1:
+         ae:c1:92:d4:b6:5e:0a:2f:7d:ed:f8:a7:43:cf:2b:bb:b2:58:
+         55:36:bf:8f:4c:4d:99:c1:1b:67:09:0c:ea:14:d1:44:7c:25:
+         47:91:08:36:8a:66:0d:83:f9:74:cd:98:01:7c:b0:9b:a5:f2:
+         d2:fb:32:65:af:f0:ad:5f:46:be:91:2f:45:21:ce:94:a2:af:
+         72:58:5e:29:2f:e1:a9:2a:5a:db:3e:35:79:b2:43:7a:26:9d:
+         42:e6:b3:e4:5c:74:da:27:b5:48:46:ff:18:24:f2:aa:29:37:
+         82:9f:9c:5c:e0:37:d0:71:0d:0a:ab:a2:5f:b2:65:05:72:69:
+         60:1a:01:ac:2d:e0:62:4c:d5:a6:f4:c0:4c:ab:e5:f7:1f:5b:
+         5b:1a:04:c6:42:30:da:77:d5:f7:f5:c1:a4:4f:85:4b:5e:d0:
+         06:1d:cc:25:53:78:46:65:4c:fb:bb:fb:48:34:46:40:3e:87:
+         f5:2b:44:b3:79:77:1e:f4:39:ad:82:60:ab:0a:e4:92:28:d3:
+         52:c9:39:af:5d:f0:ac:fa:db:d4:3d:6d:7f:ce:e7:a8:98:7b:
+         bf:b9:d4:65:49:a4:80:4c:09:47:bf:9e:dc:5c:13:c5:66:9f:
+         09:bc:52:60:70:6f:b6:fc:5e:f3:ca:64:14:19:0f:a5:0c:87:
+         cf:19:72:42:f9:ae:c3:51:26:e9:90:25:26:53:2c:a1:71:c2:
+         e0:cb:4f:31:4d:04:19:b3:9c:d6:6b:a8:91:f9:67:4e:e5:cc:
+         65:83:6d:b4:9c:bf:cc:81:bc:ff:a9:b9:5c:2d:30:76:a1:71:
+         a9:0e:0a:6a:6f:22:e5:b8
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             36:86:1e:d6:a7:d0:59:42:a3:7a:74:0c:da:16:64:ef:91:a3:eb:b9
         Signature Algorithm: ecdsa-with-SHA256
         Issuer: CN = CSCA Health NL, serialNumber = 1, OU = Ministry of Health Welfare and Sport, O = Kingdom of the Netherlands, C = NL
