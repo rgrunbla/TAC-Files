@@ -68039,6 +68039,52 @@
         },
         {
             "AffectedFields": [
+                "v"
+            ],
+            "CertificateType": "General",
+            "Country": "DE",
+            "Description": [
+                {
+                    "desc": "As of June 1, 2022, travelers entering Germany are now only obligated to register themselves, provide proof of their Covid status, or quarantine due to the pandemic if they have previously stayed in an area of variants of concern. No states/regions are currently classified as areas of variants of concern.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Seit dem 1. Juni 2022 gilt eine pandemiebedingte Anmelde-, Nachweis- und Quarant\u00e4nepflicht bei der Einreise nach Deutschland nur noch bei einem Voraufenthalt in einem Virusvariantengebiet. Derzeit gelten keine Staaten/Regionen als Virusvariantengebiete.",
+                    "lang": "de"
+                },
+                {
+                    "desc": "Depuis le 1er juin 2022, l\u2019obligation d\u2018enregistrement, de pr\u00e9sentation d\u2019un justificatif et de quarantaine \u00e0 l\u2019entr\u00e9e en Allemagne li\u00e9e \u00e0 la pand\u00e9mie ne reste applicable que si vous avez pr\u00e9alablement s\u00e9journ\u00e9 dans une zone de circulation de virus variant. Actuellement, aucun \u00e9tat ni aucune r\u00e9gion ne sont consid\u00e9r\u00e9s comme zone de circulation de virus variant.",
+                    "lang": "fr"
+                },
+                {
+                    "desc": "Desde el 1 de junio de 2022, la obligaci\u00f3n de notificaci\u00f3n, comprobaci\u00f3n y cuarentena relacionada con la pandemia para entrar en Alemania solo se aplica en el caso de una estancia previa en una zona con variantes del virus. Actualmente, no se considera que ning\u00fan estado o regi\u00f3n sea una zona con variantes del virus.",
+                    "lang": "es"
+                },
+                {
+                    "desc": "Dal 1 giugno 2022 per l\u2019ingresso in Germania vige, in relazione all'andamento della pandemia, l\u2019obbligo di registrazione, di presentazione della documentazione vaccinale e di quarantena solo in caso di provenienza da aree ad alta incidenza di varianti del virus. Nessuno Stato/regione al momento \u00e8 classificato come tale.",
+                    "lang": "it"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.8.0",
+            "Identifier": "GR-DE-0001",
+            "Logic": {
+                "if": [
+                    true,
+                    true,
+                    {
+                        "var": "payload.v"
+                    }
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-07-04T09:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.1"
+        },
+        {
+            "AffectedFields": [
                 "t.1"
             ],
             "CertificateType": "Test",
@@ -68285,61 +68331,6 @@
                         ]
                     },
                     1
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-01T00:00:00Z",
-            "ValidTo": "2030-10-01T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "t.0",
-                "t.0.sc",
-                "t.0.tt"
-            ],
-            "CertificateType": "Test",
-            "Country": "_F",
-            "Description": [
-                {
-                    "desc": "The test must be less than 72 hours.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Le test doit dat\u00e9 de moins de 72 heures.",
-                    "lang": "fr"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-PM_F-0003",
-            "Logic": {
-                "if": [
-                    {
-                        "before": [
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "external.validationClock"
-                                    },
-                                    0,
-                                    "day"
-                                ]
-                            },
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "payload.t.0.sc"
-                                    },
-                                    72,
-                                    "hour"
-                                ]
-                            }
-                        ]
-                    },
-                    true,
-                    false
                 ]
             },
             "SchemaVersion": "1.0.0",
@@ -73420,6 +73411,61 @@
         },
         {
             "AffectedFields": [
+                "t.0",
+                "t.0.sc",
+                "t.0.tt"
+            ],
+            "CertificateType": "Test",
+            "Country": "_F",
+            "Description": [
+                {
+                    "desc": "The test must be less than 72 hours.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Le test doit dat\u00e9 de moins de 72 heures.",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-PM_F-0003",
+            "Logic": {
+                "if": [
+                    {
+                        "before": [
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "external.validationClock"
+                                    },
+                                    0,
+                                    "day"
+                                ]
+                            },
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "payload.t.0.sc"
+                                    },
+                                    72,
+                                    "hour"
+                                ]
+                            }
+                        ]
+                    },
+                    true,
+                    false
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-01T00:00:00Z",
+            "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
                 "t"
             ],
             "CertificateType": "General",
@@ -75273,38 +75319,6 @@
                         "var": "payload.t.0.tr"
                     },
                     "260415000"
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-01T00:00:00Z",
-            "ValidTo": "2030-10-01T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "t.1"
-            ],
-            "CertificateType": "Test",
-            "Country": "FR",
-            "Description": [
-                {
-                    "desc": "Test format is not EU standard.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Le format li\u00e9 au test n'est pas au standard UE.",
-                    "lang": "fr"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-YTFR-0000",
-            "Logic": {
-                "!": [
-                    {
-                        "var": "payload.t.1"
-                    }
                 ]
             },
             "SchemaVersion": "1.0.0",
@@ -80656,68 +80670,6 @@
         },
         {
             "AffectedFields": [
-                "v.0",
-                "v.0.mp",
-                "v.0.dt"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "_C",
-            "Description": [
-                {
-                    "desc": "With Jansen vaccine, a finished vaccination course is considered protective earliest from 28 days after the date of the last vaccination.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Avec le vaccin Janssen, le sch\u00e9ma vaccinal est consid\u00e9r\u00e9 comme complet 28 jours apr\u00e8s la date de la derni\u00e8re injection.",
-                    "lang": "fr"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-FR_C-0005",
-            "Logic": {
-                "if": [
-                    {
-                        "===": [
-                            {
-                                "var": "payload.v.0.mp"
-                            },
-                            "EU/1/20/1525"
-                        ]
-                    },
-                    {
-                        "not-before": [
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "external.validationClock"
-                                    },
-                                    0,
-                                    "day"
-                                ]
-                            },
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "payload.v.0.dt"
-                                    },
-                                    28,
-                                    "day"
-                                ]
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-01T00:00:00Z",
-            "ValidTo": "2030-10-01T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
                 "t.0",
                 "t.0.ma",
                 "t.0.tt"
@@ -81048,6 +81000,38 @@
                         ]
                     },
                     true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-01T00:00:00Z",
+            "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "t.1"
+            ],
+            "CertificateType": "Test",
+            "Country": "FR",
+            "Description": [
+                {
+                    "desc": "Test format is not EU standard.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Le format li\u00e9 au test n'est pas au standard UE.",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-YTFR-0000",
+            "Logic": {
+                "!": [
+                    {
+                        "var": "payload.t.1"
+                    }
                 ]
             },
             "SchemaVersion": "1.0.0",
@@ -83237,6 +83221,68 @@
                     {
                         "var": "payload.t.1"
                     }
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-01T00:00:00Z",
+            "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
+                "v.0.mp",
+                "v.0.dt"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "_C",
+            "Description": [
+                {
+                    "desc": "With Jansen vaccine, a finished vaccination course is considered protective earliest from 28 days after the date of the last vaccination.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Avec le vaccin Janssen, le sch\u00e9ma vaccinal est consid\u00e9r\u00e9 comme complet 28 jours apr\u00e8s la date de la derni\u00e8re injection.",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-FR_C-0005",
+            "Logic": {
+                "if": [
+                    {
+                        "===": [
+                            {
+                                "var": "payload.v.0.mp"
+                            },
+                            "EU/1/20/1525"
+                        ]
+                    },
+                    {
+                        "not-before": [
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "external.validationClock"
+                                    },
+                                    0,
+                                    "day"
+                                ]
+                            },
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "payload.v.0.dt"
+                                    },
+                                    28,
+                                    "day"
+                                ]
+                            }
+                        ]
+                    },
+                    true
                 ]
             },
             "SchemaVersion": "1.0.0",
