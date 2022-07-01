@@ -2,11 +2,11 @@
   "config": [
     {
       "name": "lastUpdate",
-      "value": "25 May 2022"
+      "value": "1 Jul 2022"
     },
     {
       "name": "version",
-      "value": 153
+      "value": 154
     },
     {
       "name": "versionCalibrationBle",
@@ -234,7 +234,7 @@
     },
     {
       "name": "app.smartwallet.notifElgDays",
-      "value": 20
+      "value": 30
     },
     {
       "name": "app.smartwallet.engine",
