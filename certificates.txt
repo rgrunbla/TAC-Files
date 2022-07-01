@@ -1697,6 +1697,57 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            59:3e:5b:c1:0b:d1:03:50:f0:cb:35:95:07:ea:0d:78:1e:25:9f:d9
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN = CSCA Health NL, serialNumber = 1, OU = Ministry of Health Welfare and Sport, O = Kingdom of the Netherlands, C = NL
+        Validity
+            Not Before: Jun 29 10:49:18 2022 GMT
+            Not After : Jun 26 10:49:18 2033 GMT
+        Subject: C = NL, O = Kingdom of the Netherlands, OU = Ministry of Health Welfare and Sport, serialNumber = 6, CN = Health DSC for vaccinations
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:a0:25:94:d9:0e:ae:5e:e8:dd:03:81:0e:cb:ee:
+                    2f:bf:92:1d:12:dc:80:be:d9:ab:c9:68:cd:4b:b3:
+                    45:2e:9b:e9:c3:45:b5:60:a1:4f:03:6e:35:94:5e:
+                    b3:40:d9:0f:f0:58:f7:c9:c0:36:82:c5:c3:84:f5:
+                    4f:09:88:0e:17
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            2.23.136.1.1.6.2: 
+                0....1...H
+            X509v3 Authority Key Identifier: 
+                keyid:22:4D:F8:C3:8D:29:73:53:83:77:86:9A:F7:52:C1:1A:EC:A1:A1:1F
+
+            X509v3 Issuer Alternative Name: 
+                DirName:/L=NLD
+            X509v3 Subject Alternative Name: 
+                DirName:/L=NLD
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.0.1847.2021.1.2
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl.npkd.nl/CRLs/NL-Health.crl
+
+            X509v3 Subject Key Identifier: 
+                92:4D:A4:01:62:3C:C7:3E:9F:5F:65:8B:F1:A0:68:FF:14:87:F0:AA
+            X509v3 Private Key Usage Period: 
+                Not Before: Jun 29 10:49:18 2022 GMT, Not After: Jan 25 10:49:18 2023 GMT
+            X509v3 Key Usage: critical
+                Digital Signature
+    Signature Algorithm: ecdsa-with-SHA256
+         30:44:02:20:67:85:a0:c1:b4:67:75:a5:fc:bb:60:af:a4:cd:
+         aa:2e:5a:d2:42:b8:e0:c8:fd:9e:1f:57:0c:9e:74:7a:8e:5d:
+         02:20:40:0f:d5:cb:64:66:2e:47:08:a3:c4:40:f8:2f:13:59:
+         b3:5c:39:6d:fe:81:a8:9d:f2:2b:1c:df:d1:1e:f0:65
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             7a:42:4e:ad:8d:84:7c:33:b6:0c:bd:bd:ed:3f:4e:be
         Signature Algorithm: ecdsa-with-SHA384
         Issuer: C = DE, O = D-Trust GmbH, CN = D-TRUST CA 4-21-2 2021, organizationIdentifier = NTRDE-HRB74346
@@ -10008,6 +10059,57 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            44:72:78:3b:b4:ac:b3:89:da:4b:c8:4e:08:19:bd:cd:8d:1c:4a:f0
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN = CSCA Health NL, serialNumber = 1, OU = Ministry of Health Welfare and Sport, O = Kingdom of the Netherlands, C = NL
+        Validity
+            Not Before: Jun 29 10:50:07 2022 GMT
+            Not After : Jun 26 10:50:07 2033 GMT
+        Subject: C = NL, O = Kingdom of the Netherlands, OU = Ministry of Health Welfare and Sport, serialNumber = 7, CN = Health DSC for vaccinations
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:d4:65:2a:0f:70:a1:03:47:9c:5b:22:41:58:6f:
+                    2b:9a:67:0d:19:06:34:e4:47:94:2d:4c:74:35:a2:
+                    0a:03:12:eb:61:40:60:7a:ee:17:6a:a6:d7:f5:c9:
+                    ea:e6:4b:68:34:b2:85:f2:de:c9:ef:39:ad:0c:ea:
+                    ca:45:92:50:14
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            2.23.136.1.1.6.2: 
+                0....1...H
+            X509v3 Authority Key Identifier: 
+                keyid:22:4D:F8:C3:8D:29:73:53:83:77:86:9A:F7:52:C1:1A:EC:A1:A1:1F
+
+            X509v3 Issuer Alternative Name: 
+                DirName:/L=NLD
+            X509v3 Subject Alternative Name: 
+                DirName:/L=NLD
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.0.1847.2021.1.2
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl.npkd.nl/CRLs/NL-Health.crl
+
+            X509v3 Subject Key Identifier: 
+                A6:67:5A:E3:6C:12:F4:E7:30:93:33:45:05:9C:24:34:CC:FD:48:0D
+            X509v3 Private Key Usage Period: 
+                Not Before: Jun 29 10:50:07 2022 GMT, Not After: Jan 25 10:50:07 2023 GMT
+            X509v3 Key Usage: critical
+                Digital Signature
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:b1:02:de:d7:19:ca:48:56:4e:8c:98:b5:a2:
+         71:30:20:dd:4d:0f:01:5a:b5:1e:03:7a:1c:5e:2d:05:61:c9:
+         ec:02:21:00:fc:5d:8d:71:80:6b:75:07:95:9e:af:ba:6c:74:
+         d8:91:eb:29:3c:0a:3d:4b:64:97:54:17:9b:67:b6:fb:b2:69
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             11:f7:39:8d:e2:9c:ec:92:ca:e8:3a:ed:74:8e:ca:a0:4b:9d:9f
         Signature Algorithm: sha256WithRSAEncryption
         Issuer: C = MC, O = Principality of Monaco, OU = Foreign Office of Monaco, CN = CSCAPKI_MC
@@ -10246,6 +10348,57 @@ Certificate:
          ed:7d:7b:21:fd:8a:c2:9a:89:22:56:76:83:7e:e8:cc:74:2a:
          02:21:00:82:30:cf:a7:8a:aa:6e:3c:9a:15:92:e4:1a:36:9a:
          07:c0:34:22:44:46:f3:45:3d:fb:a4:23:c1:a6:95:d8:44
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            32:4e:7d:03:07:99:4d:f3:07:2d:11:96:b2:1f:13:3a:d1:19:bc:4b
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN = CSCA Health NL, serialNumber = 1, OU = Ministry of Health Welfare and Sport, O = Kingdom of the Netherlands, C = NL
+        Validity
+            Not Before: Jun 29 09:21:03 2022 GMT
+            Not After : Jun 26 09:21:03 2033 GMT
+        Subject: C = NL, O = Kingdom of the Netherlands, OU = Ministry of Health Welfare and Sport, serialNumber = 5, CN = Health DSC for test
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:cb:09:e0:25:d4:79:ae:49:3f:e5:94:6a:42:ee:
+                    38:33:ae:b1:db:27:9f:37:dd:13:07:af:53:3a:8f:
+                    c5:21:45:12:93:40:56:94:d4:8e:d5:64:86:98:06:
+                    01:85:33:be:b8:76:98:22:a8:85:08:9c:41:12:70:
+                    dd:cc:f4:0c:7d
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            2.23.136.1.1.6.2: 
+                0....1...H
+            X509v3 Authority Key Identifier: 
+                keyid:22:4D:F8:C3:8D:29:73:53:83:77:86:9A:F7:52:C1:1A:EC:A1:A1:1F
+
+            X509v3 Issuer Alternative Name: 
+                DirName:/L=NLD
+            X509v3 Subject Alternative Name: 
+                DirName:/L=NLD
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.0.1847.2021.1.1
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl.npkd.nl/CRLs/NL-Health.crl
+
+            X509v3 Subject Key Identifier: 
+                9E:E3:8A:12:7D:8D:13:B7:D7:EC:35:C1:6A:BA:E7:AC:0C:D4:E4:BC
+            X509v3 Private Key Usage Period: 
+                Not Before: Jun 29 09:21:03 2022 GMT, Not After: Jan 25 09:21:03 2023 GMT
+            X509v3 Key Usage: critical
+                Digital Signature
+    Signature Algorithm: ecdsa-with-SHA256
+         30:44:02:20:28:63:90:99:5d:0b:91:90:96:bb:74:d4:95:fa:
+         34:17:17:5e:51:b2:43:7c:19:f2:66:6f:65:f6:d0:27:08:cd:
+         02:20:29:5c:6d:89:b3:c2:07:dc:60:42:d7:16:43:23:00:3b:
+         c7:73:8f:71:f4:57:87:4a:54:ae:35:58:97:8c:24:d4
 
 Certificate:
     Data:
@@ -12188,6 +12341,57 @@ Certificate:
          7e:a5:7e:fc:11:04:9b:7f:66:18:eb:5c:6e:cd:40:34:e4:e6:
          70:57:f9:fb:ae:c1:00:0f:7b:cb:22:fc:1b:3c:82:c6:cc:63:
          ff:4e:35:7f:f4:b6:dd:da
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            4f:15:ee:f6:6a:e1:bc:a8:15:ab:17:cd:4f:3d:01:6f:ba:0f:d9:88
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN = CSCA Health NL, serialNumber = 1, OU = Ministry of Health Welfare and Sport, O = Kingdom of the Netherlands, C = NL
+        Validity
+            Not Before: Jun 29 09:15:18 2022 GMT
+            Not After : Jun 26 09:15:18 2033 GMT
+        Subject: C = NL, O = Kingdom of the Netherlands, OU = Ministry of Health Welfare and Sport, serialNumber = 5, CN = Health DSC for recovery
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:a3:7a:19:38:ab:76:c6:4f:c6:72:73:f4:df:0a:
+                    4d:99:52:8e:19:66:cd:44:c5:82:f8:02:dd:95:6e:
+                    ba:8f:26:60:2f:1a:54:db:b0:1c:0b:74:0e:ea:df:
+                    ed:e3:60:b2:c6:ef:47:7d:5f:64:33:9a:a3:38:20:
+                    40:1a:07:43:4b
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            2.23.136.1.1.6.2: 
+                0....1...H
+            X509v3 Authority Key Identifier: 
+                keyid:22:4D:F8:C3:8D:29:73:53:83:77:86:9A:F7:52:C1:1A:EC:A1:A1:1F
+
+            X509v3 Issuer Alternative Name: 
+                DirName:/L=NLD
+            X509v3 Subject Alternative Name: 
+                DirName:/L=NLD
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.0.1847.2021.1.3
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl.npkd.nl/CRLs/NL-Health.crl
+
+            X509v3 Subject Key Identifier: 
+                A2:A2:07:40:0E:C5:A4:35:96:18:01:68:BF:5B:55:6D:19:7F:9A:3A
+            X509v3 Private Key Usage Period: 
+                Not Before: Jun 29 09:15:18 2022 GMT, Not After: Jan 25 09:15:18 2023 GMT
+            X509v3 Key Usage: critical
+                Digital Signature
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:e0:3a:a3:2e:27:07:de:a2:bb:ce:67:85:dc:
+         f6:5b:e8:0e:d3:35:8f:de:b2:2a:ff:60:97:1b:01:55:7f:bb:
+         0d:02:20:06:e7:b3:43:ea:f3:26:71:04:36:10:67:b7:ef:14:
+         ce:e1:d4:11:d8:e1:67:92:4a:3c:ed:1e:9f:56:ca:d7:a1
 
 Certificate:
     Data:
@@ -15551,6 +15755,57 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            51:28:7e:a1:cf:7d:cb:50:dc:62:e1:9a:0c:f7:16:e4:02:e6:39:7f
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN = CSCA Health NL, serialNumber = 1, OU = Ministry of Health Welfare and Sport, O = Kingdom of the Netherlands, C = NL
+        Validity
+            Not Before: Jun 29 09:17:29 2022 GMT
+            Not After : Jun 26 09:17:29 2033 GMT
+        Subject: C = NL, O = Kingdom of the Netherlands, OU = Ministry of Health Welfare and Sport, serialNumber = 6, CN = Health DSC for recovery
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:98:e9:68:87:64:e5:d8:e9:16:c2:42:f3:e8:b7:
+                    0b:71:bd:24:9b:e5:04:6a:03:ef:d8:31:86:66:a8:
+                    5e:40:c4:7e:2b:b1:a9:12:fe:cc:2b:c7:13:df:8d:
+                    fb:ed:c5:b7:25:bc:d4:fa:b1:66:f6:a4:64:bf:ba:
+                    66:38:5a:3e:e0
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            2.23.136.1.1.6.2: 
+                0....1...H
+            X509v3 Authority Key Identifier: 
+                keyid:22:4D:F8:C3:8D:29:73:53:83:77:86:9A:F7:52:C1:1A:EC:A1:A1:1F
+
+            X509v3 Issuer Alternative Name: 
+                DirName:/L=NLD
+            X509v3 Subject Alternative Name: 
+                DirName:/L=NLD
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.0.1847.2021.1.3
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl.npkd.nl/CRLs/NL-Health.crl
+
+            X509v3 Subject Key Identifier: 
+                EE:45:E8:81:F9:B2:49:B3:3F:03:0D:7F:C5:B5:20:A8:42:25:52:9E
+            X509v3 Private Key Usage Period: 
+                Not Before: Jun 29 09:17:29 2022 GMT, Not After: Jan 25 09:17:29 2023 GMT
+            X509v3 Key Usage: critical
+                Digital Signature
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:86:32:11:af:a2:2a:48:c9:2d:b5:2d:15:17:
+         4f:be:7c:e6:05:6c:82:58:7e:01:3e:4e:4a:d7:b6:ce:85:7f:
+         33:02:20:2d:46:7e:9d:db:88:70:b8:9e:f2:6a:2b:71:70:18:
+         4e:dd:b9:2e:21:33:e9:c1:14:d1:6a:1f:d4:96:3a:71:cd
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             68:10:72:ed:77:81:d6:bb:d9:91:95:1a:31:89:45:0f
         Signature Algorithm: rsassaPss         
          Hash Algorithm: sha512
@@ -16543,6 +16798,57 @@ Certificate:
          c5:69:b7:c2:6d:0d:37:00:1c:23:0c:c0:c0:03:f3:81:59:04:
          05:4d:71:a0:ab:3c:d9:1e:75:7d:de:c8:1a:0d:d5:b2:30:6c:
          60:5e:2a:1a:e0:32:ba:bb
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            51:98:8e:20:45:a3:ce:7a:e9:89:f1:51:c5:ca:46:5c:f5:2b:c3:40
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN = CSCA Health NL, serialNumber = 1, OU = Ministry of Health Welfare and Sport, O = Kingdom of the Netherlands, C = NL
+        Validity
+            Not Before: Jun 29 09:22:52 2022 GMT
+            Not After : Jun 26 09:22:52 2033 GMT
+        Subject: C = NL, O = Kingdom of the Netherlands, OU = Ministry of Health Welfare and Sport, serialNumber = 6, CN = Health DSC for test
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:bb:45:01:1e:76:f8:24:1b:e3:a1:8c:ec:6e:4b:
+                    d7:3c:79:b6:ca:ab:77:1c:d9:b8:ca:d4:bd:af:1a:
+                    fc:6c:95:c7:75:50:3a:12:10:87:d0:e2:17:65:98:
+                    fa:9f:b7:d3:e5:67:6e:cd:77:d3:6b:4c:9f:22:88:
+                    4b:f2:7f:e3:de
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            2.23.136.1.1.6.2: 
+                0....1...H
+            X509v3 Authority Key Identifier: 
+                keyid:22:4D:F8:C3:8D:29:73:53:83:77:86:9A:F7:52:C1:1A:EC:A1:A1:1F
+
+            X509v3 Issuer Alternative Name: 
+                DirName:/L=NLD
+            X509v3 Subject Alternative Name: 
+                DirName:/L=NLD
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.0.1847.2021.1.1
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl.npkd.nl/CRLs/NL-Health.crl
+
+            X509v3 Subject Key Identifier: 
+                F5:64:24:94:68:51:3E:B0:0B:97:47:2C:2E:F1:49:F7:F3:BE:1A:22
+            X509v3 Private Key Usage Period: 
+                Not Before: Jun 29 09:22:52 2022 GMT, Not After: Jan 25 09:22:52 2023 GMT
+            X509v3 Key Usage: critical
+                Digital Signature
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:d0:ed:cc:3b:75:fe:57:ce:e9:e5:ce:15:c8:
+         32:96:2a:03:20:ec:fa:bf:ab:44:36:e3:11:35:2d:97:b6:53:
+         11:02:21:00:f8:42:05:d8:70:eb:9a:ea:fd:44:08:50:9a:a1:
+         ea:7f:43:d3:cb:25:9b:65:de:f5:6a:5d:0f:a2:ef:9d:5a:6a
 
 Certificate:
     Data:
@@ -20838,6 +21144,49 @@ Certificate:
          b2:0e:e7:c4:f4:92:1a:f9:97:0d:29:86:9b:73:80:bf:2c:18:
          b7:02:21:00:bd:5a:4b:d9:36:8c:2e:45:18:29:d7:2f:5e:3a:
          5b:a4:cd:c0:93:8b:65:78:46:d1:61:0b:3e:ea:35:79:a3:c5
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            47:bf:04:ae:ef:cf:35:e0:40:57:0d:f1:8f:01:fb:ef:e9:29:f7:4e
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = MG, ST = MALAGASY, L = Antananarivo, O = The Government of Madagascar, OU = Digital Governance Unit, CN = MG/GOV/DGU/CSCA
+        Validity
+            Not Before: May 18 11:45:34 2022 GMT
+            Not After : May 17 11:45:34 2024 GMT
+        Subject: C = MG, ST = MALAGASY, L = Antananarivo, O = The Government of Madagascar, OU = Public Heath Ministry, CN = MG/GOV/MSANP/DCC/DSC
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:b6:e6:d4:f6:d6:4f:c1:87:af:72:f6:cc:e9:b7:
+                    2c:fa:d9:63:f5:a2:31:ce:6b:4b:3e:39:76:23:13:
+                    47:92:42:d3:75:72:b0:e8:2d:1d:4e:bc:a3:2a:17:
+                    d3:dc:67:27:a4:1e:0a:c8:91:56:36:20:60:36:1b:
+                    d2:11:5d:77:74
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Subject Key Identifier: 
+                CA:8B:CF:D2:D9:48:23:7E:99:84:65:CF:45:AB:27:35:5F:1D:E6:71
+            X509v3 Authority Key Identifier: 
+                keyid:32:BD:6E:9F:81:12:36:0E:00:D1:2F:BC:1B:E3:F9:1E:92:53:E6:DD
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl.vaksiny.gov.mg/CRL/CSCA.crl
+
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.1847.2021.1.1, 1.3.6.1.4.1.1847.2021.1.2, 1.3.6.1.4.1.1847.2021.1.3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:d6:21:15:21:09:6a:ee:2e:1f:72:c4:da:ab:
+         93:fd:10:ee:be:8b:81:c2:7c:03:b7:21:5d:43:6a:a7:bc:12:
+         89:02:21:00:cc:eb:7c:b9:e2:08:d6:50:e1:1a:6d:b0:3c:7d:
+         0c:18:05:c3:01:ff:74:6b:9d:5a:40:fe:c4:5c:51:c8:ce:91
 
 Certificate:
     Data:
@@ -27802,6 +28151,57 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            49:b2:a5:df:06:d7:9b:b4:8e:10:1e:62:23:0b:4d:c6:58:bb:b8:e5
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN = CSCA Health NL, serialNumber = 1, OU = Ministry of Health Welfare and Sport, O = Kingdom of the Netherlands, C = NL
+        Validity
+            Not Before: Jun 29 09:18:55 2022 GMT
+            Not After : Jun 26 09:18:55 2033 GMT
+        Subject: C = NL, O = Kingdom of the Netherlands, OU = Ministry of Health Welfare and Sport, serialNumber = 7, CN = Health DSC for recovery
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:61:52:4e:48:81:62:0c:d7:d8:42:a2:90:4b:37:
+                    b3:70:9c:ec:62:6d:44:1d:8f:a9:87:9d:34:6c:51:
+                    12:33:41:8f:99:bf:57:40:41:db:b2:f7:53:bf:30:
+                    b0:4a:5d:35:88:de:7a:28:d6:d8:f4:f3:aa:70:2d:
+                    f7:10:29:b1:55
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            2.23.136.1.1.6.2: 
+                0....1...H
+            X509v3 Authority Key Identifier: 
+                keyid:22:4D:F8:C3:8D:29:73:53:83:77:86:9A:F7:52:C1:1A:EC:A1:A1:1F
+
+            X509v3 Issuer Alternative Name: 
+                DirName:/L=NLD
+            X509v3 Subject Alternative Name: 
+                DirName:/L=NLD
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.0.1847.2021.1.3
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl.npkd.nl/CRLs/NL-Health.crl
+
+            X509v3 Subject Key Identifier: 
+                FD:5B:7F:38:3D:B2:D7:E0:8A:2C:74:A8:8A:14:A8:07:4C:DF:AD:14
+            X509v3 Private Key Usage Period: 
+                Not Before: Jun 29 09:18:55 2022 GMT, Not After: Jan 25 09:18:55 2023 GMT
+            X509v3 Key Usage: critical
+                Digital Signature
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:15:90:3e:fa:43:9d:c1:f3:30:6f:68:0d:97:27:
+         b6:0d:3c:f7:ba:bb:59:01:35:e8:64:07:83:71:38:e7:4e:e0:
+         02:21:00:90:fa:52:14:1d:da:1b:d2:f6:63:76:ad:84:49:97:
+         d4:b1:be:c8:d1:81:b9:b3:1e:84:b5:9e:c1:0f:d6:b1:e7
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             3e:da:e4:ae:0d:96:90:31:cc:49:36:af:07:a9:c1:c7:14:8a:13:69
         Signature Algorithm: sha256WithRSAEncryption
         Issuer: C = FR, O = Gouv, CN = CSCA-FRANCE
@@ -31328,6 +31728,57 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            3b:33:b6:66:cb:a5:ed:61:f6:2b:81:5b:b4:f5:d9:09:3c:0a:e7:db
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN = CSCA Health NL, serialNumber = 1, OU = Ministry of Health Welfare and Sport, O = Kingdom of the Netherlands, C = NL
+        Validity
+            Not Before: Jun 29 10:39:03 2022 GMT
+            Not After : Jun 26 10:39:03 2033 GMT
+        Subject: C = NL, O = Kingdom of the Netherlands, OU = Ministry of Health Welfare and Sport, serialNumber = 5, CN = Health DSC for vaccinations
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:32:34:58:4b:56:ae:d8:df:f3:2b:a4:f8:43:e8:
+                    00:12:42:b7:08:7a:cf:51:b7:2f:3a:31:78:25:9e:
+                    3b:8e:74:6a:69:d2:6f:b2:b4:d6:ef:78:41:ea:cb:
+                    17:af:ae:f6:d3:bd:6a:0c:9f:8d:e9:e0:f1:23:c3:
+                    c9:79:3f:de:53
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            2.23.136.1.1.6.2: 
+                0....1...H
+            X509v3 Authority Key Identifier: 
+                keyid:22:4D:F8:C3:8D:29:73:53:83:77:86:9A:F7:52:C1:1A:EC:A1:A1:1F
+
+            X509v3 Issuer Alternative Name: 
+                DirName:/L=NLD
+            X509v3 Subject Alternative Name: 
+                DirName:/L=NLD
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.0.1847.2021.1.2
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl.npkd.nl/CRLs/NL-Health.crl
+
+            X509v3 Subject Key Identifier: 
+                71:05:14:0D:59:0B:F3:22:54:A8:61:7E:78:C7:24:C8:4C:0C:00:6C
+            X509v3 Private Key Usage Period: 
+                Not Before: Jun 29 10:39:03 2022 GMT, Not After: Jan 25 10:39:03 2023 GMT
+            X509v3 Key Usage: critical
+                Digital Signature
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:ec:e6:f2:60:58:4c:f9:84:e4:08:cb:6d:6c:
+         f1:d3:87:ac:be:6b:7b:45:d8:0f:99:3c:d2:6a:6d:5e:59:f1:
+         e1:02:21:00:ee:d4:e4:e3:7d:1f:c9:e0:26:de:e0:1a:ed:a8:
+         d3:5d:a9:ea:4e:3c:e3:7c:74:25:d8:cd:86:33:80:17:cb:d0
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             09:7a:93:31:b6:87:7d:8f:0e:b1:fa:55:d8:f5:45:9b:68:f2:99:10
         Signature Algorithm: sha256WithRSAEncryption
         Issuer: CN = Correo Uruguayo - CA, O = Administraci\C3\B3n Nacional de Correos, C = UY
@@ -32423,6 +32874,57 @@ Certificate:
          b6:1c:e3:9e:84:99:82:03:32:53:da:59:af:fc:cb:d0:8a:02:
          14:02:21:00:b3:e9:16:06:e6:bd:d9:27:7b:51:99:b6:f8:9f:
          61:15:04:65:15:8d:c9:5d:21:90:e1:d5:fd:91:f6:f7:89:a5
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            25:b9:98:12:62:25:0f:ff:e8:36:81:7d:67:b7:41:b9:25:38:79:8c
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN = CSCA Health NL, serialNumber = 1, OU = Ministry of Health Welfare and Sport, O = Kingdom of the Netherlands, C = NL
+        Validity
+            Not Before: Jun 29 09:55:51 2022 GMT
+            Not After : Jun 26 09:55:51 2033 GMT
+        Subject: C = NL, O = Kingdom of the Netherlands, OU = Ministry of Health Welfare and Sport, serialNumber = 7, CN = Health DSC for test
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:d8:48:28:13:7d:52:74:7a:42:47:4c:27:e5:d2:
+                    2a:75:f9:3d:fa:82:73:b2:22:12:9f:b8:e9:14:1d:
+                    54:05:57:27:fe:f8:ee:b7:8f:bb:0f:82:70:78:39:
+                    f2:a0:73:09:04:be:d4:f3:78:11:d5:5f:8f:8f:ac:
+                    84:88:6a:28:e7
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            2.23.136.1.1.6.2: 
+                0....1...H
+            X509v3 Authority Key Identifier: 
+                keyid:22:4D:F8:C3:8D:29:73:53:83:77:86:9A:F7:52:C1:1A:EC:A1:A1:1F
+
+            X509v3 Issuer Alternative Name: 
+                DirName:/L=NLD
+            X509v3 Subject Alternative Name: 
+                DirName:/L=NLD
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.0.1847.2021.1.1
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl.npkd.nl/CRLs/NL-Health.crl
+
+            X509v3 Subject Key Identifier: 
+                C7:0E:50:B8:2E:84:3C:C9:0F:AB:ED:D6:49:6E:55:67:1C:9D:FD:E1
+            X509v3 Private Key Usage Period: 
+                Not Before: Jun 29 09:55:51 2022 GMT, Not After: Jan 25 09:55:51 2023 GMT
+            X509v3 Key Usage: critical
+                Digital Signature
+    Signature Algorithm: ecdsa-with-SHA256
+         30:44:02:20:04:51:24:a4:5b:8b:f9:10:2d:56:db:99:1c:01:
+         51:94:ae:83:a1:c6:fb:87:5e:7e:b1:e1:3c:62:bd:fb:58:e5:
+         02:20:49:eb:61:84:36:bb:c4:ef:40:74:a8:58:f7:6e:d3:f4:
+         23:0d:61:e7:52:c6:3d:a4:1c:2f:cc:40:78:69:de:5d
 
 Certificate:
     Data:
