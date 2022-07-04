@@ -359,62 +359,6 @@ Certificate:
 Certificate:
     Data:
         Version: 3 (0x2)
-        Serial Number:
-            27:9a:f5:0f:be:5f:73:00:c6:65:fe:c5:3e:36:66:71
-        Signature Algorithm: sha256WithRSAEncryption
-        Issuer: C = BH, O = Information and eGovernment Authority, CN = BeAware CSCA A Production
-        Validity
-            Not Before: Jun  1 00:00:00 2022 GMT
-            Not After : Jun  1 00:00:00 2024 GMT
-        Subject: C = BH, O = Information and eGovernment Authority, CN = BeAware DSC A1 Production
-        Subject Public Key Info:
-            Public Key Algorithm: id-ecPublicKey
-                Public-Key: (256 bit)
-                pub:
-                    04:0f:b2:3d:0d:81:e7:3a:a1:03:64:95:7c:5c:a2:
-                    1d:02:ce:fc:80:7a:0d:1a:6d:54:8e:e3:3d:59:1e:
-                    9a:9f:e4:94:8c:7d:0b:0d:62:85:52:cd:bb:da:12:
-                    bb:5f:a8:75:a1:20:76:76:cc:ff:be:9f:91:21:e5:
-                    fb:d8:e9:84:d1
-                ASN1 OID: prime256v1
-                NIST CURVE: P-256
-        X509v3 extensions:
-            X509v3 Subject Key Identifier: 
-                E8:04:A0:7B:68:5E:1C:BF:DB:C0:67:1C:B1:9C:20:D9:DA:1A:63:26
-            X509v3 Authority Key Identifier: 
-                keyid:23:8C:FA:06:1B:1A:39:B3:9A:92:CC:54:DE:5F:56:BD:7E:E1:1E:51
-
-            X509v3 Key Usage: 
-                Digital Signature
-            X509v3 Extended Key Usage: 
-                1.3.6.1.4.1.0.1847.2021.1.1, 1.3.6.1.4.1.0.1847.2021.1.2, 1.3.6.1.4.1.0.1847.2021.1.3
-    Signature Algorithm: sha256WithRSAEncryption
-         a0:9a:b5:7c:b5:49:3e:44:25:cd:69:d6:21:1f:ad:74:bd:43:
-         e3:ab:b2:58:46:0e:ee:a1:e9:58:d0:7d:13:c9:aa:ee:8c:ab:
-         f0:4e:df:61:09:0d:36:ca:93:de:e1:c0:36:65:4d:27:4f:3d:
-         b4:36:a6:b3:9a:af:db:c9:8a:08:b0:8d:0b:2d:16:dc:bb:ea:
-         e7:3c:f3:c8:82:cc:7c:0d:4c:90:3d:f2:78:b5:a7:14:fe:d5:
-         24:2f:ce:98:61:d1:97:58:1e:13:6a:ae:26:5f:1e:b7:50:b8:
-         b7:ef:af:ea:35:76:c0:6d:fe:c5:2d:2d:2b:88:2a:24:7a:f7:
-         d3:a0:8c:07:fe:e6:ee:b9:87:b0:5e:be:d5:72:7f:f2:39:6f:
-         55:39:a1:5f:90:4f:a7:44:4f:65:3c:1c:50:87:6a:e7:1f:54:
-         2f:6f:c7:55:ed:18:6b:3d:7d:3f:ae:39:47:ea:37:cf:2c:6d:
-         60:9c:1d:41:aa:8b:7c:c5:6e:c6:eb:7f:63:ae:29:19:af:3d:
-         62:46:ce:d7:47:b5:d7:bc:c5:f8:15:30:6d:4b:15:07:1e:1e:
-         ec:8c:e4:e1:0f:82:18:b7:2b:72:c3:4d:a5:60:02:54:f0:dc:
-         24:1b:6d:69:05:f0:f3:11:bf:b1:d4:d8:d0:a8:22:b1:96:72:
-         44:50:0e:23:b9:35:7b:8e:89:fa:e2:af:15:12:35:92:fe:a6:
-         ea:dc:a7:e1:14:43:25:da:62:f1:6a:22:0d:f4:6c:99:ca:f5:
-         3e:a1:4d:31:d4:0b:69:69:fc:d1:70:f3:85:49:49:c9:88:fb:
-         ed:98:04:92:a8:ab:dd:da:1a:c6:b0:cc:98:69:9f:b9:a1:86:
-         36:44:e5:63:9a:e9:1e:f1:ce:76:4e:d9:ee:e4:ae:83:f6:67:
-         1a:88:d2:8e:7b:7e:2e:c5:c4:b9:64:9d:a5:22:21:c0:7b:28:
-         10:39:63:1f:7f:cc:b6:f2:ae:d0:5e:a7:ca:4f:47:6a:33:46:
-         ad:11:7e:6f:87:32
-
-Certificate:
-    Data:
-        Version: 3 (0x2)
         Serial Number: 3005324884183122183 (0x29b50f0f2c608107)
         Signature Algorithm: rsassaPss         
          Hash Algorithm: sha256
