@@ -29294,6 +29294,37 @@ Certificate:
 Certificate:
     Data:
         Version: 3 (0x2)
+        Serial Number: 39 (0x27)
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: CN = BHIS National eHealth Root CA, OU = Ministry of Health, O = Ministry of Health, C = XK
+        Validity
+            Not Before: Jul  5 20:23:11 2022 GMT
+            Not After : Jul  5 20:23:11 2024 GMT
+        Subject: CN = BHIS National eHealth DSC, OU = Ministry of Health, O = Ministry of Health, C = XK
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:ca:7b:53:f1:51:e8:27:f5:b0:c5:4f:3c:ee:ef:
+                    92:e2:ba:93:38:b5:21:8f:3b:6b:76:d5:67:e9:b4:
+                    f6:9e:08:d1:5f:10:78:55:17:e6:85:ec:b8:be:fe:
+                    79:3e:e4:f7:9d:82:2c:ed:6c:82:ab:4d:60:65:07:
+                    58:10:ac:ad:2a
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+    Signature Algorithm: sha256WithRSAEncryption
+         51:80:78:ba:5c:22:cf:1a:83:dc:a3:19:7b:cc:6b:56:6b:7b:
+         21:47:c5:54:0b:58:ac:9a:b6:e1:de:f0:44:a2:ca:5d:18:81:
+         cc:df:53:df:c5:49:3f:b1:93:cf:03:0b:6d:f2:79:6e:2b:d1:
+         69:8d:72:b2:16:f6:28:83:da:03:e7:cf:38:87:8a:b5:5b:0f:
+         d5:ea:24:2e:f1:1a:84:d4:bd:58:82:36:f6:46:9b:c7:d8:4e:
+         13:66:ee:3d:1c:2a:1b:9f:de:85:42:8e:09:11:f6:ff:66:9c:
+         54:36:da:09:a6:6f:47:1e:00:8f:8e:b2:88:fd:fb:ed:10:7f:
+         05:12
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
         Serial Number:
             69:a6:4d:66:88:92:ee:ea:78:91:c2:af:a2:0a:f3:5b:c8:b0:5d:b2
         Signature Algorithm: sha256WithRSAEncryption
