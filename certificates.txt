@@ -29369,6 +29369,46 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            54:c6:ac:61:7a:05:41:c6:79:3c:5c:88:c3:b8:f9:85:9b:5f:bc:35
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = NZ, O = Government of New Zealand, OU = Ministry of Health, CN = Vaccine CSCA
+        Validity
+            Not Before: Jun 29 02:39:01 2022 GMT
+            Not After : Oct 24 02:39:00 2032 GMT
+        Subject: C = NZ, O = Government of New Zealand, OU = Ministry of Health, OU = Vaccine CSCA, CN = Vaccine Document Signer 20220628NZ0014
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:eb:71:e1:a8:1a:1d:f9:68:aa:44:67:e9:bd:47:
+                    24:8b:c2:c8:84:85:07:ff:f0:7b:8f:ac:40:66:1b:
+                    c9:18:9b:80:4a:6a:c8:26:f5:d4:74:57:41:13:71:
+                    b6:91:4e:dc:9a:3b:78:47:b0:24:08:eb:b4:c3:eb:
+                    20:1e:8b:e6:17
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Authority Key Identifier: 
+                keyid:05:87:B1:05:2E:8B:DB:6C:C6:8E:5B:AD:3C:72:D5:B9:A8:AB:73:19
+
+            X509v3 Subject Key Identifier: 
+                5F:16:BF:D4:DF:94:F2:75:D3:A1:42:CB:12:E9:0E:26:29:95:42:B5
+            X509v3 Private Key Usage Period: 
+                Not Before: Jun 29 02:39:01 2022 GMT, Not After: Oct 27 02:39:01 2022 GMT
+            X509v3 Key Usage: 
+                Digital Signature
+    Signature Algorithm: ecdsa-with-SHA256
+         30:66:02:31:00:cb:35:48:47:08:0f:f6:e3:d4:d6:a6:dd:b9:
+         16:43:e6:c0:82:ad:db:26:21:d3:4b:b1:e6:c7:06:d6:38:24:
+         47:b4:7d:1e:0b:a0:cf:a2:9e:97:f9:2d:0d:67:8b:4b:37:02:
+         31:00:bb:f8:2c:fc:00:9e:0b:5c:ed:bc:c8:dd:fa:3b:1d:14:
+         76:77:14:38:96:46:f9:49:1b:2e:50:1c:44:6c:4b:4b:80:59:
+         36:b1:a3:91:10:87:02:05:0a:58:f6:05:f0:dd
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             5f:44:a1:02:67:b9:61:6d:2e:0b:60:1e:20:2a:8b:a6
         Signature Algorithm: ecdsa-with-SHA384
         Issuer: C = DE, O = D-Trust GmbH, CN = D-TRUST CA 4-21-2 2021, organizationIdentifier = NTRDE-HRB74346
