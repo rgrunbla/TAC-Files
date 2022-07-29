@@ -11389,6 +11389,45 @@ Certificate:
 Certificate:
     Data:
         Version: 3 (0x2)
+        Serial Number: 7800124213432860168 (0x6c3f9ba53196be08)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = VA, O = STATO CITTA\E2\80\99 DEL VATICANO, OU = DIREZIONE DI SANITA' E IGIENE, CN = CSCA_DGC_VA_01
+        Validity
+            Not Before: Jul 29 08:22:00 2022 GMT
+            Not After : Jul 29 08:22:00 2024 GMT
+        Subject: C = VA, O = STATO CITTA\E2\80\99 DEL VATICANO, OU = DIREZIONE DI SANITA' E IGIENE, CN = DSC_DGC_VA_02
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:6b:ec:77:63:cb:8d:90:3d:1f:96:9d:30:ef:e5:
+                    ea:b9:97:ee:bf:01:51:a6:5e:c0:81:90:12:19:13:
+                    23:d5:2c:0b:ca:d7:f1:a6:57:f2:02:63:d1:dc:f8:
+                    bb:68:a1:d2:35:d0:a2:96:00:aa:ff:ac:aa:1e:57:
+                    58:66:4f:e8:c1
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                B5:7C:E6:4F:2F:DA:98:3E:C5:3A:F3:0C:55:64:63:E2:99:00:D5:4A
+            X509v3 Authority Key Identifier: 
+                keyid:BD:84:75:57:A4:BF:AE:00:A1:DF:7C:B1:26:E9:CC:0A:8B:7E:D0:2D
+
+            X509v3 Key Usage: 
+                Digital Signature, Key Encipherment, Data Encipherment, Key Agreement
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.1847.2021.1.1, 1.3.6.1.4.1.1847.2021.1.2, 1.3.6.1.4.1.1847.2021.1.3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:e5:e1:09:1a:f9:1d:2c:49:99:b9:ad:74:16:
+         7f:54:9e:9e:16:61:65:d2:1d:c5:2a:12:9d:90:66:af:9c:6a:
+         b2:02:20:56:56:03:f2:7e:27:1a:c3:32:e3:25:d7:a9:0a:5a:
+         63:c1:01:df:88:f0:95:3c:b2:e0:f4:1d:00:f6:2b:fb:1b
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
         Serial Number: 1632739230 (0x61519f9e)
         Signature Algorithm: ecdsa-with-SHA512
         Issuer: C = GB, O = NHS Scotland, ST = Scotland, CN = Scotland DCC CSCA
@@ -29512,6 +29551,86 @@ Certificate:
          44:8c:40:d7:fb:e8:5e:14:f6:02:ec:2f:8b:41:3a:19:72:7f:
          42:29:90:02:e8:cd:c3:ee:b4:41:11:9d:62:6c:ca:55:c8:45:
          b8:61:7b:bd:b6:ef:11:7c
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 4268442361272899658 (0x3b3c8db65fe6984a)
+        Signature Algorithm: rsassaPss         
+         Hash Algorithm: sha256
+         Mask Algorithm: mgf1 with sha256
+          Salt Length: 0x20
+         Trailer Field: 0xBC (default)
+        Issuer: C = LU, O = INCERT public agency, CN = Grand Duchy of Luxembourg CSCA
+        Validity
+            Not Before: Jul 29 09:01:06 2022 GMT
+            Not After : Jul 28 09:01:06 2024 GMT
+        Subject: C = LU, O = Ministry of Health, CN = Grand Duchy of Luxembourg DS DCC 13
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:cf:be:57:65:62:cc:52:75:a6:2a:21:8f:a1:e4:
+                    c2:ea:bc:1c:c6:3e:7d:0a:23:0e:46:80:ae:88:64:
+                    69:7a:9d:f7:42:fd:a7:0a:10:13:fc:c6:2b:56:66:
+                    62:64:07:40:39:9b:8c:7e:2b:a0:1b:f4:26:2f:63:
+                    5f:c3:e1:e6:3b
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                56:19:A8:B4:E1:54:30:5C:09:A5:8D:11:2C:AD:46:1C:61:86:D8:F7
+            X509v3 Authority Key Identifier: 
+                keyid:1A:CF:47:C7:98:E5:35:4C:8F:9F:55:AB:A8:9A:F9:E3:C7:3C:9D:7B
+
+            X509v3 Issuer Alternative Name: 
+                email:csca@incert.lu, DirName:/L=LUX
+            X509v3 Private Key Usage Period: 
+                Not Before: Jul 29 09:01:06 2022 GMT, Not After: Jan 25 09:01:06 2023 GMT
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://repository.incert.lu/csca.crl
+
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Subject Alternative Name: 
+                email:csca@incert.lu, DirName:/L=LUX
+    Signature Algorithm: rsassaPss         
+         Hash Algorithm: sha256
+         Mask Algorithm: mgf1 with sha256
+          Salt Length: 0x20
+         Trailer Field: 0xBC (default)
+
+         92:4a:d1:bd:cb:b5:55:d9:22:af:ea:af:2b:6c:66:23:3d:96:
+         91:2c:53:ba:c3:0a:2b:fc:23:1d:63:ff:f1:14:33:60:01:92:
+         b2:23:22:d1:41:2c:ef:79:52:e4:f0:c1:00:25:2a:9c:69:dc:
+         84:ce:a2:0d:c1:a6:a3:e4:19:b5:1a:75:d4:ad:41:94:85:5c:
+         af:1a:5b:61:94:05:f6:f4:f0:7d:31:eb:90:03:f1:f8:f4:a9:
+         62:3f:9e:0f:3c:fe:87:32:ac:b5:39:92:cf:f7:e5:dc:22:f6:
+         9b:62:7d:99:75:e2:da:4e:75:58:4d:91:e7:47:ec:74:75:c2:
+         f9:2a:28:99:45:9a:b4:07:d4:a4:9b:b2:76:a6:8a:25:f7:5e:
+         53:55:56:ff:6d:3c:f3:13:82:7e:57:95:40:e0:40:63:1d:0d:
+         41:e4:d4:64:0c:b6:2e:cb:e8:09:3b:0f:07:16:16:1c:4d:c6:
+         1e:55:13:57:08:b3:6d:90:f3:50:b4:32:05:d3:fa:7c:85:40:
+         7d:7b:32:22:b7:37:11:43:39:07:2a:1a:b5:ab:74:20:91:29:
+         48:ed:31:f3:da:a2:63:a5:34:92:83:59:d9:f6:9e:c0:cd:db:
+         d9:f8:40:de:fb:ab:13:18:e1:ad:2f:a7:59:d8:65:62:67:2a:
+         18:d5:92:e9:95:44:1d:e4:9d:ce:11:e9:64:5d:3b:47:87:32:
+         cb:1c:c7:d7:45:5e:4e:b0:cd:b7:a4:68:1f:7a:c2:d4:ca:7f:
+         a3:28:b9:7d:73:0b:81:3f:81:d8:32:36:80:f8:9e:a7:5d:f3:
+         32:d3:48:d6:dd:26:a2:08:a1:5c:dd:43:be:7d:38:16:75:49:
+         2e:db:b8:27:f5:1e:ad:0c:47:72:1a:cd:9d:91:7f:d6:d3:b9:
+         b4:dd:1d:16:59:3b:f1:9b:ee:45:67:02:4b:26:8d:5b:95:78:
+         db:2d:aa:91:24:99:23:c3:27:14:40:ca:a9:ea:43:74:da:82:
+         b6:a2:4b:dd:96:b1:b3:1f:6a:6f:6c:1f:a2:3d:2d:50:d2:be:
+         63:4b:c3:aa:d6:63:4c:e1:33:20:b1:13:af:3d:cc:10:ca:4a:
+         47:c4:f5:4a:3b:aa:70:c1:b2:2d:0b:d1:2d:95:13:b6:fa:27:
+         e2:fc:9c:52:1e:13:c4:43:02:fd:77:ec:4b:f4:47:b9:7d:91:
+         34:ac:39:7c:be:6e:c2:a5:ef:86:60:63:92:d0:ef:da:0a:0b:
+         dc:4a:e6:82:48:17:55:6c:10:67:dc:82:a9:5c:24:96:89:62:
+         a7:d6:34:0c:8d:46:01:5c:b3:a7:36:0a:ac:82:e7:b5:3a:81:
+         86:f2:1c:f9:10:40:c8:bd
 
 Certificate:
     Data:
