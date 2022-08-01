@@ -1861,6 +1861,48 @@ Certificate:
 Certificate:
     Data:
         Version: 3 (0x2)
+        Serial Number: 5775531545821967501 (0x5026cf5741c7f48d)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = LB, ST = Jnah, L = Beirut, O = Ministry of Public Health (MOPH), OU = Siren Analytics, CN = CSCA_DGC_LB_01
+        Validity
+            Not Before: Aug  1 10:39:00 2022 GMT
+            Not After : Feb  1 11:39:00 2023 GMT
+        Subject: OU = Siren Analytics, O = Ministry of Public Health (MOPH), ST = Beirut, L = Beirut, C = LB
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:50:82:a4:7a:04:f4:54:f0:27:1c:ef:8a:c1:15:
+                    3a:6f:8d:99:e2:66:70:77:05:a8:45:e9:af:71:06:
+                    d6:2e:8c:fd:c3:b9:7c:06:af:4a:c1:db:31:a4:60:
+                    be:70:2b:94:4f:c7:d1:1d:14:87:a1:f7:d1:26:6b:
+                    17:ab:fc:1e:77
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Subject Key Identifier: 
+                A1:C8:95:44:F1:6E:86:0D:F9:B5:B9:6B:A2:5E:46:6F:E0:AC:67:78
+            X509v3 Authority Key Identifier: 
+                keyid:8C:CA:2F:A2:9F:B2:1C:94:41:B0:3A:93:AB:AE:05:7B:19:51:B4:7D
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://empty
+
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.1847.2021.1.2
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:92:1b:61:20:a8:45:18:1b:cc:ef:dd:99:38:
+         4c:67:af:16:39:fc:09:06:26:fe:0a:68:d1:31:bb:d4:55:1f:
+         2d:02:21:00:c7:db:99:0d:8f:44:12:9d:f2:20:a9:9e:14:4b:
+         dc:23:6e:01:ac:06:7b:21:ff:41:da:e8:ea:92:97:44:be:1f
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
         Serial Number: 4404348436996622577 (0x3d1f6391763b08f1)
         Signature Algorithm: ecdsa-with-SHA256
         Issuer: C = HR, O = AKD d.o.o., CN = Croatia DGC CSCA
@@ -21132,6 +21174,53 @@ Certificate:
          44:2b:0f:63:25:2f:a9:a8:49:8a:d6:30:af:80:53:5b:86:62:
          02:21:00:fc:79:f5:a1:a7:63:e1:71:35:cc:8f:3a:53:c3:a7:
          17:9f:94:d5:ff:b3:0f:df:2e:a3:79:94:3f:a4:2f:96:52
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            6d:3f:20:35:ed:94:da:02:8a:9d:8f:46:5e:35:43:0f:79:80:8f:f8
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN = Faroe Islands Health Authority CSCA v1, O = Gjaldstovan, C = FO
+        Validity
+            Not Before: Jul  7 13:09:35 2022 GMT
+            Not After : Jul  6 13:09:34 2024 GMT
+        Subject: CN = DSC_DGC_FO_345334_RECOVERY_02, O = SJUKRAHUSVERKID, C = FO
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:55:47:b5:b0:8b:88:de:89:af:c1:d5:1b:76:09:
+                    14:08:79:7e:6e:16:46:68:62:63:63:b4:3c:21:a9:
+                    b8:c2:f9:56:06:93:e4:33:2f:78:8f:c2:18:24:87:
+                    28:e8:a1:15:6e:8b:13:b5:e7:c3:5d:98:79:48:99:
+                    81:01:22:da:33
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Authority Key Identifier: 
+                keyid:EE:3C:81:A6:E6:1E:B6:51:74:44:E0:D0:F4:30:33:E2:EA:6A:BE:A1
+
+            X509v3 Certificate Policies: 
+                Policy: 1.2.208.189.2.1.1
+                  CPS: https://repository.samleiki.fo/legal-repository/ehealth
+
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.1847.2021.1.3
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl.samleiki.fo/Faroe-Islands-Health-Authority-CSCA-v1.crl
+
+            X509v3 Subject Key Identifier: 
+                AD:6B:FF:BB:03:31:0F:78:3E:A3:F5:87:35:1D:50:78:B6:D9:D0:5C
+            X509v3 Key Usage: critical
+                Digital Signature
+    Signature Algorithm: ecdsa-with-SHA256
+         30:44:02:20:14:2a:a5:23:ef:8e:bc:a5:a4:6f:4a:5e:d3:10:
+         54:2c:13:23:58:ed:a2:5d:eb:44:c7:31:25:03:9f:6d:17:a0:
+         02:20:6f:27:30:2f:84:b8:e9:c8:75:7c:f9:db:c9:7b:31:0a:
+         28:e4:a9:14:3c:a5:3e:1b:05:f9:44:3b:42:ee:5d:db
 
 Certificate:
     Data:
