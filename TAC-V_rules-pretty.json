@@ -64994,37 +64994,192 @@
         },
         {
             "AffectedFields": [
-                "t.0",
-                "t.0.tr"
+                "dob",
+                "v.0",
+                "v.0.dn",
+                "v.0.dt",
+                "v.0.mp",
+                "v.0.sd"
             ],
-            "CertificateType": "Test",
-            "Country": "MF",
+            "CertificateType": "Vaccination",
+            "Country": "NL",
             "Description": [
                 {
-                    "desc": "Test result must be negative.",
+                    "desc": "A primary vaccination cycle has to be finished within the last 9 months (270 days), unless it's followed by booster vaccinations or the holder of this DCC is deemed to be exempted as a minor.",
                     "lang": "en"
                 },
                 {
-                    "desc": "Le r\u00e9sultat du test doit \u00eatre n\u00e9gatif.",
+                    "desc": "Ein Grundimmunisierungszyklus ohne nachfolgende Auffrischungsimpfungen muss innerhalb der letzten 9 Monate (270 Tage) abgeschlossen sein oder der Inhaber des DCC gilt als minderj\u00e4hrig befreit.",
+                    "lang": "de"
+                },
+                {
+                    "desc": "Un cycle de primovaccination doit \u00eatre termin\u00e9 au cours des 9 derniers mois (270 jours), \u00e0 moins qu'il ne soit suivi de vaccinations de rappel ou le titulaire du DCC est r\u00e9put\u00e9 exempt\u00e9 en tant que mineur.",
                     "lang": "fr"
+                },
+                {
+                    "desc": "Un ciclo de vacunaci\u00f3n primaria tiene que estar terminado dentro de los \u00faltimos 9 meses (270 d\u00edas), a menos que sea seguido por vacunas de refuerzo o el titular del DCC se considera exento como menor.",
+                    "lang": "es"
+                },
+                {
+                    "desc": "Un ciclo di vaccinazione primaria deve essere terminato negli ultimi 9 mesi (270 giorni), a meno che non sia seguito da vaccinazioni di richiamo o il titolare del DCC \u00e8 considerato esentato come minore.",
+                    "lang": "it"
+                },
+                {
+                    "desc": "De primaire vaccinatiecyclus moet in de laatste 9 maanden (270 dagen) afgerond zijn, tenzij deze gevolgd is door booster-vaccinaties of de houder van deze DCC als minderjarige uitgezonderd is.",
+                    "lang": "nl"
                 }
             ],
             "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-FRMF-0002",
+            "EngineVersion": "1.0.0",
+            "Identifier": "VR-NL-0007",
             "Logic": {
-                "===": [
+                "if": [
                     {
-                        "var": "payload.t.0.tr"
+                        "var": "payload.v.0"
                     },
-                    "260415000"
+                    {
+                        "if": [
+                            {
+                                "if": [
+                                    {
+                                        ">": [
+                                            {
+                                                "var": "payload.v.0.dn"
+                                            },
+                                            {
+                                                "var": "payload.v.0.sd"
+                                            }
+                                        ]
+                                    },
+                                    true,
+                                    {
+                                        "if": [
+                                            {
+                                                "and": [
+                                                    {
+                                                        "===": [
+                                                            {
+                                                                "var": "payload.v.0.dn"
+                                                            },
+                                                            {
+                                                                "var": "payload.v.0.sd"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        ">": [
+                                                            {
+                                                                "var": "payload.v.0.dn"
+                                                            },
+                                                            2
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            true,
+                                            {
+                                                "and": [
+                                                    {
+                                                        "===": [
+                                                            {
+                                                                "var": "payload.v.0.dn"
+                                                            },
+                                                            2
+                                                        ]
+                                                    },
+                                                    {
+                                                        "===": [
+                                                            {
+                                                                "var": "payload.v.0.sd"
+                                                            },
+                                                            2
+                                                        ]
+                                                    },
+                                                    {
+                                                        "in": [
+                                                            {
+                                                                "var": "payload.v.0.mp"
+                                                            },
+                                                            [
+                                                                "EU/1/20/1525",
+                                                                "Convidecia"
+                                                            ]
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            true,
+                            {
+                                "if": [
+                                    {
+                                        "if": [
+                                            {
+                                                "var": "payload.dob"
+                                            },
+                                            {
+                                                "after": [
+                                                    {
+                                                        "plusTime": [
+                                                            {
+                                                                "var": "payload.dob"
+                                                            },
+                                                            0,
+                                                            "year"
+                                                        ]
+                                                    },
+                                                    {
+                                                        "plusTime": [
+                                                            {
+                                                                "var": "external.validationClock"
+                                                            },
+                                                            -18,
+                                                            "year"
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            false
+                                        ]
+                                    },
+                                    true,
+                                    {
+                                        "before": [
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "external.validationClock"
+                                                    },
+                                                    0,
+                                                    "day"
+                                                ]
+                                            },
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "payload.v.0.dt"
+                                                    },
+                                                    270,
+                                                    "day"
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    true
                 ]
             },
             "SchemaVersion": "1.0.0",
             "Type": "Acceptance",
-            "ValidFrom": "2021-10-01T00:00:00Z",
-            "ValidTo": "2030-10-01T00:00:00Z",
-            "Version": "1.0.0"
+            "ValidFrom": "2022-08-08T00:00:00+02:00",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.2.0"
         },
         {
             "AffectedFields": [
@@ -68783,68 +68938,6 @@
         {
             "AffectedFields": [
                 "t.0",
-                "t.0.sc",
-                "t.0.tt"
-            ],
-            "CertificateType": "Test",
-            "Country": "PM",
-            "Description": [
-                {
-                    "desc": "The test should be a PCR test of less than 48 hours.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Le test doit \u00eatre un test PCR de moins de 48 heures.",
-                    "lang": "fr"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-_RPM-0004",
-            "Logic": {
-                "if": [
-                    {
-                        "===": [
-                            {
-                                "var": "payload.t.0.tt"
-                            },
-                            "LP6464-4"
-                        ]
-                    },
-                    {
-                        "before": [
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "external.validationClock"
-                                    },
-                                    0,
-                                    "day"
-                                ]
-                            },
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "payload.t.0.sc"
-                                    },
-                                    48,
-                                    "hour"
-                                ]
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-07-20T00:00:00Z",
-            "ValidTo": "2032-07-20T00:00:00Z",
-            "Version": "1.0.1"
-        },
-        {
-            "AffectedFields": [
-                "t.0",
                 "t.0.tr",
                 "t.0.sc"
             ],
@@ -70151,6 +70244,40 @@
             "ValidFrom": "2022-02-27T23:00:00Z",
             "ValidTo": "2032-02-27T23:00:00Z",
             "Version": "6.0.0"
+        },
+        {
+            "AffectedFields": [
+                "t.0",
+                "t.0.tr"
+            ],
+            "CertificateType": "Test",
+            "Country": "MF",
+            "Description": [
+                {
+                    "desc": "Test result must be negative.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Le r\u00e9sultat du test doit \u00eatre n\u00e9gatif.",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-FRMF-0002",
+            "Logic": {
+                "===": [
+                    {
+                        "var": "payload.t.0.tr"
+                    },
+                    "260415000"
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-01T00:00:00Z",
+            "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.0"
         },
         {
             "AffectedFields": [
@@ -74930,76 +75057,6 @@
                 "t.0.tt"
             ],
             "CertificateType": "Test",
-            "Country": "LV",
-            "Description": [
-                {
-                    "desc": "Kop\u0161 NAAT testa veik\u0161anas nav pag\u0101jis vair\u0101k k\u0101 72 stundas",
-                    "lang": "lv"
-                },
-                {
-                    "desc": "The sample for an NAAT test (e.g., PCR) must have been taken no longer than 72 hours ago.",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-LV-0018",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.t.0"
-                    },
-                    {
-                        "if": [
-                            {
-                                "===": [
-                                    {
-                                        "var": "payload.t.0.tt"
-                                    },
-                                    "LP6464-4"
-                                ]
-                            },
-                            {
-                                "not-after": [
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "external.validationClock"
-                                            },
-                                            0,
-                                            "day"
-                                        ]
-                                    },
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "payload.t.0.sc"
-                                            },
-                                            72,
-                                            "hour"
-                                        ]
-                                    }
-                                ]
-                            },
-                            true
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-01-10T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "t.0",
-                "t.0.sc",
-                "t.0.tt"
-            ],
-            "CertificateType": "Test",
             "Country": "PM",
             "Description": [
                 {
@@ -75022,6 +75079,68 @@
                                 "var": "payload.t.0.tt"
                             },
                             "LP217198-3"
+                        ]
+                    },
+                    {
+                        "before": [
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "external.validationClock"
+                                    },
+                                    0,
+                                    "day"
+                                ]
+                            },
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "payload.t.0.sc"
+                                    },
+                                    48,
+                                    "hour"
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-07-20T00:00:00Z",
+            "ValidTo": "2032-07-20T00:00:00Z",
+            "Version": "1.0.1"
+        },
+        {
+            "AffectedFields": [
+                "t.0",
+                "t.0.sc",
+                "t.0.tt"
+            ],
+            "CertificateType": "Test",
+            "Country": "PM",
+            "Description": [
+                {
+                    "desc": "The test should be a PCR test of less than 48 hours.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Le test doit \u00eatre un test PCR de moins de 48 heures.",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-_RPM-0004",
+            "Logic": {
+                "if": [
+                    {
+                        "===": [
+                            {
+                                "var": "payload.t.0.tt"
+                            },
+                            "LP6464-4"
                         ]
                     },
                     {
@@ -79993,6 +80112,76 @@
             "ValidFrom": "2022-02-18T12:00:00Z",
             "ValidTo": "2030-06-01T00:00:00Z",
             "Version": "1.0.1"
+        },
+        {
+            "AffectedFields": [
+                "t.0",
+                "t.0.sc",
+                "t.0.tt"
+            ],
+            "CertificateType": "Test",
+            "Country": "LV",
+            "Description": [
+                {
+                    "desc": "Kop\u0161 NAAT testa veik\u0161anas nav pag\u0101jis vair\u0101k k\u0101 72 stundas",
+                    "lang": "lv"
+                },
+                {
+                    "desc": "The sample for an NAAT test (e.g., PCR) must have been taken no longer than 72 hours ago.",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-LV-0018",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.t.0"
+                    },
+                    {
+                        "if": [
+                            {
+                                "===": [
+                                    {
+                                        "var": "payload.t.0.tt"
+                                    },
+                                    "LP6464-4"
+                                ]
+                            },
+                            {
+                                "not-after": [
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "external.validationClock"
+                                            },
+                                            0,
+                                            "day"
+                                        ]
+                                    },
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "payload.t.0.sc"
+                                            },
+                                            72,
+                                            "hour"
+                                        ]
+                                    }
+                                ]
+                            },
+                            true
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-01-10T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.0"
         },
         {
             "AffectedFields": [

@@ -5767,14 +5767,20 @@
   },
   {
     "country": "CZ",
+    "hash": "8bae8e8d8320a9936c70cd99a9af657cf4ab13a4bb39b0b8408067cd6a0d58b4",
+    "identifier": "VR-CZ-0012",
+    "version": "6.0.0"
+  },
+  {
+    "country": "CZ",
     "hash": "005799d5569bee9215c7cc08df374fe670ea35610c195e3b0122b3b474ee6bd2",
     "identifier": "VR-CZ-0012",
     "version": "7.0.1"
   },
   {
     "country": "CZ",
-    "hash": "8bae8e8d8320a9936c70cd99a9af657cf4ab13a4bb39b0b8408067cd6a0d58b4",
-    "identifier": "VR-CZ-0012",
+    "hash": "447d1e36da9a38cb5cae39bdcbe54eb53d4460c370b9943c7c17be7de898c1dd",
+    "identifier": "VR-CZ-0013",
     "version": "6.0.0"
   },
   {
@@ -5782,12 +5788,6 @@
     "hash": "302149a90e69e4428a65c71464b12f07a17097ae5756f53115318f92355d0255",
     "identifier": "VR-CZ-0013",
     "version": "7.0.0"
-  },
-  {
-    "country": "CZ",
-    "hash": "447d1e36da9a38cb5cae39bdcbe54eb53d4460c370b9943c7c17be7de898c1dd",
-    "identifier": "VR-CZ-0013",
-    "version": "6.0.0"
   },
   {
     "country": "CZ",
@@ -5815,15 +5815,15 @@
   },
   {
     "country": "CZ",
-    "hash": "5dea74bd2ef2969333601a6432a36b7e184ff281a3305666821ee48c5f55bd2a",
-    "identifier": "VR-CZ-0022",
-    "version": "7.0.1"
-  },
-  {
-    "country": "CZ",
     "hash": "d614508bd950fa4f2713a16b2b51efd51a790a7682b8ce392693292cdfa212b8",
     "identifier": "VR-CZ-0022",
     "version": "6.0.0"
+  },
+  {
+    "country": "CZ",
+    "hash": "5dea74bd2ef2969333601a6432a36b7e184ff281a3305666821ee48c5f55bd2a",
+    "identifier": "VR-CZ-0022",
+    "version": "7.0.1"
   },
   {
     "country": "CZ",
@@ -5851,15 +5851,15 @@
   },
   {
     "country": "CZ",
-    "hash": "4617d11247355232769aa20ba74a3c0e517e0fff05d998c7d65015c3f7574699",
-    "identifier": "VR-CZ-0032",
-    "version": "7.0.1"
-  },
-  {
-    "country": "CZ",
     "hash": "f2a074778886b3db339f814fcb8a12f291fc14e1271d004f16e496d6ef44c5a1",
     "identifier": "VR-CZ-0032",
     "version": "6.0.0"
+  },
+  {
+    "country": "CZ",
+    "hash": "4617d11247355232769aa20ba74a3c0e517e0fff05d998c7d65015c3f7574699",
+    "identifier": "VR-CZ-0032",
+    "version": "7.0.1"
   },
   {
     "country": "CZ",
@@ -5875,20 +5875,14 @@
   },
   {
     "country": "CZ",
-    "hash": "d5de52baa7bb73bd18fa98d2f5480a6cdea2ed133d0a7f0aab6645b4b9d6bc5e",
-    "identifier": "VR-CZ-0034",
-    "version": "7.0.1"
-  },
-  {
-    "country": "CZ",
     "hash": "70d24e0899f26aa527ff29ef85e150c65d0cfb0424c3e0d99acb50aff422969c",
     "identifier": "VR-CZ-0034",
     "version": "6.0.0"
   },
   {
     "country": "CZ",
-    "hash": "a3e0e4543ec104576c8b5ab30eac2f1d07b0613ed0115fac7d1f4d7d5b398249",
-    "identifier": "VR-CZ-0041",
+    "hash": "d5de52baa7bb73bd18fa98d2f5480a6cdea2ed133d0a7f0aab6645b4b9d6bc5e",
+    "identifier": "VR-CZ-0034",
     "version": "7.0.1"
   },
   {
@@ -5899,8 +5893,8 @@
   },
   {
     "country": "CZ",
-    "hash": "9fcf66a820629f6c3e6461f1c11353c70f2dcf02f77b3c7908d4b41c934d0205",
-    "identifier": "VR-CZ-0042",
+    "hash": "a3e0e4543ec104576c8b5ab30eac2f1d07b0613ed0115fac7d1f4d7d5b398249",
+    "identifier": "VR-CZ-0041",
     "version": "7.0.1"
   },
   {
@@ -5911,9 +5905,9 @@
   },
   {
     "country": "CZ",
-    "hash": "5536e1ff23fa235c2bf3bcbe8cea05e1de92c31ba40b9e65e8d2454ee4271fa2",
-    "identifier": "VR-CZ-0043",
-    "version": "7.0.0"
+    "hash": "9fcf66a820629f6c3e6461f1c11353c70f2dcf02f77b3c7908d4b41c934d0205",
+    "identifier": "VR-CZ-0042",
+    "version": "7.0.1"
   },
   {
     "country": "CZ",
@@ -5923,9 +5917,9 @@
   },
   {
     "country": "CZ",
-    "hash": "04fc40229b6b9c4e33ebd3452a535abd3b0e9144e81ccb6871101305e28cec1c",
-    "identifier": "VR-CZ-0044",
-    "version": "6.0.0"
+    "hash": "5536e1ff23fa235c2bf3bcbe8cea05e1de92c31ba40b9e65e8d2454ee4271fa2",
+    "identifier": "VR-CZ-0043",
+    "version": "7.0.0"
   },
   {
     "country": "CZ",
@@ -5935,9 +5929,9 @@
   },
   {
     "country": "CZ",
-    "hash": "f9f9885cbed233bb4820004336435993a642970c6afa1116917c3b9b182a0854",
-    "identifier": "VR-CZ-0051",
-    "version": "7.0.1"
+    "hash": "04fc40229b6b9c4e33ebd3452a535abd3b0e9144e81ccb6871101305e28cec1c",
+    "identifier": "VR-CZ-0044",
+    "version": "6.0.0"
   },
   {
     "country": "CZ",
@@ -5947,9 +5941,9 @@
   },
   {
     "country": "CZ",
-    "hash": "1a2ef8deaeedf3fdc27ae3891be000caa6a34a92c0cd6a2d86730f65701864d8",
-    "identifier": "VR-CZ-0052",
-    "version": "6.0.0"
+    "hash": "f9f9885cbed233bb4820004336435993a642970c6afa1116917c3b9b182a0854",
+    "identifier": "VR-CZ-0051",
+    "version": "7.0.1"
   },
   {
     "country": "CZ",
@@ -5959,8 +5953,8 @@
   },
   {
     "country": "CZ",
-    "hash": "fdd8ad4c01b7262b977eeee045cd74f1bf0e21897c2a512e6ff022450b68c2c5",
-    "identifier": "VR-CZ-0053",
+    "hash": "1a2ef8deaeedf3fdc27ae3891be000caa6a34a92c0cd6a2d86730f65701864d8",
+    "identifier": "VR-CZ-0052",
     "version": "6.0.0"
   },
   {
@@ -5971,15 +5965,21 @@
   },
   {
     "country": "CZ",
-    "hash": "7e0ef31e9350648a2a592b08e25ce9a63f413afe076007451041cae293c25879",
-    "identifier": "VR-CZ-0054",
-    "version": "7.0.1"
+    "hash": "fdd8ad4c01b7262b977eeee045cd74f1bf0e21897c2a512e6ff022450b68c2c5",
+    "identifier": "VR-CZ-0053",
+    "version": "6.0.0"
   },
   {
     "country": "CZ",
     "hash": "b9793873186fb11ccf9fac204fb1735f1e58f560c24bb8825226255c136966b6",
     "identifier": "VR-CZ-0054",
     "version": "6.0.0"
+  },
+  {
+    "country": "CZ",
+    "hash": "7e0ef31e9350648a2a592b08e25ce9a63f413afe076007451041cae293c25879",
+    "identifier": "VR-CZ-0054",
+    "version": "7.0.1"
   },
   {
     "country": "CZ",
@@ -6019,15 +6019,15 @@
   },
   {
     "country": "CZ",
-    "hash": "ba31b0b94e1153f128b0b052c8b0a3e1bbd0cabe8535546ad55e65f3044ef068",
-    "identifier": "VR-CZ-0064",
-    "version": "6.0.0"
-  },
-  {
-    "country": "CZ",
     "hash": "3292b6b0461743ce3330090ba6df9867d71191b171ac9eb6caa84d2067fcbed2",
     "identifier": "VR-CZ-0064",
     "version": "7.0.1"
+  },
+  {
+    "country": "CZ",
+    "hash": "ba31b0b94e1153f128b0b052c8b0a3e1bbd0cabe8535546ad55e65f3044ef068",
+    "identifier": "VR-CZ-0064",
+    "version": "6.0.0"
   },
   {
     "country": "ES",
@@ -7984,6 +7984,12 @@
     "hash": "2e3a2f16c20ea73982a1fe411196728f8faed2242c0403c1adcac37648862122",
     "identifier": "VR-NL-0007",
     "version": "1.1.0"
+  },
+  {
+    "country": "NL",
+    "hash": "cc2dc777bac5856930b383f805263365f5d819c83e42b60092665c3dada5a307",
+    "identifier": "VR-NL-0007",
+    "version": "1.2.0"
   },
   {
     "country": "_C",
