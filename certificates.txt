@@ -7653,6 +7653,71 @@ Certificate:
 Certificate:
     Data:
         Version: 3 (0x2)
+        Serial Number:
+            52:f9:30:18:9a:42:65:3e:85
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN = EADTrust ECC 256 SubCA For Qualified Certificates 2019, O = "European Agency of Digital Trust, S.L.", C = ES, organizationIdentifier = VATES-B85626240, OU = Legal Person
+        Validity
+            Not Before: Aug  8 12:45:00 2022 GMT
+            Not After : Aug  8 11:45:00 2024 GMT
+        Subject: CN = Sello Electronico del Servicio Navarro de Salud-Osasunbidea 2022, serialNumber = Q3150004D, OU = SELLO ELECTRONICO, OU = Servicio Navarro de Salud-Osasunbidea, organizationIdentifier = VATES-Q3150004D, O = Servicio Navarro de Salud-Osasunbidea, C = ES
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:af:7e:85:79:ab:3e:9e:dd:55:9a:ca:68:d3:6f:
+                    99:33:7d:e8:04:12:79:91:80:a9:88:4b:1b:9e:07:
+                    b6:3f:ec:7e:9d:e2:c9:de:df:01:79:ad:e8:bb:6d:
+                    5c:b7:a7:c2:c7:03:63:9c:a7:44:d4:10:6e:b9:44:
+                    9e:18:83:06:81
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Authority Key Identifier: 
+                keyid:D3:4C:6C:3A:BD:36:FE:70:87:23:87:3A:EE:3D:90:CF:CB:9B:F7:21
+
+            Authority Information Access: 
+                CA Issuers - URI:http://ca.eadtrust.eu/eadtrust-subca-ecc256eadlp2019.crt
+                OCSP - URI:http://ocsp.eadtrust.eu
+
+            X509v3 Issuer Alternative Name: 
+                email:ca@eadtrust.eu, URI:http://www.eadtrust.eu, URI:http://ca.eadtrust.eu, URI:http://policy.eadtrust.eu
+            X509v3 Subject Alternative Name: 
+                DirName:/2.16.724.1.3.5.6.2.1=SELLO ELECTRONICO DE NIVEL MEDIO/2.16.724.1.3.5.6.2.2=Servicio Navarro de Salud-Osasunbidea/2.16.724.1.3.5.6.2.3=Q3150004D
+            X509v3 Certificate Policies: 
+                Policy: 2.16.724.1.3.5.6.2
+                Policy: 0.4.0.194112.1.1
+                  User Notice:
+                    Explicit Text: European Telecommunications Standards Institute. eIDAS European Regulation Compliant
+                Policy: 1.3.6.1.4.1.501.2.1.1.0.41233
+                  CPS: http://policy.eadtrust.eu
+                  User Notice:
+                    Explicit Text: Certificado cualificado de sello electrónico de Administración, órgano o entidad de derecho público, nivel Medio/Sustancial. Consulte las condiciones de uso en http://policy.eadtrust.eu
+
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication, E-mail Protection
+            qcStatements: 
+                0..0...+.......0.......I..0......F..0......F.....0......F..0......F...0l.....F..0b00.*https://eadtrust.eu/en/documents-in-force/..en0..(https://eadtrust.eu/documentos-vigentes/..es
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl.eadtrust.eu/eadtrust-subca-ecc256eadlp2019.crl
+
+            X509v3 Subject Key Identifier: 
+                C7:6B:BB:6F:14:F0:4E:4F:B1:B1:4F:D1:00:09:C6:E0:02:B4:70:EF
+            X509v3 Key Usage: critical
+                Digital Signature, Non Repudiation, Key Encipherment
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:b8:50:68:f6:61:6a:4d:8b:73:e5:d2:31:e5:
+         0a:c0:91:d6:fc:67:c2:df:10:08:86:7b:d8:9e:f4:db:a5:8f:
+         04:02:20:51:5a:47:72:b6:3f:32:7f:70:df:e7:3c:44:63:4d:
+         a4:f2:3f:2e:e0:25:88:99:f8:96:b1:17:8d:3d:81:6f:b5
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
         Serial Number: 3216383903521292448 (0x2ca2e41e7eabc0a0)
         Signature Algorithm: rsassaPss         
          Hash Algorithm: sha256
@@ -15553,6 +15618,71 @@ Certificate:
          d2:8e:1e:68:bd:32:19:99:c0:6c:38:54:51:ad:3e:4a:d1:93:
          02:21:00:e6:da:e5:fc:f5:13:b5:2c:0c:35:44:a9:73:55:00:
          03:fb:e2:0c:b0:96:dc:55:f2:7f:1f:5c:25:a8:5e:16:c4
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            7b:0d:ff:cb:06:46:88:58:ea
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN = EADTrust ECC 256 SubCA For Qualified Certificates 2019, O = "European Agency of Digital Trust, S.L.", C = ES, organizationIdentifier = VATES-B85626240, OU = Legal Person
+        Validity
+            Not Before: Aug  4 10:45:00 2022 GMT
+            Not After : Aug  4 10:30:00 2024 GMT
+        Subject: CN = DEPARTAMENTO DE SANIDAD DEL GOBIERNO DE ARAGON 2022, serialNumber = S5011001D, OU = SELLO ELECTRONICO, OU = DEPARTAMENTO DE SANIDAD, organizationIdentifier = VATES-S5011001D, O = GOBIERNO DE ARAGON, C = ES
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:ae:24:61:9e:af:b6:68:c6:86:88:d1:aa:08:e8:
+                    c6:d2:d8:b8:37:38:71:f9:77:0f:c1:84:4e:0a:2d:
+                    dd:8f:e6:21:c6:35:e1:84:9c:bc:ca:8a:5f:01:18:
+                    57:b4:28:79:d1:4c:3d:36:f0:e0:2e:e6:92:26:69:
+                    7c:21:88:ae:63
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Authority Key Identifier: 
+                keyid:D3:4C:6C:3A:BD:36:FE:70:87:23:87:3A:EE:3D:90:CF:CB:9B:F7:21
+
+            Authority Information Access: 
+                CA Issuers - URI:http://ca.eadtrust.eu/eadtrust-subca-ecc256eadlp2019.crt
+                OCSP - URI:http://ocsp.eadtrust.eu
+
+            X509v3 Issuer Alternative Name: 
+                email:ca@eadtrust.eu, URI:http://www.eadtrust.eu, URI:http://ca.eadtrust.eu, URI:http://policy.eadtrust.eu
+            X509v3 Subject Alternative Name: 
+                DirName:/2.16.724.1.3.5.6.2.1=SELLO ELECTRONICO DE NIVEL MEDIO/2.16.724.1.3.5.6.2.2=GOBIERNO DE ARAGON/2.16.724.1.3.5.6.2.3=S5011001D
+            X509v3 Certificate Policies: 
+                Policy: 2.16.724.1.3.5.6.2
+                Policy: 0.4.0.194112.1.1
+                  User Notice:
+                    Explicit Text: European Telecommunications Standards Institute. eIDAS European Regulation Compliant
+                Policy: 1.3.6.1.4.1.501.2.1.1.0.41233
+                  CPS: http://policy.eadtrust.eu
+                  User Notice:
+                    Explicit Text: Certificado cualificado de sello electrónico de Administración, órgano o entidad de derecho público, nivel Medio/Sustancial. Consulte las condiciones de uso en http://policy.eadtrust.eu
+
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication, E-mail Protection
+            qcStatements: 
+                0..0...+.......0.......I..0......F..0......F.....0......F..0......F...0l.....F..0b00.*https://eadtrust.eu/en/documents-in-force/..en0..(https://eadtrust.eu/documentos-vigentes/..es
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl.eadtrust.eu/eadtrust-subca-ecc256eadlp2019.crl
+
+            X509v3 Subject Key Identifier: 
+                D2:A2:1B:3B:24:1F:09:74:2C:AF:62:2A:37:EE:61:C3:01:DE:D5:FC
+            X509v3 Key Usage: critical
+                Digital Signature, Non Repudiation, Key Encipherment
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:d3:d9:bf:28:14:c0:c2:b2:34:7e:fa:27:be:
+         27:99:76:43:14:85:77:a5:c4:77:01:2e:36:a0:a9:0b:46:5e:
+         15:02:20:2e:a0:28:6c:43:bc:04:40:5f:7a:37:6b:00:3b:e7:
+         47:b6:d0:8a:d1:b1:01:6b:3c:16:d0:5d:16:53:3a:bf:71
 
 Certificate:
     Data:
