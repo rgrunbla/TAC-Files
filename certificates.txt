@@ -33526,6 +33526,49 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            11:35:8b:64:65:c6:16:d7:17:f0:d4:84:8d:18:42:20:80:6c:3a:08
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = PE, ST = LIM, L = Lima, O = MINSA, OU = MINSA_OGTI, CN = MINSA
+        Validity
+            Not Before: Jul  8 17:41:44 2022 GMT
+            Not After : Jul  7 17:41:44 2024 GMT
+        Subject: C = PE, O = Gobierno de Per\C3\BA, OU = Ministerio de Salud, CN = Gesti\C3\B3n de Credencial de Inmunizaci\C3\B3n
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:d7:95:c9:8f:1d:ab:6f:68:9f:1b:94:58:da:c5:
+                    25:34:99:97:1e:56:d2:e0:68:04:74:95:e6:de:5e:
+                    67:93:63:f2:63:de:75:3e:9e:fd:b3:f0:76:3c:73:
+                    3b:21:6d:a2:34:35:85:38:9c:68:c7:7b:80:9a:50:
+                    48:0a:de:7d:ca
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Subject Key Identifier: 
+                81:31:BB:A2:14:99:84:22:6E:5A:46:F3:3F:D2:04:57:4E:31:DE:B2
+            X509v3 Authority Key Identifier: 
+                keyid:6A:59:32:46:A6:62:F2:F8:FC:51:8C:14:D5:8F:02:53:8B:A4:24:49
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl.exampledomain.example/CRL/CSCA.crl
+
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.1847.2021.1.1, 1.3.6.1.4.1.1847.2021.1.2, 1.3.6.1.4.1.1847.2021.1.3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:8d:92:6f:6a:9f:e8:52:c3:f0:c7:2a:b6:7c:
+         5b:d1:ef:19:bc:4b:fa:6f:ad:34:66:da:eb:25:51:32:13:5f:
+         9a:02:20:4b:7a:da:ba:03:61:0b:79:22:61:e4:94:a8:98:78:
+         7c:3c:a5:da:b6:59:15:c3:e9:01:df:6d:35:ec:1e:19:5e
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             23:ee:d8:c0:66:b8:61:2e:75:45:36:d7:81:f5:0c:2a:26:2c:59:26
         Signature Algorithm: ecdsa-with-SHA256
         Issuer: C = SG, ST = Singapore, O = Ministry Of Health, CN = csca.notarise.gov.sg
