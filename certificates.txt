@@ -10220,6 +10220,71 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            0e:b8:ca:c4:ed:22:c5:22:cf
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN = EADTrust ECC 256 SubCA For Qualified Certificates 2019, O = "European Agency of Digital Trust, S.L.", C = ES, organizationIdentifier = VATES-B85626240, OU = Legal Person
+        Validity
+            Not Before: Aug 10 12:30:00 2022 GMT
+            Not After : Aug 10 12:29:00 2024 GMT
+        Subject: CN = Gobierno de La Rioja 2022, serialNumber = S2633001I, OU = SELLO ELECTRONICO, OU = "DIRECCION GENERAL DE SALUD PUBLICA, CONSUMO Y CUIDADOS", organizationIdentifier = VATES-S2633001I, O = "DIRECCION GENERAL DE SALUD PUBLICA, CONSUMO Y CUIDADOS", C = ES
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:29:9d:c5:91:b5:39:16:c7:3c:fb:d5:0c:27:29:
+                    8e:03:b3:22:03:31:a2:49:95:9e:cc:ff:45:35:67:
+                    d4:39:a8:f0:c9:b2:02:b6:9e:84:d1:80:14:9d:d1:
+                    dd:5d:3e:4b:3a:78:bc:db:87:5d:73:18:ab:ed:8b:
+                    64:37:f9:42:66
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Authority Key Identifier: 
+                keyid:D3:4C:6C:3A:BD:36:FE:70:87:23:87:3A:EE:3D:90:CF:CB:9B:F7:21
+
+            Authority Information Access: 
+                CA Issuers - URI:http://ca.eadtrust.eu/eadtrust-subca-ecc256eadlp2019.crt
+                OCSP - URI:http://ocsp.eadtrust.eu
+
+            X509v3 Issuer Alternative Name: 
+                email:ca@eadtrust.eu, URI:http://www.eadtrust.eu, URI:http://ca.eadtrust.eu, URI:http://policy.eadtrust.eu
+            X509v3 Subject Alternative Name: 
+                DirName:/2.16.724.1.3.5.6.2.1=SELLO ELECTRONICO DE NIVEL MEDIO/2.16.724.1.3.5.6.2.2=DIRECCION GENERAL DE SALUD PUBLICA, CONSUMO Y CUIDADOS/2.16.724.1.3.5.6.2.3=S2633001I
+            X509v3 Certificate Policies: 
+                Policy: 2.16.724.1.3.5.6.2
+                Policy: 0.4.0.194112.1.1
+                  User Notice:
+                    Explicit Text: European Telecommunications Standards Institute. eIDAS European Regulation Compliant
+                Policy: 1.3.6.1.4.1.501.2.1.1.0.41233
+                  CPS: http://policy.eadtrust.eu
+                  User Notice:
+                    Explicit Text: Certificado cualificado de sello electrónico de Administración, órgano o entidad de derecho público, nivel Medio/Sustancial. Consulte las condiciones de uso en http://policy.eadtrust.eu
+
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication, E-mail Protection
+            qcStatements: 
+                0..0...+.......0.......I..0......F..0......F.....0......F..0......F...0l.....F..0b00.*https://eadtrust.eu/en/documents-in-force/..en0..(https://eadtrust.eu/documentos-vigentes/..es
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl.eadtrust.eu/eadtrust-subca-ecc256eadlp2019.crl
+
+            X509v3 Subject Key Identifier: 
+                A3:11:CE:6F:F4:CC:52:4E:AA:BA:EA:7F:11:27:DD:E2:A6:AE:73:A6
+            X509v3 Key Usage: critical
+                Digital Signature, Non Repudiation, Key Encipherment
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:89:2c:e4:0b:e1:08:b3:8f:ac:3f:02:47:e0:
+         81:7b:d3:3d:fc:7e:10:27:bc:21:f8:aa:98:76:b0:87:d8:8e:
+         dd:02:21:00:d3:d5:7b:5d:9d:31:83:85:21:6c:c7:18:74:91:
+         c4:11:82:12:d0:86:af:20:d7:0e:99:fb:7b:8b:bd:f3:65:93
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             12:d8:a2:07:a2:4c:2c:75:9c:c7:54:a4:c0:e6:74:67:82:0b:60:35
         Signature Algorithm: ecdsa-with-SHA256
         Issuer: C = MY, CN = Malaysia Covid19 Country Signing CA 01, O = Ministry of Health
