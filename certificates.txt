@@ -29219,6 +29219,71 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            7c:9d:fc:30:29:79:75:96:7f
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN = EADTrust ECC 256 SubCA For Qualified Certificates 2019, O = "European Agency of Digital Trust, S.L.", C = ES, organizationIdentifier = VATES-B85626240, OU = Legal Person
+        Validity
+            Not Before: Aug  4 13:00:00 2022 GMT
+            Not After : Aug  4 12:59:00 2024 GMT
+        Subject: CN = GERENCIA REGIONAL DE SALUD CASTILLA Y LEON (SACYL) 2022, serialNumber = Q4700608E, OU = SELLO ELECTRONICO, OU = GERENCIA REGIONAL DE SALUD DE CASTILLA Y LEON, organizationIdentifier = VATES- Q4700608E, O = GERENCIA REGIONAL DE SALUD DE CASTILLA Y LEON, C = ES
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:10:8b:2f:c1:97:53:7e:f5:93:fd:16:d1:73:f4:
+                    48:0e:91:d7:5f:0b:71:1f:5a:a6:16:3a:5e:98:1c:
+                    52:8a:52:0d:87:56:6b:e0:31:4b:ef:aa:26:90:ec:
+                    31:e0:02:e2:6b:ad:1a:f5:f0:0f:90:fa:28:19:de:
+                    73:f0:d6:17:08
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Authority Key Identifier: 
+                keyid:D3:4C:6C:3A:BD:36:FE:70:87:23:87:3A:EE:3D:90:CF:CB:9B:F7:21
+
+            Authority Information Access: 
+                CA Issuers - URI:http://ca.eadtrust.eu/eadtrust-subca-ecc256eadlp2019.crt
+                OCSP - URI:http://ocsp.eadtrust.eu
+
+            X509v3 Issuer Alternative Name: 
+                email:ca@eadtrust.eu, URI:http://www.eadtrust.eu, URI:http://ca.eadtrust.eu, URI:http://policy.eadtrust.eu
+            X509v3 Subject Alternative Name: 
+                DirName:/2.16.724.1.3.5.6.2.1=SELLO ELECTRONICO DE NIVEL MEDIO/2.16.724.1.3.5.6.2.2=GERENCIA REGIONAL DE SALUD DE CASTILLA Y LEON/2.16.724.1.3.5.6.2.3=Q4700608E
+            X509v3 Certificate Policies: 
+                Policy: 2.16.724.1.3.5.6.2
+                Policy: 0.4.0.194112.1.1
+                  User Notice:
+                    Explicit Text: European Telecommunications Standards Institute. eIDAS European Regulation Compliant
+                Policy: 1.3.6.1.4.1.501.2.1.1.0.41233
+                  CPS: http://policy.eadtrust.eu
+                  User Notice:
+                    Explicit Text: Certificado cualificado de sello electrónico de Administración, órgano o entidad de derecho público, nivel Medio/Sustancial. Consulte las condiciones de uso en http://policy.eadtrust.eu
+
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication, E-mail Protection
+            qcStatements: 
+                0..0...+.......0.......I..0......F..0......F.....0......F..0......F...0l.....F..0b00.*https://eadtrust.eu/en/documents-in-force/..en0..(https://eadtrust.eu/documentos-vigentes/..es
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl.eadtrust.eu/eadtrust-subca-ecc256eadlp2019.crl
+
+            X509v3 Subject Key Identifier: 
+                EC:13:1B:FA:6C:75:6A:55:F9:A9:21:63:BA:CD:19:C5:19:7F:9A:72
+            X509v3 Key Usage: critical
+                Digital Signature, Non Repudiation, Key Encipherment
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:8f:69:01:2e:fa:d6:76:43:9a:74:08:c7:42:
+         1b:b2:27:7f:14:d8:d7:19:06:57:e3:dd:25:be:4b:15:ed:be:
+         06:02:21:00:d5:69:5c:54:5c:24:a1:ed:3e:e0:fd:35:83:51:
+         75:95:6e:2e:b4:26:a0:84:bd:cf:07:bd:d3:e9:a8:45:5f:46
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             49:b2:a5:df:06:d7:9b:b4:8e:10:1e:62:23:0b:4d:c6:58:bb:b8:e5
         Signature Algorithm: ecdsa-with-SHA256
         Issuer: CN = CSCA Health NL, serialNumber = 1, OU = Ministry of Health Welfare and Sport, O = Kingdom of the Netherlands, C = NL
