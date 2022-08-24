@@ -1351,6 +1351,12 @@
   },
   {
     "country": "AL",
+    "hash": "e21e50b495b6bd309c0d6e3cb18b6e12f8240e1926cab85a9e90057a0ca784cb",
+    "identifier": "RR-AL-0001",
+    "version": "1.0.0"
+  },
+  {
+    "country": "AL",
     "hash": "9df59e3523f8d237f9231e997883c17ec8315fb4ee1fcce65e49b3c33412ea7c",
     "identifier": "RR-AL-0002",
     "version": "1.1.0"
@@ -1888,6 +1894,30 @@
     "hash": "6232f66ddb7ff4fa4422d891660b4d3a25792cbe64c85164036ca92557b08c0a",
     "identifier": "RR-UA-0002",
     "version": "2.0.0"
+  },
+  {
+    "country": "AL",
+    "hash": "d9f387c34fed569294eee3a9e17a4612c4ef86223756acd185ee03ef8f551175",
+    "identifier": "TR-AL-0001",
+    "version": "1.0.0"
+  },
+  {
+    "country": "AL",
+    "hash": "b6b5238ecaf7a406e4de1bd999cf4b03694f5fa45dd24dcc7fef2324ee8269cc",
+    "identifier": "TR-AL-0002",
+    "version": "1.0.0"
+  },
+  {
+    "country": "AL",
+    "hash": "bdcf04a0611b7074fe680a982903e968c14e4f3c72605447e298ad99934153ce",
+    "identifier": "TR-AL-0003",
+    "version": "1.0.0"
+  },
+  {
+    "country": "AL",
+    "hash": "c63e98bf249e608ae17c9cd404687c4d60f52a5957e64659dd856713a269e544",
+    "identifier": "TR-AL-0004",
+    "version": "1.0.0"
   },
   {
     "country": "AT",
@@ -4801,13 +4831,13 @@
   },
   {
     "country": "PM",
-    "hash": "2801d9f869144a2488e7733f8bbdeabc742d873fcca6e007437011a7a8ab4bb7",
+    "hash": "e57496282f4544e302b184cb30bb4248a1c4807aafd7d5220d1debb3428ab091",
     "identifier": "TR-_RPM-0004",
     "version": "1.0.1"
   },
   {
     "country": "PM",
-    "hash": "e57496282f4544e302b184cb30bb4248a1c4807aafd7d5220d1debb3428ab091",
+    "hash": "2801d9f869144a2488e7733f8bbdeabc742d873fcca6e007437011a7a8ab4bb7",
     "identifier": "TR-_RPM-0004",
     "version": "1.0.1"
   },
@@ -5227,9 +5257,21 @@
   },
   {
     "country": "AL",
+    "hash": "38b6f8620bfac359245d437615763776bf19f2d8993e058f2107e9aef2904a36",
+    "identifier": "VR-AL-0001",
+    "version": "1.0.0"
+  },
+  {
+    "country": "AL",
     "hash": "a3a27e85c8c7ee06020a0f117d0b22cc191b2f0abade5ae7754a5390331fab80",
     "identifier": "VR-AL-0002",
     "version": "2.2.0"
+  },
+  {
+    "country": "AL",
+    "hash": "b06cf06a6a672d08fef55a71d55b182ef0effb746bbdaed2c9a2192c47a9a2b1",
+    "identifier": "VR-AL-0003",
+    "version": "1.0.1"
   },
   {
     "country": "AT",
