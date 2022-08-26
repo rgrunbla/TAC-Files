@@ -20176,6 +20176,51 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            7b:df:12:3f:5d:a9:27:74:61:52:99:5d:a3:c9:24:ae:62:6b:a4:81
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN = DGC Country Signing CA, OU = Public Service Development Agency, O = Ministry of Justice of Georgia, C = GE
+        Validity
+            Not Before: Aug 25 17:00:25 2022 GMT
+            Not After : Aug 24 17:00:24 2024 GMT
+        Subject: CN = DGC DS Signer 1, OU = LEPL Information Technologies Agency, O = "Ministry of Internally Displaced Persons From the Occupied Territories, Labour, Health and Social Affairs of Georgia", C = GE
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:0d:b6:10:81:99:ce:6a:8c:9a:b5:ab:a3:e5:dc:
+                    91:f3:de:d7:02:5f:4a:bd:0d:30:31:44:19:85:57:
+                    7b:e1:de:98:1a:4a:13:2e:74:f3:2d:3a:db:20:31:
+                    5c:9d:91:e4:03:6b:f4:a7:01:ca:4d:6b:33:d7:74:
+                    0b:b1:1f:f4:a6
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Authority Key Identifier: 
+                keyid:67:4D:32:78:3F:6F:2E:27:08:D1:AB:61:E0:7B:F5:35:DD:DD:CD:B0
+
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.1847.2021.1.3, 1.3.6.1.4.1.1847.2021.1.1, 1.3.6.1.4.1.1847.2021.1.2
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl.cra.ge/dgccountrysigningca.crl
+
+            X509v3 Subject Key Identifier: 
+                F4:37:BD:55:6B:55:4F:C7:87:D3:17:D7:22:5F:6D:4E:06:8D:0D:44
+            X509v3 Key Usage: critical
+                Digital Signature
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:db:f1:19:32:0b:a5:c8:25:87:c3:96:8f:be:
+         3d:75:cf:41:cc:7a:67:30:5d:a1:44:04:df:72:9b:11:a8:94:
+         ef:02:21:00:e1:0d:68:03:ee:47:21:9f:bb:7b:54:70:b6:ed:
+         44:49:59:7c:bd:ac:8b:5f:1f:96:a8:45:18:88:c9:51:ae:af
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             2d:24:16:a6:16:0f:ff:fc:e4:d4:94:26:a6:ff:78:74:81:fa:72:64
         Signature Algorithm: sha256WithRSAEncryption
         Issuer: C = FR, O = Gouv, CN = CSCA-FRANCE
