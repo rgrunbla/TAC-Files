@@ -351,6 +351,53 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            52:7f:08:8b:83:d3:2e:1c:33:55:d7:0e:49:52:bd:9b:d7:b4:4d:66
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = TW, O = Executive Yuan, OU = Ministry of Health and Welfare, OU = Centers for Disease Control, CN = Country Signing CA
+        Validity
+            Not Before: Sep  1 10:07:03 2022 GMT
+            Not After : Aug 31 10:07:02 2024 GMT
+        Subject: C = TW, O = Executive Yuan, OU = Ministry of Health and Welfare, OU = Centers for Disease Control, CN = Document Signer
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:3b:a9:e2:52:01:13:70:09:54:3a:b1:69:67:70:
+                    f3:f5:f3:26:7c:71:e7:c5:59:e4:6b:e8:76:e3:ed:
+                    c4:fc:66:12:51:84:79:33:9c:d6:11:5d:ff:6e:e9:
+                    8a:fc:ae:d4:76:c1:4b:02:93:78:06:4c:a3:6c:dd:
+                    9c:3e:76:d1:2b
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Authority Key Identifier: 
+                keyid:08:2B:B6:8C:DF:21:F9:1F:A9:E3:4E:88:18:E6:CA:5D:55:EA:2A:E5
+
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.0.1847.2021.1.3, 1.3.6.1.4.1.0.1847.2021.1.1, 1.3.6.1.4.1.0.1847.2021.1.2
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:https://hca.mohw.gov.tw/download/CSCA/CRL/complete.crl
+                CRL Issuer:
+                  DirName:CN = Country Signing CA, OU = Centers for Disease Control, OU = Ministry of Health and Welfare, O = Executive Yuan, C = TW
+
+            X509v3 Subject Key Identifier: 
+                31:BD:C5:FC:E9:F6:C1:09:9C:E9:BF:54:87:82:04:BE:17:C9:14:95
+            X509v3 Key Usage: critical
+                Digital Signature
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:3f:86:de:39:d6:90:af:22:e7:08:89:4e:06:e0:
+         0e:97:5c:9c:1c:f8:1f:d7:73:17:86:4d:49:26:22:98:90:1b:
+         02:21:00:d8:fb:8b:a3:ae:10:19:09:31:4d:1e:99:09:77:14:
+         08:65:82:26:ff:4e:7c:2d:2d:a4:cc:c5:e4:e5:f6:ee:2e
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             04:31:c6:0c:fc:00:ee:46:29
         Signature Algorithm: ecdsa-with-SHA256
         Issuer: CN = EADTrust ECC 256 SubCA For Qualified Certificates 2019, O = "European Agency of Digital Trust, S.L.", C = ES, organizationIdentifier = VATES-B85626240, OU = Legal Person
