@@ -1922,7 +1922,27 @@
         }
     },
     {
-        "valueSetDate": "2022-09-11",
+        "valueSetDate": "2021-04-27",
+        "valueSetId": "covid-19-lab-result",
+        "valueSetValues": {
+            "260373001": {
+                "active": true,
+                "display": "Detected",
+                "lang": "en",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20210131"
+            },
+            "260415000": {
+                "active": true,
+                "display": "Not detected",
+                "lang": "en",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20210131"
+            }
+        }
+    },
+    {
+        "valueSetDate": "2022-09-12",
         "valueSetId": "covid-19-lab-test-manufacturer-and-name",
         "valueSetValues": {
             "1065": {
@@ -3900,26 +3920,6 @@
                 "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
                 "validUntil": null,
                 "version": "2021-07-13 05:38:51 CEST"
-            }
-        }
-    },
-    {
-        "valueSetDate": "2021-04-27",
-        "valueSetId": "covid-19-lab-result",
-        "valueSetValues": {
-            "260373001": {
-                "active": true,
-                "display": "Detected",
-                "lang": "en",
-                "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20210131"
-            },
-            "260415000": {
-                "active": true,
-                "display": "Not detected",
-                "lang": "en",
-                "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20210131"
             }
         }
     },
