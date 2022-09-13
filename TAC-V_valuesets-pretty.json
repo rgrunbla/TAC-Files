@@ -3925,54 +3925,6 @@
     },
     {
         "valueSetDate": "2021-04-27",
-        "valueSetId": "sct-vaccines-covid-19",
-        "valueSetValues": {
-            "1119305005": {
-                "active": true,
-                "display": "SARS-CoV-2 antigen vaccine",
-                "lang": "en",
-                "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20210131"
-            },
-            "1119349007": {
-                "active": true,
-                "display": "SARS-CoV-2 mRNA vaccine",
-                "lang": "en",
-                "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20210131"
-            },
-            "1157024006": {
-                "active": true,
-                "display": "Inactivated whole SARS-CoV-2 antigen vaccine",
-                "lang": "en",
-                "system": "http://snomed.info/sct",
-                "version": "2022-01-31"
-            },
-            "1162643001": {
-                "active": true,
-                "display": "SARS-CoV-2 recombinant spike protein antigen vaccine",
-                "lang": "en",
-                "system": "http://snomed.info/sct",
-                "version": "2022-01-31"
-            },
-            "29061000087103": {
-                "active": true,
-                "display": "COVID-19 non-replicating viral vector vaccine",
-                "lang": "en",
-                "system": "http://snomed.info/sct",
-                "version": "2022-01-31"
-            },
-            "J07BX03": {
-                "active": true,
-                "display": "covid-19 vaccines",
-                "lang": "en",
-                "system": "http://www.whocc.no/atc",
-                "version": "2021-01"
-            }
-        }
-    },
-    {
-        "valueSetDate": "2021-04-27",
         "valueSetId": "covid-19-lab-test-type",
         "valueSetValues": {
             "LP217198-3": {
