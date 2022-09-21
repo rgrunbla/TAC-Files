@@ -21075,6 +21075,71 @@ Certificate:
 Certificate:
     Data:
         Version: 3 (0x2)
+        Serial Number:
+            70:97:10:bc:1e:55:15:25:82
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN = EADTrust ECC 256 SubCA For Qualified Certificates 2019, O = "European Agency of Digital Trust, S.L.", C = ES, organizationIdentifier = VATES-B85626240, OU = Legal Person
+        Validity
+            Not Before: Aug 19 08:00:00 2022 GMT
+            Not After : Aug 19 07:45:00 2024 GMT
+        Subject: CN = SELLO ELECTRONICO DE LA CIUDAD AUT\C3\93NOMA DE MELILLA 22, serialNumber = S7900010E, OU = SELLO ELECTRONICO, OU = DIRECCI\C3\93N GENERAL DE LA SOCIEDAD DE LA INFORMACI\C3\93N, organizationIdentifier = VATES-S7900010E, O = CIUDAD AUT\C3\93NOMA DE MELILLA, C = ES
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:ed:39:de:7a:ff:b9:dd:75:03:4c:39:c1:a3:5c:
+                    48:5f:2c:87:77:d5:13:6f:b3:2b:6b:e7:66:f3:0d:
+                    5e:f3:c8:72:10:c7:48:ac:17:49:6a:e2:22:3d:44:
+                    e0:75:01:ab:4e:8d:95:44:16:b1:56:ab:ae:8b:51:
+                    9a:62:b0:5f:5c
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Authority Key Identifier: 
+                keyid:D3:4C:6C:3A:BD:36:FE:70:87:23:87:3A:EE:3D:90:CF:CB:9B:F7:21
+
+            Authority Information Access: 
+                CA Issuers - URI:http://ca.eadtrust.eu/eadtrust-subca-ecc256eadlp2019.crt
+                OCSP - URI:http://ocsp.eadtrust.eu
+
+            X509v3 Issuer Alternative Name: 
+                email:ca@eadtrust.eu, URI:http://www.eadtrust.eu, URI:http://ca.eadtrust.eu, URI:http://policy.eadtrust.eu
+            X509v3 Subject Alternative Name: 
+                DirName:/2.16.724.1.3.5.6.2.1=SELLO ELECTRONICO DE NIVEL MEDIO/2.16.724.1.3.5.6.2.2=CIUDAD AUT\xC3\x93NOMA DE MELILLA/2.16.724.1.3.5.6.2.3=S7900010E
+            X509v3 Certificate Policies: 
+                Policy: 2.16.724.1.3.5.6.2
+                Policy: 0.4.0.194112.1.1
+                  User Notice:
+                    Explicit Text: European Telecommunications Standards Institute. eIDAS European Regulation Compliant
+                Policy: 1.3.6.1.4.1.501.2.1.1.0.41233
+                  CPS: http://policy.eadtrust.eu
+                  User Notice:
+                    Explicit Text: Certificado cualificado de sello electrónico de Administración, órgano o entidad de derecho público, nivel Medio/Sustancial. Consulte las condiciones de uso en http://policy.eadtrust.eu
+
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication, E-mail Protection
+            qcStatements: 
+                0..0...+.......0.......I..0......F..0......F.....0......F..0......F...0l.....F..0b00.*https://eadtrust.eu/en/documents-in-force/..en0..(https://eadtrust.eu/documentos-vigentes/..es
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl.eadtrust.eu/eadtrust-subca-ecc256eadlp2019.crl
+
+            X509v3 Subject Key Identifier: 
+                98:40:1B:46:D6:8E:C8:93:E3:AD:78:7D:9A:6A:DF:DC:93:18:44:76
+            X509v3 Key Usage: critical
+                Digital Signature, Non Repudiation, Key Encipherment
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:5e:c6:3e:10:eb:5a:04:ff:2d:65:6e:53:da:87:
+         d4:41:67:9c:ce:85:f1:77:09:06:35:e0:b6:90:30:65:eb:e7:
+         02:21:00:c4:0a:06:67:e0:33:72:60:73:83:74:5d:6d:ea:6b:
+         72:5c:d7:c2:df:cf:8c:64:97:77:f5:8c:6e:d0:9a:af:6b
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
         Serial Number: 6501288756208419219 (0x5a3937adb00b4193)
         Signature Algorithm: ecdsa-with-SHA256
         Issuer: CN = Poland DGC RootCSCA 1, O = Ministry of Health, C = PL
