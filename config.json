@@ -2,11 +2,11 @@
   "config": [
     {
       "name": "lastUpdate",
-      "value": "1 Jul 2022"
+      "value": "21 Sep 2022"
     },
     {
       "name": "version",
-      "value": 154
+      "value": 155
     },
     {
       "name": "versionCalibrationBle",
@@ -57,7 +57,7 @@
     {
       "name": "app.multipass.list",
       "value": {
-        "maxDcc": 3,
+        "maxDcc": 4,
         "minDcc": 1,
         "testMaxHours": 24
       }
