@@ -108,12 +108,6 @@
     "version": "1.0.0"
   },
   {
-    "country": "CH",
-    "hash": "a68f9b6940fbbd71706293838bfe0bd7561f0203ea2437e81f9a398fdfff181b",
-    "identifier": "GR-CH-0002",
-    "version": "1.0.12"
-  },
-  {
     "country": "CY",
     "hash": "eda50a9ef9f5f961bb5d7506fcea952dc202c0c34ddb09f6c121790017908b6d",
     "identifier": "GR-CY-0000",
@@ -163,15 +157,15 @@
   },
   {
     "country": "FI",
-    "hash": "29736ceb6fd62fdf4f049f4287ae612d94ac5c7b07f7d5e14e851b7f739063ff",
-    "identifier": "GR-FI-0002",
-    "version": "1.0.5"
-  },
-  {
-    "country": "FI",
     "hash": "e96184a598b6faa501a83d6cd52273a81002b99a2cede7d890291e8300811a04",
     "identifier": "GR-FI-0002",
     "version": "1.0.4"
+  },
+  {
+    "country": "FI",
+    "hash": "29736ceb6fd62fdf4f049f4287ae612d94ac5c7b07f7d5e14e851b7f739063ff",
+    "identifier": "GR-FI-0002",
+    "version": "1.0.5"
   },
   {
     "country": "NC",
@@ -1495,20 +1489,14 @@
   },
   {
     "country": "FI",
-    "hash": "d3a60c735b8defce4d33f7834e94924337354b55d2317375a58971b92ae8083d",
-    "identifier": "RR-FI-0000",
-    "version": "1.0.5"
-  },
-  {
-    "country": "FI",
     "hash": "b8088541f9cca759216c95fa7c80288109a1cc0b3e95c1c72ed2b3fc1d83ec2c",
     "identifier": "RR-FI-0000",
     "version": "1.0.4"
   },
   {
     "country": "FI",
-    "hash": "3b24e3ac5cb3ed053af178658e25dda07307dd70f1b44e7c9202ea1224cc1fc4",
-    "identifier": "RR-FI-0001",
+    "hash": "d3a60c735b8defce4d33f7834e94924337354b55d2317375a58971b92ae8083d",
+    "identifier": "RR-FI-0000",
     "version": "1.0.5"
   },
   {
@@ -1519,9 +1507,9 @@
   },
   {
     "country": "FI",
-    "hash": "519456181ff538896d6d4f12a962435474ccba867b1d7c776de0c661618b664f",
-    "identifier": "RR-FI-0002",
-    "version": "1.0.4"
+    "hash": "3b24e3ac5cb3ed053af178658e25dda07307dd70f1b44e7c9202ea1224cc1fc4",
+    "identifier": "RR-FI-0001",
+    "version": "1.0.5"
   },
   {
     "country": "FI",
@@ -1531,15 +1519,21 @@
   },
   {
     "country": "FI",
-    "hash": "0de1477381877f829a99a6bade8240d9e17aa063d955ba5c40bbecb67c663c03",
-    "identifier": "RR-FI-0003",
-    "version": "1.0.5"
+    "hash": "519456181ff538896d6d4f12a962435474ccba867b1d7c776de0c661618b664f",
+    "identifier": "RR-FI-0002",
+    "version": "1.0.4"
   },
   {
     "country": "FI",
     "hash": "510b00a2603e75e3ae933f7625356da359416098a2bb60c64db71b96928b3fea",
     "identifier": "RR-FI-0003",
     "version": "1.0.4"
+  },
+  {
+    "country": "FI",
+    "hash": "0de1477381877f829a99a6bade8240d9e17aa063d955ba5c40bbecb67c663c03",
+    "identifier": "RR-FI-0003",
+    "version": "1.0.5"
   },
   {
     "country": "FR",
@@ -2353,15 +2347,15 @@
   },
   {
     "country": "FI",
-    "hash": "93182837994c6fb926f243765f86fe4a2f8feb2a7595964ef5afe9dfb40861a5",
-    "identifier": "TR-FI-0001",
-    "version": "1.0.4"
-  },
-  {
-    "country": "FI",
     "hash": "e4f994f92ebdfd7a025cd84d4a17b6c1702e6c44ecde59710cc434210855feea",
     "identifier": "TR-FI-0001",
     "version": "1.0.5"
+  },
+  {
+    "country": "FI",
+    "hash": "93182837994c6fb926f243765f86fe4a2f8feb2a7595964ef5afe9dfb40861a5",
+    "identifier": "TR-FI-0001",
+    "version": "1.0.4"
   },
   {
     "country": "FI",
@@ -2377,15 +2371,15 @@
   },
   {
     "country": "FI",
-    "hash": "89cc0f79a590de54e4465e45e49ddff5770fb081d2515992f0a01d436af0e588",
-    "identifier": "TR-FI-0003",
-    "version": "1.0.4"
-  },
-  {
-    "country": "FI",
     "hash": "693f853f9c829a8dc222f795b7ab47cf62a51eed767d7dd544d19bf2276eddaf",
     "identifier": "TR-FI-0003",
     "version": "1.0.5"
+  },
+  {
+    "country": "FI",
+    "hash": "89cc0f79a590de54e4465e45e49ddff5770fb081d2515992f0a01d436af0e588",
+    "identifier": "TR-FI-0003",
+    "version": "1.0.4"
   },
   {
     "country": "NC",
@@ -6019,15 +6013,15 @@
   },
   {
     "country": "FI",
-    "hash": "ba8c81283de61b1ca4e2977c5a1b28d0409137a1af91461e776cec04a0f59553",
-    "identifier": "VR-FI-0001",
-    "version": "1.0.4"
-  },
-  {
-    "country": "FI",
     "hash": "e78f0e549572e199dfbc4da0b54540133418d88a2fa2b072fbd9a2705a6a1351",
     "identifier": "VR-FI-0001",
     "version": "1.0.5"
+  },
+  {
+    "country": "FI",
+    "hash": "ba8c81283de61b1ca4e2977c5a1b28d0409137a1af91461e776cec04a0f59553",
+    "identifier": "VR-FI-0001",
+    "version": "1.0.4"
   },
   {
     "country": "FI",
@@ -6055,15 +6049,15 @@
   },
   {
     "country": "FI",
-    "hash": "5f4f733ebf878750d67f484fe304f8d0b9eadd568eb6c448abfc74f9f949b5f7",
-    "identifier": "VR-FI-0004",
-    "version": "1.0.5"
-  },
-  {
-    "country": "FI",
     "hash": "f7247b1b798308c6539032023c4ec2fece9f06c60e6bcb9633ea5dc69582f6e1",
     "identifier": "VR-FI-0004",
     "version": "1.0.4"
+  },
+  {
+    "country": "FI",
+    "hash": "5f4f733ebf878750d67f484fe304f8d0b9eadd568eb6c448abfc74f9f949b5f7",
+    "identifier": "VR-FI-0004",
+    "version": "1.0.5"
   },
   {
     "country": "FI",
