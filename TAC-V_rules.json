@@ -114,6 +114,18 @@
     "version": "1.0.12"
   },
   {
+    "country": "CY",
+    "hash": "eda50a9ef9f5f961bb5d7506fcea952dc202c0c34ddb09f6c121790017908b6d",
+    "identifier": "GR-CY-0000",
+    "version": "2.1.4"
+  },
+  {
+    "country": "CY",
+    "hash": "04b85d1a1226a5d8d97b78a780f38ddf773f80fabd6c09bf10ade8f83827a97e",
+    "identifier": "GR-CY-0001",
+    "version": "2.1.4"
+  },
+  {
     "country": "DE",
     "hash": "cee577364de88cb21e99c2ae59b52833afdc11a8ec2c4badc3de8db65c259138",
     "identifier": "GR-DE-0001",
@@ -1416,6 +1428,30 @@
     "version": "1.0.1"
   },
   {
+    "country": "CY",
+    "hash": "2475d974faade3ff0fd11bd136e1a7308effa134d1e690cb20f66f3131995a0c",
+    "identifier": "RR-CY-0000",
+    "version": "2.1.4"
+  },
+  {
+    "country": "CY",
+    "hash": "232d4046dc1021292a83d3d8d1b79ca6ddb447b4779d7ac817cdadf7283d691c",
+    "identifier": "RR-CY-0001",
+    "version": "2.1.4"
+  },
+  {
+    "country": "CY",
+    "hash": "730cc64d78f39f8b5a34936089e6d9f30e394e21cbc555382b572590b21af813",
+    "identifier": "RR-CY-0002",
+    "version": "2.1.4"
+  },
+  {
+    "country": "CY",
+    "hash": "d1f4164dcdc2c0a4f638d2b5a42d56c96b330aeefb34344317e28d9bb868000b",
+    "identifier": "RR-CY-0003",
+    "version": "2.1.4"
+  },
+  {
     "country": "CZ",
     "hash": "abb515ad8cb30ab50a7aa8d6b525e0dcdd4269d85634f6782989c7cee4e1a06a",
     "identifier": "RR-CZ-0001",
@@ -2146,6 +2182,54 @@
     "hash": "2c478b65c95ed6b259a7a0c12bda19fd03076f2f6ab3cfa3c544d1678ee2ab5a",
     "identifier": "TR-_CFR-0004",
     "version": "1.0.0"
+  },
+  {
+    "country": "CY",
+    "hash": "016d4845e31957d3faa861c91b2264c60c70654765c3556c3a3b52ff1c9b1d70",
+    "identifier": "TR-CY-0000",
+    "version": "2.1.4"
+  },
+  {
+    "country": "CY",
+    "hash": "87e3540c96b400056ef01e474e3cbf241a65a260090c418df7767232200fb738",
+    "identifier": "TR-CY-0001",
+    "version": "2.1.4"
+  },
+  {
+    "country": "CY",
+    "hash": "2abaa33f2ecd8966d1719500a61d7e12c38ec08ba543a289bc66836e2294327f",
+    "identifier": "TR-CY-0002",
+    "version": "2.1.4"
+  },
+  {
+    "country": "CY",
+    "hash": "5078ca24624d2c44e3fb0be9a017384c97c3d0d57059d7eaa18e316fad9fdd5b",
+    "identifier": "TR-CY-0003",
+    "version": "2.1.4"
+  },
+  {
+    "country": "CY",
+    "hash": "09eea50707865c30346b169a34c5596d26ec2ea5407a1517eda3fb3a85d11a3e",
+    "identifier": "TR-CY-0004",
+    "version": "2.1.4"
+  },
+  {
+    "country": "CY",
+    "hash": "4302dd93b0e5fd6518b3bce5a3e1863c1d94edd26e37d4a37d794483a5f00b82",
+    "identifier": "TR-CY-0005",
+    "version": "2.1.4"
+  },
+  {
+    "country": "CY",
+    "hash": "fc8693bfc62979d75e5ac1d86de946f206a8826dea9c3fa6d9f4daac33f1a753",
+    "identifier": "TR-CY-0006",
+    "version": "2.1.4"
+  },
+  {
+    "country": "CY",
+    "hash": "8d61917e54d6fec38b4dd1bc1cef39d364bf87aeab56cc8c80e649fe4b16ccb0",
+    "identifier": "TR-CY-0007",
+    "version": "2.1.4"
   },
   {
     "country": "CZ",
@@ -5572,6 +5656,84 @@
     "hash": "54e3492cb7f20e0670f34d23fdfb257537c5919bd937199fad1d0657e0eb6470",
     "identifier": "VR-_CFR-0006",
     "version": "1.0.2"
+  },
+  {
+    "country": "CY",
+    "hash": "baa5fe2069dec279258a48c506919298bdfe81e03ae6e4e923e5390bc05cb9a3",
+    "identifier": "VR-CY-0000",
+    "version": "2.1.4"
+  },
+  {
+    "country": "CY",
+    "hash": "efe6910bd2776c43a7a58c508853caec4f68ea04437e4e2b1d4bc9fea1332dc5",
+    "identifier": "VR-CY-0001",
+    "version": "2.1.4"
+  },
+  {
+    "country": "CY",
+    "hash": "645492e9039426fc4d5f8e94bb1a49c9321bac705dc7c575c0cd78ae532f4906",
+    "identifier": "VR-CY-0002",
+    "version": "2.1.4"
+  },
+  {
+    "country": "CY",
+    "hash": "d3d8bd01f6e6010fe22662ec07811020f3825c4feaccfbc0e130f45b4ba03052",
+    "identifier": "VR-CY-0003",
+    "version": "2.1.4"
+  },
+  {
+    "country": "CY",
+    "hash": "56ab4ca9d792b4d91ff36735b8a34ba491601b652110e755f6e0f570869b5668",
+    "identifier": "VR-CY-0004",
+    "version": "2.1.4"
+  },
+  {
+    "country": "CY",
+    "hash": "dab65de3303a172d32058ffec4e64c8aba0990299db7e71ef5e1de899f9339fb",
+    "identifier": "VR-CY-0005",
+    "version": "2.1.4"
+  },
+  {
+    "country": "CY",
+    "hash": "f3c3372786c166e279b241930d547341572a6bca3c30b121afa9157bb8679e7b",
+    "identifier": "VR-CY-0006",
+    "version": "2.1.4"
+  },
+  {
+    "country": "CY",
+    "hash": "e9f671835f343ffc3e7b62c01792114a58eeb58412eb4a6623b876d1b511a736",
+    "identifier": "VR-CY-0007",
+    "version": "2.1.4"
+  },
+  {
+    "country": "CY",
+    "hash": "e655cb55ad09fd89bd3f630f3f7457c2372fc3db1f652e07f6bc4af483eeb2e3",
+    "identifier": "VR-CY-0008",
+    "version": "2.1.4"
+  },
+  {
+    "country": "CY",
+    "hash": "5968a8a8486d43b519b44225b1055135fd7b65b4d6c5fbf2b483910f4bf04f03",
+    "identifier": "VR-CY-0009",
+    "version": "2.1.4"
+  },
+  {
+    "country": "CY",
+    "hash": "61de4a2d028887203a74786c25707e73240f2134b2f0a5945e5431743b38d930",
+    "identifier": "VR-CY-0010",
+    "version": "2.1.4"
+  },
+  {
+    "country": "CY",
+    "hash": "00d8c9c1911e87c964466d68bd9f6b7ca988e6c17ea42985e7f1bb60f371569e",
+    "identifier": "VR-CY-0011",
+    "version": "2.1.4"
+  },
+  {
+    "country": "CY",
+    "hash": "f2ee708d136c2e0e696200c36e2e8f0b8d077514c70d147b8d89fe067e7ade46",
+    "identifier": "VR-CY-0012",
+    "version": "2.1.4"
   },
   {
     "country": "CZ",
