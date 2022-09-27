@@ -1909,7 +1909,40 @@
         }
     },
     {
-        "valueSetDate": "2022-09-26",
+        "valueSetDate": "2021-04-27",
+        "valueSetId": "disease-agent-targeted",
+        "valueSetValues": {
+            "840539006": {
+                "active": true,
+                "display": "COVID-19",
+                "lang": "en",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20210131"
+            }
+        }
+    },
+    {
+        "valueSetDate": "2021-04-27",
+        "valueSetId": "covid-19-lab-test-type",
+        "valueSetValues": {
+            "LP217198-3": {
+                "active": true,
+                "display": "Rapid immunoassay",
+                "lang": "en",
+                "system": "http://loinc.org",
+                "version": "2.69"
+            },
+            "LP6464-4": {
+                "active": true,
+                "display": "Nucleic acid amplification with probe detection",
+                "lang": "en",
+                "system": "http://loinc.org",
+                "version": "2.69"
+            }
+        }
+    },
+    {
+        "valueSetDate": "2022-09-27",
         "valueSetId": "covid-19-lab-test-manufacturer-and-name",
         "valueSetValues": {
             "1065": {
@@ -3887,39 +3920,6 @@
                 "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
                 "validUntil": null,
                 "version": "2021-07-13 05:38:51 CEST"
-            }
-        }
-    },
-    {
-        "valueSetDate": "2021-04-27",
-        "valueSetId": "disease-agent-targeted",
-        "valueSetValues": {
-            "840539006": {
-                "active": true,
-                "display": "COVID-19",
-                "lang": "en",
-                "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20210131"
-            }
-        }
-    },
-    {
-        "valueSetDate": "2021-04-27",
-        "valueSetId": "covid-19-lab-test-type",
-        "valueSetValues": {
-            "LP217198-3": {
-                "active": true,
-                "display": "Rapid immunoassay",
-                "lang": "en",
-                "system": "http://loinc.org",
-                "version": "2.69"
-            },
-            "LP6464-4": {
-                "active": true,
-                "display": "Nucleic acid amplification with probe detection",
-                "lang": "en",
-                "system": "http://loinc.org",
-                "version": "2.69"
             }
         }
     },
