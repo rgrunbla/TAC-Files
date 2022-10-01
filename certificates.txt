@@ -30752,6 +30752,48 @@ Certificate:
 Certificate:
     Data:
         Version: 3 (0x2)
+        Serial Number: 5393967165181874297 (0x4adb388eeac95079)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = LB, ST = Jnah, L = Beirut, O = Ministry of Public Health (MOPH), OU = Siren Analytics, CN = CSCA_DGC_LB_01
+        Validity
+            Not Before: Oct  1 10:39:01 2022 GMT
+            Not After : Apr  1 10:39:01 2023 GMT
+        Subject: OU = Siren Analytics, O = Ministry of Public Health (MOPH), ST = Beirut, L = Beirut, C = LB
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:74:59:c7:44:99:13:62:6b:c8:8b:4e:09:46:f5:
+                    f3:bd:da:b1:4a:e4:20:66:20:b1:79:da:05:cd:8e:
+                    fb:aa:10:28:d4:5f:3e:3e:8f:34:cf:24:ac:85:0d:
+                    85:52:22:f0:4f:85:2e:30:52:9e:cc:f8:d6:11:17:
+                    4d:40:9c:cf:02
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Subject Key Identifier: 
+                EE:74:3C:CD:80:A0:82:35:21:30:51:BE:05:84:B0:83:90:5F:FA:C7
+            X509v3 Authority Key Identifier: 
+                keyid:8C:CA:2F:A2:9F:B2:1C:94:41:B0:3A:93:AB:AE:05:7B:19:51:B4:7D
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://empty
+
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.1847.2021.1.2
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:9c:61:23:78:80:c7:c8:47:d4:81:36:67:b6:
+         e5:54:19:65:df:de:b9:1f:0b:2a:60:16:c9:12:9f:54:87:3b:
+         14:02:21:00:ea:04:0e:ce:af:a8:20:93:d2:cd:74:e6:0e:f1:
+         43:35:6e:10:e9:3d:a1:0f:7d:7f:6f:fc:56:90:e3:60:99:29
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
         Serial Number: 2251728059710435428 (0x1f3fbebd79d1f064)
         Signature Algorithm: ecdsa-with-SHA256
         Issuer: C = MT, O = Government of Malta, CN = Malta DCC Signing CA
