@@ -3925,26 +3925,6 @@
     },
     {
         "valueSetDate": "2021-04-27",
-        "valueSetId": "covid-19-lab-result",
-        "valueSetValues": {
-            "260373001": {
-                "active": true,
-                "display": "Detected",
-                "lang": "en",
-                "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20210131"
-            },
-            "260415000": {
-                "active": true,
-                "display": "Not detected",
-                "lang": "en",
-                "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20210131"
-            }
-        }
-    },
-    {
-        "valueSetDate": "2021-04-27",
         "valueSetId": "sct-vaccines-covid-19",
         "valueSetValues": {
             "1119305005": {
@@ -3988,6 +3968,26 @@
                 "lang": "en",
                 "system": "http://www.whocc.no/atc",
                 "version": "2021-01"
+            }
+        }
+    },
+    {
+        "valueSetDate": "2021-04-27",
+        "valueSetId": "covid-19-lab-result",
+        "valueSetValues": {
+            "260373001": {
+                "active": true,
+                "display": "Detected",
+                "lang": "en",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20210131"
+            },
+            "260415000": {
+                "active": true,
+                "display": "Not detected",
+                "lang": "en",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20210131"
             }
         }
     },
