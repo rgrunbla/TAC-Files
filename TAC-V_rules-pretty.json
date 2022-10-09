@@ -50993,90 +50993,6 @@
         },
         {
             "AffectedFields": [
-                "v.0.ci"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "DE",
-            "Description": [
-                {
-                    "desc": "The certificate must not be issued by an unauthorized party.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Das Zertifikat darf nicht durch unberechtigte Ausgeber ausgestellt worden sein.",
-                    "lang": "de"
-                },
-                {
-                    "desc": "Le certificat ne doit pas avoir \u00e9t\u00e9 \u00e9tabli par des \u00e9metteurs non autoris\u00e9s.",
-                    "lang": "fr"
-                },
-                {
-                    "desc": "El certificado no puede haber sido expedido por emisores no autorizados.",
-                    "lang": "es"
-                },
-                {
-                    "desc": "Il certificato non pu\u00f2 essere rilasciato da un organismo non autorizzato.",
-                    "lang": "it"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.8.0",
-            "Identifier": "IR-DE-0001",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0.ci"
-                    },
-                    {
-                        "if": [
-                            {
-                                "and": [
-                                    {
-                                        "in": [
-                                            {
-                                                "extractFromUVCI": [
-                                                    {
-                                                        "var": "payload.v.0.ci"
-                                                    },
-                                                    1
-                                                ]
-                                            },
-                                            [
-                                                "A51018097",
-                                                "A80013335"
-                                            ]
-                                        ]
-                                    },
-                                    {
-                                        "===": [
-                                            {
-                                                "extractFromUVCI": [
-                                                    {
-                                                        "var": "payload.v.0.ci"
-                                                    },
-                                                    0
-                                                ]
-                                            },
-                                            "01DE"
-                                        ]
-                                    }
-                                ]
-                            },
-                            false,
-                            true
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Invalidation",
-            "ValidFrom": "2022-05-06T16:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.3"
-        },
-        {
-            "AffectedFields": [
                 "t.0.ma",
                 "t.0.tt"
             ],
@@ -51636,6 +51552,90 @@
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "v.0.ci"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "DE",
+            "Description": [
+                {
+                    "desc": "The certificate must not be issued by an unauthorized party.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Das Zertifikat darf nicht durch unberechtigte Ausgeber ausgestellt worden sein.",
+                    "lang": "de"
+                },
+                {
+                    "desc": "Le certificat ne doit pas avoir \u00e9t\u00e9 \u00e9tabli par des \u00e9metteurs non autoris\u00e9s.",
+                    "lang": "fr"
+                },
+                {
+                    "desc": "El certificado no puede haber sido expedido por emisores no autorizados.",
+                    "lang": "es"
+                },
+                {
+                    "desc": "Il certificato non pu\u00f2 essere rilasciato da un organismo non autorizzato.",
+                    "lang": "it"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.8.0",
+            "Identifier": "IR-DE-0001",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0.ci"
+                    },
+                    {
+                        "if": [
+                            {
+                                "and": [
+                                    {
+                                        "in": [
+                                            {
+                                                "extractFromUVCI": [
+                                                    {
+                                                        "var": "payload.v.0.ci"
+                                                    },
+                                                    1
+                                                ]
+                                            },
+                                            [
+                                                "A51018097",
+                                                "A80013335"
+                                            ]
+                                        ]
+                                    },
+                                    {
+                                        "===": [
+                                            {
+                                                "extractFromUVCI": [
+                                                    {
+                                                        "var": "payload.v.0.ci"
+                                                    },
+                                                    0
+                                                ]
+                                            },
+                                            "01DE"
+                                        ]
+                                    }
+                                ]
+                            },
+                            false,
+                            true
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Invalidation",
+            "ValidFrom": "2022-05-06T16:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.3"
         },
         {
             "AffectedFields": [
@@ -61434,52 +61434,6 @@
         },
         {
             "AffectedFields": [
-                "v"
-            ],
-            "CertificateType": "General",
-            "Country": "DE",
-            "Description": [
-                {
-                    "desc": "As of June 1, 2022, travelers entering Germany are now only obligated to register themselves, provide proof of their Covid status, or quarantine due to the pandemic if they have previously stayed in an area of variants of concern. No states/regions are currently classified as areas of variants of concern.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Seit dem 1. Juni 2022 gilt eine pandemiebedingte Anmelde-, Nachweis- und Quarant\u00e4nepflicht bei der Einreise nach Deutschland nur noch bei einem Voraufenthalt in einem Virusvariantengebiet. Derzeit gelten keine Staaten/Regionen als Virusvariantengebiete.",
-                    "lang": "de"
-                },
-                {
-                    "desc": "Depuis le 1er juin 2022, l\u2019obligation d\u2018enregistrement, de pr\u00e9sentation d\u2019un justificatif et de quarantaine \u00e0 l\u2019entr\u00e9e en Allemagne li\u00e9e \u00e0 la pand\u00e9mie ne reste applicable que si vous avez pr\u00e9alablement s\u00e9journ\u00e9 dans une zone de circulation de virus variant. Actuellement, aucun \u00e9tat ni aucune r\u00e9gion ne sont consid\u00e9r\u00e9s comme zone de circulation de virus variant.",
-                    "lang": "fr"
-                },
-                {
-                    "desc": "Desde el 1 de junio de 2022, la obligaci\u00f3n de notificaci\u00f3n, comprobaci\u00f3n y cuarentena relacionada con la pandemia para entrar en Alemania solo se aplica en el caso de una estancia previa en una zona con variantes del virus. Actualmente, no se considera que ning\u00fan estado o regi\u00f3n sea una zona con variantes del virus.",
-                    "lang": "es"
-                },
-                {
-                    "desc": "Dal 1 giugno 2022 per l\u2019ingresso in Germania vige, in relazione all'andamento della pandemia, l\u2019obbligo di registrazione, di presentazione della documentazione vaccinale e di quarantena solo in caso di provenienza da aree ad alta incidenza di varianti del virus. Nessuno Stato/regione al momento \u00e8 classificato come tale.",
-                    "lang": "it"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.8.0",
-            "Identifier": "GR-DE-0001",
-            "Logic": {
-                "if": [
-                    true,
-                    true,
-                    {
-                        "var": "payload.v"
-                    }
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-07-04T09:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.1"
-        },
-        {
-            "AffectedFields": [
                 "t.0",
                 "t.0.tt"
             ],
@@ -62135,6 +62089,52 @@
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "v"
+            ],
+            "CertificateType": "General",
+            "Country": "DE",
+            "Description": [
+                {
+                    "desc": "As of June 1, 2022, travelers entering Germany are now only obligated to register themselves, provide proof of their Covid status, or quarantine due to the pandemic if they have previously stayed in an area of variants of concern. No states/regions are currently classified as areas of variants of concern.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Seit dem 1. Juni 2022 gilt eine pandemiebedingte Anmelde-, Nachweis- und Quarant\u00e4nepflicht bei der Einreise nach Deutschland nur noch bei einem Voraufenthalt in einem Virusvariantengebiet. Derzeit gelten keine Staaten/Regionen als Virusvariantengebiete.",
+                    "lang": "de"
+                },
+                {
+                    "desc": "Depuis le 1er juin 2022, l\u2019obligation d\u2018enregistrement, de pr\u00e9sentation d\u2019un justificatif et de quarantaine \u00e0 l\u2019entr\u00e9e en Allemagne li\u00e9e \u00e0 la pand\u00e9mie ne reste applicable que si vous avez pr\u00e9alablement s\u00e9journ\u00e9 dans une zone de circulation de virus variant. Actuellement, aucun \u00e9tat ni aucune r\u00e9gion ne sont consid\u00e9r\u00e9s comme zone de circulation de virus variant.",
+                    "lang": "fr"
+                },
+                {
+                    "desc": "Desde el 1 de junio de 2022, la obligaci\u00f3n de notificaci\u00f3n, comprobaci\u00f3n y cuarentena relacionada con la pandemia para entrar en Alemania solo se aplica en el caso de una estancia previa en una zona con variantes del virus. Actualmente, no se considera que ning\u00fan estado o regi\u00f3n sea una zona con variantes del virus.",
+                    "lang": "es"
+                },
+                {
+                    "desc": "Dal 1 giugno 2022 per l\u2019ingresso in Germania vige, in relazione all'andamento della pandemia, l\u2019obbligo di registrazione, di presentazione della documentazione vaccinale e di quarantena solo in caso di provenienza da aree ad alta incidenza di varianti del virus. Nessuno Stato/regione al momento \u00e8 classificato come tale.",
+                    "lang": "it"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.8.0",
+            "Identifier": "GR-DE-0001",
+            "Logic": {
+                "if": [
+                    true,
+                    true,
+                    {
+                        "var": "payload.v"
+                    }
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-07-04T09:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.1"
         },
         {
             "AffectedFields": [
