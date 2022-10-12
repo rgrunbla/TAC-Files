@@ -25544,6 +25544,80 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            53:7d:3a:ec:77:27:94:7e:01:72:bc:24:2e:2b:b2:ae:97:d6:d8
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = MC, O = Principality of Monaco, OU = Foreign Office of Monaco, CN = CSCAPKI_MC
+        Validity
+            Not Before: Oct 12 12:31:00 2022 GMT
+            Not After : Apr 12 12:31:00 2024 GMT
+        Subject: C = MC, O = Principality of Monaco, OU = Ministry of Health and Social Affairs, CN = DSPKI_MC_DGC_1
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:e4:eb:4b:d8:d0:ac:a4:34:64:4b:bf:96:d2:e0:
+                    dc:db:9f:e0:44:cf:62:be:45:93:e1:bf:e7:94:5c:
+                    fa:5d:b5:b0:2d:44:d3:94:4e:5f:95:a2:f5:7a:ca:
+                    6d:86:5c:68:dd:7d:d3:40:54:2d:77:d8:0f:f1:b0:
+                    45:d5:7d:e4:66
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Subject Alternative Name: 
+                DNS:www.gouv.mc, DirName:/L=MCO
+            X509v3 Issuer Alternative Name: 
+                URI:https://csca-mco.gouv.mc, DirName:/L=MCO
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.0.1847.2021.1.1, 1.3.6.1.4.1.0.1847.2021.1.2, 1.3.6.1.4.1.0.1847.2021.1.3
+            X509v3 Private Key Usage Period: 
+                Not Before: Oct 12 06:57:25 2022 GMT, Not After: Apr 12 06:57:25 2023 GMT
+            X509v3 Subject Key Identifier: 
+                75:F2:A3:16:3E:DC:A8:24:E6:C0:E3:A7:79:03:3C:01:FB:92:83:9C
+            X509v3 Authority Key Identifier: 
+                keyid:30:32:9C:7C:FE:7D:8F:02:ED:C5:12:5A:E0:EB:57:BF:E8:85:89:29
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:https://csca-mco.gouv.mc/MCO.crl
+
+    Signature Algorithm: sha256WithRSAEncryption
+         81:78:b6:2b:83:03:53:40:67:37:d1:b8:9d:17:3d:c7:cc:1b:
+         3d:e4:5b:73:04:20:08:2c:9e:b1:a2:5f:2d:75:bb:c3:51:8b:
+         18:3e:cb:16:9f:c2:3b:54:68:f9:5c:c4:cf:c1:b9:e3:84:75:
+         ba:92:ef:73:82:e3:b4:43:c7:8b:2a:02:3d:d2:70:fc:db:79:
+         db:bf:a3:80:7e:08:e8:c3:77:9d:98:af:0c:9e:4d:56:20:cd:
+         63:cc:95:24:44:cb:45:12:21:2e:a7:7f:d4:87:72:b9:23:71:
+         f7:0f:89:52:bf:c0:0d:32:6f:72:1c:fa:6d:02:5f:75:53:77:
+         a0:e9:4e:ac:93:0b:73:e2:5f:c9:70:8c:b3:c8:1b:20:d6:74:
+         f1:89:a6:e7:f2:8d:f1:1d:50:77:05:09:3c:97:d5:20:de:0d:
+         79:e6:5c:22:33:60:a2:e2:42:fa:09:28:fe:76:3a:23:64:57:
+         dd:af:d1:c0:6c:61:5d:f9:52:25:81:f6:f7:11:4e:b3:73:dc:
+         7a:f4:18:52:8c:ca:f4:ea:b7:e1:1b:86:45:92:d9:9b:98:64:
+         c9:28:e8:02:05:30:80:1b:ca:46:6c:14:f8:85:fd:c4:04:f4:
+         5e:41:3a:3a:de:45:5d:6a:2c:71:4f:09:aa:85:d9:e6:56:44:
+         cc:05:6c:7f:b1:9f:64:f5:f7:9c:da:63:3d:4d:08:11:f1:6a:
+         71:93:16:38:e0:b5:40:99:e4:83:ac:b7:f1:56:85:0e:eb:52:
+         b8:d1:e2:c2:1d:8f:d8:04:9b:10:b4:04:d1:1d:2c:78:83:dc:
+         72:8c:89:a5:fe:dd:3b:dd:22:47:0a:d5:c4:21:14:d6:7d:cb:
+         b2:2e:31:02:d3:34:90:d9:b9:08:d8:77:1b:75:1d:d1:38:b0:
+         e0:5e:ec:4f:b3:58:c7:c4:2d:09:b1:12:0d:40:83:60:c4:bd:
+         d0:83:d5:19:0e:cc:fa:1d:e0:a1:9c:7c:76:78:04:7a:d3:d1:
+         89:96:27:de:cd:09:d8:51:66:a6:e4:86:e5:1f:22:52:65:0b:
+         b3:02:92:4c:90:39:85:a7:98:ad:76:d1:0a:f8:4b:b4:c9:b9:
+         f5:c5:41:19:e1:0f:b0:73:d4:08:71:71:3d:b9:0a:08:3b:0b:
+         3a:7a:66:a1:a1:ad:f3:c5:6f:35:31:07:61:2f:71:57:41:9f:
+         09:07:76:57:09:25:fc:22:9a:8a:7c:99:a5:79:a2:78:ec:4e:
+         59:6d:55:6c:63:fc:d5:fd:b4:89:b3:ce:a9:4d:52:04:8b:35:
+         5f:f9:d9:1d:a1:a6:bf:e7:4c:f4:09:76:2d:ef:68:1f:77:f2:
+         96:7b:9e:b9:ad:dc:84:88
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             81:5a:02:70:4a:55:04:77
         Signature Algorithm: ecdsa-with-SHA1
         Issuer: C = IE, ST = Dublin, L = Dublin, O = Department of Health, OU = eHealth, CN = CSCA_DGC_IE_01
