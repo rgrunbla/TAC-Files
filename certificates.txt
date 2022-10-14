@@ -27945,6 +27945,50 @@ Certificate:
 Certificate:
     Data:
         Version: 3 (0x2)
+        Serial Number: 357946506826076160 (0x4f7ae7393f5d000)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = BR, O = Ministerio da Saude, OU = DATASUS, CN = BR:CSCA:SN:339786822353014784
+        Validity
+            Not Before: Sep 13 20:50:37 2022 GMT
+            Not After : Sep 12 20:51:37 2024 GMT
+        Subject: C = BR, O = Ministerio da Saude, OU = DATASUS, OU = BR:CSCA:SN:339786822353014784, CN = BR:DSC:2022-09
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:c1:0c:7e:90:c4:d9:1b:08:5c:21:e4:14:e0:1d:
+                    4e:35:a2:70:cc:ef:d8:97:a2:60:88:f6:d5:2a:f3:
+                    b3:99:91:9f:4d:ca:04:a7:ce:15:d7:09:61:1c:f8:
+                    19:cd:d7:0d:39:aa:1e:04:c9:51:95:2d:8f:40:8a:
+                    97:fe:25:25:c7
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                5B:92:40:1D:84:9A:80:26:D3:3E:5F:DD:EB:02:D6:0E:CA:66:30:63
+            X509v3 Authority Key Identifier: 
+                keyid:AE:59:61:23:E1:17:A8:B3:5F:ED:30:06:40:02:E2:B0:83:0C:A5:C9
+
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.1847.2021.1.3, 1.3.6.1.4.1.1847.2021.1.1, 1.3.6.1.4.1.1847.2021.1.2
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:https://servicos.saude.gov.br/certificadoscab/caCrl/339786822353014784/CRL
+
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:d7:9e:d5:6e:3b:a3:2e:97:fe:8a:4f:3b:50:
+         e2:ab:27:3b:f5:b6:27:40:c5:46:07:fb:d6:25:8d:80:47:05:
+         00:02:20:67:f7:d3:dd:c5:13:3a:ac:0d:77:19:69:4a:c0:6c:
+         e9:b6:2e:31:e6:f9:13:a9:0c:b6:bd:da:e4:f3:cb:38:1e
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
         Serial Number:
             6a:dc:00:eb:9c:92:ce:e2:7a:e2:30:a3:72:62:fc:76
         Signature Algorithm: rsassaPss         
