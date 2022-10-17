@@ -718,67 +718,6 @@
         },
         {
             "AffectedFields": [
-                "t.0.sc",
-                "t.0.tt"
-            ],
-            "CertificateType": "Test",
-            "Country": "SK",
-            "Description": [
-                {
-                    "desc": "DateTime of Sample Collection must be less than 48 hours before the Verification Datetime for a test of type RAT (rapid antigen test). After time limit expiration of 72 hours, the test is valid only for the enter of the employee on the working place, or for commuters on the base of the evidence",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Od odberu vzorky pre test typu RAT (rapid antigen test) ubehlo viac ako 48 hod\u00edn. Po uplynut\u00ed 48 hod\u00edn je test platn\u00fd IBA PRE VSTUP zamestnanca na pracovisko, alebo pre pendlerov na z\u00e1klade osobitej evidencie.",
-                    "lang": "sk"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.1.0",
-            "Identifier": "TR-SK-0005",
-            "Logic": {
-                "if": [
-                    {
-                        "===": [
-                            {
-                                "var": "payload.t.0.tt"
-                            },
-                            "LP217198-3"
-                        ]
-                    },
-                    {
-                        "before": [
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "external.validationClock"
-                                    },
-                                    0,
-                                    "day"
-                                ]
-                            },
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "payload.t.0.sc"
-                                    },
-                                    48,
-                                    "hour"
-                                ]
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-02-06T13:42:13Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.2"
-        },
-        {
-            "AffectedFields": [
                 "v.0",
                 "v.0.dt",
                 "v.0.mp"
@@ -2794,6 +2733,67 @@
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "t.0.sc",
+                "t.0.tt"
+            ],
+            "CertificateType": "Test",
+            "Country": "SK",
+            "Description": [
+                {
+                    "desc": "DateTime of Sample Collection must be less than 48 hours before the Verification Datetime for a test of type RAT (rapid antigen test). After time limit expiration of 72 hours, the test is valid only for the enter of the employee on the working place, or for commuters on the base of the evidence",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Od odberu vzorky pre test typu RAT (rapid antigen test) ubehlo viac ako 48 hod\u00edn. Po uplynut\u00ed 48 hod\u00edn je test platn\u00fd IBA PRE VSTUP zamestnanca na pracovisko, alebo pre pendlerov na z\u00e1klade osobitej evidencie.",
+                    "lang": "sk"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.1.0",
+            "Identifier": "TR-SK-0005",
+            "Logic": {
+                "if": [
+                    {
+                        "===": [
+                            {
+                                "var": "payload.t.0.tt"
+                            },
+                            "LP217198-3"
+                        ]
+                    },
+                    {
+                        "before": [
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "external.validationClock"
+                                    },
+                                    0,
+                                    "day"
+                                ]
+                            },
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "payload.t.0.sc"
+                                    },
+                                    48,
+                                    "hour"
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-02-06T13:42:13Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.2"
         },
         {
             "AffectedFields": [
@@ -6487,100 +6487,6 @@
         },
         {
             "AffectedFields": [
-                "v.0",
-                "v.0.dn",
-                "v.0.sd",
-                "v.0.dt",
-                "v.0.mp"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "SK",
-            "Description": [
-                {
-                    "desc": "Does not meet full vaccination criteria. At the moment of check, at least 21 and not more than 270 days must have elapsed since a single-shot of COVID-19 vaccine was administered.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Nevyhovuje podmienke plnej o\u010dkovanosti.  V \u010dase kontroly mus\u00ed uplyn\u00fa\u0165 najmenej 14 dn\u00ed, ak bola d\u00e1vka podan\u00e1 do 180 dn\u00ed od prekonania ochorenia COVID-19, alebo najmenej 21 dn\u00ed a nie viac ako 270 dn\u00ed od podania prvej d\u00e1vky o\u010dkovacej l\u00e1tky proti ochoreniu COVID-19 s jednod\u00e1vkovou sch\u00e9mou.",
-                    "lang": "sk"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.1.0",
-            "Identifier": "VR-SK-0004",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        "if": [
-                            {
-                                "===": [
-                                    {
-                                        "var": "payload.v.0.mp"
-                                    },
-                                    "EU/1/20/1525"
-                                ]
-                            },
-                            {
-                                "if": [
-                                    {
-                                        "===": [
-                                            {
-                                                "var": "payload.v.0.dn"
-                                            },
-                                            1
-                                        ]
-                                    },
-                                    {
-                                        "not-after": [
-                                            {
-                                                "plusTime": [
-                                                    {
-                                                        "var": "payload.v.0.dt"
-                                                    },
-                                                    21,
-                                                    "day"
-                                                ]
-                                            },
-                                            {
-                                                "plusTime": [
-                                                    {
-                                                        "var": "external.validationClock"
-                                                    },
-                                                    0,
-                                                    "day"
-                                                ]
-                                            },
-                                            {
-                                                "plusTime": [
-                                                    {
-                                                        "var": "payload.v.0.dt"
-                                                    },
-                                                    270,
-                                                    "day"
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    true
-                                ]
-                            },
-                            true
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-02-06T13:42:13Z",
-            "ValidTo": "2030-07-26T00:00:00Z",
-            "Version": "1.0.2"
-        },
-        {
-            "AffectedFields": [
                 "t.0",
                 "t.0.sc",
                 "t.0.tt"
@@ -8794,6 +8700,100 @@
             "Type": "Acceptance",
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.2"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
+                "v.0.dn",
+                "v.0.sd",
+                "v.0.dt",
+                "v.0.mp"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "SK",
+            "Description": [
+                {
+                    "desc": "Does not meet full vaccination criteria. At the moment of check, at least 21 and not more than 270 days must have elapsed since a single-shot of COVID-19 vaccine was administered.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Nevyhovuje podmienke plnej o\u010dkovanosti.  V \u010dase kontroly mus\u00ed uplyn\u00fa\u0165 najmenej 14 dn\u00ed, ak bola d\u00e1vka podan\u00e1 do 180 dn\u00ed od prekonania ochorenia COVID-19, alebo najmenej 21 dn\u00ed a nie viac ako 270 dn\u00ed od podania prvej d\u00e1vky o\u010dkovacej l\u00e1tky proti ochoreniu COVID-19 s jednod\u00e1vkovou sch\u00e9mou.",
+                    "lang": "sk"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.1.0",
+            "Identifier": "VR-SK-0004",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        "if": [
+                            {
+                                "===": [
+                                    {
+                                        "var": "payload.v.0.mp"
+                                    },
+                                    "EU/1/20/1525"
+                                ]
+                            },
+                            {
+                                "if": [
+                                    {
+                                        "===": [
+                                            {
+                                                "var": "payload.v.0.dn"
+                                            },
+                                            1
+                                        ]
+                                    },
+                                    {
+                                        "not-after": [
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "payload.v.0.dt"
+                                                    },
+                                                    21,
+                                                    "day"
+                                                ]
+                                            },
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "external.validationClock"
+                                                    },
+                                                    0,
+                                                    "day"
+                                                ]
+                                            },
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "payload.v.0.dt"
+                                                    },
+                                                    270,
+                                                    "day"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    true
+                                ]
+                            },
+                            true
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-02-06T13:42:13Z",
+            "ValidTo": "2030-07-26T00:00:00Z",
             "Version": "1.0.2"
         },
         {
@@ -12018,66 +12018,6 @@
         },
         {
             "AffectedFields": [
-                "v.0",
-                "v.0.dn",
-                "v.0.sd",
-                "v.0.dt",
-                "v.0.mp"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "SK",
-            "Description": [
-                {
-                    "desc": "Does not meet full vaccination criteria. A person is fully vaccinated when at least 14 days and not more than 270 days have elapsed since the first dose of COVID-19 vaccine was administered and the first dose was administered within 180 days since the person had recovered from COVID-19.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Nevyhovuje podmienke plnej o\u010dkovanosti. Osoba je plne o\u010dkovan\u00e1 najmenej 14 dn\u00ed po aplik\u00e1cii prvej d\u00e1vky o\u010dkovacej l\u00e1tky proti ochoreniu COVID-19, ak bola prv\u00e1 d\u00e1vka o\u010dkovania proti ochoreniu COVID-19 podan\u00e1 v intervale do 180 dn\u00ed od prekonania ochorenia COVID-19, av\u0161ak nie viac ako 270 dn\u00ed po aplik\u00e1cii poslednej d\u00e1vky.",
-                    "lang": "sk"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.1.0",
-            "Identifier": "VR-SK-0006",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        "if": [
-                            {
-                                ">": [
-                                    {
-                                        "var": "payload.v.0.sd"
-                                    },
-                                    1
-                                ]
-                            },
-                            {
-                                ">=": [
-                                    {
-                                        "var": "payload.v.0.dn"
-                                    },
-                                    {
-                                        "var": "payload.v.0.sd"
-                                    }
-                                ]
-                            },
-                            true
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-02-06T13:42:13Z",
-            "ValidTo": "2030-07-26T00:00:00Z",
-            "Version": "1.0.2"
-        },
-        {
-            "AffectedFields": [
                 "t.1"
             ],
             "CertificateType": "Test",
@@ -14206,6 +14146,66 @@
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
+                "v.0.dn",
+                "v.0.sd",
+                "v.0.dt",
+                "v.0.mp"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "SK",
+            "Description": [
+                {
+                    "desc": "Does not meet full vaccination criteria. A person is fully vaccinated when at least 14 days and not more than 270 days have elapsed since the first dose of COVID-19 vaccine was administered and the first dose was administered within 180 days since the person had recovered from COVID-19.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Nevyhovuje podmienke plnej o\u010dkovanosti. Osoba je plne o\u010dkovan\u00e1 najmenej 14 dn\u00ed po aplik\u00e1cii prvej d\u00e1vky o\u010dkovacej l\u00e1tky proti ochoreniu COVID-19, ak bola prv\u00e1 d\u00e1vka o\u010dkovania proti ochoreniu COVID-19 podan\u00e1 v intervale do 180 dn\u00ed od prekonania ochorenia COVID-19, av\u0161ak nie viac ako 270 dn\u00ed po aplik\u00e1cii poslednej d\u00e1vky.",
+                    "lang": "sk"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.1.0",
+            "Identifier": "VR-SK-0006",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        "if": [
+                            {
+                                ">": [
+                                    {
+                                        "var": "payload.v.0.sd"
+                                    },
+                                    1
+                                ]
+                            },
+                            {
+                                ">=": [
+                                    {
+                                        "var": "payload.v.0.dn"
+                                    },
+                                    {
+                                        "var": "payload.v.0.sd"
+                                    }
+                                ]
+                            },
+                            true
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-02-06T13:42:13Z",
+            "ValidTo": "2030-07-26T00:00:00Z",
+            "Version": "1.0.2"
         },
         {
             "AffectedFields": [
@@ -17770,51 +17770,6 @@
         {
             "AffectedFields": [
                 "t.0",
-                "t.0.tt"
-            ],
-            "CertificateType": "Test",
-            "Country": "SK",
-            "Description": [
-                {
-                    "desc": "The test type must be one of the value set list (RAT OR NAA).",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Nepovolen\u00fd typ testu.",
-                    "lang": "sk"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.1.0",
-            "Identifier": "TR-SK-0001",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.t.0"
-                    },
-                    {
-                        "in": [
-                            {
-                                "var": "payload.t.0.tt"
-                            },
-                            [
-                                "LP217198-3",
-                                "LP6464-4"
-                            ]
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-02-06T13:42:12Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.2"
-        },
-        {
-            "AffectedFields": [
-                "t.0",
                 "t.0.sc",
                 "t.0.tt"
             ],
@@ -20689,6 +20644,51 @@
             "Type": "Acceptance",
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.2"
+        },
+        {
+            "AffectedFields": [
+                "t.0",
+                "t.0.tt"
+            ],
+            "CertificateType": "Test",
+            "Country": "SK",
+            "Description": [
+                {
+                    "desc": "The test type must be one of the value set list (RAT OR NAA).",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Nepovolen\u00fd typ testu.",
+                    "lang": "sk"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.1.0",
+            "Identifier": "TR-SK-0001",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.t.0"
+                    },
+                    {
+                        "in": [
+                            {
+                                "var": "payload.t.0.tt"
+                            },
+                            [
+                                "LP217198-3",
+                                "LP6464-4"
+                            ]
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-02-06T13:42:12Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
             "Version": "1.0.2"
         },
         {
@@ -34905,112 +34905,6 @@
         },
         {
             "AffectedFields": [
-                "r",
-                "t",
-                "v"
-            ],
-            "CertificateType": "General",
-            "Country": "SK",
-            "Description": [
-                {
-                    "desc": "Exactly one type of event.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "QR k\u00f3d obsahuje star\u0161iu verziu preukazu, ktor\u00fa nie je mo\u017en\u00e9 vyhodnoti\u0165.",
-                    "lang": "sk"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.1.0",
-            "Identifier": "GR-SK-0000",
-            "Logic": {
-                "===": [
-                    {
-                        "reduce": [
-                            [
-                                {
-                                    "var": "payload.r"
-                                },
-                                {
-                                    "var": "payload.t"
-                                },
-                                {
-                                    "var": "payload.v"
-                                }
-                            ],
-                            {
-                                "+": [
-                                    {
-                                        "var": "accumulator"
-                                    },
-                                    {
-                                        "if": [
-                                            {
-                                                "var": "current.0"
-                                            },
-                                            1,
-                                            0
-                                        ]
-                                    }
-                                ]
-                            },
-                            0
-                        ]
-                    },
-                    1
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-02-06T13:42:12Z",
-            "ValidTo": "2030-07-26T00:00:00Z",
-            "Version": "1.0.2"
-        },
-        {
-            "AffectedFields": [
-                "t.0",
-                "t.0.tr"
-            ],
-            "CertificateType": "Test",
-            "Country": "SK",
-            "Description": [
-                {
-                    "desc": "Test result must be negative (\"not detected\").",
-                    "lang": "en"
-                },
-                {
-                    "desc": "V\u00fdsledok testu mus\u00ed by\u0165 negat\u00edvny.",
-                    "lang": "sk"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-SK-0003",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.t.0"
-                    },
-                    {
-                        "===": [
-                            {
-                                "var": "payload.t.0.tr"
-                            },
-                            "260415000"
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-02-06T13:42:13Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.2"
-        },
-        {
-            "AffectedFields": [
                 "t.0.tg"
             ],
             "CertificateType": "General",
@@ -36665,6 +36559,112 @@
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "r",
+                "t",
+                "v"
+            ],
+            "CertificateType": "General",
+            "Country": "SK",
+            "Description": [
+                {
+                    "desc": "Exactly one type of event.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "QR k\u00f3d obsahuje star\u0161iu verziu preukazu, ktor\u00fa nie je mo\u017en\u00e9 vyhodnoti\u0165.",
+                    "lang": "sk"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.1.0",
+            "Identifier": "GR-SK-0000",
+            "Logic": {
+                "===": [
+                    {
+                        "reduce": [
+                            [
+                                {
+                                    "var": "payload.r"
+                                },
+                                {
+                                    "var": "payload.t"
+                                },
+                                {
+                                    "var": "payload.v"
+                                }
+                            ],
+                            {
+                                "+": [
+                                    {
+                                        "var": "accumulator"
+                                    },
+                                    {
+                                        "if": [
+                                            {
+                                                "var": "current.0"
+                                            },
+                                            1,
+                                            0
+                                        ]
+                                    }
+                                ]
+                            },
+                            0
+                        ]
+                    },
+                    1
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-02-06T13:42:12Z",
+            "ValidTo": "2030-07-26T00:00:00Z",
+            "Version": "1.0.2"
+        },
+        {
+            "AffectedFields": [
+                "t.0",
+                "t.0.tr"
+            ],
+            "CertificateType": "Test",
+            "Country": "SK",
+            "Description": [
+                {
+                    "desc": "Test result must be negative (\"not detected\").",
+                    "lang": "en"
+                },
+                {
+                    "desc": "V\u00fdsledok testu mus\u00ed by\u0165 negat\u00edvny.",
+                    "lang": "sk"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-SK-0003",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.t.0"
+                    },
+                    {
+                        "===": [
+                            {
+                                "var": "payload.t.0.tr"
+                            },
+                            "260415000"
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-02-06T13:42:13Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.2"
         },
         {
             "AffectedFields": [
@@ -39741,67 +39741,6 @@
         },
         {
             "AffectedFields": [
-                "t.0.sc",
-                "t.0.tt"
-            ],
-            "CertificateType": "Test",
-            "Country": "SK",
-            "Description": [
-                {
-                    "desc": "DateTime of Sample Collection must be less than 72 hours before the Verification Datetime for a test of type NAA (PCR test). After time limit expiration of 72 hours, the test is valid only for the enter of the employee on the working place, or for commuters on the base of the evidence",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Od odberu vzorky pre test typu NAA (PCR test) ubehlo viac ako 72 hod\u00edn. Po uplynut\u00ed 72 hod\u00edn je test platn\u00fd IBA PRE VSTUP zamestnanca na pracovisko, alebo pre pendlerov na z\u00e1klade osobitej evidencie.",
-                    "lang": "sk"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.1.0",
-            "Identifier": "TR-SK-0006",
-            "Logic": {
-                "if": [
-                    {
-                        "===": [
-                            {
-                                "var": "payload.t.0.tt"
-                            },
-                            "LP6464-4"
-                        ]
-                    },
-                    {
-                        "before": [
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "external.validationClock"
-                                    },
-                                    0,
-                                    "day"
-                                ]
-                            },
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "payload.t.0.sc"
-                                    },
-                                    72,
-                                    "hour"
-                                ]
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-02-06T13:42:13Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.2"
-        },
-        {
-            "AffectedFields": [
                 "t"
             ],
             "CertificateType": "General",
@@ -41842,6 +41781,67 @@
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "t.0.sc",
+                "t.0.tt"
+            ],
+            "CertificateType": "Test",
+            "Country": "SK",
+            "Description": [
+                {
+                    "desc": "DateTime of Sample Collection must be less than 72 hours before the Verification Datetime for a test of type NAA (PCR test). After time limit expiration of 72 hours, the test is valid only for the enter of the employee on the working place, or for commuters on the base of the evidence",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Od odberu vzorky pre test typu NAA (PCR test) ubehlo viac ako 72 hod\u00edn. Po uplynut\u00ed 72 hod\u00edn je test platn\u00fd IBA PRE VSTUP zamestnanca na pracovisko, alebo pre pendlerov na z\u00e1klade osobitej evidencie.",
+                    "lang": "sk"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.1.0",
+            "Identifier": "TR-SK-0006",
+            "Logic": {
+                "if": [
+                    {
+                        "===": [
+                            {
+                                "var": "payload.t.0.tt"
+                            },
+                            "LP6464-4"
+                        ]
+                    },
+                    {
+                        "before": [
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "external.validationClock"
+                                    },
+                                    0,
+                                    "day"
+                                ]
+                            },
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "payload.t.0.sc"
+                                    },
+                                    72,
+                                    "hour"
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-02-06T13:42:13Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.2"
         },
         {
             "AffectedFields": [
@@ -50993,146 +50993,6 @@
         },
         {
             "AffectedFields": [
-                "t.0.ma",
-                "t.0.tt"
-            ],
-            "CertificateType": "Test",
-            "Country": "SK",
-            "Description": [
-                {
-                    "desc": "If the test type is \"RAT\" then the \"test product and manufacturer\" MUST be in the valueset list, if it's NAA return true.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Nepovolen\u00fd v\u00fdrobca testu.",
-                    "lang": "sk"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.1.0",
-            "Identifier": "TR-SK-0008",
-            "Logic": {
-                "if": [
-                    {
-                        "===": [
-                            {
-                                "var": "payload.t.0.tt"
-                            },
-                            "LP217198-3"
-                        ]
-                    },
-                    {
-                        "in": [
-                            {
-                                "var": "payload.t.0.ma"
-                            },
-                            {
-                                "var": "external.valueSets.covid-19-lab-test-manufacturer-and-name"
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-02-06T13:42:13Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.2"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
-                "v.0.dn",
-                "v.0.sd",
-                "v.0.dt",
-                "v.0.mp"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "SK",
-            "Description": [
-                {
-                    "desc": "Does not meet full vaccination criteria. At the moment of check, at least 14 days must have elapsed since the second dose of COVID-19 vaccine was administered. For full vaccination, both, vaccination certificate of the first dose administration and digital certificate of recovery need to be considered.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Nevyhovuje podmienke plnej o\u010dkovanosti. Od podania druhej d\u00e1vky o\u010dkovacej l\u00e1tky proti ochoreniu COVID-19 neuplynulo najmenej 14 dn\u00ed. Pre pln\u00fa o\u010dkovanos\u0165 je nutn\u00e9 pos\u00fadi\u0165 doklad o podan\u00ed prvej d\u00e1vky v kombin\u00e1cii s dokladom o prekonan\u00ed COVID-19.",
-                    "lang": "sk"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.1.0",
-            "Identifier": "VR-SK-0005",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        "if": [
-                            {
-                                "in": [
-                                    {
-                                        "var": "payload.v.0.mp"
-                                    },
-                                    [
-                                        "EU/1/20/1528",
-                                        "EU/1/20/1507",
-                                        "EU/1/21/1529",
-                                        "Sputnik-V",
-                                        "EU/1/21/1618"
-                                    ]
-                                ]
-                            },
-                            {
-                                "if": [
-                                    {
-                                        "===": [
-                                            {
-                                                "var": "payload.v.0.dn"
-                                            },
-                                            2
-                                        ]
-                                    },
-                                    {
-                                        "not-before": [
-                                            {
-                                                "plusTime": [
-                                                    {
-                                                        "var": "external.validationClock"
-                                                    },
-                                                    0,
-                                                    "day"
-                                                ]
-                                            },
-                                            {
-                                                "plusTime": [
-                                                    {
-                                                        "var": "payload.v.0.dt"
-                                                    },
-                                                    14,
-                                                    "day"
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    true
-                                ]
-                            },
-                            true
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-02-06T13:42:13Z",
-            "ValidTo": "2030-07-26T00:00:00Z",
-            "Version": "1.0.2"
-        },
-        {
-            "AffectedFields": [
                 "t",
                 "v",
                 "r"
@@ -53271,6 +53131,146 @@
             "Type": "Acceptance",
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.2"
+        },
+        {
+            "AffectedFields": [
+                "t.0.ma",
+                "t.0.tt"
+            ],
+            "CertificateType": "Test",
+            "Country": "SK",
+            "Description": [
+                {
+                    "desc": "If the test type is \"RAT\" then the \"test product and manufacturer\" MUST be in the valueset list, if it's NAA return true.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Nepovolen\u00fd v\u00fdrobca testu.",
+                    "lang": "sk"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.1.0",
+            "Identifier": "TR-SK-0008",
+            "Logic": {
+                "if": [
+                    {
+                        "===": [
+                            {
+                                "var": "payload.t.0.tt"
+                            },
+                            "LP217198-3"
+                        ]
+                    },
+                    {
+                        "in": [
+                            {
+                                "var": "payload.t.0.ma"
+                            },
+                            {
+                                "var": "external.valueSets.covid-19-lab-test-manufacturer-and-name"
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-02-06T13:42:13Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.2"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
+                "v.0.dn",
+                "v.0.sd",
+                "v.0.dt",
+                "v.0.mp"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "SK",
+            "Description": [
+                {
+                    "desc": "Does not meet full vaccination criteria. At the moment of check, at least 14 days must have elapsed since the second dose of COVID-19 vaccine was administered. For full vaccination, both, vaccination certificate of the first dose administration and digital certificate of recovery need to be considered.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Nevyhovuje podmienke plnej o\u010dkovanosti. Od podania druhej d\u00e1vky o\u010dkovacej l\u00e1tky proti ochoreniu COVID-19 neuplynulo najmenej 14 dn\u00ed. Pre pln\u00fa o\u010dkovanos\u0165 je nutn\u00e9 pos\u00fadi\u0165 doklad o podan\u00ed prvej d\u00e1vky v kombin\u00e1cii s dokladom o prekonan\u00ed COVID-19.",
+                    "lang": "sk"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.1.0",
+            "Identifier": "VR-SK-0005",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    {
+                                        "var": "payload.v.0.mp"
+                                    },
+                                    [
+                                        "EU/1/20/1528",
+                                        "EU/1/20/1507",
+                                        "EU/1/21/1529",
+                                        "Sputnik-V",
+                                        "EU/1/21/1618"
+                                    ]
+                                ]
+                            },
+                            {
+                                "if": [
+                                    {
+                                        "===": [
+                                            {
+                                                "var": "payload.v.0.dn"
+                                            },
+                                            2
+                                        ]
+                                    },
+                                    {
+                                        "not-before": [
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "external.validationClock"
+                                                    },
+                                                    0,
+                                                    "day"
+                                                ]
+                                            },
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "payload.v.0.dt"
+                                                    },
+                                                    14,
+                                                    "day"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    true
+                                ]
+                            },
+                            true
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-02-06T13:42:13Z",
+            "ValidTo": "2030-07-26T00:00:00Z",
             "Version": "1.0.2"
         },
         {
@@ -56609,55 +56609,6 @@
         {
             "AffectedFields": [
                 "v.0",
-                "v.0.mp"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "SK",
-            "Description": [
-                {
-                    "desc": "Only the following vaccines are accepted (EMA or \u0160\u00daKL): AstraZeneca, Biontech, Janssen, Moderna, Sputnik-V, Nuvaxovid.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Povolen\u00e9 s\u00fa iba vakc\u00edny (EMA alebo \u0160\u00daKL): AstraZeneca, Biontech, Janssen, Moderna, Sputnik-V, Nuvaxovid.",
-                    "lang": "sk"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.1.0",
-            "Identifier": "VR-SK-0001",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        "in": [
-                            {
-                                "var": "payload.v.0.mp"
-                            },
-                            [
-                                "EU/1/20/1528",
-                                "EU/1/20/1507",
-                                "EU/1/21/1529",
-                                "EU/1/20/1525",
-                                "Sputnik-V",
-                                "EU/1/21/1618"
-                            ]
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-02-06T13:42:13Z",
-            "ValidTo": "2030-07-26T00:00:00Z",
-            "Version": "1.0.2"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
                 "v.0.mp",
                 "v.0.dt"
             ],
@@ -58548,6 +58499,55 @@
             "Type": "Acceptance",
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
+            "Version": "1.0.2"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
+                "v.0.mp"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "SK",
+            "Description": [
+                {
+                    "desc": "Only the following vaccines are accepted (EMA or \u0160\u00daKL): AstraZeneca, Biontech, Janssen, Moderna, Sputnik-V, Nuvaxovid.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Povolen\u00e9 s\u00fa iba vakc\u00edny (EMA alebo \u0160\u00daKL): AstraZeneca, Biontech, Janssen, Moderna, Sputnik-V, Nuvaxovid.",
+                    "lang": "sk"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.1.0",
+            "Identifier": "VR-SK-0001",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        "in": [
+                            {
+                                "var": "payload.v.0.mp"
+                            },
+                            [
+                                "EU/1/20/1528",
+                                "EU/1/20/1507",
+                                "EU/1/21/1529",
+                                "EU/1/20/1525",
+                                "Sputnik-V",
+                                "EU/1/21/1618"
+                            ]
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-02-06T13:42:13Z",
+            "ValidTo": "2030-07-26T00:00:00Z",
             "Version": "1.0.2"
         },
         {
@@ -66996,94 +66996,6 @@
             "Version": "1.1.0"
         },
         {
-            "AffectedFields": [
-                "t.1"
-            ],
-            "CertificateType": "Test",
-            "Country": "SK",
-            "Description": [
-                {
-                    "desc": "At most one t-event.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "QR k\u00f3d obsahuje viac preukazov o testovan\u00ed. Nie je mo\u017en\u00e9 ho overi\u0165.",
-                    "lang": "sk"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.1.0",
-            "Identifier": "TR-SK-0000",
-            "Logic": {
-                "!": [
-                    {
-                        "var": "payload.t.1"
-                    }
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-02-06T13:42:12Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.2"
-        },
-        {
-            "AffectedFields": [
-                "r.0",
-                "r.0.fr"
-            ],
-            "CertificateType": "Recovery",
-            "Country": "SK",
-            "Description": [
-                {
-                    "desc": "Proof of recovery COVID-19 must be no more than 180 days ago.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Od prekonania COVID-19 ubehlo viac ako 180 dn\u00ed.",
-                    "lang": "sk"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.1.0",
-            "Identifier": "RR-SK-0002",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.r.0"
-                    },
-                    {
-                        "not-after": [
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "external.validationClock"
-                                    },
-                                    0,
-                                    "day"
-                                ]
-                            },
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "payload.r.0.fr"
-                                    },
-                                    180,
-                                    "day"
-                                ]
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-02-06T13:42:12Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.2"
-        },
-        {
             "AffectedFields": [],
             "CertificateType": "General",
             "Country": "RE",
@@ -69048,6 +68960,94 @@
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "t.1"
+            ],
+            "CertificateType": "Test",
+            "Country": "SK",
+            "Description": [
+                {
+                    "desc": "At most one t-event.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "QR k\u00f3d obsahuje viac preukazov o testovan\u00ed. Nie je mo\u017en\u00e9 ho overi\u0165.",
+                    "lang": "sk"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.1.0",
+            "Identifier": "TR-SK-0000",
+            "Logic": {
+                "!": [
+                    {
+                        "var": "payload.t.1"
+                    }
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-02-06T13:42:12Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.2"
+        },
+        {
+            "AffectedFields": [
+                "r.0",
+                "r.0.fr"
+            ],
+            "CertificateType": "Recovery",
+            "Country": "SK",
+            "Description": [
+                {
+                    "desc": "Proof of recovery COVID-19 must be no more than 180 days ago.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Od prekonania COVID-19 ubehlo viac ako 180 dn\u00ed.",
+                    "lang": "sk"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.1.0",
+            "Identifier": "RR-SK-0002",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.r.0"
+                    },
+                    {
+                        "not-after": [
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "external.validationClock"
+                                    },
+                                    0,
+                                    "day"
+                                ]
+                            },
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "payload.r.0.fr"
+                                    },
+                                    180,
+                                    "day"
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-02-06T13:42:12Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.2"
         },
         {
             "AffectedFields": [
@@ -72612,199 +72612,6 @@
         },
         {
             "AffectedFields": [
-                "r.0.tg",
-                "t.0.tg",
-                "v.0.tg"
-            ],
-            "CertificateType": "General",
-            "Country": "SK",
-            "Description": [
-                {
-                    "desc": "The \"disease or agent targeted\" must be COVID-19 of the value set list.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "QR k\u00f3d neobsahuje validn\u00fd digit\u00e1lny COVID preukaz E\u00da.",
-                    "lang": "sk"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.1.0",
-            "Identifier": "GR-SK-0001",
-            "Logic": {
-                "!": [
-                    {
-                        "and": [
-                            {
-                                "!": [
-                                    {
-                                        "in": [
-                                            {
-                                                "var": "payload.r.0.tg"
-                                            },
-                                            {
-                                                "var": "external.valueSets.disease-agent-targeted"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "!": [
-                                    {
-                                        "in": [
-                                            {
-                                                "var": "payload.t.0.tg"
-                                            },
-                                            {
-                                                "var": "external.valueSets.disease-agent-targeted"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "!": [
-                                    {
-                                        "in": [
-                                            {
-                                                "var": "payload.v.0.tg"
-                                            },
-                                            {
-                                                "var": "external.valueSets.disease-agent-targeted"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-02-06T13:42:12Z",
-            "ValidTo": "2030-07-26T00:00:00Z",
-            "Version": "1.0.2"
-        },
-        {
-            "AffectedFields": [
-                "v.1"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "SK",
-            "Description": [
-                {
-                    "desc": "At most one v-event.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "QR k\u00f3d obsahuje viac preukazov o vakcin\u00e1cii. Nie je mo\u017en\u00e9 ho overi\u0165.",
-                    "lang": "sk"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.1.0",
-            "Identifier": "VR-SK-0000",
-            "Logic": {
-                "!": [
-                    {
-                        "var": "payload.v.1"
-                    }
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-02-06T13:42:13Z",
-            "ValidTo": "2030-07-26T00:00:00Z",
-            "Version": "1.0.2"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
-                "v.0.dn",
-                "v.0.sd",
-                "v.0.dt"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "SK",
-            "Description": [
-                {
-                    "desc": "Does not meet full vaccination criteria. At the moment of check, at least 14 days must have elapsed since the first dose of COVID-19 vaccine was administered.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Nevyhovuje podmienke plnej o\u010dkovanosti. V \u010dase kontroly mus\u00ed uplyn\u00fa\u0165 najmenej 14 dn\u00ed od podania o\u010dkovacej l\u00e1tky.",
-                    "lang": "sk"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.1.0",
-            "Identifier": "VR-SK-0002",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        "if": [
-                            {
-                                ">=": [
-                                    {
-                                        "var": "payload.v.0.sd"
-                                    },
-                                    1
-                                ]
-                            },
-                            {
-                                "if": [
-                                    {
-                                        "===": [
-                                            {
-                                                "var": "payload.v.0.dn"
-                                            },
-                                            1
-                                        ]
-                                    },
-                                    {
-                                        "not-before": [
-                                            {
-                                                "plusTime": [
-                                                    {
-                                                        "var": "external.validationClock"
-                                                    },
-                                                    0,
-                                                    "day"
-                                                ]
-                                            },
-                                            {
-                                                "plusTime": [
-                                                    {
-                                                        "var": "payload.v.0.dt"
-                                                    },
-                                                    14,
-                                                    "day"
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    true
-                                ]
-                            },
-                            true
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-02-06T13:42:13Z",
-            "ValidTo": "2030-07-26T00:00:00Z",
-            "Version": "1.0.2"
-        },
-        {
-            "AffectedFields": [
                 "t.0",
                 "t.0.sc",
                 "t.0.tt",
@@ -74685,6 +74492,83 @@
         },
         {
             "AffectedFields": [
+                "r.0.tg",
+                "t.0.tg",
+                "v.0.tg"
+            ],
+            "CertificateType": "General",
+            "Country": "SK",
+            "Description": [
+                {
+                    "desc": "The \"disease or agent targeted\" must be COVID-19 of the value set list.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "QR k\u00f3d neobsahuje validn\u00fd digit\u00e1lny COVID preukaz E\u00da.",
+                    "lang": "sk"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.1.0",
+            "Identifier": "GR-SK-0001",
+            "Logic": {
+                "!": [
+                    {
+                        "and": [
+                            {
+                                "!": [
+                                    {
+                                        "in": [
+                                            {
+                                                "var": "payload.r.0.tg"
+                                            },
+                                            {
+                                                "var": "external.valueSets.disease-agent-targeted"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "!": [
+                                    {
+                                        "in": [
+                                            {
+                                                "var": "payload.t.0.tg"
+                                            },
+                                            {
+                                                "var": "external.valueSets.disease-agent-targeted"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "!": [
+                                    {
+                                        "in": [
+                                            {
+                                                "var": "payload.v.0.tg"
+                                            },
+                                            {
+                                                "var": "external.valueSets.disease-agent-targeted"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-02-06T13:42:12Z",
+            "ValidTo": "2030-07-26T00:00:00Z",
+            "Version": "1.0.2"
+        },
+        {
+            "AffectedFields": [
                 "v.0",
                 "v.0.mp"
             ],
@@ -74731,6 +74615,122 @@
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "v.1"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "SK",
+            "Description": [
+                {
+                    "desc": "At most one v-event.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "QR k\u00f3d obsahuje viac preukazov o vakcin\u00e1cii. Nie je mo\u017en\u00e9 ho overi\u0165.",
+                    "lang": "sk"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.1.0",
+            "Identifier": "VR-SK-0000",
+            "Logic": {
+                "!": [
+                    {
+                        "var": "payload.v.1"
+                    }
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-02-06T13:42:13Z",
+            "ValidTo": "2030-07-26T00:00:00Z",
+            "Version": "1.0.2"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
+                "v.0.dn",
+                "v.0.sd",
+                "v.0.dt"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "SK",
+            "Description": [
+                {
+                    "desc": "Does not meet full vaccination criteria. At the moment of check, at least 14 days must have elapsed since the first dose of COVID-19 vaccine was administered.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Nevyhovuje podmienke plnej o\u010dkovanosti. V \u010dase kontroly mus\u00ed uplyn\u00fa\u0165 najmenej 14 dn\u00ed od podania o\u010dkovacej l\u00e1tky.",
+                    "lang": "sk"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.1.0",
+            "Identifier": "VR-SK-0002",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        "if": [
+                            {
+                                ">=": [
+                                    {
+                                        "var": "payload.v.0.sd"
+                                    },
+                                    1
+                                ]
+                            },
+                            {
+                                "if": [
+                                    {
+                                        "===": [
+                                            {
+                                                "var": "payload.v.0.dn"
+                                            },
+                                            1
+                                        ]
+                                    },
+                                    {
+                                        "not-before": [
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "external.validationClock"
+                                                    },
+                                                    0,
+                                                    "day"
+                                                ]
+                                            },
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "payload.v.0.dt"
+                                                    },
+                                                    14,
+                                                    "day"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    true
+                                ]
+                            },
+                            true
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-02-06T13:42:13Z",
+            "ValidTo": "2030-07-26T00:00:00Z",
+            "Version": "1.0.2"
         },
         {
             "AffectedFields": [
@@ -78268,106 +78268,6 @@
         },
         {
             "AffectedFields": [
-                "v.0",
-                "v.0.dn",
-                "v.0.sd",
-                "v.0.dt",
-                "v.0.mp"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "SK",
-            "Description": [
-                {
-                    "desc": "Verification Datetime must be less than 270 days after vaccination date (and vaccination date not in the future).",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Nevyhovuje podmienke plnej o\u010dkovanosti. Osoba je plne o\u010dkovan\u00e1 proti ochoreniu COVID-19 po aplik\u00e1cii prvej d\u00e1vky s jednod\u00e1vkovou sch\u00e9mou, alebo druhej d\u00e1vky o\u010dkovacej l\u00e1tky s dvojd\u00e1vkovou sch\u00e9mou, av\u0161ak nie viac ako 270 dn\u00ed po aplik\u00e1cii poslednej d\u00e1vky.",
-                    "lang": "sk"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.1.0",
-            "Identifier": "VR-SK-0007",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        "if": [
-                            {
-                                "in": [
-                                    {
-                                        "var": "payload.v.0.mp"
-                                    },
-                                    [
-                                        "EU/1/20/1528",
-                                        "EU/1/20/1507",
-                                        "EU/1/21/1529",
-                                        "Sputnik-V",
-                                        "EU/1/21/1618"
-                                    ]
-                                ]
-                            },
-                            {
-                                "if": [
-                                    {
-                                        "<=": [
-                                            {
-                                                "var": "payload.v.0.dn"
-                                            },
-                                            2
-                                        ]
-                                    },
-                                    {
-                                        "not-after": [
-                                            {
-                                                "plusTime": [
-                                                    {
-                                                        "var": "payload.v.0.dt"
-                                                    },
-                                                    0,
-                                                    "day"
-                                                ]
-                                            },
-                                            {
-                                                "plusTime": [
-                                                    {
-                                                        "var": "external.validationClock"
-                                                    },
-                                                    0,
-                                                    "day"
-                                                ]
-                                            },
-                                            {
-                                                "plusTime": [
-                                                    {
-                                                        "var": "payload.v.0.dt"
-                                                    },
-                                                    270,
-                                                    "day"
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    true
-                                ]
-                            },
-                            true
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-02-06T13:42:13Z",
-            "ValidTo": "2030-07-26T00:00:00Z",
-            "Version": "1.0.2"
-        },
-        {
-            "AffectedFields": [
                 "t.0",
                 "t.0.sc",
                 "t.0.tt",
@@ -79071,6 +78971,106 @@
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
+                "v.0.dn",
+                "v.0.sd",
+                "v.0.dt",
+                "v.0.mp"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "SK",
+            "Description": [
+                {
+                    "desc": "Verification Datetime must be less than 270 days after vaccination date (and vaccination date not in the future).",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Nevyhovuje podmienke plnej o\u010dkovanosti. Osoba je plne o\u010dkovan\u00e1 proti ochoreniu COVID-19 po aplik\u00e1cii prvej d\u00e1vky s jednod\u00e1vkovou sch\u00e9mou, alebo druhej d\u00e1vky o\u010dkovacej l\u00e1tky s dvojd\u00e1vkovou sch\u00e9mou, av\u0161ak nie viac ako 270 dn\u00ed po aplik\u00e1cii poslednej d\u00e1vky.",
+                    "lang": "sk"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.1.0",
+            "Identifier": "VR-SK-0007",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    {
+                                        "var": "payload.v.0.mp"
+                                    },
+                                    [
+                                        "EU/1/20/1528",
+                                        "EU/1/20/1507",
+                                        "EU/1/21/1529",
+                                        "Sputnik-V",
+                                        "EU/1/21/1618"
+                                    ]
+                                ]
+                            },
+                            {
+                                "if": [
+                                    {
+                                        "<=": [
+                                            {
+                                                "var": "payload.v.0.dn"
+                                            },
+                                            2
+                                        ]
+                                    },
+                                    {
+                                        "not-after": [
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "payload.v.0.dt"
+                                                    },
+                                                    0,
+                                                    "day"
+                                                ]
+                                            },
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "external.validationClock"
+                                                    },
+                                                    0,
+                                                    "day"
+                                                ]
+                                            },
+                                            {
+                                                "plusTime": [
+                                                    {
+                                                        "var": "payload.v.0.dt"
+                                                    },
+                                                    270,
+                                                    "day"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    true
+                                ]
+                            },
+                            true
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-02-06T13:42:13Z",
+            "ValidTo": "2030-07-26T00:00:00Z",
+            "Version": "1.0.2"
         },
         {
             "AffectedFields": [
