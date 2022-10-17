@@ -2026,12 +2026,12 @@
                 "version": "2022-08-18 00:00:00 CEST"
             },
             "1162": {
-                "active": false,
+                "active": true,
                 "display": "Nal von minden GmbH, NADAL COVID-19 Ag Test",
                 "lang": "en",
                 "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
                 "validUntil": null,
-                "version": "2022-07-09 00:00:00 CEST"
+                "version": "2022-10-14 00:00:00 CEST"
             },
             "1173": {
                 "active": true,
@@ -2410,12 +2410,12 @@
                 "version": "2022-07-09 00:00:00 CEST"
             },
             "1437": {
-                "active": false,
+                "active": true,
                 "display": "Guangzhou Wondfo Biotech Co. Ltd., Wondfo 2019-nCoV Antigen Test (Lateral Flow Method)",
                 "lang": "en",
                 "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
                 "validUntil": null,
-                "version": "2022-07-09 00:00:00 CEST"
+                "version": "2022-10-14 00:00:00 CEST"
             },
             "1443": {
                 "active": true,
@@ -2434,12 +2434,12 @@
                 "version": "2022-10-05 00:00:00 CEST"
             },
             "1456": {
-                "active": false,
+                "active": true,
                 "display": "Xiamen Wiz Biotech Co. Ltd., SARS-CoV-2 Antigen Rapid Test",
                 "lang": "en",
                 "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
                 "validUntil": null,
-                "version": "2022-07-09 00:00:00 CEST"
+                "version": "2022-10-14 00:00:00 CEST"
             },
             "1457": {
                 "active": true,
@@ -3025,6 +3025,14 @@
                 "validUntil": null,
                 "version": "2022-10-05 00:00:00 CEST"
             },
+            "1963": {
+                "active": true,
+                "display": "RapiGEN Inc., BIOCREDIT COVID-19 Ag Test Nasal",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2022-10-14 00:00:00 CEST"
+            },
             "1967": {
                 "active": true,
                 "display": "Shenzhen Microprofit Biotech Co. Ltd., SARS-CoV-2 Antigen Test Kit (Colloidal Gold Chromatographic Immunoassay)",
@@ -3266,12 +3274,12 @@
                 "version": "2021-07-13 05:43:08 CEST"
             },
             "2108": {
-                "active": false,
+                "active": true,
                 "display": "AESKU.DIAGNOSTICS GmbH & Co. KG, AESKU.RAPID SARS-CoV-2",
                 "lang": "en",
                 "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
                 "validUntil": null,
-                "version": "2022-07-09 00:00:00 CEST"
+                "version": "2022-10-14 00:00:00 CEST"
             },
             "2109": {
                 "active": true,
@@ -3870,8 +3878,8 @@
                 "display": "Beijing Hotgen Biotech Co. Ltd., Coronavirus (2019-nCoV)-Antigentest",
                 "lang": "en",
                 "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
-                "validUntil": null,
-                "version": "2022-01-21 00:00:00 CET"
+                "validUntil": "2022-12-11 00:00:00 CET",
+                "version": "2022-10-14 00:00:00 CEST"
             },
             "2812": {
                 "active": true,
@@ -3992,6 +4000,22 @@
                 "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
                 "validUntil": null,
                 "version": "2022-06-10 00:00:00 CEST"
+            },
+            "3143": {
+                "active": true,
+                "display": "VivaChek Biotech (Hangzhou) Co. Ltd., Rapid Gold Pro SARS-CoV-2 AG Test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2022-10-14 00:00:00 CEST"
+            },
+            "3153": {
+                "active": true,
+                "display": "Huachenyang (Shenzhen) Technology Co. Ltd., COVID-19 Ag Rapid Test Kit",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2022-10-14 00:00:00 CEST"
             },
             "3190": {
                 "active": true,
