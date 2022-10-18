@@ -2998,6 +2998,71 @@
         },
         {
             "AffectedFields": [
+                "t.0.sc",
+                "t.0.tt"
+            ],
+            "CertificateType": "Test",
+            "Country": "PL",
+            "Description": [
+                {
+                    "desc": "Data i godzina pobrania pr\u00f3bki musi by\u0107 mniejsza ni\u017c 48 godzin przed dat\u0105 weryfikacji w przypadku testu typu RAT (szybki test antygenowy).",
+                    "lang": "pl"
+                },
+                {
+                    "desc": "DateTime of Sample Collection must be less than 48 hours before the Verification Datetime for a test of type RAT (rapid antigen test).",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Die Probenahme f\u00fcr einen Antigen-Test (z.B. Schnelltest) darf maximal 48 Stunden zur\u00fcckliegen.",
+                    "lang": "de"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-PL-0003",
+            "Logic": {
+                "if": [
+                    {
+                        "===": [
+                            {
+                                "var": "payload.t.0.tt"
+                            },
+                            "LP217198-3"
+                        ]
+                    },
+                    {
+                        "before": [
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "external.validationClock"
+                                    },
+                                    0,
+                                    "day"
+                                ]
+                            },
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "payload.t.0.sc"
+                                    },
+                                    48,
+                                    "hour"
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-11T00:00:00Z",
+            "ValidTo": "2030-10-11T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
                 "t.1"
             ],
             "CertificateType": "Test",
@@ -3088,71 +3153,6 @@
             "Type": "Acceptance",
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "t.0.sc",
-                "t.0.tt"
-            ],
-            "CertificateType": "Test",
-            "Country": "PL",
-            "Description": [
-                {
-                    "desc": "Data i godzina pobrania pr\u00f3bki musi by\u0107 mniejsza ni\u017c 48 godzin przed dat\u0105 weryfikacji w przypadku testu typu RAT (szybki test antygenowy).",
-                    "lang": "pl"
-                },
-                {
-                    "desc": "DateTime of Sample Collection must be less than 48 hours before the Verification Datetime for a test of type RAT (rapid antigen test).",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Die Probenahme f\u00fcr einen Antigen-Test (z.B. Schnelltest) darf maximal 48 Stunden zur\u00fcckliegen.",
-                    "lang": "de"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-PL-0003",
-            "Logic": {
-                "if": [
-                    {
-                        "===": [
-                            {
-                                "var": "payload.t.0.tt"
-                            },
-                            "LP217198-3"
-                        ]
-                    },
-                    {
-                        "before": [
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "external.validationClock"
-                                    },
-                                    0,
-                                    "day"
-                                ]
-                            },
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "payload.t.0.sc"
-                                    },
-                                    48,
-                                    "hour"
-                                ]
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-11T00:00:00Z",
-            "ValidTo": "2030-10-11T00:00:00Z",
             "Version": "1.0.0"
         },
         {
@@ -8834,6 +8834,55 @@
         },
         {
             "AffectedFields": [
+                "t.0",
+                "t.0.tt"
+            ],
+            "CertificateType": "Test",
+            "Country": "PL",
+            "Description": [
+                {
+                    "desc": "Typ testu musi by\u0107 jednym z listy zestaw\u00f3w warto\u015bci (RAT lub NAAT).",
+                    "lang": "pl"
+                },
+                {
+                    "desc": "The test type must be one of the value set list (RAT OR NAA).",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Es muss ein Antigen-Test (z.B. Schnelltest) oder NAA-Test (z.B. PCR) sein.",
+                    "lang": "de"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-PL-0000",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.t.0"
+                    },
+                    {
+                        "in": [
+                            {
+                                "var": "payload.t.0.tt"
+                            },
+                            [
+                                "LP217198-3",
+                                "LP6464-4"
+                            ]
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-11T00:00:00Z",
+            "ValidTo": "2030-10-11T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
                 "r.0",
                 "r.0.tg",
                 "t.0",
@@ -8946,55 +8995,6 @@
             "Type": "Acceptance",
             "ValidFrom": "2021-07-04T15:00:00Z",
             "ValidTo": "2023-07-04T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "t.0",
-                "t.0.tt"
-            ],
-            "CertificateType": "Test",
-            "Country": "PL",
-            "Description": [
-                {
-                    "desc": "Typ testu musi by\u0107 jednym z listy zestaw\u00f3w warto\u015bci (RAT lub NAAT).",
-                    "lang": "pl"
-                },
-                {
-                    "desc": "The test type must be one of the value set list (RAT OR NAA).",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Es muss ein Antigen-Test (z.B. Schnelltest) oder NAA-Test (z.B. PCR) sein.",
-                    "lang": "de"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-PL-0000",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.t.0"
-                    },
-                    {
-                        "in": [
-                            {
-                                "var": "payload.t.0.tt"
-                            },
-                            [
-                                "LP217198-3",
-                                "LP6464-4"
-                            ]
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-11T00:00:00Z",
-            "ValidTo": "2030-10-11T00:00:00Z",
             "Version": "1.0.0"
         },
         {
@@ -20693,6 +20693,66 @@
         },
         {
             "AffectedFields": [
+                "r.0",
+                "r.0.fr"
+            ],
+            "CertificateType": "Recovery",
+            "Country": "PL",
+            "Description": [
+                {
+                    "desc": "Dodatni wynik testu NAA (np. PCR) musi by\u0107 starszy ni\u017c 11 dni.",
+                    "lang": "pl"
+                },
+                {
+                    "desc": "The positive NAA test result (e.g., PCR) must be older than 11 days.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Der positive NAA-Test (z.B. PCR) muss mindestens 11 Tage zur\u00fcckliegen.",
+                    "lang": "de"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "RR-PL-0000",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.r.0"
+                    },
+                    {
+                        "not-before": [
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "external.validationClock"
+                                    },
+                                    0,
+                                    "day"
+                                ]
+                            },
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "payload.r.0.fr"
+                                    },
+                                    11,
+                                    "day"
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-11T00:00:00Z",
+            "ValidTo": "2030-10-11T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
                 "v.0",
                 "v.0.dn",
                 "v.0.dt",
@@ -20861,66 +20921,6 @@
             "Type": "Acceptance",
             "ValidFrom": "2021-07-04T15:00:00Z",
             "ValidTo": "2023-07-04T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "r.0",
-                "r.0.fr"
-            ],
-            "CertificateType": "Recovery",
-            "Country": "PL",
-            "Description": [
-                {
-                    "desc": "Dodatni wynik testu NAA (np. PCR) musi by\u0107 starszy ni\u017c 11 dni.",
-                    "lang": "pl"
-                },
-                {
-                    "desc": "The positive NAA test result (e.g., PCR) must be older than 11 days.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Der positive NAA-Test (z.B. PCR) muss mindestens 11 Tage zur\u00fcckliegen.",
-                    "lang": "de"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "RR-PL-0000",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.r.0"
-                    },
-                    {
-                        "not-before": [
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "external.validationClock"
-                                    },
-                                    0,
-                                    "day"
-                                ]
-                            },
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "payload.r.0.fr"
-                                    },
-                                    11,
-                                    "day"
-                                ]
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-11T00:00:00Z",
-            "ValidTo": "2030-10-11T00:00:00Z",
             "Version": "1.0.0"
         },
         {
@@ -25618,6 +25618,98 @@
         },
         {
             "AffectedFields": [
+                "r.0",
+                "r.0.tg",
+                "t.0",
+                "t.0.tg",
+                "v.0",
+                "v.0.tg"
+            ],
+            "CertificateType": "General",
+            "Country": "PL",
+            "Description": [
+                {
+                    "desc": "Warto\u015b\u0107 \"disease or agent targeted\" musi by\u0107 COVID-19 i pochodzi\u0107 z listy zestawu warto\u015bci.",
+                    "lang": "pl"
+                },
+                {
+                    "desc": "The \"disease or agent targeted\" must be COVID-19 of the value set list.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "\"disease or agent targeted\" darf nur COVID-19 aus der Value-Set Liste sein.",
+                    "lang": "de"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "GR-PL-0001",
+            "Logic": {
+                "and": [
+                    {
+                        "if": [
+                            {
+                                "var": "payload.r.0"
+                            },
+                            {
+                                "in": [
+                                    {
+                                        "var": "payload.r.0.tg"
+                                    },
+                                    {
+                                        "var": "external.valueSets.disease-agent-targeted"
+                                    }
+                                ]
+                            },
+                            true
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "var": "payload.t.0"
+                            },
+                            {
+                                "in": [
+                                    {
+                                        "var": "payload.t.0.tg"
+                                    },
+                                    {
+                                        "var": "external.valueSets.disease-agent-targeted"
+                                    }
+                                ]
+                            },
+                            true
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "var": "payload.v.0"
+                            },
+                            {
+                                "in": [
+                                    {
+                                        "var": "payload.v.0.tg"
+                                    },
+                                    {
+                                        "var": "external.valueSets.disease-agent-targeted"
+                                    }
+                                ]
+                            },
+                            true
+                        ]
+                    }
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-11T00:00:00Z",
+            "ValidTo": "2030-10-11T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
                 "v.1"
             ],
             "CertificateType": "Vaccination",
@@ -25799,98 +25891,6 @@
             "Type": "Acceptance",
             "ValidFrom": "2021-07-04T15:00:00Z",
             "ValidTo": "2023-07-04T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "r.0",
-                "r.0.tg",
-                "t.0",
-                "t.0.tg",
-                "v.0",
-                "v.0.tg"
-            ],
-            "CertificateType": "General",
-            "Country": "PL",
-            "Description": [
-                {
-                    "desc": "Warto\u015b\u0107 \"disease or agent targeted\" musi by\u0107 COVID-19 i pochodzi\u0107 z listy zestawu warto\u015bci.",
-                    "lang": "pl"
-                },
-                {
-                    "desc": "The \"disease or agent targeted\" must be COVID-19 of the value set list.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "\"disease or agent targeted\" darf nur COVID-19 aus der Value-Set Liste sein.",
-                    "lang": "de"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "GR-PL-0001",
-            "Logic": {
-                "and": [
-                    {
-                        "if": [
-                            {
-                                "var": "payload.r.0"
-                            },
-                            {
-                                "in": [
-                                    {
-                                        "var": "payload.r.0.tg"
-                                    },
-                                    {
-                                        "var": "external.valueSets.disease-agent-targeted"
-                                    }
-                                ]
-                            },
-                            true
-                        ]
-                    },
-                    {
-                        "if": [
-                            {
-                                "var": "payload.t.0"
-                            },
-                            {
-                                "in": [
-                                    {
-                                        "var": "payload.t.0.tg"
-                                    },
-                                    {
-                                        "var": "external.valueSets.disease-agent-targeted"
-                                    }
-                                ]
-                            },
-                            true
-                        ]
-                    },
-                    {
-                        "if": [
-                            {
-                                "var": "payload.v.0"
-                            },
-                            {
-                                "in": [
-                                    {
-                                        "var": "payload.v.0.tg"
-                                    },
-                                    {
-                                        "var": "external.valueSets.disease-agent-targeted"
-                                    }
-                                ]
-                            },
-                            true
-                        ]
-                    }
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-11T00:00:00Z",
-            "ValidTo": "2030-10-11T00:00:00Z",
             "Version": "1.0.0"
         },
         {
@@ -37145,6 +37145,59 @@
         },
         {
             "AffectedFields": [
+                "t.0.ma",
+                "t.0.tt"
+            ],
+            "CertificateType": "Test",
+            "Country": "PL",
+            "Description": [
+                {
+                    "desc": "Szybki test antygenowy (RAT) musi znajdowa\u0107 si\u0119 na unijnej li\u015bcie \"test\u00f3w i producent\u00f3w\" (\"test product and manufacturer\").",
+                    "lang": "pl"
+                },
+                {
+                    "desc": "If the test type is \"RAT\" then the \"test product and manufacturer\" MUST be in the valueset list, if it's NAA return true.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Der Antigen-Test (z.B. Schnelltest) muss in der Liste \"test product and manufacturer\" der EU enthalten sein.",
+                    "lang": "de"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-PL-0001",
+            "Logic": {
+                "if": [
+                    {
+                        "===": [
+                            {
+                                "var": "payload.t.0.tt"
+                            },
+                            "LP217198-3"
+                        ]
+                    },
+                    {
+                        "in": [
+                            {
+                                "var": "payload.t.0.ma"
+                            },
+                            {
+                                "var": "external.valueSets.covid-19-lab-test-manufacturer-and-name"
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-11T00:00:00Z",
+            "ValidTo": "2030-10-11T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
                 "v.1"
             ],
             "CertificateType": "Vaccination",
@@ -37205,59 +37258,6 @@
             "Type": "Acceptance",
             "ValidFrom": "2021-07-04T15:00:00Z",
             "ValidTo": "2023-07-04T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "t.0.ma",
-                "t.0.tt"
-            ],
-            "CertificateType": "Test",
-            "Country": "PL",
-            "Description": [
-                {
-                    "desc": "Szybki test antygenowy (RAT) musi znajdowa\u0107 si\u0119 na unijnej li\u015bcie \"test\u00f3w i producent\u00f3w\" (\"test product and manufacturer\").",
-                    "lang": "pl"
-                },
-                {
-                    "desc": "If the test type is \"RAT\" then the \"test product and manufacturer\" MUST be in the valueset list, if it's NAA return true.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Der Antigen-Test (z.B. Schnelltest) muss in der Liste \"test product and manufacturer\" der EU enthalten sein.",
-                    "lang": "de"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-PL-0001",
-            "Logic": {
-                "if": [
-                    {
-                        "===": [
-                            {
-                                "var": "payload.t.0.tt"
-                            },
-                            "LP217198-3"
-                        ]
-                    },
-                    {
-                        "in": [
-                            {
-                                "var": "payload.t.0.ma"
-                            },
-                            {
-                                "var": "external.valueSets.covid-19-lab-test-manufacturer-and-name"
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-11T00:00:00Z",
-            "ValidTo": "2030-10-11T00:00:00Z",
             "Version": "1.0.0"
         },
         {
@@ -41846,6 +41846,224 @@
         {
             "AffectedFields": [
                 "v.0",
+                "v.0.dt",
+                "v.0.dn",
+                "v.0.sd"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "PL",
+            "Description": [
+                {
+                    "desc": "Musi up\u0142yn\u0105\u0107 co najmniej 14 dni od zako\u0144czenia podstawowego cyklu szczepie\u0144. Szczepienie przypominaj\u0105ce lub uzupe\u0142niaj\u0105ce jest wa\u017cne natychmiast, je\u015bli mo\u017cna je jednoznacznie zidentyfikowa\u0107.",
+                    "lang": "pl"
+                },
+                {
+                    "desc": "At least 14 days must have elapsed since completing the primary course of immunization. A booster shot is valid immediately as long as it is clearly identified as such.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Seit dem Abschluss der Grundimmunisierung m\u00fcssen mindestens 14 Tage vergangen sein. Eine Auffrischungsimpfung ist sofort g\u00fcltig, falls sie eindeutig als solche erkennbar ist.",
+                    "lang": "de"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-PL-0002",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        "if": [
+                            {
+                                "not-before": [
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "external.validationClock"
+                                            },
+                                            0,
+                                            "day"
+                                        ]
+                                    },
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "payload.v.0.dt"
+                                            },
+                                            14,
+                                            "day"
+                                        ]
+                                    }
+                                ]
+                            },
+                            true,
+                            {
+                                "if": [
+                                    {
+                                        ">": [
+                                            {
+                                                "var": "payload.v.0.dn"
+                                            },
+                                            2
+                                        ]
+                                    },
+                                    true,
+                                    {
+                                        "if": [
+                                            {
+                                                "and": [
+                                                    {
+                                                        ">": [
+                                                            {
+                                                                "var": "payload.v.0.dn"
+                                                            },
+                                                            1
+                                                        ]
+                                                    },
+                                                    {
+                                                        "===": [
+                                                            {
+                                                                "var": "payload.v.0.sd"
+                                                            },
+                                                            1
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            true,
+                                            false
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-02-03T00:00:00Z",
+            "ValidTo": "2030-10-11T00:00:00Z",
+            "Version": "1.1.1"
+        },
+        {
+            "AffectedFields": [
+                "r.0",
+                "r.0.fr"
+            ],
+            "CertificateType": "Recovery",
+            "Country": "PL",
+            "Description": [
+                {
+                    "desc": "Dodatni wynik testu NAA (np. PCR) nie mo\u017ce by\u0107 starszy ni\u017c 180 dni.",
+                    "lang": "pl"
+                },
+                {
+                    "desc": "The positive NAA test result (e.g., PCR) must be no older than 180 days.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Der positive NAA-Test (z.B. PCR) darf maximal 180 Tage zur\u00fcckliegen.",
+                    "lang": "de"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "RR-PL-0001",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.r.0"
+                    },
+                    {
+                        "not-after": [
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "external.validationClock"
+                                    },
+                                    0,
+                                    "day"
+                                ]
+                            },
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "payload.r.0.fr"
+                                    },
+                                    180,
+                                    "day"
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-11T00:00:00Z",
+            "ValidTo": "2030-10-11T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
+                "v.0.mp"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "PL",
+            "Description": [
+                {
+                    "desc": "Akceptowane s\u0105 tylko szczepionki z zestawu warto\u015bci, kt\u00f3re zosta\u0142y zatwierdzone przez EMA: Comirnaty (Pfizer), Moderna (Spikevax), Vaxzevria (AstraZeneca), Jannsen, Nuvaxovid.",
+                    "lang": "pl"
+                },
+                {
+                    "desc": "Only vaccines in the allowed valueset that have been approved by the EMA are allowed.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Nur die folgenden Impfstoffe werden akzeptiert: Vaxzevria (AstraZeneca), Comirnaty (Pfizer), Janssen, Moderna (Spikevax), Nuvaxovid.",
+                    "lang": "de"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-PL-0000",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        "in": [
+                            {
+                                "var": "payload.v.0.mp"
+                            },
+                            [
+                                "EU/1/20/1528",
+                                "EU/1/20/1507",
+                                "EU/1/21/1529",
+                                "EU/1/20/1525",
+                                "EU/1/21/1618"
+                            ]
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-02-26T00:00:00Z",
+            "ValidTo": "2030-10-11T00:00:00Z",
+            "Version": "1.1.1"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
                 "v.0.mp"
             ],
             "CertificateType": "Vaccination",
@@ -42072,224 +42290,6 @@
             "ValidFrom": "2022-09-16T00:00:00Z",
             "ValidTo": "2030-06-01T00:00:00Z",
             "Version": "1.0.2"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
-                "v.0.dt",
-                "v.0.dn",
-                "v.0.sd"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "PL",
-            "Description": [
-                {
-                    "desc": "Musi up\u0142yn\u0105\u0107 co najmniej 14 dni od zako\u0144czenia podstawowego cyklu szczepie\u0144. Szczepienie przypominaj\u0105ce lub uzupe\u0142niaj\u0105ce jest wa\u017cne natychmiast, je\u015bli mo\u017cna je jednoznacznie zidentyfikowa\u0107.",
-                    "lang": "pl"
-                },
-                {
-                    "desc": "At least 14 days must have elapsed since completing the primary course of immunization. A booster shot is valid immediately as long as it is clearly identified as such.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Seit dem Abschluss der Grundimmunisierung m\u00fcssen mindestens 14 Tage vergangen sein. Eine Auffrischungsimpfung ist sofort g\u00fcltig, falls sie eindeutig als solche erkennbar ist.",
-                    "lang": "de"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-PL-0002",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        "if": [
-                            {
-                                "not-before": [
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "external.validationClock"
-                                            },
-                                            0,
-                                            "day"
-                                        ]
-                                    },
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "payload.v.0.dt"
-                                            },
-                                            14,
-                                            "day"
-                                        ]
-                                    }
-                                ]
-                            },
-                            true,
-                            {
-                                "if": [
-                                    {
-                                        ">": [
-                                            {
-                                                "var": "payload.v.0.dn"
-                                            },
-                                            2
-                                        ]
-                                    },
-                                    true,
-                                    {
-                                        "if": [
-                                            {
-                                                "and": [
-                                                    {
-                                                        ">": [
-                                                            {
-                                                                "var": "payload.v.0.dn"
-                                                            },
-                                                            1
-                                                        ]
-                                                    },
-                                                    {
-                                                        "===": [
-                                                            {
-                                                                "var": "payload.v.0.sd"
-                                                            },
-                                                            1
-                                                        ]
-                                                    }
-                                                ]
-                                            },
-                                            true,
-                                            false
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-02-03T00:00:00Z",
-            "ValidTo": "2030-10-11T00:00:00Z",
-            "Version": "1.1.1"
-        },
-        {
-            "AffectedFields": [
-                "r.0",
-                "r.0.fr"
-            ],
-            "CertificateType": "Recovery",
-            "Country": "PL",
-            "Description": [
-                {
-                    "desc": "Dodatni wynik testu NAA (np. PCR) nie mo\u017ce by\u0107 starszy ni\u017c 180 dni.",
-                    "lang": "pl"
-                },
-                {
-                    "desc": "The positive NAA test result (e.g., PCR) must be no older than 180 days.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Der positive NAA-Test (z.B. PCR) darf maximal 180 Tage zur\u00fcckliegen.",
-                    "lang": "de"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "RR-PL-0001",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.r.0"
-                    },
-                    {
-                        "not-after": [
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "external.validationClock"
-                                    },
-                                    0,
-                                    "day"
-                                ]
-                            },
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "payload.r.0.fr"
-                                    },
-                                    180,
-                                    "day"
-                                ]
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-11T00:00:00Z",
-            "ValidTo": "2030-10-11T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
-                "v.0.mp"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "PL",
-            "Description": [
-                {
-                    "desc": "Akceptowane s\u0105 tylko szczepionki z zestawu warto\u015bci, kt\u00f3re zosta\u0142y zatwierdzone przez EMA: Comirnaty (Pfizer), Moderna (Spikevax), Vaxzevria (AstraZeneca), Jannsen, Nuvaxovid.",
-                    "lang": "pl"
-                },
-                {
-                    "desc": "Only vaccines in the allowed valueset that have been approved by the EMA are allowed.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Nur die folgenden Impfstoffe werden akzeptiert: Vaxzevria (AstraZeneca), Comirnaty (Pfizer), Janssen, Moderna (Spikevax), Nuvaxovid.",
-                    "lang": "de"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-PL-0000",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        "in": [
-                            {
-                                "var": "payload.v.0.mp"
-                            },
-                            [
-                                "EU/1/20/1528",
-                                "EU/1/20/1507",
-                                "EU/1/21/1529",
-                                "EU/1/20/1525",
-                                "EU/1/21/1618"
-                            ]
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-02-26T00:00:00Z",
-            "ValidTo": "2030-10-11T00:00:00Z",
-            "Version": "1.1.1"
         },
         {
             "AffectedFields": [
@@ -53275,83 +53275,6 @@
         },
         {
             "AffectedFields": [
-                "r.1"
-            ],
-            "CertificateType": "Recovery",
-            "Country": "IE",
-            "Description": [
-                {
-                    "desc": "Recovery Certificate can only relate to a single Recovery from C-19",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "RR-IE-0000",
-            "Logic": {
-                "!": [
-                    {
-                        "var": "payload.r.1"
-                    }
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-07-12T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.0.1"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
-                "v.0.mp"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "LT",
-            "Description": [
-                {
-                    "desc": "Leid\u017eiamos vakcinos pagal ES klasifikatori\u0173",
-                    "lang": "lt"
-                },
-                {
-                    "desc": "Only vaccines in the allowed valueset that have been approved by the EMA are allowed.",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "1.0.0",
-            "Identifier": "VR-LT-0001",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        "in": [
-                            {
-                                "var": "payload.v.0.mp"
-                            },
-                            [
-                                "EU/1/20/1528",
-                                "EU/1/20/1507",
-                                "EU/1/21/1529",
-                                "EU/1/20/1525",
-                                "Covishield",
-                                "EU/1/21/1618"
-                            ]
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-02-23T12:00:00Z",
-            "ValidTo": "2023-07-04T00:00:00Z",
-            "Version": "1.2.0"
-        },
-        {
-            "AffectedFields": [
                 "t.0.sc",
                 "t.0.tt"
             ],
@@ -53463,6 +53386,83 @@
             "ValidFrom": "2021-10-11T00:00:00Z",
             "ValidTo": "2030-10-11T00:00:00Z",
             "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "r.1"
+            ],
+            "CertificateType": "Recovery",
+            "Country": "IE",
+            "Description": [
+                {
+                    "desc": "Recovery Certificate can only relate to a single Recovery from C-19",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "RR-IE-0000",
+            "Logic": {
+                "!": [
+                    {
+                        "var": "payload.r.1"
+                    }
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-07-12T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.0.1"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
+                "v.0.mp"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "LT",
+            "Description": [
+                {
+                    "desc": "Leid\u017eiamos vakcinos pagal ES klasifikatori\u0173",
+                    "lang": "lt"
+                },
+                {
+                    "desc": "Only vaccines in the allowed valueset that have been approved by the EMA are allowed.",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "1.0.0",
+            "Identifier": "VR-LT-0001",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        "in": [
+                            {
+                                "var": "payload.v.0.mp"
+                            },
+                            [
+                                "EU/1/20/1528",
+                                "EU/1/20/1507",
+                                "EU/1/21/1529",
+                                "EU/1/20/1525",
+                                "Covishield",
+                                "EU/1/21/1618"
+                            ]
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-02-23T12:00:00Z",
+            "ValidTo": "2023-07-04T00:00:00Z",
+            "Version": "1.2.0"
         },
         {
             "AffectedFields": [
@@ -58638,6 +58638,74 @@
         },
         {
             "AffectedFields": [
+                "r",
+                "t",
+                "v"
+            ],
+            "CertificateType": "General",
+            "Country": "PL",
+            "Description": [
+                {
+                    "desc": "Wymagany dok\u0142adnie jeden typ zdarzenia.",
+                    "lang": "pl"
+                },
+                {
+                    "desc": "Exactly one type of event.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Es darf nur genau ein Zertifikatstyp enthalten sein.",
+                    "lang": "de"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "GR-PL-0000",
+            "Logic": {
+                "===": [
+                    {
+                        "reduce": [
+                            [
+                                {
+                                    "var": "payload.r"
+                                },
+                                {
+                                    "var": "payload.t"
+                                },
+                                {
+                                    "var": "payload.v"
+                                }
+                            ],
+                            {
+                                "+": [
+                                    {
+                                        "var": "accumulator"
+                                    },
+                                    {
+                                        "if": [
+                                            {
+                                                "var": "current.0"
+                                            },
+                                            1,
+                                            0
+                                        ]
+                                    }
+                                ]
+                            },
+                            0
+                        ]
+                    },
+                    1
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-11T00:00:00Z",
+            "ValidTo": "2030-10-11T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
                 "t.0.tt",
                 "t.0.sc"
             ],
@@ -58736,74 +58804,6 @@
             "Type": "Acceptance",
             "ValidFrom": "2021-07-04T15:00:00Z",
             "ValidTo": "2023-07-04T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "r",
-                "t",
-                "v"
-            ],
-            "CertificateType": "General",
-            "Country": "PL",
-            "Description": [
-                {
-                    "desc": "Wymagany dok\u0142adnie jeden typ zdarzenia.",
-                    "lang": "pl"
-                },
-                {
-                    "desc": "Exactly one type of event.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Es darf nur genau ein Zertifikatstyp enthalten sein.",
-                    "lang": "de"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "GR-PL-0000",
-            "Logic": {
-                "===": [
-                    {
-                        "reduce": [
-                            [
-                                {
-                                    "var": "payload.r"
-                                },
-                                {
-                                    "var": "payload.t"
-                                },
-                                {
-                                    "var": "payload.v"
-                                }
-                            ],
-                            {
-                                "+": [
-                                    {
-                                        "var": "accumulator"
-                                    },
-                                    {
-                                        "if": [
-                                            {
-                                                "var": "current.0"
-                                            },
-                                            1,
-                                            0
-                                        ]
-                                    }
-                                ]
-                            },
-                            0
-                        ]
-                    },
-                    1
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-11T00:00:00Z",
-            "ValidTo": "2030-10-11T00:00:00Z",
             "Version": "1.0.0"
         },
         {
@@ -63695,6 +63695,66 @@
         },
         {
             "AffectedFields": [
+                "v.0",
+                "v.0.dt"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "PL",
+            "Description": [
+                {
+                    "desc": "Od daty szczepienia mo\u017ce up\u0142yn\u0105\u0107 nie wi\u0119cej ni\u017c 270 dni.",
+                    "lang": "pl"
+                },
+                {
+                    "desc": "The vaccine must have been administered no longer than 270 days ago.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Seit der Impfung darf maximal 270 tage vergangen sein.",
+                    "lang": "de"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-PL-0003",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        "not-after": [
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "external.validationClock"
+                                    },
+                                    0,
+                                    "day"
+                                ]
+                            },
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "payload.v.0.dt"
+                                    },
+                                    270,
+                                    "day"
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-02-03T00:00:00Z",
+            "ValidTo": "2030-10-11T00:00:00Z",
+            "Version": "1.1.0"
+        },
+        {
+            "AffectedFields": [
                 "t",
                 "v"
             ],
@@ -63950,66 +64010,6 @@
             "ValidFrom": "2022-02-12T12:00:00Z",
             "ValidTo": "2024-11-29T00:00:00Z",
             "Version": "3.1.0"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
-                "v.0.dt"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "PL",
-            "Description": [
-                {
-                    "desc": "Od daty szczepienia mo\u017ce up\u0142yn\u0105\u0107 nie wi\u0119cej ni\u017c 270 dni.",
-                    "lang": "pl"
-                },
-                {
-                    "desc": "The vaccine must have been administered no longer than 270 days ago.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Seit der Impfung darf maximal 270 tage vergangen sein.",
-                    "lang": "de"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-PL-0003",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        "not-after": [
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "external.validationClock"
-                                    },
-                                    0,
-                                    "day"
-                                ]
-                            },
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "payload.v.0.dt"
-                                    },
-                                    270,
-                                    "day"
-                                ]
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-02-03T00:00:00Z",
-            "ValidTo": "2030-10-11T00:00:00Z",
-            "Version": "1.1.0"
         },
         {
             "AffectedFields": [
@@ -69055,6 +69055,52 @@
                 "t.0.tr"
             ],
             "CertificateType": "Test",
+            "Country": "PL",
+            "Description": [
+                {
+                    "desc": "Wynik testu musi by\u0107 ujemny (\"not detected\").",
+                    "lang": "pl"
+                },
+                {
+                    "desc": "Test result must be negative (\"not detected\").",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Das Ergebnis des Tests muss negativ sein.",
+                    "lang": "de"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-PL-0002",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.t.0"
+                    },
+                    {
+                        "===": [
+                            {
+                                "var": "payload.t.0.tr"
+                            },
+                            "260415000"
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-11T00:00:00Z",
+            "ValidTo": "2030-10-11T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "t.0",
+                "t.0.tr"
+            ],
+            "CertificateType": "Test",
             "Country": "IE",
             "Description": [
                 {
@@ -69328,52 +69374,6 @@
             "Type": "Acceptance",
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
-            "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "t.0",
-                "t.0.tr"
-            ],
-            "CertificateType": "Test",
-            "Country": "PL",
-            "Description": [
-                {
-                    "desc": "Wynik testu musi by\u0107 ujemny (\"not detected\").",
-                    "lang": "pl"
-                },
-                {
-                    "desc": "Test result must be negative (\"not detected\").",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Das Ergebnis des Tests muss negativ sein.",
-                    "lang": "de"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-PL-0002",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.t.0"
-                    },
-                    {
-                        "===": [
-                            {
-                                "var": "payload.t.0.tr"
-                            },
-                            "260415000"
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-11T00:00:00Z",
-            "ValidTo": "2030-10-11T00:00:00Z",
             "Version": "1.0.0"
         },
         {
