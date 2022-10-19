@@ -67783,76 +67783,6 @@
         {
             "AffectedFields": [
                 "v.0",
-                "v.0.dt",
-                "v.0.mp"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "FR",
-            "Description": [
-                {
-                    "desc": "With BioNTech/Pfizer vaccine, a finished vaccination course is considered protective earliest from 28 days after the date of the last vaccination.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Avec le vaccin BioNTech/Pfizer, un parcours vaccinale termin\u00e9 est consider\u00e9 comme protecteur au plus t\u00f4t \u00e0 partir de 7 jours apr\u00e8s la date de la derni\u00e8re injection.",
-                    "lang": "fr"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-MQFR-0006",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        "if": [
-                            {
-                                "===": [
-                                    {
-                                        "var": "payload.v.0.mp"
-                                    },
-                                    "EU/1/20/1528"
-                                ]
-                            },
-                            {
-                                "not-before": [
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "external.validationClock"
-                                            },
-                                            0,
-                                            "day"
-                                        ]
-                                    },
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "payload.v.0.dt"
-                                            },
-                                            7,
-                                            "day"
-                                        ]
-                                    }
-                                ]
-                            },
-                            true
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-01-29T10:00:00Z",
-            "ValidTo": "2022-02-01T10:00:00Z",
-            "Version": "1.0.3"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
                 "v.0.ma"
             ],
             "CertificateType": "Vaccination",
@@ -68850,6 +68780,75 @@
             "ValidFrom": "2021-10-11T00:00:00Z",
             "ValidTo": "2030-10-11T00:00:00Z",
             "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
+                "v.0.mp"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "LU",
+            "Description": [
+                {
+                    "desc": "Only vaccines that have been approved by the EMA and or WHO are allowed.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Nur Impfstoffe, die von der EMA und/oder der WHO zugelassen wurden, sind erlaubt.",
+                    "lang": "de"
+                },
+                {
+                    "desc": "Seuls les vaccins qui ont \u00e9t\u00e9 approuv\u00e9s par l'EMA et/ou l'OMS sont autoris\u00e9s.",
+                    "lang": "fr"
+                },
+                {
+                    "desc": "S\u00f3lo se permiten las vacunas aprobadas por la EMA y/o la OMS.",
+                    "lang": "es"
+                },
+                {
+                    "desc": "Sono ammessi solo i vaccini che sono stati approvati dall'EMA e dall'OMS.",
+                    "lang": "it"
+                },
+                {
+                    "desc": "Alleen vaccins die zijn goedgekeurd door het EMA en/of de WHO zijn toegestaan.",
+                    "lang": "nl"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-LU-0001",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        "in": [
+                            {
+                                "var": "payload.v.0.mp"
+                            },
+                            [
+                                "EU/1/20/1528",
+                                "EU/1/20/1507",
+                                "EU/1/21/1529",
+                                "EU/1/20/1525",
+                                "Covishield",
+                                "R-COVI",
+                                "Covid-19-recombinant",
+                                "NVX-CoV2373",
+                                "EU/1/21/1618",
+                                "EU/1/21/1624"
+                            ]
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-10-21T16:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.5.2"
         },
         {
             "AffectedFields": [
@@ -72983,6 +72982,76 @@
             "Country": "FR",
             "Description": [
                 {
+                    "desc": "With BioNTech/Pfizer vaccine, a finished vaccination course is considered protective earliest from 28 days after the date of the last vaccination.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Avec le vaccin BioNTech/Pfizer, un parcours vaccinale termin\u00e9 est consider\u00e9 comme protecteur au plus t\u00f4t \u00e0 partir de 7 jours apr\u00e8s la date de la derni\u00e8re injection.",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-MQFR-0006",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        "if": [
+                            {
+                                "===": [
+                                    {
+                                        "var": "payload.v.0.mp"
+                                    },
+                                    "EU/1/20/1528"
+                                ]
+                            },
+                            {
+                                "not-before": [
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "external.validationClock"
+                                            },
+                                            0,
+                                            "day"
+                                        ]
+                                    },
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "payload.v.0.dt"
+                                            },
+                                            7,
+                                            "day"
+                                        ]
+                                    }
+                                ]
+                            },
+                            true
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-01-29T10:00:00Z",
+            "ValidTo": "2022-02-01T10:00:00Z",
+            "Version": "1.0.3"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
+                "v.0.dt",
+                "v.0.mp"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "FR",
+            "Description": [
+                {
                     "desc": "With Jansen vaccine, a finished vaccination course is considered protective earliest from 28 days after the date of the last vaccination.",
                     "lang": "en"
                 },
@@ -76139,38 +76208,6 @@
                 "t.1"
             ],
             "CertificateType": "Test",
-            "Country": "FR",
-            "Description": [
-                {
-                    "desc": "Test format is not EU standard.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Le format li\u00e9 au test n'est pas au standard UE.",
-                    "lang": "fr"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-FR-0000",
-            "Logic": {
-                "!": [
-                    {
-                        "var": "payload.t.1"
-                    }
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-01-29T10:00:00Z",
-            "ValidTo": "2032-01-29T10:00:00Z",
-            "Version": "1.0.2"
-        },
-        {
-            "AffectedFields": [
-                "t.1"
-            ],
-            "CertificateType": "Test",
             "Country": "GF",
             "Description": [
                 {
@@ -79278,6 +79315,38 @@
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "t.1"
+            ],
+            "CertificateType": "Test",
+            "Country": "FR",
+            "Description": [
+                {
+                    "desc": "Test format is not EU standard.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Le format li\u00e9 au test n'est pas au standard UE.",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-FR-0000",
+            "Logic": {
+                "!": [
+                    {
+                        "var": "payload.t.1"
+                    }
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-01-29T10:00:00Z",
+            "ValidTo": "2032-01-29T10:00:00Z",
+            "Version": "1.0.2"
         },
         {
             "AffectedFields": [
