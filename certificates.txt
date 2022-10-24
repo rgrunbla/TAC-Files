@@ -30608,6 +30608,44 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            01:84:09:f3:87:89:83:20:bf:4e
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = AT, O = BMSGPK, serialNumber = 002, CN = AT DGC CSCA 2
+        Validity
+            Not Before: Oct 24 12:24:25 2022 GMT
+            Not After : Oct 24 12:24:25 2024 GMT
+        Subject: C = AT, O = BMSGPK, serialNumber = 002005, CN = AT DGC DSC 5
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:a6:c9:90:0c:0f:5d:e8:44:55:c5:6e:bf:29:e6:
+                    25:47:18:d7:65:49:e6:e5:be:96:e3:9f:5b:60:c4:
+                    10:f6:80:8c:ea:cc:f1:0b:47:cf:f6:95:0d:d9:32:
+                    ce:ce:c0:1e:9f:19:a7:5b:1f:09:ac:8a:43:07:8f:
+                    1b:08:27:49:2a
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Subject Key Identifier: 
+                17:7A:37:F2:31:A0:DD:2C:61:D9:B9:38:A6:85:37:4E:13:E0:C9:F9
+            X509v3 Authority Key Identifier: 
+                keyid:2F:59:16:F1:3B:7B:52:F4:76:AD:88:C4:EF:A7:CB:03:F5:1C:32:C1
+
+            X509v3 Private Key Usage Period: 
+                Not After: May  8 12:24:25 2023 GMT
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:69:a7:8c:ce:88:96:fb:55:38:1b:79:5c:6a:3d:
+         81:cf:d6:72:50:f4:7b:28:a8:6b:0c:a1:64:0c:af:6a:99:91:
+         02:21:00:8e:0c:57:3a:8f:df:e4:84:80:43:65:85:63:c4:82:
+         b2:55:28:0c:5c:b1:f7:21:c2:9c:37:87:53:20:7a:a3:e0
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             77:0c:b8:fc:a6:49:48:48:9f:fe:6d:48:ab:b8:60:0c
         Signature Algorithm: ecdsa-with-SHA384
         Issuer: C = DE, O = D-Trust GmbH, CN = D-TRUST CA 4-21-2 2021, organizationIdentifier = NTRDE-HRB74346
