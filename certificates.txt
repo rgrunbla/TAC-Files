@@ -14297,6 +14297,49 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            03:ca:37:be:b4:ad:e6:9b:17:b4:e5:a8:8d:98:4f:9c:b0:74:be:f7
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = SG, ST = Singapore, O = Ministry Of Health, CN = csca.notarise.gov.sg
+        Validity
+            Not Before: Oct 25 04:28:57 2022 GMT
+            Not After : Oct 24 04:28:57 2024 GMT
+        Subject: C = SG, ST = Singapore, O = Ministry Of Health, CN = dsc.notarise.gov.sg
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:e7:d8:65:0e:64:67:14:aa:cc:3d:21:43:60:75:
+                    a4:5b:88:34:c6:ff:bb:bc:de:ad:56:83:ed:ac:4a:
+                    dc:95:a4:df:df:0e:28:e5:7d:3b:31:5f:21:43:d3:
+                    e6:01:46:ab:4e:7e:84:1e:64:8a:b9:0e:3e:56:b8:
+                    bf:56:03:41:3e
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Subject Key Identifier: 
+                F4:60:21:3F:E8:FF:09:AA:F1:1D:2C:14:7B:D5:92:63:6B:CE:C9:D2
+            X509v3 Authority Key Identifier: 
+                keyid:39:37:05:B3:38:B9:F9:9E:23:0D:D1:C2:C1:B0:C3:B3:32:97:01:A5
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:https://www.notarise.gov.sg/csca.crl
+
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.1847.2021.1.1, 1.3.6.1.4.1.1847.2021.1.2, 1.3.6.1.4.1.1847.2021.1.3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:fe:96:24:46:f9:04:3a:a9:1c:d8:42:91:b5:
+         28:4a:ef:05:28:37:4e:81:98:38:06:48:79:d8:7e:e3:fa:80:
+         5a:02:21:00:81:20:7d:36:d3:34:9b:b2:28:5a:83:9a:0e:a1:
+         c9:3b:a9:56:bc:fe:67:46:4e:64:37:00:e1:72:16:0e:12:e9
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             5a:a0:a0:cf:e4:88:8b:e8:6a:18:78:26:da:9a:bb:f1
         Signature Algorithm: ecdsa-with-SHA384
         Issuer: C = DE, O = D-Trust GmbH, CN = D-TRUST CA 4-21-2 2021, organizationIdentifier = NTRDE-HRB74346
