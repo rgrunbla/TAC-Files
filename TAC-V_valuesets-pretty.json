@@ -1857,7 +1857,669 @@
         }
     },
     {
-        "valueSetDate": "2022-10-26",
+        "valueSetDate": "2022-01-26",
+        "valueSetId": "vaccines-covid-19-auth-holders",
+        "valueSetValues": {
+            "4242-E": {
+                "active": true,
+                "display": "4242-E",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "Bharat-Biotech": {
+                "active": true,
+                "display": "Bharat Biotech",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
+                "version": "1.0"
+            },
+            "CIGB": {
+                "active": true,
+                "display": "Center for Genetic Engineering and Biotechnology",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
+                "version": "1.5"
+            },
+            "Chumakov-Federal-Scientific-Center": {
+                "active": true,
+                "display": "Chumakov Federal Scientific Center for Research and Development of Immune-and-Biological Products",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
+                "version": "1.4"
+            },
+            "FIOCRUZ": {
+                "active": true,
+                "display": "Fiocruz",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
+                "version": "1.3"
+            },
+            "Finlay-Institute": {
+                "active": true,
+                "display": "Finlay Institute of Vaccines",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
+                "version": "1.10"
+            },
+            "Fiocruz": {
+                "active": true,
+                "display": "Fiocruz",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
+                "version": "1.3"
+            },
+            "Gamaleya-Research-Institute": {
+                "active": true,
+                "display": "Gamaleya Research Institute",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
+                "version": "1.0"
+            },
+            "Instituto-Butantan": {
+                "active": true,
+                "display": "Instituto Butantan",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
+                "version": "1.9"
+            },
+            "NVSI": {
+                "active": true,
+                "display": "National Vaccine and Serum Institute, China",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
+                "version": "1.9"
+            },
+            "ORG-100000788": {
+                "active": true,
+                "display": "Sanofi Pasteur",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100001417": {
+                "active": true,
+                "display": "Janssen-Cilag International",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100001699": {
+                "active": true,
+                "display": "AstraZeneca AB",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100001981": {
+                "active": true,
+                "display": "Serum Institute Of India Private Limited",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100006270": {
+                "active": true,
+                "display": "Curevac AG",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100007893": {
+                "active": true,
+                "display": "R-Pharm CJSC",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100008549": {
+                "active": true,
+                "display": "Medicago Inc.",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100010771": {
+                "active": true,
+                "display": "Sinopharm Weiqida Europe Pharmaceutical s.r.o. - Prague location",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100013793": {
+                "active": true,
+                "display": "CanSino Biologics",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100020693": {
+                "active": true,
+                "display": "China Sinopharm International Corp. - Beijing location",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100023050": {
+                "active": true,
+                "display": "Gulf Pharmaceutical Industries",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100024420": {
+                "active": true,
+                "display": "Sinopharm Zhijun (Shenzhen) Pharmaceutical Co. Ltd. - Shenzhen location",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100026614": {
+                "active": true,
+                "display": "Sinocelltech Ltd.",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100030215": {
+                "active": true,
+                "display": "Biontech Manufacturing GmbH",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100031184": {
+                "active": true,
+                "display": "Moderna Biotech Spain S.L.",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100032020": {
+                "active": true,
+                "display": "Novavax CZ a.s.",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100033914": {
+                "active": true,
+                "display": "Medigen Vaccine Biologics Corporation",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100036422": {
+                "active": true,
+                "display": "Valneva France",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "R-Pharm": {
+                "active": true,
+                "display": "R-Pharm CJSC",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "Sinopharm-WIBP": {
+                "active": true,
+                "display": "Sinopharm - Wuhan Institute of Biological Products",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
+                "version": "1.5"
+            },
+            "Sinovac-Biotech": {
+                "active": true,
+                "display": "Sinovac Biotech",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
+                "version": "1.0"
+            },
+            "Vector-Institute": {
+                "active": true,
+                "display": "Vector Institute",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
+                "version": "1.0"
+            },
+            "Yisheng-Biopharma": {
+                "active": true,
+                "display": "Yisheng Biopharma",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
+                "version": "1.9"
+            }
+        }
+    },
+    {
+        "valueSetDate": "2021-09-29",
+        "valueSetId": "vaccines-covid-19-names-FR",
+        "valueSetValues": {
+            "CT_NCT04614948": {
+                "active": true,
+                "display": "Ad26.COV2.S",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.3"
+            },
+            "CT_NCT04762680": {
+                "active": true,
+                "display": "SARS-CoV-2 recombinant protein vaccine",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.3"
+            },
+            "CT_NCT05037266": {
+                "active": true,
+                "display": "COVID-19 Vaccine Janssen (Ad26.COV2-S)",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.3"
+            },
+            "CT_NCT05124171": {
+                "active": true,
+                "display": "CoV2 preS dTM adjuvanted vaccine",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.3"
+            },
+            "CT_PEI_21-154": {
+                "active": true,
+                "display": "CT_PEI_21-154",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.3"
+            },
+            "Covid-19-recombinant": {
+                "active": true,
+                "display": "Covid-19 (recombinant)",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.3"
+            },
+            "Covishield": {
+                "active": true,
+                "display": "Covishield (ChAdOx1_nCoV-19)",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.2"
+            },
+            "EU/1/20/1507": {
+                "active": true,
+                "display": "Spikevax (previously COVID-19 Vaccine Moderna)",
+                "lang": "en",
+                "system": "https://ec.europa.eu/health/documents/community-register/html/",
+                "version": ""
+            },
+            "EU/1/20/1525": {
+                "active": true,
+                "display": "COVID-19 Vaccine Janssen",
+                "lang": "en",
+                "system": "https://ec.europa.eu/health/documents/community-register/html/",
+                "version": ""
+            },
+            "EU/1/20/1528": {
+                "active": true,
+                "display": "Comirnaty",
+                "lang": "en",
+                "system": "https://ec.europa.eu/health/documents/community-register/html/",
+                "version": ""
+            },
+            "EU/1/21/1529": {
+                "active": true,
+                "display": "Vaxzevria",
+                "lang": "en",
+                "system": "https://ec.europa.eu/health/documents/community-register/html/",
+                "version": ""
+            },
+            "EU/1/21/1618": {
+                "active": true,
+                "display": "Nuvaxovid",
+                "lang": "en",
+                "system": "https://ec.europa.eu/health/documents/community-register/html/",
+                "version": ""
+            },
+            "EU/1/21/1624": {
+                "active": true,
+                "display": "COVID-19 Vaccine Valneva",
+                "lang": "en",
+                "system": "https://ec.europa.eu/health/documents/community-register/html/",
+                "version": ""
+            },
+            "R-COVI": {
+                "active": true,
+                "display": "R-COVI",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.3"
+            },
+            "R-Covi": {
+                "active": true,
+                "display": "R-COVI",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.3"
+            },
+            "VLA2001": {
+                "active": false,
+                "display": "VLA2001 (deprecated)",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.8"
+            }
+        }
+    },
+    {
+        "valueSetDate": "2022-01-26",
+        "valueSetId": "vaccines-covid-19-names",
+        "valueSetValues": {
+            "AZD2816": {
+                "active": true,
+                "display": "AZD2816",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.9"
+            },
+            "Abdala": {
+                "active": true,
+                "display": "Abdala",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.5"
+            },
+            "BBIBP-CorV": {
+                "active": true,
+                "display": "BBIBP-CorV",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.0"
+            },
+            "CT_NCT04614948": {
+                "active": true,
+                "display": "Ad26.COV2.S",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.3"
+            },
+            "CT_NCT04762680": {
+                "active": true,
+                "display": "SARS-CoV-2 recombinant protein vaccine",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.3"
+            },
+            "CT_NCT05037266": {
+                "active": true,
+                "display": "COVID-19 Vaccine Janssen (Ad26.COV2-S)",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.3"
+            },
+            "CT_NCT05124171": {
+                "active": true,
+                "display": "CoV2 preS dTM adjuvanted vaccine",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.3"
+            },
+            "CT_PEI_21-154": {
+                "active": true,
+                "display": "CT_PEI_21-154",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.3"
+            },
+            "CVnCoV": {
+                "active": true,
+                "display": "CVnCoV",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.0"
+            },
+            "Convidecia": {
+                "active": true,
+                "display": "Convidecia",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.0"
+            },
+            "CoronaVac": {
+                "active": true,
+                "display": "CoronaVac",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.0"
+            },
+            "Covaxin": {
+                "active": true,
+                "display": "Covaxin",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.0"
+            },
+            "CoviVac": {
+                "active": true,
+                "display": "CoviVac",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.4"
+            },
+            "Covid-19-adsorvida-inativada": {
+                "active": true,
+                "display": "Vacina adsorvida covid-19 (inativada)",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.9"
+            },
+            "Covid-19-recombinant": {
+                "active": true,
+                "display": "Covid-19 (recombinant)",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.3"
+            },
+            "Covifenz": {
+                "active": true,
+                "display": "Covifenz",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.9"
+            },
+            "Covishield": {
+                "active": true,
+                "display": "Covishield",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.2"
+            },
+            "Covovax": {
+                "active": true,
+                "display": "Covovax",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.8"
+            },
+            "EU/1/20/1507": {
+                "active": true,
+                "display": "Spikevax",
+                "lang": "en",
+                "system": "https://ec.europa.eu/health/documents/community-register/html/",
+                "version": ""
+            },
+            "EU/1/20/1525": {
+                "active": true,
+                "display": "Jcovden",
+                "lang": "en",
+                "system": "https://ec.europa.eu/health/documents/community-register/html/",
+                "version": ""
+            },
+            "EU/1/20/1528": {
+                "active": true,
+                "display": "Comirnaty",
+                "lang": "en",
+                "system": "https://ec.europa.eu/health/documents/community-register/html/",
+                "version": ""
+            },
+            "EU/1/21/1529": {
+                "active": true,
+                "display": "Vaxzevria",
+                "lang": "en",
+                "system": "https://ec.europa.eu/health/documents/community-register/html/",
+                "version": ""
+            },
+            "EU/1/21/1618": {
+                "active": true,
+                "display": "Nuvaxovid",
+                "lang": "en",
+                "system": "https://ec.europa.eu/health/documents/community-register/html/",
+                "version": ""
+            },
+            "EU/1/21/1624": {
+                "active": true,
+                "display": "COVID-19 Vaccine Valneva",
+                "lang": "en",
+                "system": "https://ec.europa.eu/health/documents/community-register/html/",
+                "version": ""
+            },
+            "EpiVacCorona": {
+                "active": true,
+                "display": "EpiVacCorona",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.0"
+            },
+            "EpiVacCorona-N": {
+                "active": true,
+                "display": "EpiVacCorona-N",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.8"
+            },
+            "Hayat-Vax": {
+                "active": true,
+                "display": "Hayat-Vax",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.4"
+            },
+            "Inactivated-SARS-CoV-2-Vero-Cell": {
+                "active": false,
+                "display": "Inactivated SARS-CoV-2 (Vero Cell) (deprecated)",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.0"
+            },
+            "MVC-COV1901": {
+                "active": true,
+                "display": "MVC COVID-19 vaccine",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.6"
+            },
+            "NVSI-06-08": {
+                "active": true,
+                "display": "NVSI-06-08",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.9"
+            },
+            "NVX-CoV2373": {
+                "active": false,
+                "display": "NVX-CoV2373 (deprecated)",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.0"
+            },
+            "R-COVI": {
+                "active": true,
+                "display": "R-COVI",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.3"
+            },
+            "R-Covi": {
+                "active": true,
+                "display": "R-COVI",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.3"
+            },
+            "SCTV01C": {
+                "active": true,
+                "display": "SCTV01C",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.9"
+            },
+            "Soberana-02": {
+                "active": true,
+                "display": "Soberana 02",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.10"
+            },
+            "Soberana-Plus": {
+                "active": true,
+                "display": "Soberana Plus",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.10"
+            },
+            "Sputnik-Light": {
+                "active": true,
+                "display": "Sputnik Light",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.4"
+            },
+            "Sputnik-M": {
+                "active": true,
+                "display": "Sputnik M",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.8"
+            },
+            "Sputnik-V": {
+                "active": true,
+                "display": "Sputnik-V",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.0"
+            },
+            "VLA2001": {
+                "active": false,
+                "display": "VLA2001 (deprecated)",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.8"
+            },
+            "Vidprevtyn": {
+                "active": true,
+                "display": "Vidprevtyn",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.8"
+            },
+            "WIBP-CorV": {
+                "active": true,
+                "display": "WIBP-CorV",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.5"
+            },
+            "YS-SC2-010": {
+                "active": true,
+                "display": "YS-SC2-010",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccineproductname",
+                "version": "1.9"
+            }
+        }
+    },
+    {
+        "valueSetDate": "2022-10-27",
         "valueSetId": "covid-19-lab-test-manufacturer-and-name",
         "valueSetValues": {
             "1065": {
@@ -3923,668 +4585,6 @@
                 "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
                 "validUntil": null,
                 "version": "2021-07-13 05:38:51 CEST"
-            }
-        }
-    },
-    {
-        "valueSetDate": "2022-01-26",
-        "valueSetId": "vaccines-covid-19-auth-holders",
-        "valueSetValues": {
-            "4242-E": {
-                "active": true,
-                "display": "4242-E",
-                "lang": "en",
-                "system": "https://spor.ema.europa.eu/v1/organisations",
-                "version": ""
-            },
-            "Bharat-Biotech": {
-                "active": true,
-                "display": "Bharat Biotech",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
-                "version": "1.0"
-            },
-            "CIGB": {
-                "active": true,
-                "display": "Center for Genetic Engineering and Biotechnology",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
-                "version": "1.5"
-            },
-            "Chumakov-Federal-Scientific-Center": {
-                "active": true,
-                "display": "Chumakov Federal Scientific Center for Research and Development of Immune-and-Biological Products",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
-                "version": "1.4"
-            },
-            "FIOCRUZ": {
-                "active": true,
-                "display": "Fiocruz",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
-                "version": "1.3"
-            },
-            "Finlay-Institute": {
-                "active": true,
-                "display": "Finlay Institute of Vaccines",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
-                "version": "1.10"
-            },
-            "Fiocruz": {
-                "active": true,
-                "display": "Fiocruz",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
-                "version": "1.3"
-            },
-            "Gamaleya-Research-Institute": {
-                "active": true,
-                "display": "Gamaleya Research Institute",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
-                "version": "1.0"
-            },
-            "Instituto-Butantan": {
-                "active": true,
-                "display": "Instituto Butantan",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
-                "version": "1.9"
-            },
-            "NVSI": {
-                "active": true,
-                "display": "National Vaccine and Serum Institute, China",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
-                "version": "1.9"
-            },
-            "ORG-100000788": {
-                "active": true,
-                "display": "Sanofi Pasteur",
-                "lang": "en",
-                "system": "https://spor.ema.europa.eu/v1/organisations",
-                "version": ""
-            },
-            "ORG-100001417": {
-                "active": true,
-                "display": "Janssen-Cilag International",
-                "lang": "en",
-                "system": "https://spor.ema.europa.eu/v1/organisations",
-                "version": ""
-            },
-            "ORG-100001699": {
-                "active": true,
-                "display": "AstraZeneca AB",
-                "lang": "en",
-                "system": "https://spor.ema.europa.eu/v1/organisations",
-                "version": ""
-            },
-            "ORG-100001981": {
-                "active": true,
-                "display": "Serum Institute Of India Private Limited",
-                "lang": "en",
-                "system": "https://spor.ema.europa.eu/v1/organisations",
-                "version": ""
-            },
-            "ORG-100006270": {
-                "active": true,
-                "display": "Curevac AG",
-                "lang": "en",
-                "system": "https://spor.ema.europa.eu/v1/organisations",
-                "version": ""
-            },
-            "ORG-100007893": {
-                "active": true,
-                "display": "R-Pharm CJSC",
-                "lang": "en",
-                "system": "https://spor.ema.europa.eu/v1/organisations",
-                "version": ""
-            },
-            "ORG-100008549": {
-                "active": true,
-                "display": "Medicago Inc.",
-                "lang": "en",
-                "system": "https://spor.ema.europa.eu/v1/organisations",
-                "version": ""
-            },
-            "ORG-100010771": {
-                "active": true,
-                "display": "Sinopharm Weiqida Europe Pharmaceutical s.r.o. - Prague location",
-                "lang": "en",
-                "system": "https://spor.ema.europa.eu/v1/organisations",
-                "version": ""
-            },
-            "ORG-100013793": {
-                "active": true,
-                "display": "CanSino Biologics",
-                "lang": "en",
-                "system": "https://spor.ema.europa.eu/v1/organisations",
-                "version": ""
-            },
-            "ORG-100020693": {
-                "active": true,
-                "display": "China Sinopharm International Corp. - Beijing location",
-                "lang": "en",
-                "system": "https://spor.ema.europa.eu/v1/organisations",
-                "version": ""
-            },
-            "ORG-100023050": {
-                "active": true,
-                "display": "Gulf Pharmaceutical Industries",
-                "lang": "en",
-                "system": "https://spor.ema.europa.eu/v1/organisations",
-                "version": ""
-            },
-            "ORG-100024420": {
-                "active": true,
-                "display": "Sinopharm Zhijun (Shenzhen) Pharmaceutical Co. Ltd. - Shenzhen location",
-                "lang": "en",
-                "system": "https://spor.ema.europa.eu/v1/organisations",
-                "version": ""
-            },
-            "ORG-100026614": {
-                "active": true,
-                "display": "Sinocelltech Ltd.",
-                "lang": "en",
-                "system": "https://spor.ema.europa.eu/v1/organisations",
-                "version": ""
-            },
-            "ORG-100030215": {
-                "active": true,
-                "display": "Biontech Manufacturing GmbH",
-                "lang": "en",
-                "system": "https://spor.ema.europa.eu/v1/organisations",
-                "version": ""
-            },
-            "ORG-100031184": {
-                "active": true,
-                "display": "Moderna Biotech Spain S.L.",
-                "lang": "en",
-                "system": "https://spor.ema.europa.eu/v1/organisations",
-                "version": ""
-            },
-            "ORG-100032020": {
-                "active": true,
-                "display": "Novavax CZ a.s.",
-                "lang": "en",
-                "system": "https://spor.ema.europa.eu/v1/organisations",
-                "version": ""
-            },
-            "ORG-100033914": {
-                "active": true,
-                "display": "Medigen Vaccine Biologics Corporation",
-                "lang": "en",
-                "system": "https://spor.ema.europa.eu/v1/organisations",
-                "version": ""
-            },
-            "ORG-100036422": {
-                "active": true,
-                "display": "Valneva France",
-                "lang": "en",
-                "system": "https://spor.ema.europa.eu/v1/organisations",
-                "version": ""
-            },
-            "R-Pharm": {
-                "active": true,
-                "display": "R-Pharm CJSC",
-                "lang": "en",
-                "system": "https://spor.ema.europa.eu/v1/organisations",
-                "version": ""
-            },
-            "Sinopharm-WIBP": {
-                "active": true,
-                "display": "Sinopharm - Wuhan Institute of Biological Products",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
-                "version": "1.5"
-            },
-            "Sinovac-Biotech": {
-                "active": true,
-                "display": "Sinovac Biotech",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
-                "version": "1.0"
-            },
-            "Vector-Institute": {
-                "active": true,
-                "display": "Vector Institute",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
-                "version": "1.0"
-            },
-            "Yisheng-Biopharma": {
-                "active": true,
-                "display": "Yisheng Biopharma",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
-                "version": "1.9"
-            }
-        }
-    },
-    {
-        "valueSetDate": "2021-09-29",
-        "valueSetId": "vaccines-covid-19-names-FR",
-        "valueSetValues": {
-            "CT_NCT04614948": {
-                "active": true,
-                "display": "Ad26.COV2.S",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.3"
-            },
-            "CT_NCT04762680": {
-                "active": true,
-                "display": "SARS-CoV-2 recombinant protein vaccine",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.3"
-            },
-            "CT_NCT05037266": {
-                "active": true,
-                "display": "COVID-19 Vaccine Janssen (Ad26.COV2-S)",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.3"
-            },
-            "CT_NCT05124171": {
-                "active": true,
-                "display": "CoV2 preS dTM adjuvanted vaccine",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.3"
-            },
-            "CT_PEI_21-154": {
-                "active": true,
-                "display": "CT_PEI_21-154",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.3"
-            },
-            "Covid-19-recombinant": {
-                "active": true,
-                "display": "Covid-19 (recombinant)",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.3"
-            },
-            "Covishield": {
-                "active": true,
-                "display": "Covishield (ChAdOx1_nCoV-19)",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.2"
-            },
-            "EU/1/20/1507": {
-                "active": true,
-                "display": "Spikevax (previously COVID-19 Vaccine Moderna)",
-                "lang": "en",
-                "system": "https://ec.europa.eu/health/documents/community-register/html/",
-                "version": ""
-            },
-            "EU/1/20/1525": {
-                "active": true,
-                "display": "COVID-19 Vaccine Janssen",
-                "lang": "en",
-                "system": "https://ec.europa.eu/health/documents/community-register/html/",
-                "version": ""
-            },
-            "EU/1/20/1528": {
-                "active": true,
-                "display": "Comirnaty",
-                "lang": "en",
-                "system": "https://ec.europa.eu/health/documents/community-register/html/",
-                "version": ""
-            },
-            "EU/1/21/1529": {
-                "active": true,
-                "display": "Vaxzevria",
-                "lang": "en",
-                "system": "https://ec.europa.eu/health/documents/community-register/html/",
-                "version": ""
-            },
-            "EU/1/21/1618": {
-                "active": true,
-                "display": "Nuvaxovid",
-                "lang": "en",
-                "system": "https://ec.europa.eu/health/documents/community-register/html/",
-                "version": ""
-            },
-            "EU/1/21/1624": {
-                "active": true,
-                "display": "COVID-19 Vaccine Valneva",
-                "lang": "en",
-                "system": "https://ec.europa.eu/health/documents/community-register/html/",
-                "version": ""
-            },
-            "R-COVI": {
-                "active": true,
-                "display": "R-COVI",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.3"
-            },
-            "R-Covi": {
-                "active": true,
-                "display": "R-COVI",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.3"
-            },
-            "VLA2001": {
-                "active": false,
-                "display": "VLA2001 (deprecated)",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.8"
-            }
-        }
-    },
-    {
-        "valueSetDate": "2022-01-26",
-        "valueSetId": "vaccines-covid-19-names",
-        "valueSetValues": {
-            "AZD2816": {
-                "active": true,
-                "display": "AZD2816",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.9"
-            },
-            "Abdala": {
-                "active": true,
-                "display": "Abdala",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.5"
-            },
-            "BBIBP-CorV": {
-                "active": true,
-                "display": "BBIBP-CorV",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.0"
-            },
-            "CT_NCT04614948": {
-                "active": true,
-                "display": "Ad26.COV2.S",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.3"
-            },
-            "CT_NCT04762680": {
-                "active": true,
-                "display": "SARS-CoV-2 recombinant protein vaccine",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.3"
-            },
-            "CT_NCT05037266": {
-                "active": true,
-                "display": "COVID-19 Vaccine Janssen (Ad26.COV2-S)",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.3"
-            },
-            "CT_NCT05124171": {
-                "active": true,
-                "display": "CoV2 preS dTM adjuvanted vaccine",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.3"
-            },
-            "CT_PEI_21-154": {
-                "active": true,
-                "display": "CT_PEI_21-154",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.3"
-            },
-            "CVnCoV": {
-                "active": true,
-                "display": "CVnCoV",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.0"
-            },
-            "Convidecia": {
-                "active": true,
-                "display": "Convidecia",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.0"
-            },
-            "CoronaVac": {
-                "active": true,
-                "display": "CoronaVac",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.0"
-            },
-            "Covaxin": {
-                "active": true,
-                "display": "Covaxin",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.0"
-            },
-            "CoviVac": {
-                "active": true,
-                "display": "CoviVac",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.4"
-            },
-            "Covid-19-adsorvida-inativada": {
-                "active": true,
-                "display": "Vacina adsorvida covid-19 (inativada)",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.9"
-            },
-            "Covid-19-recombinant": {
-                "active": true,
-                "display": "Covid-19 (recombinant)",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.3"
-            },
-            "Covifenz": {
-                "active": true,
-                "display": "Covifenz",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.9"
-            },
-            "Covishield": {
-                "active": true,
-                "display": "Covishield",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.2"
-            },
-            "Covovax": {
-                "active": true,
-                "display": "Covovax",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.8"
-            },
-            "EU/1/20/1507": {
-                "active": true,
-                "display": "Spikevax",
-                "lang": "en",
-                "system": "https://ec.europa.eu/health/documents/community-register/html/",
-                "version": ""
-            },
-            "EU/1/20/1525": {
-                "active": true,
-                "display": "Jcovden",
-                "lang": "en",
-                "system": "https://ec.europa.eu/health/documents/community-register/html/",
-                "version": ""
-            },
-            "EU/1/20/1528": {
-                "active": true,
-                "display": "Comirnaty",
-                "lang": "en",
-                "system": "https://ec.europa.eu/health/documents/community-register/html/",
-                "version": ""
-            },
-            "EU/1/21/1529": {
-                "active": true,
-                "display": "Vaxzevria",
-                "lang": "en",
-                "system": "https://ec.europa.eu/health/documents/community-register/html/",
-                "version": ""
-            },
-            "EU/1/21/1618": {
-                "active": true,
-                "display": "Nuvaxovid",
-                "lang": "en",
-                "system": "https://ec.europa.eu/health/documents/community-register/html/",
-                "version": ""
-            },
-            "EU/1/21/1624": {
-                "active": true,
-                "display": "COVID-19 Vaccine Valneva",
-                "lang": "en",
-                "system": "https://ec.europa.eu/health/documents/community-register/html/",
-                "version": ""
-            },
-            "EpiVacCorona": {
-                "active": true,
-                "display": "EpiVacCorona",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.0"
-            },
-            "EpiVacCorona-N": {
-                "active": true,
-                "display": "EpiVacCorona-N",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.8"
-            },
-            "Hayat-Vax": {
-                "active": true,
-                "display": "Hayat-Vax",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.4"
-            },
-            "Inactivated-SARS-CoV-2-Vero-Cell": {
-                "active": false,
-                "display": "Inactivated SARS-CoV-2 (Vero Cell) (deprecated)",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.0"
-            },
-            "MVC-COV1901": {
-                "active": true,
-                "display": "MVC COVID-19 vaccine",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.6"
-            },
-            "NVSI-06-08": {
-                "active": true,
-                "display": "NVSI-06-08",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.9"
-            },
-            "NVX-CoV2373": {
-                "active": false,
-                "display": "NVX-CoV2373 (deprecated)",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.0"
-            },
-            "R-COVI": {
-                "active": true,
-                "display": "R-COVI",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.3"
-            },
-            "R-Covi": {
-                "active": true,
-                "display": "R-COVI",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.3"
-            },
-            "SCTV01C": {
-                "active": true,
-                "display": "SCTV01C",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.9"
-            },
-            "Soberana-02": {
-                "active": true,
-                "display": "Soberana 02",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.10"
-            },
-            "Soberana-Plus": {
-                "active": true,
-                "display": "Soberana Plus",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.10"
-            },
-            "Sputnik-Light": {
-                "active": true,
-                "display": "Sputnik Light",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.4"
-            },
-            "Sputnik-M": {
-                "active": true,
-                "display": "Sputnik M",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.8"
-            },
-            "Sputnik-V": {
-                "active": true,
-                "display": "Sputnik-V",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.0"
-            },
-            "VLA2001": {
-                "active": false,
-                "display": "VLA2001 (deprecated)",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.8"
-            },
-            "Vidprevtyn": {
-                "active": true,
-                "display": "Vidprevtyn",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.8"
-            },
-            "WIBP-CorV": {
-                "active": true,
-                "display": "WIBP-CorV",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.5"
-            },
-            "YS-SC2-010": {
-                "active": true,
-                "display": "YS-SC2-010",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccineproductname",
-                "version": "1.9"
             }
         }
     }
