@@ -2,11 +2,11 @@
   "config": [
     {
       "name": "lastUpdate",
-      "value": "21 Sep 2022"
+      "value": "30 oct 2022"
     },
     {
       "name": "version",
-      "value": 155
+      "value": 156
     },
     {
       "name": "versionCalibrationBle",
@@ -130,6 +130,10 @@
           "l": "#5770BE"
         }
       ]
+    },
+    {
+      "name": "app.updateFilesAfterDays",
+      "value": 30
     },
     {
       "name": "app.displayUrgentDgs",
