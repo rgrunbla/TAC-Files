@@ -35795,34 +35795,6 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
-            01:84:2e:73:ad:b5:fd:83:9d:bf
-        Signature Algorithm: ecdsa-with-SHA256
-        Issuer: C = AT, O = BMSGPK, serialNumber = 002, CN = AT DGC CSCA 2
-        Validity
-            Not Before: Oct 31 14:30:43 2022 GMT
-            Not After : Oct 31 14:30:43 2024 GMT
-        Subject: CN = AT DGC DSC, OU = PROD, OU = Internal HSMF, O = BMSGPK, C = AT, serialNumber = 5
-        Subject Public Key Info:
-            Public Key Algorithm: id-ecPublicKey
-                Public-Key: (256 bit)
-                pub:
-                    04:61:62:fd:83:5b:6a:be:ac:bc:b9:70:ea:20:a1:
-                    97:d0:8e:a3:fd:e9:a8:a6:ba:90:e3:6f:96:1e:5f:
-                    2d:de:fb:57:37:dd:bf:2d:ec:37:9f:0d:2f:f4:af:
-                    f3:09:97:5e:de:e5:93:e1:95:5a:a0:5b:0d:5c:f3:
-                    5e:f0:2a:22:8f
-                ASN1 OID: prime256v1
-                NIST CURVE: P-256
-    Signature Algorithm: ecdsa-with-SHA256
-         30:46:02:21:00:d4:d7:88:36:cb:0b:6d:0d:5e:af:91:7b:a0:
-         74:af:4a:a9:7a:0e:93:9a:0a:a8:23:c9:60:c4:3c:fb:e4:f6:
-         12:02:21:00:ac:ff:f6:cf:34:7a:6c:c5:44:1b:d4:06:15:0c:
-         67:50:9d:d9:92:49:72:90:e6:f5:e6:fc:fc:27:89:ce:2b:14
-
-Certificate:
-    Data:
-        Version: 3 (0x2)
-        Serial Number:
             43:02:96:4e:fd:b3:13:c6:d9:bc:c9:28
         Signature Algorithm: sha256WithRSAEncryption
         Issuer: C = AL, O = NAIS, CN = NAIS Class 3 Certification Authority
