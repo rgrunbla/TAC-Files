@@ -8557,6 +8557,48 @@ Certificate:
 Certificate:
     Data:
         Version: 3 (0x2)
+        Serial Number: -724242841730351862 (-0xa0d0707007502f6)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = LB, ST = Jnah, L = Beirut, O = Ministry of Public Health (MOPH), OU = Siren Analytics, CN = CSCA_DGC_LB_01
+        Validity
+            Not Before: Nov  1 11:38:59 2022 GMT
+            Not After : May  1 10:38:59 2023 GMT
+        Subject: OU = Siren Analytics, O = Ministry of Public Health (MOPH), ST = Beirut, L = Beirut, C = LB
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:3b:35:4c:69:9d:16:04:b0:23:ad:98:5e:27:6d:
+                    fd:d6:dc:4d:8b:d5:a1:6f:e9:d1:ac:48:e0:d0:81:
+                    74:1a:33:b5:8e:60:39:af:11:6d:bb:39:e5:c8:ba:
+                    ce:14:99:c5:72:ff:e7:21:31:af:46:ed:18:8b:95:
+                    dc:32:a8:37:d9
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Subject Key Identifier: 
+                12:BB:82:BC:77:59:BC:D7:CA:FB:D1:B5:84:29:5A:A2:60:73:2B:57
+            X509v3 Authority Key Identifier: 
+                keyid:8C:CA:2F:A2:9F:B2:1C:94:41:B0:3A:93:AB:AE:05:7B:19:51:B4:7D
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://empty
+
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.1847.2021.1.2
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:b4:21:23:7f:80:26:b4:ff:c5:19:0a:01:4f:
+         d3:1c:9b:65:d9:2f:28:90:54:ed:9f:a2:13:79:69:e1:62:46:
+         42:02:20:11:50:76:61:ef:d3:25:19:43:8a:16:3f:3f:6b:50:
+         96:b9:37:14:19:46:49:35:68:7c:d0:09:a8:23:e8:f2:8c
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
         Serial Number:
             71:6d:0d:82:40:5a:da:56:9a
         Signature Algorithm: ecdsa-with-SHA256
