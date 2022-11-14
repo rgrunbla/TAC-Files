@@ -11007,6 +11007,49 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            30:59:95:b2:c5:95:fc:b5:90:53:c9:c6:a2:88:a0:4c:21:55:c6:9d
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = LB, ST = Jnah, L = Beirut, O = Ministry of Public Health (MOPH), OU = Siren Analytics, CN = CSCA_DGC_LB_01
+        Validity
+            Not Before: Oct 31 14:58:33 2022 GMT
+            Not After : Apr 29 14:58:33 2023 GMT
+        Subject: C = LB, ST = Jnah, L = Beirut, O = Ministry of Public Health (MOPH), OU = Siren Analytics, CN = CSCA_DGC_LB_01
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:50:9c:78:14:af:86:a7:6e:72:20:18:5a:94:aa:
+                    ee:5a:7d:7b:d5:c8:82:17:f7:80:32:c7:4e:89:20:
+                    91:5c:98:0f:92:1a:9f:4a:1a:10:eb:06:9e:75:f6:
+                    00:4f:e9:0e:31:39:90:d3:9b:2e:e7:f6:f3:2f:d6:
+                    86:70:6e:57:b5
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Subject Key Identifier: 
+                F0:D7:83:FD:85:72:15:BF:32:C6:9E:7A:98:82:9F:2F:F3:AD:4C:BD
+            X509v3 Authority Key Identifier: 
+                keyid:F7:2D:C2:33:8B:67:0D:7F:CC:2B:D8:BF:5F:D2:F3:B1:5A:BF:BA:2A
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://empty
+
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.1847.2021.1.2
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:c7:df:cf:b1:be:36:16:78:de:31:1d:6f:5c:
+         7b:7b:f8:0f:2d:55:5c:78:9d:25:6a:5c:25:be:57:5f:39:33:
+         78:02:20:2d:16:55:58:f6:16:60:5f:ac:b7:e6:4d:09:87:c7:
+         61:db:cd:03:bd:da:1e:f7:3f:e2:2e:e4:c4:6e:08:9d:a6
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             70:2d:c6:62:33:11:de:27:80:49:bb:64:73:18:7e:b8:c9:02:dc:ae
         Signature Algorithm: sha256WithRSAEncryption
         Issuer: C = FR, O = Gouv, CN = CSCA-FRANCE
@@ -35253,6 +35296,71 @@ Certificate:
          31:00:ba:09:d6:61:f0:3a:e3:02:48:fe:a9:e3:b3:d7:c8:9f:
          dc:2f:85:87:f0:e3:03:ba:c5:df:52:d8:e4:61:59:9f:be:59:
          77:9b:66:fc:40:51:7b:56:a8:71:20:ec:e4:60
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            14:7b:5a:df:01:60:3d:c1:c2
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN = EADTrust ECC 256 SubCA For Qualified Certificates 2019, O = "European Agency of Digital Trust, S.L.", C = ES, organizationIdentifier = VATES-B85626240, OU = Legal Person
+        Validity
+            Not Before: Oct 17 13:00:00 2022 GMT
+            Not After : Oct 17 12:59:00 2024 GMT
+        Subject: CN = SESCAM Certificado Digital COVID UE 22, serialNumber = Q4500146H, OU = SELLO ELECTRONICO, organizationIdentifier = VATES- Q4500146H, O = Servicio de Salud de Castilla-La Mancha, C = ES
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:c5:0a:43:fc:92:36:d7:6f:0c:20:45:70:34:3e:
+                    95:16:ad:e1:20:ab:f7:0a:13:ec:84:ed:42:06:f7:
+                    bb:31:2e:a5:f4:aa:f7:d2:50:73:46:f9:f1:7d:b8:
+                    ce:2d:ec:2c:f1:3d:c1:97:ed:fe:08:66:a8:ff:ae:
+                    78:87:79:b4:3b
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Authority Key Identifier: 
+                keyid:D3:4C:6C:3A:BD:36:FE:70:87:23:87:3A:EE:3D:90:CF:CB:9B:F7:21
+
+            Authority Information Access: 
+                CA Issuers - URI:http://ca.eadtrust.eu/eadtrust-subca-ecc256eadlp2019.crt
+                OCSP - URI:http://ocsp.eadtrust.eu
+
+            X509v3 Issuer Alternative Name: 
+                email:ca@eadtrust.eu, URI:http://www.eadtrust.eu, URI:http://ca.eadtrust.eu, URI:http://policy.eadtrust.eu
+            X509v3 Subject Alternative Name: 
+                DirName:/2.16.724.1.3.5.6.2.1=SELLO ELECTRONICO DE NIVEL MEDIO/2.16.724.1.3.5.6.2.2=Servicio de Salud de Castilla-La Mancha/2.16.724.1.3.5.6.2.3=Q4500146H
+            X509v3 Certificate Policies: 
+                Policy: 2.16.724.1.3.5.6.2
+                Policy: 0.4.0.194112.1.1
+                  User Notice:
+                    Explicit Text: European Telecommunications Standards Institute. eIDAS European Regulation Compliant
+                Policy: 1.3.6.1.4.1.501.2.1.1.0.41233
+                  CPS: http://policy.eadtrust.eu
+                  User Notice:
+                    Explicit Text: Certificado cualificado de sello electrónico de Administración, órgano o entidad de derecho público, nivel Medio/Sustancial. Consulte las condiciones de uso en http://policy.eadtrust.eu
+
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication, E-mail Protection
+            qcStatements: 
+                0..0...+.......0.......I..0......F..0......F.....0......F..0......F...0l.....F..0b00.*https://eadtrust.eu/en/documents-in-force/..en0..(https://eadtrust.eu/documentos-vigentes/..es
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl.eadtrust.eu/eadtrust-subca-ecc256eadlp2019.crl
+
+            X509v3 Subject Key Identifier: 
+                7F:F9:0E:0E:48:EA:29:D5:BC:1D:AC:88:E0:2B:2F:11:0F:CB:46:FD
+            X509v3 Key Usage: critical
+                Digital Signature, Non Repudiation, Key Encipherment
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:af:52:7e:91:dc:d9:48:98:8a:e5:4a:7c:9a:
+         cc:f4:f7:5c:03:6a:87:aa:08:b8:de:94:8f:66:d0:d6:e2:8a:
+         51:02:21:00:e2:0d:16:9c:92:b7:e8:6f:1f:ef:66:38:a2:d3:
+         e7:ec:d8:98:37:95:db:ee:eb:c5:bc:01:6c:ad:c9:f8:a2:f2
 
 Certificate:
     Data:
