@@ -6,7 +6,7 @@
     },
     {
       "name": "version",
-      "value": 156
+      "value": 157
     },
     {
       "name": "versionCalibrationBle",
@@ -40,6 +40,10 @@
     },
     {
       "name": "app.isTracingFeatureActivated",
+      "value": true
+    },
+    {
+      "name": "app.isRobertActivated",
       "value": true
     },
     {
