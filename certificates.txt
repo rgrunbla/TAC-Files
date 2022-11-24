@@ -6927,6 +6927,47 @@ Certificate:
 Certificate:
     Data:
         Version: 3 (0x2)
+        Serial Number: 5301294188474792389 (0x4991fafa19e1f9c5)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = MT, O = Government of Malta, CN = Malta DCC Signing CA
+        Validity
+            Not Before: Nov 17 00:00:00 2022 GMT
+            Not After : Nov 17 23:59:59 2024 GMT
+        Subject: CN = MLT-DSC-RECOVERY-009, O = Government of Malta, C = MT
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:71:ab:92:09:8b:a4:38:89:a8:48:70:e0:c9:71:
+                    69:9a:07:76:0a:f7:0e:13:86:18:eb:c0:90:a7:02:
+                    c4:06:48:59:16:d2:d0:1d:65:5a:6d:92:ae:85:9e:
+                    34:f7:f0:ad:40:0a:eb:4b:c5:b9:ff:f1:24:c1:2e:
+                    a8:aa:cc:ff:59
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Extended Key Usage: critical
+                1.3.6.1.4.1.0.1847.2021.1.3
+            X509v3 Subject Key Identifier: 
+                40:04:C3:15:42:AC:F8:93:9C:EE:75:ED:62:17:5F:CB:78:63:B2:89
+            X509v3 Authority Key Identifier: 
+                keyid:10:0A:AD:FA:4C:33:E2:FD:AB:8D:DD:E1:96:6E:FE:8E:BF:1C:70:AD
+                DirName:/C=MT/O=Government of Malta/CN=Malta DCC Signing CA
+                serial:13:EC:B7:27:9D:3A:2C:D3
+
+            X509v3 Private Key Usage Period: 
+                Not Before: Nov 17 00:00:00 2022 GMT, Not After: May 17 23:59:59 2023 GMT
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:dd:46:6c:6b:0b:88:1e:ae:90:7c:9d:7c:5b:
+         21:4c:ca:7e:78:81:f7:36:e0:41:92:bc:21:e8:e2:c9:9a:01:
+         48:02:20:4d:be:58:1e:b2:86:20:f6:c6:32:c5:70:2b:e8:69:
+         fd:2a:55:69:b5:76:1c:78:5e:4e:d6:51:5f:30:b1:f2:44
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
         Serial Number:
             59:aa:21:31:34:7c:6a:a7:95:cb:88:ab:14:f0:a2:f2
         Signature Algorithm: ecdsa-with-SHA384
@@ -21414,6 +21455,47 @@ Certificate:
 Certificate:
     Data:
         Version: 3 (0x2)
+        Serial Number: 5832069735088229514 (0x50efac86413d8c8a)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = MT, O = Government of Malta, CN = Malta DCC Signing CA
+        Validity
+            Not Before: Nov 17 00:00:00 2022 GMT
+            Not After : Nov 17 23:59:59 2024 GMT
+        Subject: CN = MLT-DSC-RECOVERY-008, O = Government of Malta, C = MT
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:49:9c:2b:ba:69:95:09:0f:3a:0a:9d:de:39:0b:
+                    32:79:6a:4f:a5:22:87:14:1f:d8:42:9e:75:77:b6:
+                    7c:d1:a0:51:0f:76:4d:42:a3:0d:51:51:6a:d8:49:
+                    85:8d:22:07:df:a9:6a:4b:3b:d2:90:52:f6:88:be:
+                    c1:fa:79:aa:da
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Extended Key Usage: critical
+                1.3.6.1.4.1.0.1847.2021.1.3
+            X509v3 Subject Key Identifier: 
+                69:BB:CC:1E:2F:FE:60:C0:27:1F:56:E1:41:31:E0:FB:79:00:8F:C7
+            X509v3 Authority Key Identifier: 
+                keyid:10:0A:AD:FA:4C:33:E2:FD:AB:8D:DD:E1:96:6E:FE:8E:BF:1C:70:AD
+                DirName:/C=MT/O=Government of Malta/CN=Malta DCC Signing CA
+                serial:13:EC:B7:27:9D:3A:2C:D3
+
+            X509v3 Private Key Usage Period: 
+                Not Before: Nov 17 00:00:00 2022 GMT, Not After: May 17 23:59:59 2023 GMT
+    Signature Algorithm: ecdsa-with-SHA256
+         30:44:02:20:5e:73:85:d4:8a:00:db:8c:2c:a8:6b:58:1b:31:
+         19:57:55:b4:16:3b:d6:47:70:eb:a2:fb:71:a2:8d:97:6d:82:
+         02:20:79:20:f0:08:e5:6e:6b:58:2c:a1:a3:4c:bd:36:ec:81:
+         ef:df:9d:45:39:9f:8e:a2:ee:19:ed:6c:08:8d:40:09
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
         Serial Number:
             50:25:8f:74:5a:22:92:66:28:f6:1f:ce:07:3c:fc:73
         Signature Algorithm: rsassaPss         
@@ -22621,6 +22703,47 @@ Certificate:
          bb:46:96:2a:5c:35:cc:3e:f4:8e:4a:58:95:49:61:d6:cb:e4:
          e9:f2:80:bf:5c:98:f7:61:f5:bd:17:a9:4e:af:69:1c:04:1d:
          22:04:c1:b2:bd:14:62:f1
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 4023259279719976929 (0x37d57cffaf00cfe1)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = MT, O = Government of Malta, CN = Malta DCC Signing CA
+        Validity
+            Not Before: Nov 17 00:00:00 2022 GMT
+            Not After : Nov 17 23:59:59 2024 GMT
+        Subject: CN = MLT-DSC-TEST-008, O = Government of Malta, C = MT
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:0f:bd:81:5c:7d:1a:1c:c6:3c:33:cb:6b:0a:06:
+                    38:74:bb:a7:f4:b3:03:c8:f5:c6:26:9c:e6:d8:3e:
+                    36:13:40:d6:a7:70:ec:80:70:30:00:09:89:bd:c2:
+                    02:9a:a7:ac:3f:cf:33:f3:de:ff:72:7b:e3:7d:39:
+                    25:cf:2a:bb:1f
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Extended Key Usage: critical
+                1.3.6.1.4.1.0.1847.2021.1.1
+            X509v3 Subject Key Identifier: 
+                F7:2D:9B:E3:DB:21:E0:E1:7A:9C:91:DC:EA:C0:A4:C5:06:8B:62:A3
+            X509v3 Authority Key Identifier: 
+                keyid:10:0A:AD:FA:4C:33:E2:FD:AB:8D:DD:E1:96:6E:FE:8E:BF:1C:70:AD
+                DirName:/C=MT/O=Government of Malta/CN=Malta DCC Signing CA
+                serial:13:EC:B7:27:9D:3A:2C:D3
+
+            X509v3 Private Key Usage Period: 
+                Not Before: Nov 17 00:00:00 2022 GMT, Not After: May 17 23:59:59 2023 GMT
+    Signature Algorithm: ecdsa-with-SHA256
+         30:44:02:20:13:e0:53:7c:d7:81:78:49:18:3f:39:0d:47:2d:
+         74:b8:24:87:b6:1c:49:29:c8:6c:d4:c6:83:fc:4d:24:00:22:
+         02:20:2f:25:8b:d2:a5:d0:fd:f6:c2:d6:c8:dd:c2:44:b2:6f:
+         9c:6f:42:7d:66:79:88:73:1e:43:4a:0a:24:8d:a4:82
 
 Certificate:
     Data:
@@ -27383,6 +27506,47 @@ Certificate:
 
 Certificate:
     Data:
+        Version: 3 (0x2)
+        Serial Number: 6013808653380418814 (0x5375571b93e8fcfe)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = MT, O = Government of Malta, CN = Malta DCC Signing CA
+        Validity
+            Not Before: Nov 17 00:00:00 2022 GMT
+            Not After : Nov 17 23:59:59 2024 GMT
+        Subject: CN = MLT-DSC-VACCINATIONS-009, O = Government of Malta, C = MT
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:fb:25:46:1c:4a:04:8f:dc:23:be:27:98:4f:a8:
+                    ff:e2:b8:df:28:1a:da:e4:15:b0:05:97:04:ed:e7:
+                    50:9f:70:c3:0e:6c:8c:9e:b2:07:d1:30:0d:15:18:
+                    5f:f1:13:32:34:80:2a:3a:fc:e0:b0:7e:e6:3a:06:
+                    6b:cc:6a:20:aa
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Extended Key Usage: critical
+                1.3.6.1.4.1.0.1847.2021.1.2
+            X509v3 Subject Key Identifier: 
+                3B:6A:0C:5F:C9:49:91:22:F6:30:C4:1D:65:26:8D:59:0E:6E:F6:0E
+            X509v3 Authority Key Identifier: 
+                keyid:10:0A:AD:FA:4C:33:E2:FD:AB:8D:DD:E1:96:6E:FE:8E:BF:1C:70:AD
+                DirName:/C=MT/O=Government of Malta/CN=Malta DCC Signing CA
+                serial:13:EC:B7:27:9D:3A:2C:D3
+
+            X509v3 Private Key Usage Period: 
+                Not Before: Nov 17 00:00:00 2022 GMT, Not After: May 17 23:59:59 2023 GMT
+    Signature Algorithm: ecdsa-with-SHA256
+         30:44:02:20:49:8a:68:e4:00:ca:3d:73:1a:a0:88:21:fa:a9:
+         b8:94:77:79:4c:e4:a8:da:98:d8:be:f6:33:3a:cd:7a:33:96:
+         02:20:64:e5:7b:e2:58:28:20:aa:c3:35:ab:43:10:18:3f:ff:
+         41:a7:38:32:ef:1a:94:e3:d6:64:b1:75:b0:a7:a6:ce
+
+Certificate:
+    Data:
         Version: 1 (0x0)
         Serial Number:
             25:4d:4a:dd:e1:6f:57:b6:ef:69:f2:7a:f0:16:0d:f4:2c:40:7d:55
@@ -32035,6 +32199,47 @@ Certificate:
 Certificate:
     Data:
         Version: 3 (0x2)
+        Serial Number: 6250654172596615723 (0x56bec8da436f3a2b)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = MT, O = Government of Malta, CN = Malta DCC Signing CA
+        Validity
+            Not Before: Nov 17 00:00:00 2022 GMT
+            Not After : Nov 17 23:59:59 2024 GMT
+        Subject: CN = MLT-DSC-TEST-009, O = Government of Malta, C = MT
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:81:e7:e2:49:28:c6:75:08:4d:5f:67:1c:0d:a4:
+                    c1:f4:27:c9:f9:c0:62:13:68:08:a3:ef:af:21:53:
+                    ea:1b:0b:7c:52:eb:44:aa:30:d1:59:3d:f1:8e:3e:
+                    ad:d4:70:a4:d8:54:2f:16:2a:7f:12:b0:c4:f8:5e:
+                    9d:c6:20:34:c5
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Extended Key Usage: critical
+                1.3.6.1.4.1.0.1847.2021.1.1
+            X509v3 Subject Key Identifier: 
+                52:6F:AF:E8:29:15:B4:AB:E1:4E:64:A7:18:4E:3F:42:D1:8A:FD:4F
+            X509v3 Authority Key Identifier: 
+                keyid:10:0A:AD:FA:4C:33:E2:FD:AB:8D:DD:E1:96:6E:FE:8E:BF:1C:70:AD
+                DirName:/C=MT/O=Government of Malta/CN=Malta DCC Signing CA
+                serial:13:EC:B7:27:9D:3A:2C:D3
+
+            X509v3 Private Key Usage Period: 
+                Not Before: Nov 17 00:00:00 2022 GMT, Not After: May 17 23:59:59 2023 GMT
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:a1:30:35:25:03:a6:0b:3e:6a:99:b1:61:e1:
+         b9:a5:c1:4f:53:5a:0f:97:ad:2b:d5:51:b8:3b:c6:c3:0c:62:
+         d6:02:21:00:97:ec:ca:6b:6a:78:4e:c4:a8:45:4f:b5:e3:e3:
+         05:20:49:00:af:4e:8f:59:b9:69:88:0d:d8:e6:eb:e8:91:27
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
         Serial Number:
             49:b2:a5:df:06:d7:9b:b4:8e:10:1e:62:23:0b:4d:c6:58:bb:b8:e5
         Signature Algorithm: ecdsa-with-SHA256
@@ -32196,6 +32401,47 @@ Certificate:
          30:26:0d:dc:5c:af:52:1d:09:4e:11:3b:97:fa:3d:8f:40:4b:
          7a:5d:6f:75:40:92:27:db:65:ee:5c:bb:6f:7a:dd:0b:ef:0a:
          8c:9f:59:61:57:c2:3f:c3:df:1b:2f:4c:69
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 4362325048103378826 (0x3c8a1784c6fd9f8a)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = MT, O = Government of Malta, CN = Malta DCC Signing CA
+        Validity
+            Not Before: Nov 17 00:00:00 2022 GMT
+            Not After : Nov 17 23:59:59 2024 GMT
+        Subject: CN = MLT-DSC-VACCINATIONS-008, O = Government of Malta, C = MT
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:05:97:c9:da:b4:d7:30:61:88:ce:2d:48:5c:61:
+                    b0:bb:86:39:38:95:8e:3d:34:3e:ae:79:8b:99:c3:
+                    f5:d5:d7:68:0b:19:c8:01:8f:96:df:0c:1d:2a:63:
+                    97:e9:fe:05:b3:5a:7a:f7:d5:24:4c:a3:1e:55:ea:
+                    57:23:47:2f:48
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Extended Key Usage: critical
+                1.3.6.1.4.1.0.1847.2021.1.2
+            X509v3 Subject Key Identifier: 
+                3D:64:45:71:91:11:A7:C5:A3:DC:BC:6F:31:BD:45:7E:4A:7F:76:54
+            X509v3 Authority Key Identifier: 
+                keyid:10:0A:AD:FA:4C:33:E2:FD:AB:8D:DD:E1:96:6E:FE:8E:BF:1C:70:AD
+                DirName:/C=MT/O=Government of Malta/CN=Malta DCC Signing CA
+                serial:13:EC:B7:27:9D:3A:2C:D3
+
+            X509v3 Private Key Usage Period: 
+                Not Before: Nov 17 00:00:00 2022 GMT, Not After: May 17 23:59:59 2023 GMT
+    Signature Algorithm: ecdsa-with-SHA256
+         30:44:02:20:15:76:79:b2:c6:07:9c:c2:b3:23:1c:67:67:14:
+         19:cc:0e:b1:e6:fb:5c:d3:02:5f:bb:41:7d:4d:9d:e2:c2:34:
+         02:20:54:24:77:4a:01:ac:a3:31:07:5f:8a:98:c6:e9:66:d6:
+         54:0e:10:08:6b:82:4d:50:08:59:a9:0b:fa:31:f1:a8
 
 Certificate:
     Data:
