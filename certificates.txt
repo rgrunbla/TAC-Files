@@ -14053,6 +14053,53 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            47:3d:fd:3a:15:8b:f6:b4:e6:d5:b2:a6:9d:90:f2:4a:56:61:e5:37
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN = Faroe Islands Health Authority CSCA v1, O = Gjaldstovan, C = FO
+        Validity
+            Not Before: Nov 24 13:02:30 2022 GMT
+            Not After : Nov 23 13:02:29 2024 GMT
+        Subject: CN = DSC_DGC_FO_345334_TEST_02, O = SJUKRAHUSVERKID, C = FO
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:79:27:8e:03:1e:6f:52:89:2b:58:b9:e9:44:85:
+                    7b:8d:93:fe:bc:ca:a7:72:01:08:21:30:a6:34:33:
+                    72:65:70:30:a7:84:20:7b:86:35:40:9e:31:00:bc:
+                    88:69:ad:a5:47:37:56:d9:c8:6a:a5:c0:ba:7f:59:
+                    be:f3:cb:8a:71
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Authority Key Identifier: 
+                keyid:EE:3C:81:A6:E6:1E:B6:51:74:44:E0:D0:F4:30:33:E2:EA:6A:BE:A1
+
+            X509v3 Certificate Policies: 
+                Policy: 1.2.208.189.2.1.1
+                  CPS: https://repository.samleiki.fo/legal-repository/ehealth
+
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.1847.2021.1.1
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl.samleiki.fo/Faroe-Islands-Health-Authority-CSCA-v1.crl
+
+            X509v3 Subject Key Identifier: 
+                DA:3F:58:63:D7:9A:8C:3C:97:82:BE:9C:8C:E0:E4:D4:4E:24:DB:23
+            X509v3 Key Usage: critical
+                Digital Signature
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:b4:9e:6f:48:0a:b0:a7:81:a1:37:dd:6d:2f:
+         60:95:ee:09:73:c1:47:3b:77:80:0c:0d:50:7f:e4:58:f8:64:
+         23:02:20:12:8a:bc:ac:44:ef:66:a7:6a:60:cf:48:94:df:dc:
+         c8:60:e1:7c:36:db:4a:df:10:84:55:a5:8b:f9:e5:42:87
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             0a:c7:58:92:33:45:91:e6:7a:9a:da:f8:7f:48:e5:67:8b:cb:0a:25
         Signature Algorithm: sha256WithRSAEncryption
         Issuer: C = FR, O = Gouv, CN = CSCA-FRANCE
@@ -28898,6 +28945,53 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            66:86:02:da:e2:de:7b:16:58:bf:76:fb:0b:f3:ee:39:8f:1d:8d:ba
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN = Faroe Islands Health Authority CSCA v1, O = Gjaldstovan, C = FO
+        Validity
+            Not Before: Nov 24 13:03:38 2022 GMT
+            Not After : Nov 23 13:03:37 2024 GMT
+        Subject: CN = DSC_DGC_FO_345334_VACCINATION_02, O = SJUKRAHUSVERKID, C = FO
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:fe:39:7d:b4:8e:ae:fb:af:33:d6:e4:b6:17:c6:
+                    d8:9a:8c:6b:88:2a:e1:9d:bd:bf:fd:b3:89:eb:c7:
+                    c9:e8:b2:c6:fe:17:a1:96:41:ac:8c:96:7c:c3:f6:
+                    03:6b:3d:a0:a8:1a:75:0b:e0:99:0b:02:93:99:2d:
+                    46:69:00:1c:30
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Authority Key Identifier: 
+                keyid:EE:3C:81:A6:E6:1E:B6:51:74:44:E0:D0:F4:30:33:E2:EA:6A:BE:A1
+
+            X509v3 Certificate Policies: 
+                Policy: 1.2.208.189.2.1.1
+                  CPS: https://repository.samleiki.fo/legal-repository/ehealth
+
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.1847.2021.1.2
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl.samleiki.fo/Faroe-Islands-Health-Authority-CSCA-v1.crl
+
+            X509v3 Subject Key Identifier: 
+                D1:0E:C8:10:43:A0:F7:A2:8C:7E:0A:5B:9A:F7:8A:38:39:40:0E:B4
+            X509v3 Key Usage: critical
+                Digital Signature
+    Signature Algorithm: ecdsa-with-SHA256
+         30:44:02:20:54:5f:5f:24:13:fd:0f:12:04:e6:3f:94:a0:59:
+         4d:b7:63:f5:b0:77:a9:41:e3:ce:0f:9c:f1:61:c4:3d:b5:58:
+         02:20:44:12:63:c6:b9:18:3f:ea:5c:a0:b5:81:ee:5f:8f:0b:
+         66:d1:f9:6b:36:e4:99:e3:fa:1c:d4:9b:c7:f6:cf:6f
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             7e:7f:ed:0c:80:b4:e1:73:67:d3:c0:de:74:3f:cc:82:fd:18:ed:0f
         Signature Algorithm: ecdsa-with-SHA256
         Issuer: C = NZ, O = Government of New Zealand, OU = Ministry of Health, CN = Vaccine CSCA
@@ -34968,6 +35062,53 @@ Certificate:
          21:42:75:0b:11:b4:fa:44:9f:3a:01:2b:1a:de:c5:fa:f2:77:
          9b:02:20:18:e4:f9:34:28:35:ec:be:03:2a:79:4a:64:24:f3:
          ad:27:36:d8:4d:db:32:ec:83:b7:27:14:87:1e:56:9e:ee
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            27:3f:cc:49:81:e7:89:82:5a:43:8f:ac:97:49:06:80:ee:da:ee:03
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN = Faroe Islands Health Authority CSCA v1, O = Gjaldstovan, C = FO
+        Validity
+            Not Before: Nov 24 12:59:08 2022 GMT
+            Not After : Nov 23 12:59:07 2024 GMT
+        Subject: CN = DSC_DGC_FO_345334_RECOVERY_02, O = SJUKRAHUSVERKID, C = FO
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:07:a4:89:ad:a5:57:e0:81:69:d6:79:88:2a:f4:
+                    d0:cb:ac:d6:91:d4:d6:3e:6d:51:ba:12:98:13:67:
+                    f0:4d:bd:94:e8:2b:0f:f9:6e:f5:0c:9f:02:1c:48:
+                    36:67:54:89:36:3b:db:04:d1:ec:54:85:53:61:96:
+                    9f:8c:30:dd:db
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Authority Key Identifier: 
+                keyid:EE:3C:81:A6:E6:1E:B6:51:74:44:E0:D0:F4:30:33:E2:EA:6A:BE:A1
+
+            X509v3 Certificate Policies: 
+                Policy: 1.2.208.189.2.1.1
+                  CPS: https://repository.samleiki.fo/legal-repository/ehealth
+
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.1847.2021.1.3
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl.samleiki.fo/Faroe-Islands-Health-Authority-CSCA-v1.crl
+
+            X509v3 Subject Key Identifier: 
+                82:36:AE:95:73:94:EE:39:29:D0:7E:95:2F:68:18:A4:6B:F0:CE:49
+            X509v3 Key Usage: critical
+                Digital Signature
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:53:b3:ed:0e:3a:4d:c1:6d:33:ab:88:3d:3e:cc:
+         a4:38:f7:c9:63:db:26:45:ad:5d:14:f7:15:3e:c7:8b:23:a5:
+         02:21:00:8d:b8:b3:90:bb:00:82:8f:a2:21:0b:03:c2:d6:fe:
+         4d:7b:d9:c8:76:dd:2f:40:36:c1:8f:b6:ba:65:a7:73:a3
 
 Certificate:
     Data:
