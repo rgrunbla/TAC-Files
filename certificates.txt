@@ -7721,6 +7721,70 @@ Certificate:
 Certificate:
     Data:
         Version: 3 (0x2)
+        Serial Number:
+            02:c1:06:37:f0:73:3f:99:bb:95:b4:4e:94:e0:e5:54:c9:bf:42:d7
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = IT, O = Ministero della Salute, CN = Italy DGC CSCA 1
+        Validity
+            Not Before: Dec  1 15:48:14 2022 GMT
+            Not After : Nov 30 15:48:13 2024 GMT
+        Subject: C = IT, O = Ministero della Salute, CN = Italy DGC DSC 8
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:56:93:ca:48:65:f9:95:6b:cd:cb:b0:77:27:2a:
+                    ad:cb:20:53:47:83:6c:6c:8d:a4:65:7d:03:d2:fb:
+                    c8:d5:8b:d1:79:78:27:39:9a:99:56:59:e9:37:84:
+                    06:5f:58:a9:7e:72:ab:6e:15:fa:a4:7c:b9:63:0e:
+                    15:5f:98:c4:ef
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Authority Key Identifier: 
+                BE:54:E5:69:5E:67:92:40:89:97:60:41:00:07:FA:4B:45:50:B0:FF
+            X509v3 CRL Distribution Points: 
+                Full Name:
+                  URI:ldap://cads.dgc.gov.it/CN=Italy%20DGC%20CSCA%20x\1,O=Ministero%20della%20Salute,C=IT
+            X509v3 Subject Key Identifier: 
+                2E:C3:30:9E:34:56:25:78:1E:8A:61:26:A5:C5:43:06:A3:AA:D1:6F
+            X509v3 Key Usage: critical
+                Digital Signature
+    Signature Algorithm: sha256WithRSAEncryption
+    Signature Value:
+        03:58:a8:3b:c1:a9:6f:27:97:2c:d3:1f:41:37:62:75:ae:f0:
+        46:c1:10:19:4e:fb:81:b1:1c:d4:fa:94:6e:e1:d3:77:fc:05:
+        f6:9e:5d:ae:c9:3a:87:f8:3f:55:68:ac:37:03:ff:82:46:35:
+        c8:83:89:41:dc:df:8e:06:e1:dd:69:02:1a:14:cf:8d:ec:45:
+        a8:36:07:c5:dd:e7:15:26:ec:c6:0c:a7:79:d3:75:78:00:e4:
+        83:f1:a4:9e:81:6f:4e:6c:c0:78:5c:00:dc:76:d9:3e:0e:0b:
+        fb:83:6a:66:de:82:60:41:80:47:16:83:6a:14:da:ae:d3:6b:
+        9c:87:1e:b5:33:d8:10:7f:d0:e5:ed:4f:3c:8c:06:02:d6:6e:
+        60:fd:38:cf:69:24:59:7d:ec:3e:ad:f2:7a:1f:4a:da:6d:4c:
+        56:00:94:59:34:d8:ea:02:f5:19:f8:6e:d5:69:f9:46:29:25:
+        c8:c4:b1:c9:56:dd:ee:20:04:0f:f8:15:0d:4d:b1:9d:a0:30:
+        38:56:1e:b8:3c:d3:da:a7:f3:5f:31:54:63:b0:19:5e:85:61:
+        5b:a6:0d:d3:a4:a0:b4:2c:61:aa:24:a6:aa:c4:7e:6f:2a:e7:
+        f9:43:dc:d1:58:4a:15:11:c2:6a:ea:d5:56:37:52:05:ca:84:
+        cf:ba:cc:73:74:6d:1b:f4:e8:bd:76:f5:fb:c8:7a:85:9d:2f:
+        e7:8f:ea:b2:2e:94:75:a8:59:8d:31:06:2c:93:64:be:f1:5d:
+        64:d1:aa:26:89:52:c2:68:2a:a9:fa:aa:41:90:a0:35:0f:c3:
+        72:d9:4a:f1:b9:a0:21:16:9f:2e:30:53:0d:c7:eb:d5:63:15:
+        b8:69:54:0e:ba:5f:c2:a7:21:e3:a9:26:a0:db:bb:c8:85:2b:
+        fa:00:a7:37:3b:d6:73:9f:39:6e:a5:10:88:b6:5b:29:52:3a:
+        14:db:8a:30:6c:0d:b8:62:d6:91:5a:b1:f5:7c:ff:68:97:c6:
+        4f:95:09:c4:b9:e4:40:c4:88:85:b7:18:25:ea:ce:2b:17:29:
+        44:9a:61:96:8b:a5:e5:c0:e0:5d:9b:3b:2b:d2:22:f1:95:38:
+        80:6a:92:92:1b:b9:28:5a:5e:f7:5b:8d:e4:74:cc:a4:d6:5f:
+        a0:1e:4a:83:57:9c:96:bc:51:a5:ff:ef:29:bb:4f:4c:15:a5:
+        af:ec:b1:bc:00:e2:f4:29:e8:cf:21:32:ab:d6:7c:94:19:27:
+        f0:10:fc:1c:58:ba:89:b1:17:f0:01:d7:df:65:cb:dc:8e:26:
+        da:b4:2f:16:30:f4:b7:70:50:a0:9f:00:9a:59:9c:9d:e9:45:
+        ef:5f:ad:5c:8d:f9:0c:6c
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
         Serial Number: 5256202099015749317 (0x48f1c7f5e37f0ec5)
         Signature Algorithm: ecdsa-with-SHA256
         Issuer: CN = Poland DGC RootCSCA 1, O = Ministry of Health, C = PL
@@ -12344,6 +12408,70 @@ Certificate:
         fa:ba:3a:ff:49:a2:e1:59:bb:81:8d:44:10:3f:2e:df:d9:3e:
         2c:02:20:38:a7:f2:6d:17:25:6f:3c:91:9f:3f:ee:72:71:f5:
         f0:1d:ab:f5:91:22:eb:3f:fb:2e:79:aa:35:9a:1b:3c:f1
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            68:f0:3d:13:ea:8e:29:7a:c8:85:fa:b8:03:26:88:dd:73:a7:74:ea
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = IT, O = Ministero della Salute, CN = Italy DGC CSCA 1
+        Validity
+            Not Before: Dec  1 15:57:15 2022 GMT
+            Not After : Nov 30 15:57:14 2024 GMT
+        Subject: C = IT, O = Ministero della Salute, CN = Italy DGC DSC 9
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:87:c5:e8:2b:6c:5b:3b:f7:f2:76:88:f8:79:19:
+                    de:76:39:6c:cc:61:f7:ba:40:cb:f5:8d:34:bc:2c:
+                    55:58:a4:75:8e:dd:cd:82:61:d4:43:e8:49:30:3d:
+                    60:70:7e:dd:01:e2:cc:dc:95:f4:0c:94:c9:7b:2a:
+                    c2:46:ab:ef:c8
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Authority Key Identifier: 
+                BE:54:E5:69:5E:67:92:40:89:97:60:41:00:07:FA:4B:45:50:B0:FF
+            X509v3 CRL Distribution Points: 
+                Full Name:
+                  URI:ldap://cads.dgc.gov.it/CN=Italy%20DGC%20CSCA%20x\1,O=Ministero%20della%20Salute,C=IT
+            X509v3 Subject Key Identifier: 
+                D5:D5:89:C2:07:8E:92:02:F3:69:AA:57:E5:1B:E2:8A:66:E4:C4:61
+            X509v3 Key Usage: critical
+                Digital Signature
+    Signature Algorithm: sha256WithRSAEncryption
+    Signature Value:
+        26:16:15:29:c3:82:56:5e:f8:df:8f:68:b3:a2:e0:20:c8:6f:
+        48:8b:6d:36:bb:96:ef:dc:aa:39:9a:14:01:36:d8:87:51:c0:
+        2c:58:45:15:d9:0d:9f:e9:db:29:96:ef:a4:e8:38:1b:77:48:
+        45:33:55:28:02:79:bf:1e:a7:75:54:58:1b:45:f9:f2:73:22:
+        65:4e:61:41:35:37:0e:30:55:b2:a8:e4:6f:e4:18:4e:1e:e7:
+        de:8a:f1:9f:37:7e:4f:b3:da:d8:52:65:66:6f:fd:2e:da:ae:
+        c2:b0:3e:d5:ac:eb:d5:a6:f4:98:63:ba:54:a7:64:7e:0f:8a:
+        e8:46:7d:ee:c5:a1:f0:9f:d0:57:34:46:e8:b9:d9:1a:07:64:
+        d6:ef:78:46:64:0d:14:d9:f1:0a:c7:a1:ba:c8:54:b7:a2:e1:
+        77:e0:be:da:9f:92:c4:6e:ec:39:3a:d9:fc:a5:64:87:af:a7:
+        6f:ae:6e:7b:ca:b0:0e:0b:6e:9a:e6:1c:29:16:8f:c6:44:77:
+        36:0e:a0:c3:82:d1:4c:09:c0:9c:1e:66:71:93:c1:e1:ee:d6:
+        a5:6e:32:56:e1:1f:9d:d5:c0:e2:87:97:1e:fd:82:49:39:18:
+        70:c9:b4:8e:0d:87:07:2f:ce:2d:38:5f:49:5a:6b:0e:8f:54:
+        0c:06:1d:39:ab:19:45:54:db:d5:33:3b:d6:c8:9d:7e:c2:ee:
+        9a:49:86:8b:ac:8d:4f:ce:cb:92:ee:38:3b:20:a5:49:f5:d1:
+        97:21:48:6c:5d:42:ca:a8:b5:3a:ee:30:2d:f0:3c:3f:4d:69:
+        88:b0:ca:c7:99:e2:08:d1:a6:7d:b5:07:d4:30:61:23:e3:8a:
+        0d:7a:d3:ac:6b:5d:e0:f3:26:e4:60:22:b8:5a:87:52:08:f5:
+        c5:b3:dd:53:5f:bb:51:97:1a:c7:09:4b:0e:55:b4:7d:50:07:
+        5e:6c:d9:b3:fd:e5:9b:31:97:01:f8:1a:a4:3c:7d:e1:28:ef:
+        06:a8:5f:32:8d:7a:de:5a:16:85:52:bc:29:a8:e7:7f:b8:1c:
+        bf:7c:7a:1f:b4:8e:e7:49:09:f0:7a:ac:b4:f7:c3:5a:6e:05:
+        a9:11:85:d4:d7:6b:a9:3b:60:93:0b:f9:8b:2c:71:86:1b:06:
+        55:0d:72:7c:04:82:f7:45:a4:d6:b2:8e:bc:4e:53:44:8c:4e:
+        0c:82:5a:e7:08:d3:80:f5:04:ec:49:4d:b5:75:5d:5d:97:ad:
+        0b:f0:3c:11:9a:08:df:c7:a4:e7:cb:80:2f:e7:aa:31:75:1c:
+        7d:3e:57:5d:b1:fa:b0:60:67:83:5f:16:e0:24:c7:10:8c:12:
+        4f:4c:2c:c4:f8:d5:db:c1
 
 Certificate:
     Data:
