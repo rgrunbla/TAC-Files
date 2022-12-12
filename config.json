@@ -2,11 +2,11 @@
   "config": [
     {
       "name": "lastUpdate",
-      "value": "30 oct 2022"
+      "value": "12 dec 2022"
     },
     {
       "name": "version",
-      "value": 159
+      "value": 160
     },
     {
       "name": "versionCalibrationBle",
@@ -338,7 +338,7 @@
     },
     {
       "name": "app.displayAttestation",
-      "value": true
+      "value": false
     },
     {
       "name": "app.push.displayOnSuccess",
