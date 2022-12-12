@@ -6,7 +6,7 @@
     },
     {
       "name": "version",
-      "value": 157
+      "value": 158
     },
     {
       "name": "versionCalibrationBle",
@@ -119,6 +119,11 @@
           "k1": "omicron",
           "k2": "delta",
           "t": "keyfigure.compare.6"
+        },
+        {
+          "k1": "tauxincidence",
+          "k2": "patientsrea",
+          "t": "keyfigure.compare.7"
         }
       ]
     },
