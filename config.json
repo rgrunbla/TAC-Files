@@ -6,7 +6,7 @@
     },
     {
       "name": "version",
-      "value": 158
+      "value": 159
     },
     {
       "name": "versionCalibrationBle",
@@ -86,6 +86,11 @@
       "name": "app.keyfigures.compare",
       "value": [
         {
+          "k1": "tauxincidence",
+          "k2": "patientsrea",
+          "t": "keyfigure.compare.7"
+        },
+        {
           "k1": "sivicsidepvacsireanonvax",
           "k2": "sivicsidepvacsireavax6plusrappel",
           "t": "keyfigure.compare.vacsirea"
@@ -119,11 +124,6 @@
           "k1": "omicron",
           "k2": "delta",
           "t": "keyfigure.compare.6"
-        },
-        {
-          "k1": "tauxincidence",
-          "k2": "patientsrea",
-          "t": "keyfigure.compare.7"
         }
       ]
     },
