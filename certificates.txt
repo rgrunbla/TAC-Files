@@ -11316,6 +11316,42 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            43:0a:cb:c4:bf:a6:c9:92:28:fc:24:6c:fa:0e:7a:8e:d2:f6:59:c1
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = SM, ST = SM, L = City of San Marino, O = San Marino Innovation, OU = DGCOperations, CN = CSCA_DGC_SM_01
+        Validity
+            Not Before: Jun 10 10:39:16 2021 GMT
+            Not After : Jun 10 10:39:16 2025 GMT
+        Subject: C = SM, ST = SM, L = City of San Marino, O = San Marino Innovation, OU = DGCOperations, CN = CSCA_DGC_SM_01
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:b0:e6:ea:a1:5e:b5:18:6a:02:8c:44:7e:57:2b:
+                    e6:53:1b:09:8c:f7:e8:04:ac:00:aa:15:6e:1a:63:
+                    ef:9c:02:e9:76:b5:72:0e:88:13:82:ad:85:06:08:
+                    b1:a8:6f:07:e3:14:89:b5:c0:95:f5:aa:70:0f:80:
+                    07:a3:af:f2:5b
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            X509v3 Key Usage: critical
+                Digital Signature, Certificate Sign, CRL Sign
+            X509v3 Subject Key Identifier: 
+                DD:1E:29:F8:A9:97:4C:A1:DB:FC:1D:99:0F:5B:3D:77:43:FE:B6:55
+    Signature Algorithm: ecdsa-with-SHA256
+    Signature Value:
+        30:45:02:21:00:e0:84:6c:64:c0:85:0a:83:03:a6:19:32:f0:
+        f7:47:75:bb:f6:e3:91:8e:60:68:ce:36:f8:47:1e:e2:f3:5a:
+        43:02:20:7e:6c:a0:9f:2d:32:3b:6f:b0:fe:39:73:9d:70:5e:
+        fd:0b:71:7c:7f:65:35:17:bd:92:8f:48:8d:d4:0c:87:a8
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             77:81:00:b1:33:d6:b7:2e:4c:7d:ba:4d:87:c5:f6:b9
         Signature Algorithm: ecdsa-with-SHA384
         Issuer: C = DE, O = D-Trust GmbH, CN = D-TRUST CA 4-21-2 2021, organizationIdentifier = NTRDE-HRB74346
