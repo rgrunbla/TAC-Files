@@ -2,11 +2,11 @@
   "config": [
     {
       "name": "lastUpdate",
-      "value": "12 dec 2022"
+      "value": "19 dec 2022"
     },
     {
       "name": "version",
-      "value": 160
+      "value": 161
     },
     {
       "name": "versionCalibrationBle",
@@ -91,24 +91,9 @@
           "t": "keyfigure.compare.7"
         },
         {
-          "k1": "sivicsidepvacsireanonvax",
-          "k2": "sivicsidepvacsireavax6plusrappel",
-          "t": "keyfigure.compare.vacsirea"
-        },
-        {
           "k1": "nombrecas",
           "k2": "deces",
           "t": "keyfigure.compare.5"
-        },
-        {
-          "k1": "sivicsidepvacsipcrplusnonvax",
-          "k2": "sivicsidepvacsipcrplusvax6plusrappel",
-          "t": "keyfigure.compare.vacsipcrplus"
-        },
-        {
-          "k1": "couvcompletvaccination",
-          "k2": "patientsrea",
-          "t": "keyfigure.compare.3"
         },
         {
           "k1": "nombrecasj3",
@@ -119,11 +104,6 @@
           "k1": "qrcodes",
           "k2": "notification",
           "t": "keyfigure.compare.2"
-        },
-        {
-          "k1": "omicron",
-          "k2": "delta",
-          "t": "keyfigure.compare.6"
         }
       ]
     },
