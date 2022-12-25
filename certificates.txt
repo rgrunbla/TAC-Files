@@ -5979,6 +5979,47 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            7e:90:90:f1:a6:79:23:b4:ef:70:a3:2b:c7:68:dd:e8:de:9f:e6:4e
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = SG, ST = Singapore, O = Ministry Of Health, CN = csca.notarise.gov.sg
+        Validity
+            Not Before: Dec 25 02:40:04 2022 GMT
+            Not After : Dec 24 02:40:04 2024 GMT
+        Subject: C = SG, ST = Singapore, O = Ministry Of Health, CN = dsc.notarise.gov.sg
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:1a:74:92:da:a1:43:6d:28:ea:0f:4e:07:8c:31:
+                    cc:5c:06:a6:8a:ed:55:ea:6c:fd:8c:70:32:f1:81:
+                    91:0b:83:bf:d3:40:91:d2:89:b5:1d:07:46:6a:d2:
+                    1c:38:49:3c:09:76:8f:09:da:33:b8:d4:2f:6e:0d:
+                    e2:ec:fc:5d:54
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Subject Key Identifier: 
+                A5:4E:B5:42:B5:16:A7:F6:46:45:55:D3:15:B1:9C:BE:5B:5D:4F:50
+            X509v3 Authority Key Identifier: 
+                39:37:05:B3:38:B9:F9:9E:23:0D:D1:C2:C1:B0:C3:B3:32:97:01:A5
+            X509v3 CRL Distribution Points: 
+                Full Name:
+                  URI:https://www.notarise.gov.sg/csca.crl
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.1847.2021.1.1, 1.3.6.1.4.1.1847.2021.1.2, 1.3.6.1.4.1.1847.2021.1.3
+    Signature Algorithm: ecdsa-with-SHA256
+    Signature Value:
+        30:45:02:21:00:98:c4:cc:e9:d2:af:86:36:2a:b1:b8:c3:0e:
+        c1:3b:bc:19:65:09:97:e6:30:ec:ea:4b:d3:b4:f4:8e:4a:b3:
+        0c:02:20:6b:ac:47:b8:3f:3e:f1:a7:c8:ef:1f:42:1c:62:5a:
+        4f:b4:c2:08:2c:f2:9a:27:47:7d:e2:8f:a1:e8:81:52:a1
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             51:29:2b:76:0f:07:8c:18:56:af:ab:4d:32:32:d3:b0
         Signature Algorithm: rsassaPss        
         Hash Algorithm: sha512
