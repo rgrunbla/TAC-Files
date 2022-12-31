@@ -6872,6 +6872,86 @@ Certificate:
 Certificate:
     Data:
         Version: 3 (0x2)
+        Serial Number: 1672527600530 (0x1856a69db92)
+        Signature Algorithm: rsassaPss        
+        Hash Algorithm: sha256
+        Mask Algorithm: mgf1 with sha256
+         Salt Length: 0x20
+        Trailer Field: 0x01 (default)
+        Issuer: C = LT, O = State Enterprise Centre of Registers, CN = LT_DGC_CSCA_1
+        Validity
+            Not Before: Dec 31 23:00:00 2022 GMT
+            Not After : Dec 31 23:00:00 2024 GMT
+        Subject: C = LT, ST = Lithuania, O = Ministry of Health of The Republic of Lithuania, CN = LT_DGC_DSC_5
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:a0:27:63:88:18:41:b3:cc:08:56:d4:2b:72:6c:
+                    08:bb:8b:7b:98:ab:57:23:ad:b0:3e:6b:f5:fa:91:
+                    95:a9:bf:79:71:d4:3c:c3:6e:fa:bd:c8:fc:0c:e5:
+                    a1:ef:41:55:c7:98:bf:5b:62:a3:de:6d:22:95:e1:
+                    04:53:fd:4a:b7:8e:63:29:40:95:11:43:b6:81:1d:
+                    21:c5:01:25:a1:06:b7:a1:5b:96:66:75:2f:5b:80:
+                    1f:9e:6a:f6:40:ec:3a:1c:36:b7:3b:b4:f6:29:4d:
+                    4b:57:0c:46:b1:55:c0:f9:a9:a7:32:0c:14:80:a8:
+                    af:42:5c:04:05:57:36:1b:2a:c4:2b:78:53:64:3f:
+                    ea:76:0f:58:b2:15:11:d7:9e:73:a5:42:49:b9:4b:
+                    48:1e:d7:ae:bb:60:86:d5:61:5b:35:ac:ab:a8:8b:
+                    23:6f:22:c5:3b:36:ac:92:b0:3e:2a:50:0e:2e:7e:
+                    79:b6:ab:b5:57:c3:64:1a:a8:18:db:17:75:5e:c5:
+                    65:30:06:11:95:3b:e5:56:99:d8:6e:80:49:ae:3c:
+                    df:c0:1e:8d:56:a4:e3:5c:95:d6:16:8b:41:96:a5:
+                    31:d9:ad:b5:32:34:8d:38:0f:5c:0e:47:3d:2d:98:
+                    48:a4:c0:82:1b:28:31:12:e7:36:57:bc:58:ed:26:
+                    ba:e5
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Authority Key Identifier: 
+                04:16:04:14:ED:A4:47:2B:35:48:DF:4C:C3:92:8A:05:16:8A:52:B8:53:9E:F4:3E
+            X509v3 Subject Key Identifier: 
+                44:35:B0:B0:E6:4A:3E:6C:69:D3:BA:9F:00:E3:73:7D:39:A7:75:20
+    Signature Algorithm: rsassaPss
+    Signature Value:        
+        Hash Algorithm: sha256
+        Mask Algorithm: mgf1 with sha256
+         Salt Length: 0x20
+        Trailer Field: 0x01 (default)
+        89:1e:1d:2b:9f:4d:10:9c:b6:50:a1:64:d1:d6:59:8f:4d:a7:
+        83:66:6c:37:d6:8c:59:4c:56:05:35:d4:94:0e:40:e9:1f:61:
+        cf:18:7c:bc:80:e4:40:f1:bd:94:fb:5c:b2:90:f0:d7:12:79:
+        bf:54:96:10:98:d3:6e:8b:56:bc:44:22:0c:85:76:45:1a:85:
+        7c:34:31:42:a5:29:77:b7:cc:df:91:ba:65:1c:0f:17:f7:b9:
+        85:fc:43:de:97:fd:c4:cd:61:3c:b2:a0:3d:0b:07:c2:2e:46:
+        e9:b8:09:66:a9:01:80:34:f1:f0:bb:32:bc:ff:81:ff:16:87:
+        7d:20:2e:3b:3e:b8:8a:a7:2b:34:a5:8e:dc:17:04:20:57:29:
+        16:e0:fb:39:31:38:56:eb:01:d8:64:71:c8:88:98:68:ea:a3:
+        eb:af:53:2d:d2:08:5f:56:a6:14:af:4e:11:9a:3c:5c:32:a4:
+        a7:d5:0c:d4:f9:f3:53:22:e5:70:6e:bc:68:39:ab:72:2a:7e:
+        a1:1b:c2:99:ec:a9:c0:a5:13:28:0e:c0:14:6e:c6:35:e2:52:
+        c6:05:c6:f8:57:18:b2:b8:44:8b:e6:a4:8f:71:51:67:cf:a7:
+        5f:68:f2:16:87:f0:31:67:e7:8a:c5:ef:45:62:ba:8c:bc:ed:
+        e3:78:06:eb:e8:51:77:05:19:08:c7:45:48:7a:9e:a7:11:01:
+        d4:d1:b1:f7:eb:b3:33:24:ff:5c:c4:18:6f:09:d3:0b:0b:f9:
+        69:1e:d0:c8:40:b0:84:3d:5c:a9:6f:1e:00:a4:06:4b:21:c6:
+        fb:d5:70:71:48:99:7d:19:f8:c8:f6:1a:4c:83:e3:11:ed:fe:
+        46:cf:c8:77:dc:d3:46:8a:8d:78:3a:03:6d:ea:19:fd:f3:23:
+        d6:a6:9c:f5:6c:1f:fc:6f:7b:9d:32:3d:28:5a:de:8a:8e:83:
+        3a:0b:56:63:2f:e5:83:b7:c2:b0:06:a3:f3:2f:d7:bb:29:a7:
+        9b:f5:24:a0:84:8d:9c:f1:fc:de:20:aa:e8:ad:3a:cc:a5:a1:
+        49:bf:ef:70:55:9a:d5:b6:25:0e:fb:cb:84:d1:32:05:19:ce:
+        7a:77:94:5b:b9:79:a6:47:d5:7d:81:a6:4a:c1:c3:a6:c0:b0:
+        0b:25:db:ac:65:3e:8c:00:84:f3:f3:67:b6:2c:44:6e:b6:b9:
+        fe:4f:21:02:9f:88:55:6c:97:0b:9f:3b:29:fd:36:c3:2d:af:
+        b1:6b:41:31:c0:7d:63:d9:b9:b6:cf:d5:14:df:25:ca:b3:99:
+        dd:bc:55:0e:f2:99:fa:8f:7d:c9:00:cb:99:0b:d9:4f:25:2e:
+        9a:b4:96:08:33:09:72:58
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
         Serial Number:
             59:00:00:00:03:24:17:db:d4:5e:12:ff:bf:00:00:00:00:00:03
         Signature Algorithm: ecdsa-with-SHA256
