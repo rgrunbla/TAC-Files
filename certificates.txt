@@ -10136,6 +10136,46 @@ Certificate:
 Certificate:
     Data:
         Version: 3 (0x2)
+        Serial Number: 3872488304345587361 (0x35bdd798715f9ea1)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = LB, ST = Jnah, L = Beirut, O = Ministry of Public Health (MOPH), OU = Siren Analytics, CN = CSCA_DGC_LB_01
+        Validity
+            Not Before: Jan  1 11:38:59 2023 GMT
+            Not After : Jul  1 10:38:59 2023 GMT
+        Subject: OU = Siren Analytics, O = Ministry of Public Health (MOPH), ST = Beirut, L = Beirut, C = LB
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:26:fa:b2:9c:5f:e3:2a:e6:0e:eb:5f:81:74:56:
+                    8c:75:c2:f2:e2:dc:cd:1b:b0:2e:ad:5b:37:cb:bc:
+                    11:64:c3:e7:00:49:be:9f:f4:1c:ee:66:34:46:5f:
+                    bd:7a:1f:c4:59:bb:d8:51:da:47:8d:be:db:0e:9b:
+                    5e:84:d3:cd:a9
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Subject Key Identifier: 
+                A3:AD:A9:8D:1C:56:A4:C6:35:6F:EA:A8:97:6B:A8:7A:CF:F9:F2:34
+            X509v3 Authority Key Identifier: 
+                F7:2D:C2:33:8B:67:0D:7F:CC:2B:D8:BF:5F:D2:F3:B1:5A:BF:BA:2A
+            X509v3 CRL Distribution Points: 
+                Full Name:
+                  URI:http://empty
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.1847.2021.1.2
+    Signature Algorithm: ecdsa-with-SHA256
+    Signature Value:
+        30:45:02:20:4c:32:a4:c6:85:9a:be:c7:19:34:f6:70:8c:aa:
+        ad:fc:90:81:7b:e3:5f:b5:f4:0b:b4:4f:6c:de:28:9b:ce:88:
+        02:21:00:ef:a3:62:bb:ec:82:e8:10:42:7c:e2:63:3c:36:42:
+        00:84:c0:73:ae:30:f3:d9:49:94:c5:e0:a9:1f:d0:1e:4a
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
         Serial Number:
             6a:08:74:d4:e1:d4:89:71:95:ad:22:46:a0:b0:ed:21
         Signature Algorithm: ecdsa-with-SHA384
