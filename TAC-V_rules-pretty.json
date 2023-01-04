@@ -71334,6 +71334,59 @@
         },
         {
             "AffectedFields": [
+                "v.0",
+                "v.0.mp"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "HR",
+            "Description": [
+                {
+                    "desc": "Samo sljede\u0107a cijepiva su prihva\u0107ena: Pfizer, Moderna, AstaZeneca, Gamaleya, Sinopharm, Novavax, Serum Institute of India, Bharat Biotech, Sinovac, JJohnson&Johnson.",
+                    "lang": "hr"
+                },
+                {
+                    "desc": "Only the following vaccines are accepted: Pfizer, Moderna, AstaZeneca, Gamaleya, Sinopharm, Novavax, Serum Institute of India, Bharat Biotech, Sinovac, Johnson&Johnson.",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-HR-0002",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        "in": [
+                            {
+                                "var": "payload.v.0.mp"
+                            },
+                            [
+                                "EU/1/20/1528",
+                                "EU/1/20/1507",
+                                "EU/1/21/1529",
+                                "EU/1/20/1525",
+                                "EU/1/21/1618",
+                                "Sputnik-V",
+                                "BBIBP-CorV",
+                                "Covishield",
+                                "Covaxin",
+                                "CoronaVac"
+                            ]
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-04-01T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.1.0"
+        },
+        {
+            "AffectedFields": [
                 "t.0",
                 "t.0.sc",
                 "t.0.tt"
@@ -71401,59 +71454,6 @@
             "ValidFrom": "2021-11-27T22:20:15Z",
             "ValidTo": "2025-11-26T22:20:15Z",
             "Version": "1.0.0"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
-                "v.0.mp"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "HR",
-            "Description": [
-                {
-                    "desc": "Samo sljede\u0107a cijepiva su prihva\u0107ena: Pfizer, Moderna, AstaZeneca, Gamaleya, Sinopharm, Novavax, Serum Institute of India, Bharat Biotech, Sinovac, JJohnson&Johnson.",
-                    "lang": "hr"
-                },
-                {
-                    "desc": "Only the following vaccines are accepted: Pfizer, Moderna, AstaZeneca, Gamaleya, Sinopharm, Novavax, Serum Institute of India, Bharat Biotech, Sinovac, Johnson&Johnson.",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-HR-0002",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        "in": [
-                            {
-                                "var": "payload.v.0.mp"
-                            },
-                            [
-                                "EU/1/20/1528",
-                                "EU/1/20/1507",
-                                "EU/1/21/1529",
-                                "EU/1/20/1525",
-                                "EU/1/21/1618",
-                                "Sputnik-V",
-                                "BBIBP-CorV",
-                                "Covishield",
-                                "Covaxin",
-                                "CoronaVac"
-                            ]
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-04-01T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.1.0"
         },
         {
             "AffectedFields": [
