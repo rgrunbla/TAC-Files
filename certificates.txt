@@ -13487,6 +13487,46 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            26:c3:f4:ca:9e:47:80:d1:59:cc:9a:b8:32:25:e7:ae:73:a7:55:3d
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = NZ, O = Government of New Zealand, OU = Ministry of Health, CN = Vaccine CSCA
+        Validity
+            Not Before: Nov 23 20:23:51 2022 GMT
+            Not After : Mar 20 20:23:50 2033 GMT
+        Subject: C = NZ, O = Government of New Zealand, OU = Ministry of Health, OU = Vaccine CSCA, CN = Vaccine Document Signer 20221123NZ0016
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:4b:e4:73:de:fb:17:d3:20:0d:b5:52:f7:84:96:
+                    cf:13:06:a0:a0:ce:8c:12:50:9f:6d:96:d6:dc:8f:
+                    50:b3:6c:74:4c:8e:04:db:e2:03:1e:cf:1b:4c:0c:
+                    79:97:29:3b:9a:9c:40:b8:18:23:d4:18:0a:4e:57:
+                    3a:bc:58:28:78
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Authority Key Identifier: 
+                05:87:B1:05:2E:8B:DB:6C:C6:8E:5B:AD:3C:72:D5:B9:A8:AB:73:19
+            X509v3 Subject Key Identifier: 
+                9C:51:0D:0E:B3:95:20:D5:B4:ED:83:68:1C:D7:55:18:FA:8A:38:32
+            X509v3 Private Key Usage Period: 
+                Not Before: Nov 23 20:23:51 2022 GMT, Not After: Mar 23 20:23:51 2023 GMT
+            X509v3 Key Usage: 
+                Digital Signature
+    Signature Algorithm: ecdsa-with-SHA256
+    Signature Value:
+        30:65:02:31:00:a1:41:bf:b1:14:0e:70:46:65:81:79:37:ac:
+        b9:2b:b4:af:d5:11:b8:96:f3:63:79:60:c4:3b:9c:57:23:90:
+        dc:b4:d5:59:3e:89:ef:18:0f:b0:3e:c2:08:59:d3:a9:fc:02:
+        30:54:76:6f:b5:3b:2c:88:35:ee:0d:4c:f8:52:95:3e:3b:c2:
+        bc:45:2d:1d:f5:b8:85:c1:41:11:9d:4d:05:3a:03:66:c3:34:
+        fd:63:72:f4:26:83:07:b4:8c:d6:4d:ba:e1
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             7e:04:ad:73:15:f4:6d:94:7c:1b:e5:3d:bb:d8:87:86
         Signature Algorithm: rsassaPss        
         Hash Algorithm: sha512
@@ -14205,6 +14245,46 @@ Certificate:
         3f:91:20:27:c8:8e:86:8f:35:39:bf:c1:ff:25:df:83:c5:ca:
         4d:02:20:4b:2b:92:6e:04:10:bb:48:f5:7d:8e:60:c6:71:61:
         c9:6f:b5:33:64:a2:f2:cb:9a:ab:80:2c:db:58:01:7f:9a
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            77:6e:85:c2:62:dd:40:e5:d5:ee:1d:cd:2d:ec:b4:a9:80:e1:34:2c
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = NZ, O = Government of New Zealand, OU = Ministry of Health, CN = Vaccine CSCA
+        Validity
+            Not Before: Nov 23 20:42:11 2022 GMT
+            Not After : Mar 20 20:42:10 2033 GMT
+        Subject: C = NZ, O = Government of New Zealand, OU = Ministry of Health, OU = Vaccine CSCA, CN = Vaccine Document Signer 20221123NZ0021
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:65:df:f9:b8:d5:19:62:1e:1e:f1:06:54:17:bd:
+                    f8:b5:2e:79:93:c0:09:43:b5:ba:07:34:1b:29:c9:
+                    a4:48:7e:43:67:04:fb:5a:2d:bc:39:58:a6:96:1b:
+                    06:75:da:b8:12:f0:61:fd:a0:c6:1e:14:fa:4f:bb:
+                    ca:5f:de:54:9a
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Authority Key Identifier: 
+                05:87:B1:05:2E:8B:DB:6C:C6:8E:5B:AD:3C:72:D5:B9:A8:AB:73:19
+            X509v3 Subject Key Identifier: 
+                E0:42:15:65:8A:5C:86:BD:E5:6D:5D:AB:03:26:B6:90:92:3D:68:B8
+            X509v3 Private Key Usage Period: 
+                Not Before: Nov 23 20:42:11 2022 GMT, Not After: Mar 23 20:42:11 2023 GMT
+            X509v3 Key Usage: 
+                Digital Signature
+    Signature Algorithm: ecdsa-with-SHA256
+    Signature Value:
+        30:64:02:30:60:44:59:a0:6d:b5:2b:31:9a:c9:e8:95:df:66:
+        5b:11:dc:cf:42:a5:a7:c8:69:09:f1:28:e7:7d:87:ce:7e:d2:
+        84:69:e1:5f:93:8c:ab:0d:19:8c:4d:9d:59:0e:29:0b:02:30:
+        43:9e:85:46:92:a5:a3:25:36:d1:ef:96:68:3e:cf:01:1c:e6:
+        5d:ff:14:65:43:e8:b5:37:62:9c:48:ce:98:a2:53:19:84:a4:
+        e9:4b:5b:3e:ef:19:11:5b:73:03:5e:dc
 
 Certificate:
     Data:
@@ -16585,6 +16665,46 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            5f:8c:c8:cc:6b:ec:6f:48:59:ff:89:b5:47:a5:ef:85:01:bb:e4:ca
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = NZ, O = Government of New Zealand, OU = Ministry of Health, CN = Vaccine CSCA
+        Validity
+            Not Before: Nov 23 04:08:24 2022 GMT
+            Not After : Mar 20 04:08:23 2033 GMT
+        Subject: C = NZ, O = Government of New Zealand, OU = Ministry of Health, OU = Vaccine CSCA, CN = Vaccine Document Signer 20221123NZ0015
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:4e:94:72:c7:9e:36:c2:1e:90:bd:61:4c:f6:4d:
+                    37:d9:d9:e1:91:d6:1b:4e:f4:57:64:5d:d0:41:cc:
+                    20:0e:e4:97:f7:25:33:a3:10:f3:c8:72:93:99:81:
+                    bf:19:6c:c1:45:7a:82:80:fd:96:2d:b1:b1:50:80:
+                    cd:0a:4d:72:a6
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Authority Key Identifier: 
+                05:87:B1:05:2E:8B:DB:6C:C6:8E:5B:AD:3C:72:D5:B9:A8:AB:73:19
+            X509v3 Subject Key Identifier: 
+                17:55:C8:32:4E:44:87:46:EE:09:AA:CB:A5:85:89:17:CC:31:C8:95
+            X509v3 Private Key Usage Period: 
+                Not Before: Nov 23 04:08:24 2022 GMT, Not After: Mar 23 04:08:24 2023 GMT
+            X509v3 Key Usage: 
+                Digital Signature
+    Signature Algorithm: ecdsa-with-SHA256
+    Signature Value:
+        30:64:02:30:7b:eb:b2:16:6b:ee:e5:44:67:39:29:56:92:be:
+        a8:18:f3:a1:40:b4:3a:81:a1:64:6a:8f:e1:f8:f0:d7:1e:7e:
+        11:bc:d6:4b:a1:05:e9:87:30:d1:5c:28:49:7f:57:ff:02:30:
+        6d:e8:05:10:e0:69:e9:59:cc:92:d4:16:fb:9c:a7:94:74:1a:
+        91:e1:35:76:24:cf:3c:b8:d1:17:c7:91:5d:c6:25:c7:c7:3e:
+        62:01:94:e5:4f:79:27:b3:48:fc:23:e2
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             6f:51:2d:d5:b4:89:15:aa:00
         Signature Algorithm: ecdsa-with-SHA256
         Issuer: CN = EADTrust ECC 256 SubCA For Qualified Certificates 2019, O = "European Agency of Digital Trust, S.L.", C = ES, organizationIdentifier = VATES-B85626240, OU = Legal Person
@@ -16765,6 +16885,46 @@ Certificate:
         fe:95:8d:51:a6:86:b2:5f:eb:90:0f:6f:16:71:f4:cb:8c:eb:
         a5:20:e8:3c:89:46:5f:47:0a:72:49:5d:e8:54:49:81:08:ec:
         d1:e1:9f:b6:47:7e:66:fa
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            71:52:db:de:6a:b0:d4:be:52:fe:29:09:14:83:63:23:db:39:cc:01
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = NZ, O = Government of New Zealand, OU = Ministry of Health, CN = Vaccine CSCA
+        Validity
+            Not Before: Nov 23 20:31:00 2022 GMT
+            Not After : Mar 20 20:30:59 2033 GMT
+        Subject: C = NZ, O = Government of New Zealand, OU = Ministry of Health, OU = Vaccine CSCA, CN = Vaccine Document Signer 20221123NZ0017
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:1f:e6:8e:21:1b:84:09:72:a3:d0:41:17:40:ef:
+                    72:57:73:fb:b7:d4:3a:68:81:38:93:37:d0:49:01:
+                    a1:b0:41:de:44:f4:3f:1b:4f:59:5c:1a:ba:3e:6f:
+                    c1:f5:2b:69:26:d7:ab:1b:fe:9e:31:ed:85:37:f4:
+                    90:30:16:d0:28
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Authority Key Identifier: 
+                05:87:B1:05:2E:8B:DB:6C:C6:8E:5B:AD:3C:72:D5:B9:A8:AB:73:19
+            X509v3 Subject Key Identifier: 
+                A4:F7:F2:BB:DF:D4:AE:35:12:DE:68:DB:8B:C8:57:91:EC:9F:BC:4A
+            X509v3 Private Key Usage Period: 
+                Not Before: Nov 23 20:31:00 2022 GMT, Not After: Mar 23 20:31:00 2023 GMT
+            X509v3 Key Usage: 
+                Digital Signature
+    Signature Algorithm: ecdsa-with-SHA256
+    Signature Value:
+        30:66:02:31:00:8b:82:57:a7:fd:8d:8e:16:44:9c:d2:e6:71:
+        38:28:27:82:7f:b2:5f:7c:de:b7:39:f8:6e:1c:42:81:93:25:
+        f7:6a:a7:f0:6d:ef:2d:aa:90:6c:95:58:12:e5:37:47:d6:02:
+        31:00:f1:3f:ae:47:79:4a:3a:a8:a3:31:23:9e:30:4d:65:a0:
+        27:6c:af:38:72:b9:58:7f:39:88:c9:5b:71:82:1c:1e:19:ab:
+        28:20:11:d4:67:c7:01:6d:21:48:fe:bf:26:15
 
 Certificate:
     Data:
@@ -18659,6 +18819,46 @@ Certificate:
         07:e4:40:5b:65:8e:22:9e:b6:75:5a:77:57:f9:8c:b1:5e:df:
         b9:50:a7:1f:8e:b7:c6:6e:27:ab:60:d2:49:fe:37:9a:d8:6f:
         8c:3a:5f:64:90:66:5c:92:8f:2c:24:26
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            23:47:a8:84:4f:27:5b:d5:1e:f2:41:71:4b:cd:c0:06:85:c1:df:f6
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = NZ, O = Government of New Zealand, OU = Ministry of Health, CN = Vaccine CSCA
+        Validity
+            Not Before: Nov 23 20:45:00 2022 GMT
+            Not After : Mar 20 20:44:59 2033 GMT
+        Subject: C = NZ, O = Government of New Zealand, OU = Ministry of Health, OU = Vaccine CSCA, CN = Vaccine Document Signer 20221123NZ0022
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:95:ac:2a:e9:db:ae:bd:6c:34:c7:c8:96:a9:80:
+                    67:59:2c:34:a9:76:ce:97:52:e7:de:fc:ea:1c:bf:
+                    50:4d:e5:62:ac:df:52:f4:4b:09:07:10:c5:68:d4:
+                    96:b7:46:c5:cc:81:7a:f0:9b:f9:86:f7:34:2d:ac:
+                    43:d4:50:de:09
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Authority Key Identifier: 
+                05:87:B1:05:2E:8B:DB:6C:C6:8E:5B:AD:3C:72:D5:B9:A8:AB:73:19
+            X509v3 Subject Key Identifier: 
+                F8:59:DE:D0:D7:86:03:C8:AE:71:72:7C:CF:FD:83:A3:51:D0:42:A4
+            X509v3 Private Key Usage Period: 
+                Not Before: Nov 23 20:45:00 2022 GMT, Not After: Mar 23 20:45:00 2023 GMT
+            X509v3 Key Usage: 
+                Digital Signature
+    Signature Algorithm: ecdsa-with-SHA256
+    Signature Value:
+        30:65:02:30:2e:a9:da:06:11:05:e0:0b:a2:fb:9f:5d:13:b5:
+        d5:50:55:ac:24:26:49:6c:67:7a:08:14:1b:6a:d9:4d:8e:09:
+        a3:d7:f4:b5:06:6a:14:f1:c4:2d:98:eb:ef:45:0c:c9:02:31:
+        00:bc:c1:13:be:7e:38:a5:f7:6b:76:a1:e9:7d:26:2c:9f:74:
+        90:cf:87:28:2c:2d:aa:3a:99:77:eb:70:ab:60:3b:8b:ea:56:
+        3f:e1:89:62:0f:57:aa:5c:12:60:31:0a:67
 
 Certificate:
     Data:
@@ -23700,6 +23900,46 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            69:72:9f:35:43:98:9f:c3:64:6d:c8:8c:be:85:8c:01:06:a2:44:b2
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = NZ, O = Government of New Zealand, OU = Ministry of Health, CN = Vaccine CSCA
+        Validity
+            Not Before: Nov 23 20:36:48 2022 GMT
+            Not After : Mar 20 20:36:47 2033 GMT
+        Subject: C = NZ, O = Government of New Zealand, OU = Ministry of Health, OU = Vaccine CSCA, CN = Vaccine Document Signer 20221123NZ0019
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:61:07:ee:bc:0b:b5:83:4a:d2:8b:83:f2:3d:c1:
+                    27:5c:46:ec:2e:77:e3:90:cf:6f:b7:c4:2b:21:02:
+                    f4:b8:67:26:9d:81:b9:f7:90:b4:dc:d7:76:63:1e:
+                    0b:6c:5d:1a:28:fb:eb:b7:ce:58:77:fa:9d:ae:1d:
+                    9f:57:10:ff:99
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Authority Key Identifier: 
+                05:87:B1:05:2E:8B:DB:6C:C6:8E:5B:AD:3C:72:D5:B9:A8:AB:73:19
+            X509v3 Subject Key Identifier: 
+                30:28:4E:D1:1A:7E:43:41:A8:20:2B:B6:A1:E4:15:8D:4D:E9:54:C9
+            X509v3 Private Key Usage Period: 
+                Not Before: Nov 23 20:36:48 2022 GMT, Not After: Mar 23 20:36:48 2023 GMT
+            X509v3 Key Usage: 
+                Digital Signature
+    Signature Algorithm: ecdsa-with-SHA256
+    Signature Value:
+        30:64:02:30:6f:d0:00:2e:b0:a3:79:ad:9b:9c:13:37:5b:c0:
+        f9:3a:ce:47:9b:f7:d3:4e:60:d8:75:33:b6:c0:c7:1f:60:e9:
+        0b:7e:90:fe:ae:57:98:29:9d:d0:1f:9c:c7:75:11:cd:02:30:
+        6f:f7:ad:55:58:0d:7f:6d:ff:99:1e:11:4c:63:49:7d:1f:fc:
+        c5:b8:f3:3a:e5:e8:18:00:0f:d5:73:2c:51:c8:ba:5e:47:b8:
+        38:56:f7:6f:fa:18:07:21:45:e3:fe:a1
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             59:00:00:00:07:46:b6:ff:0b:a8:da:ab:ee:00:00:00:00:00:07
         Signature Algorithm: ecdsa-with-SHA256
         Issuer: C = NO, O = Norsk helsenett SF, CN = NO NHN CSCA PROD
@@ -24661,6 +24901,46 @@ Certificate:
         b2:0e:e7:c4:f4:92:1a:f9:97:0d:29:86:9b:73:80:bf:2c:18:
         b7:02:21:00:bd:5a:4b:d9:36:8c:2e:45:18:29:d7:2f:5e:3a:
         5b:a4:cd:c0:93:8b:65:78:46:d1:61:0b:3e:ea:35:79:a3:c5
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            57:a1:e4:f8:fa:8d:c5:28:b8:b9:ce:a6:98:c8:3b:e2:0d:6e:4e:1e
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = NZ, O = Government of New Zealand, OU = Ministry of Health, CN = Vaccine CSCA
+        Validity
+            Not Before: Nov 23 20:57:07 2022 GMT
+            Not After : Mar 20 20:57:06 2033 GMT
+        Subject: C = NZ, O = Government of New Zealand on-behalf of Government of Niue, OU = Ministry of Health, OU = Vaccine CSCA, CN = Vaccine Document Signer 20221123NU0003
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:dc:94:86:1e:4d:4b:f5:04:c0:1c:35:68:aa:ca:
+                    46:1b:55:84:53:3f:e9:ab:a4:6d:88:22:27:42:59:
+                    e6:59:81:4e:95:88:5a:62:ce:77:06:e5:1a:c4:e8:
+                    42:1e:9f:66:1b:b6:1c:23:d4:84:f7:6f:d5:5f:d1:
+                    e9:6e:d1:e9:8a
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Authority Key Identifier: 
+                05:87:B1:05:2E:8B:DB:6C:C6:8E:5B:AD:3C:72:D5:B9:A8:AB:73:19
+            X509v3 Subject Key Identifier: 
+                95:54:EC:1D:0F:12:E7:01:5B:77:E8:B0:33:94:6F:0E:37:0E:70:34
+            X509v3 Private Key Usage Period: 
+                Not Before: Nov 23 20:57:07 2022 GMT, Not After: Mar 23 20:57:07 2023 GMT
+            X509v3 Key Usage: 
+                Digital Signature
+    Signature Algorithm: ecdsa-with-SHA256
+    Signature Value:
+        30:64:02:30:6f:f3:01:07:2a:db:f2:23:64:62:b1:46:a1:28:
+        09:85:e9:f7:1c:c8:dc:6e:52:ed:44:fc:d9:5e:24:56:fd:cf:
+        a6:62:c0:09:3c:84:98:09:5c:98:36:7f:61:d2:23:48:02:30:
+        4f:35:d6:70:a3:14:63:02:70:c0:b3:e7:68:1f:b7:1a:fe:b1:
+        92:92:40:6e:6f:12:69:26:52:ad:cf:56:23:c9:de:58:73:43:
+        e1:c0:9a:6d:5c:20:c9:82:a2:f8:e4:cb
 
 Certificate:
     Data:
@@ -25975,6 +26255,46 @@ Certificate:
         c0:e2:f7:dd:7e:a7:f8:cb:51:67:50:4e:17:05:bf:fc:f3:f4:
         de:86:e6:f3:a5:d4:42:d3:b9:32:5e:3c:9a:18:87:d6:78:1b:
         90:7a:25:3f:c0:4b:9c:2d
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            79:a9:db:fc:a9:1d:d1:0e:84:aa:14:47:c9:15:43:05:4e:8e:45:f2
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = NZ, O = Government of New Zealand, OU = Ministry of Health, CN = Vaccine CSCA
+        Validity
+            Not Before: Nov 23 20:54:06 2022 GMT
+            Not After : Mar 20 20:54:05 2033 GMT
+        Subject: C = NZ, O = Government of New Zealand on-behalf of Government of Niue, OU = Ministry of Health, OU = Vaccine CSCA, CN = Vaccine Document Signer 20221123NU0002
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:71:7e:84:9b:dd:f1:b7:ba:30:dd:e2:92:d1:65:
+                    55:5f:4a:38:23:13:35:c0:96:71:87:58:dd:44:d2:
+                    f7:c0:a0:5e:64:c6:67:d8:31:d7:ab:b5:92:79:35:
+                    9a:6a:1f:2d:cb:84:68:49:23:fa:fa:50:0e:87:69:
+                    80:6e:42:c9:01
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Authority Key Identifier: 
+                05:87:B1:05:2E:8B:DB:6C:C6:8E:5B:AD:3C:72:D5:B9:A8:AB:73:19
+            X509v3 Subject Key Identifier: 
+                78:69:24:01:B2:0F:9C:1A:40:41:27:55:CF:C0:20:FD:7D:48:61:9A
+            X509v3 Private Key Usage Period: 
+                Not Before: Nov 23 20:54:06 2022 GMT, Not After: Mar 23 20:54:06 2023 GMT
+            X509v3 Key Usage: 
+                Digital Signature
+    Signature Algorithm: ecdsa-with-SHA256
+    Signature Value:
+        30:65:02:30:28:9f:e8:24:78:13:b0:fe:d6:9a:d8:47:e7:0b:
+        5e:20:2d:db:85:3e:75:60:61:5b:ec:81:47:d9:6b:fc:67:3d:
+        4d:0f:4b:10:04:e6:6c:86:1c:b3:af:a7:cd:22:29:bd:02:31:
+        00:ac:4f:d7:cf:eb:ce:5f:79:18:53:0a:64:67:8b:04:5b:ee:
+        00:c0:41:ad:a6:ea:30:b4:14:5f:f6:6e:a2:6a:41:28:4d:33:
+        2e:18:8a:ed:9f:eb:fd:5f:09:b8:69:b6:1b
 
 Certificate:
     Data:
@@ -28796,6 +29116,46 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            42:22:d1:2e:00:d5:43:8b:bd:f9:96:d2:8a:4a:28:69:a8:f6:5f:d9
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = NZ, O = Government of New Zealand, OU = Ministry of Health, CN = Vaccine CSCA
+        Validity
+            Not Before: Nov 23 20:51:16 2022 GMT
+            Not After : Mar 20 20:51:15 2033 GMT
+        Subject: C = NZ, O = Government of New Zealand on-behalf of Government of The Cook Islands, OU = Ministry of Health, OU = Vaccine CSCA, CN = Vaccine Document Signer 20221123CK0003
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:24:fd:81:b0:3e:b4:7a:f1:8c:59:97:22:31:a3:
+                    be:37:ae:c2:52:83:c8:fa:0d:15:8a:42:0e:3d:4e:
+                    d6:86:ef:05:44:31:57:b0:81:fd:bd:60:89:58:f1:
+                    f6:ed:90:92:95:93:60:12:c0:b3:dd:55:20:dd:cd:
+                    6b:98:bb:59:98
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Authority Key Identifier: 
+                05:87:B1:05:2E:8B:DB:6C:C6:8E:5B:AD:3C:72:D5:B9:A8:AB:73:19
+            X509v3 Subject Key Identifier: 
+                BC:24:26:EE:33:52:2E:3D:94:E8:98:6E:2B:64:FF:E3:D3:3E:C1:E1
+            X509v3 Private Key Usage Period: 
+                Not Before: Nov 23 20:51:16 2022 GMT, Not After: Mar 23 20:51:16 2023 GMT
+            X509v3 Key Usage: 
+                Digital Signature
+    Signature Algorithm: ecdsa-with-SHA256
+    Signature Value:
+        30:64:02:30:2a:61:86:53:76:6f:26:23:a7:56:48:66:5a:e4:
+        33:42:52:b1:87:e7:33:f7:5b:9a:b2:a7:16:5f:a1:e8:ee:c4:
+        f2:b6:6e:ac:f4:10:61:2d:7a:4d:60:b2:ad:a6:6a:bd:02:30:
+        46:91:7d:cb:26:13:59:1e:8d:45:c7:f5:5d:f3:0b:c2:87:82:
+        ae:e0:39:d9:5e:b6:1b:20:03:1a:15:b4:a8:ba:20:f1:98:78:
+        e2:aa:c4:db:73:e5:d2:98:d9:91:15:f3
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             4f:99:7e:69:f5:40:6e:4d:64:c5:e9:98:fc:89:16:e8:99:66:05:7b
         Signature Algorithm: ecdsa-with-SHA256
         Issuer: CN = CSCA Health NL, serialNumber = 1, OU = Ministry of Health Welfare and Sport, O = Kingdom of the Netherlands, C = NL
@@ -28948,6 +29308,46 @@ Certificate:
         31:00:bd:b3:e9:ad:56:5e:df:0d:47:85:01:6a:9c:cd:3f:df:
         1a:79:4c:cf:78:00:33:8e:78:5f:df:7a:0c:2e:74:a8:ed:7a:
         22:30:fc:e5:ee:8f:75:c1:6e:0f:13:b4:22:36
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            25:a7:2d:bd:e5:58:6c:45:88:1c:1b:31:ea:16:8f:2c:a3:c5:66:a6
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = NZ, O = Government of New Zealand, OU = Ministry of Health, CN = Vaccine CSCA
+        Validity
+            Not Before: Nov 23 20:39:45 2022 GMT
+            Not After : Mar 20 20:39:44 2033 GMT
+        Subject: C = NZ, O = Government of New Zealand, OU = Ministry of Health, OU = Vaccine CSCA, CN = Vaccine Document Signer 20221123NZ0020
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:89:5b:58:6e:5e:42:b0:76:df:87:aa:52:40:e5:
+                    9e:eb:9c:ae:19:54:cb:69:1c:dd:2b:d1:7c:5b:15:
+                    57:cf:26:a9:22:41:59:13:df:c0:16:74:c2:78:93:
+                    aa:95:82:43:51:d9:d8:0e:69:8c:0a:1e:5b:a9:4a:
+                    0a:b2:62:31:1f
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Authority Key Identifier: 
+                05:87:B1:05:2E:8B:DB:6C:C6:8E:5B:AD:3C:72:D5:B9:A8:AB:73:19
+            X509v3 Subject Key Identifier: 
+                F7:5A:1D:06:43:78:99:D0:C1:0E:1A:08:B8:38:7F:AE:C7:7C:89:92
+            X509v3 Private Key Usage Period: 
+                Not Before: Nov 23 20:39:45 2022 GMT, Not After: Mar 23 20:39:45 2023 GMT
+            X509v3 Key Usage: 
+                Digital Signature
+    Signature Algorithm: ecdsa-with-SHA256
+    Signature Value:
+        30:66:02:31:00:d1:47:f9:d9:7f:03:a1:2f:0f:7e:62:a4:82:
+        5f:d2:77:99:e1:4c:f5:31:60:19:62:a8:0c:bb:7b:b5:66:a6:
+        57:53:f2:f1:35:a4:70:e5:98:a6:b7:13:7f:cf:71:97:32:02:
+        31:00:a0:12:97:58:59:72:59:9e:93:af:39:5a:3a:5b:79:41:
+        72:0a:c3:f3:b9:f7:f7:2f:b1:1f:67:51:9d:1c:cd:88:0f:38:
+        f3:32:7e:55:69:74:ca:72:9a:17:90:53:ab:ef
 
 Certificate:
     Data:
@@ -33072,6 +33472,46 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            3d:f5:bd:0c:66:d0:c9:82:00:e1:9a:bf:a5:2c:38:9f:52:cf:08:fb
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = NZ, O = Government of New Zealand, OU = Ministry of Health, CN = Vaccine CSCA
+        Validity
+            Not Before: Nov 23 21:03:05 2022 GMT
+            Not After : Mar 20 21:03:04 2033 GMT
+        Subject: C = NZ, O = Government of New Zealand on-behalf of Government of Tokelau, OU = Ministry of Health, OU = Vaccine CSCA, CN = Vaccine Document Signer 20221123TK0003
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:66:3f:6a:8f:f6:8d:db:77:3c:ec:7e:c5:4b:33:
+                    8e:6d:f5:5c:b3:92:0b:df:85:9b:ab:29:7e:57:25:
+                    9f:80:e9:a1:4f:63:69:f1:c3:d4:64:3e:91:27:d5:
+                    3c:85:5f:88:a3:ae:3b:46:fe:fd:d0:01:d5:b7:16:
+                    b0:62:78:81:22
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Authority Key Identifier: 
+                05:87:B1:05:2E:8B:DB:6C:C6:8E:5B:AD:3C:72:D5:B9:A8:AB:73:19
+            X509v3 Subject Key Identifier: 
+                D3:70:33:B5:C6:4E:35:08:7C:A7:45:89:9B:A7:89:95:81:99:18:2C
+            X509v3 Private Key Usage Period: 
+                Not Before: Nov 23 21:03:05 2022 GMT, Not After: Mar 23 21:03:05 2023 GMT
+            X509v3 Key Usage: 
+                Digital Signature
+    Signature Algorithm: ecdsa-with-SHA256
+    Signature Value:
+        30:66:02:31:00:bc:fd:fb:07:75:b0:89:04:6e:76:41:92:5e:
+        e7:00:01:84:4a:45:a0:54:79:1e:c3:3b:6a:05:0e:8a:fc:fa:
+        46:7c:9d:a0:1a:8d:83:18:85:89:66:bf:11:95:2a:42:6a:02:
+        31:00:8a:45:4c:ef:fe:b8:9e:49:51:f2:4b:70:de:36:eb:0c:
+        32:72:6f:07:67:41:c7:b7:8d:80:ac:ee:6f:55:96:30:c8:d2:
+        29:17:57:a7:fc:7e:b9:f2:75:11:e6:09:eb:9d
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             6b:24:ab:ff:02:89:1c:81:a7:96:59:f9:07:e1:7f:06
         Signature Algorithm: ecdsa-with-SHA384
         Issuer: C = DE, O = D-Trust GmbH, CN = D-TRUST CA 4-21-2 2021, organizationIdentifier = NTRDE-HRB74346
@@ -35569,6 +36009,46 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            5a:41:32:74:2f:1f:77:53:83:be:f3:9b:81:67:3a:37:bd:47:1b:4e
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = NZ, O = Government of New Zealand, OU = Ministry of Health, CN = Vaccine CSCA
+        Validity
+            Not Before: Nov 23 20:47:56 2022 GMT
+            Not After : Mar 20 20:47:55 2033 GMT
+        Subject: C = NZ, O = Government of New Zealand on-behalf of Government of The Cook Islands, OU = Ministry of Health, OU = Vaccine CSCA, CN = Vaccine Document Signer 20221123CK0002
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:36:f2:69:c7:c3:5e:d8:cd:36:4d:7f:f6:ea:e3:
+                    6d:24:2e:04:f6:db:b2:ce:33:16:77:a3:fd:27:c4:
+                    3e:92:71:f3:55:27:cf:b8:7d:c7:11:23:22:57:bd:
+                    65:df:19:60:a1:6b:eb:a4:22:77:a2:e0:47:93:10:
+                    14:79:a5:a6:93
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Authority Key Identifier: 
+                05:87:B1:05:2E:8B:DB:6C:C6:8E:5B:AD:3C:72:D5:B9:A8:AB:73:19
+            X509v3 Subject Key Identifier: 
+                28:B7:85:0B:F3:4B:AE:22:26:3A:3C:5E:27:89:F7:E8:86:3D:E6:05
+            X509v3 Private Key Usage Period: 
+                Not Before: Nov 23 20:47:56 2022 GMT, Not After: Mar 23 20:47:56 2023 GMT
+            X509v3 Key Usage: 
+                Digital Signature
+    Signature Algorithm: ecdsa-with-SHA256
+    Signature Value:
+        30:64:02:30:78:08:b2:19:21:f6:bf:21:08:93:39:c5:e3:4d:
+        0b:4c:1f:92:0f:49:67:77:80:f4:98:8e:60:e7:a7:95:67:21:
+        3c:1c:2e:b3:c0:62:83:b0:77:30:30:5e:6f:ff:e9:0d:02:30:
+        15:1b:a8:3b:9e:0c:e2:07:c8:a6:81:79:70:1b:c0:0a:43:35:
+        ed:3e:74:6d:74:81:45:a0:57:a5:59:e8:29:3b:56:d2:9f:26:
+        8b:bd:35:97:ab:e5:68:fd:46:a1:2a:c8
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             03:cb:7b:90:ab:0a:9c:b4:00
         Signature Algorithm: ecdsa-with-SHA256
         Issuer: CN = EADTrust ECC 256 SubCA For Qualified Certificates 2019, O = "European Agency of Digital Trust, S.L.", C = ES, organizationIdentifier = VATES-B85626240, OU = Legal Person
@@ -35740,6 +36220,46 @@ Certificate:
         cc:f4:f7:5c:03:6a:87:aa:08:b8:de:94:8f:66:d0:d6:e2:8a:
         51:02:21:00:e2:0d:16:9c:92:b7:e8:6f:1f:ef:66:38:a2:d3:
         e7:ec:d8:98:37:95:db:ee:eb:c5:bc:01:6c:ad:c9:f8:a2:f2
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            6a:b1:30:1b:ae:11:b3:e6:4b:87:8e:d9:76:45:61:be:d1:2a:f2:8b
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = NZ, O = Government of New Zealand, OU = Ministry of Health, CN = Vaccine CSCA
+        Validity
+            Not Before: Nov 23 21:00:01 2022 GMT
+            Not After : Mar 20 21:00:00 2033 GMT
+        Subject: C = NZ, O = Government of New Zealand on-behalf of Government of Tokelau, OU = Ministry of Health, OU = Vaccine CSCA, CN = Vaccine Document Signer 20221123TK0002
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:fb:09:46:47:85:53:79:f5:e5:ae:38:ef:67:dd:
+                    fd:0a:9e:1b:71:e3:d6:60:ae:40:5c:67:27:ee:13:
+                    92:db:70:f8:89:46:c7:ae:9c:81:9f:40:12:30:05:
+                    2e:55:6c:df:bd:b9:b9:a8:e9:f6:b0:65:bc:94:72:
+                    6f:f7:27:2a:4b
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Authority Key Identifier: 
+                05:87:B1:05:2E:8B:DB:6C:C6:8E:5B:AD:3C:72:D5:B9:A8:AB:73:19
+            X509v3 Subject Key Identifier: 
+                FC:B5:52:27:3C:0D:34:F6:DA:F3:F3:A0:8F:2B:F3:DB:F1:17:04:E2
+            X509v3 Private Key Usage Period: 
+                Not Before: Nov 23 21:00:01 2022 GMT, Not After: Mar 23 21:00:01 2023 GMT
+            X509v3 Key Usage: 
+                Digital Signature
+    Signature Algorithm: ecdsa-with-SHA256
+    Signature Value:
+        30:65:02:30:3c:44:86:0f:a9:c6:2f:7e:bb:db:bb:5e:36:ae:
+        c3:15:7d:5c:c2:69:00:b3:c3:5a:4c:ce:19:15:19:c5:26:3d:
+        3c:ed:f7:09:5d:73:93:e3:dd:b1:df:8d:e1:93:37:76:02:31:
+        00:e3:17:f0:5c:20:10:2c:ea:04:97:b1:73:d1:a0:bd:53:bd:
+        0e:6a:09:5f:a3:8f:bd:9e:fc:d0:99:0d:fb:b8:7a:a4:9e:25:
+        75:92:b9:39:10:49:dd:ed:8b:a6:a6:3e:d2
 
 Certificate:
     Data:
@@ -37464,6 +37984,46 @@ Certificate:
         e8:b9:a7:09:64:96:58:de:6d:76:f9:bc:94:e8:f0:b8:ed:42:
         00:02:21:00:a1:4b:46:0c:07:0b:c1:ec:f3:24:43:00:56:37:
         4d:20:77:d1:30:1f:5a:18:2a:77:43:b1:67:3b:6c:00:f9:36
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            6d:1c:b6:73:62:2d:c5:a7:3c:b6:41:3c:7c:7d:32:f5:3f:a0:b0:a2
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = NZ, O = Government of New Zealand, OU = Ministry of Health, CN = Vaccine CSCA
+        Validity
+            Not Before: Nov 23 20:34:13 2022 GMT
+            Not After : Mar 20 20:34:12 2033 GMT
+        Subject: C = NZ, O = Government of New Zealand, OU = Ministry of Health, OU = Vaccine CSCA, CN = Vaccine Document Signer 20221123NZ0018
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:da:d1:94:c9:21:1c:12:a9:4c:b3:77:95:a3:3b:
+                    e2:3f:56:80:8c:b7:f4:37:5a:c0:57:1e:a6:a1:2c:
+                    87:6a:a1:a5:6a:8e:9a:d4:9c:ce:87:27:ac:81:2a:
+                    17:a8:a6:42:3d:b0:c4:c8:31:96:94:57:e8:a8:8d:
+                    97:49:dc:2e:70
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Authority Key Identifier: 
+                05:87:B1:05:2E:8B:DB:6C:C6:8E:5B:AD:3C:72:D5:B9:A8:AB:73:19
+            X509v3 Subject Key Identifier: 
+                94:1F:CD:06:99:7C:85:42:F9:0F:CA:2A:AC:D0:F0:1A:2D:8A:3B:F6
+            X509v3 Private Key Usage Period: 
+                Not Before: Nov 23 20:34:13 2022 GMT, Not After: Mar 23 20:34:13 2023 GMT
+            X509v3 Key Usage: 
+                Digital Signature
+    Signature Algorithm: ecdsa-with-SHA256
+    Signature Value:
+        30:64:02:30:2c:8a:36:e0:25:34:33:df:a7:2f:2c:44:c4:32:
+        c2:84:92:cd:5b:c6:13:eb:a0:17:84:02:79:fc:30:87:0e:3e:
+        61:c6:1d:62:5e:3a:8d:df:c9:82:94:94:05:3a:dc:6e:02:30:
+        51:23:cb:1a:17:68:4c:7c:94:60:57:c8:cd:6f:39:42:a4:83:
+        14:8d:b5:99:f0:9b:2e:6b:7e:1b:9e:f3:2f:b0:8e:52:ac:fe:
+        e9:77:d2:c1:2d:ef:67:17:e2:a3:fd:c0
 
 Certificate:
     Data:
