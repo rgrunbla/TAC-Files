@@ -2,11 +2,11 @@
   "config": [
     {
       "name": "lastUpdate",
-      "value": "19 dec 2022"
+      "value": "25 jan 2023"
     },
     {
       "name": "version",
-      "value": 161
+      "value": 162
     },
     {
       "name": "versionCalibrationBle",
@@ -40,11 +40,11 @@
     },
     {
       "name": "app.isTracingFeatureActivated",
-      "value": true
+      "value": false
     },
     {
       "name": "app.isRobertActivated",
-      "value": true
+      "value": false
     },
     {
       "name": "app.displaySickLeave",
