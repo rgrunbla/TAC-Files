@@ -9187,6 +9187,47 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            32:29:e9:f9:02:db:0c:e0:b6:78:91:0e:9b:6a:03:34:eb:89:53:10
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = SG, ST = Singapore, O = Ministry Of Health, CN = csca.notarise.gov.sg
+        Validity
+            Not Before: Jan 25 02:41:07 2023 GMT
+            Not After : Jan 24 02:41:07 2025 GMT
+        Subject: C = SG, ST = Singapore, O = Ministry Of Health, CN = dsc.notarise.gov.sg
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:e3:8f:58:c2:7e:05:8e:0f:a1:ac:dc:e1:54:eb:
+                    61:fb:22:41:f2:92:a7:35:4f:f3:5c:6c:07:bf:a2:
+                    94:bb:11:93:bb:77:b1:37:d6:16:9e:fc:63:5f:60:
+                    b8:41:6c:22:31:e0:d9:1a:b2:76:10:e7:39:f9:c5:
+                    7b:ff:34:80:67
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Subject Key Identifier: 
+                7C:FE:84:89:02:DC:3D:C3:5C:84:61:83:6E:F6:18:01:18:D8:B6:65
+            X509v3 Authority Key Identifier: 
+                39:37:05:B3:38:B9:F9:9E:23:0D:D1:C2:C1:B0:C3:B3:32:97:01:A5
+            X509v3 CRL Distribution Points: 
+                Full Name:
+                  URI:https://www.notarise.gov.sg/csca.crl
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.1847.2021.1.1, 1.3.6.1.4.1.1847.2021.1.2, 1.3.6.1.4.1.1847.2021.1.3
+    Signature Algorithm: ecdsa-with-SHA256
+    Signature Value:
+        30:46:02:21:00:d8:4b:9c:d1:ce:e6:f1:e4:55:0d:85:c0:f8:
+        a1:95:c4:cb:3b:85:4a:f2:8e:c6:0a:75:8d:db:5e:70:6d:5a:
+        9f:02:21:00:ef:1f:a0:fb:86:d6:23:37:43:bd:15:1c:ae:4a:
+        d0:54:08:ac:de:92:4f:1f:b3:c2:1c:cf:fa:5c:c6:a5:1f:4f
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             5c:21:fa:80:5d:46:36:60:16:14:9d:5f:fa:59:5d:fc:9c:9e:c4:3f
         Signature Algorithm: ecdsa-with-SHA256
         Issuer: CN = CSCA Health NL, serialNumber = 1, OU = Ministry of Health Welfare and Sport, O = Kingdom of the Netherlands, C = NL
