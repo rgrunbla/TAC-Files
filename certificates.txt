@@ -2568,6 +2568,62 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
+            01:85:35:16:2d:9a:a0:14:4b:b7:9a:41:15:39:62
+        Signature Algorithm: ecdsa-with-SHA384
+        Issuer: C = FI, O = Digi- ja vaestotietovirasto CA, OU = Sosiaali- ja terveydenhuollon palveluvarmenteet, CN = DVV Social Welfare and Healthcare Service Certificates - G3E
+        Validity
+            Not Before: Dec 21 12:55:52 2022 GMT
+            Not After : Dec 21 21:59:59 2024 GMT
+        Subject: C = FI, ST = Finland, L = Helsinki, O = Kansanelakelaitos, OU = Kanta, serialNumber = 1.2.246.556.12.21.2, CN = Todistuspalvelu
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:22:05:69:e0:39:e6:cc:95:44:55:a7:c8:9d:39:
+                    b2:64:c1:9d:ed:10:90:90:c5:68:b3:b0:55:0d:7e:
+                    af:01:20:3f:9a:1f:d9:1a:13:d6:3f:fc:34:27:79:
+                    6f:50:58:53:23:9c:b9:ab:a9:ca:1f:67:ba:97:16:
+                    66:ee:85:42:16
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Authority Key Identifier: 
+                66:A8:2F:26:FF:BC:98:AD:FC:D1:21:72:8A:2E:7F:89:44:FB:DC:64
+            X509v3 Subject Key Identifier: 
+                4E:78:CA:62:5E:AD:29:8A:82:CF:54:6A:5E:9E:EE:15:B0:A2:3A:8D
+            X509v3 Key Usage: critical
+                Digital Signature, Non Repudiation
+            X509v3 Certificate Policies: 
+                Policy: 0.4.0.2042.1.7
+                Policy: 1.2.246.517.1.10.358.2
+                  CPS: http://www.fineid.fi/cps67/
+                  User Notice:
+                    Explicit Text: Varmennepolitiikka on saatavilla - Certifikatpolicy finns - Certificate policy is available http://www.fineid.fi/cps67
+            X509v3 Subject Alternative Name: 
+                email:tekninentuki@kanta.fi
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 CRL Distribution Points: 
+                Full Name:
+                  URI:http://proxy.fineid.fi/crl/dvvshsp3ec.crl
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.1847.2021.1.1, 1.3.6.1.4.1.1847.2021.1.2, 1.3.6.1.4.1.1847.2021.1.3
+            Authority Information Access: 
+                CA Issuers - URI:http://proxy.fineid.fi/ca/dvvshsp3ec.crt
+                OCSP - URI:http://ocsp.fineid.fi/dvvshsp3ec
+    Signature Algorithm: ecdsa-with-SHA384
+    Signature Value:
+        30:65:02:31:00:b1:a6:cb:13:fa:c7:3a:ab:5d:7d:f7:19:bf:
+        e0:a4:a9:5a:34:02:8e:04:da:ba:c5:e0:14:3a:60:2e:e3:0a:
+        11:a3:f0:75:25:8d:8d:8a:07:86:1c:7d:95:96:c7:b2:ff:02:
+        30:60:a3:51:c6:ba:e4:68:63:1e:84:c6:87:ed:68:6b:ea:35:
+        19:04:29:a7:87:2c:1c:02:46:81:d4:c3:0e:b2:3d:aa:02:03:
+        dc:1b:32:ed:79:45:b4:20:ac:23:3b:4e:4b
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
             1d:20:88:77:ff:ee:cc:02:4e:06:d4:52:c2:36:4f:b1:d0:29:87:1a
         Signature Algorithm: sha256WithRSAEncryption
         Issuer: C = FR, O = Gouv, CN = CSCA-FRANCE
