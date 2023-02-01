@@ -25424,6 +25424,46 @@ Certificate:
 Certificate:
     Data:
         Version: 3 (0x2)
+        Serial Number: 8018092674897284623 (0x6f45fcce5f6a0e0f)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C = LB, ST = Jnah, L = Beirut, O = Ministry of Public Health (MOPH), OU = Siren Analytics, CN = CSCA_DGC_LB_01
+        Validity
+            Not Before: Feb  1 11:38:59 2023 GMT
+            Not After : Aug  1 10:38:59 2023 GMT
+        Subject: OU = Siren Analytics, O = Ministry of Public Health (MOPH), ST = Beirut, L = Beirut, C = LB
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:94:93:72:bb:b8:b2:24:00:83:2d:d9:35:72:91:
+                    5b:a0:07:da:39:f0:85:cc:8c:f1:7c:ec:e6:0a:90:
+                    35:cf:68:49:18:32:e0:c7:13:70:8a:fc:f0:15:76:
+                    e6:1f:1a:df:8e:d1:45:59:30:b3:61:0b:1d:99:64:
+                    b9:f3:91:a4:f3
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Subject Key Identifier: 
+                33:46:D2:10:67:6D:90:F7:6F:A1:D5:60:91:87:EF:51:6E:85:54:9C
+            X509v3 Authority Key Identifier: 
+                F7:2D:C2:33:8B:67:0D:7F:CC:2B:D8:BF:5F:D2:F3:B1:5A:BF:BA:2A
+            X509v3 CRL Distribution Points: 
+                Full Name:
+                  URI:http://empty
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.1847.2021.1.2
+    Signature Algorithm: ecdsa-with-SHA256
+    Signature Value:
+        30:46:02:21:00:a1:e5:cc:79:ec:5c:90:1a:e3:b0:28:46:bc:
+        e5:99:e8:16:43:08:d2:69:e1:1c:6a:39:6f:ba:dc:48:a4:14:
+        23:02:21:00:fd:db:ec:a2:41:e5:9f:4e:52:5f:a8:46:fe:9c:
+        2e:10:06:57:d5:84:12:77:bc:d4:51:76:98:2d:3b:ae:ed:40
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
         Serial Number: 8358270795299328950 (0x73fe8b011a5693b6)
         Signature Algorithm: ecdsa-with-SHA256
         Issuer: C = VA, O = STATO CITTA\E2\80\99 DEL VATICANO, OU = DIREZIONE DI SANITA' E IGIENE, CN = CSCA_DGC_VA_01
