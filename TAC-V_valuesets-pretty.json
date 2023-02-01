@@ -2268,6 +2268,243 @@
         }
     },
     {
+        "valueSetDate": "2022-01-26",
+        "valueSetId": "vaccines-covid-19-auth-holders",
+        "valueSetValues": {
+            "4242-E": {
+                "active": true,
+                "display": "4242-E",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "Bharat-Biotech": {
+                "active": true,
+                "display": "Bharat Biotech",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
+                "version": "1.0"
+            },
+            "CIGB": {
+                "active": true,
+                "display": "Center for Genetic Engineering and Biotechnology",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
+                "version": "1.5"
+            },
+            "Chumakov-Federal-Scientific-Center": {
+                "active": true,
+                "display": "Chumakov Federal Scientific Center for Research and Development of Immune-and-Biological Products",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
+                "version": "1.4"
+            },
+            "FIOCRUZ": {
+                "active": true,
+                "display": "Fiocruz",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
+                "version": "1.3"
+            },
+            "Finlay-Institute": {
+                "active": true,
+                "display": "Finlay Institute of Vaccines",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
+                "version": "1.10"
+            },
+            "Fiocruz": {
+                "active": true,
+                "display": "Fiocruz",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
+                "version": "1.3"
+            },
+            "Gamaleya-Research-Institute": {
+                "active": true,
+                "display": "Gamaleya Research Institute",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
+                "version": "1.0"
+            },
+            "Instituto-Butantan": {
+                "active": true,
+                "display": "Instituto Butantan",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
+                "version": "1.9"
+            },
+            "NVSI": {
+                "active": true,
+                "display": "National Vaccine and Serum Institute, China",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
+                "version": "1.9"
+            },
+            "ORG-100000788": {
+                "active": true,
+                "display": "Sanofi Pasteur",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100001417": {
+                "active": true,
+                "display": "Janssen-Cilag International",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100001699": {
+                "active": true,
+                "display": "AstraZeneca AB",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100001981": {
+                "active": true,
+                "display": "Serum Institute Of India Private Limited",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100006270": {
+                "active": true,
+                "display": "Curevac AG",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100007893": {
+                "active": true,
+                "display": "R-Pharm CJSC",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100008549": {
+                "active": true,
+                "display": "Medicago Inc.",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100010771": {
+                "active": true,
+                "display": "Sinopharm Weiqida Europe Pharmaceutical s.r.o. - Prague location",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100013793": {
+                "active": true,
+                "display": "CanSino Biologics",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100020693": {
+                "active": true,
+                "display": "China Sinopharm International Corp. - Beijing location",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100023050": {
+                "active": true,
+                "display": "Gulf Pharmaceutical Industries",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100024420": {
+                "active": true,
+                "display": "Sinopharm Zhijun (Shenzhen) Pharmaceutical Co. Ltd. - Shenzhen location",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100026614": {
+                "active": true,
+                "display": "Sinocelltech Ltd.",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100030215": {
+                "active": true,
+                "display": "Biontech Manufacturing GmbH",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100031184": {
+                "active": true,
+                "display": "Moderna Biotech Spain S.L.",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100032020": {
+                "active": true,
+                "display": "Novavax CZ a.s.",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100033914": {
+                "active": true,
+                "display": "Medigen Vaccine Biologics Corporation",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "ORG-100036422": {
+                "active": true,
+                "display": "Valneva France",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "R-Pharm": {
+                "active": true,
+                "display": "R-Pharm CJSC",
+                "lang": "en",
+                "system": "https://spor.ema.europa.eu/v1/organisations",
+                "version": ""
+            },
+            "Sinopharm-WIBP": {
+                "active": true,
+                "display": "Sinopharm - Wuhan Institute of Biological Products",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
+                "version": "1.5"
+            },
+            "Sinovac-Biotech": {
+                "active": true,
+                "display": "Sinovac Biotech",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
+                "version": "1.0"
+            },
+            "Vector-Institute": {
+                "active": true,
+                "display": "Vector Institute",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
+                "version": "1.0"
+            },
+            "Yisheng-Biopharma": {
+                "active": true,
+                "display": "Yisheng Biopharma",
+                "lang": "en",
+                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
+                "version": "1.9"
+            }
+        }
+    },
+    {
         "valueSetDate": "2023-02-01",
         "valueSetId": "covid-19-lab-test-manufacturer-and-name",
         "valueSetValues": {
@@ -3200,12 +3437,12 @@
                 "version": "2021-11-10 00:00:00 CET"
             },
             "1884": {
-                "active": false,
+                "active": true,
                 "display": "Xiamen Wiz Biotech Co. Ltd., SARS-CoV-2 Antigen Rapid Test (Colloidal Gold)",
                 "lang": "en",
                 "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
                 "validUntil": null,
-                "version": "2022-07-09 00:00:00 CEST"
+                "version": "2023-01-31 00:00:00 CET"
             },
             "1899": {
                 "active": true,
@@ -3334,6 +3571,14 @@
                 "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
                 "validUntil": null,
                 "version": "2021-07-07 05:07:15 CEST"
+            },
+            "1968": {
+                "active": true,
+                "display": "Shenzhen Microprofit Biotech Co. Ltd., SARS-CoV-2 Antigen Test Kit (Fluorescence Immunoassay)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2023-01-31 00:00:00 CET"
             },
             "1982": {
                 "active": true,
@@ -3719,6 +3964,14 @@
                 "validUntil": null,
                 "version": "2022-03-04 00:00:00 CET"
             },
+            "2226": {
+                "active": true,
+                "display": "ZET medikal tekstil dis tic Ltd. sti, SOFTEC SARS COV-2 COVID-19 ANTIGEN TEST KIT",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2023-01-31 00:00:00 CET"
+            },
             "2228": {
                 "active": true,
                 "display": "Roche (SD BIOSENSOR), SARS-CoV-2 Rapid Antigen Test Nasal",
@@ -3734,6 +3987,14 @@
                 "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
                 "validUntil": null,
                 "version": "2021-12-08 00:00:00 CET"
+            },
+            "2233": {
+                "active": true,
+                "display": "Shenzhen Microprofit Biotech Co. Ltd., SARS-CoV-2 & Influenza A/B & RSV Antigen Combo Test Kit (Colloidal Gold Chromatographic Immunoassay)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2023-01-31 00:00:00 CET"
             },
             "2241": {
                 "active": true,
@@ -3918,6 +4179,22 @@
                 "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
                 "validUntil": null,
                 "version": "2022-11-11 00:00:00 CET"
+            },
+            "2390": {
+                "active": true,
+                "display": "Hangzhou AllTest Biotech Co. Ltd., SARS-CoV-2/Influenza A+B/RSV Antigen Combo Rapid Test (Nasopharyngeal Swab)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2023-01-31 00:00:00 CET"
+            },
+            "2392": {
+                "active": true,
+                "display": "Hangzhou AllTest Biotech Co. Ltd., SARS-CoV-2/Influenza A+B/RSV/Adenovirus Antigen Combo Rapid Test (Nasopharyngeal Swab)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2023-01-31 00:00:00 CET"
             },
             "2414": {
                 "active": true,
@@ -4303,6 +4580,14 @@
                 "validUntil": null,
                 "version": "2022-12-09 00:00:00 CET"
             },
+            "3005": {
+                "active": true,
+                "display": "Hangzhou Aichek Medical Technology Co. Ltd., COVID-19 Antigen Rapid Test Device",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2023-01-31 00:00:00 CET"
+            },
             "3015": {
                 "active": true,
                 "display": "Suzhou Soochow University Saier Immuno Biotech Co. Ltd., InstantSure Covid-19 Ag CARD",
@@ -4334,6 +4619,14 @@
                 "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
                 "validUntil": null,
                 "version": "2022-07-09 00:00:00 CEST"
+            },
+            "3084": {
+                "active": true,
+                "display": "InTec Products Inc., AQ+ COVID-19 Ag Rapid Test",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2023-01-31 00:00:00 CET"
             },
             "3093": {
                 "active": true,
@@ -4407,6 +4700,14 @@
                 "validUntil": null,
                 "version": "2022-11-11 00:00:00 CET"
             },
+            "4049": {
+                "active": true,
+                "display": "NINGBO LVTANG BIOTECHNOLOGY Co. Ltd., SARS-CoV-2 Antigen Detection Kit (Colloidal Gold Method)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2023-01-31 00:00:00 CET"
+            },
             "4053": {
                 "active": true,
                 "display": "Acon Biotech (Hangzhou) Co. Ltd., Flowflex SARS-CoV-2 Antigen Rapid Test Slim",
@@ -4463,6 +4764,38 @@
                 "validUntil": null,
                 "version": "2022-11-11 00:00:00 CET"
             },
+            "5743": {
+                "active": true,
+                "display": "Hangzhou Biotest Biotech Co. Ltd., COVID-19 Antigen Rapid Test Cassette(Nasal Swab)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2023-01-31 00:00:00 CET"
+            },
+            "5751": {
+                "active": true,
+                "display": "Shenzhen Microprofit Biotech Co. Ltd., SARS-CoV-2 & Influenza A/B\u00a0Antigen Combo Test Kit(Colloidal Gold Chromatographic Immunoassay)",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2023-01-31 00:00:00 CET"
+            },
+            "5803": {
+                "active": true,
+                "display": "Assure Tech (Hangzhou) Co. Ltd., COVID-19 & Influenza A/B& RSV Antigen Nasal Test Kit",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2023-01-31 00:00:00 CET"
+            },
+            "5804": {
+                "active": true,
+                "display": "Vitrosens Biotechnology Co. Ltd., RapidFor\u2122 SARS-CoV-2 + FLU A/B + RSV Combo Test Kit",
+                "lang": "en",
+                "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+                "validUntil": null,
+                "version": "2023-01-31 00:00:00 CET"
+            },
             "768": {
                 "active": true,
                 "display": "ArcDia International Ltd., mariPOC SARS-CoV-2",
@@ -4478,243 +4811,6 @@
                 "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
                 "validUntil": null,
                 "version": "2021-07-13 05:38:51 CEST"
-            }
-        }
-    },
-    {
-        "valueSetDate": "2022-01-26",
-        "valueSetId": "vaccines-covid-19-auth-holders",
-        "valueSetValues": {
-            "4242-E": {
-                "active": true,
-                "display": "4242-E",
-                "lang": "en",
-                "system": "https://spor.ema.europa.eu/v1/organisations",
-                "version": ""
-            },
-            "Bharat-Biotech": {
-                "active": true,
-                "display": "Bharat Biotech",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
-                "version": "1.0"
-            },
-            "CIGB": {
-                "active": true,
-                "display": "Center for Genetic Engineering and Biotechnology",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
-                "version": "1.5"
-            },
-            "Chumakov-Federal-Scientific-Center": {
-                "active": true,
-                "display": "Chumakov Federal Scientific Center for Research and Development of Immune-and-Biological Products",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
-                "version": "1.4"
-            },
-            "FIOCRUZ": {
-                "active": true,
-                "display": "Fiocruz",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
-                "version": "1.3"
-            },
-            "Finlay-Institute": {
-                "active": true,
-                "display": "Finlay Institute of Vaccines",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
-                "version": "1.10"
-            },
-            "Fiocruz": {
-                "active": true,
-                "display": "Fiocruz",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
-                "version": "1.3"
-            },
-            "Gamaleya-Research-Institute": {
-                "active": true,
-                "display": "Gamaleya Research Institute",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
-                "version": "1.0"
-            },
-            "Instituto-Butantan": {
-                "active": true,
-                "display": "Instituto Butantan",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
-                "version": "1.9"
-            },
-            "NVSI": {
-                "active": true,
-                "display": "National Vaccine and Serum Institute, China",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
-                "version": "1.9"
-            },
-            "ORG-100000788": {
-                "active": true,
-                "display": "Sanofi Pasteur",
-                "lang": "en",
-                "system": "https://spor.ema.europa.eu/v1/organisations",
-                "version": ""
-            },
-            "ORG-100001417": {
-                "active": true,
-                "display": "Janssen-Cilag International",
-                "lang": "en",
-                "system": "https://spor.ema.europa.eu/v1/organisations",
-                "version": ""
-            },
-            "ORG-100001699": {
-                "active": true,
-                "display": "AstraZeneca AB",
-                "lang": "en",
-                "system": "https://spor.ema.europa.eu/v1/organisations",
-                "version": ""
-            },
-            "ORG-100001981": {
-                "active": true,
-                "display": "Serum Institute Of India Private Limited",
-                "lang": "en",
-                "system": "https://spor.ema.europa.eu/v1/organisations",
-                "version": ""
-            },
-            "ORG-100006270": {
-                "active": true,
-                "display": "Curevac AG",
-                "lang": "en",
-                "system": "https://spor.ema.europa.eu/v1/organisations",
-                "version": ""
-            },
-            "ORG-100007893": {
-                "active": true,
-                "display": "R-Pharm CJSC",
-                "lang": "en",
-                "system": "https://spor.ema.europa.eu/v1/organisations",
-                "version": ""
-            },
-            "ORG-100008549": {
-                "active": true,
-                "display": "Medicago Inc.",
-                "lang": "en",
-                "system": "https://spor.ema.europa.eu/v1/organisations",
-                "version": ""
-            },
-            "ORG-100010771": {
-                "active": true,
-                "display": "Sinopharm Weiqida Europe Pharmaceutical s.r.o. - Prague location",
-                "lang": "en",
-                "system": "https://spor.ema.europa.eu/v1/organisations",
-                "version": ""
-            },
-            "ORG-100013793": {
-                "active": true,
-                "display": "CanSino Biologics",
-                "lang": "en",
-                "system": "https://spor.ema.europa.eu/v1/organisations",
-                "version": ""
-            },
-            "ORG-100020693": {
-                "active": true,
-                "display": "China Sinopharm International Corp. - Beijing location",
-                "lang": "en",
-                "system": "https://spor.ema.europa.eu/v1/organisations",
-                "version": ""
-            },
-            "ORG-100023050": {
-                "active": true,
-                "display": "Gulf Pharmaceutical Industries",
-                "lang": "en",
-                "system": "https://spor.ema.europa.eu/v1/organisations",
-                "version": ""
-            },
-            "ORG-100024420": {
-                "active": true,
-                "display": "Sinopharm Zhijun (Shenzhen) Pharmaceutical Co. Ltd. - Shenzhen location",
-                "lang": "en",
-                "system": "https://spor.ema.europa.eu/v1/organisations",
-                "version": ""
-            },
-            "ORG-100026614": {
-                "active": true,
-                "display": "Sinocelltech Ltd.",
-                "lang": "en",
-                "system": "https://spor.ema.europa.eu/v1/organisations",
-                "version": ""
-            },
-            "ORG-100030215": {
-                "active": true,
-                "display": "Biontech Manufacturing GmbH",
-                "lang": "en",
-                "system": "https://spor.ema.europa.eu/v1/organisations",
-                "version": ""
-            },
-            "ORG-100031184": {
-                "active": true,
-                "display": "Moderna Biotech Spain S.L.",
-                "lang": "en",
-                "system": "https://spor.ema.europa.eu/v1/organisations",
-                "version": ""
-            },
-            "ORG-100032020": {
-                "active": true,
-                "display": "Novavax CZ a.s.",
-                "lang": "en",
-                "system": "https://spor.ema.europa.eu/v1/organisations",
-                "version": ""
-            },
-            "ORG-100033914": {
-                "active": true,
-                "display": "Medigen Vaccine Biologics Corporation",
-                "lang": "en",
-                "system": "https://spor.ema.europa.eu/v1/organisations",
-                "version": ""
-            },
-            "ORG-100036422": {
-                "active": true,
-                "display": "Valneva France",
-                "lang": "en",
-                "system": "https://spor.ema.europa.eu/v1/organisations",
-                "version": ""
-            },
-            "R-Pharm": {
-                "active": true,
-                "display": "R-Pharm CJSC",
-                "lang": "en",
-                "system": "https://spor.ema.europa.eu/v1/organisations",
-                "version": ""
-            },
-            "Sinopharm-WIBP": {
-                "active": true,
-                "display": "Sinopharm - Wuhan Institute of Biological Products",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
-                "version": "1.5"
-            },
-            "Sinovac-Biotech": {
-                "active": true,
-                "display": "Sinovac Biotech",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
-                "version": "1.0"
-            },
-            "Vector-Institute": {
-                "active": true,
-                "display": "Vector Institute",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
-                "version": "1.0"
-            },
-            "Yisheng-Biopharma": {
-                "active": true,
-                "display": "Yisheng Biopharma",
-                "lang": "en",
-                "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
-                "version": "1.9"
             }
         }
     }
