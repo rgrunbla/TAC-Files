@@ -2835,6 +2835,71 @@
         },
         {
             "AffectedFields": [
+                "t.0.sc",
+                "t.0.tt"
+            ],
+            "CertificateType": "Test",
+            "Country": "PL",
+            "Description": [
+                {
+                    "desc": "Data i godzina pobrania pr\u00f3bki musi by\u0107 mniejsza ni\u017c 48 godzin przed dat\u0105 weryfikacji w przypadku testu typu RAT (szybki test antygenowy).",
+                    "lang": "pl"
+                },
+                {
+                    "desc": "DateTime of Sample Collection must be less than 48 hours before the Verification Datetime for a test of type RAT (rapid antigen test).",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Die Probenahme f\u00fcr einen Antigen-Test (z.B. Schnelltest) darf maximal 48 Stunden zur\u00fcckliegen.",
+                    "lang": "de"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-PL-0003",
+            "Logic": {
+                "if": [
+                    {
+                        "===": [
+                            {
+                                "var": "payload.t.0.tt"
+                            },
+                            "LP217198-3"
+                        ]
+                    },
+                    {
+                        "before": [
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "external.validationClock"
+                                    },
+                                    0,
+                                    "day"
+                                ]
+                            },
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "payload.t.0.sc"
+                                    },
+                                    48,
+                                    "hour"
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-11T00:00:00Z",
+            "ValidTo": "2030-10-11T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
                 "v.0",
                 "v.0.dt",
                 "v.0.dn",
@@ -3077,71 +3142,6 @@
             "ValidFrom": "2022-07-20T10:00:00Z",
             "ValidTo": "2032-07-20T10:00:00Z",
             "Version": "1.0.1"
-        },
-        {
-            "AffectedFields": [
-                "t.0.sc",
-                "t.0.tt"
-            ],
-            "CertificateType": "Test",
-            "Country": "PL",
-            "Description": [
-                {
-                    "desc": "Data i godzina pobrania pr\u00f3bki musi by\u0107 mniejsza ni\u017c 48 godzin przed dat\u0105 weryfikacji w przypadku testu typu RAT (szybki test antygenowy).",
-                    "lang": "pl"
-                },
-                {
-                    "desc": "DateTime of Sample Collection must be less than 48 hours before the Verification Datetime for a test of type RAT (rapid antigen test).",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Die Probenahme f\u00fcr einen Antigen-Test (z.B. Schnelltest) darf maximal 48 Stunden zur\u00fcckliegen.",
-                    "lang": "de"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-PL-0003",
-            "Logic": {
-                "if": [
-                    {
-                        "===": [
-                            {
-                                "var": "payload.t.0.tt"
-                            },
-                            "LP217198-3"
-                        ]
-                    },
-                    {
-                        "before": [
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "external.validationClock"
-                                    },
-                                    0,
-                                    "day"
-                                ]
-                            },
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "payload.t.0.sc"
-                                    },
-                                    48,
-                                    "hour"
-                                ]
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-11T00:00:00Z",
-            "ValidTo": "2030-10-11T00:00:00Z",
-            "Version": "1.0.0"
         },
         {
             "AffectedFields": [
@@ -25105,6 +25105,98 @@
         },
         {
             "AffectedFields": [
+                "r.0",
+                "r.0.tg",
+                "t.0",
+                "t.0.tg",
+                "v.0",
+                "v.0.tg"
+            ],
+            "CertificateType": "General",
+            "Country": "PL",
+            "Description": [
+                {
+                    "desc": "Warto\u015b\u0107 \"disease or agent targeted\" musi by\u0107 COVID-19 i pochodzi\u0107 z listy zestawu warto\u015bci.",
+                    "lang": "pl"
+                },
+                {
+                    "desc": "The \"disease or agent targeted\" must be COVID-19 of the value set list.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "\"disease or agent targeted\" darf nur COVID-19 aus der Value-Set Liste sein.",
+                    "lang": "de"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "GR-PL-0001",
+            "Logic": {
+                "and": [
+                    {
+                        "if": [
+                            {
+                                "var": "payload.r.0"
+                            },
+                            {
+                                "in": [
+                                    {
+                                        "var": "payload.r.0.tg"
+                                    },
+                                    {
+                                        "var": "external.valueSets.disease-agent-targeted"
+                                    }
+                                ]
+                            },
+                            true
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "var": "payload.t.0"
+                            },
+                            {
+                                "in": [
+                                    {
+                                        "var": "payload.t.0.tg"
+                                    },
+                                    {
+                                        "var": "external.valueSets.disease-agent-targeted"
+                                    }
+                                ]
+                            },
+                            true
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "var": "payload.v.0"
+                            },
+                            {
+                                "in": [
+                                    {
+                                        "var": "payload.v.0.tg"
+                                    },
+                                    {
+                                        "var": "external.valueSets.disease-agent-targeted"
+                                    }
+                                ]
+                            },
+                            true
+                        ]
+                    }
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-11T00:00:00Z",
+            "ValidTo": "2030-10-11T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
                 "t.0",
                 "t.0.tr"
             ],
@@ -25411,98 +25503,6 @@
             "ValidFrom": "2022-02-28T00:00:00Z",
             "ValidTo": "2030-06-01T00:00:00Z",
             "Version": "1.1.1"
-        },
-        {
-            "AffectedFields": [
-                "r.0",
-                "r.0.tg",
-                "t.0",
-                "t.0.tg",
-                "v.0",
-                "v.0.tg"
-            ],
-            "CertificateType": "General",
-            "Country": "PL",
-            "Description": [
-                {
-                    "desc": "Warto\u015b\u0107 \"disease or agent targeted\" musi by\u0107 COVID-19 i pochodzi\u0107 z listy zestawu warto\u015bci.",
-                    "lang": "pl"
-                },
-                {
-                    "desc": "The \"disease or agent targeted\" must be COVID-19 of the value set list.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "\"disease or agent targeted\" darf nur COVID-19 aus der Value-Set Liste sein.",
-                    "lang": "de"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "GR-PL-0001",
-            "Logic": {
-                "and": [
-                    {
-                        "if": [
-                            {
-                                "var": "payload.r.0"
-                            },
-                            {
-                                "in": [
-                                    {
-                                        "var": "payload.r.0.tg"
-                                    },
-                                    {
-                                        "var": "external.valueSets.disease-agent-targeted"
-                                    }
-                                ]
-                            },
-                            true
-                        ]
-                    },
-                    {
-                        "if": [
-                            {
-                                "var": "payload.t.0"
-                            },
-                            {
-                                "in": [
-                                    {
-                                        "var": "payload.t.0.tg"
-                                    },
-                                    {
-                                        "var": "external.valueSets.disease-agent-targeted"
-                                    }
-                                ]
-                            },
-                            true
-                        ]
-                    },
-                    {
-                        "if": [
-                            {
-                                "var": "payload.v.0"
-                            },
-                            {
-                                "in": [
-                                    {
-                                        "var": "payload.v.0.tg"
-                                    },
-                                    {
-                                        "var": "external.valueSets.disease-agent-targeted"
-                                    }
-                                ]
-                            },
-                            true
-                        ]
-                    }
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-11T00:00:00Z",
-            "ValidTo": "2030-10-11T00:00:00Z",
-            "Version": "1.0.0"
         },
         {
             "AffectedFields": [
@@ -36541,6 +36541,59 @@
         },
         {
             "AffectedFields": [
+                "t.0.ma",
+                "t.0.tt"
+            ],
+            "CertificateType": "Test",
+            "Country": "PL",
+            "Description": [
+                {
+                    "desc": "Szybki test antygenowy (RAT) musi znajdowa\u0107 si\u0119 na unijnej li\u015bcie \"test\u00f3w i producent\u00f3w\" (\"test product and manufacturer\").",
+                    "lang": "pl"
+                },
+                {
+                    "desc": "If the test type is \"RAT\" then the \"test product and manufacturer\" MUST be in the valueset list, if it's NAA return true.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Der Antigen-Test (z.B. Schnelltest) muss in der Liste \"test product and manufacturer\" der EU enthalten sein.",
+                    "lang": "de"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-PL-0001",
+            "Logic": {
+                "if": [
+                    {
+                        "===": [
+                            {
+                                "var": "payload.t.0.tt"
+                            },
+                            "LP217198-3"
+                        ]
+                    },
+                    {
+                        "in": [
+                            {
+                                "var": "payload.t.0.ma"
+                            },
+                            {
+                                "var": "external.valueSets.covid-19-lab-test-manufacturer-and-name"
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-11T00:00:00Z",
+            "ValidTo": "2030-10-11T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
                 "t.0",
                 "t.0.sc",
                 "t.0.tt"
@@ -36600,59 +36653,6 @@
             "ValidFrom": "2022-07-20T10:00:00Z",
             "ValidTo": "2032-07-20T10:00:00Z",
             "Version": "1.0.1"
-        },
-        {
-            "AffectedFields": [
-                "t.0.ma",
-                "t.0.tt"
-            ],
-            "CertificateType": "Test",
-            "Country": "PL",
-            "Description": [
-                {
-                    "desc": "Szybki test antygenowy (RAT) musi znajdowa\u0107 si\u0119 na unijnej li\u015bcie \"test\u00f3w i producent\u00f3w\" (\"test product and manufacturer\").",
-                    "lang": "pl"
-                },
-                {
-                    "desc": "If the test type is \"RAT\" then the \"test product and manufacturer\" MUST be in the valueset list, if it's NAA return true.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Der Antigen-Test (z.B. Schnelltest) muss in der Liste \"test product and manufacturer\" der EU enthalten sein.",
-                    "lang": "de"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-PL-0001",
-            "Logic": {
-                "if": [
-                    {
-                        "===": [
-                            {
-                                "var": "payload.t.0.tt"
-                            },
-                            "LP217198-3"
-                        ]
-                    },
-                    {
-                        "in": [
-                            {
-                                "var": "payload.t.0.ma"
-                            },
-                            {
-                                "var": "external.valueSets.covid-19-lab-test-manufacturer-and-name"
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-11T00:00:00Z",
-            "ValidTo": "2030-10-11T00:00:00Z",
-            "Version": "1.0.0"
         },
         {
             "AffectedFields": [
@@ -41059,87 +41059,6 @@
         },
         {
             "AffectedFields": [
-                "t.0",
-                "t.0.tr"
-            ],
-            "CertificateType": "Test",
-            "Country": "_C",
-            "Description": [
-                {
-                    "desc": "Test result must be negative.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Le resultat du test doit etre negatif.",
-                    "lang": "fr"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-_C-0003",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.t.0"
-                    },
-                    {
-                        "if": [
-                            {
-                                "and": [
-                                    {
-                                        "===": [
-                                            {
-                                                "var": "payload.t.0.tt"
-                                            },
-                                            "LP217198-3"
-                                        ]
-                                    },
-                                    {
-                                        "===": [
-                                            {
-                                                "var": "payload.t.0.tr"
-                                            },
-                                            "260415000"
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "before": [
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "external.validationClock"
-                                            },
-                                            0,
-                                            "hour"
-                                        ]
-                                    },
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "payload.t.0.sc"
-                                            },
-                                            48,
-                                            "hour"
-                                        ]
-                                    }
-                                ]
-                            },
-                            true
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-07-20T10:00:00Z",
-            "ValidTo": "2032-07-20T10:00:00Z",
-            "Version": "1.0.3"
-        },
-        {
-            "AffectedFields": [
                 "v.0",
                 "v.0.dt",
                 "v.0.dn",
@@ -41243,6 +41162,87 @@
             "ValidFrom": "2022-02-03T00:00:00Z",
             "ValidTo": "2030-10-11T00:00:00Z",
             "Version": "1.1.1"
+        },
+        {
+            "AffectedFields": [
+                "t.0",
+                "t.0.tr"
+            ],
+            "CertificateType": "Test",
+            "Country": "_C",
+            "Description": [
+                {
+                    "desc": "Test result must be negative.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Le resultat du test doit etre negatif.",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-_C-0003",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.t.0"
+                    },
+                    {
+                        "if": [
+                            {
+                                "and": [
+                                    {
+                                        "===": [
+                                            {
+                                                "var": "payload.t.0.tt"
+                                            },
+                                            "LP217198-3"
+                                        ]
+                                    },
+                                    {
+                                        "===": [
+                                            {
+                                                "var": "payload.t.0.tr"
+                                            },
+                                            "260415000"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "before": [
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "external.validationClock"
+                                            },
+                                            0,
+                                            "hour"
+                                        ]
+                                    },
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "payload.t.0.sc"
+                                            },
+                                            48,
+                                            "hour"
+                                        ]
+                                    }
+                                ]
+                            },
+                            true
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-07-20T10:00:00Z",
+            "ValidTo": "2032-07-20T10:00:00Z",
+            "Version": "1.0.3"
         },
         {
             "AffectedFields": [
@@ -57199,6 +57199,74 @@
         },
         {
             "AffectedFields": [
+                "r",
+                "t",
+                "v"
+            ],
+            "CertificateType": "General",
+            "Country": "PL",
+            "Description": [
+                {
+                    "desc": "Wymagany dok\u0142adnie jeden typ zdarzenia.",
+                    "lang": "pl"
+                },
+                {
+                    "desc": "Exactly one type of event.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "Es darf nur genau ein Zertifikatstyp enthalten sein.",
+                    "lang": "de"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "GR-PL-0000",
+            "Logic": {
+                "===": [
+                    {
+                        "reduce": [
+                            [
+                                {
+                                    "var": "payload.r"
+                                },
+                                {
+                                    "var": "payload.t"
+                                },
+                                {
+                                    "var": "payload.v"
+                                }
+                            ],
+                            {
+                                "+": [
+                                    {
+                                        "var": "accumulator"
+                                    },
+                                    {
+                                        "if": [
+                                            {
+                                                "var": "current.0"
+                                            },
+                                            1,
+                                            0
+                                        ]
+                                    }
+                                ]
+                            },
+                            0
+                        ]
+                    },
+                    1
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2021-10-11T00:00:00Z",
+            "ValidTo": "2030-10-11T00:00:00Z",
+            "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
                 "t.0",
                 "t.0.tr",
                 "t.0.sc"
@@ -57275,74 +57343,6 @@
             "ValidFrom": "2022-07-20T10:00:00Z",
             "ValidTo": "2032-07-20T10:00:00Z",
             "Version": "1.0.5"
-        },
-        {
-            "AffectedFields": [
-                "r",
-                "t",
-                "v"
-            ],
-            "CertificateType": "General",
-            "Country": "PL",
-            "Description": [
-                {
-                    "desc": "Wymagany dok\u0142adnie jeden typ zdarzenia.",
-                    "lang": "pl"
-                },
-                {
-                    "desc": "Exactly one type of event.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "Es darf nur genau ein Zertifikatstyp enthalten sein.",
-                    "lang": "de"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "GR-PL-0000",
-            "Logic": {
-                "===": [
-                    {
-                        "reduce": [
-                            [
-                                {
-                                    "var": "payload.r"
-                                },
-                                {
-                                    "var": "payload.t"
-                                },
-                                {
-                                    "var": "payload.v"
-                                }
-                            ],
-                            {
-                                "+": [
-                                    {
-                                        "var": "accumulator"
-                                    },
-                                    {
-                                        "if": [
-                                            {
-                                                "var": "current.0"
-                                            },
-                                            1,
-                                            0
-                                        ]
-                                    }
-                                ]
-                            },
-                            0
-                        ]
-                    },
-                    1
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2021-10-11T00:00:00Z",
-            "ValidTo": "2030-10-11T00:00:00Z",
-            "Version": "1.0.0"
         },
         {
             "AffectedFields": [
@@ -62738,76 +62738,6 @@
         {
             "AffectedFields": [
                 "t.0",
-                "t.0.sc",
-                "t.0.tt"
-            ],
-            "CertificateType": "Test",
-            "Country": "FR",
-            "Description": [
-                {
-                    "desc": "DateTime of Sample Collection must be less than 48 hours before the Verification Datetime for Rapid immunoassay.",
-                    "lang": "en"
-                },
-                {
-                    "desc": "La date du pr\u00e9l\u00e8vement de l'\u00e9chantillon doit avoir \u00e9t\u00e9 r\u00e9alis\u00e9e moins de 48 heures avant la date de v\u00e9rification pour un test antig\u00e9nique.",
-                    "lang": "fr"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-_OFR-0004",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.t.0"
-                    },
-                    {
-                        "if": [
-                            {
-                                "===": [
-                                    {
-                                        "var": "payload.t.0.tt"
-                                    },
-                                    "LP217198-3"
-                                ]
-                            },
-                            {
-                                "before": [
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "external.validationClock"
-                                            },
-                                            0,
-                                            "day"
-                                        ]
-                                    },
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "payload.t.0.sc"
-                                            },
-                                            48,
-                                            "hour"
-                                        ]
-                                    }
-                                ]
-                            },
-                            true
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-07-20T10:00:00Z",
-            "ValidTo": "2032-07-20T10:00:00Z",
-            "Version": "1.0.5"
-        },
-        {
-            "AffectedFields": [
-                "t.0",
                 "t.0.tr"
             ],
             "CertificateType": "Test",
@@ -62910,6 +62840,76 @@
             "ValidFrom": "2022-02-03T00:00:00Z",
             "ValidTo": "2030-10-11T00:00:00Z",
             "Version": "1.1.0"
+        },
+        {
+            "AffectedFields": [
+                "t.0",
+                "t.0.sc",
+                "t.0.tt"
+            ],
+            "CertificateType": "Test",
+            "Country": "FR",
+            "Description": [
+                {
+                    "desc": "DateTime of Sample Collection must be less than 48 hours before the Verification Datetime for Rapid immunoassay.",
+                    "lang": "en"
+                },
+                {
+                    "desc": "La date du pr\u00e9l\u00e8vement de l'\u00e9chantillon doit avoir \u00e9t\u00e9 r\u00e9alis\u00e9e moins de 48 heures avant la date de v\u00e9rification pour un test antig\u00e9nique.",
+                    "lang": "fr"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-_OFR-0004",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.t.0"
+                    },
+                    {
+                        "if": [
+                            {
+                                "===": [
+                                    {
+                                        "var": "payload.t.0.tt"
+                                    },
+                                    "LP217198-3"
+                                ]
+                            },
+                            {
+                                "before": [
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "external.validationClock"
+                                            },
+                                            0,
+                                            "day"
+                                        ]
+                                    },
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "payload.t.0.sc"
+                                            },
+                                            48,
+                                            "hour"
+                                        ]
+                                    }
+                                ]
+                            },
+                            true
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-07-20T10:00:00Z",
+            "ValidTo": "2032-07-20T10:00:00Z",
+            "Version": "1.0.5"
         },
         {
             "AffectedFields": [
