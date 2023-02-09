@@ -537,62 +537,6 @@
         },
         {
             "AffectedFields": [
-                "r.0",
-                "r.0.fr"
-            ],
-            "CertificateType": "Recovery",
-            "Country": "HR",
-            "Description": [
-                {
-                    "desc": "Rezultat pozitivnog testa mora biti stariji od 10 dana.",
-                    "lang": "hr"
-                },
-                {
-                    "desc": "The positive test result must be older than 10 days.",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "RR-HR-0001",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.r.0"
-                    },
-                    {
-                        "not-before": [
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "external.validationClock"
-                                    },
-                                    0,
-                                    "day"
-                                ]
-                            },
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "payload.r.0.fr"
-                                    },
-                                    11,
-                                    "day"
-                                ]
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-04-01T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.1.0"
-        },
-        {
-            "AffectedFields": [
                 "v.0",
                 "v.0.mp",
                 "v.0.dt"
@@ -3142,6 +3086,62 @@
             "ValidFrom": "2021-10-11T00:00:00Z",
             "ValidTo": "2030-10-11T00:00:00Z",
             "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "r.0",
+                "r.0.fr"
+            ],
+            "CertificateType": "Recovery",
+            "Country": "HR",
+            "Description": [
+                {
+                    "desc": "Rezultat pozitivnog testa mora biti stariji od 10 dana.",
+                    "lang": "hr"
+                },
+                {
+                    "desc": "The positive test result must be older than 10 days.",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "RR-HR-0001",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.r.0"
+                    },
+                    {
+                        "not-before": [
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "external.validationClock"
+                                    },
+                                    0,
+                                    "day"
+                                ]
+                            },
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "payload.r.0.fr"
+                                    },
+                                    11,
+                                    "day"
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-04-01T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.1.0"
         },
         {
             "AffectedFields": [
@@ -11557,175 +11557,6 @@
         },
         {
             "AffectedFields": [
-                "r.0",
-                "r.0.fr"
-            ],
-            "CertificateType": "Recovery",
-            "Country": "HR",
-            "Description": [
-                {
-                    "desc": "Pozitivni rezultat testa ne smije biti stariji od 180 dana.",
-                    "lang": "hr"
-                },
-                {
-                    "desc": "The positive test result must be no older than 180 days.",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "RR-HR-0002",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.r.0"
-                    },
-                    {
-                        "not-after": [
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "external.validationClock"
-                                    },
-                                    0,
-                                    "day"
-                                ]
-                            },
-                            {
-                                "plusTime": [
-                                    {
-                                        "var": "payload.r.0.fr"
-                                    },
-                                    180,
-                                    "day"
-                                ]
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-04-01T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.1.0"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
-                "v.0.dt",
-                "v.0.dn",
-                "v.0.sd"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "HR",
-            "Description": [
-                {
-                    "desc": "Mora pro\u0107i najmanje 14 dana od cijepljenja. Buster doza ili cijepljenje osobe koja je preboljela COVID-19 je valjano odmah.",
-                    "lang": "hr"
-                },
-                {
-                    "desc": "At least 14 days must have elapsed since completing the primary course of immunization. A booster shot or vaccination of someone who recovered from COVID-19 is valid immediately.",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-HR-0003",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        "if": [
-                            {
-                                "not-before": [
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "external.validationClock"
-                                            },
-                                            0,
-                                            "day"
-                                        ]
-                                    },
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "payload.v.0.dt"
-                                            },
-                                            15,
-                                            "day"
-                                        ]
-                                    }
-                                ]
-                            },
-                            true,
-                            {
-                                "if": [
-                                    {
-                                        ">": [
-                                            {
-                                                "var": "payload.v.0.dn"
-                                            },
-                                            2
-                                        ]
-                                    },
-                                    true,
-                                    {
-                                        "if": [
-                                            {
-                                                "and": [
-                                                    {
-                                                        "===": [
-                                                            {
-                                                                "var": "payload.v.0.dn"
-                                                            },
-                                                            1
-                                                        ]
-                                                    },
-                                                    {
-                                                        "===": [
-                                                            {
-                                                                "var": "payload.v.0.dn"
-                                                            },
-                                                            {
-                                                                "var": "payload.v.0.sd"
-                                                            }
-                                                        ]
-                                                    }
-                                                ]
-                                            },
-                                            true,
-                                            {
-                                                ">": [
-                                                    {
-                                                        "var": "payload.v.0.dn"
-                                                    },
-                                                    {
-                                                        "var": "payload.v.0.sd"
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-04-01T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.1.0"
-        },
-        {
-            "AffectedFields": [
                 "v.0",
                 "v.0.vp"
             ],
@@ -14373,6 +14204,175 @@
             "ValidFrom": "2022-07-20T10:00:00Z",
             "ValidTo": "2032-07-20T10:00:00Z",
             "Version": "1.0.1"
+        },
+        {
+            "AffectedFields": [
+                "r.0",
+                "r.0.fr"
+            ],
+            "CertificateType": "Recovery",
+            "Country": "HR",
+            "Description": [
+                {
+                    "desc": "Pozitivni rezultat testa ne smije biti stariji od 180 dana.",
+                    "lang": "hr"
+                },
+                {
+                    "desc": "The positive test result must be no older than 180 days.",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "RR-HR-0002",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.r.0"
+                    },
+                    {
+                        "not-after": [
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "external.validationClock"
+                                    },
+                                    0,
+                                    "day"
+                                ]
+                            },
+                            {
+                                "plusTime": [
+                                    {
+                                        "var": "payload.r.0.fr"
+                                    },
+                                    180,
+                                    "day"
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-04-01T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.1.0"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
+                "v.0.dt",
+                "v.0.dn",
+                "v.0.sd"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "HR",
+            "Description": [
+                {
+                    "desc": "Mora pro\u0107i najmanje 14 dana od cijepljenja. Buster doza ili cijepljenje osobe koja je preboljela COVID-19 je valjano odmah.",
+                    "lang": "hr"
+                },
+                {
+                    "desc": "At least 14 days must have elapsed since completing the primary course of immunization. A booster shot or vaccination of someone who recovered from COVID-19 is valid immediately.",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-HR-0003",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        "if": [
+                            {
+                                "not-before": [
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "external.validationClock"
+                                            },
+                                            0,
+                                            "day"
+                                        ]
+                                    },
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "payload.v.0.dt"
+                                            },
+                                            15,
+                                            "day"
+                                        ]
+                                    }
+                                ]
+                            },
+                            true,
+                            {
+                                "if": [
+                                    {
+                                        ">": [
+                                            {
+                                                "var": "payload.v.0.dn"
+                                            },
+                                            2
+                                        ]
+                                    },
+                                    true,
+                                    {
+                                        "if": [
+                                            {
+                                                "and": [
+                                                    {
+                                                        "===": [
+                                                            {
+                                                                "var": "payload.v.0.dn"
+                                                            },
+                                                            1
+                                                        ]
+                                                    },
+                                                    {
+                                                        "===": [
+                                                            {
+                                                                "var": "payload.v.0.dn"
+                                                            },
+                                                            {
+                                                                "var": "payload.v.0.sd"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            true,
+                                            {
+                                                ">": [
+                                                    {
+                                                        "var": "payload.v.0.dn"
+                                                    },
+                                                    {
+                                                        "var": "payload.v.0.sd"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-04-01T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.1.0"
         },
         {
             "AffectedFields": [
@@ -17355,93 +17355,6 @@
         },
         {
             "AffectedFields": [
-                "t.0",
-                "t.0.tr"
-            ],
-            "CertificateType": "Test",
-            "Country": "HR",
-            "Description": [
-                {
-                    "desc": "Rezultat testa mora biti negativan.",
-                    "lang": "hr"
-                },
-                {
-                    "desc": "The test result must be negative.",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-HR-0004",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.t.0"
-                    },
-                    {
-                        "===": [
-                            {
-                                "var": "payload.t.0.tr"
-                            },
-                            "260415000"
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-04-01T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.1.0"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
-                "v.0.dn",
-                "v.0.sd"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "HR",
-            "Description": [
-                {
-                    "desc": "Raspored cijepljenja mora biti potpun (npr., 1/1, 2/2).",
-                    "lang": "hr"
-                },
-                {
-                    "desc": "The vaccination schedule must be complete (e.g., 1/1, 2/2).",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-HR-0001",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        ">=": [
-                            {
-                                "var": "payload.v.0.dn"
-                            },
-                            {
-                                "var": "payload.v.0.sd"
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-04-01T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.1.0"
-        },
-        {
-            "AffectedFields": [
                 "v.0",
                 "v.0.mp",
                 "v.0.dt"
@@ -20181,6 +20094,93 @@
             "ValidFrom": "2022-07-20T10:00:00Z",
             "ValidTo": "2032-07-20T10:00:00Z",
             "Version": "1.0.1"
+        },
+        {
+            "AffectedFields": [
+                "t.0",
+                "t.0.tr"
+            ],
+            "CertificateType": "Test",
+            "Country": "HR",
+            "Description": [
+                {
+                    "desc": "Rezultat testa mora biti negativan.",
+                    "lang": "hr"
+                },
+                {
+                    "desc": "The test result must be negative.",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-HR-0004",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.t.0"
+                    },
+                    {
+                        "===": [
+                            {
+                                "var": "payload.t.0.tr"
+                            },
+                            "260415000"
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-04-01T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.1.0"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
+                "v.0.dn",
+                "v.0.sd"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "HR",
+            "Description": [
+                {
+                    "desc": "Raspored cijepljenja mora biti potpun (npr., 1/1, 2/2).",
+                    "lang": "hr"
+                },
+                {
+                    "desc": "The vaccination schedule must be complete (e.g., 1/1, 2/2).",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-HR-0001",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        ">=": [
+                            {
+                                "var": "payload.v.0.dn"
+                            },
+                            {
+                                "var": "payload.v.0.sd"
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-04-01T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.1.0"
         },
         {
             "AffectedFields": [
@@ -23312,92 +23312,6 @@
         {
             "AffectedFields": [
                 "v.0",
-                "v.0.dt",
-                "v.0.sd",
-                "v.0.dn"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "HR",
-            "Description": [
-                {
-                    "desc": "Primarno cijepljenje mo\u017ee biti prije najvi\u0161e 270 dana. Buster doze vrijede beskona\u010dno.",
-                    "lang": "hr"
-                },
-                {
-                    "desc": "The primary vaccination may have been completed 270 days ago at most. Booster vaccinations are valid for an unlimited period.",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-HR-0004",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        "if": [
-                            {
-                                "not-after": [
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "external.validationClock"
-                                            },
-                                            0,
-                                            "day"
-                                        ]
-                                    },
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "payload.v.0.dt"
-                                            },
-                                            270,
-                                            "day"
-                                        ]
-                                    }
-                                ]
-                            },
-                            true,
-                            {
-                                "if": [
-                                    {
-                                        ">": [
-                                            {
-                                                "var": "payload.v.0.dn"
-                                            },
-                                            2
-                                        ]
-                                    },
-                                    true,
-                                    {
-                                        ">": [
-                                            {
-                                                "var": "payload.v.0.dn"
-                                            },
-                                            {
-                                                "var": "payload.v.0.sd"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-04-01T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.1.0"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
                 "v.0.mp",
                 "v.0.dt"
             ],
@@ -25503,6 +25417,92 @@
             "ValidFrom": "2021-10-11T00:00:00Z",
             "ValidTo": "2030-10-11T00:00:00Z",
             "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
+                "v.0.dt",
+                "v.0.sd",
+                "v.0.dn"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "HR",
+            "Description": [
+                {
+                    "desc": "Primarno cijepljenje mo\u017ee biti prije najvi\u0161e 270 dana. Buster doze vrijede beskona\u010dno.",
+                    "lang": "hr"
+                },
+                {
+                    "desc": "The primary vaccination may have been completed 270 days ago at most. Booster vaccinations are valid for an unlimited period.",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-HR-0004",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        "if": [
+                            {
+                                "not-after": [
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "external.validationClock"
+                                            },
+                                            0,
+                                            "day"
+                                        ]
+                                    },
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "payload.v.0.dt"
+                                            },
+                                            270,
+                                            "day"
+                                        ]
+                                    }
+                                ]
+                            },
+                            true,
+                            {
+                                "if": [
+                                    {
+                                        ">": [
+                                            {
+                                                "var": "payload.v.0.dn"
+                                            },
+                                            2
+                                        ]
+                                    },
+                                    true,
+                                    {
+                                        ">": [
+                                            {
+                                                "var": "payload.v.0.dn"
+                                            },
+                                            {
+                                                "var": "payload.v.0.sd"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-04-01T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.1.0"
         },
         {
             "AffectedFields": [
@@ -28670,76 +28670,6 @@
         {
             "AffectedFields": [
                 "t.0",
-                "t.0.sc",
-                "t.0.tt"
-            ],
-            "CertificateType": "Test",
-            "Country": "HR",
-            "Description": [
-                {
-                    "desc": "Uzorak za PCR test ne smije biti stariji od 72 sata.",
-                    "lang": "hr"
-                },
-                {
-                    "desc": "The sample for an NAA test (e.g., PCR) must have been taken no longer than 72 hours ago.",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-HR-0003",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.t.0"
-                    },
-                    {
-                        "if": [
-                            {
-                                "===": [
-                                    {
-                                        "var": "payload.t.0.tt"
-                                    },
-                                    "LP6464-4"
-                                ]
-                            },
-                            {
-                                "not-after": [
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "external.validationClock"
-                                            },
-                                            0,
-                                            "day"
-                                        ]
-                                    },
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "payload.t.0.sc"
-                                            },
-                                            72,
-                                            "hour"
-                                        ]
-                                    }
-                                ]
-                            },
-                            true
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-04-01T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.1.0"
-        },
-        {
-            "AffectedFields": [
-                "t.0",
                 "t.0.tr"
             ],
             "CertificateType": "Test",
@@ -30837,6 +30767,76 @@
             "ValidFrom": "2022-01-12T17:00:00Z",
             "ValidTo": "2030-01-01T00:00:00Z",
             "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "t.0",
+                "t.0.sc",
+                "t.0.tt"
+            ],
+            "CertificateType": "Test",
+            "Country": "HR",
+            "Description": [
+                {
+                    "desc": "Uzorak za PCR test ne smije biti stariji od 72 sata.",
+                    "lang": "hr"
+                },
+                {
+                    "desc": "The sample for an NAA test (e.g., PCR) must have been taken no longer than 72 hours ago.",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-HR-0003",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.t.0"
+                    },
+                    {
+                        "if": [
+                            {
+                                "===": [
+                                    {
+                                        "var": "payload.t.0.tt"
+                                    },
+                                    "LP6464-4"
+                                ]
+                            },
+                            {
+                                "not-after": [
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "external.validationClock"
+                                            },
+                                            0,
+                                            "day"
+                                        ]
+                                    },
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "payload.t.0.sc"
+                                            },
+                                            72,
+                                            "hour"
+                                        ]
+                                    }
+                                ]
+                            },
+                            true
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-04-01T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.1.0"
         },
         {
             "AffectedFields": [
@@ -39438,51 +39438,6 @@
         },
         {
             "AffectedFields": [
-                "t.0",
-                "t.0.tt"
-            ],
-            "CertificateType": "Test",
-            "Country": "HR",
-            "Description": [
-                {
-                    "desc": "Test mora biti brzi antigenski ili PCR.",
-                    "lang": "hr"
-                },
-                {
-                    "desc": "This must be an antigen test (e.g., rapid test) or NAA test (e.g., PCR).",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-HR-0001",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.t.0"
-                    },
-                    {
-                        "in": [
-                            {
-                                "var": "payload.t.0.tt"
-                            },
-                            [
-                                "LP217198-3",
-                                "LP6464-4"
-                            ]
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-04-01T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.1.0"
-        },
-        {
-            "AffectedFields": [
                 "t.0.tt",
                 "t.0.sc"
             ],
@@ -41295,6 +41250,51 @@
             "ValidFrom": "2022-02-26T00:00:00Z",
             "ValidTo": "2030-10-11T00:00:00Z",
             "Version": "1.1.1"
+        },
+        {
+            "AffectedFields": [
+                "t.0",
+                "t.0.tt"
+            ],
+            "CertificateType": "Test",
+            "Country": "HR",
+            "Description": [
+                {
+                    "desc": "Test mora biti brzi antigenski ili PCR.",
+                    "lang": "hr"
+                },
+                {
+                    "desc": "This must be an antigen test (e.g., rapid test) or NAA test (e.g., PCR).",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-HR-0001",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.t.0"
+                    },
+                    {
+                        "in": [
+                            {
+                                "var": "payload.t.0.tt"
+                            },
+                            [
+                                "LP217198-3",
+                                "LP6464-4"
+                            ]
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-04-01T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.1.0"
         },
         {
             "AffectedFields": [
@@ -60583,64 +60583,6 @@
         },
         {
             "AffectedFields": [
-                "t.0",
-                "t.0.ma",
-                "t.0.tt"
-            ],
-            "CertificateType": "Test",
-            "Country": "HR",
-            "Description": [
-                {
-                    "desc": "Antigenski test mora biti na listi EU odobrenih testova \"Common list of COVID-19 rapid antigen tests\".",
-                    "lang": "hr"
-                },
-                {
-                    "desc": "The antigen test (e.g., rapid test) must be included in the EU\u2019s \"Common list of COVID-19 rapid antigen tests\".",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-HR-0005",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.t.0"
-                    },
-                    {
-                        "if": [
-                            {
-                                "===": [
-                                    {
-                                        "var": "payload.t.0.tt"
-                                    },
-                                    "LP217198-3"
-                                ]
-                            },
-                            {
-                                "in": [
-                                    {
-                                        "var": "payload.t.0.ma"
-                                    },
-                                    {
-                                        "var": "external.valueSets.covid-19-lab-test-manufacturer-and-name"
-                                    }
-                                ]
-                            },
-                            true
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-04-01T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.1.0"
-        },
-        {
-            "AffectedFields": [
                 "r.0",
                 "r.0.tg",
                 "t.0",
@@ -62947,6 +62889,64 @@
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "t.0",
+                "t.0.ma",
+                "t.0.tt"
+            ],
+            "CertificateType": "Test",
+            "Country": "HR",
+            "Description": [
+                {
+                    "desc": "Antigenski test mora biti na listi EU odobrenih testova \"Common list of COVID-19 rapid antigen tests\".",
+                    "lang": "hr"
+                },
+                {
+                    "desc": "The antigen test (e.g., rapid test) must be included in the EU\u2019s \"Common list of COVID-19 rapid antigen tests\".",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-HR-0005",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.t.0"
+                    },
+                    {
+                        "if": [
+                            {
+                                "===": [
+                                    {
+                                        "var": "payload.t.0.tt"
+                                    },
+                                    "LP217198-3"
+                                ]
+                            },
+                            {
+                                "in": [
+                                    {
+                                        "var": "payload.t.0.ma"
+                                    },
+                                    {
+                                        "var": "external.valueSets.covid-19-lab-test-manufacturer-and-name"
+                                    }
+                                ]
+                            },
+                            true
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-04-01T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.1.0"
         },
         {
             "AffectedFields": [
@@ -71367,59 +71367,6 @@
         {
             "AffectedFields": [
                 "v.0",
-                "v.0.mp"
-            ],
-            "CertificateType": "Vaccination",
-            "Country": "HR",
-            "Description": [
-                {
-                    "desc": "Samo sljede\u0107a cijepiva su prihva\u0107ena: Pfizer, Moderna, AstaZeneca, Gamaleya, Sinopharm, Novavax, Serum Institute of India, Bharat Biotech, Sinovac, JJohnson&Johnson.",
-                    "lang": "hr"
-                },
-                {
-                    "desc": "Only the following vaccines are accepted: Pfizer, Moderna, AstaZeneca, Gamaleya, Sinopharm, Novavax, Serum Institute of India, Bharat Biotech, Sinovac, Johnson&Johnson.",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "VR-HR-0002",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.v.0"
-                    },
-                    {
-                        "in": [
-                            {
-                                "var": "payload.v.0.mp"
-                            },
-                            [
-                                "EU/1/20/1528",
-                                "EU/1/20/1507",
-                                "EU/1/21/1529",
-                                "EU/1/20/1525",
-                                "EU/1/21/1618",
-                                "Sputnik-V",
-                                "BBIBP-CorV",
-                                "Covishield",
-                                "Covaxin",
-                                "CoronaVac"
-                            ]
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-04-01T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.1.0"
-        },
-        {
-            "AffectedFields": [
-                "v.0",
                 "v.0.dn",
                 "v.0.sd"
             ],
@@ -73357,6 +73304,59 @@
             "ValidFrom": "2021-10-01T00:00:00Z",
             "ValidTo": "2030-10-01T00:00:00Z",
             "Version": "1.0.0"
+        },
+        {
+            "AffectedFields": [
+                "v.0",
+                "v.0.mp"
+            ],
+            "CertificateType": "Vaccination",
+            "Country": "HR",
+            "Description": [
+                {
+                    "desc": "Samo sljede\u0107a cijepiva su prihva\u0107ena: Pfizer, Moderna, AstaZeneca, Gamaleya, Sinopharm, Novavax, Serum Institute of India, Bharat Biotech, Sinovac, JJohnson&Johnson.",
+                    "lang": "hr"
+                },
+                {
+                    "desc": "Only the following vaccines are accepted: Pfizer, Moderna, AstaZeneca, Gamaleya, Sinopharm, Novavax, Serum Institute of India, Bharat Biotech, Sinovac, Johnson&Johnson.",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "VR-HR-0002",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.v.0"
+                    },
+                    {
+                        "in": [
+                            {
+                                "var": "payload.v.0.mp"
+                            },
+                            [
+                                "EU/1/20/1528",
+                                "EU/1/20/1507",
+                                "EU/1/21/1529",
+                                "EU/1/20/1525",
+                                "EU/1/21/1618",
+                                "Sputnik-V",
+                                "BBIBP-CorV",
+                                "Covishield",
+                                "Covaxin",
+                                "CoronaVac"
+                            ]
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-04-01T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.1.0"
         },
         {
             "AffectedFields": [
@@ -76791,76 +76791,6 @@
         },
         {
             "AffectedFields": [
-                "t.0",
-                "t.0.sc",
-                "t.0.tt"
-            ],
-            "CertificateType": "Test",
-            "Country": "HR",
-            "Description": [
-                {
-                    "desc": "Uzorak za brzi antigenski test mora biti uzet u posljednih 24 sata.",
-                    "lang": "hr"
-                },
-                {
-                    "desc": "The sample for an antigen test (e.g., rapid test) must have been taken no longer than 24 hours ago.",
-                    "lang": "en"
-                }
-            ],
-            "Engine": "CERTLOGIC",
-            "EngineVersion": "0.7.5",
-            "Identifier": "TR-HR-0002",
-            "Logic": {
-                "if": [
-                    {
-                        "var": "payload.t.0"
-                    },
-                    {
-                        "if": [
-                            {
-                                "===": [
-                                    {
-                                        "var": "payload.t.0.tt"
-                                    },
-                                    "LP217198-3"
-                                ]
-                            },
-                            {
-                                "not-after": [
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "external.validationClock"
-                                            },
-                                            0,
-                                            "day"
-                                        ]
-                                    },
-                                    {
-                                        "plusTime": [
-                                            {
-                                                "var": "payload.t.0.sc"
-                                            },
-                                            24,
-                                            "hour"
-                                        ]
-                                    }
-                                ]
-                            },
-                            true
-                        ]
-                    },
-                    true
-                ]
-            },
-            "SchemaVersion": "1.0.0",
-            "Type": "Acceptance",
-            "ValidFrom": "2022-04-01T00:00:00Z",
-            "ValidTo": "2030-06-01T00:00:00Z",
-            "Version": "1.1.0"
-        },
-        {
-            "AffectedFields": [
                 "v.0",
                 "v.0.mp",
                 "v.0.dt"
@@ -77038,6 +76968,76 @@
             "ValidFrom": "2022-08-14T22:00:00Z",
             "ValidTo": "2032-08-14T22:00:00Z",
             "Version": "8.0.0"
+        },
+        {
+            "AffectedFields": [
+                "t.0",
+                "t.0.sc",
+                "t.0.tt"
+            ],
+            "CertificateType": "Test",
+            "Country": "HR",
+            "Description": [
+                {
+                    "desc": "Uzorak za brzi antigenski test mora biti uzet u posljednih 24 sata.",
+                    "lang": "hr"
+                },
+                {
+                    "desc": "The sample for an antigen test (e.g., rapid test) must have been taken no longer than 24 hours ago.",
+                    "lang": "en"
+                }
+            ],
+            "Engine": "CERTLOGIC",
+            "EngineVersion": "0.7.5",
+            "Identifier": "TR-HR-0002",
+            "Logic": {
+                "if": [
+                    {
+                        "var": "payload.t.0"
+                    },
+                    {
+                        "if": [
+                            {
+                                "===": [
+                                    {
+                                        "var": "payload.t.0.tt"
+                                    },
+                                    "LP217198-3"
+                                ]
+                            },
+                            {
+                                "not-after": [
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "external.validationClock"
+                                            },
+                                            0,
+                                            "day"
+                                        ]
+                                    },
+                                    {
+                                        "plusTime": [
+                                            {
+                                                "var": "payload.t.0.sc"
+                                            },
+                                            24,
+                                            "hour"
+                                        ]
+                                    }
+                                ]
+                            },
+                            true
+                        ]
+                    },
+                    true
+                ]
+            },
+            "SchemaVersion": "1.0.0",
+            "Type": "Acceptance",
+            "ValidFrom": "2022-04-01T00:00:00Z",
+            "ValidTo": "2030-06-01T00:00:00Z",
+            "Version": "1.1.0"
         },
         {
             "AffectedFields": [
