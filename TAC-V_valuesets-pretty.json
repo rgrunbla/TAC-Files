@@ -1,6 +1,400 @@
 [
     {
-        "valueSetDate": "2023-02-08",
+        "valueSetDate": "2023-01-26",
+        "valueSetId": "vaccines-covid-19-encoding-instructions",
+        "valueSetValues": {
+            "AZD2816": {
+                "sct-codes": [
+                    "28531000087107",
+                    "29061000087103"
+                ],
+                "vaccine-code": "AZD2816",
+                "vaccine-manufacturer": "ORG-100001699"
+            },
+            "Abdala": {
+                "note": "Also known as CIGB-66.",
+                "sct-codes": [
+                    "28531000087107"
+                ],
+                "vaccine-code": "Abdala",
+                "vaccine-manufacturer": "CIGB"
+            },
+            "BBIBP-CorV": {
+                "sct-codes": [
+                    "28531000087107",
+                    "1157024006"
+                ],
+                "vaccine-code": "BBIBP-CorV",
+                "vaccine-manufacturer": "ORG-100020693"
+            },
+            "COVID-19 Vaccine Valneva": {
+                "note": "Previously known as VLA2001.",
+                "sct-codes": [
+                    "28531000087107"
+                ],
+                "vaccine-code": "EU/1/21/1624",
+                "vaccine-manufacturer": "ORG-100036422"
+            },
+            "CVnCoV": {
+                "sct-codes": [
+                    "1119349007",
+                    "28531000087107"
+                ],
+                "vaccine-code": "CVnCoV",
+                "vaccine-manufacturer": "ORG-100006270"
+            },
+            "Comirnaty": {
+                "note": "The same code should be used also for adapted Comirnaty vaccines (such as bivalent Original/Omicron BA.1 and Original/Omicron BA.4-5) unless indicated otherwise.",
+                "sct-codes": [
+                    "1119349007",
+                    "28531000087107"
+                ],
+                "vaccine-code": "EU/1/20/1528",
+                "vaccine-manufacturer": "ORG-100030215"
+            },
+            "Convidecia": {
+                "sct-codes": [
+                    "28531000087107",
+                    "29061000087103"
+                ],
+                "vaccine-code": "Convidecia",
+                "vaccine-manufacturer": "ORG-100013793"
+            },
+            "CoronaVac": {
+                "note": "Do not use for Vacina adsorvida covid-19 (inativada) by Institito Butantan.",
+                "sct-codes": [
+                    "28531000087107",
+                    "1157024006"
+                ],
+                "vaccine-code": "CoronaVac",
+                "vaccine-manufacturer": "Sinovac-Biotech"
+            },
+            "Covaxin": {
+                "note": "Also known as BBV152 A, B, C.",
+                "sct-codes": [
+                    "28531000087107",
+                    "1157024006"
+                ],
+                "vaccine-code": "Covaxin",
+                "vaccine-manufacturer": "Bharat-Biotech"
+            },
+            "CoviVac": {
+                "sct-codes": [
+                    "28531000087107",
+                    "1157024006"
+                ],
+                "vaccine-code": "CoviVac",
+                "vaccine-manufacturer": "Chumakov-Federal-Scientific-Center"
+            },
+            "Covid-19 (recombinant)": {
+                "sct-codes": [
+                    "28531000087107",
+                    "29061000087103"
+                ],
+                "vaccine-code": "Covid-19-recombinant",
+                "vaccine-manufacturer": "Fiocruz"
+            },
+            "Covifenz": {
+                "note": "Also known as CoVLP and Medicago plant-based VLP.",
+                "sct-codes": [
+                    "28531000087107"
+                ],
+                "vaccine-code": "Covifenz",
+                "vaccine-manufacturer": "ORG-100008549"
+            },
+            "Covishield": {
+                "note": "Also known as ChAdOx1_nCoV-19.",
+                "sct-codes": [
+                    "28531000087107",
+                    "29061000087103"
+                ],
+                "vaccine-code": "Covishield",
+                "vaccine-manufacturer": "ORG-100001981"
+            },
+            "Covovax": {
+                "note": "Do not confuse with Nuvaxovid.",
+                "sct-codes": [
+                    "28531000087107",
+                    "1162643001"
+                ],
+                "vaccine-code": "Covovax",
+                "vaccine-manufacturer": "ORG-100001981"
+            },
+            "EpiVacCorona": {
+                "sct-codes": [
+                    "28531000087107",
+                    "1162643001"
+                ],
+                "vaccine-code": "EpiVacCorona",
+                "vaccine-manufacturer": "Vector-Institute"
+            },
+            "EpiVacCorona-N": {
+                "note": "Do not confuse with EpiVacCorona. Also know as Aurora-CoV.",
+                "sct-codes": [
+                    "28531000087107",
+                    "1162643001"
+                ],
+                "vaccine-code": "EpiVacCorona-N",
+                "vaccine-manufacturer": "Vector-Institute"
+            },
+            "Hayat-Vax": {
+                "sct-codes": [
+                    "28531000087107",
+                    "1157024006"
+                ],
+                "vaccine-code": "Hayat-Vax",
+                "vaccine-manufacturer": "ORG-100023050"
+            },
+            "Inactivated SARS-CoV-2 (Vero Cell)": {
+                "note": "Do not use this code for new certificates, see entry for WIBP-CorV.",
+                "sct-codes": [
+                    "28531000087107",
+                    "1157024006"
+                ],
+                "vaccine-code": "Inactivated-SARS-CoV-2-Vero-Cell",
+                "vaccine-manufacturer": "ORG-100010771"
+            },
+            "Jcovden": {
+                "note": "Previously known as COVID-19 Vaccine Janssen.",
+                "sct-codes": [
+                    "28531000087107",
+                    "29061000087103"
+                ],
+                "vaccine-code": "EU/1/20/1525",
+                "vaccine-manufacturer": "ORG-100001417"
+            },
+            "MVC COVID-19 vaccine": {
+                "note": "Also known as Medigen COVID-19 vaccine.",
+                "sct-codes": [
+                    "28531000087107",
+                    "1162643001"
+                ],
+                "vaccine-code": "MVC-COV1901",
+                "vaccine-manufacturer": "ORG-100033914"
+            },
+            "NVSI-06-08": {
+                "note": "Also known as Recombinant SARS-CoV-2 vaccine (CHO Cell).",
+                "sct-codes": [
+                    "28531000087107"
+                ],
+                "vaccine-code": "NVSI-06-08",
+                "vaccine-manufacturer": "NVSI"
+            },
+            "NVX-CoV2373": {
+                "note": "Do not use this code for new certificates, see entry for Nuvaxovid.",
+                "sct-codes": [
+                    "28531000087107",
+                    "1162643001"
+                ],
+                "vaccine-code": "NVX-CoV2373 (deprecated)",
+                "vaccine-manufacturer": "ORG-100032020"
+            },
+            "Nuvaxovid": {
+                "note": "Previously known as NVX-CoV2373.",
+                "sct-codes": [
+                    "28531000087107",
+                    "1162643001"
+                ],
+                "vaccine-code": "EU/1/21/1618",
+                "vaccine-manufacturer": "ORG-100032020"
+            },
+            "R-COVI": {
+                "sct-codes": [
+                    "28531000087107",
+                    "29061000087103"
+                ],
+                "vaccine-code": "R-COVI",
+                "vaccine-manufacturer": "ORG-100007893"
+            },
+            "SCTV01C": {
+                "note": "Also known as Bivalent Recombinant Trimeric S Protein vaccine.",
+                "sct-codes": [
+                    "28531000087107"
+                ],
+                "vaccine-code": "SCTV01C",
+                "vaccine-manufacturer": "ORG-100026614"
+            },
+            "Soberana 02": {
+                "note": "Also known as FINLAY-FR-2.",
+                "sct-codes": [
+                    "28531000087107"
+                ],
+                "vaccine-code": "Soberana-02",
+                "vaccine-manufacturer": "Finlay-Institute"
+            },
+            "Soberana Plus": {
+                "note": "Also known as FINLAY-FR-1A.",
+                "sct-codes": [
+                    "28531000087107"
+                ],
+                "vaccine-code": "Soberana-Plus",
+                "vaccine-manufacturer": "Finlay-Institute"
+            },
+            "Spikevax": {
+                "note": "Previously COVID-19 Vaccine Moderna. The same code should be used also for adapted Spikevax vaccines (such as bivalent Original/Omicron BA.1) unless indicated otherwise.",
+                "sct-codes": [
+                    "1119349007",
+                    "28531000087107"
+                ],
+                "vaccine-code": "EU/1/20/1507",
+                "vaccine-manufacturer": "ORG-100031184"
+            },
+            "Sputnik Light": {
+                "sct-codes": [
+                    "28531000087107",
+                    "29061000087103"
+                ],
+                "vaccine-code": "Sputnik-Light",
+                "vaccine-manufacturer": "Gamaleya-Research-Institute"
+            },
+            "Sputnik M": {
+                "note": "Do not confuse with Sputnik V or Sputnik Light.",
+                "sct-codes": [
+                    "28531000087107",
+                    "29061000087103"
+                ],
+                "vaccine-code": "Sputnik-M",
+                "vaccine-manufacturer": "Gamaleya-Research-Institute"
+            },
+            "Sputnik V": {
+                "sct-codes": [
+                    "28531000087107",
+                    "29061000087103"
+                ],
+                "vaccine-code": "Sputnik-V",
+                "vaccine-manufacturer": "Gamaleya-Research-Institute"
+            },
+            "VLA2001": {
+                "note": "Do not use this code for new certificates, see entry for COVID-19 Vaccine (inactivated, adjuvanted) Valneva.",
+                "sct-codes": [
+                    "28531000087107"
+                ],
+                "vaccine-code": "VLA2001 (deprecated)",
+                "vaccine-manufacturer": "ORG-100036422"
+            },
+            "Vacina adsorvida covid-19 (inativada)": {
+                "sct-codes": [
+                    "28531000087107",
+                    "1157024006"
+                ],
+                "vaccine-code": "Covid-19-adsorvida-inativada",
+                "vaccine-manufacturer": "Instituto-Butantan"
+            },
+            "Vaxzevria": {
+                "note": "Use also for AstraZeneca covid-19 vaccines, except R-COVI, Covishield and Covid-19 (recombinant) by Fiocruz.",
+                "sct-codes": [
+                    "28531000087107",
+                    "29061000087103"
+                ],
+                "vaccine-code": "EU/1/21/1529",
+                "vaccine-manufacturer": "ORG-100001699"
+            },
+            "VidPrevtyn Beta": {
+                "note": "Previously known as Vidprevtyn.",
+                "sct-codes": [
+                    "28531000087107"
+                ],
+                "vaccine-code": "EU/1/21/1580",
+                "vaccine-manufacturer": "ORG-100000788"
+            },
+            "Vidprevtyn": {
+                "note": "Do not use this code for new certificates, see entry for VidPrevtyn Beta.",
+                "sct-codes": [
+                    "28531000087107"
+                ],
+                "vaccine-code": "Vidprevtyn (deprecated)",
+                "vaccine-manufacturer": "ORG-100000788"
+            },
+            "WIBP-CorV": {
+                "note": "Previously known as Inactivated SARS-CoV-2 (Vero Cell).",
+                "sct-codes": [
+                    "28531000087107",
+                    "1157024006"
+                ],
+                "vaccine-code": "WIBP-CorV",
+                "vaccine-manufacturer": "Sinopharm-WIBP"
+            },
+            "YS-SC2-010": {
+                "note": "Also known as PIKA-Adjuvanted Recombinant SARS-CoV-2 Spike (S) Protein Subunit vaccine.",
+                "sct-codes": [
+                    "28531000087107"
+                ],
+                "vaccine-code": "YS-SC2-010",
+                "vaccine-manufacturer": "Yisheng-Biopharma"
+            }
+        }
+    },
+    {
+        "valueSetDate": "2023-01-25",
+        "valueSetId": "sct-vaccines-covid-19",
+        "valueSetValues": {
+            "1119305005": {
+                "active": true,
+                "display": "SARS-CoV-2 antigen vaccine",
+                "lang": "en",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20210131"
+            },
+            "1119349007": {
+                "active": true,
+                "display": "SARS-CoV-2 mRNA vaccine",
+                "lang": "en",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20210131"
+            },
+            "1157024006": {
+                "active": true,
+                "display": "Inactivated whole SARS-CoV-2 antigen vaccine",
+                "lang": "en",
+                "system": "http://snomed.info/sct",
+                "version": "2022-01-31"
+            },
+            "1162643001": {
+                "active": true,
+                "display": "SARS-CoV-2 recombinant spike protein antigen vaccine",
+                "lang": "en",
+                "system": "http://snomed.info/sct",
+                "version": "2022-01-31"
+            },
+            "1187593009": {
+                "active": true,
+                "display": "SARS-CoV-2 DNA plasmid encoding spike protein vaccine",
+                "lang": "en",
+                "system": "http://snomed.info/sct",
+                "version": "2022-12-31"
+            },
+            "28531000087107": {
+                "active": true,
+                "display": "COVID-19 vaccine",
+                "lang": "en",
+                "system": "http://snomed.info/sct",
+                "version": "2022-12-31"
+            },
+            "29061000087103": {
+                "active": true,
+                "display": "COVID-19 non-replicating viral vector vaccine",
+                "lang": "en",
+                "system": "http://snomed.info/sct",
+                "version": "2022-01-31"
+            },
+            "30141000087107": {
+                "active": true,
+                "display": "SARS-CoV-2 virus-like particle antigen vaccine",
+                "lang": "en",
+                "system": "http://snomed.info/sct",
+                "version": "2022-12-31"
+            },
+            "J07BX03": {
+                "active": false,
+                "display": "covid-19 vaccines (deprecated)",
+                "lang": "en",
+                "system": "http://www.whocc.no/atc",
+                "version": "2021-01"
+            }
+        }
+    },
+    {
+        "valueSetDate": "2023-02-09",
         "valueSetId": "covid-19-lab-test-manufacturer-and-name",
         "valueSetValues": {
             "1065": {
@@ -2322,400 +2716,6 @@
                 "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
                 "validUntil": null,
                 "version": "2021-07-13 05:38:51 CEST"
-            }
-        }
-    },
-    {
-        "valueSetDate": "2023-01-26",
-        "valueSetId": "vaccines-covid-19-encoding-instructions",
-        "valueSetValues": {
-            "AZD2816": {
-                "sct-codes": [
-                    "28531000087107",
-                    "29061000087103"
-                ],
-                "vaccine-code": "AZD2816",
-                "vaccine-manufacturer": "ORG-100001699"
-            },
-            "Abdala": {
-                "note": "Also known as CIGB-66.",
-                "sct-codes": [
-                    "28531000087107"
-                ],
-                "vaccine-code": "Abdala",
-                "vaccine-manufacturer": "CIGB"
-            },
-            "BBIBP-CorV": {
-                "sct-codes": [
-                    "28531000087107",
-                    "1157024006"
-                ],
-                "vaccine-code": "BBIBP-CorV",
-                "vaccine-manufacturer": "ORG-100020693"
-            },
-            "COVID-19 Vaccine Valneva": {
-                "note": "Previously known as VLA2001.",
-                "sct-codes": [
-                    "28531000087107"
-                ],
-                "vaccine-code": "EU/1/21/1624",
-                "vaccine-manufacturer": "ORG-100036422"
-            },
-            "CVnCoV": {
-                "sct-codes": [
-                    "1119349007",
-                    "28531000087107"
-                ],
-                "vaccine-code": "CVnCoV",
-                "vaccine-manufacturer": "ORG-100006270"
-            },
-            "Comirnaty": {
-                "note": "The same code should be used also for adapted Comirnaty vaccines (such as bivalent Original/Omicron BA.1 and Original/Omicron BA.4-5) unless indicated otherwise.",
-                "sct-codes": [
-                    "1119349007",
-                    "28531000087107"
-                ],
-                "vaccine-code": "EU/1/20/1528",
-                "vaccine-manufacturer": "ORG-100030215"
-            },
-            "Convidecia": {
-                "sct-codes": [
-                    "28531000087107",
-                    "29061000087103"
-                ],
-                "vaccine-code": "Convidecia",
-                "vaccine-manufacturer": "ORG-100013793"
-            },
-            "CoronaVac": {
-                "note": "Do not use for Vacina adsorvida covid-19 (inativada) by Institito Butantan.",
-                "sct-codes": [
-                    "28531000087107",
-                    "1157024006"
-                ],
-                "vaccine-code": "CoronaVac",
-                "vaccine-manufacturer": "Sinovac-Biotech"
-            },
-            "Covaxin": {
-                "note": "Also known as BBV152 A, B, C.",
-                "sct-codes": [
-                    "28531000087107",
-                    "1157024006"
-                ],
-                "vaccine-code": "Covaxin",
-                "vaccine-manufacturer": "Bharat-Biotech"
-            },
-            "CoviVac": {
-                "sct-codes": [
-                    "28531000087107",
-                    "1157024006"
-                ],
-                "vaccine-code": "CoviVac",
-                "vaccine-manufacturer": "Chumakov-Federal-Scientific-Center"
-            },
-            "Covid-19 (recombinant)": {
-                "sct-codes": [
-                    "28531000087107",
-                    "29061000087103"
-                ],
-                "vaccine-code": "Covid-19-recombinant",
-                "vaccine-manufacturer": "Fiocruz"
-            },
-            "Covifenz": {
-                "note": "Also known as CoVLP and Medicago plant-based VLP.",
-                "sct-codes": [
-                    "28531000087107"
-                ],
-                "vaccine-code": "Covifenz",
-                "vaccine-manufacturer": "ORG-100008549"
-            },
-            "Covishield": {
-                "note": "Also known as ChAdOx1_nCoV-19.",
-                "sct-codes": [
-                    "28531000087107",
-                    "29061000087103"
-                ],
-                "vaccine-code": "Covishield",
-                "vaccine-manufacturer": "ORG-100001981"
-            },
-            "Covovax": {
-                "note": "Do not confuse with Nuvaxovid.",
-                "sct-codes": [
-                    "28531000087107",
-                    "1162643001"
-                ],
-                "vaccine-code": "Covovax",
-                "vaccine-manufacturer": "ORG-100001981"
-            },
-            "EpiVacCorona": {
-                "sct-codes": [
-                    "28531000087107",
-                    "1162643001"
-                ],
-                "vaccine-code": "EpiVacCorona",
-                "vaccine-manufacturer": "Vector-Institute"
-            },
-            "EpiVacCorona-N": {
-                "note": "Do not confuse with EpiVacCorona. Also know as Aurora-CoV.",
-                "sct-codes": [
-                    "28531000087107",
-                    "1162643001"
-                ],
-                "vaccine-code": "EpiVacCorona-N",
-                "vaccine-manufacturer": "Vector-Institute"
-            },
-            "Hayat-Vax": {
-                "sct-codes": [
-                    "28531000087107",
-                    "1157024006"
-                ],
-                "vaccine-code": "Hayat-Vax",
-                "vaccine-manufacturer": "ORG-100023050"
-            },
-            "Inactivated SARS-CoV-2 (Vero Cell)": {
-                "note": "Do not use this code for new certificates, see entry for WIBP-CorV.",
-                "sct-codes": [
-                    "28531000087107",
-                    "1157024006"
-                ],
-                "vaccine-code": "Inactivated-SARS-CoV-2-Vero-Cell",
-                "vaccine-manufacturer": "ORG-100010771"
-            },
-            "Jcovden": {
-                "note": "Previously known as COVID-19 Vaccine Janssen.",
-                "sct-codes": [
-                    "28531000087107",
-                    "29061000087103"
-                ],
-                "vaccine-code": "EU/1/20/1525",
-                "vaccine-manufacturer": "ORG-100001417"
-            },
-            "MVC COVID-19 vaccine": {
-                "note": "Also known as Medigen COVID-19 vaccine.",
-                "sct-codes": [
-                    "28531000087107",
-                    "1162643001"
-                ],
-                "vaccine-code": "MVC-COV1901",
-                "vaccine-manufacturer": "ORG-100033914"
-            },
-            "NVSI-06-08": {
-                "note": "Also known as Recombinant SARS-CoV-2 vaccine (CHO Cell).",
-                "sct-codes": [
-                    "28531000087107"
-                ],
-                "vaccine-code": "NVSI-06-08",
-                "vaccine-manufacturer": "NVSI"
-            },
-            "NVX-CoV2373": {
-                "note": "Do not use this code for new certificates, see entry for Nuvaxovid.",
-                "sct-codes": [
-                    "28531000087107",
-                    "1162643001"
-                ],
-                "vaccine-code": "NVX-CoV2373 (deprecated)",
-                "vaccine-manufacturer": "ORG-100032020"
-            },
-            "Nuvaxovid": {
-                "note": "Previously known as NVX-CoV2373.",
-                "sct-codes": [
-                    "28531000087107",
-                    "1162643001"
-                ],
-                "vaccine-code": "EU/1/21/1618",
-                "vaccine-manufacturer": "ORG-100032020"
-            },
-            "R-COVI": {
-                "sct-codes": [
-                    "28531000087107",
-                    "29061000087103"
-                ],
-                "vaccine-code": "R-COVI",
-                "vaccine-manufacturer": "ORG-100007893"
-            },
-            "SCTV01C": {
-                "note": "Also known as Bivalent Recombinant Trimeric S Protein vaccine.",
-                "sct-codes": [
-                    "28531000087107"
-                ],
-                "vaccine-code": "SCTV01C",
-                "vaccine-manufacturer": "ORG-100026614"
-            },
-            "Soberana 02": {
-                "note": "Also known as FINLAY-FR-2.",
-                "sct-codes": [
-                    "28531000087107"
-                ],
-                "vaccine-code": "Soberana-02",
-                "vaccine-manufacturer": "Finlay-Institute"
-            },
-            "Soberana Plus": {
-                "note": "Also known as FINLAY-FR-1A.",
-                "sct-codes": [
-                    "28531000087107"
-                ],
-                "vaccine-code": "Soberana-Plus",
-                "vaccine-manufacturer": "Finlay-Institute"
-            },
-            "Spikevax": {
-                "note": "Previously COVID-19 Vaccine Moderna. The same code should be used also for adapted Spikevax vaccines (such as bivalent Original/Omicron BA.1) unless indicated otherwise.",
-                "sct-codes": [
-                    "1119349007",
-                    "28531000087107"
-                ],
-                "vaccine-code": "EU/1/20/1507",
-                "vaccine-manufacturer": "ORG-100031184"
-            },
-            "Sputnik Light": {
-                "sct-codes": [
-                    "28531000087107",
-                    "29061000087103"
-                ],
-                "vaccine-code": "Sputnik-Light",
-                "vaccine-manufacturer": "Gamaleya-Research-Institute"
-            },
-            "Sputnik M": {
-                "note": "Do not confuse with Sputnik V or Sputnik Light.",
-                "sct-codes": [
-                    "28531000087107",
-                    "29061000087103"
-                ],
-                "vaccine-code": "Sputnik-M",
-                "vaccine-manufacturer": "Gamaleya-Research-Institute"
-            },
-            "Sputnik V": {
-                "sct-codes": [
-                    "28531000087107",
-                    "29061000087103"
-                ],
-                "vaccine-code": "Sputnik-V",
-                "vaccine-manufacturer": "Gamaleya-Research-Institute"
-            },
-            "VLA2001": {
-                "note": "Do not use this code for new certificates, see entry for COVID-19 Vaccine (inactivated, adjuvanted) Valneva.",
-                "sct-codes": [
-                    "28531000087107"
-                ],
-                "vaccine-code": "VLA2001 (deprecated)",
-                "vaccine-manufacturer": "ORG-100036422"
-            },
-            "Vacina adsorvida covid-19 (inativada)": {
-                "sct-codes": [
-                    "28531000087107",
-                    "1157024006"
-                ],
-                "vaccine-code": "Covid-19-adsorvida-inativada",
-                "vaccine-manufacturer": "Instituto-Butantan"
-            },
-            "Vaxzevria": {
-                "note": "Use also for AstraZeneca covid-19 vaccines, except R-COVI, Covishield and Covid-19 (recombinant) by Fiocruz.",
-                "sct-codes": [
-                    "28531000087107",
-                    "29061000087103"
-                ],
-                "vaccine-code": "EU/1/21/1529",
-                "vaccine-manufacturer": "ORG-100001699"
-            },
-            "VidPrevtyn Beta": {
-                "note": "Previously known as Vidprevtyn.",
-                "sct-codes": [
-                    "28531000087107"
-                ],
-                "vaccine-code": "EU/1/21/1580",
-                "vaccine-manufacturer": "ORG-100000788"
-            },
-            "Vidprevtyn": {
-                "note": "Do not use this code for new certificates, see entry for VidPrevtyn Beta.",
-                "sct-codes": [
-                    "28531000087107"
-                ],
-                "vaccine-code": "Vidprevtyn (deprecated)",
-                "vaccine-manufacturer": "ORG-100000788"
-            },
-            "WIBP-CorV": {
-                "note": "Previously known as Inactivated SARS-CoV-2 (Vero Cell).",
-                "sct-codes": [
-                    "28531000087107",
-                    "1157024006"
-                ],
-                "vaccine-code": "WIBP-CorV",
-                "vaccine-manufacturer": "Sinopharm-WIBP"
-            },
-            "YS-SC2-010": {
-                "note": "Also known as PIKA-Adjuvanted Recombinant SARS-CoV-2 Spike (S) Protein Subunit vaccine.",
-                "sct-codes": [
-                    "28531000087107"
-                ],
-                "vaccine-code": "YS-SC2-010",
-                "vaccine-manufacturer": "Yisheng-Biopharma"
-            }
-        }
-    },
-    {
-        "valueSetDate": "2023-01-25",
-        "valueSetId": "sct-vaccines-covid-19",
-        "valueSetValues": {
-            "1119305005": {
-                "active": true,
-                "display": "SARS-CoV-2 antigen vaccine",
-                "lang": "en",
-                "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20210131"
-            },
-            "1119349007": {
-                "active": true,
-                "display": "SARS-CoV-2 mRNA vaccine",
-                "lang": "en",
-                "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20210131"
-            },
-            "1157024006": {
-                "active": true,
-                "display": "Inactivated whole SARS-CoV-2 antigen vaccine",
-                "lang": "en",
-                "system": "http://snomed.info/sct",
-                "version": "2022-01-31"
-            },
-            "1162643001": {
-                "active": true,
-                "display": "SARS-CoV-2 recombinant spike protein antigen vaccine",
-                "lang": "en",
-                "system": "http://snomed.info/sct",
-                "version": "2022-01-31"
-            },
-            "1187593009": {
-                "active": true,
-                "display": "SARS-CoV-2 DNA plasmid encoding spike protein vaccine",
-                "lang": "en",
-                "system": "http://snomed.info/sct",
-                "version": "2022-12-31"
-            },
-            "28531000087107": {
-                "active": true,
-                "display": "COVID-19 vaccine",
-                "lang": "en",
-                "system": "http://snomed.info/sct",
-                "version": "2022-12-31"
-            },
-            "29061000087103": {
-                "active": true,
-                "display": "COVID-19 non-replicating viral vector vaccine",
-                "lang": "en",
-                "system": "http://snomed.info/sct",
-                "version": "2022-01-31"
-            },
-            "30141000087107": {
-                "active": true,
-                "display": "SARS-CoV-2 virus-like particle antigen vaccine",
-                "lang": "en",
-                "system": "http://snomed.info/sct",
-                "version": "2022-12-31"
-            },
-            "J07BX03": {
-                "active": false,
-                "display": "covid-19 vaccines (deprecated)",
-                "lang": "en",
-                "system": "http://www.whocc.no/atc",
-                "version": "2021-01"
             }
         }
     },
